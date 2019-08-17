@@ -93,12 +93,123 @@ nav{
 	left: 35%;
 	top: 60%;
 	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%)!important;
+	-ms-transform: translate(-50%,-50%)!important;
+	-moz-transform: translate(-50%,-50%)!important;
+	-o-transform: translate(-50%,-50%)!important;
 }
 #download_app .container #store .col-md-6 img{
 	width: 150px;
 	height: 50px;
 }
 
+
+/* Body Section CSS Style! */
+#body{
+	width: 100%;
+}
+#body .row{
+	margin-top: 35px;
+}
+#body .row:last-child{
+	margin-bottom: 50px!important;
+}
+#body .row h3{
+	font-weight: bold;
+	text-align: center;
+	color: #3a9bfa;
+	position: relative;
+	z-index: 100;
+	margin-bottom: 60px;
+}
+#body h3::before{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 80px;
+	height: 1px;
+	background: #3a9bfa;
+	margin-top: 35px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%)!important;
+	-ms-transform: translate(-50%,-50%)!important;
+	-moz-transform: translate(-50%,-50%)!important;
+	-o-transform: translate(-50%,-50%)!important;
+}
+
+#body .container ul{
+	list-style: none;
+	margin-left: -17px!important;
+}
+#body .container ul li{
+	float: left;
+	cursor: pointer;
+	padding: 10px;
+	background: #fff;
+	color: #000;
+}
+#body .container ul li:nth-child(2){
+	margin-left: 4px;
+	margin-right: 4px
+}
+
+#body .container #body_img_wrap{
+	background: green;
+	padding: 0px;
+}
+#body .container #panel_wrap{
+	margin: 0 auto!important;
+	width: 90%;
+	background-color: purple;
+}
+#body .container #panel_wrap #how_works_panel_place, #how_jobs_panel_place, #how_page_panel_place{
+	clear: both;
+	background: red;
+	width: 480px;
+	height: 300px;
+	margin: 0 auto;
+}
+#body .container #panel_wrap #how_works_panel_jobs, #how_jobs_panel_jobs, #how_page_panel_jobs{
+	display: none;
+	background-color: lime;
+	clear: both;
+	width: 480px;
+	height: 300px;
+	margin: 0 auto;
+}
+#body .container #panel_wrap #how_works_panel_flatmate, #how_jobs_panel_flatmate, #how_page_panel_flatmate{
+	display: none;
+	background-color: skyblue;
+	clear: both;
+	width: 480px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+#body .container #panel_wrap #how_works_place{
+	background: #3a9bfa;
+	color: #fff;
+}
+
+#body .container #panel_wrap a{
+	outline: none!important;
+}
+#body .container #panel_wrap a img{
+	width: 480px;
+	height: 300px;
+}
+
+#body .container #body_text_wrap h4{
+	color: #3a9bfa;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+#body .container #body_text_wrap p{
+	text-align: justify;
+	margin-bottom: 30px;
+}
 
 /* Footer Section CSS Style! */
 #footer{
