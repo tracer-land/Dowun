@@ -1,0 +1,12 @@
+/* Mobile View CSS Style (1300px) */
+
+.navbar-right{
+	margin-right: 10px!important;
+}
+.navbar-header a{
+	margin-left: 10px!important;
+}
+nav > *{
+	font-size: 12px!important;
+}
+

@@ -1,0 +1,25 @@
+/* Mobile View CSS Style (768px) */
+
+/* Language Toggle From Navigation */
+#language_toggle_select{
+	margin-left: 10px!important;
+}
+
+/* Download App CSS Style */
+#download_app{
+	height: 55vh!important;
+	background-image: url('../images/mobile_size_download_app.png');
+}
+#download_app .container #store{
+	width: 50%;
+	height: 100px;
+	line-height: 100px;
+	position: absolute;
+	left: 33%;
+	top: 72%;
+	transform: translate(-50%,-50%);
+}
+#download_app .container #store .col-md-6 img{
+	width: 90px;
+	height: 30px;
+}
