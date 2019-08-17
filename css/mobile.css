@@ -23,3 +23,8 @@
 	width: 90px;
 	height: 30px;
 }
+
+/* Footer CSS Style */
+#footer{
+	display: none!important;
+}

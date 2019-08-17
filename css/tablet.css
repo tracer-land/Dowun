@@ -10,3 +10,8 @@ nav > *{
 	font-size: 12px!important;
 }
 
+/* Footer CSS Style */
+#footer{
+	display: none!important;
+}
+
