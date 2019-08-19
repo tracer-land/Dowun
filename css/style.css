@@ -364,3 +364,11 @@ nav{
 	background: #000;
 	color: #fff;
 }
+
+
+/* Medi Queries */
+@media screen and (max-width: 1208px){
+	/*#body .container #body_img_wrap{
+		display: none!important;
+	}*/
+}
