@@ -171,3 +171,4 @@ function page_switchFlatmate(){
 	get('how_page_panel_jobs').style.display = "none";
 	get('how_page_panel_flatmate').style.display = "block";
 }
+
