@@ -75,6 +75,99 @@ nav{
 	color: #fff!important;
 }
 
+/* Header Form Style */
+#header{
+	width: 100%;
+	height: 75vh;
+	background-image: url("../images/main_home_header.png");
+	background-size: cover;
+}
+#header_wrap{
+	width: 70%;
+	position: absolute;
+	top: 25%;
+	left: 10%;
+}
+#header #header_wrap h3{
+	font-weight: bold;
+	color: #3a9bfa;
+	margin-bottom: 30px;
+	margin-left: 40px;
+}
+#header_wrap #header_form_wrap ul{
+	list-style: none;
+}
+#header_wrap #header_form_wrap ul li{
+	float: left;
+	cursor: pointer;
+	padding: 10px;
+	background: #fff;
+	color: #000;
+}
+#header_wrap #header_form_wrap ul #form_jobs_tab{
+	background: #3a9bfa;
+	color: #fff;
+}
+#header_wrap #header_form_wrap ul li:nth-child(2){
+	margin-left: 4px;
+	margin-right: 4px
+}
+
+#header_wrap #form_jobs{
+	clear: both;
+	background: rgba(255,255,255,0.5);
+	width: 75%;
+	height: 80px;
+	padding: 0px 12px 0px 25px;
+	margin-left: 40px;
+}
+#header_wrap #form_place{
+	display: none;
+	background: rgba(255,255,255,0.5);
+	clear: both;
+	width: 75%;
+	height: 80px;
+	padding: 0px 12px 0px 12px;
+	margin-left: 40px;
+}
+#header_wrap #form_flatmate{
+	display: none;
+	background: rgba(255,255,255,0.5);
+	clear: both;
+	width: 75%;
+	height: 80px;
+	padding: 0px 12px 0px 12px;
+	margin-left: 40px;
+}
+
+#header #form_jobs{
+	position: relative;
+}
+#header #form_jobs form{
+	width: 100%;
+	height: 35px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%)!important;
+	-ms-transform: translate(-50%,-50%)!important;
+	-moz-transform: translate(-50%,-50%)!important;
+	-o-transform: translate(-50%,-50%)!important;
+}
+#header #form_jobs form input, form select{
+	width: 31.5%!important;
+	float: left;
+	margin-right: 10px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+	border: 0px!important;
+}
+#header #form_jobs form .btn{
+	background: #3a9bfa!important;
+	color: #fff!important;
+}
+
+
 
 /* Download App CSS Style */
 #download_app{
@@ -107,6 +200,7 @@ nav{
 /* Body Section CSS Style! */
 #body{
 	width: 100%;
+	margin-bottom: 60px;
 }
 #body .row{
 	margin-top: 60px;

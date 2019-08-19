@@ -16,11 +16,50 @@ $(document).ready(function(){
 });
 
 
-//Body Category Tabs Script!
 function get(obj){
 	return document.getElementById(obj);
 }
 
+//Header Form Tabs Script
+//Form jobs functions start
+function form_switchJobs(){
+	get('form_jobs_tab').style.background = "#3a9bfa";
+	get('form_jobs_tab').style.color = "#fff";
+	get('form_place_tab').style.color = "#000";
+	get('form_flatmate_tab').style.color = "#000";
+	get('form_place_tab').style.background = "#fff";
+	get('form_flatmate_tab').style.background = "#fff";
+	get('form_jobs').style.display = "block";
+	get('form_place').style.display = "none";
+	get('form_flatmate').style.display = "none";
+}
+
+function form_switchPlace(){
+	get('form_place_tab').style.background = "#3a9bfa";
+	get('form_place_tab').style.color = "#fff";
+	get('form_jobs_tab').style.color = "#000";
+	get('form_flatmate_tab').style.color = "#000";
+	get('form_jobs_tab').style.background = "#fff";
+	get('form_flatmate_tab').style.background = "#fff";
+	get('form_place').style.display = "block";
+	get('form_jobs').style.display = "none";
+	get('form_flatmate').style.display = "none";
+}
+
+function form_switchFlatmate(){
+	get('form_flatmate_tab').style.background = "#3a9bfa";
+	get('form_flatmate_tab').style.color = "#fff";
+	get('form_jobs_tab').style.color = "#000";
+	get('form_place_tab').style.color = "#000";
+	get('form_jobs_tab').style.background = "#fff";
+	get('form_place_tab').style.background = "#fff";
+	get('form_place').style.display = "none";
+	get('form_jobs').style.display = "none";
+	get('form_flatmate').style.display = "block";
+}
+
+
+//Body Category Tabs Script!
 //How works functions start!
 function work_switchPlace(){
 	get('how_works_place').style.background = "#3a9bfa";
