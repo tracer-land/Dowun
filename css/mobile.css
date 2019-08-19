@@ -30,24 +30,24 @@
 }
 #header_wrap #form_jobs{
 	width: 80%;
-	height: 330px;
+	height: 330px!important;
 	padding: 0px 12px 0px 25px;
 	margin-left: 30px;
 }
 #header_wrap #form_place{
-	position: relative;
 	width: 80%;
-	height: 150px;
+	height: 330px!important;
 	padding: 0px 12px 0px 25px;
 	margin-left: 30px;
 }
 #header_wrap #form_flatmate{
-	position: relative;
 	width: 80%;
-	height: 150px;
+	height: 330px!important;
 	padding: 0px 12px 0px 25px;
 	margin-left: 30px;
 }
+
+/*Jobs*/
 #header #form_jobs form input, form select{
 	width: 100%!important;
 	float: left;
@@ -55,11 +55,9 @@
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
 	border: 0px!important;
 }
-
 #header #form_jobs form{
 	width: 85%;
 }
-
 #header #form_jobs form #form_input_second_row{
 	margin-top: 0px!important;
 }
@@ -67,6 +65,48 @@
 	margin-top: 0px!important;
 }
 #header #form_jobs form #form_input_third_row .btn{
+	width: 100%!important;
+}
+
+/*Place*/
+#header #form_place form input, form select{
+	width: 100%!important;
+	float: left;
+	margin-bottom: 10px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+	border: 0px!important;
+}
+#header #form_place form{
+	width: 85%;
+}
+#header #form_place form #form_input_second_row{
+	margin-top: 0px!important;
+}
+#header #form_place form #form_input_third_row{
+	margin-top: 0px!important;
+}
+#header #form_place form #form_input_third_row .btn{
+	width: 100%!important;
+}
+
+/*Flatmate*/
+#header #form_flatmate form input, form select{
+	width: 100%!important;
+	float: left;
+	margin-bottom: 10px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+	border: 0px!important;
+}
+#header #form_flatmate form{
+	width: 85%;
+}
+#header #form_flatmate form #form_input_second_row{
+	margin-top: 0px!important;
+}
+#header #form_flatmate form #form_input_third_row{
+	margin-top: 0px!important;
+}
+#header #form_flatmate form #form_input_third_row .btn{
 	width: 100%!important;
 }
 
