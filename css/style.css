@@ -109,10 +109,10 @@ nav{
 	width: 100%;
 }
 #body .row{
-	margin-top: 35px;
+	margin-top: 60px;
 }
 #body .row:last-child{
-	margin-bottom: 50px!important;
+	margin-top: 50px!important;
 }
 #body .row h3{
 	font-weight: bold;
