@@ -156,17 +156,15 @@ nav{
 }
 
 #body .container #body_img_wrap{
-	background: green;
 	padding: 0px;
 }
 #body .container #panel_wrap{
 	margin: 0 auto!important;
 	width: 90%;
-	background-color: purple;
 }
 #body .container #panel_wrap #how_works_panel_place, #how_jobs_panel_place, #how_page_panel_place{
 	clear: both;
-	background: red;
+	background-image: url("../images/how_video.png");
 	width: 480px;
 	height: 300px;
 	margin: 0 auto;
