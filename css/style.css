@@ -344,7 +344,6 @@ nav{
 }
 #body .container #panel_wrap #how_works_panel_place, #how_jobs_panel_place, #how_page_panel_place{
 	clear: both;
-	background-image: url("../images/how_video.png");
 	width: 480px;
 	height: 300px;
 	margin: 0 auto;

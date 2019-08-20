@@ -170,7 +170,10 @@ nav > *{
 	height: 300px!important;
 	margin: 0 auto;
 }
-
+#body .container #panel_wrap a img{
+	width: 380px!important;
+	height: 300px!important;
+}
 
 #body .container #body_text_wrap h4{
 	margin-bottom: 20px;
