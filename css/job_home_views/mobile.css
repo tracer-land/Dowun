@@ -125,6 +125,86 @@
 }
 
 
+/* Body Section CSS Style! */
+#body{
+	width: 100%;
+	margin-bottom: 30px;
+}
+#body .row{
+	margin-top: 30px;
+}
+#body .row h3{
+	font-size: 22px!important;
+	margin-bottom: 40px;
+}
+#body h3::before{
+	width: 60px;
+	height: 1px;
+	margin-top: 25px;
+}
+
+#body .container #body_img_wrap{
+	display: none!important;
+}
+
+#body .container #body_text_wrap h4{
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+#body .container #body_text_wrap p{
+	text-align: justify;
+	margin-bottom: 30px;
+}
+#body .container #body_text_wrap .btn{
+	display: block;
+	margin-top: 20px!important;
+	margin: 0 auto!important;
+}
+#body .container #body_text_wrap #pull-right{
+	float: none!important;
+}
+#body .container #body_text_wrap #text-right{
+	text-align: left!important;
+}
+
+
+/* Feature Jobs CSS Style! */
+#feature_jobs{
+	width: 100%;
+	background: #fff;
+	padding: 25px 0px 25px 0px;
+}
+#feature_jobs h3{
+	font-size: 22px;
+	margin-bottom: 40px;
+}
+#feature_jobs h3::before{
+	width: 60px;
+	height: 1px;
+	margin-top: 25px;
+}
+
+#feature_jobs .container .row{
+	margin-bottom: 5px;
+}
+#feature_jobs .container .row .col-md-4{
+	width: 90%;
+	margin-bottom: 10px;
+	margin-left: 22px!important;
+}
+/*#feature_jobs .container .row .col-md-4:nth-child(1){
+	margin-left: 10px;
+}
+#feature_jobs .container .row .col-md-4:nth-child(2){
+	margin-left: 10px;
+	margin-right: 10px;
+}*/
+#feature_jobs .container .row .col-md-4 #feature_img_wrap{
+	width: 80%;
+	margin: 0 auto!important;
+}
+
+
 /* Download App CSS Style */
 #download_app{
 	height: 55vh!important;
