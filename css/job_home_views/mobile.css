@@ -197,6 +197,9 @@
 	width: 50px!important;
 	height: 50px!important;
 }
+#feature_jobs .container .row .col-md-4 ul{
+	font-size: 11px!important;
+}
 /*#feature_jobs .container .row .col-md-4:nth-child(1){
 	margin-left: 10px;
 }
@@ -207,9 +210,6 @@
 #feature_jobs .container .row .col-md-4 #feature_img_wrap{
 	width: 50%;
 	margin: 0 auto!important;
-}
-#feature_jobs .container .row .col-md-4 ul{
-	font-size: 11px!important;
 }
 
 

@@ -1,0 +1,342 @@
+<!-- 
+
+Project Title = Dowun
+Project Type = Multi Platform Website
+Project Front-End Technologies = HTML, CSS, Boostrap, JQuery, React
+Project Designed By Tracer Land
+
+ -->
+
+<!-- House Home Page!!! -->
+<!DOCTYPE html>
+<html>
+<head>
+
+		<title>Dowun House</title>
+
+		<!-- Logo Image -->
+		<link rel="icon" href="images/logo.png">
+
+		<!-- Meta Tags -->
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+		<!-- CSS Links! -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<link rel="stylesheet" type="text/css" href="css/house_home.css"><!-- House Home CSS! -->
+
+		<link rel="stylesheet" type="text/css" href="css/house_home_views/mobile.css" media="screen and (max-width:580px)">
+		<link rel="stylesheet" type="text/css" href="css/house_home_views/928px_tablet.css" media="screen and (max-width: 928px)">
+		<link rel="stylesheet" type="text/css" href="css/job_home_views/1228px_tablet.css" media="screen and (max-width: 1228px)">
+		<link rel="stylesheet" type="text/css" href="css/house_home_views/998px_tablet.css" media="screen and (max-width: 998px)">
+
+		<!-- Boostrap CSS! -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Font Style! -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+		<!-- Font Awsome Link -->
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+
+		<!-- JQuery, Bootstrap JS, Script Links! -->
+		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="js/script.js"></script>
+
+		<!-- Header Section Start! -->
+
+			<nav class="navbar navbar-default navbar-fixed-top"><!-- Navigation Start -->
+				<div class="container-fluid">
+
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="index.html">
+							<img src="images/logo.png">
+						</a>
+					</div>
+
+
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<!-- Language Toggle Start! -->
+						<ul id="language_toggle_select" class="nav navbar-nav navbar-right">
+							<li>
+								<span>
+									<a href="#" id="eng">Eng</a>
+									<a href="#" id="mm" class="selected_language">MM</a>
+								</span>
+							</li>
+						</ul>
+						<!-- Language Toggle End! -->
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="#">Jobs</a></li>
+							<li><a href="#">Create a Job</a></li>
+							<li><a href="#">House</a></li>
+							<li><a href="#">Create a Page</a></li>
+							<li><a href="#">Message</a></li>
+							<li><a href="#">Register</a></li>
+							<li><a href="#">Login</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<div id="header">
+				<div class="container">
+					<div id="header_wrap">
+						<h3>Find Your Dream House</h3>
+						<div id="header_form_wrap">
+							<ul>
+								<li id="form_jobs_tab" onClick="form_switchJobs()">
+									Jobs
+								</li>
+								<li id="form_place_tab" onClick="form_switchPlace()">
+									Place
+								</li>
+								<li id="form_flatmate_tab" onClick="form_switchFlatmate()">
+									Flatmate
+								</li>
+							</ul>
+
+							<!-- Form Jobs Inputs! -->
+							<div id="form_jobs">
+
+								<form>
+									
+									<div class="row" style="width: 100%;">
+										<input type="text" name="text" placeholder="Keywords" class="form-control">
+									
+										<select class="form-control">
+											<option>Job Category</option>
+											<option>Developer</option>
+											<option>Programmer</option>
+											<option>Graphic Designer</option>
+										</select>
+
+										<select class="form-control">
+											<option>Location</option>
+											<option>Yangon</option>
+											<option>Mandalay</option>
+											<option>Taunggyi</option>
+										</select>
+									</div>
+
+									<div class="row" id="form_input_second_row">
+										<input type="text" name="text" placeholder="Salary" class="form-control">
+									
+										<select class="form-control">
+											<option>Experience Level</option>
+											<option>Intern</option>
+											<option>Junior</option>
+											<option>Senior</option>
+										</select>
+
+										<select class="form-control">
+											<option>Job Type</option>
+											<option>Freelance</option>
+											<option>Part Time</option>
+											<option>Full Time</option>
+										</select>
+									</div>
+
+									<div class="row" id="form_input_third_row">
+										<button type="submit" value="Search Jobs" class="btn">Search Jobs</button>
+									</div>
+
+								</form>
+								
+							</div>
+
+							<!-- Form Place Inputs -->
+							<div id="form_place">
+								
+								<form>
+									
+									<div class="row" style="width: 100%;">
+										<input type="text" name="text" placeholder="Place" class="form-control">
+									
+										<select class="form-control">
+											<option>Job Category</option>
+											<option>Developer</option>
+											<option>Programmer</option>
+											<option>Graphic Designer</option>
+										</select>
+
+										<select class="form-control">
+											<option>Location</option>
+											<option>Yangon</option>
+											<option>Mandalay</option>
+											<option>Taunggyi</option>
+										</select>
+									</div>
+
+									<div class="row" id="form_input_second_row">
+										<input type="text" name="text" placeholder="Salary" class="form-control">
+									
+										<select class="form-control">
+											<option>Experience Level</option>
+											<option>Intern</option>
+											<option>Junior</option>
+											<option>Senior</option>
+										</select>
+
+										<select class="form-control">
+											<option>Job Type</option>
+											<option>Freelance</option>
+											<option>Part Time</option>
+											<option>Full Time</option>
+										</select>
+									</div>
+
+									<div class="row" id="form_input_third_row">
+										<button type="submit" value="Search Jobs" class="btn">Search Jobs</button>
+									</div>
+
+								</form>
+
+							</div>
+
+							<!-- Form Flatmate Inputs! -->
+							<div id="form_flatmate">
+								
+								<form>
+									
+									<div class="row" style="width: 100%;">
+										<input type="text" name="text" placeholder="Flatmate" class="form-control">
+									
+										<select class="form-control">
+											<option>Job Category</option>
+											<option>Developer</option>
+											<option>Programmer</option>
+											<option>Graphic Designer</option>
+										</select>
+
+										<select class="form-control">
+											<option>Location</option>
+											<option>Yangon</option>
+											<option>Mandalay</option>
+											<option>Taunggyi</option>
+										</select>
+									</div>
+
+									<div class="row" id="form_input_second_row">
+										<input type="text" name="text" placeholder="Salary" class="form-control">
+									
+										<select class="form-control">
+											<option>Experience Level</option>
+											<option>Intern</option>
+											<option>Junior</option>
+											<option>Senior</option>
+										</select>
+
+										<select class="form-control">
+											<option>Job Type</option>
+											<option>Freelance</option>
+											<option>Part Time</option>
+											<option>Full Time</option>
+										</select>
+									</div>
+
+									<div class="row" id="form_input_third_row">
+										<button type="submit" value="Search Jobs" class="btn">Search Jobs</button>
+									</div>
+
+								</form>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Header Section End! -->
+
+
+		<!-- Download App Section Start! -->
+
+			<div  id="download_app">
+				<div class="container">
+					<div id="store">
+						<div class="col-md-6 col-sm-6 col-xs-6">
+							<a href="#">
+								<img src="images/available_applestore.png">
+							</a>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-6">
+							<a href="#">
+								<img src="images/available_playstore.png">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Download App Section End! -->
+
+		<!-- Footer Section Start! -->
+			<div id="footer">
+				<div class="container">
+					<div id="footer_text_wrap">
+							<div class="row">
+								<div class="col-md-2">
+									<p>About</p>
+								</div>
+								<div class="col-md-4">
+									<p class="about_text">Dowun is a multi platform where you can find house, jobs and flatmates. We provide also internet services.</p>
+								</div>
+								<div class="col-md-2">
+									<p>Contact</p>
+								</div>
+								<div class="col-md-4">
+									<ul>
+										<li>
+											<span class="fa fa-phone"></span>&nbsp;&nbsp;
+											<a href="tel:+959 123456789">+959 123456789</a>
+										</li>
+										<li>
+											<span class="fa fa-envelope"></span>&nbsp;&nbsp;
+											<a href="mailto:info@example.com">info@example.com</a>
+										</li>
+										<li>
+											<span class="fa fa-location-arrow"></span>&nbsp;&nbsp;
+											<a href="#">No. 12, Sabal Street, Ahlone Township, Yangon</a>
+										</li>
+										<li>
+											<span class="fa fa-clock-o"></span>&nbsp;&nbsp;
+											<a href="#">Friday: 8am to 5pm</a>
+										</li>
+										<li>
+											<span class="fa fa-calendar-o"></span>&nbsp;&nbsp;
+											<a href="#">Saturday ~ Sunday: Closed</a>
+										</li>
+									</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- Footer Section End! -->
+
+		<!-- Copy Right -->
+		<div id="copyright">
+			Copyright &copy; 2019 Dowun. All Rights Reserved.
+		</div>
+
+</body>
+</html>
