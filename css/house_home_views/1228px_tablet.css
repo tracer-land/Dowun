@@ -18,13 +18,13 @@ nav > *{
 /* Header Form Style */
 #header{
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/main_home_header.png") no-repeat;
-	height: 7000px!important;
+	height: 100vh!important;
 }
 #header_wrap{
 	width: 80%;
 	position: absolute;
 	background-color: green;
-	top: 55%!important;
+	top: -55%!important;
 	left: 50%!important;
 	transform: translate(-50%,-50%)!important;
 	-webkit-transform: translate(-50%,-50%)!important;
