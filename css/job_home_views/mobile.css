@@ -192,6 +192,11 @@
 	margin-bottom: 10px;
 	margin-left: 22px!important;
 }
+#feature_jobs .container .row .col-md-4 img{
+	float: left;
+	width: 50px!important;
+	height: 50px!important;
+}
 /*#feature_jobs .container .row .col-md-4:nth-child(1){
 	margin-left: 10px;
 }
