@@ -32,7 +32,7 @@ Project Designed By Tracer Land
 
 		<link rel="stylesheet" type="text/css" href="css/house_home_views/mobile.css" media="screen and (max-width:580px)">
 		<link rel="stylesheet" type="text/css" href="css/house_home_views/928px_tablet.css" media="screen and (max-width: 928px)">
-		<link rel="stylesheet" type="text/css" href="css/job_home_views/1228px_tablet.css" media="screen and (max-width: 1228px)">
+		<link rel="stylesheet" type="text/css" href="css/house_home_views/1228px_tablet.css" media="screen and (max-width: 1228px)">
 		<link rel="stylesheet" type="text/css" href="css/house_home_views/998px_tablet.css" media="screen and (max-width: 998px)">
 
 		<!-- Boostrap CSS! -->
@@ -103,10 +103,10 @@ Project Designed By Tracer Land
 						<div id="header_form_wrap">
 							<ul>
 								<li id="form_jobs_tab" onClick="form_switchJobs()">
-									Jobs
+									Place
 								</li>
 								<li id="form_place_tab" onClick="form_switchPlace()">
-									Place
+									Jobs
 								</li>
 								<li id="form_flatmate_tab" onClick="form_switchFlatmate()">
 									Flatmate
@@ -122,32 +122,37 @@ Project Designed By Tracer Land
 										<input type="text" name="text" placeholder="Keywords" class="form-control">
 									
 										<select class="form-control">
-											<option>Job Category</option>
+											<option>Purpose</option>
 											<option>Developer</option>
 											<option>Programmer</option>
 											<option>Graphic Designer</option>
 										</select>
 
 										<select class="form-control">
-											<option>Location</option>
+											<option>Property Type</option>
 											<option>Yangon</option>
 											<option>Mandalay</option>
 											<option>Taunggyi</option>
 										</select>
 									</div>
 
-									<div class="row" id="form_input_second_row">
-										<input type="text" name="text" placeholder="Salary" class="form-control">
-									
+									<div class="row" id="form_input_second_row">									
 										<select class="form-control">
-											<option>Experience Level</option>
-											<option>Intern</option>
-											<option>Junior</option>
-											<option>Senior</option>
+											<option>Location</option>
+											<option>Yangon</option>
+											<option>Mandalay</option>
+											<option>Taunggyi</option>
 										</select>
 
 										<select class="form-control">
-											<option>Job Type</option>
+											<option>Bed Room</option>
+											<option>Yangon</option>
+											<option>Mandalay</option>
+											<option>Taunggyi</option>
+										</select>
+
+										<select class="form-control">
+											<option>Bath Room</option>
 											<option>Freelance</option>
 											<option>Part Time</option>
 											<option>Full Time</option>
@@ -155,6 +160,15 @@ Project Designed By Tracer Land
 									</div>
 
 									<div class="row" id="form_input_third_row">
+										<input type="text" name="text" placeholder="Area" class="form-control">
+									
+										<select class="form-control">
+											<option>Price</option>
+											<option>Intern</option>
+											<option>Junior</option>
+											<option>Senior</option>
+										</select>
+
 										<button type="submit" value="Search Jobs" class="btn">Search Jobs</button>
 									</div>
 
@@ -266,6 +280,66 @@ Project Designed By Tracer Land
 			</div>
 
 		<!-- Header Section End! -->
+
+
+		<!-- Body Section Start! -->
+
+			<div id="body">
+				<div class="container">
+					
+					<!-- How Creat Job Start! -->
+					<div class="row">
+					<h3>HOW TO CREATE A JOB</h3>
+						<div id="body_img_wrap" class="col-md-6 col-sm-12 col-xs-12">
+							<div id="panel_wrap">
+								<ul>
+									<!-- Create Job Tab!! -->
+									<li id="how_jobs_place" style="color:#fff;background: #3a9bfa;" onClick="jobs_switchPlace()">
+										Create Job
+									</li>
+									<!-- Post Job Tab!! -->
+									<li id="how_jobs_jobs" onClick="jobs_switchJobs()">
+										Post Job
+									</li>
+									<!-- Find Job Tab!! -->
+									<li id="how_jobs_flatmate" onClick="jobs_switchFlatmate()">
+										Find Job
+									</li>
+								</ul>
+
+								<!-- Create Job Panel!! -->
+								<a href="#">
+									<div id="how_jobs_panel_place">
+										<img src="images/how_video.png">
+									</div>
+								</a>
+								<!-- Post Job Panel!! -->
+								<a href="#">
+									<div id="how_jobs_panel_jobs">
+										<img src="images/how_video.png">
+									</div>
+								</a>
+								<!-- Find Job Panel!! -->
+								<a href="#">
+									<div id="how_jobs_panel_flatmate">
+										<img src="images/how_video.png">
+									</div>
+								</a>
+							</div>
+						</div>
+						<div id="body_text_wrap" class="col-md-6 col-sm-12 col-xs-12">
+							<h4 id="text-right">Find Jobs, Place and Flatmate</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam.
+							</p>
+							<button class="btn btn-bg btn-info" id="pull-right">Create Job</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		<!-- Body Section End! -->
 
 
 		<!-- Download App Section Start! -->
