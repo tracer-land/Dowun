@@ -7,7 +7,7 @@
 	margin-left: 10px!important;
 }
 nav > *{
-	font-size: 12px!important;
+	font-size: 14px!important;
 }
 
 /* Language Toggle From Navigation */
@@ -18,7 +18,7 @@ nav > *{
 /* Header Form Style */
 #header{
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/mobile_size_main_home_header.png") no-repeat!important;
-	height: 100vh;
+	height: 100vh!important;
 }
 #header_wrap{
 	width: 80%;
