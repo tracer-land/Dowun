@@ -23,8 +23,7 @@ nav > *{
 #header_wrap{
 	width: 80%;
 	position: absolute;
-	background-color: green;
-	top: -55%!important;
+	top: 55%!important;
 	left: 50%!important;
 	transform: translate(-50%,-50%)!important;
 	-webkit-transform: translate(-50%,-50%)!important;
@@ -41,19 +40,19 @@ nav > *{
 }
 #header_wrap #form_jobs{
 	width: 90%!important;
-	height: 330px;
+	height: 420px!important;
 	padding: 0px 12px 0px 25px;
 	margin-left: 20px!important;
 }
 #header_wrap #form_place{
 	width: 90%!important;
-	height: 330px;
+	height: 420px!important;
 	padding: 0px 12px 0px 25px;
 	margin-left: 20px!important;
 }
 #header_wrap #form_flatmate{
 	width: 90%!important;
-	height: 330px;
+	height: 420px!important;
 	padding: 0px 12px 0px 25px;
 	margin-left: 20px!important;
 }
