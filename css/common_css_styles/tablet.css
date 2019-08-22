@@ -29,19 +29,19 @@ nav > *{
 
 #header_wrap #form_jobs{
 	width: 90%!important;
-	height: 330px;
+	height: 150px;
 	padding: 0px 12px 0px 25px;
 	margin-left: 20px!important;
 }
 #header_wrap #form_place{
 	width: 90%!important;
-	height: 330px;
+	height: 150px;
 	padding: 0px 12px 0px 25px;
 	margin-left: 20px!important;
 }
 #header_wrap #form_flatmate{
 	width: 90%!important;
-	height: 330px;
+	height: 150px;
 	padding: 0px 12px 0px 25px;
 	margin-left: 20px!important;
 }
@@ -57,13 +57,7 @@ nav > *{
 #header #form_jobs form{
 	width: 85%;
 }
-#header #form_jobs form #form_input_second_row{
-	margin-top: 0px!important;
-}
-#header #form_jobs form #form_input_third_row{
-	margin-top: 0px!important;
-}
-#header #form_jobs form #form_input_third_row .btn{
+#header #form_jobs form .btn{
 	width: 100%!important;
 }
 
@@ -78,13 +72,7 @@ nav > *{
 #header #form_place form{
 	width: 85%;
 }
-#header #form_place form #form_input_second_row{
-	margin-top: 0px!important;
-}
-#header #form_place form #form_input_third_row{
-	margin-top: 0px!important;
-}
-#header #form_place form #form_input_third_row .btn{
+#header #form_place form .btn{
 	width: 100%!important;
 }
 
@@ -99,13 +87,7 @@ nav > *{
 #header #form_flatmate form{
 	width: 85%;
 }
-#header #form_flatmate form #form_input_second_row{
-	margin-top: 0px!important;
-}
-#header #form_flatmate form #form_input_third_row{
-	margin-top: 0px!important;
-}
-#header #form_flatmate form #form_input_third_row .btn{
+#header #form_flatmate form .btn{
 	width: 100%!important;
 }
 
