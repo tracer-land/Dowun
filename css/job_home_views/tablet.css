@@ -6,7 +6,7 @@
 	height: 100vh!important;
 }
 #header_wrap{
-	width: 80%;
+	width: 100%!important;
 	position: absolute;
 	top: 55%!important;
 	left: 50%!important;
@@ -18,29 +18,32 @@
 }
 
 #header_wrap #form_jobs{
-	width: 90%!important;
+	width: 95%!important;
 	height: 350px!important;
-	padding: 0px 12px 0px 25px;
-	margin-left: 20px!important;
+	padding: 0px 0px 0px 0px;
+	margin-left: 0px!important;
+	margin: 0 auto!important;
 }
 #header_wrap #form_place{
-	width: 90%!important;
+	width: 95%!important;
 	height: 350px!important;
-	padding: 0px 12px 0px 25px;
-	margin-left: 20px!important;
+	padding: 0px 0px 0px 0px;
+	margin-left: 0px!important;
+	margin: 0 auto!important;
 }
 #header_wrap #form_flatmate{
-	width: 90%!important;
+	width: 95%!important;
 	height: 350px!important;
-	padding: 0px 12px 0px 25px;
-	margin-left: 20px!important;
+	padding: 0px 0px 0px 0px;
+	margin-left: 0px!important;
+	margin: 0 auto!important;
 }
 
 #header #form_jobs form #form_input_second_row{
 	width: 100%;
 }
 #header #form_jobs form #form_input_third_row{
-	width: 98%;
+	width: 100%;
 	margin-top: 0px!important;
 }
 #header #form_jobs form #form_input_third_row .btn{

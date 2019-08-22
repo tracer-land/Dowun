@@ -6,6 +6,9 @@
 }
 
 /* Header Form Style */
+#header_wrap{
+	width: 100%!important;
+}
 #header #header_wrap h3{
 	margin-bottom: 15px;
 	margin-left: 20px!important;

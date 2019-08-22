@@ -6,7 +6,7 @@
 	height: 100vh!important;
 }
 #header_wrap{
-	width: 90%!important;
+	width: 100%!important;
 	position: absolute;
 	top: 50%!important;
 	left: 50%!important;
@@ -18,22 +18,25 @@
 }
 
 #header_wrap #form_jobs{
-	width: 90%!important;
+	width: 95%!important;
 	height: 400px!important;
-	padding: 0px 12px 0px 25px;
-	margin-left: 20px!important;
+	padding: 0px 0px 0px 0px;
+	margin-left: 0px!important;
+	margin: 0 auto!important;
 }
 #header_wrap #form_place{
-	width: 90%!important;
+	width: 95%!important;
 	height: 400px!important;
-	padding: 0px 12px 0px 25px;
-	margin-left: 20px!important;
+	padding: 0px 0px 0px 0px;
+	margin-left: 0px!important;
+	margin: 0 auto!important;
 }
 #header_wrap #form_flatmate{
-	width: 90%!important;
+	width: 95%!important;
 	height: 400px!important;
-	padding: 0px 12px 0px 25px;
-	margin-left: 20px!important;
+	padding: 0px 0px 0px 0px;
+	margin-left: 0px!important;
+	margin: 0 auto!important;
 }
 
 /*Jobs*/
