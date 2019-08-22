@@ -1,4 +1,4 @@
-/* Tablet View CSS Style (998px) */
+/* Mobile View CSS Style (580px) */
 
 /* Language Toggle From Navigation */
 #language_toggle_select{
@@ -11,15 +11,15 @@
 	height: 100vh!important;
 }
 #header_wrap{
-	width: 80%;
-	position: absolute;
+	width: 100%!important;
+	/*position: absolute;
 	top: 50%!important;
 	left: 50%!important;
 	transform: translate(-50%,-50%)!important;
 	-webkit-transform: translate(-50%,-50%)!important;
 	-ms-transform: translate(-50%,-50%)!important;
 	-moz-transform: translate(-50%,-50%)!important;
-	-o-transform: translate(-50%,-50%)!important;
+	-o-transform: translate(-50%,-50%)!important;*/
 }
 #header #header_wrap h3{
 	margin-bottom: 15px;
@@ -30,19 +30,19 @@
 }
 #header_wrap #form_jobs{
 	width: 90%!important;
-	height: 330px;
+	height: 420px!important;
 	padding: 0px 12px 0px 25px;
 	margin-left: 20px!important;
 }
 #header_wrap #form_place{
 	width: 90%!important;
-	height: 330px;
+	height: 420px!important;
 	padding: 0px 12px 0px 25px;
 	margin-left: 20px!important;
 }
 #header_wrap #form_flatmate{
 	width: 90%!important;
-	height: 330px;
+	height: 420px!important;
 	padding: 0px 12px 0px 25px;
 	margin-left: 20px!important;
 }
@@ -119,11 +119,8 @@
 #body .row{
 	margin-top: 30px;
 }
-#body .row:last-child{
-	margin-top: 50px!important;
-}
 #body .row h3{
-	font-size: 22px;
+	font-size: 22px!important;
 	margin-bottom: 40px;
 }
 #body h3::before{

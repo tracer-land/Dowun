@@ -1,14 +1,4 @@
-/* Tablet View CSS Style (1228px) */
-
-.navbar-right{
-	margin-right: 10px!important;
-}
-.navbar-header a{
-	margin-left: 10px!important;
-}
-nav > *{
-	font-size: 14px!important;
-}
+/* Mobile View CSS Style (580px) */
 
 /* Language Toggle From Navigation */
 #language_toggle_select{
@@ -17,13 +7,13 @@ nav > *{
 
 /* Header Form Style */
 #header{
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/main_home_header.png") no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/mobile_size_main_home_header.png") no-repeat!important;
 	height: 100vh!important;
 }
 #header_wrap{
 	width: 80%;
 	position: absolute;
-	top: 50%!important;
+	top: 55%!important;
 	left: 50%!important;
 	transform: translate(-50%,-50%)!important;
 	-webkit-transform: translate(-50%,-50%)!important;
@@ -138,13 +128,13 @@ nav > *{
 /* Body Section CSS Style! */
 #body{
 	width: 100%;
-	/*margin-bottom: 30px;*/
+	margin-bottom: 30px;
 }
 #body .row{
 	margin-top: 30px;
 }
 #body .row h3{
-	font-size: 22px;
+	font-size: 22px!important;
 	margin-bottom: 40px;
 }
 #body h3::before{
@@ -153,37 +143,8 @@ nav > *{
 	margin-top: 25px;
 }
 
-
 #body .container #body_img_wrap{
-	/*display: none!important;*/
-}
-
-#body .container ul{
-	margin-left: -12px!important;
-}
-
-#body .container #panel_wrap{
-	margin: 0 auto!important;
-	width: 90%;
-}
-#body .container #panel_wrap #how_jobs_panel_place{
-	width: 380px!important;
-	height: 300px!important;
-	margin: 0 auto;
-}
-#body .container #panel_wrap #how_jobs_panel_jobs{
-	width: 380px!important;
-	height: 300px!important;
-	margin: 0 auto;
-}
-#body .container #panel_wrap #how_jobs_panel_flatmate{
-	width: 380px!important;
-	height: 300px!important;
-	margin: 0 auto;
-}
-#body .container #panel_wrap a img{
-	width: 380px!important;
-	height: 300px!important;
+	display: none!important;
 }
 
 #body .container #body_text_wrap h4{
@@ -195,25 +156,60 @@ nav > *{
 	margin-bottom: 30px;
 }
 #body .container #body_text_wrap .btn{
-	/*display: block;*/
+	display: block;
 	margin-top: 20px!important;
-	/*margin: 0 auto!important;*/
+	margin: 0 auto!important;
 }
 #body .container #body_text_wrap #pull-right{
-	/*float: none!important;*/
+	float: none!important;
 }
 #body .container #body_text_wrap #text-right{
-	/*text-align: left!important;*/
+	text-align: left!important;
 }
 
 
 /* Feature Jobs CSS Style! */
-#feature_jobs .container .row .col-md-4 #feature_img_wrap{
-	width: 90%;
-	margin: 0 auto!important;
+#feature_jobs{
+	width: 100%;
+	background: #fff;
+	padding: 25px 0px 25px 0px;
 }
-#feature_jobs .container .row .col-md-4 ul li span, small{
-	margin-left: 10px!important;
+#feature_jobs h3{
+	font-size: 22px;
+	margin-bottom: 40px;
+}
+#feature_jobs h3::before{
+	width: 60px;
+	height: 1px;
+	margin-top: 25px;
+}
+
+#feature_jobs .container .row{
+	margin-bottom: 5px;
+}
+#feature_jobs .container .row .col-md-4{
+	width: 90%;
+	margin-bottom: 10px;
+	margin-left: 22px!important;
+}
+#feature_jobs .container .row .col-md-4 img{
+	float: left;
+	width: 50px!important;
+	height: 50px!important;
+}
+#feature_jobs .container .row .col-md-4 ul{
+	font-size: 11px!important;
+}
+/*#feature_jobs .container .row .col-md-4:nth-child(1){
+	margin-left: 10px;
+}
+#feature_jobs .container .row .col-md-4:nth-child(2){
+	margin-left: 10px;
+	margin-right: 10px;
+}*/
+#feature_jobs .container .row .col-md-4 #feature_img_wrap{
+	width: 50%;
+	margin: 0 auto!important;
 }
 
 
@@ -236,11 +232,7 @@ nav > *{
 	height: 30px;
 }
 
-
 /* Footer CSS Style */
 #footer{
 	display: none!important;
 }
-
-
-
