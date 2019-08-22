@@ -17,7 +17,39 @@
 	-o-transform: translate(-50%,-50%)!important;
 }
 
+#header_wrap #form_jobs{
+	width: 90%!important;
+	height: 350px!important;
+	padding: 0px 12px 0px 25px;
+	margin-left: 20px!important;
+}
+#header_wrap #form_place{
+	width: 90%!important;
+	height: 350px!important;
+	padding: 0px 12px 0px 25px;
+	margin-left: 20px!important;
+}
+#header_wrap #form_flatmate{
+	width: 90%!important;
+	height: 350px!important;
+	padding: 0px 12px 0px 25px;
+	margin-left: 20px!important;
+}
 
+#header #form_jobs form #form_input_second_row{
+	width: 100%;
+}
+#header #form_jobs form #form_input_third_row{
+	width: 98%;
+	margin-top: 0px!important;
+}
+#header #form_jobs form #form_input_third_row .btn{
+	background: #3a9bfa!important;
+	color: #fff!important;
+	width: 100%!important;
+	margin: 0 auto!important;
+	display: block!important;
+}
 
 
 /* Find Jobs CSS Style! */
