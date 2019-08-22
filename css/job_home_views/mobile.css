@@ -76,3 +76,9 @@
 	width: 80%;
 	margin: 0 auto!important;
 }
+
+/* Download App CSS Style */
+#download_app{
+	height: 55vh!important;
+	background-image: url('../../images/mobile_size_download_app.png')!important;
+}

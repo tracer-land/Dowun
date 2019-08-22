@@ -144,7 +144,7 @@ nav > *{
 /* Download App CSS Style */
 #download_app{
 	height: 55vh!important;
-	background-image: url('../../images/mobile_size_download_app.png');
+	background-image: url('../../images/tablet_size_download_app.png');
 }
 #download_app .container #store{
 	width: 50%;

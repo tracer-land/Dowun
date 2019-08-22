@@ -42,3 +42,10 @@
 
 /* Body Section CSS Style! */
 /*Add CSS*/
+
+
+/* Download App CSS Style */
+#download_app{
+	height: 55vh!important;
+	background-image: url('../../images/mobile_size_download_app.png')!important;
+}

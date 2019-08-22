@@ -1,4 +1,4 @@
-/* Common CSS Style Sheets!!! (998px) */
+/* Common CSS Style Sheets!!! (600px) */
 
 /* Language Toggle From Navigation */
 #language_toggle_select{
@@ -142,7 +142,7 @@
 /* Download App CSS Style */
 #download_app{
 	height: 55vh!important;
-	background-image: url('../../images/mobile_size_download_app.png');
+	background-image: url('../../images/tablet_size_download_app.png')!important;
 }
 #download_app .container #store{
 	width: 50%;
