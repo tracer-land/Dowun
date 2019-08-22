@@ -1,10 +1,10 @@
-/* Mobile View CSS Style (998px) */
+/* Mobile View CSS Style (600px) */
 
 
 
 /* Header Form Style */
 #header{
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/mobile_size_main_home_header.png") no-repeat!important;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/mobile_size_house_home_header.png") no-repeat!important;
 	height: 100vh!important;
 }
 #header_wrap{
