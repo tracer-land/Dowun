@@ -11,7 +11,7 @@ Project Designed By Tracer Land
 <!DOCTYPE html>
 <html>
 <head>
-
+		
 		<title>Dowun Multi Platform</title>
 
 		<!-- Logo Image -->
@@ -31,11 +31,11 @@ Project Designed By Tracer Land
 		<link rel="stylesheet" type="text/css" href="css/main_home.css"><!-- Main Home CSS! -->
 
 		<!-- Common CSS Styles! -->
-		<link rel="stylesheet" type="text/css" href="css/common_css_styles/mobile.css" media="screen and (max-width: 998px)">
-		<link rel="stylesheet" type="text/css" href="css/common_css_styles/tablet.css" media="screen and (max-width: 1228px)">
+		<link rel="stylesheet" type="text/css" href="css/common_css_styles/mobile.css" media="screen and (max-width: 600px)">
+		<link rel="stylesheet" type="text/css" href="css/common_css_styles/tablet.css" media="screen and (max-width: 998px)">
 
-		<link rel="stylesheet" type="text/css" href="css/main_home_views/mobile.css" media="screen and (max-width: 600px)">
-		<link rel="stylesheet" type="text/css" href="css/main_home_views/tablet.css" media="screen and (max-width: 1282px)">
+		<link rel="stylesheet" type="text/css" href="css/main_home_views/mobile.css" media="screen and (max-width: 768px)">
+		<link rel="stylesheet" type="text/css" href="css/main_home_views/tablet.css" media="screen and (max-width: 1028px)">
 
 		<!-- Boostrap CSS! -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -57,10 +57,8 @@ Project Designed By Tracer Land
 		<script type="text/javascript" src="js/script.js"></script>
 
 		<!-- Header Section Start! -->
-
 			<nav class="navbar navbar-default navbar-fixed-top"><!-- Navigation Start -->
 				<div class="container-fluid">
-
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 							<span class="icon-bar"></span>
@@ -71,7 +69,6 @@ Project Designed By Tracer Land
 							<img src="images/logo.png">
 						</a>
 					</div>
-
 
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<!-- Language Toggle Start! -->
@@ -85,8 +82,8 @@ Project Designed By Tracer Land
 						</ul>
 						<!-- Language Toggle End! -->
 						<ul class="nav navbar-nav navbar-right">
-							<li class="active"><a href="job.html">Search Jobs</a></li>
-							<li><a href="house.html">Search House</a></li>
+							<li class="active"><a href="#">Search Jobs</a></li>
+							<li><a href="#">Search House</a></li>
 							<li><a href="#">Search Flatmate</a></li>
 							<li><a href="#">Create a Post</a></li>
 							<li><a href="#">Register</a></li>
@@ -99,23 +96,25 @@ Project Designed By Tracer Land
 			<div id="header">
 				<div class="container">
 					<div id="header_wrap">
+						
 						<h3>Find Your Ways</h3>
+						<!-- Form! -->
 						<div id="header_form_wrap">
+							<!-- Tabs -->
 							<ul>
-								<li id="form_jobs_tab" onClick="form_switchJobs()">
+								<li id="tab_one" onClick="form_switchOne()">
 									Jobs
 								</li>
-								<li id="form_place_tab" onClick="form_switchPlace()">
+								<li id="tab_two" onClick="form_switchTwo()">
 									Place
 								</li>
-								<li id="form_flatmate_tab" onClick="form_switchFlatmate()">
+								<li id="tab_three" onClick="form_switchThree()">
 									Flatmate
 								</li>
 							</ul>
 
 							<!-- Form Jobs Inputs! -->
-							<div id="form_jobs">
-
+							<div id="form_one">
 								<form>
 									
 									<div class="row" style="width: 100%;">
@@ -129,18 +128,13 @@ Project Designed By Tracer Land
 										</select>
 
 										<button type="submit" value="Search Jobs" class="btn">Search Jobs</button>
-
 									</div>
-
 								</form>
-								
 							</div>
 
 							<!-- Form Place Inputs -->
-							<div id="form_place">
-								
+							<div id="form_two">							
 								<form>
-									
 									<div class="row" style="width: 100%;">
 										<input type="text" name="text" placeholder="Place" class="form-control">
 
@@ -152,18 +146,13 @@ Project Designed By Tracer Land
 										</select>
 
 										<button type="submit" value="Search Jobs" class="btn">Search Place</button>
-
 									</div>
-
 								</form>
-
 							</div>
 
 							<!-- Form Flatmate Inputs! -->
-							<div id="form_flatmate">
-								
+							<div id="form_three">
 								<form>
-									
 									<div class="row" style="width: 100%;">
 										<input type="text" name="text" placeholder="Flatmate" class="form-control">
 
@@ -175,37 +164,105 @@ Project Designed By Tracer Land
 										</select>
 
 										<button type="submit" value="Search Jobs" class="btn">Search Flatmate</button>
-
 									</div>
-
 								</form>
-
 							</div>
-
 						</div>
+
 					</div>
 				</div>
 			</div>
-
 		<!-- Header Section End! -->
 
 
-		<!-- Category Carousel Start! -->
+		<!-- Category Section Start! -->
+			<div id="category_slider">
+				<div class="container">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+						
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+						</ol>
 
-		<div style="background: red;width: 100%;height: 50vh;">
-			
-			
+						 <!-- Wrapper for slides -->
+						 <div class="carousel-inner">
+						 	<div class="item active">
+						 		<div class="col-md-3 col-sm-6 col-xs-6">
+						 			<div id="category_item">
+						 				<img src="images/living_room_icon.png">
+						 				<h4>Find a Property</h4>
+						 				<small>12 Properties</small>
+						 				<button>Find a Property</button>
+						 			</div>
+						 		</div>
+						 		<div class="col-md-3 col-sm-6 col-xs-6">
+						 			<div id="category_item">
+						 				<img src="images/roommate_icon.png">
+						 				<h4>Find a Roomate</h4>
+						 				<small>15 Properties</small>
+						 				<button>Find a Roomate</button>
+						 			</div>
+						 		</div>
+						 		<div class="col-md-3 col-sm-6 col-xs-6">
+						 			<div id="category_item">
+						 				<img src="images/job_search_icon.png">
+						 				<h4>Find a Job</h4>
+						 				<small>35 Properties</small>
+						 				<button>Find a Job</button>
+						 			</div>
+						 		</div>
+						 		<div class="col-md-3 col-sm-6 col-xs-6">
+						 			<div id="category_item">
+						 				<img src="images/wifi_icon.png">
+						 				<h4>Connect an Internet</h4>
+						 				<small>More Plan</small>
+						 				<button>Connect</button>
+						 			</div>
+						 		</div>
+						 	</div>
+						 	<div class="item">
+						 		<div class="col-md-3">
+						 			<div id="category_item">
+						 				<img src="images/living_room_icon.png">
+						 				<h4>Find a Property</h4>
+						 				<small>12 Properties</small>
+						 				<button>Find a Property</button>
+						 			</div>
+						 		</div>
+						 		<div class="col-md-3">
+						 			<div id="category_item">
+						 				<img src="images/living_room_icon.png">
+						 				<h4>Find a Property</h4>
+						 				<small>12 Properties</small>
+						 				<button>Find a Property</button>
+						 			</div>
+						 		</div>
+						 	</div>
+						 </div>
 
-		</div>
+						  <!-- Left and right controls -->
+						  <a style="width: 50px!important;" class="left carousel-control" href="#myCarousel" data-slide="prev">
+						  		<span class="glyphicon glyphicon-chevron-left"></span>
+    							<span class="sr-only">Previous</span>
+						  </a>
 
-		<!-- Category Carousel End! -->
+						  <a style="width: 50px!important;" class="right carousel-control" href="#myCarousel" data-slide="next">
+						  		<span class="glyphicon glyphicon-chevron-right"></span>
+    							<span class="sr-only">Previous</span>
+						  </a>
+
+					</div>
+				</div>
+			</div>
+		<!-- Category Section End! -->
 
 
 		<!-- Body Section Start! -->
 			<div id="body">
-				
 				<div class="container">
-					
+
 					<!-- How it works start! -->
 					<div class="row">
 						<h3>HOW IT WORKS</h3>
@@ -219,64 +276,64 @@ Project Designed By Tracer Land
 						<div id="body_img_wrap" class="col-md-6 col-sm-12 col-xs-12">
 							<div id="panel_wrap">
 								<ul>
-									<li id="how_works_place" onClick="work_switchPlace()">
-										Place
-									</li>
-									<li id="how_works_jobs" onClick="work_switchJobs()">
+									<li id="how_works_one" onClick="work_switchOne()">
 										Jobs
 									</li>
-									<li id="how_works_flatmate" onClick="work_switchFlatmate()">
+									<li id="how_works_two" onClick="work_switchTwo()">
+										Place
+									</li>
+									<li id="how_works_three" onClick="work_switchThree()">
 										Flatmate
 									</li>
 								</ul>
 								<a href="#">
-									<div id="how_works_panel_place">
+									<div id="how_works_panel_one">
 										<img src="images/how_video.png">
 									</div>
 								</a>
 								<a href="#">
-									<div id="how_works_panel_jobs">
+									<div id="how_works_panel_two">
 										<img src="images/logo.png">
 									</div>
 								</a>
 								<a href="#">
-									<div id="how_works_panel_flatmate">
-										<img src="images/how_video.png">
+									<div id="how_works_panel_three">
+										<img src="images/download_app.png">
 									</div>
 								</a>
 							</div>
 						</div>
 					</div>
 
-					<!-- How Creat Job Start! -->
+					<!-- How create job start! -->
 					<div class="row">
-					<h3>HOW TO CREATE A JOB</h3>
+						<h3>HOW To Create A Job</h3>
 						<div id="body_img_wrap" class="col-md-6 col-sm-12 col-xs-12">
 							<div id="panel_wrap">
 								<ul>
-									<li id="how_jobs_place" style="color:#fff;background: #3a9bfa;" onClick="jobs_switchPlace()">
-										Place
+									<li id="how_jobs_one" style="color:#fff;background: #3a9bfa;" onClick="jobs_switchOne()">
+										Create Job
 									</li>
-									<li id="how_jobs_jobs" onClick="jobs_switchJobs()">
-										Jobs
+									<li id="how_jobs_two" onClick="jobs_switchTwo()">
+										Post Place
 									</li>
-									<li id="how_jobs_flatmate" onClick="jobs_switchFlatmate()">
-										Flatmate
+									<li id="how_jobs_three" onClick="jobs_switchThree()">
+										Find Place
 									</li>
 								</ul>
 								<a href="#">
-									<div id="how_jobs_panel_place">
+									<div id="how_jobs_panel_one">
 										<img src="images/how_video.png">
 									</div>
 								</a>
 								<a href="#">
-									<div id="how_jobs_panel_jobs">
-										<img src="images/how_video.png">
+									<div id="how_jobs_panel_two">
+										<img src="images/logo.png">
 									</div>
 								</a>
 								<a href="#">
-									<div id="how_jobs_panel_flatmate">
-										<img src="images/how_video.png">
+									<div id="how_jobs_panel_three">
+										<img src="images/download_app.png">
 									</div>
 								</a>
 							</div>
@@ -286,13 +343,13 @@ Project Designed By Tracer Land
 							<p>
 								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam.
 							</p>
-							<button class="btn btn-bg btn-info" id="pull-right">More</button>
+							<button id="pull-right" class="btn btn-bg btn-info">More</button>
 						</div>
 					</div>
 
-					<!-- How Create Page Start! -->
+					<!-- How create page start! -->
 					<div class="row">
-					<h3>HOW TO CREATE A PAGE</h3>
+						<h3>HOW To Create A Page</h3>
 						<div id="body_text_wrap" class="col-md-6 col-sm-12 col-xs-12">
 							<h4>Find Jobs, Place and Flatmate</h4>
 							<p>
@@ -303,42 +360,41 @@ Project Designed By Tracer Land
 						<div id="body_img_wrap" class="col-md-6 col-sm-12 col-xs-12">
 							<div id="panel_wrap">
 								<ul>
-									<li id="how_page_place" style="color:#fff;background: #3a9bfa;" onClick="page_switchPlace()">
+									<li id="how_page_one" style="color:#fff;background: #3a9bfa;" onClick="page_switchOne()">
 										Place
 									</li>
-									<li id="how_page_jobs" onClick="page_switchJobs()">
+									<li id="how_page_two" onClick="page_switchTwo()">
 										Jobs
 									</li>
-									<li id="how_page_flatmate" onClick="page_switchFlatmate()">
+									<li id="how_page_three" onClick="page_switchThree()">
 										Flatmate
 									</li>
 								</ul>
 								<a href="#">
-									<div id="how_page_panel_place">
+									<div id="how_page_panel_one">
 										<img src="images/how_video.png">
 									</div>
 								</a>
 								<a href="#">
-									<div id="how_page_panel_jobs">
-										<img src="images/how_video.png">
+									<div id="how_page_panel_two">
+										<img src="images/logo.png">
 									</div>
 								</a>
 								<a href="#">
-									<div id="how_page_panel_flatmate">
-										<img src="images/how_video.png">
+									<div id="how_page_panel_three">
+										<img src="images/download_app.png">
 									</div>
 								</a>
 							</div>
 						</div>
 					</div>
-
+					
 				</div>
-
 			</div>
 		<!-- Body Section End! -->
 
-		<!-- Download App Section Start! -->
 
+		<!-- Download App Section Start! -->
 			<div  id="download_app">
 				<div class="container">
 					<div id="store">
@@ -355,8 +411,8 @@ Project Designed By Tracer Land
 					</div>
 				</div>
 			</div>
-
 		<!-- Download App Section End! -->
+
 
 		<!-- Footer Section Start! -->
 			<div id="footer">
@@ -406,12 +462,6 @@ Project Designed By Tracer Land
 		<div id="copyright">
 			Copyright &copy; 2019 Dowun. All Rights Reserved.
 		</div>
-
-		<script type="text/javascript">
-			$(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
-});
-		</script>
 
 </body>
 </html>

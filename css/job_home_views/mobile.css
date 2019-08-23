@@ -19,6 +19,14 @@
 	-o-transform: translate(-50%,-50%)!important;
 }
 
+#header #header_wrap h3{
+	margin-bottom: 15px;
+	margin-left: 18px!important;
+}
+#header_wrap #header_form_wrap ul{
+	margin-left: -28px!important;
+}
+
 #header_wrap #form_jobs{
 	width: 90%!important;
 	height: 350px;
