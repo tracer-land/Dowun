@@ -43,6 +43,42 @@
 #header #form_one form .btn{
 	width: 100%!important;
 }
+/*Form Place*/
+#header_wrap #form_two{
+	width: 90%;
+	height: 150px;
+	padding: 0px 0px 0px 0px;
+	margin-left: 0px;
+	margin: 0 auto;
+}
+#header #form_two form input, form select{
+	width: 100%!important;
+	margin-bottom: 10px;
+}
+#header #form_two form{
+	width: 85%;
+}
+#header #form_two form .btn{
+	width: 100%!important;
+}
+/*Form Flatmate*/
+#header_wrap #form_three{
+	width: 90%;
+	height: 150px;
+	padding: 0px 0px 0px 0px;
+	margin-left: 0px;
+	margin: 0 auto;
+}
+#header #form_three form input, form select{
+	width: 100%!important;
+	margin-bottom: 10px;
+}
+#header #form_three form{
+	width: 85%;
+}
+#header #form_three form .btn{
+	width: 100%!important;
+}
 
 
 /* Body Section CSS Style! */
