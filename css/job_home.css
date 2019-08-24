@@ -5,6 +5,7 @@
 	background-image: url("../images/job_home_header.png");
 	background-size: cover;
 }
+/*Form*/
 #header_wrap{
 	width: 70%;
 	position: absolute;
@@ -27,7 +28,7 @@
 	background: #fff;
 	color: #000;
 }
-#header_wrap #header_form_wrap ul #form_jobs_tab{
+#header_wrap #header_form_wrap ul #tab_one{
 	background: #3a9bfa;
 	color: #fff;
 }
@@ -35,39 +36,19 @@
 	margin-left: 4px;
 	margin-right: 4px
 }
-
-#header_wrap #form_jobs{
+/*Form_Job*/
+#header_wrap #form_one{
 	clear: both;
 	background: rgba(255,255,255,0.5);
 	width: 75%;
-	height: 150px;
+	height: 80px;
 	padding: 0px 12px 0px 30px;
 	margin-left: 40px;
 }
-#header_wrap #form_place{
-	display: none;
-	background: rgba(255,255,255,0.5);
-	clear: both;
-	width: 75%;
-	height: 150px;
-	padding: 0px 12px 0px 30px;
-	margin-left: 40px;
-}
-#header_wrap #form_flatmate{
-	display: none;
-	background: rgba(255,255,255,0.5);
-	clear: both;
-	width: 75%;
-	height: 150px;
-	padding: 0px 12px 0px 30px;
-	margin-left: 40px;
-}
-
-/* Jobs */
-#header #form_jobs{
+#header #form_one{
 	position: relative;
 }
-#header #form_jobs form{
+#header #form_one form{
 	width: 100%;
 	position: relative;
 	top: 50%;
@@ -78,34 +59,34 @@
 	-moz-transform: translate(-50%,-50%)!important;
 	-o-transform: translate(-50%,-50%)!important;
 }
-#header #form_jobs form input, form select{
+#header #form_one form input, form select{
 	width: 31.5%!important;
 	float: left;
 	margin-right: 10px;
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
 	border: 0px!important;
 }
-#header #form_jobs form #form_input_second_row{
-	width: 100%;
-	margin-top: 10px;
-}
-#header #form_jobs form #form_input_third_row{
-	width: 98%;
-	margin-top: 10px!important;
-}
-#header #form_jobs form #form_input_third_row .btn{
+#header #form_one form .btn{
 	background: #3a9bfa!important;
 	color: #fff!important;
 	width: 31.5%!important;
 	margin: 0 auto!important;
 	display: block!important;
 }
-
-/*place*/
-#header #form_place{
+/*Form_Place*/
+#header_wrap #form_two{
+	display: none;
+	background: rgba(255,255,255,0.5);
+	clear: both;
+	width: 75%;
+	height: 80px;
+	padding: 0px 12px 0px 30px;
+	margin-left: 40px;
+}
+#header #form_two{
 	position: relative;
 }
-#header #form_place form{
+#header #form_two form{
 	width: 100%;
 	position: relative;
 	top: 50%;
@@ -116,34 +97,34 @@
 	-moz-transform: translate(-50%,-50%)!important;
 	-o-transform: translate(-50%,-50%)!important;
 }
-#header #form_place form input, form select{
+#header #form_two form input, form select{
 	width: 31.5%!important;
 	float: left;
 	margin-right: 10px;
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
 	border: 0px!important;
 }
-#header #form_place form #form_input_second_row{
-	width: 100%;
-	margin-top: 10px;
-}
-#header #form_place form #form_input_third_row{
-	width: 98%;
-	margin-top: 10px!important;
-}
-#header #form_place form #form_input_third_row .btn{
+#header #form_two form .btn{
 	background: #3a9bfa!important;
 	color: #fff!important;
 	width: 31.5%!important;
 	margin: 0 auto!important;
 	display: block!important;
 }
-
-/*Flatmate*/
-#header #form_flatmate{
+/*Form Flatmate*/
+#header_wrap #form_three{
+	display: none;
+	background: rgba(255,255,255,0.5);
+	clear: both;
+	width: 75%;
+	height: 80px;
+	padding: 0px 12px 0px 30px;
+	margin-left: 40px;
+}
+#header #form_three{
 	position: relative;
 }
-#header #form_flatmate form{
+#header #form_three form{
 	width: 100%;
 	position: relative;
 	top: 50%;
@@ -154,136 +135,19 @@
 	-moz-transform: translate(-50%,-50%)!important;
 	-o-transform: translate(-50%,-50%)!important;
 }
-#header #form_flatmate form input, form select{
+#header #form_three form input, form select{
 	width: 31.5%!important;
 	float: left;
 	margin-right: 10px;
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
 	border: 0px!important;
 }
-#header #form_flatmate form #form_input_second_row{
-	width: 100%;
-	margin-top: 10px;
-}
-#header #form_flatmate form #form_input_third_row{
-	width: 98%;
-	margin-top: 10px!important;
-}
-#header #form_flatmate form #form_input_third_row .btn{
+#header #form_three form .btn{
 	background: #3a9bfa!important;
 	color: #fff!important;
 	width: 31.5%!important;
 	margin: 0 auto!important;
 	display: block!important;
-}
-
-
-/* Body Section CSS Style! */
-#body{
-	width: 100%;
-	margin-bottom: 60px;
-}
-#body .row{
-	margin-top: 60px;
-}
-#body .row h3{
-	font-weight: bold;
-	text-align: center;
-	color: #3a9bfa;
-	position: relative;
-	z-index: 100;
-	margin-bottom: 60px;
-}
-#body h3::before{
-	content: "";
-	display: block;
-	position: absolute;
-	width: 80px;
-	height: 1px;
-	background: #3a9bfa;
-	margin-top: 35px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	-webkit-transform: translate(-50%,-50%)!important;
-	-ms-transform: translate(-50%,-50%)!important;
-	-moz-transform: translate(-50%,-50%)!important;
-	-o-transform: translate(-50%,-50%)!important;
-}
-
-#body .container ul{
-	list-style: none;
-	margin-left: -17px!important;
-}
-#body .container ul li{
-	float: left;
-	cursor: pointer;
-	padding: 10px;
-	background: #fff;
-	color: #000;
-}
-#body .container ul li:nth-child(2){
-	margin-left: 4px;
-	margin-right: 4px
-}
-
-#body .container #body_img_wrap{
-	padding: 0px;
-}
-#body .container #panel_wrap{
-	margin: 0 auto!important;
-	width: 90%;
-}
-#body .container #panel_wrap #how_jobs_panel_place{
-	clear: both;
-	width: 480px;
-	height: 300px;
-	margin: 0 auto;
-}
-#body .container #panel_wrap #how_jobs_panel_jobs{
-	display: none;
-	background-color: lime;
-	clear: both;
-	width: 480px;
-	height: 300px;
-	margin: 0 auto;
-}
-#body .container #panel_wrap #how_jobs_panel_flatmate{
-	display: none;
-	background-color: skyblue;
-	clear: both;
-	width: 480px;
-	height: 300px;
-	margin: 0 auto;
-}
-
-#body .container #panel_wrap #how_works_place{
-	background: #3a9bfa;
-	color: #fff;
-}
-
-#body .container #panel_wrap a{
-	outline: none!important;
-}
-#body .container #panel_wrap a img{
-	width: 480px;
-	height: 300px;
-}
-
-#body .container #body_text_wrap h4{
-	color: #3a9bfa;
-	font-weight: bold;
-	margin-bottom: 30px;
-}
-#body .container #body_text_wrap p{
-	text-align: justify;
-	margin-bottom: 30px;
-}
-#body .container #body_text_wrap #pull-right{
-	float: right;
-}
-#body .container #body_text_wrap #text-right{
-	text-align: right;
 }
 
 
@@ -388,4 +252,177 @@
 	width: 180px;
 	display: block;
 	margin: 0 auto!important;
+}
+
+
+/* Body Section CSS Style! */
+#body{
+	width: 100%;
+	margin-bottom: 60px;
+}
+#body .row{
+	margin-top: 60px;
+}
+#body .row:last-child{
+	margin-top: 50px!important;
+}
+#body .row h3{
+	font-weight: bold;
+	text-align: center;
+	color: #3a9bfa;
+	position: relative;
+	z-index: 100;
+	margin-bottom: 60px;
+}
+#body h3::before{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 80px;
+	height: 1px;
+	background: #3a9bfa;
+	margin-top: 35px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%)!important;
+	-ms-transform: translate(-50%,-50%)!important;
+	-moz-transform: translate(-50%,-50%)!important;
+	-o-transform: translate(-50%,-50%)!important;
+}
+
+#body .container ul{
+	list-style: none;
+	margin-left: -17px!important;
+}
+#body .container ul li{
+	float: left;
+	cursor: pointer;
+	padding: 10px;
+	background: #fff;
+	color: #000;
+}
+#body .container ul li:nth-child(2){
+	margin-left: 4px;
+	margin-right: 4px
+}
+
+#body .container #body_img_wrap{
+	padding: 0px;
+}
+#body .container #panel_wrap{
+	margin: 0 auto!important;
+	width: 90%;
+}
+
+#body .container #panel_wrap #how_jobs_panel_one{
+	clear: both;
+	width: 480px;
+	height: 300px;
+	margin: 0 auto;
+}
+#body .container #panel_wrap #how_jobs_panel_two{
+	display: none;
+	background-color: lime;
+	clear: both;
+	width: 480px;
+	height: 300px;
+	margin: 0 auto;
+}
+#body .container #panel_wrap #how_jobs_panel_three{
+	display: none;
+	background-color: skyblue;
+	clear: both;
+	width: 480px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+#body .container #panel_wrap a{
+	outline: none!important;
+}
+#body .container #panel_wrap a img{
+	width: 480px;
+	height: 300px;
+}
+
+#body .container #body_text_wrap h4{
+	color: #3a9bfa;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+#body .container #body_text_wrap p{
+	text-align: justify;
+	margin-bottom: 30px;
+}
+#body .container #body_text_wrap #pull-right{
+	float: right!important;
+}
+#body .container #body_text_wrap #text-right{
+	text-align: right;
+}
+
+
+/* Media Queries!!! */
+@media screen and (max-width: 1228px){
+	/* Body Section CSS Style! */
+	#body .container ul{
+		margin-left: -40px!important;
+	}
+	#body .container #panel_wrap a img{
+		width: 380px;
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 499px){
+
+	#header{
+		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/mobile_size_job_home_header.png") no-repeat!important;
+		height: 100vh;
+	}
+	#header #header_wrap h3{
+		margin-left: 18px!important;
+	}
+	#header_wrap #header_form_wrap ul{
+		margin-left: -18px!important;
+	}
+
+	/* Feature Jobs CSS Style! */
+	#feature_jobs{
+		width: 100%;
+		background: #fff;
+		padding: 25px 0px 25px 0px;
+	}
+	#feature_jobs h3{
+		font-size: 22px;
+		margin-bottom: 40px;
+	}
+	#feature_jobs h3::before{
+		width: 60px;
+		height: 1px;
+		margin-top: 25px;
+	}
+
+	#feature_jobs .container .row{
+		margin-bottom: 5px;
+	}
+	#feature_jobs .container .row .col-md-4{
+		width: 85%!important;
+		margin-bottom: 10px;
+		margin-left: 22px;
+	}
+
+	/*#feature_jobs .container .row .col-md-4:nth-child(1){
+		margin-left: 10px;
+	}
+	#feature_jobs .container .row .col-md-4:nth-child(2){
+		margin-left: 10px;
+		margin-right: 10px;
+	}*/
+	#feature_jobs .container .row .col-md-4 #feature_img_wrap{
+		width: 80%!important;
+		margin: 0 auto!important;
+	}
+
 }
