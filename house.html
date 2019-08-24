@@ -2,7 +2,7 @@
 
 Project Title = Dowun
 Project Type = Multi Platform Website
-Project Front-End Technologies = HTML, CSS, Boostrap, JQuery, React
+Project Front-End Technologies = HTML, CSS, Boostrap, JQuery
 Project Designed By Tracer Land
 
  -->
@@ -11,7 +11,7 @@ Project Designed By Tracer Land
 <!DOCTYPE html>
 <html>
 <head>
-
+		
 		<title>Dowun House</title>
 
 		<!-- Logo Image -->
@@ -31,11 +31,11 @@ Project Designed By Tracer Land
 		<link rel="stylesheet" type="text/css" href="css/house_home.css"><!-- House Home CSS! -->
 
 		<!-- Common CSS Styles! -->
-		<link rel="stylesheet" type="text/css" href="css/common_css_styles/mobile.css" media="screen and (max-width: 998px)">
-		<link rel="stylesheet" type="text/css" href="css/common_css_styles/tablet.css" media="screen and (max-width: 1228px)">
+		<link rel="stylesheet" type="text/css" href="css/common_css_styles/mobile.css" media="screen and (max-width: 600px)">
+		<link rel="stylesheet" type="text/css" href="css/common_css_styles/tablet.css" media="screen and (max-width: 998px)">
 
-		<link rel="stylesheet" type="text/css" href="css/house_home_views/mobile.css" media="screen and (max-width: 600px)">
-		<link rel="stylesheet" type="text/css" href="css/house_home_views/tablet.css" media="screen and (max-width: 1228px)">
+		<link rel="stylesheet" type="text/css" href="css/house_home_views/mobile.css" media="screen and (max-width: 768px) and (min-width: 500px)">
+		<link rel="stylesheet" type="text/css" href="css/house_home_views/tablet.css" media="screen and (max-width: 1028px)">
 
 		<!-- Boostrap CSS! -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -56,11 +56,10 @@ Project Designed By Tracer Land
 
 		<script type="text/javascript" src="js/script.js"></script>
 
-		<!-- Header Section Start! -->
 
+		<!-- Header Section Start! -->
 			<nav class="navbar navbar-default navbar-fixed-top"><!-- Navigation Start -->
 				<div class="container-fluid">
-
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 							<span class="icon-bar"></span>
@@ -71,7 +70,6 @@ Project Designed By Tracer Land
 							<img src="images/logo.png">
 						</a>
 					</div>
-
 
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<!-- Language Toggle Start! -->
@@ -86,9 +84,9 @@ Project Designed By Tracer Land
 						<!-- Language Toggle End! -->
 						<ul class="nav navbar-nav navbar-right">
 							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="#">Jobs</a></li>
+							<li><a href="house.html">House</a></li>
+							<li><a href="job.html">Jobs</a></li>
 							<li><a href="#">Create a Job</a></li>
-							<li><a href="#">House</a></li>
 							<li><a href="#">Create a Page</a></li>
 							<li><a href="#">Message</a></li>
 							<li><a href="#">Register</a></li>
@@ -101,33 +99,34 @@ Project Designed By Tracer Land
 			<div id="header">
 				<div class="container">
 					<div id="header_wrap">
+
 						<h3>Find Your Dream House</h3>
+						<!-- Form! -->
 						<div id="header_form_wrap">
+							<!-- Tabs -->
 							<ul>
-								<li id="form_jobs_tab" onClick="form_switchJobs()">
+								<li id="tab_one" onClick="form_switchOne()">
 									Place
 								</li>
-								<li id="form_place_tab" onClick="form_switchPlace()">
-									Jobs
+								<li id="tab_two" onClick="form_switchTwo()">
+									Job
 								</li>
-								<li id="form_flatmate_tab" onClick="form_switchFlatmate()">
+								<li id="tab_three" onClick="form_switchThree()">
 									Flatmate
 								</li>
 							</ul>
 
-							<!-- Form Jobs Inputs! -->
-							<div id="form_jobs">
-
+							<!-- Form Place Inputs! -->
+							<div id="form_one">
 								<form>
 									
 									<div class="row" style="width: 100%;">
 										<input type="text" name="text" placeholder="Keywords" class="form-control">
-									
+
 										<select class="form-control">
 											<option>Purpose</option>
-											<option>Developer</option>
-											<option>Programmer</option>
-											<option>Graphic Designer</option>
+											<option>Living</option>
+											<option>Commercial</option>
 										</select>
 
 										<select class="form-control">
@@ -136,9 +135,11 @@ Project Designed By Tracer Land
 											<option>Mandalay</option>
 											<option>Taunggyi</option>
 										</select>
+
+										<button type="submit" value="Search Jobs" class="btn">Search Place</button>
 									</div>
 
-									<div class="row" id="form_input_second_row">									
+									<div class="row" style="width: 100%;">
 										<select class="form-control">
 											<option>Location</option>
 											<option>Yangon</option>
@@ -161,37 +162,22 @@ Project Designed By Tracer Land
 										</select>
 									</div>
 
-									<div class="row" id="form_input_third_row">
+									<div class="row" style="width:100%;">
 										<input type="text" name="text" placeholder="Area" class="form-control">
 									
-										<select class="form-control">
-											<option>Price</option>
-											<option>Intern</option>
-											<option>Junior</option>
-											<option>Senior</option>
-										</select>
+										<input type="text" name="text" placeholder="Price" class="form-control">
 
-										<button type="submit" value="Search Jobs" class="btn">Search Jobs</button>
+										<button type="submit" value="Search Place" class="btn">Search Place</button>
 									</div>
 
 								</form>
-								
 							</div>
 
-							<!-- Form Place Inputs -->
-							<div id="form_place">
-								
+							<!-- Form Job Inputs -->
+							<div id="form_two">							
 								<form>
-									
 									<div class="row" style="width: 100%;">
-										<input type="text" name="text" placeholder="Place" class="form-control">
-									
-										<select class="form-control">
-											<option>Job Category</option>
-											<option>Developer</option>
-											<option>Programmer</option>
-											<option>Graphic Designer</option>
-										</select>
+										<input type="text" name="text" placeholder="Keywords" class="form-control">
 
 										<select class="form-control">
 											<option>Location</option>
@@ -199,48 +185,17 @@ Project Designed By Tracer Land
 											<option>Mandalay</option>
 											<option>Taunggyi</option>
 										</select>
+
+										<button type="submit" value="Search Jobs" class="btn">Search Job</button>
 									</div>
-
-									<div class="row" id="form_input_second_row">
-										<input type="text" name="text" placeholder="Salary" class="form-control">
-									
-										<select class="form-control">
-											<option>Experience Level</option>
-											<option>Intern</option>
-											<option>Junior</option>
-											<option>Senior</option>
-										</select>
-
-										<select class="form-control">
-											<option>Job Type</option>
-											<option>Freelance</option>
-											<option>Part Time</option>
-											<option>Full Time</option>
-										</select>
-									</div>
-
-									<div class="row" id="form_input_third_row">
-										<button type="submit" value="Search Jobs" class="btn">Search Jobs</button>
-									</div>
-
 								</form>
-
 							</div>
 
 							<!-- Form Flatmate Inputs! -->
-							<div id="form_flatmate">
-								
+							<div id="form_three">
 								<form>
-									
 									<div class="row" style="width: 100%;">
 										<input type="text" name="text" placeholder="Flatmate" class="form-control">
-									
-										<select class="form-control">
-											<option>Job Category</option>
-											<option>Developer</option>
-											<option>Programmer</option>
-											<option>Graphic Designer</option>
-										</select>
 
 										<select class="form-control">
 											<option>Location</option>
@@ -248,83 +203,153 @@ Project Designed By Tracer Land
 											<option>Mandalay</option>
 											<option>Taunggyi</option>
 										</select>
+
+										<button type="submit" value="Search Jobs" class="btn">Search Flatmate</button>
 									</div>
-
-									<div class="row" id="form_input_second_row">
-										<input type="text" name="text" placeholder="Salary" class="form-control">
-									
-										<select class="form-control">
-											<option>Experience Level</option>
-											<option>Intern</option>
-											<option>Junior</option>
-											<option>Senior</option>
-										</select>
-
-										<select class="form-control">
-											<option>Job Type</option>
-											<option>Freelance</option>
-											<option>Part Time</option>
-											<option>Full Time</option>
-										</select>
-									</div>
-
-									<div class="row" id="form_input_third_row">
-										<button type="submit" value="Search Jobs" class="btn">Search Jobs</button>
-									</div>
-
 								</form>
-
 							</div>
-
 						</div>
+						
 					</div>
 				</div>
 			</div>
-
 		<!-- Header Section End! -->
 
 
-		<!-- Body Section Start! -->
+		<!-- Recent Propery Section Start! -->
+			<div id="recent_property">
+				<div class="container">
+					
+					<h3>RECENT PROPERTY</h3>
+					<div class="row">
+						
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div id="recent_item">
+								<img src="images/recent_house.png">
+								<div id="recent_text_wrap">
+									<h4>
+										မရမ္းကုန္းၿမိဳ ့နယ္တြင္ အိမ္ငွားရန္ရိွသည္။
+									</h4>
+									<small>၂၀၀၀၀၀ က်ပ္ / တစ္လ</small><br>
+									<span>
+										တစ္လငွားရန္းခ ၁၉၀၀၀၀ ၫွိႏိႈင္း၊ အဆင့္ျမင့္ျပင္ဆင္ၿပီး ေနရာေကာင္းသည္။
+									</span>
 
+									<i style="display: block;width: 100%;border-bottom: 1px solid #3a9bfa;margin-top:20px;"></i>
+
+									<i class="fa fa-bed">&nbsp;&nbsp;၃ခန္း</i>
+									<i class="fa fa-bath">&nbsp;&nbsp;၃ခန္း</i>
+									<i class="fa fa-adn">&nbsp;&nbsp;၁၈၅၀ ဧရိယာ</i>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div id="recent_item">
+								<img src="images/recent_house.png">
+								<div id="recent_text_wrap">
+									<h4>
+										မရမ္းကုန္းၿမိဳ ့နယ္တြင္ အိမ္ငွားရန္ရိွသည္။
+									</h4>
+									<small>၂၀၀၀၀၀ က်ပ္ / တစ္လ</small><br>
+									<span>
+										တစ္လငွားရန္းခ ၁၉၀၀၀၀ ၫွိႏိႈင္း၊ အဆင့္ျမင့္ျပင္ဆင္ၿပီး ေနရာေကာင္းသည္။
+									</span>
+
+									<i style="display: block;width: 100%;border-bottom: 1px solid #3a9bfa;margin-top:20px;"></i>
+
+									<i class="fa fa-bed">&nbsp;&nbsp;၃ခန္း</i>
+									<i class="fa fa-bath">&nbsp;&nbsp;၃ခန္း</i>
+									<i class="fa fa-adn">&nbsp;&nbsp;၁၈၅၀ ဧရိယာ</i>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div id="recent_item">
+								<img src="images/recent_house.png">
+								<div id="recent_text_wrap">
+									<h4>
+										မရမ္းကုန္းၿမိဳ ့နယ္တြင္ အိမ္ငွားရန္ရိွသည္။
+									</h4>
+									<small>၂၀၀၀၀၀ က်ပ္ / တစ္လ</small><br>
+									<span>
+										တစ္လငွားရန္းခ ၁၉၀၀၀၀ ၫွိႏိႈင္း၊ အဆင့္ျမင့္ျပင္ဆင္ၿပီး ေနရာေကာင္းသည္။
+									</span>
+
+									<i style="display: block;width: 100%;border-bottom: 1px solid #3a9bfa;margin-top:20px;"></i>
+
+									<i class="fa fa-bed">&nbsp;&nbsp;၃ခန္း</i>
+									<i class="fa fa-bath">&nbsp;&nbsp;၃ခန္း</i>
+									<i class="fa fa-adn">&nbsp;&nbsp;၁၈၅၀ ဧရိယာ</i>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div id="recent_item">
+								<img src="images/recent_house.png">
+								<div id="recent_text_wrap">
+									<h4>
+										မရမ္းကုန္းၿမိဳ ့နယ္တြင္ အိမ္ငွားရန္ရိွသည္။
+									</h4>
+									<small>၂၀၀၀၀၀ က်ပ္ / တစ္လ</small><br>
+									<span>
+										တစ္လငွားရန္းခ ၁၉၀၀၀၀ ၫွိႏိႈင္း၊ အဆင့္ျမင့္ျပင္ဆင္ၿပီး ေနရာေကာင္းသည္။
+									</span>
+
+									<i style="display: block;width: 100%;border-bottom: 1px solid #3a9bfa;margin-top:20px;"></i>
+
+									<i class="fa fa-bed">&nbsp;&nbsp;၃ခန္း</i>
+									<i class="fa fa-bath">&nbsp;&nbsp;၃ခန္း</i>
+									<i class="fa fa-adn">&nbsp;&nbsp;၁၈၅၀ ဧရိယာ</i>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<a href="#" class="btn btn-info">
+						See All Properties
+					</a>
+					
+				</div>
+			</div>
+		<!-- Recent Propery Section End! -->
+
+
+		<!-- Body Section Start! -->
 			<div id="body">
 				<div class="container">
 					
-					<!-- How Creat Job Start! -->
+					<!-- How create post start! -->
 					<div class="row">
-					<h3>HOW TO CREATE A JOB</h3>
+						<h3>HOW TO CREATE POST</h3>
 						<div id="body_img_wrap" class="col-md-6 col-sm-12 col-xs-12">
 							<div id="panel_wrap">
 								<ul>
-									<!-- Create Job Tab!! -->
-									<li id="how_jobs_place" style="color:#fff;background: #3a9bfa;" onClick="jobs_switchPlace()">
-										Create Job
+									<li id="how_jobs_one" style="color:#fff;background: #3a9bfa;" onClick="jobs_switchOne()">
+										Create Post
 									</li>
-									<!-- Post Job Tab!! -->
-									<li id="how_jobs_jobs" onClick="jobs_switchJobs()">
-										Post Job
+									<li id="how_jobs_two" onClick="jobs_switchTwo()">
+										Post Place
 									</li>
-									<!-- Find Job Tab!! -->
-									<li id="how_jobs_flatmate" onClick="jobs_switchFlatmate()">
-										Find Job
+									<li id="how_jobs_three" onClick="jobs_switchThree()">
+										Find Place
 									</li>
 								</ul>
-
-								<!-- Create Job Panel!! -->
 								<a href="#">
-									<div id="how_jobs_panel_place">
+									<div id="how_jobs_panel_one">
 										<img src="images/how_video.png">
 									</div>
 								</a>
-								<!-- Post Job Panel!! -->
 								<a href="#">
-									<div id="how_jobs_panel_jobs">
-										<img src="images/how_video.png">
+									<div id="how_jobs_panel_two">
+										<img src="images/logo.png">
 									</div>
 								</a>
-								<!-- Find Job Panel!! -->
 								<a href="#">
-									<div id="how_jobs_panel_flatmate">
-										<img src="images/how_video.png">
+									<div id="how_jobs_panel_three">
+										<img src="images/download_app.png">
 									</div>
 								</a>
 							</div>
@@ -334,18 +359,16 @@ Project Designed By Tracer Land
 							<p>
 								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam.
 							</p>
-							<button class="btn btn-bg btn-info" id="pull-right">Create Job</button>
+							<button id="pull-right" class="btn btn-bg btn-info">More</button>
 						</div>
 					</div>
-
+					
 				</div>
 			</div>
-
 		<!-- Body Section End! -->
 
 
 		<!-- Download App Section Start! -->
-
 			<div  id="download_app">
 				<div class="container">
 					<div id="store">
@@ -362,8 +385,8 @@ Project Designed By Tracer Land
 					</div>
 				</div>
 			</div>
-
 		<!-- Download App Section End! -->
+
 
 		<!-- Footer Section Start! -->
 			<div id="footer">

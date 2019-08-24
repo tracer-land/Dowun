@@ -1,16 +1,23 @@
 /* Tablet CSS (1028px) */
 
+#header{
+	height: 100vh;
+}
+
 /* Header Form Style */
 #header_wrap{
 	width: 100%;
 	position: absolute;
-	top: 50%;
+	top: 60%;
 	left: 50%!important;
 	transform: translate(-50%,-50%)!important;
 	-webkit-transform: translate(-50%,-50%)!important;
 	-ms-transform: translate(-50%,-50%)!important;
 	-moz-transform: translate(-50%,-50%)!important;
 	-o-transform: translate(-50%,-50%)!important;
+}
+#header_wrap form .row{
+	margin-bottom: 0px;
 }
 /*Form Tabs*/
 #header #header_wrap h3{
@@ -23,12 +30,12 @@
 /*Form Job*/
 #header_wrap #form_one{
 	width: 90%;
-	height: 150px;
+	height: 320px;
 	padding: 0px 0px 0px 0px;
 	margin-left: 0px;
 	margin: 0 auto;
 }
-#header #form_one form input, form select{
+#header #form_one form input, #header #form_one form select{
 	width: 100%!important;
 	margin-bottom: 10px;
 }
@@ -36,6 +43,9 @@
 	width: 85%;
 }
 #header #form_one form .btn{
+	width: 100%!important;
+}
+#header #form_one .row:nth-child(3){
 	width: 100%!important;
 }
 /*Form Place*/

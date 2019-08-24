@@ -1,9 +1,8 @@
 /* Mobile View CSS Style (768px) */
 
-
 /* Header Form Style */
 #header{
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/mobile_size_job_home_header.png") no-repeat!important;
+	background: url("../../images/mobile_size_job_home_header.png")!important;
 	height: 100vh;
 }
 #header_wrap{
@@ -28,7 +27,7 @@
 /*Form Job*/
 #header_wrap #form_one{
 	width: 90%;
-	height: 150px;
+	height: 150px!important;
 	padding: 0px 0px 0px 0px;
 	margin-left: 0px;
 	margin: 0 auto;
@@ -42,6 +41,18 @@
 }
 #header #form_one form .btn{
 	width: 100%!important;
+}
+#header_wrap #form_one .row:nth-child(2){
+	display: none;
+}
+#header_wrap #form_one .row:nth-child(3){
+	display: none;
+}
+#header_wrap #form_one .row select:nth-child(2){
+	display: none;
+}
+#header #form_one .row:first-child .btn{
+	display: block!important;
 }
 /*Form Place*/
 #header_wrap #form_two{

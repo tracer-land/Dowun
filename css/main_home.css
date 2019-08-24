@@ -322,7 +322,7 @@
 @media screen and (max-width: 499px){
 
 	#header{
-		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/mobile_size_main_home_header.png") no-repeat!important;
+		background: url("../images/mobile_size_main_home_header.png")!important;
 		height: 100vh;
 	}
 	#header #header_wrap h3{
