@@ -2,8 +2,9 @@
 
 /* Header Form Style */
 #header{
-	background: url("../../images/mobile_size_house_home_header.png")!important;
+	background: url("../../images/mobile_size_house_home_header.png")no-repeat!important;
 	height: 100vh;
+	margin-top: 0px!important;
 }
 #header_wrap{
 	width: 100%;
@@ -42,18 +43,6 @@
 }
 #header #form_one form .btn{
 	width: 100%!important;
-}
-#header_wrap #form_one .row:nth-child(2){
-	display: none;
-}
-#header_wrap #form_one .row:nth-child(3){
-	display: none;
-}
-#header_wrap #form_one .row select:nth-child(2){
-	display: none;
-}
-#header #form_one .row:first-child .btn{
-	display: block!important;
 }
 /*Form Job*/
 #header_wrap #form_two{
@@ -94,17 +83,17 @@
 
 
 /* Recant Property */
-#recent_property .row .col-md-3 #recent_item{
+#recent_property .row .col-md-3 a #recent_item{
 	width: 85%;
 	margin-bottom: 20px!important;
 	padding: 0px 0px 25px 0px;
 }
-#recent_property .row .col-md-3 #recent_item #recent_text_wrap{
+#recent_property .row .col-md-3 a #recent_item #recent_text_wrap{
 	width: 85%;
 	margin: 0 auto;
 	margin-top: 15px;
 }
-#recent_property .row .col-md-3 #recent_item #recent_text_wrap h4{
+#recent_property .row .col-md-3 a #recent_item #recent_text_wrap h4{
 	margin-top: 25px!important;
 }
 

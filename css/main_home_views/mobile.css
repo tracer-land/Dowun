@@ -3,8 +3,9 @@
 
 /* Header Form Style */
 #header{
-	background: url("../../images/mobile_size_main_home_header.png")!important;
+	background: url("../../images/mobile_size_main_home_header.png") no-repeat;
 	height: 100vh;
+	margin-top: 0px!important;
 }
 #header_wrap{
 	width: 100%;

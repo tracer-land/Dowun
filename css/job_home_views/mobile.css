@@ -2,8 +2,9 @@
 
 /* Header Form Style */
 #header{
-	background: url("../../images/mobile_size_job_home_header.png")!important;
-	height: 100vh;
+	background: url("../../images/mobile_size_job_home_header.png") no-repeat!important;
+	height: 100vh!important;
+	margin-top: 0px!important;
 }
 #header_wrap{
 	width: 100%;

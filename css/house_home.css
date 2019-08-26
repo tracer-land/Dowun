@@ -1,7 +1,8 @@
 /* Header Form Style */
 #header{
 	width: 100%;
-	height: 80vh;
+	height: 50vh;
+	margin-top: 50px!important;
 	background-image: url("../images/house_home_header.png");
 	background-size: cover;
 }
@@ -9,8 +10,8 @@
 #header_wrap{
 	width: 70%;
 	position: absolute;
-	top: 22%;
-	left: 10%;
+	top: 12%;
+	left: 8%;
 }
 #header #header_wrap h3{
 	font-weight: bold;
@@ -45,7 +46,7 @@
 	clear: both;
 	background: rgba(255,255,255,0.5);
 	width: 75%;
-	height: 150px;
+	height: 80px;
 	padding: 0px 12px 0px 30px;
 	margin-left: 40px;
 }
@@ -69,9 +70,6 @@
 	margin-right: 10px;
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
 	border: 0px!important;
-}
-#header #form_one .row:first-child .btn{
-	display: none!important;
 }
 #header #form_one form .btn{
 	background: #3a9bfa!important;
@@ -296,8 +294,12 @@
 	-o-transform: translate(-50%,-50%)!important;
 }
 
-
-#recent_property .row .col-md-3 #recent_item{
+#recent_property .row .col-md-3 a{
+	outline: none!important;
+	color: #000!important;
+	text-decoration: none!important;
+}
+#recent_property .row .col-md-3 a #recent_item{
 	background-color: white;
 	width: 98%;
 	padding: 0px 0px 20px 0px;
@@ -305,37 +307,37 @@
 	border-radius: 5px;
 	box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
 }
-#recent_property .row .col-md-3 #recent_item img{
+#recent_property .row .col-md-3 a #recent_item img{
 	width: 100%;
 	height: 100%;
 	border-radius: 5px;
 	border-bottom-left-radius: 0px!important;
 	border-bottom-right-radius: 0px!important;
 }
-#recent_property .row .col-md-3 #recent_item #recent_text_wrap{
+#recent_property .row .col-md-3 a #recent_item #recent_text_wrap{
 	width: 90%;
 	margin: 0 auto;
 	margin-top: 15px;
 }
-#recent_property .row .col-md-3 #recent_item #recent_text_wrap h4{
+#recent_property .row .col-md-3 a #recent_item #recent_text_wrap h4{
 	font-size: 14px;
 	font-weight: bold;
 }
-#recent_property .row .col-md-3 #recent_item #recent_text_wrap small{
+#recent_property .row .col-md-3 a #recent_item #recent_text_wrap small{
 	color: #3a9bfa;
 }
-#recent_property .row .col-md-3 #recent_item #recent_text_wrap span{
+#recent_property .row .col-md-3 a #recent_item #recent_text_wrap span{
 	display: block;
 	margin-top: 10px;
 	font-size: 14px;
 }
-#recent_property .row .col-md-3 #recent_item #recent_text_wrap i{
+#recent_property .row .col-md-3 a #recent_item #recent_text_wrap i{
 	font-size: 14px;
 	margin-top: 15px;
 	display: inline-block;
 	margin-right: 8px;
 }
-#recent_property .row .col-md-3 #recent_item #recent_text_wrap i:last-child{
+#recent_property .row .col-md-3 a #recent_item #recent_text_wrap i:last-child{
 	margin-right: 0px!important;
 }
 
@@ -348,53 +350,6 @@
 
 /* Media Queries!!! */
 @media screen and (max-width: 1228px){
-	/* Header Form Style */
-	#header{
-		height: 100vh;
-	}
-	#header_wrap{
-		width: 100%;
-		position: absolute;
-		top: 55%;
-		left: 50%!important;
-		transform: translate(-50%,-50%)!important;
-		-webkit-transform: translate(-50%,-50%)!important;
-		-ms-transform: translate(-50%,-50%)!important;
-		-moz-transform: translate(-50%,-50%)!important;
-		-o-transform: translate(-50%,-50%)!important;
-	}
-	#header_wrap form .row{
-		margin-bottom: 0px;
-	}
-	/*Form Tabs*/
-	#header #header_wrap h3{
-		margin-bottom: 15px;
-		margin-left: 50px;
-	}
-	#header_wrap #header_form_wrap ul{
-		margin-left: 15px;
-	}
-	/*Form Job*/
-	#header_wrap #form_one{
-		width: 90%;
-		height: 420px;
-		padding: 0px 0px 0px 0px;
-		margin-left: 0px;
-		margin: 0 auto;
-	}
-	#header #form_one form input, #header #form_one form select{
-		width: 100%!important;
-		margin-bottom: 10px;
-	}
-	#header #form_one form{
-		width: 85%;
-	}
-	#header #form_one form .btn{
-		width: 100%!important;
-	}
-	#header #form_one .row:nth-child(3){
-		width: 100%!important;
-	}
 	/* Body Section CSS Style! */
 	#body .container ul{
 		margin-left: -40px!important;
@@ -408,7 +363,7 @@
 @media screen and (max-width: 499px){
 
 	#header{
-		background: url("../images/mobile_size_house_home_header.png")!important;
+		background: url("../images/mobile_size_house_home_header.png") no-repeat!important;
 		height: 100vh;
 	}
 	#header #header_wrap h3{
@@ -441,13 +396,13 @@
 	}
 
 	/* Recant Property */
-	#recent_property .row .col-md-3 #recent_item #recent_text_wrap h4{
+	#recent_property .row .col-md-3 a #recent_item #recent_text_wrap h4{
 		font-size: 13px!important;
 	}
-	#recent_property .row .col-md-3 #recent_item #recent_text_wrap span{
+	#recent_property .row .col-md-3 a #recent_item #recent_text_wrap span{
 		font-size: 12px!important;
 	}
-	#recent_property .row .col-md-3 #recent_item #recent_text_wrap i{
+	#recent_property .row .col-md-3 a #recent_item #recent_text_wrap i{
 		font-size: 12px!important;
 	}
 

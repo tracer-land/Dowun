@@ -2,6 +2,7 @@
 
 #header{
 	height: 100vh;
+	margin-top: 0px!important;
 }
 
 /* Header Form Style */
@@ -30,7 +31,7 @@
 /*Form Place*/
 #header_wrap #form_one{
 	width: 90%;
-	height: 400px;
+	height: 150px;
 	padding: 0px 0px 0px 0px;
 	margin-left: 0px;
 	margin: 0 auto;
@@ -43,9 +44,6 @@
 	width: 85%;
 }
 #header #form_one form .btn{
-	width: 100%!important;
-}
-#header #form_one .row:nth-child(3){
 	width: 100%!important;
 }
 /*Form Job*/
@@ -87,17 +85,17 @@
 
 
 /* Recant Property */
-#recent_property .row .col-md-3 #recent_item{
+#recent_property .row .col-md-3 a #recent_item{
 	width: 85%;
 	margin-bottom: 20px!important;
 	padding: 0px 0px 25px 0px;
 }
-#recent_property .row .col-md-3 #recent_item #recent_text_wrap{
+#recent_property .row .col-md-3 a #recent_item #recent_text_wrap{
 	width: 85%;
 	margin: 0 auto;
 	margin-top: 15px;
 }
-#recent_property .row .col-md-3 #recent_item #recent_text_wrap h4{
+#recent_property .row .col-md-3 a #recent_item #recent_text_wrap h4{
 	margin-top: 25px!important;
 }
 

@@ -1,7 +1,8 @@
 /* Tablet CSS (1028px) */
 
 #header{
-	height: 100vh;
+	height: 100vh!important;
+	margin-top: 0px!important;
 }
 
 /* Header Form Style */
