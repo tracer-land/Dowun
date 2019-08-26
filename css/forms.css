@@ -1,0 +1,50 @@
+/* Create Account Forms CSS! */
+
+/* Body CSS Stye */
+body{
+	margin: 0px!important;
+	padding: 0px!important;
+	width: 100%!important;
+	height: 100vh!important;
+	background-color: #f2f2f2!important;
+	font-family: 'Montserrat', sans-serif!important;
+}
+
+#form{
+	width: 30%;
+	background: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 30px 40px 30px 40px;
+	box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+	border-radius: 5px;
+}
+
+#form img{
+	width: 140px;
+	height: 35px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px!important;
+	margin-bottom: 35px!important;
+}
+
+#form form .btn{
+	margin-top: 20px;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 600px){
+	#form{
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 1228px){
+	#form{
+		width: 80%;
+	}
+}
