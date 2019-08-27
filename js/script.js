@@ -15,6 +15,23 @@ $(document).ready(function(){
 	});
 });
 
+//Show Map Selection Script!
+$(document).ready(function(){
+	$("#showmap_toggle_select li span #on").click(function(){
+
+		$("#showmap_toggle_select li span #on").addClass("selected_map");
+
+		$("#showmap_toggle_select li span #off").removeClass("selected_map");
+	});
+
+	$("#showmap_toggle_select li span #off").click(function(){
+
+		$("#showmap_toggle_select li span #off").addClass("selected_map");
+
+		$("#showmap_toggle_select li span #on").removeClass("selected_map");
+	});
+});
+
 
 function get(obj){
 	return document.getElementById(obj);
