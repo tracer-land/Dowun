@@ -1,0 +1,64 @@
+/* Header Form Style */
+#header{
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 50px;
+	background-color: #ccc;
+}
+
+/* Navigation CSS! */
+nav li .dropdown-menu{
+	background: #3a9bfa!important;
+	border: 0px!important;
+	width: 350px!important;
+}
+nav li .dropdown-menu li{
+	border-bottom: 1px solid #ccc!important;
+	padding: 10px;
+}
+nav li .dropdown-menu li a{
+	font-weight: bold;
+}
+nav li .dropdown-menu li small{
+	font-size: 10px!important;
+	padding-left: 20px!important;
+	padding-top: 10px;
+}
+nav li .dropdown-menu li:last-child{
+	border-bottom: 0px!important;
+}
+nav li .dropdown-menu li:hover a{
+	background-color: #ccc!important;
+}
+
+
+/* App Section CSS! */
+#app{
+	width: 100%;
+	padding: 60px;
+	position: relative;
+}
+
+#app a:first-child{
+	outline: none;
+	text-decoration: none;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 43%;
+	transform: translate(-50%,-50%);
+}
+#app a:last-child{
+	outline: none;
+	text-decoration: none;
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 43%;
+	transform: translate(50%,-50%);
+}
+#app img{
+	width: 150px;
+	height: 50px;
+}
