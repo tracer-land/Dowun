@@ -1,8 +1,4 @@
 /* Common CSS Style Sheets!!! (998px) */
-#header{
-	background-image: url("../images/photos/main_home_header.png") no-repeat;
-	height: 80vh;
-}
 
 /* Language Toggle From Navigation */
 #language_toggle_select{

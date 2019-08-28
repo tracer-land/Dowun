@@ -32,7 +32,6 @@ $(document).ready(function(){
 	});
 });
 
-
 function get(obj){
 	return document.getElementById(obj);
 }

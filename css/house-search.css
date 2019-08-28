@@ -1,58 +1,45 @@
 /* Header Form Style */
 #header{
 	width: 100%;
-	height: 55vh;
-	margin-top: 50px!important;
-	background-image: url("../images/house_home_header.png");
-	background-size: cover;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	margin-top: 50px;
+	background-color: #ccc;
 }
 /*Form*/
-#header_wrap{
-	width: 70%;
-	position: absolute;
-	top: 12%;
-	left: 8%;
-}
+
 #header #header_wrap h3{
 	font-weight: bold;
 	color: #3a9bfa;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 /*Form*/
 #header_wrap #form_one{
 	background: rgba(255,255,255,0.5);
-	width: 75%;
+	width: 100%!important;
 	padding: 20px;
+	padding-right: 10px!important;
 	padding-bottom: 10px!important;
 }
 #header_wrap #form_one form .row{
 	margin-bottom: 10px;
 }
-#header_wrap #form_one form .row:nth-child(2){
-	margin-bottom: 0px!important;
-}
 #header #form_one form input, form select{
-	width: 31.5%!important;
+	width: 19%!important;
 	float: left;
 	box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
 	border: 0px!important;
 	margin-left: 10px;
 }
 #header #form_one form .btn{
-	background: #3a9bfa!important;
-	color: #fff!important;
-	width: 31.5%!important;
+	background: #3a9bfa;
+	color: #fff;
+	width: 18%;
 	display: inline-block!important;
 	margin-left: 10px;
 }
-#header #form_one form #detail_search,#header #form_one form #search_place{
-	width: 47.6%!important;
-}
-#header #form_one form #detail{
-	transition: 0.12s!important;
-}
 #header #form_one form .collapse input,#header #form_one form .collapse select,#header #form_one form .collapse .btn{
-	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 
@@ -151,10 +138,15 @@
 #property .row .col-md-3 a #recent_item #recent_text_wrap small{
 	color: #3a9bfa;
 }
+#property .row .col-md-3 a #recent_item #recent_text_wrap strong{
+	display: block;
+	margin-top: 10px;
+	font-size: 13px;
+}
 #property .row .col-md-3 a #recent_item #recent_text_wrap span{
 	display: block;
 	margin-top: 10px;
-	font-size: 14px;
+	font-size: 13px;
 }
 #property .row .col-md-3 a #recent_item #recent_text_wrap i{
 	font-size: 14px;
@@ -184,26 +176,43 @@
 }
 
 
+/* App Section CSS! */
+#app{
+	width: 100%;
+	padding: 60px;
+	position: relative;
+}
+
+#app a:first-child{
+	outline: none;
+	text-decoration: none;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 43%;
+	transform: translate(-50%,-50%);
+}
+#app a:last-child{
+	outline: none;
+	text-decoration: none;
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 43%;
+	transform: translate(50%,-50%);
+}
+#app img{
+	width: 150px;
+	height: 50px;
+}
+
+
 /* Media Queries!!! */
 @media screen and (max-width: 1228px){
+
 	/* Header Form Style */
-	#header{
-		height: 100vh;
-	}
 	#header #header_wrap h3{
 		margin-bottom: 1px!important;
-	}
-	/*Form*/
-	#header_wrap{
-		width: 92%;
-		position: absolute;
-		top: 57%;
-		left: 50%;
-		transform: translate(-50%,-50%);
-		-webkit-transform: translate(-50%,-50%)!important;
-		-ms-transform: translate(-50%,-50%)!important;
-		-moz-transform: translate(-50%,-50%)!important;
-		-o-transform: translate(-50%,-50%)!important;
 	}
 	/*Form One*/
 	#header_wrap #form_one{
@@ -215,20 +224,15 @@
 		margin-bottom: 5px;
 	}
 
-	#header_wrap #form_one form .row:nth-child(2){
-		margin-top: -8px!important;
-		margin-bottom: 5px!important;
-	}
-
 	#header #form_one form .btn{
 		width: 100%!important;
 	}
 
 	#header #form_one form #detail_search,#header #form_one form #search_place{
-		width: 47.6%;
+		margin-bottom: 5px;
 	}
 	#header #form_one form .collapse input,#header #form_one form .collapse select,#header #form_one form .collapse .btn{
-		margin-top: 0px!important;
+		margin-bottom: 5px;
 	}
 
 	#show_map .map_toggle{
@@ -240,51 +244,7 @@
 }
 
 @media screen and (max-width: 499px){
-	/* Header Form Style */
-	#header{
-		background: url("../images/mobile_size_house_home_header.png")no-repeat!important;
-		height: 100vh;
-	}
-	#header #header_wrap h3{
-		margin-bottom: 1px!important;
-	}
-	/*Form*/
-	#header_wrap{
-		width: 92%;
-		position: absolute;
-		top: 57%;
-		left: 50%;
-		transform: translate(-50%,-50%);
-		-webkit-transform: translate(-50%,-50%)!important;
-		-ms-transform: translate(-50%,-50%)!important;
-		-moz-transform: translate(-50%,-50%)!important;
-		-o-transform: translate(-50%,-50%)!important;
-	}
-	/*Form One*/
-	#header_wrap #form_one{
-		width: 100%;
-		padding: 12px 15px 8px 15px;
-	}
-	#header #form_one form input, form select{
-		width: 100%!important;
-		margin-bottom: 5px;
-	}
-
-	#header_wrap #form_one form .row:nth-child(2){
-		margin-top: -8px!important;
-		margin-bottom: 5px!important;
-	}
-
-	#header #form_one form .btn{
-		width: 100%!important;
-	}
-
-	#header #form_one form #detail_search,#header #form_one form #search_place{
-		width: 46%!important;
-	}
-	#header #form_one form .collapse input,#header #form_one form .collapse select,#header #form_one form .collapse .btn{
-		margin-top: 0px!important;
-	}
+	
 
 	#show_map .col-md-2 select{
 		width: 25%!important;
@@ -299,5 +259,27 @@
 	}
 	#property .row .col-md-3 a #recent_item #recent_text_wrap i{
 		font-size: 12px!important;
+	}
+
+	/* App Section CSS! */
+	#app{
+		padding: 50px;
+	}
+
+	#app a:first-child{
+		position: absolute;
+		top: 50%;
+		left: 35%!important;
+		transform: translate(-50%,-50%);
+	}
+	#app a:last-child{
+		position: absolute;
+		top: 50%;
+		right: 35%!important;
+		transform: translate(50%,-50%);
+	}
+	#app img{
+		width: 90px!important;
+		height: 30px!important;
 	}
 }
