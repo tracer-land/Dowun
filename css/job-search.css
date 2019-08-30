@@ -44,9 +44,10 @@
 
 /* Navigation CSS! */
 nav li .dropdown-menu{
-	background: #3a9bfa!important;
+	background: #fff!important;
 	border: 0px!important;
 	width: 350px;
+	color: #666!important;
 }
 nav li .dropdown-menu li{
 	border-bottom: 1px solid #ccc!important;
@@ -54,6 +55,7 @@ nav li .dropdown-menu li{
 }
 nav li .dropdown-menu li a{
 	font-weight: bold;
+	color: #666!important;
 }
 nav li .dropdown-menu li small{
 	font-size: 10px!important;
@@ -96,16 +98,42 @@ nav li:last-child a img{
 	width: 100%;
 	padding: 1px;
 }
-#show_sort .col-md-10 #bg_group .btn{
+#show_sort .col-md-8 #bg_group{
+	width: 80%;
+	margin: 0 auto;
+}
+#show_sort .col-md-8 #bg_group .btn{
 	color: #fff;
 	background: #ccc;
-	float: right;
-	margin-left: 5px;
 }
-#show_sort .col-md-10 #bg_group .active{
+#show_sort .col-md-8 #bg_group .active{
 	background: #3a9bfa!important;
 	color: #fff!important;
 }
+/* Show Nearby Toggle CSS Style */
+#nearby_toggle_select{
+	list-style: none;
+	margin-top: 5px;
+}
+#nearby_toggle_select li{
+	display: inline-block!important;
+}
+#nearby_toggle_select li span{
+	background: #fff!important;
+	padding: 4px;
+}
+#nearby_toggle_select li span a{
+	outline: none!important;
+	text-decoration: none!important;
+	font-size: 12px;
+	color: #000!important;
+}
+#nearby_toggle_select li span .selected_nearby{
+	background: #3a9bfa!important;
+	padding: 2px;
+	color: #fff!important;
+}
+
 /* Sort By */
 #show_sort .col-md-2 small{
 	float: left;
@@ -122,27 +150,27 @@ nav li:last-child a img{
 /* This class is added on scroll */
 #body{
 	width: 100%;
-	margin-top: 1px;
 }
 #body .container #fix_position{
 	background-color: #fff;
-	padding-top: 20px;
-	padding-bottom: 10px;
+	padding-top: 18px;
+	padding-bottom: 5px;
+	margin-top: -4px!important;
 
 }
 #body .container .col-md-8{
 	background-color: #fff;
 	float: right!important;
-	border-left: 8px solid #f2f2f2;
+	border-left: 5px solid #f2f2f2;
 	padding: 30px;
 	margin-bottom: 20px;
+	margin-top: -4px!important;
 }
-.fixed {
+.fixed{
+	width: 28%!important;
 	position: fixed!important;
 	top: 50px!important;
-	padding-right: 85px!important;
 }
-
 /*Job Wrap Tab*/
 #body #job_wrap{
 	display: block;
@@ -151,19 +179,26 @@ nav li:last-child a img{
 	width: 100%;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 	position: relative;
-	padding: 10px;
+	padding: 5px;
 }
+
+#body #responsive{
+	display: none!important;
+}
+
+
 #body .active_tab{
 	border-left: 2px solid #3a9bfa;
 }
 #body #job_wrap img{
-	width: 75px;
-	height: 75px;
+	width: 50px;
+	height: 50px;
 }
 #body #job_wrap .row .col-md-9 ul{
 	list-style: none;
 	float: left;
 	color: #666!important;
+	font-size: 12px;
 }
 #body #job_wrap .row .col-md-9 ul .position{
 	font-weight: bold!important;
@@ -272,7 +307,6 @@ nav li:last-child a img{
 	font-size: 18px;
 }
 
-
 /* Page Pagination */
 .page{
 	display: none;
@@ -281,20 +315,50 @@ nav li:last-child a img{
 	display: block;
 }
 #body #pagination-demo{
-	margin-top: 30px!important;
+	margin-top: 12px!important;
 }
 #body .pagination > li > a{
 	background: #ccc!important;
+	font-size: 12px;
 }
 #body .pagination > .active > a{
 	background: #3a9bfa!important;
 	border-color: rgba(255,255,255,0)!important;
 }
 
-
-
 /* Media Queries!!! */
 @media screen and (max-width: 1228px){
+
+	/* This class is added on scroll */
+	.fixed{
+		width: 100%!important;
+		position: static!important;
+	}
+	/*Body - Job Detail Section*/
+	#body .container .col-md-8{
+		display: none!important;
+	}
+	#body .container #fix_position{
+		display: block;
+		margin-top: 5px!important;
+	}
+	/*Job Wrap Tab*/
+	#body #job_wrap{
+		border-bottom: 0px solid rgba(0,0,0,0.1)!important;
+		border: 1px solid rgba(0,0,0,0.1)!important;
+		border-radius: 5px!important;
+		margin-bottom: 10px!important;
+	}
+	#body .computer_wrap{
+		display: none!important;
+	}
+	#body .responsive-wrap{
+		display: block!important;
+	}
+	#body .active_tab{
+		border-left: 0px solid #3a9bfa!important;
+	}
+
 	/* Header Form Style */
 	/*Form One*/
 	#header_wrap #form_one{
@@ -323,15 +387,156 @@ nav li:last-child a img{
 		margin-bottom: 5px;
 	}
 
-	#show_sort .map_toggle{
+	#show_sort .nearby_toggle{
 		display: none;
 	}
-	#show_sort .col-md-10{
+	#show_sort .col-md-8{
 		display: none;
 	}
+
+	/*Job Detail Section For Tablet & Mobile View With Popup*/
+	/*First Row*/
+	#body #myModal .modal-body .first_row{
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
+	#body #myModal .modal-body .first_row .col-md-12 img{
+		width: 65px;
+		height: 65px;
+		float: left;
+	}
+	#body #myModal .modal-body .first_row .col-md-12 ul{
+		list-style: none;
+		float: left;
+	}
+	#body #myModal .modal-body .first_row .col-md-12 ul:last-child{
+		list-style: none;
+		float: right;
+	}
+	#body #myModal .modal-body .first_row .col-md-12  ul:last-child li .job_type_btn{
+		background-color: #3a9bfa!important;
+		color: #fff!important;
+		float: right;
+	}
+	#body #myModal .modal-body .first_row .col-md-12  ul:last-child li form .apply_btn{
+		background-color: #3a9bfa!important;
+		color: #fff!important;
+	}
+	#body #myModal .modal-body .first_row .col-md-12  ul:last-child li form .save_btn{
+		background-color: #3a9bfa!important;
+		color: #fff!important;
+	}
+	#body #myModal .modal-body .first_row .col-md-12 small{
+		display: inline-block!important;
+		float: right;
+		margin-bottom: 20px;
+		margin-top: 5px;
+	}
+	/*Second Row*/
+	#body #myModal .modal-body .second_row{
+		padding-top: 15px;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
+	#body #myModal .modal-body .second_row ul{
+		list-style: none;
+	}
+	#body #myModal .modal-body .second_row ul li:first-child{
+		font-weight: bold;
+	}
+	#body #myModal .modal-body .second_row ul li:last-child{
+		margin-left: 30px;
+		margin-top: 5px;
+	}
+	#body #myModal .modal-body .second_row ul li i{
+		margin-right: 7px;
+		font-size: 18px;
+	}
+	#body #myModal .modal-body .second_row .col-md-4{
+		margin-bottom: 10px;
+	}
+	/*Third Row!*/
+	#body #myModal .modal-body .third_row{
+		padding-top: 15px;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
+	#body #myModal .modal-body .third_row{
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
+	#body #myModal .modal-body .third_row h4{
+		font-weight: bold;
+	}
+	#body #myModal .modal-body .third_row p{
+		font-size: 14px;
+		margin-bottom: 15px;
+	}
+	/*Fourth Row*/
+	#body #myModal .modal-body .fourth_row{
+		padding: 15px;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
+	#body #myModal .modal-body .fourth_row form input{
+		margin-bottom: 10px;
+		box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+	}
+	#body #myModal .modal-body .fourth_row form span{
+		float: left;
+		display: inline-block;
+		margin-top: 7px;
+		margin-right: 5px;
+	}
+	#body #myModal .modal-body .fourth_row form .cv{
+		width: 33%!important;
+		float: left;
+	}
+	/*Fith Row*/
+	#body #myModal .modal-body .fith_row{
+		padding: 15px;
+	}
+	#body #myModal .modal-body .fith_row .btn{
+		background: #3a9bfa!important;
+		color: #fff!important;
+	}
+	#body #myModal .modal-body .fith_row strong{
+		font-size: 14px;
+	}
+
 }
 
 @media screen and (max-width: 499px){
+
+	#show_sort .col-md-2 select{
+		width: 25%!important;
+	}
+
+	/* This class is added on scroll */
+	.fixed{
+		width: 100%!important;
+		position: static!important;
+	}
+	/*Body - Job Detail Section*/
+	#body .container .col-md-8{
+		display: none!important;
+	}
+	#body .container #fix_position{
+		display: block;
+	}
+	/*Job Wrap Tab*/
+	#body #job_wrap{
+		border-bottom: 0px solid rgba(0,0,0,0.1)!important;
+		border: 1px solid rgba(0,0,0,0.1)!important;
+		border-radius: 5px!important;
+		margin-bottom: 10px!important;
+	}
+	#body .computer_wrap{
+		display: none!important;
+	}
+	#body .responsive-wrap{
+		display: block!important;
+	}
+
+	#body .active_tab{
+		border-left: 0px solid #3a9bfa!important;
+	}
+
 	/* Navigation CSS! */
 	.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
 	    color: #555;
@@ -378,5 +583,112 @@ nav li:last-child a img{
 
 	#show_sort .col-md-2 select{
 		width: 25%!important;
+	}
+
+	/*Job Detail Section For Tablet & Mobile View With Popup*/
+	/*First Row*/
+	#body #myModal .modal-body .first_row{
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
+	#body #myModal .modal-body .first_row .col-md-12 img{
+		width: 45px!important;
+		height: 45px!important;
+		float: left;
+	}
+	#body #myModal .modal-body .first_row .col-md-12 ul{
+		list-style: none;
+		float: left;
+	}
+	#body #myModal .modal-body .first_row .col-md-12 ul:last-child{
+		list-style: none;
+		float: right;
+	}
+	#body #myModal .modal-body .first_row .col-md-12  ul:last-child li .job_type_btn{
+		background-color: #3a9bfa!important;
+		color: #fff!important;
+		float: right;
+	}
+	#body #myModal .modal-body .first_row .col-md-12  ul:last-child li form .apply_btn{
+		background-color: #3a9bfa!important;
+		color: #fff!important;
+	}
+	#body #myModal .modal-body .first_row .col-md-12  ul:last-child li form .save_btn{
+		background-color: #3a9bfa!important;
+		color: #fff!important;
+	}
+	#body #myModal .modal-body .first_row .col-md-12 small{
+		display: inline-block!important;
+		float: right;
+		margin-bottom: 20px;
+		margin-top: 5px;
+	}
+	/*Second Row*/
+	#body #myModal .modal-body .second_row{
+		padding-top: 15px;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
+	#body #myModal .modal-body .second_row ul{
+		list-style: none;
+	}
+	#body #myModal .modal-body .second_row ul li:first-child{
+		font-weight: bold;
+		font-size: 14px!important;
+	}
+	#body #myModal .modal-body .second_row ul li:last-child{
+		margin-left: 20px!important;
+		margin-top: 5px;
+		font-size: 13px!important
+	}
+	#body #myModal .modal-body .second_row ul li i{
+		margin-right: 7px;
+		font-size: 15px!important;
+	}
+	#body #myModal .modal-body .second_row .col-md-4{
+		margin-bottom: 10px;
+	}
+	/*Third Row!*/
+	#body #myModal .modal-body .third_row{
+		padding-top: 15px;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
+	#body #myModal .modal-body .third_row{
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
+	#body #myModal .modal-body .third_row h4{
+		font-weight: bold;
+	}
+	#body #myModal .modal-body .third_row p{
+		font-size: 14px;
+		margin-bottom: 15px;
+	}
+	/*Fourth Row*/
+	#body #myModal .modal-body .fourth_row{
+		padding: 15px;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
+	#body #myModal .modal-body .fourth_row form input{
+		margin-bottom: 10px;
+		box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+	}
+	#body #myModal .modal-body .fourth_row form span{
+		float: left;
+		display: inline-block;
+		margin-top: 7px;
+		margin-right: 5px;
+	}
+	#body #myModal .modal-body .fourth_row form .cv{
+		width: 33%!important;
+		float: left;
+	}
+	/*Fith Row*/
+	#body #myModal .modal-body .fith_row{
+		padding: 15px;
+	}
+	#body #myModal .modal-body .fith_row .btn{
+		background: #3a9bfa!important;
+		color: #fff!important;
+	}
+	#body #myModal .modal-body .fith_row strong{
+		font-size: 14px;
 	}
 }

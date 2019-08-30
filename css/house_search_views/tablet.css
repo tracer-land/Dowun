@@ -46,6 +46,9 @@
 
 
 /* Property */
+#property{
+	margin-top: -45px!important;
+}
 #property .row .col-md-3 a #recent_item{
 	width: 85%;
 	margin-bottom: 20px!important;

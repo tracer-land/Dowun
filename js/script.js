@@ -32,6 +32,24 @@ $(document).ready(function(){
 	});
 });
 
+
+//Show Nearby Selection Script!
+$(document).ready(function(){
+	$("#nearby_toggle_select li span #on").click(function(){
+
+		$("#nearby_toggle_select li span #on").addClass("selected_nearby");
+
+		$("#nearby_toggle_select li span #off").removeClass("selected_nearby");
+	});
+
+	$("#nearby_toggle_select li span #off").click(function(){
+
+		$("#nearby_toggle_select li span #off").addClass("selected_nearby");
+
+		$("#nearby_toggle_select li span #on").removeClass("selected_nearby");
+	});
+});
+
 function get(obj){
 	return document.getElementById(obj);
 }
