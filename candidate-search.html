@@ -7,12 +7,12 @@ Project Designed By Tracer Land
 
  -->
 
-<!-- Job Search Page!!! -->
+<!-- Candidate Search Page!!! -->
 <!DOCTYPE html>
 <html>
 <head>
 		
-		<title>Dowun - Job Search</title>
+		<title>Dowun - Candidate Search</title>
 
 		<!-- Logo Image -->
 		<link rel="icon" href="images/logo.png">
@@ -28,14 +28,14 @@ Project Designed By Tracer Land
 		<!-- CSS Links! -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
-		<link rel="stylesheet" type="text/css" href="css/job-search.css"><!-- Job Search CSS! -->
+		<link rel="stylesheet" type="text/css" href="css/candidate-search.css"><!-- Candidate Search CSS! -->
 
 		<!-- Common CSS Styles! -->
 		<link rel="stylesheet" type="text/css" href="css/common_css_styles/mobile.css" media="screen and (max-width: 600px)">
 		<link rel="stylesheet" type="text/css" href="css/common_css_styles/tablet.css" media="screen and (max-width: 998px)">
 
-		<link rel="stylesheet" type="text/css" href="css/job_search_views/mobile.css" media="screen and (max-width: 768px) and (min-width: 500px)">
-		<link rel="stylesheet" type="text/css" href="css/job_search_views/tablet.css" media="screen and (max-width: 1028px)">
+		<link rel="stylesheet" type="text/css" href="css/candidate_search_views/mobile.css" media="screen and (max-width: 768px) and (min-width: 500px)">
+		<link rel="stylesheet" type="text/css" href="css/candidate_search_views/tablet.css" media="screen and (max-width: 1028px)">
 
 		<!-- Boostrap CSS! -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -45,7 +45,6 @@ Project Designed By Tracer Land
 
 		<!-- Font Awsome Link -->
 		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
 
 </head>
 <body>
@@ -85,50 +84,13 @@ Project Designed By Tracer Land
 						</ul>
 						<!-- Language Toggle End! -->
 						<ul class="nav navbar-nav navbar-right" style="margin-right: 0px!important;">
-							<li class="active"><a href="index.html">Home</a></li>
-
-							<li id="drp-menu">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Post&nbsp;<span class="caret first-caret"></span></a>
-								<ul class="dropdown-menu">
-									<li>
-										<a href="#">Create Post</a>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;Place</a>
-										<small>Share your need to other, if you are finding a room or place.</small>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-suitcase"></i>&nbsp;&nbsp;Job</a>
-										<small>Find employee and post a job to all.</small>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-home"></i>&nbsp;&nbsp;House</a>
-										<small>Find a house and post a house to all.</small>
-									</li>
-								</ul>
-							</li>
-
+							<li><a href="#">Discover</a></li>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html">Create a Post</a></li>
 							<li><a href="job.html">Jobs</a></li>
 							<li><a href="house.html">House</a></li>
-							<li><a href="#">Message</a></li>
+							<li><a href="index.html">Create a Page</a></li>
 							
-							<li id="drp-menu-another">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Create&nbsp;<span class="caret second-caret"></span></a>
-								<ul class="dropdown-menu">
-									<li>
-										<a href="#">Create Page</a>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-wpforms"></i>&nbsp;&nbsp;CV</a>
-										<small>Candidate CV to apply job and promote you need.</small>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-briefcase"></i>&nbsp;&nbsp;Business Page</a>
-										<small>Find employee and post a job to all.</small>
-									</li>
-								</ul>
-							</li>
-
 							<li><a href="#">Message</a></li>
 							<li><a href="#">
 								<sub class="fa fa-bell"></sub><sup>7</sup>
@@ -155,18 +117,11 @@ Project Designed By Tracer Land
 								<form>
 									
 									<div class="row" id="row_one" style="width:100%;">
-										<select class="form-control" id="job_dropdown">
-											<option>Job</option>
+										<select class="form-control" id="candidate_dropdown">
+											<option>Candidate</option>
 										</select>
 
-										<input type="text" name="text" placeholder="Keywords" class="form-control">
-
-										<select class="form-control">
-											<option>Job Category</option>
-											<option>Business</option>
-											<option>HR</option>
-											<option>IT</option>
-										</select>
+										<input type="text" name="text" placeholder="Search Name" class="form-control">
 
 										<select class="form-control">
 											<option>Location</option>
@@ -175,7 +130,14 @@ Project Designed By Tracer Land
 											<option>Taunggyi</option>
 										</select>
 
-										<button type="submit" value="Search" class="btn" id="search_job">Search Job</button>
+										<select class="form-control">
+											<option>Experience Level</option>
+											<option>Entry</option>
+											<option>Junior</option>
+											<option>Senior</option>
+										</select>
+
+										<button type="submit" value="Search" class="btn" id="search_candidate">Search Candidate</button>
 
 										<a href="#" id="detail_search">Details</a>
 									</div>
@@ -183,10 +145,33 @@ Project Designed By Tracer Land
 									<div class="row collapse" id="detail" style="width: 100%;">
 										
 										<div>
-											<input type="text" name="text" placeholder="Keywords" class="form-control">
+											<input type="text" name="text" placeholder="Search Name" class="form-control">
 
 											<select class="form-control">
-												<option>Job Category</option>
+												<option>Location</option>
+												<option>Yangon</option>
+												<option>Mandalay</option>
+												<option>Taunggyi</option>
+											</select>
+
+											<select class="form-control">
+												<option>Experience Level</option>
+												<option>Entry</option>
+												<option>Junior</option>
+												<option>Senior</option>
+											</select>
+
+											<select class="form-control">
+												<option>Career Level</option>
+												<option>Entry</option>
+												<option>Junior</option>
+												<option>Senior</option>
+											</select>
+
+											<input type="text" name="text" placeholder="Salary" class="form-control">
+
+											<select class="form-control">
+												<option>Industry</option>
 												<option>Business</option>
 												<option>HR</option>
 												<option>IT</option>
@@ -201,23 +186,11 @@ Project Designed By Tracer Land
 
 											<input type="text" name="text" placeholder="Salary" class="form-control">
 
-											<select class="form-control">
-												<option>Experience Level</option>
-												<option>Entry</option>
-												<option>Junior</option>
-												<option>Senior</option>
-											</select>
-
-											<select class="form-control">
-												<option>Job Type</option>
-												<option>Freelance</option>
-												<option>Part Time</option>
-												<option>Full Time</option>
-											</select>
+											<input type="text" name="text" placeholder="Other" class="form-control">
 										</div>
 
 										<div>
-											<button type="submit" value="Search" class="btn">Search Job</button>
+											<button type="submit" value="Search" class="btn">Search Candidate</button>
 
 											<button type="button" class="btn" id="less_search">Less Search</button>
 										</div>
@@ -279,173 +252,173 @@ Project Designed By Tracer Land
 		<!-- Body Section Start! -->
 			<div id="body">
 				<div class="container">
-					
+
 					<div class="col-md-4 col-sm-12 col-xs-12" id="fix_position">
-						
+
 						<div class="page" id="page1">
-							<!-- Job Wrap Tabs! -->
-							<a href="#" id="job_wrap" class="active_tab computer_wrap">
+							<!-- Candidate Wrap Tabs! -->
+							<a href="#" id="candidate_wrap" class="active_tab computer_wrap">
 								<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-3">
-										<img src="images/job_feature_icon.png">
+										<img src="images/client.jpg">
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-9">
 										<ul>
 											<li>
 												<i class="fa fa-user"></i>
-												<span class="position">Manager</span>
-											</li>
-											<li>
-												<i class="fa fa-suitcase"></i>
-												<span>Net Core</span>
+												<span class="position">Min Min</span>
 											</li>
 											<li>
 												<i class="fa fa-location-arrow"></i>
 												<span>Yangon, Myanmar</span>
 											</li>
 											<li>
-												<i class="fa fa-calendar-o"></i>
-												<small>2 Day Agos</small>
+												<i class="fa fa-suitcase"></i>
+												<span>Previous - Project Manager</span>
+											</li>
+											<li>
+												<i class="fa fa-circle active"></i>
+												<small>Active Job Searching</small>
 											</li>
 										</ul>
 									</div>
 								</div>
 							</a>
 
-							<a href="#" id="job_wrap" class="computer_wrap">
+							<a href="#" id="candidate_wrap" class="computer_wrap">
 								<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-3">
-										<img src="images/job_feature_icon.png">
+										<img src="images/client.jpg">
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-9">
 										<ul>
 											<li>
 												<i class="fa fa-user"></i>
-												<span class="position">Manager</span>
-											</li>
-											<li>
-												<i class="fa fa-suitcase"></i>
-												<span>Net Core</span>
+												<span class="position">Min Min</span>
 											</li>
 											<li>
 												<i class="fa fa-location-arrow"></i>
 												<span>Yangon, Myanmar</span>
 											</li>
 											<li>
-												<i class="fa fa-calendar-o"></i>
-												<small>2 Day Agos</small>
+												<i class="fa fa-suitcase"></i>
+												<span>Previous - Project Manager</span>
+											</li>
+											<li>
+												<i class="fa fa-circle unactive"></i>
+												<small>Unactive Job Searching</small>
 											</li>
 										</ul>
 									</div>
 								</div>
 							</a>
 
-							<a href="#" id="job_wrap" class="computer_wrap">
+							<a href="#" id="candidate_wrap" class="computer_wrap">
 								<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-3">
-										<img src="images/job_feature_icon.png">
+										<img src="images/client.jpg">
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-9">
 										<ul>
 											<li>
 												<i class="fa fa-user"></i>
-												<span class="position">Manager</span>
-											</li>
-											<li>
-												<i class="fa fa-suitcase"></i>
-												<span>Net Core</span>
+												<span class="position">Min Min</span>
 											</li>
 											<li>
 												<i class="fa fa-location-arrow"></i>
 												<span>Yangon, Myanmar</span>
 											</li>
 											<li>
-												<i class="fa fa-calendar-o"></i>
-												<small>2 Day Agos</small>
+												<i class="fa fa-suitcase"></i>
+												<span>Previous - Project Manager</span>
+											</li>
+											<li>
+												<i class="fa fa-circle active"></i>
+												<small>Active Job Searching</small>
 											</li>
 										</ul>
 									</div>
 								</div>
 							</a>
 
-							<a href="#" id="job_wrap" class="computer_wrap">
+							<a href="#" id="candidate_wrap" class="computer_wrap">
 								<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-3">
-										<img src="images/job_feature_icon.png">
+										<img src="images/client.jpg">
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-9">
 										<ul>
 											<li>
 												<i class="fa fa-user"></i>
-												<span class="position">Manager</span>
-											</li>
-											<li>
-												<i class="fa fa-suitcase"></i>
-												<span>Net Core</span>
+												<span class="position">Min Min</span>
 											</li>
 											<li>
 												<i class="fa fa-location-arrow"></i>
 												<span>Yangon, Myanmar</span>
 											</li>
 											<li>
-												<i class="fa fa-calendar-o"></i>
-												<small>2 Day Agos</small>
+												<i class="fa fa-suitcase"></i>
+												<span>Previous - Project Manager</span>
+											</li>
+											<li>
+												<i class="fa fa-circle active"></i>
+												<small>Active Job Searching</small>
 											</li>
 										</ul>
 									</div>
 								</div>
 							</a>
 
-							<a href="#" id="job_wrap" class="computer_wrap">
+							<a href="#" id="candidate_wrap" class="computer_wrap">
 								<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-3">
-										<img src="images/job_feature_icon.png">
+										<img src="images/client.jpg">
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-9">
 										<ul>
 											<li>
 												<i class="fa fa-user"></i>
-												<span class="position">Manager</span>
-											</li>
-											<li>
-												<i class="fa fa-suitcase"></i>
-												<span>Net Core</span>
+												<span class="position">Min Min</span>
 											</li>
 											<li>
 												<i class="fa fa-location-arrow"></i>
 												<span>Yangon, Myanmar</span>
 											</li>
 											<li>
-												<i class="fa fa-calendar-o"></i>
-												<small>2 Day Agos</small>
+												<i class="fa fa-suitcase"></i>
+												<span>Previous - Project Manager</span>
+											</li>
+											<li>
+												<i class="fa fa-circle active"></i>
+												<small>Active Job Searching</small>
 											</li>
 										</ul>
 									</div>
 								</div>
 							</a>
 
-							<a href="#" id="job_wrap" class="computer_wrap">
+							<a href="#" id="candidate_wrap" class="computer_wrap">
 								<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-3">
-										<img src="images/job_feature_icon.png">
+										<img src="images/client.jpg">
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-9">
 										<ul>
 											<li>
 												<i class="fa fa-user"></i>
-												<span class="position">Manager</span>
-											</li>
-											<li>
-												<i class="fa fa-suitcase"></i>
-												<span>Net Core</span>
+												<span class="position">Min Min</span>
 											</li>
 											<li>
 												<i class="fa fa-location-arrow"></i>
 												<span>Yangon, Myanmar</span>
 											</li>
 											<li>
-												<i class="fa fa-calendar-o"></i>
-												<small>2 Day Agos</small>
+												<i class="fa fa-suitcase"></i>
+												<span>Previous - Project Manager</span>
+											</li>
+											<li>
+												<i class="fa fa-circle active"></i>
+												<small>Active Job Searching</small>
 											</li>
 										</ul>
 									</div>
@@ -453,74 +426,78 @@ Project Designed By Tracer Land
 							</a>
 
 							<!-- Tabet & Mobile View Job Tabs! -->
-							<a href="#" id="job_wrap" class="responsive-wrap" style="display: none;" data-toggle="modal" data-target="#myModal">
+							<a href="#" id="candidate_wrap" class="responsive-wrap" style="display: none;" data-toggle="modal" data-target="#myModal">
 								<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-3">
-										<img src="images/job_feature_icon.png">
+										<img src="images/client.jpg">
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-9">
 										<ul>
 											<li>
 												<i class="fa fa-user"></i>
-												<span class="position">Manager</span>
-											</li>
-											<li>
-												<i class="fa fa-suitcase"></i>
-												<span>Net Core</span>
+												<span class="position">Min Min</span>
 											</li>
 											<li>
 												<i class="fa fa-location-arrow"></i>
 												<span>Yangon, Myanmar</span>
 											</li>
 											<li>
-												<i class="fa fa-calendar-o"></i>
-												<small>2 Day Agos</small>
+												<i class="fa fa-suitcase"></i>
+												<span>Previous - Project Manager</span>
+											</li>
+											<li>
+												<i class="fa fa-circle active"></i>
+												<small>Active Job Searching</small>
 											</li>
 										</ul>
 									</div>
 								</div>
 							</a>
-								<!-- Here Is Model Popup Job Detail When You Click At Tablet and Mobille Views! Start!!! -->
+							<!-- Here Is Model Popup Candidate Detail When You Click At Tablet and Mobille Views! Start!!! -->
 									<div id="myModal" class="modal fade" role="dialog">
 										<div class="modal-dialog">
 											
 											<div class="modal-content">
 												<div  class="modal-header">
 													<button type="button" class="close" data-dismiss="modal">&times;</button>
-        											<h4 class="modal-title">Job Detail</h4>
+        											<h4 class="modal-title">Candidate Detail</h4>
 												</div>
 
 												<div class="modal-body">
-<!-- Here is Job Detail's Contents Of Modal Popup For Tablet & Mobile! Start! -->
+<!-- Here is Candidate Detail's Contents Of Modal Popup For Tablet & Mobile! Start! -->
 <div class="row first_row"><!-- First Row! -->
 	<div class="col-md-12 col-sm-12 col-xs-12">
-		<img src="images/job_feature_icon.png">
+		<img src="images/client.jpg">
 		<ul>
 			<li>
-				<span>Manager</span>
-			</li>
-			<li>
-				<span>Net Core</span>
+				<span class="position">Min Min</span>
 			</li>
 			<li>
 				<span>Yangon, Myanmar</span>
 			</li>
 			<li>
-				<span>2 Day Agos</span>
+				<span>Previous - Project Manager</span>
+			</li>
+			<li>
+				<i class="fa fa-circle active"></i>
+				<span>Active Job Searching</span>
+			</li>
+			<li>
+				<span style="display: block;font-size:10px;margin-top: 7px;">Last Update CV : 2019 Aug 20</span>
 			</li>
 		</ul>
 
 		<!-- Buttons -->
 		<ul>
 			<li>
-				<button class="btn btn-sm job_type_btn">Full Time</button>
+				<button class="btn btn-sm message_type_btn">Message</button>
 			</li>
 			<li>
 				<small>100 Views</small>
 			</li>
 			<li>
 				<form action="#">
-					<button type="submit" class="btn btn-sm apply_btn">Apply</button>
+					<button type="submit" class="btn btn-sm download_btn">Download</button>
 					<button class="btn btn-sm save_btn">Save</button>
 				</form>
 			</li>
@@ -538,13 +515,13 @@ Project Designed By Tracer Land
 	<div class="col-md-4 col-sm-6 col-xs-6">
 		<ul>
 			<li><i class="fa fa-flag"></i>&nbsp;Career Level</li>
-			<li>Others</li>
+			<li>Manager</li>
 		</ul>
 	</div>
 	<div class="col-md-4 col-sm-6 col-xs-6">
 		<ul>
-			<li><i class="fa fa-user"></i>&nbsp;Gender</li>
-			<li>Both</li>
+			<li><i class="fa fa-user"></i>&nbsp;Gender/Age</li>
+			<li>Both/24</li>
 		</ul>
 	</div>
 	<div class="col-md-4 col-sm-6 col-xs-6">
@@ -555,8 +532,8 @@ Project Designed By Tracer Land
 	</div>
 	<div class="col-md-4 col-sm-6 col-xs-6">
 		<ul>
-			<li><i class="fa fa-graduation-cap"></i>&nbsp;Eduction</li>
-			<li>Bachelor's Degree</li>
+			<li><i class="fa fa-heart"></i>&nbsp;Interest</li>
+			<li>Marketing</li>
 		</ul>
 	</div>
 	<div class="col-md-4 col-sm-6 col-xs-6">
@@ -569,7 +546,7 @@ Project Designed By Tracer Land
 
 <div class="row third_row"><!-- Third Row -->
 	<div class="col-md-12">
-		<h4>Job Description</h4>
+		<h4>Work Experience</h4>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -578,7 +555,7 @@ Project Designed By Tracer Land
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</div>
 	<div class="col-md-12">
-		<h4>Position Requirement</h4>
+		<h4>Education</h4>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -587,7 +564,16 @@ Project Designed By Tracer Land
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</div>
 	<div class="col-md-12">
-		<h4>Benifits</h4>
+		<h4>Personal Information</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div class="col-md-12">
+		<h4>About Me</h4>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -598,39 +584,41 @@ Project Designed By Tracer Land
 </div>
 
 <div class="row fourth_row"><!-- Fourth Row -->
-	<form action="#">
+	<h4 class="text-center">Contact Information</h4>
 
-		<input type="email" name="email" class="form-control" placeholder="Enter Your Email">
-
-		<input type="text" name="name" class="form-control" placeholder="Enter Your Name">
-
-		<input type="tel" name="phone" class="form-control" placeholder="Enter Your Phone">
-
-		<span>Upload Your CV</span>
-		<input type="file" name="file" class="form-control cv">
-
-		<input type="submit" name="submit" value="Submit Now" class="btn btn-sm btn-danger pull-right">
-
-	</form>
-</div>
-
-<div class="row fith_row"><!-- Fith Row -->
-	<div class="col-md-12">
-		<strong>NetCore Internet</strong>
-		<a href="#" class="btn btn-sm pull-right">Follow</a>
-
-		<h4>About</h4>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-		<a href="#" class="btn btn-sm">See More</a>
+	<div class="col-md-4">
+		<p class="text-center">
+			<i class="fa fa-phone"></i>&nbsp;+95 97950685410
+		</p>
 	</div>
+	<div class="col-md-4">
+		<p class="text-center">
+			<a href="mailto:min@gmail.com">
+				<i class="fa fa-envelope"></i>&nbsp;min@gmial.com
+			</a>
+		</p>
+	</div>
+	<div class="col-md-4">
+		<p class="text-center">
+			<i class="fa fa-location-arrow"></i>&nbsp;Tamwe, Yangon, Myanmar
+		</p>
+	</div>
+
+	<center>
+		<a href="#" id="icon" class="text-center">
+			<i class="fa fa-facebook"></i>
+		</a>
+
+		<a href="#" id="icon" class="text-center">
+			<i class="fa fa-twitter"></i>
+		</a>
+
+		<a href="#" id="icon" class="text-center">
+			<i class="fa fa-google-plus"></i>
+		</a>
+	</center>
 </div>
-<!-- Here is Job Detail's Contents Of Modal Popup For Tablet & Mobile! End! -->
+<!-- Here is Candidate Detail's Contents Of Modal Popup For Tablet & Mobile! End! -->
 												</div>
 
 												<div class="modal-footer">
@@ -640,260 +628,289 @@ Project Designed By Tracer Land
 
 										</div>
 									</div>
-								<!-- Here Is Model Popup Job Detail When You Click At Tablet and Mobille Views! End!!! -->
+								<!-- Here Is Model Popup Candidate Detail When You Click At Tablet and Mobille Views! End!!! -->
 
-							<a href="#" id="job_wrap" class="responsive-wrap" style="display: none;">
+
+
+							<a href="#" id="candidate_wrap" class="responsive-wrap" style="display: none;">
 								<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-3">
-										<img src="images/job_feature_icon.png">
+										<img src="images/client.jpg">
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-9">
 										<ul>
 											<li>
 												<i class="fa fa-user"></i>
-												<span class="position">Manager</span>
-											</li>
-											<li>
-												<i class="fa fa-suitcase"></i>
-												<span>Net Core</span>
+												<span class="position">Min Min</span>
 											</li>
 											<li>
 												<i class="fa fa-location-arrow"></i>
 												<span>Yangon, Myanmar</span>
 											</li>
 											<li>
-												<i class="fa fa-calendar-o"></i>
-												<small>2 Day Agos</small>
+												<i class="fa fa-suitcase"></i>
+												<span>Previous - Project Manager</span>
+											</li>
+											<li>
+												<i class="fa fa-circle unactive"></i>
+												<small>Unactive Job Searching</small>
 											</li>
 										</ul>
 									</div>
 								</div>
 							</a>
 
-							<a href="#" id="job_wrap" class="responsive-wrap" style="display: none;">
+							<a href="#" id="candidate_wrap" class="responsive-wrap" style="display: none;">
 								<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-3">
-										<img src="images/job_feature_icon.png">
+										<img src="images/client.jpg">
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-9">
 										<ul>
 											<li>
 												<i class="fa fa-user"></i>
-												<span class="position">Manager</span>
-											</li>
-											<li>
-												<i class="fa fa-suitcase"></i>
-												<span>Net Core</span>
+												<span class="position">Min Min</span>
 											</li>
 											<li>
 												<i class="fa fa-location-arrow"></i>
 												<span>Yangon, Myanmar</span>
 											</li>
 											<li>
-												<i class="fa fa-calendar-o"></i>
-												<small>2 Day Agos</small>
+												<i class="fa fa-suitcase"></i>
+												<span>Previous - Project Manager</span>
+											</li>
+											<li>
+												<i class="fa fa-circle active"></i>
+												<small>Active Job Searching</small>
 											</li>
 										</ul>
 									</div>
 								</div>
 							</a>
 
-							<a href="#" id="job_wrap" class="responsive-wrap" style="display: none;">
+							<a href="#" id="candidate_wrap" class="responsive-wrap" style="display: none;">
 								<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-3">
-										<img src="images/job_feature_icon.png">
+										<img src="images/client.jpg">
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-9">
 										<ul>
 											<li>
 												<i class="fa fa-user"></i>
-												<span class="position">Manager</span>
-											</li>
-											<li>
-												<i class="fa fa-suitcase"></i>
-												<span>Net Core</span>
+												<span class="position">Min Min</span>
 											</li>
 											<li>
 												<i class="fa fa-location-arrow"></i>
 												<span>Yangon, Myanmar</span>
 											</li>
 											<li>
-												<i class="fa fa-calendar-o"></i>
-												<small>2 Day Agos</small>
+												<i class="fa fa-suitcase"></i>
+												<span>Previous - Project Manager</span>
+											</li>
+											<li>
+												<i class="fa fa-circle active"></i>
+												<small>Active Job Searching</small>
 											</li>
 										</ul>
 									</div>
 								</div>
 							</a>
 
-							<a href="#" id="job_wrap" class="responsive-wrap" style="display: none;">
+							<a href="#" id="candidate_wrap" class="responsive-wrap" style="display: none;">
 								<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-3">
-										<img src="images/job_feature_icon.png">
+										<img src="images/client.jpg">
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-9">
 										<ul>
 											<li>
 												<i class="fa fa-user"></i>
-												<span class="position">Manager</span>
-											</li>
-											<li>
-												<i class="fa fa-suitcase"></i>
-												<span>Net Core</span>
+												<span class="position">Min Min</span>
 											</li>
 											<li>
 												<i class="fa fa-location-arrow"></i>
 												<span>Yangon, Myanmar</span>
 											</li>
 											<li>
-												<i class="fa fa-calendar-o"></i>
-												<small>2 Day Agos</small>
+												<i class="fa fa-suitcase"></i>
+												<span>Previous - Project Manager</span>
+											</li>
+											<li>
+												<i class="fa fa-circle active"></i>
+												<small>Active Job Searching</small>
 											</li>
 										</ul>
 									</div>
 								</div>
 							</a>
 
-							<a href="#" id="job_wrap" class="responsive-wrap" style="display: none;">
+							<a href="#" id="candidate_wrap" class="responsive-wrap" style="display: none;">
 								<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-3">
-										<img src="images/job_feature_icon.png">
+										<img src="images/client.jpg">
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-9">
 										<ul>
 											<li>
 												<i class="fa fa-user"></i>
-												<span class="position">Manager</span>
-											</li>
-											<li>
-												<i class="fa fa-suitcase"></i>
-												<span>Net Core</span>
+												<span class="position">Min Min</span>
 											</li>
 											<li>
 												<i class="fa fa-location-arrow"></i>
 												<span>Yangon, Myanmar</span>
 											</li>
 											<li>
-												<i class="fa fa-calendar-o"></i>
-												<small>2 Day Agos</small>
+												<i class="fa fa-suitcase"></i>
+												<span>Previous - Project Manager</span>
+											</li>
+											<li>
+												<i class="fa fa-circle active"></i>
+												<small>Active Job Searching</small>
 											</li>
 										</ul>
 									</div>
 								</div>
 							</a>
 
-							<a href="#" id="job_wrap" class="responsive-wrap" style="display: none;">
+							<a href="#" id="candidate_wrap" class="responsive-wrap" style="display: none;">
 								<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-3">
-										<img src="images/job_feature_icon.png">
+										<img src="images/client.jpg">
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-9">
 										<ul>
 											<li>
 												<i class="fa fa-user"></i>
-												<span class="position">Manager</span>
-											</li>
-											<li>
-												<i class="fa fa-suitcase"></i>
-												<span>Net Core</span>
+												<span class="position">Min Min</span>
 											</li>
 											<li>
 												<i class="fa fa-location-arrow"></i>
 												<span>Yangon, Myanmar</span>
 											</li>
 											<li>
-												<i class="fa fa-calendar-o"></i>
-												<small>2 Day Agos</small>
+												<i class="fa fa-suitcase"></i>
+												<span>Previous - Project Manager</span>
+											</li>
+											<li>
+												<i class="fa fa-circle active"></i>
+												<small>Active Job Searching</small>
 											</li>
 										</ul>
 									</div>
 								</div>
 							</a>
 
-							<a href="#" id="job_wrap" class="responsive-wrap" style="display: none;">
+							<a href="#" id="candidate_wrap" class="responsive-wrap" style="display: none;">
 								<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-3">
-										<img src="images/job_feature_icon.png">
+										<img src="images/client.jpg">
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-9">
 										<ul>
 											<li>
 												<i class="fa fa-user"></i>
-												<span class="position">Manager</span>
-											</li>
-											<li>
-												<i class="fa fa-suitcase"></i>
-												<span>Net Core</span>
+												<span class="position">Min Min</span>
 											</li>
 											<li>
 												<i class="fa fa-location-arrow"></i>
 												<span>Yangon, Myanmar</span>
 											</li>
 											<li>
-												<i class="fa fa-calendar-o"></i>
-												<small>2 Day Agos</small>
+												<i class="fa fa-suitcase"></i>
+												<span>Previous - Project Manager</span>
+											</li>
+											<li>
+												<i class="fa fa-circle active"></i>
+												<small>Active Job Searching</small>
 											</li>
 										</ul>
 									</div>
 								</div>
 							</a>
 
-							<a href="#" id="job_wrap" class="responsive-wrap" style="display: none;">
+							<a href="#" id="candidate_wrap" class="responsive-wrap" style="display: none;">
 								<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-3">
-										<img src="images/job_feature_icon.png">
+										<img src="images/client.jpg">
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-9">
 										<ul>
 											<li>
 												<i class="fa fa-user"></i>
-												<span class="position">Manager</span>
-											</li>
-											<li>
-												<i class="fa fa-suitcase"></i>
-												<span>Net Core</span>
+												<span class="position">Min Min</span>
 											</li>
 											<li>
 												<i class="fa fa-location-arrow"></i>
 												<span>Yangon, Myanmar</span>
 											</li>
 											<li>
-												<i class="fa fa-calendar-o"></i>
-												<small>2 Day Agos</small>
+												<i class="fa fa-suitcase"></i>
+												<span>Previous - Project Manager</span>
+											</li>
+											<li>
+												<i class="fa fa-circle active"></i>
+												<small>Active Job Searching</small>
 											</li>
 										</ul>
 									</div>
 								</div>
 							</a>
 
-							<a href="#" id="job_wrap" class="responsive-wrap" style="display: none;">
+							<a href="#" id="candidate_wrap" class="responsive-wrap" style="display: none;">
 								<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-3">
-										<img src="images/job_feature_icon.png">
+										<img src="images/client.jpg">
 									</div>
 									<div class="col-md-9 col-sm-9 col-xs-9">
 										<ul>
 											<li>
 												<i class="fa fa-user"></i>
-												<span class="position">Manager</span>
-											</li>
-											<li>
-												<i class="fa fa-suitcase"></i>
-												<span>Net Core</span>
+												<span class="position">Min Min</span>
 											</li>
 											<li>
 												<i class="fa fa-location-arrow"></i>
 												<span>Yangon, Myanmar</span>
 											</li>
 											<li>
-												<i class="fa fa-calendar-o"></i>
-												<small>2 Day Agos</small>
+												<i class="fa fa-suitcase"></i>
+												<span>Previous - Project Manager</span>
+											</li>
+											<li>
+												<i class="fa fa-circle active"></i>
+												<small>Active Job Searching</small>
 											</li>
 										</ul>
 									</div>
 								</div>
 							</a>
 
+							<a href="#" id="candidate_wrap" class="responsive-wrap" style="display: none;">
+								<div class="row">
+									<div class="col-md-3 col-sm-3 col-xs-3">
+										<img src="images/client.jpg">
+									</div>
+									<div class="col-md-9 col-sm-9 col-xs-9">
+										<ul>
+											<li>
+												<i class="fa fa-user"></i>
+												<span class="position">Min Min</span>
+											</li>
+											<li>
+												<i class="fa fa-location-arrow"></i>
+												<span>Yangon, Myanmar</span>
+											</li>
+											<li>
+												<i class="fa fa-suitcase"></i>
+												<span>Previous - Project Manager</span>
+											</li>
+											<li>
+												<i class="fa fa-circle active"></i>
+												<small>Active Job Searching</small>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</a>
 						</div>
 
 						<div class="page" id="page2">
@@ -908,24 +925,28 @@ Project Designed By Tracer Land
 
 					</div>
 
-					<div class="col-md-8" id="job_detail">
+					<div class="col-md-8" id="candidate_detail">
 						
 						<!-- First Row! -->
 						<div class="row" id="first_row">
 							<div class="col-md-6">
-								<img src="images/job_feature_icon.png">
+								<img src="images/client.jpg">
 								<ul>
 									<li>
-										<span>Manager</span>
-									</li>
-									<li>
-										<span>Net Core</span>
+										<span class="position">Min Min</span>
 									</li>
 									<li>
 										<span>Yangon, Myanmar</span>
 									</li>
 									<li>
-										<span>2 Day Agos</span>
+										<span>Previous - Project Manager</span>
+									</li>
+									<li>
+										<i class="fa fa-circle active"></i>
+										<span>Active Job Searching</span>
+									</li>
+									<li>
+										<span>Last Update CV : 2019 Aug 20</span>
 									</li>
 								</ul>
 							</div>
@@ -933,14 +954,14 @@ Project Designed By Tracer Land
 							<div class="col-md-6">
 								<ul>
 									<li>
-										<button class="btn btn-sm job_type_btn">Full Time</button>
+										<button class="btn btn-sm message_type_btn">Message</button>
 									</li>
 									<li>
 										<small>100 Views</small>
 									</li>
 									<li>
 										<form action="#">
-											<button type="submit" class="btn btn-sm apply_btn">Apply</button>
+											<button type="submit" class="btn btn-sm download_btn">Download</button>
 											<button class="btn btn-sm save_btn">Save</button>
 										</form>
 									</li>
@@ -952,20 +973,20 @@ Project Designed By Tracer Land
 						<div class="row" id="second_row">
 							<div class="col-md-4">
 								<ul>
-									<li><i class="fa fa-money"></i>&nbsp;Offered Salary</li>
+									<li><i class="fa fa-money"></i>&nbsp;Last Salary</li>
 									<li>200,000 MMK</li>
 								</ul>
 							</div>
 							<div class="col-md-4">
 								<ul>
 									<li><i class="fa fa-flag"></i>&nbsp;Career Level</li>
-									<li>Others</li>
+									<li>Manager</li>
 								</ul>
 							</div>
 							<div class="col-md-4">
 								<ul>
-									<li><i class="fa fa-user"></i>&nbsp;Gender</li>
-									<li>Both</li>
+									<li><i class="fa fa-user"></i>&nbsp;Gender/Age</li>
+									<li>Both/24</li>
 								</ul>
 							</div>
 							<div class="col-md-4">
@@ -976,8 +997,8 @@ Project Designed By Tracer Land
 							</div>
 							<div class="col-md-4">
 								<ul>
-									<li><i class="fa fa-graduation-cap"></i>&nbsp;Eduction</li>
-									<li>Bachelor's Degree</li>
+									<li><i class="fa fa-heart"></i>&nbsp;Interest</li>
+									<li>Marketing</li>
 								</ul>
 							</div>
 							<div class="col-md-4">
@@ -991,7 +1012,7 @@ Project Designed By Tracer Land
 						<!-- Third Row -->
 						<div class="row" id="third_row">
 							<div class="col-md-12">
-								<h4>Job Description</h4>
+								<h4>Work Experience</h4>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -1002,7 +1023,7 @@ Project Designed By Tracer Land
 								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							</div>
 							<div class="col-md-12">
-								<h4>Position Requirement</h4>
+								<h4>Education</h4>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -1015,7 +1036,20 @@ Project Designed By Tracer Land
 								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							</div>
 							<div class="col-md-12">
-								<h4>Benifits</h4>
+								<h4>Personal Information</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<div class="col-md-12">
+								<h4>About Me</h4>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -1031,49 +1065,52 @@ Project Designed By Tracer Land
 
 						<!-- Fourth Row -->
 						<div class="row" id="fourth_row">
-							<form action="#">
+							<h4 class="text-center">Contact Information</h4>
 
-								<input type="email" name="email" class="form-control" placeholder="Enter Your Email">
+							<div class="col-md-4">
+								<p class="text-center">
+									<i class="fa fa-phone"></i>&nbsp;+95 97950685410
+								</p>
+							</div>
+							<div class="col-md-4">
+								<p class="text-center">
+									<a href="mailto:min@gmail.com">
+										<i class="fa fa-envelope"></i>&nbsp;min@gmial.com
+									</a>
+								</p>
+							</div>
+							<div class="col-md-4">
+								<p class="text-center">
+									<i class="fa fa-location-arrow"></i>&nbsp;Tamwe, Yangon, Myanmar
+								</p>
+							</div>
 
-								<input type="text" name="name" class="form-control" placeholder="Enter Your Name">
+							<center>
+								<a href="#" id="icon" class="text-center">
+									<i class="fa fa-facebook"></i>
+								</a>
 
-								<input type="tel" name="phone" class="form-control" placeholder="Enter Your Phone">
+								<a href="#" id="icon" class="text-center">
+									<i class="fa fa-twitter"></i>
+								</a>
 
-								<span>Upload Your CV</span>
-								<input type="file" name="file" class="form-control cv">
-
-								<input type="submit" name="submit" value="Submit Now" class="btn btn-sm btn-danger pull-right">
-
-							</form>
-						</div>
-
-						<!-- Fith Row -->
-						<div class="row" id="fith_row">
-							 <div class="col-md-12">
-							 	<strong>NetCore Internet</strong>
-							 	<a href="#" class="btn btn-sm pull-right">Follow</a>
-
-							 	<h4>About</h4>
-							 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-							 	<a href="#" class="btn btn-sm">See More</a>
-							 </div>
+								<a href="#" id="icon" class="text-center">
+									<i class="fa fa-google-plus"></i>
+								</a>
+							</center>
 						</div>
 
 					</div>
-
+					
 				</div>
 			</div>
 		<!-- Body Section End! -->
 
+
 		<script type="text/javascript">
 			
 			$(document).ready(function(){
+
 				$("#show_sort #bg_group a").click(function(){
 					$("#bg_group a").removeClass("active");
 					$(this).addClass("active");
@@ -1089,21 +1126,10 @@ Project Designed By Tracer Land
 					$("#detail").css("display", "none");
 				});	
 
-
-				/*Job Wrap Active*/
+				/*Candidate Wrap Active*/
 				$("#body #fix_position a").click(function(){
 					$("#fix_position a").removeClass("active_tab");
 					$(this).addClass("active_tab");
-				});
-
-				/*Caret*/
-				$("#drp-menu").click(function(){
-					$("#drp-menu .caret").toggleClass("active_caret");
-					$("#drp-menu-another .caret").removeClass("active_caret");
-				});
-				$("#drp-menu-another").click(function(){
-					$("#drp-menu-another .caret").toggleClass("active_caret");
-					$("#drp-menu .caret").removeClass("active_caret");
 				});
 
 				$(window).bind('scroll', function() {
@@ -1115,6 +1141,7 @@ Project Designed By Tracer Land
 							 $('#fix_position').removeClass('fixed');
 						 }
 					});
+
 			});
 
 
@@ -1162,7 +1189,6 @@ Project Designed By Tracer Land
 			});
 
 		</script>
-
 
 </body>
 </html>

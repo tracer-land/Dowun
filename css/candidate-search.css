@@ -28,7 +28,7 @@
 #header #form_one form .btn{
 	background: #3a9bfa;
 	color: #fff;
-	width: 15%;
+	width: 17%;
 	display: inline-block!important;
 	margin-left: 10px;
 }
@@ -45,104 +45,10 @@
 	outline: none!important;
 	margin-left: 10px;
 }
-#header #form_one form #job_dropdown{
-	width: 10%!important;
+#header #form_one form #candidate_dropdown{
+	width: 13%!important;
 	background: rgba(0,0,0,0)!important;
 	padding-left: 30px;
-}
-
-/* Navigation CSS! */
-nav li .dropdown-menu{
-	background: #fff!important;
-	border: 0px!important;
-	width: 380px;
-	color: #666!important;
-	position: absolute!important;
-	left: -200%!important;
-	margin-top: 6px!important;
-}
-nav li .dropdown-menu li{
-	border-bottom: 1px solid #ccc!important;
-	padding: 10px;
-}
-nav li .dropdown-menu li a{
-	font-weight: bold;
-	color: #666!important;
-}
-nav li .dropdown-menu li small{
-	font-size: 10px!important;
-	margin-left: 42px!important;
-	display: block!important;
-	padding-top: 10px;
-}
-nav li .dropdown-menu li:last-child{
-	border-bottom: 0px!important;
-}
-nav li .dropdown-menu li:hover a{
-	background-color: #ccc!important;
-}
-nav li .dropdown-menu li:first-child:hover a{
-	background-color: #fff!important;
-}
-
-nav li sub{
-	font-size: 16px!important;
-	display: inline-block!important;
-	margin-right: -5px!important;
-}
-nav li sup{
-	width: 14px;
-	height: 14px;
-	font-size: 10px;
-	font-weight: bold;
-	text-align: center;
-	line-height: 14px;
-	border-radius: 25px;
-	background: red;
-	display: inline-block!important;
-}
-nav li:last-child a img{
-	width: 25px;
-	height: 25px;
-	border-radius: 25px;
-	display: inline-block;
-}
-
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
-	background: #3a9bfa!important;
-}
-
-.navbar-right .dropdown-menu li:first-child{
-	padding: 2px!important;
-	padding-left: 12px!important;
-}
-
-.navbar-right .first-caret{
-	display: block;
-	position: absolute;
-	top: 104%;
-	color: #3a9bfa!important;
-	z-index: 100;
-	right: 45%;
-	width: 4px;
-	height: 4px;
-	transform: rotate(-180deg);
-}
-
-.navbar-right .second-caret{
-	display: block;
-	position: absolute;
-	top: 104%;
-	color: #3a9bfa!important;
-	z-index: 100;
-	right: 45%;
-	width: 4px;
-	height: 4px;
-	transform: rotate(-180deg);
-}
-
-.navbar-right .active_caret{
-	color: #fff!important;
 }
 
 
@@ -200,6 +106,32 @@ nav li:last-child a img{
 	float: left;
 }
 
+
+/* Navigation CSS! */
+nav li sub{
+	font-size: 16px!important;
+	display: inline-block!important;
+	margin-right: -5px!important;
+}
+nav li sup{
+	width: 14px;
+	height: 14px;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 14px;
+	border-radius: 25px;
+	background: red;
+	display: inline-block!important;
+}
+nav li:last-child a img{
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+	display: inline-block;
+}
+
+
 /* Body! This class is added on scroll */
 #body{
 	width: 100%;
@@ -224,8 +156,8 @@ nav li:last-child a img{
 	position: fixed!important;
 	top: 50px!important;
 }
-/*Job Wrap Tab*/
-#body #job_wrap{
+/*Candidate Wrap Tab*/
+#body #candidate_wrap{
 	display: block;
 	outline: none;
 	text-decoration: none;
@@ -244,123 +176,145 @@ nav li:last-child a img{
 #body .active_tab{
 	border-left: 2px solid #3a9bfa;
 }
-#body #job_wrap img{
+#body #candidate_wrap img{
 	width: 50px;
 	height: 50px;
+	border-radius: 25px;
 }
-#body #job_wrap .row .col-md-9 ul{
+#body #candidate_wrap .row .col-md-9 ul{
 	list-style: none;
 	float: left;
 	color: #666!important;
 	margin-left: -28px;
 	font-size: 12px;
 }
-#body #job_wrap .row .col-md-9 ul .position{
+#body #candidate_wrap .row .col-md-9 ul .position{
 	font-weight: bold!important;
 }
-#body #job_wrap .row .col-md-9 ul li span, small{
+#body #candidate_wrap .row .col-md-9 ul li span, small{
 	margin-left: 12px;
 }
+#body #candidate_wrap .row .col-md-9 ul li .active{
+	color: #0f0!important;
+}
+#body #candidate_wrap .row .col-md-9 ul li .unactive{
+	color: #f00!important;
+}
 
-/*Job Detail Section*/
-#body #job_detail .row{
+/*Candidate Detail Section*/
+#body #candidate_detail .row{
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
 /*First Row*/
-#body #job_detail #first_row{
+#body #candidate_detail #first_row{
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-#body #job_detail #first_row .col-md-6 img{
+#body #candidate_detail #first_row .col-md-6 img{
 	width: 80px;
 	height: 80px;
+	border-radius: 40px;
 	float: left;
 }
-#body #job_detail #first_row .col-md-6:first-child ul{
+#body #candidate_detail #first_row .col-md-6:first-child ul{
 	list-style: none;
 	float: left;
 }
-#body #job_detail #first_row .col-md-6:first-child ul li:first-child{
+#body #candidate_detail #first_row .col-md-6:first-child ul li:first-child{
 	font-weight: bold;
 }
-#body #job_detail #first_row .col-md-6:last-child  ul{
+#body #candidate_detail #first_row .col-md-6:first-child  ul li .active{
+	color: #0f0!important;
+}
+#body #candidate_detail #first_row .col-md-6:first-child  ul li .unactive{
+	color: #f00!important;
+}
+#body #candidate_detail #first_row .col-md-6:first-child  ul li:last-child span{
+	display: block;
+	margin-top: 8px;
+	font-size: 10px!important;
+}
+#body #candidate_detail #first_row .col-md-6:last-child  ul{
 	list-style: none;
 	float: right;
 }
-#body #job_detail #first_row .col-md-6:last-child  ul li .job_type_btn{
+#body #candidate_detail #first_row .col-md-6:last-child  ul li .message_type_btn{
 	background-color: #3a9bfa!important;
 	color: #fff!important;
 	float: right;
 }
-#body #job_detail #first_row .col-md-6:last-child  ul li form .apply_btn{
+#body #candidate_detail #first_row .col-md-6:last-child  ul li form .download_btn{
 	background-color: #3a9bfa!important;
 	color: #fff!important;
 }
-#body #job_detail #first_row .col-md-6:last-child  ul li form .save_btn{
+#body #candidate_detail #first_row .col-md-6:last-child  ul li form .save_btn{
 	background-color: #3a9bfa!important;
 	color: #fff!important;
 }
-#body #job_detail #first_row .col-md-6 small{
+#body #candidate_detail #first_row .col-md-6 small{
 	display: inline-block!important;
 	float: right;
 	margin-bottom: 25px;
 	margin-top: 5px;
 }
 /*Secon Row!*/
-#body #job_detail #second_row{
+#body #candidate_detail #second_row{
 	padding-top: 25px;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-#body #job_detail #second_row ul{
+#body #candidate_detail #second_row ul{
 	list-style: none;
 }
-#body #job_detail #second_row ul li:first-child{
+#body #candidate_detail #second_row ul li:first-child{
 	font-weight: bold;
 }
-#body #job_detail #second_row ul li:last-child{
+#body #candidate_detail #second_row ul li:last-child{
 	margin-left: 30px;
 	margin-top: 5px;
 }
-#body #job_detail #second_row ul li i{
+#body #candidate_detail #second_row ul li i{
 	margin-right: 7px;
 	font-size: 18px;
 }
-#body #job_detail #second_row .col-md-4{
+#body #candidate_detail #second_row .col-md-4{
 	margin-bottom: 10px;
 }
 /*Third Row!*/
-#body #job_detail #third_row{
+#body #candidate_detail #third_row{
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-#body #job_detail #third_row h4{
+#body #candidate_detail #third_row h4{
 	font-weight: bold;
 }
 /*Fourth Row*/
-#body #job_detail #fourth_row{
+#body #candidate_detail #fourth_row{
 	padding-top: 25px;
-	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-#body #job_detail #fourth_row form input{
+#body #candidate_detail #fourth_row h4{
+	font-weight: bold;
+	margin-bottom: 28px;
+}
+#body #candidate_detail #fourth_row .col-md-4{
 	margin-bottom: 10px;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
 }
-#body #job_detail #fourth_row form span{
-	float: left;
+#body #candidate_detail #fourth_row .col-md-4 p a{
+	text-decoration: none!important;
+	outline: none!important;
+	color: #000!important;
+}
+#body #candidate_detail #fourth_row #icon{
+	text-decoration: none!important;
+	outline: none!important;
+	color: #000!important;
 	display: inline-block;
-	margin-top: 7px;
-	margin-right: 5px;
-}
-#body #job_detail #fourth_row form .cv{
-	width: 33%!important;
-	float: left;
-}
-/*Fith Row*/
-#body #job_detail #fith_row .btn{
-	background: #3a9bfa!important;
-	color: #fff!important;
-}
-#body #job_detail #fith_row strong{
-	font-size: 18px;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	background: #fff;
+	border-radius: 25px;
+	box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+	margin-left:  10px;
 }
 
 /* Page Pagination */
@@ -385,36 +339,6 @@ nav li:last-child a img{
 /* Media Queries!!! */
 @media screen and (max-width: 1228px){
 
-	/* This class is added on scroll */
-	.fixed{
-		width: 100%!important;
-		position: static!important;
-	}
-	/*Body - Job Detail Section*/
-	#body .container .col-md-8{
-		display: none!important;
-	}
-	#body .container #fix_position{
-		display: block;
-		margin-top: 5px!important;
-	}
-	/*Job Wrap Tab*/
-	#body #job_wrap{
-		border-bottom: 0px solid rgba(0,0,0,0.1)!important;
-		border: 1px solid rgba(0,0,0,0.1)!important;
-		border-radius: 5px!important;
-		margin-bottom: 10px!important;
-	}
-	#body .computer_wrap{
-		display: none!important;
-	}
-	#body .responsive-wrap{
-		display: block!important;
-	}
-	#body .active_tab{
-		border-left: 0px solid #3a9bfa!important;
-	}
-
 	/* Header Form Style */
 	/*Form One*/
 	#header_wrap #form_one{
@@ -426,23 +350,24 @@ nav li:last-child a img{
 		margin-bottom: 5px;
 	}
 
-	#header #form_one form #job_dropdown{
-		width: 100%!important;
-		margin-bottom: 5px;
-		padding-left: 10px;
-	}
-
 	#header #form_one form .btn{
 		width: 100%!important;
 	}
 
-	#header #form_one form #detail_search,#header #form_one form #search_job{
+	#header #form_one form #detail_search,#header #form_one form #search_candidate{
 		margin-bottom: 5px;
 	}
 	#header #form_one form .collapse input,#header #form_one form .collapse select,#header #form_one form .collapse .btn{
 		margin-bottom: 5px;
 	}
 
+	#header #form_one form #candidate_dropdown{
+		width: 100%!important;
+		margin-bottom: 5px;
+		padding-left: 10px;
+	}
+
+	/* Shwo Sort CSS Style! */
 	#show_sort .nearby_toggle{
 		display: none;
 	}
@@ -450,7 +375,44 @@ nav li:last-child a img{
 		display: none;
 	}
 
-	/*Job Detail Section For Tablet & Mobile View With Popup*/
+	/* Navigation CSS! */
+	nav #language_toggle_select{
+		margin-left: 0px!important;
+	}
+
+
+	/* This class is added on scroll */
+	.fixed{
+		width: 100%!important;
+		position: static!important;
+	}
+	/*Body - Candidate Detail Section*/
+	#body .container .col-md-8{
+		display: none!important;
+	}
+	#body .container #fix_position{
+		display: block;
+		margin-top: 5px!important;
+	}
+	/*Candidate Wrap Tab*/
+	#body #candidate_wrap{
+		border-bottom: 0px solid rgba(0,0,0,0.1)!important;
+		border: 1px solid rgba(0,0,0,0.1)!important;
+		border-radius: 5px!important;
+		margin-bottom: 10px!important;
+	}
+	#body .computer_wrap{
+		display: none!important;
+	}
+	#body .responsive-wrap{
+		display: block!important;
+	}
+
+	#body .active_tab{
+		border-left: 0px solid #3a9bfa!important;
+	}
+
+	/*Candidate Detail Section For Tablet & Mobile View With Popup*/
 	/*First Row*/
 	#body #myModal .modal-body .first_row{
 		border-bottom: 1px solid rgba(0,0,0,0.1);
@@ -458,7 +420,17 @@ nav li:last-child a img{
 	#body #myModal .modal-body .first_row .col-md-12 img{
 		width: 65px;
 		height: 65px;
+		border-radius: 65px;
 		float: left;
+	}
+	#body #myModal .modal-body .first_row .col-md-12 ul{
+		margin-left: -25px;
+	}
+	#body #myModal .modal-body .first_row .col-md-12 ul .active{
+		color: #0f0!important;
+	}
+	#body #myModal .modal-body .first_row .col-md-12 ul .unactive{
+		color: #f00!important;
 	}
 	#body #myModal .modal-body .first_row .col-md-12 ul{
 		list-style: none;
@@ -468,12 +440,12 @@ nav li:last-child a img{
 		list-style: none;
 		float: right;
 	}
-	#body #myModal .modal-body .first_row .col-md-12  ul:last-child li .job_type_btn{
+	#body #myModal .modal-body .first_row .col-md-12  ul:last-child li .message_type_btn{
 		background-color: #3a9bfa!important;
 		color: #fff!important;
 		float: right;
 	}
-	#body #myModal .modal-body .first_row .col-md-12  ul:last-child li form .apply_btn{
+	#body #myModal .modal-body .first_row .col-md-12  ul:last-child li form .download_btn{
 		background-color: #3a9bfa!important;
 		color: #fff!important;
 	}
@@ -526,36 +498,37 @@ nav li:last-child a img{
 	}
 	/*Fourth Row*/
 	#body #myModal .modal-body .fourth_row{
-		padding: 15px;
-		border-bottom: 1px solid rgba(0,0,0,0.1);
+		padding-top: 25px;
 	}
-	#body #myModal .modal-body .fourth_row form input{
-		margin-bottom: 10px;
-		box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+	#body #myModal .modal-body .fourth_row h4{
+		font-weight: bold;
+		margin-bottom: 28px;
 	}
-	#body #myModal .modal-body .fourth_row form span{
-		float: left;
+	#body #myModal .modal-body .fourth_row .col-md-4{
+		margin-bottom: 15px;
+	}
+	#body #myModal .modal-body .fourth_row .col-md-4 p a{
+		text-decoration: none!important;
+		outline: none!important;
+		color: #000!important;
+	}
+	#body #myModal .modal-body .fourth_row #icon{
+		text-decoration: none!important;
+		outline: none!important;
+		color: #000!important;
 		display: inline-block;
-		margin-top: 7px;
-		margin-right: 5px;
-	}
-	#body #myModal .modal-body .fourth_row form .cv{
-		width: 33%!important;
-		float: left;
-	}
-	/*Fith Row*/
-	#body #myModal .modal-body .fith_row{
-		padding: 15px;
-	}
-	#body #myModal .modal-body .fith_row .btn{
-		background: #3a9bfa!important;
-		color: #fff!important;
-	}
-	#body #myModal .modal-body .fith_row strong{
-		font-size: 14px;
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		text-align: center;
+		background: #fff;
+		border-radius: 25px;
+		box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+		margin-left:  10px;
 	}
 
 }
+
 
 @media screen and (max-width: 499px){
 
@@ -575,8 +548,8 @@ nav li:last-child a img{
 	#body .container #fix_position{
 		display: block;
 	}
-	/*Job Wrap Tab*/
-	#body #job_wrap{
+	/*Candidate Wrap Tab*/
+	#body #candidate_wrap{
 		border-bottom: 0px solid rgba(0,0,0,0.1)!important;
 		border: 1px solid rgba(0,0,0,0.1)!important;
 		border-radius: 5px!important;
@@ -594,114 +567,59 @@ nav li:last-child a img{
 	}
 
 	/* Navigation CSS! */
-	.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-	    color: #555;
-	    background-color: rgba(0,0,0,0)!important;
-	}
 	nav #language_toggle_select{
 		margin-left: 0px!important;
 	}
-	nav li .dropdown-menu{
-		width: 100%;
-		position: static!important;
-		left: 0%!important;
-		margin-top: 0px!important;
-	}
-	nav li .dropdown-menu li{
-		border-bottom: 0px solid #ccc!important;
-	}
-	nav li .dropdown-menu li a{
-		font-weight: bold;
-		border-bottom: 1px solid rgba(255,255,255,0.2)!important;
-	}
-	nav li .dropdown-menu li small{
-		margin-left: 25px!important;
-	}
-	nav li .dropdown-menu li:first-child a{
-		margin-left: -2px!important;
-	}
 
-	.navbar-right .first-caret{
-		display: inline-block!important;
-		position: static!important;
-		top: 0%!important;
-		right: 0%!important;
-		width: 9px;
-		height: 9px;
-		transform: none!important;
-	}
-
-	.navbar-right .second-caret{
-		display: inline-block!important;
-		position: static!important;
-		top: 0%!important;
-		right: 0%!important;
-		width: 9px;
-		height: 9px;
-		transform: none!important;
-	}
-
-	/* App Section CSS! */
-	#app{
-		padding: 50px;
-	}
-
-	#app a:first-child{
-		position: absolute;
-		top: 50%;
-		left: 35%!important;
-		transform: translate(-50%,-50%);
-	}
-	#app a:last-child{
-		position: absolute;
-		top: 50%;
-		right: 35%!important;
-		transform: translate(50%,-50%);
-	}
-	#app img{
-		width: 90px!important;
-		height: 30px!important;
-	}
-
-	#show_sort .col-md-2 select{
-		width: 25%!important;
-	}
-
-	/*Job Detail Section For Tablet & Mobile View With Popup*/
+	/*Candidate Detail Section For Tablet & Mobile View With Popup*/
 	/*First Row*/
 	#body #myModal .modal-body .first_row{
 		border-bottom: 1px solid rgba(0,0,0,0.1);
 	}
 	#body #myModal .modal-body .first_row .col-md-12 img{
-		width: 45px!important;
-		height: 45px!important;
+		width: 40px!important;
+		height: 40px!important;
+		border-radius: 40px!important;
 		float: left;
 	}
 	#body #myModal .modal-body .first_row .col-md-12 ul{
 		list-style: none;
 		float: left;
-		margin-left: -20px!important;
+		margin-left: -30px!important;
+		font-size: 10px!important;
+	}
+	#body #myModal .modal-body .first_row .col-md-12 ul .active{
+		color: #0f0!important;
+	}
+	#body #myModal .modal-body .first_row .col-md-12 ul .unactive{
+		color: #f00!important;
 	}
 	#body #myModal .modal-body .first_row .col-md-12 ul li span{
-		font-size: 12px!important;
+		font-size: 10px!important;
 	}
 	#body #myModal .modal-body .first_row .col-md-12 ul:last-child{
 		list-style: none;
 		float: right;
 		width: auto!important;
 	}
-	#body #myModal .modal-body .first_row .col-md-12  ul:last-child li .job_type_btn{
+	#body #myModal .modal-body .first_row .col-md-12  ul:last-child li .message_type_btn{
 		background-color: #3a9bfa!important;
 		color: #fff!important;
 		float: right;
+		width: 60px!important;
+		font-size: 8px;
 	}
-	#body #myModal .modal-body .first_row .col-md-12  ul:last-child li form .apply_btn{
+	#body #myModal .modal-body .first_row .col-md-12  ul:last-child li form .download_btn{
 		background-color: #3a9bfa!important;
 		color: #fff!important;
+		width: 60px!important;
+		font-size: 8px;
 	}
 	#body #myModal .modal-body .first_row .col-md-12  ul:last-child li form .save_btn{
 		background-color: #3a9bfa!important;
 		color: #fff!important;
+		width: 60px!important;
+		font-size: 8px;
 	}
 	#body #myModal .modal-body .first_row .col-md-12 small{
 		display: inline-block!important;
@@ -752,35 +670,33 @@ nav li:last-child a img{
 	}
 	/*Fourth Row*/
 	#body #myModal .modal-body .fourth_row{
-		padding: 15px;
-		border-bottom: 1px solid rgba(0,0,0,0.1);
+		padding-top: 25px;
 	}
-	#body #myModal .modal-body .fourth_row form input{
-		margin-bottom: 10px;
-		box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+	#body #myModal .modal-body .fourth_row h4{
+		font-weight: bold;
+		margin-bottom: 28px;
 	}
-	#body #myModal .modal-body .fourth_row form span{
-		float: left;
+	#body #myModal .modal-body .fourth_row .col-md-4{
+		margin-bottom: 15px;
+	}
+	#body #myModal .modal-body .fourth_row .col-md-4 p a{
+		text-decoration: none!important;
+		outline: none!important;
+		color: #000!important;
+	}
+	#body #myModal .modal-body .fourth_row #icon{
+		text-decoration: none!important;
+		outline: none!important;
+		color: #000!important;
 		display: inline-block;
-		margin-top: 7px;
-		margin-right: 5px;
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		text-align: center;
+		background: #fff;
+		border-radius: 25px;
+		box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+		margin-left:  10px;
 	}
-	#body #myModal .modal-body .fourth_row form .cv{
-		width: 33%!important;
-		float: left;
-	}
-	/*Fith Row*/
-	#body #myModal .modal-body .fith_row{
-		padding: 15px;
-	}
-	#body #myModal .modal-body .fith_row .btn{
-		background: #3a9bfa!important;
-		color: #fff!important;
-	}
-	#body #myModal .modal-body .fith_row strong{
-		font-size: 13px;
-	}
-	#body #myModal .modal-body .fith_row h4{
-		font-size: 14px;
-	}
+
 }

@@ -31,6 +31,16 @@
 	display: inline-block!important;
 	margin-left: 10px;
 }
+#header #form_one form #detail_search{
+	padding: 0px!important;
+	width: auto!important;
+	background-color: rgba(0,0,0,0)!important;
+	color: #000!important;
+	display: inline-block!important;
+	text-decoration: none!important;
+	outline: none!important;
+	margin-left: 10px;
+}
 #header #form_one form .collapse input,#header #form_one form .collapse select,#header #form_one form .collapse .btn{
 	margin-bottom: 10px;
 }

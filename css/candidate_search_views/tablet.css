@@ -1,4 +1,4 @@
-/* Mobile View CSS Style (768px) */
+/* Tablet View CSS Style (1028px) */
 
 /* Header Form Style */
 /*Form One*/
@@ -15,63 +15,24 @@
 	width: 100%!important;
 }
 
+#header #form_one form #detail_search,#header #form_one form #search_candidate{
+	margin-bottom: 5px;
+}
 #header #form_one form .collapse input,#header #form_one form .collapse select,#header #form_one form .collapse .btn{
 	margin-bottom: 5px;
 }
 
-#header #form_one form #job_dropdown{
+#header #form_one form #candidate_dropdown{
 	width: 100%!important;
 	margin-bottom: 5px;
 	padding-left: 10px;
 }
 
 /* Navigation CSS! */
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    color: #555;
-    background-color: rgba(0,0,0,0)!important;
-}
 nav #language_toggle_select{
 	margin-left: 0px!important;
 }
-nav li .dropdown-menu{
-	width: 100%;
-	position: static!important;
-	left: 0%!important;
-	margin-top: 0px!important;
-}
-nav li .dropdown-menu li{
-	border-bottom: 0px solid #ccc!important;
-}
-nav li .dropdown-menu li a{
-	font-weight: bold;
-	border-bottom: 1px solid rgba(255,255,255,0.2)!important;
-}
-nav li .dropdown-menu li small{
-	margin-left: 25px!important;
-}
-nav li .dropdown-menu li:first-child a{
-	margin-left: -2px!important;
-}
 
-.navbar-right .first-caret{
-	display: inline-block!important;
-	position: static!important;
-	top: 0%!important;
-	right: 0%!important;
-	width: 9px;
-	height: 9px;
-	transform: none!important;
-}
-
-.navbar-right .second-caret{
-	display: inline-block!important;
-	position: static!important;
-	top: 0%!important;
-	right: 0%!important;
-	width: 9px;
-	height: 9px;
-	transform: none!important;
-}
 
 /* Shwo Sort CSS Style! */
 #show_sort{
@@ -94,7 +55,7 @@ nav li .dropdown-menu li:first-child a{
 	width: 100%!important;
 	position: static!important;
 }
-/*Body - Job Detail Section*/
+/*Body - Candidate Detail Section*/
 #body .container .col-md-8{
 	display: none!important;
 }
@@ -102,8 +63,8 @@ nav li .dropdown-menu li:first-child a{
 	display: block;
 	margin-top: -4px!important;
 }
-/*Job Wrap Tab*/
-#body #job_wrap{
+/*Candidate Wrap Tab*/
+#body #candidate_wrap{
 	border-bottom: 0px solid rgba(0,0,0,0.1)!important;
 	border: 1px solid rgba(0,0,0,0.1)!important;
 	border-radius: 5px!important;
@@ -120,7 +81,7 @@ nav li .dropdown-menu li:first-child a{
 	border-left: 0px solid #3a9bfa!important;
 }
 
-/*Job Detail Section For Tablet & Mobile View With Popup*/
+/*Candidate Detail Section For Tablet & Mobile View With Popup*/
 /*First Row*/
 #body #myModal .modal-body .first_row{
 	border-bottom: 1px solid rgba(0,0,0,0.1);
@@ -128,7 +89,17 @@ nav li .dropdown-menu li:first-child a{
 #body #myModal .modal-body .first_row .col-md-12 img{
 	width: 65px;
 	height: 65px;
+	border-radius: 65px;
 	float: left;
+}
+#body #myModal .modal-body .first_row .col-md-12 ul{
+	margin-left: -25px;
+}
+#body #myModal .modal-body .first_row .col-md-12 ul .active{
+	color: #0f0!important;
+}
+#body #myModal .modal-body .first_row .col-md-12 ul .unactive{
+	color: #f00!important;
 }
 #body #myModal .modal-body .first_row .col-md-12 ul{
 	list-style: none;
@@ -138,12 +109,12 @@ nav li .dropdown-menu li:first-child a{
 	list-style: none;
 	float: right;
 }
-#body #myModal .modal-body .first_row .col-md-12  ul:last-child li .job_type_btn{
+#body #myModal .modal-body .first_row .col-md-12  ul:last-child li .message_type_btn{
 	background-color: #3a9bfa!important;
 	color: #fff!important;
 	float: right;
 }
-#body #myModal .modal-body .first_row .col-md-12  ul:last-child li form .apply_btn{
+#body #myModal .modal-body .first_row .col-md-12  ul:last-child li form .download_btn{
 	background-color: #3a9bfa!important;
 	color: #fff!important;
 }
@@ -196,31 +167,31 @@ nav li .dropdown-menu li:first-child a{
 }
 /*Fourth Row*/
 #body #myModal .modal-body .fourth_row{
-	padding: 15px;
-	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-top: 25px;
 }
-#body #myModal .modal-body .fourth_row form input{
-	margin-bottom: 10px;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+#body #myModal .modal-body .fourth_row h4{
+	font-weight: bold;
+	margin-bottom: 28px;
 }
-#body #myModal .modal-body .fourth_row form span{
-	float: left;
+#body #myModal .modal-body .fourth_row .col-md-4{
+	margin-bottom: 15px;
+}
+#body #myModal .modal-body .fourth_row .col-md-4 p a{
+	text-decoration: none!important;
+	outline: none!important;
+	color: #000!important;
+}
+#body #myModal .modal-body .fourth_row #icon{
+	text-decoration: none!important;
+	outline: none!important;
+	color: #000!important;
 	display: inline-block;
-	margin-top: 7px;
-	margin-right: 5px;
-}
-#body #myModal .modal-body .fourth_row form .cv{
-	width: 33%!important;
-	float: left;
-}
-/*Fith Row*/
-#body #myModal .modal-body .fith_row{
-	padding: 15px;
-}
-#body #myModal .modal-body .fith_row .btn{
-	background: #3a9bfa!important;
-	color: #fff!important;
-}
-#body #myModal .modal-body .fith_row strong{
-	font-size: 14px;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	background: #fff;
+	border-radius: 25px;
+	box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+	margin-left:  10px;
 }
