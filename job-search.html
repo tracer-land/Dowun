@@ -87,22 +87,22 @@ Project Designed By Tracer Land
 						<ul class="nav navbar-nav navbar-right" style="margin-right: 0px!important;">
 							<li class="active"><a href="index.html">Home</a></li>
 
-							<li>
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Post&nbsp;<span class="caret"></span></a>
+							<li id="drp-menu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Post&nbsp;<span class="caret first-caret"></span></a>
 								<ul class="dropdown-menu">
 									<li>
-										<a href="#"><i class="fa fa-plus-circle"></i>&nbsp;Create Post</a>
+										<a href="#">Create Post</a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-location-arrow"></i>&nbsp;Place</a>
+										<a href="#"><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;Place</a>
 										<small>Share your need to other, if you are finding a room or place.</small>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-suitcase"></i>&nbsp;Job</a>
+										<a href="#"><i class="fa fa-suitcase"></i>&nbsp;&nbsp;Job</a>
 										<small>Find employee and post a job to all.</small>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-home"></i>&nbsp;House</a>
+										<a href="#"><i class="fa fa-home"></i>&nbsp;&nbsp;House</a>
 										<small>Find a house and post a house to all.</small>
 									</li>
 								</ul>
@@ -112,18 +112,18 @@ Project Designed By Tracer Land
 							<li><a href="house.html">House</a></li>
 							<li><a href="#">Message</a></li>
 							
-							<li>
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Create&nbsp;<span class="caret"></span></a>
+							<li id="drp-menu-another">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Create&nbsp;<span class="caret second-caret"></span></a>
 								<ul class="dropdown-menu">
 									<li>
-										<a href="#"><i class="fa fa-plus-circle"></i>&nbsp;Create Page</a>
+										<a href="#">Create Page</a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-wpforms"></i>&nbsp;CV</a>
+										<a href="#"><i class="fa fa-wpforms"></i>&nbsp;&nbsp;CV</a>
 										<small>Candidate CV to apply job and promote you need.</small>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-briefcase"></i>&nbsp;Business Page</a>
+										<a href="#"><i class="fa fa-briefcase"></i>&nbsp;&nbsp;Business Page</a>
 										<small>Find employee and post a job to all.</small>
 									</li>
 								</ul>
@@ -177,7 +177,7 @@ Project Designed By Tracer Land
 
 										<button type="submit" value="Search" class="btn" id="search_job">Search Job</button>
 
-										<button type="button" value="Details" class="btn" id="detail_search">Details Search</button>
+										<button type="button" value="Details" class="btn" id="detail_search">Details</button>
 									</div>
 
 									<div class="row collapse" id="detail" style="width: 100%;">
@@ -1094,6 +1094,16 @@ Project Designed By Tracer Land
 				$("#body #fix_position a").click(function(){
 					$("#fix_position a").removeClass("active_tab");
 					$(this).addClass("active_tab");
+				});
+
+				/*Caret*/
+				$("#drp-menu").click(function(){
+					$("#drp-menu .caret").toggleClass("active_caret");
+					$("#drp-menu-another .caret").removeClass("active_caret");
+				});
+				$("#drp-menu-another").click(function(){
+					$("#drp-menu-another .caret").toggleClass("active_caret");
+					$("#drp-menu .caret").removeClass("active_caret");
 				});
 
 				$(window).bind('scroll', function() {
