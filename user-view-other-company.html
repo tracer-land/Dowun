@@ -36,8 +36,8 @@ Project Designed By Tracer Land
 		<link rel="stylesheet" type="text/css" href="css/common_css_styles/mobile.css" media="screen and (max-width: 600px)">
 		<link rel="stylesheet" type="text/css" href="css/common_css_styles/tablet.css" media="screen and (max-width: 998px)">
 
-		<link rel="stylesheet" type="text/css" href="css/user_view_other_company_views/mobile.css" media="screen and (max-width: 768px) and (min-width: 500px)">
-		<link rel="stylesheet" type="text/css" href="css/user_view_other_company_views/tablet.css" media="screen and (max-width: 1028px)">
+		<link rel="stylesheet" type="text/css" href="css/user_view_other_company/mobile.css" media="screen and (max-width: 768px) and (min-width: 500px)">
+		<link rel="stylesheet" type="text/css" href="css/user_view_other_company/tablet.css" media="screen and (max-width: 1028px)">
 
 		<!-- Boostrap CSS! -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -112,7 +112,7 @@ Project Designed By Tracer Land
 				<div class="container-fluid">
 
 					<!-- Fix Position Start! -->
-						<div class="col-md-2" id="fix_position">
+						<div class="col-md-2 col-sm-1 col-xs-1" id="fix_position">
 							<!-- Left-Sidebar Wrap Tabs! -->
 							<a href="#" id="sidebar_wrap" class="computer_wrap">
 								<div class="row">
@@ -134,11 +134,11 @@ Project Designed By Tracer Land
 									<div class="col-md-12 col-sm-12 col-xs-12">
 										<ul>
 											<li>
-												<i class="fa fa-home"></i>
+												<i class="fa fa-home" data-toggle="tooltip" title="Home" data-placement="right"></i>
 												<span>Home</span>
 											</li>
 											<li>
-												<i class="fa fa-adn"></i>
+												<i class="fa fa-adn" data-toggle="tooltip" title="About" data-placement="right"></i>
 												<span>About</span>
 											</li>
 										</ul>
@@ -151,22 +151,22 @@ Project Designed By Tracer Land
 									<div class="col-md-12 col-sm-12 col-xs-12">
 										<ul>
 											<li>
-												<strong style="font-size: 14px;margin-bottom: 15px;display: block;">Services</strong>
+												<strong>Services</strong>
 											</li>
 											<li>
-												<i class="fa fa-suitcase"></i>
+												<i class="fa fa-suitcase" data-toggle="tooltip" title="Job" data-placement="right"></i>
 												<span>Job</span>
 											</li>
 											<li>
-												<i class="fa fa-building"></i>
+												<i class="fa fa-building" data-toggle="tooltip" title="House" data-placement="right"></i>
 												<span>House</span>
 											</li>
 											<li>
-												<i class="fa fa-bullseye"></i>
+												<i class="fa fa-bullseye" data-toggle="tooltip" title="Others" data-placement="right"></i>
 												<span>Others</span>
 											</li>
 											<li>
-												<i class="fa fa-chevron-circle-right"></i>
+												<i class="fa fa-chevron-circle-right" data-toggle="tooltip" title="Log Out" data-placement="right"></i>
 												<span>Log Out</span>
 											</li>
 										</ul>
@@ -177,7 +177,7 @@ Project Designed By Tracer Land
 					<!-- Fix Position End! -->
 
 					<!-- Body Right Section Start! -->
-						<div class="col-md-10">
+						<div class="col-md-10 col-sm-11 col-xs-11">
 							
 							<div class="row first_row">
 								<div id="cover" style="background: url('images/cover.jpg') no-repeat;background-size: cover;">
@@ -266,8 +266,8 @@ Project Designed By Tracer Land
 												<strong>Call</strong>
 											</div>
 											<div class="col-md-9">
-												<a href="#">09 907685042</a>,
-												<a href="#">09 907686044</a>
+												<a href="#" style="margin:0!important;display: inline-block!important;">09 907685042</a>,
+												<a href="#" style="margin:0!important;display: inline-block!important;">09 907686044</a>
 											</div>
 										</div>
 									</div>
@@ -396,7 +396,6 @@ Project Designed By Tracer Land
 													<button class="btn btn-sm">Construction</button>
 												</div>
 
-												<a href="#" class="btn btn-md btn-info pull-right">Edit</a>
 											</div>
 										</div>
 									</div>
@@ -410,6 +409,16 @@ Project Designed By Tracer Land
 				</div>
 			</div>
 		<!-- Body Section End! -->
+
+
+		<!-- Scripts! -->
+		<script type="text/javascript">
+			
+			$(document).ready(function(){
+				$('[data-toggle="tooltip"]').tooltip();
+			});
+
+		</script>
 
 </body>
 </html>

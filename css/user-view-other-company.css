@@ -96,6 +96,11 @@ nav li:last-child a img{
 	margin-left: -28px;
 	font-size: 12px;
 }
+#body #sidebar_wrap .row .col-md-12 ul li strong{
+	font-size: 14px;
+	margin-bottom: 15px;
+	display: block;
+}
 #body #sidebar_wrap .row .col-md-12 ul li{
 	margin-bottom: 10px;
 }
@@ -249,6 +254,64 @@ nav li:last-child a img{
 	/* Navigation CSS! */
 	nav #language_toggle_select{
 		margin-left: 0px!important;
+	}
+
+	/* Body Section CSS */
+	#body .container-fluid #fix_position{
+		margin-top: 50px;
+		height: 100vh;
+		position: fixed;
+		padding-top: 20px;
+		padding-bottom: 5px;
+		margin-left: -15px;
+		z-index: 1000;
+	}
+	#body .container-fluid .col-md-10{
+		width: 93%;
+		margin-top: 55px;
+	}
+	/*Body Sidebar*/
+	#body #sidebar_wrap:first-child{
+		display: none!important;
+	}
+	#body #sidebar_wrap{
+		padding: 0px;
+		border-bottom: 0px solid rgba(0,0,0,0.1)!important;
+	}
+	#body #sidebar_wrap ul{
+		margin: 0px!important;
+		padding: 0px!important;
+	}
+	#body #sidebar_wrap ul li span{
+		display: none!important;
+	}
+	#body #sidebar_wrap ul li strong{
+		display: none!important;
+	}
+
+	/*Cover Wrap*/
+	#body .container-fluid .col-md-10 .first_row #cover{
+		height: 200px;
+	}
+	/* Nav Wrap */
+	#body .container-fluid .col-md-10 .first_row #nav_wrap ul a{
+		font-size: 12px;
+	}
+	#body .container-fluid .col-md-10 .first_row #nav_wrap ul li i{
+		font-size: 14px;
+	}
+
+	#body .container-fluid .col-md-10 .second_row #left-section strong, #body .container-fluid .col-md-10 .second_row #right-section strong{
+		margin-bottom: 10px;
+		display: block;
+	}
+	#body .container-fluid .col-md-10 .second_row #left-section span, #body .container-fluid .col-md-10 .second_row #right-section span{
+		margin-bottom: 15px;
+		display: block;
+	}
+	#body .container-fluid .col-md-10 .second_row #left-section a, #body .container-fluid .col-md-10 .second_row #right-section a{
+		margin-bottom: 15px;
+		display: block;
 	}
 
 }
