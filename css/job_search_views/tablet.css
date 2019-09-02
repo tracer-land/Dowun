@@ -53,6 +53,32 @@ nav li .dropdown-menu li small{
 	padding-top: 10px;
 }
 
+.navbar-right .first-caret{
+	display: block;
+	position: absolute;
+	left: 43%;
+	top: -1.5%;
+	color: #3a9bfa!important;
+	z-index: 100;
+	width: 4px;
+	height: 4px;
+	transform: rotate(-180deg);
+	color: #fff!important;
+}
+
+.navbar-right .second-caret{
+	display: block;
+	position: absolute;
+	right: 44%;
+	top: -2%;
+	color: #3a9bfa!important;
+	z-index: 100;
+	width: 4px;
+	height: 4px;
+	transform: rotate(-180deg);
+	color: #fff!important;
+}
+
 
 /* Shwo Sort CSS Style! */
 #show_sort{

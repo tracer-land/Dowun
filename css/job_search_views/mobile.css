@@ -55,22 +55,22 @@ nav li .dropdown-menu li:first-child a{
 
 .navbar-right .first-caret{
 	display: inline-block!important;
-	position: static!important;
-	top: 0%!important;
-	right: 0%!important;
+	top: 6%!important;
+	left: 12%!important;
 	width: 9px;
 	height: 9px;
 	transform: none!important;
+	color: red;
 }
 
 .navbar-right .second-caret{
 	display: inline-block!important;
-	position: static!important;
-	top: 0%!important;
-	right: 0%!important;
+	top: 8%!important;
+	left: 14%!important;
 	width: 9px;
 	height: 9px;
 	transform: none!important;
+	color: red;
 }
 
 /* Shwo Sort CSS Style! */

@@ -85,11 +85,12 @@ Project Designed By Tracer Land
 						</ul>
 						<!-- Language Toggle End! -->
 						<ul class="nav navbar-nav navbar-right" style="margin-right: 0px!important;">
-							<li class="active"><a href="index.html">Home</a></li>
+							<li class="active nav-li"><a href="index.html">Home</a></li>
 
 							<li id="drp-menu">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Post&nbsp;<span class="caret first-caret"></span></a>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Post</a>
 								<ul class="dropdown-menu">
+									<span class="caret first-caret"></span>
 									<li>
 										<a href="#">Create Post</a>
 									</li>
@@ -108,13 +109,14 @@ Project Designed By Tracer Land
 								</ul>
 							</li>
 
-							<li><a href="job.html">Jobs</a></li>
-							<li><a href="house.html">House</a></li>
-							<li><a href="#">Message</a></li>
+							<li class="nav-li"><a href="job.html">Jobs</a></li>
+							<li class="nav-li"><a href="house.html">House</a></li>
+							<li class="nav-li"><a href="#">Message</a></li>
 							
 							<li id="drp-menu-another">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Create&nbsp;<span class="caret second-caret"></span></a>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Create</a>
 								<ul class="dropdown-menu">
+									<span class="caret second-caret"></span>
 									<li>
 										<a href="#">Create Page</a>
 									</li>
@@ -129,11 +131,11 @@ Project Designed By Tracer Land
 								</ul>
 							</li>
 
-							<li><a href="#">Message</a></li>
-							<li><a href="#">
+							<li class="nav-li"><a href="#">Message</a></li>
+							<li class="nav-li"><a href="#">
 								<sub class="fa fa-bell"></sub><sup>7</sup>
 							</a></li>
-							<li>
+							<li class="nav-li">
 								<a href="#">
 									<img src="images/client.jpg" class="img-responsive">&nbsp;Me
 								</a>
@@ -1094,16 +1096,6 @@ Project Designed By Tracer Land
 				$("#body #fix_position a").click(function(){
 					$("#fix_position a").removeClass("active_tab");
 					$(this).addClass("active_tab");
-				});
-
-				/*Caret*/
-				$("#drp-menu").click(function(){
-					$("#drp-menu .caret").toggleClass("active_caret");
-					$("#drp-menu-another .caret").removeClass("active_caret");
-				});
-				$("#drp-menu-another").click(function(){
-					$("#drp-menu-another .caret").toggleClass("active_caret");
-					$("#drp-menu .caret").removeClass("active_caret");
 				});
 
 				$(window).bind('scroll', function() {

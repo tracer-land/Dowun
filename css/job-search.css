@@ -120,28 +120,26 @@ nav li:last-child a img{
 .navbar-right .first-caret{
 	display: block;
 	position: absolute;
-	top: 104%;
+	left: 38%;
+	top: -1.5%;
 	color: #3a9bfa!important;
 	z-index: 100;
-	right: 45%;
 	width: 4px;
 	height: 4px;
 	transform: rotate(-180deg);
+	color: #fff!important;
 }
 
 .navbar-right .second-caret{
 	display: block;
 	position: absolute;
-	top: 104%;
+	right: 48%;
+	top: -2%;
 	color: #3a9bfa!important;
 	z-index: 100;
-	right: 45%;
 	width: 4px;
 	height: 4px;
 	transform: rotate(-180deg);
-}
-
-.navbar-right .active_caret{
 	color: #fff!important;
 }
 
@@ -415,6 +413,32 @@ nav li:last-child a img{
 		border-left: 0px solid #3a9bfa!important;
 	}
 
+	.navbar-right .first-caret{
+		display: block;
+		position: absolute;
+		left: 43%;
+		top: -1.5%;
+		color: #3a9bfa!important;
+		z-index: 100;
+		width: 4px;
+		height: 4px;
+		transform: rotate(-180deg);
+		color: #fff!important;
+	}
+
+	.navbar-right .second-caret{
+		display: block;
+		position: absolute;
+		right: 44%;
+		top: -2%;
+		color: #3a9bfa!important;
+		z-index: 100;
+		width: 4px;
+		height: 4px;
+		transform: rotate(-180deg);
+		color: #fff!important;
+	}
+
 	/* Header Form Style */
 	/*Form One*/
 	#header_wrap #form_one{
@@ -623,22 +647,22 @@ nav li:last-child a img{
 
 	.navbar-right .first-caret{
 		display: inline-block!important;
-		position: static!important;
-		top: 0%!important;
-		right: 0%!important;
+		top: 6%!important;
+		left: 12%!important;
 		width: 9px;
 		height: 9px;
 		transform: none!important;
+		color: red;
 	}
 
 	.navbar-right .second-caret{
 		display: inline-block!important;
-		position: static!important;
-		top: 0%!important;
-		right: 0%!important;
+		top: 8%!important;
+		left: 14%!important;
 		width: 9px;
 		height: 9px;
 		transform: none!important;
+		color: red;
 	}
 
 	/* App Section CSS! */
