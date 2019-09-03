@@ -67,6 +67,11 @@ nav li:last-child a img{
 	position: relative;
 	padding: 10px 5px 10px 10px;
 }
+#body #sidebar_wrap a{
+	text-decoration: none!important;
+	outline: none!important;
+	color: #666!important;
+}
 #body .active_tab{
 	border-left: 2px solid #3a9bfa;
 }
@@ -171,7 +176,7 @@ nav li:last-child a img{
 	margin-right: 10px;
 	margin-top: 10px;
 }
-
+/*Second Row!*/
 #body .container-fluid .col-md-10 .second_row{
 	margin-top: 5px;
 	padding: 10px;
@@ -236,6 +241,93 @@ nav li:last-child a img{
 	background: #3a9bfa!important;
 	margin-bottom: 5px;
 }
+/*Third Row!JOB Search Input!*/
+#body .container-fluid .col-md-10 .third_row{
+	margin-top: 5px;
+	display: none;
+}
+#body .container-fluid .col-md-10 .third_row #job_form{
+	width: 100%!important;
+	padding: 20px;
+	padding-right: 10px!important;
+	padding-bottom: 20px!important;
+}
+#body .container-fluid .col-md-10 .third_row #job_form form input{
+	width: 48%!important;
+	float: left;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+	border: 0px!important;
+	margin-left: 10px;
+}
+#body .container-fluid .col-md-10 .third_row #job_form form .btn{
+	background: #3a9bfa;
+	color: #fff;
+	width: 20%;
+	display: inline-block!important;
+	margin-left: 10px;
+}
+#body .container-fluid .col-md-10 .third_row #job_form form #job_dropdown{
+	width: 15%!important;
+	background: rgba(0,0,0,0)!important;
+	padding-left: 30px;
+	float: left;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+	border: 0px!important;
+}
+/*Fourth Row!JOB Tab Section!*/
+#body .container-fluid .col-md-10 .fourth_row{
+	padding: 20px;
+	background: #fff;
+	padding-top: 30px;
+	padding-left: 30px;
+	display: none;
+}
+#body .container-fluid .col-md-10 .fourth_row a{
+	text-decoration: none;
+	outline: none;
+	display: block;
+	color: #000!important;
+}
+#body .container-fluid .col-md-10 .fourth_row a .col-md-4{
+	padding: 10px;
+	width: 32%;
+	margin-right: 10px;
+	border-radius: 8px;
+	border: 1px solid rgba(0,0,0,0.3);
+	margin-bottom: 10px;
+}
+#body .container-fluid .col-md-10 .fourth_row a .col-md-4:nth-child(3),#body .container-fluid .col-md-10 .fourth_row a .col-md-4:nth-child(6){
+	margin-right: 0px!important;
+}
+
+#body .container-fluid .col-md-10 .fourth_row a .col-md-4 .col-md-3 img{
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+}
+#body .container-fluid .col-md-10 .fourth_row a .col-md-4 .col-md-9{
+	padding: 0px!important;
+}
+#body .container-fluid .col-md-10 .fourth_row a .col-md-4 .col-md-9 ul{
+	list-style: none;
+	margin-left: -12px;
+}
+#body .container-fluid .col-md-10 .fourth_row a .col-md-4 .col-md-9 ul .position{
+	font-weight: bold!important;
+}
+#body .container-fluid .col-md-10 .fourth_row a .col-md-4 .col-md-9 ul li span, small{
+	margin-left: 12px;
+}
+#body .container-fluid .col-md-10 .fourth_row .btn{
+	width: 180px!important;
+	display: block!important;
+	background: #3a9bfa!important;
+	margin: 0 auto!important;
+	color: #fff!important;
+	margin-top: 15px!important;
+}
+
+
 
 
 /* Media Queries!!! */
@@ -244,6 +336,31 @@ nav li:last-child a img{
 	/* Navigation CSS! */
 	nav #language_toggle_select{
 		margin-left: 0px!important;
+	}
+
+	/*Third Row!JOB Search Input!*/
+	#body .container-fluid .col-md-10 .third_row #job_form form input{
+		width: 48%!important;
+	}
+	#body .container-fluid .col-md-10 .third_row #job_form form .btn{
+		width: 20%;
+	}
+	#body .container-fluid .col-md-10 .third_row #job_form form #job_dropdown{
+		width: 24%!important;
+	}
+	/*Fourth Row!JOB Tab Section!*/
+	#body .container-fluid .col-md-10 .fourth_row a .col-md-4{
+		width: 100%;
+	}
+	#body .container-fluid .col-md-10 .fourth_row a .col-md-4 .col-md-3 img{
+		width: 50px;
+		height: 50px;
+		border-radius: 50px;
+		float: left;
+	}
+	#body .container-fluid .col-md-10 .fourth_row a .col-md-4 .col-md-9 ul{
+		width: 80%;
+		float: right;
 	}
 
 }
@@ -295,10 +412,10 @@ nav li:last-child a img{
 	}
 	/* Nav Wrap */
 	#body .container-fluid .col-md-10 .first_row #nav_wrap ul a{
-		font-size: 12px;
+		font-size: 10px!important;
 	}
 	#body .container-fluid .col-md-10 .first_row #nav_wrap ul li i{
-		font-size: 14px;
+		font-size: 12px!important;
 	}
 
 	#body .container-fluid .col-md-10 .second_row #left-section strong, #body .container-fluid .col-md-10 .second_row #right-section strong{
@@ -312,6 +429,39 @@ nav li:last-child a img{
 	#body .container-fluid .col-md-10 .second_row #left-section a, #body .container-fluid .col-md-10 .second_row #right-section a{
 		margin-bottom: 15px;
 		display: block;
+	}
+
+	/*Third Row!JOB Search Input!*/
+	#body .container-fluid .col-md-10 .third_row #job_form{
+		padding: 0px!important;
+		padding-top: 10px!important;
+		padding-bottom: 10px!important;
+	}
+	#body .container-fluid .col-md-10 .third_row #job_form form input{
+		width: 30%!important;
+		font-size: 12px!important;
+	}
+	#body .container-fluid .col-md-10 .third_row #job_form form .btn{
+		width: 22%;
+		font-size: 12px!important;
+	}
+	#body .container-fluid .col-md-10 .third_row #job_form form #job_dropdown{
+		width: 25%!important;
+		font-size: 12px!important;
+	}
+	/*Fourth Row!JOB Tab Section!*/
+	#body .container-fluid .col-md-10 .fourth_row a .col-md-4{
+		width: 100%;
+	}
+	#body .container-fluid .col-md-10 .fourth_row a .col-md-4 .col-md-3 img{
+		width: 50px;
+		height: 50px;
+		border-radius: 50px;
+		float: left;
+	}
+	#body .container-fluid .col-md-10 .fourth_row a .col-md-4 .col-md-9 ul{
+		width: 70%!important;
+		float: right;
 	}
 
 }

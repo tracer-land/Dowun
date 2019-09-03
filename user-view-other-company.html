@@ -85,11 +85,13 @@ Project Designed By Tracer Land
 						<!-- Language Toggle End! -->
 						<ul class="nav navbar-nav navbar-right" style="margin-right: 0px!important;">
 							<li><a href="#">Discover</a></li>
+
 							<li><a href="index.html">Home</a></li>
-							<li><a href="index.html">Create a Post</a></li>
+
+							<li><a href="#">Create a Post</a></li>
 							<li><a href="job.html">Jobs</a></li>
 							<li><a href="house.html">House</a></li>
-							<li><a href="index.html">Create a Page</a></li>
+							<li><a href="#">Create a Page</a></li>
 							
 							<li><a href="#">Message</a></li>
 							<li><a href="#">
@@ -114,7 +116,7 @@ Project Designed By Tracer Land
 					<!-- Fix Position Start! -->
 						<div class="col-md-2 col-sm-1 col-xs-1" id="fix_position">
 							<!-- Left-Sidebar Wrap Tabs! -->
-							<a href="#" id="sidebar_wrap" class="computer_wrap">
+							<div id="sidebar_wrap" class="computer_wrap">
 								<div class="row">
 									<div class="col-md-3 col-sm-3 col-xs-3">
 										<img src="images/kbz.png">
@@ -127,52 +129,64 @@ Project Designed By Tracer Land
 										</ul>
 									</div>
 								</div>
-							</a>
+							</div>
 
-							<a href="#" id="sidebar_wrap" class="computer_wrap">
+							<div href="#" id="sidebar_wrap" class="computer_wrap">
 								<div class="row">
 									<div class="col-md-12 col-sm-12 col-xs-12">
 										<ul>
-											<li>
-												<i class="fa fa-home" data-toggle="tooltip" title="Home" data-placement="right"></i>
-												<span>Home</span>
+											<li onClick="tab_switchHome()">
+												<a href="#">
+													<i class="fa fa-home" data-toggle="tooltip" title="Home" data-placement="right"></i>
+													<span>Home</span>
+												</a>
 											</li>
 											<li>
-												<i class="fa fa-adn" data-toggle="tooltip" title="About" data-placement="right"></i>
-												<span>About</span>
+												<a href="#">
+													<i class="fa fa-adn" data-toggle="tooltip" title="About" data-placement="right"></i>
+													<span>About</span>
+												</a>
 											</li>
 										</ul>
 									</div>
 								</div>
-							</a>
+							</div>
 
-							<a href="#" id="sidebar_wrap" class="computer_wrap">
+							<div href="#" id="sidebar_wrap" class="computer_wrap">
 								<div class="row">
 									<div class="col-md-12 col-sm-12 col-xs-12">
 										<ul>
 											<li>
 												<strong>Services</strong>
 											</li>
-											<li>
-												<i class="fa fa-suitcase" data-toggle="tooltip" title="Job" data-placement="right"></i>
-												<span>Job</span>
+											<li onClick="tab_switchJob()">
+												<a href="#">
+													<i class="fa fa-suitcase" data-toggle="tooltip" title="Job" data-placement="right"></i>
+													<span>Job</span>
+												</a>
 											</li>
 											<li>
-												<i class="fa fa-building" data-toggle="tooltip" title="House" data-placement="right"></i>
-												<span>House</span>
+												<a href="#">
+													<i class="fa fa-building" data-toggle="tooltip" title="House" data-placement="right"></i>
+													<span>House</span>
+												</a>
 											</li>
 											<li>
-												<i class="fa fa-bullseye" data-toggle="tooltip" title="Others" data-placement="right"></i>
-												<span>Others</span>
+												<a href="#">
+													<i class="fa fa-bullseye" data-toggle="tooltip" title="Others" data-placement="right"></i>
+													<span>Others</span>
+												</a>
 											</li>
 											<li>
-												<i class="fa fa-chevron-circle-right" data-toggle="tooltip" title="Log Out" data-placement="right"></i>
-												<span>Log Out</span>
+												<a href="logout.html">
+													<i class="fa fa-chevron-circle-right" data-toggle="tooltip" title="Log Out" data-placement="right"></i>
+													<span>Log Out</span>
+												</a>
 											</li>
 										</ul>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 					<!-- Fix Position End! -->
 
@@ -208,7 +222,7 @@ Project Designed By Tracer Land
 							</div>
 
 							<!-- Page Information Section! -->
-							<div class="row second_row">
+							<div class="row second_row" id="home_tab">
 								<div class="col-md-6" id="left-section">
 									
 									<!-- left first row -->
@@ -266,8 +280,8 @@ Project Designed By Tracer Land
 												<strong>Call</strong>
 											</div>
 											<div class="col-md-9">
-												<a href="#" style="margin:0!important;display: inline-block!important;">09 907685042</a>,
-												<a href="#" style="margin:0!important;display: inline-block!important;">09 907686044</a>
+												<a href="tel:09 907685042" style="margin:0!important;display: inline-block!important;">09 907685042</a>,
+												<a href="tel:09 907686044" style="margin:0!important;display: inline-block!important;">09 907686044</a>
 											</div>
 										</div>
 									</div>
@@ -403,6 +417,199 @@ Project Designed By Tracer Land
 								</div>
 							</div>
 
+
+							<!-- Job Search Inputs! -->
+							<div class="row third_row" id="job_tab_search">
+								<div id="job_form">
+									<form action="#">
+										<select class="form-control" id="job_dropdown">
+											<option>Job</option>
+										</select>
+
+										<input type="text" name="text" placeholder="Search Jobs" class="form-control">
+
+										<button type="submit" value="Search" class="btn" id="search_job">Search</button>
+									</form>
+								</div>
+							</div>
+
+							<!-- Job Tab Section! -->
+							<div class="row fourth_row" id="job_tab_section">
+
+								<a href="#">
+									<div class="col-md-4 col-sm-12 col-xs-12">
+										<div class="col-md-3">
+											<img src="images/kbz.png">
+										</div>
+										<div class="col-md-9">
+											<ul>
+												<li>
+													<i class="fa fa-user"></i>
+													<span class="position">Manager</span>
+												</li>
+												<li>
+													<i class="fa fa-suitcase"></i>
+													<span>KBZ Bank</span>
+												</li>
+												<li>
+													<i class="fa fa-location-arrow"></i>
+													<span>Yangon</span>
+												</li>
+												<li>
+													<i class="fa fa-calendar-o"></i>
+													<small>Aug 18 2019 | 2 Day Agos</small>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</a>
+								
+								<a href="#">
+									<div class="col-md-4 col-sm-12 col-xs-12">
+										<div class="col-md-3">
+											<img src="images/kbz.png">
+										</div>
+										<div class="col-md-9">
+											<ul>
+												<li>
+													<i class="fa fa-user"></i>
+													<span class="position">Manager</span>
+												</li>
+												<li>
+													<i class="fa fa-suitcase"></i>
+													<span>KBZ Bank</span>
+												</li>
+												<li>
+													<i class="fa fa-location-arrow"></i>
+													<span>Yangon</span>
+												</li>
+												<li>
+													<i class="fa fa-calendar-o"></i>
+													<small>Aug 18 2019 | 2 Day Agos</small>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</a>
+
+								<a href="#">
+									<div class="col-md-4 col-sm-12 col-xs-12">
+										<div class="col-md-3">
+											<img src="images/kbz.png">
+										</div>
+										<div class="col-md-9">
+											<ul>
+												<li>
+													<i class="fa fa-user"></i>
+													<span class="position">Manager</span>
+												</li>
+												<li>
+													<i class="fa fa-suitcase"></i>
+													<span>KBZ Bank</span>
+												</li>
+												<li>
+													<i class="fa fa-location-arrow"></i>
+													<span>Yangon</span>
+												</li>
+												<li>
+													<i class="fa fa-calendar-o"></i>
+													<small>Aug 18 2019 | 2 Day Agos</small>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</a>
+
+								<a href="#">
+									<div class="col-md-4 col-sm-12 col-xs-12">
+										<div class="col-md-3">
+											<img src="images/kbz.png">
+										</div>
+										<div class="col-md-9">
+											<ul>
+												<li>
+													<i class="fa fa-user"></i>
+													<span class="position">Manager</span>
+												</li>
+												<li>
+													<i class="fa fa-suitcase"></i>
+													<span>KBZ Bank</span>
+												</li>
+												<li>
+													<i class="fa fa-location-arrow"></i>
+													<span>Yangon</span>
+												</li>
+												<li>
+													<i class="fa fa-calendar-o"></i>
+													<small>Aug 18 2019 | 2 Day Agos</small>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</a>
+
+								<a href="#">
+									<div class="col-md-4 col-sm-12 col-xs-12">
+										<div class="col-md-3">
+											<img src="images/kbz.png">
+										</div>
+										<div class="col-md-9">
+											<ul>
+												<li>
+													<i class="fa fa-user"></i>
+													<span class="position">Manager</span>
+												</li>
+												<li>
+													<i class="fa fa-suitcase"></i>
+													<span>KBZ Bank</span>
+												</li>
+												<li>
+													<i class="fa fa-location-arrow"></i>
+													<span>Yangon</span>
+												</li>
+												<li>
+													<i class="fa fa-calendar-o"></i>
+													<small>Aug 18 2019 | 2 Day Agos</small>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</a>
+
+								<a href="#">
+									<div class="col-md-4 col-sm-12 col-xs-12">
+										<div class="col-md-3">
+											<img src="images/kbz.png">
+										</div>
+										<div class="col-md-9">
+											<ul>
+												<li>
+													<i class="fa fa-user"></i>
+													<span class="position">Manager</span>
+												</li>
+												<li>
+													<i class="fa fa-suitcase"></i>
+													<span>KBZ Bank</span>
+												</li>
+												<li>
+													<i class="fa fa-location-arrow"></i>
+													<span>Yangon</span>
+												</li>
+												<li>
+													<i class="fa fa-calendar-o"></i>
+													<small>Aug 18 2019 | 2 Day Agos</small>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</a>
+								
+								<span style="display: block;text-align: center;">KBZ has posted 200 jobs.</span>
+
+								<a href="#" class="btn">See All Jobs</a>
+
+							</div>
+
 						</div>
 					<!-- Body Right Section End! -->
 					
@@ -417,6 +624,24 @@ Project Designed By Tracer Land
 			$(document).ready(function(){
 				$('[data-toggle="tooltip"]').tooltip();
 			});
+
+
+			function get(obj){
+				return document.getElementById(obj);
+			}
+
+			//Sidebar Tabs Script
+			//Functions start
+			function tab_switchHome(){
+				get('home_tab').style.display = "block";
+				get('job_tab_search').style.display = "none";
+				get('job_tab_section').style.display = "none";
+			}
+			function tab_switchJob(){
+				get('job_tab_search').style.display = "block";
+				get('job_tab_section').style.display = "block";
+				get('home_tab').style.display = "none";
+			}
 
 		</script>
 

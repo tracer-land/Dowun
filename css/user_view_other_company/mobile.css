@@ -62,3 +62,29 @@ nav #language_toggle_select{
 	margin-bottom: 15px;
 	display: block;
 }
+
+
+/*Third Row!JOB Search Input!*/
+#body .container-fluid .col-md-10 .third_row #job_form form input{
+	width: 48%!important;
+}
+#body .container-fluid .col-md-10 .third_row #job_form form .btn{
+	width: 20%;
+}
+#body .container-fluid .col-md-10 .third_row #job_form form #job_dropdown{
+	width: 24%!important;
+}
+/*Fourth Row!JOB Tab Section!*/
+#body .container-fluid .col-md-10 .fourth_row a .col-md-4{
+	width: 100%;
+}
+#body .container-fluid .col-md-10 .fourth_row a .col-md-4 .col-md-3 img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	float: left;
+}
+#body .container-fluid .col-md-10 .fourth_row a .col-md-4 .col-md-9 ul{
+	width: 80%;
+	float: right;
+}
