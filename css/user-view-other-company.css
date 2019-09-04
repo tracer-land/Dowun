@@ -88,7 +88,7 @@ nav li:last-child a img{
 	font-size: 12px;
 }
 #body #sidebar_wrap .row .col-md-9 ul li strong{
-	margin-left: 8px;
+	margin-left: 6px;
 	font-size: 15px;
 	margin-top: 11px!important;
 	display: block;
@@ -327,6 +327,77 @@ nav li:last-child a img{
 	margin-top: 15px!important;
 }
 
+/*House Tab Section!*/
+#body .container-fluid .col-md-10 .sixth_row{
+	margin-top: 10px;
+	padding: 20px;
+	padding-left: 25px!important;
+	padding-top: 30px!important;
+	background: #fff;
+	display: none;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3{
+	margin-right: 5px;
+	margin-bottom: 10px;
+	width: 24%;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 a{
+	text-decoration: none;
+	outline: none;
+	display: block;
+	color: #000!important;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 a #recent_item{
+	width: 100%;
+	padding: 0px 0px 20px 0px;
+	margin:0 auto!important;
+	border-radius: 5px;
+	box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 a #recent_item img{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	border-bottom-left-radius: 0px!important;
+	border-bottom-right-radius: 0px!important;
+}
+
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 a #recent_item #recent_text_wrap{
+	width: 92%;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 a #recent_item #recent_text_wrap h4{
+	font-size: 14px;
+	font-weight: bold;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 a #recent_item #recent_text_wrap small{
+	color: #3a9bfa;
+	margin: 0px!important;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 a #recent_item #recent_text_wrap span{
+	display: block;
+	margin-top: 10px;
+	font-size: 14px;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 a #recent_item #recent_text_wrap i{
+	font-size: 12px;
+	margin-top: 15px;
+	display: inline-block;
+	margin-right: 6px;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 a #recent_item #recent_text_wrap i:last-child{
+	margin-right: 0px!important;
+}
+
+#body .container-fluid .col-md-10 .sixth_row .btn{
+	width: 180px!important;
+	display: block!important;
+	background: #3a9bfa!important;
+	margin: 0 auto!important;
+	color: #fff!important;
+	margin-top: 15px!important;
+}
 
 
 
@@ -462,6 +533,11 @@ nav li:last-child a img{
 	#body .container-fluid .col-md-10 .fourth_row a .col-md-4 .col-md-9 ul{
 		width: 70%!important;
 		float: right;
+	}
+
+	/*House Tab Section!*/
+	#body .container-fluid .col-md-10 .sixth_row .col-md-3{
+		width: 100%;
 	}
 
 }

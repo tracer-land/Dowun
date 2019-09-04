@@ -117,7 +117,7 @@ Project Designed By Tracer Land
 						<div class="col-md-2 col-sm-1 col-xs-1" id="fix_position">
 							<!-- Left-Sidebar Wrap Tabs! -->
 							<div id="sidebar_wrap" class="computer_wrap">
-								<div class="row">
+								<div class="row" onClick="tab_switchHome()" style="cursor: pointer;">
 									<div class="col-md-3 col-sm-3 col-xs-3">
 										<img src="images/kbz.png">
 									</div>
@@ -135,52 +135,19 @@ Project Designed By Tracer Land
 								<div class="row">
 									<div class="col-md-12 col-sm-12 col-xs-12">
 										<ul>
-											<li onClick="tab_switchHome()">
-												<a href="#">
-													<i class="fa fa-home" data-toggle="tooltip" title="Home" data-placement="right"></i>
-													<span>Home</span>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<i class="fa fa-adn" data-toggle="tooltip" title="About" data-placement="right"></i>
-													<span>About</span>
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-							<div href="#" id="sidebar_wrap" class="computer_wrap">
-								<div class="row">
-									<div class="col-md-12 col-sm-12 col-xs-12">
-										<ul>
 											<li>
 												<strong>Services</strong>
+											</li>
+											<li onClick="tab_switchHouse()">
+												<a href="#">
+													<i class="fa fa-building" data-toggle="tooltip" title="Home" data-placement="right"></i>
+													<span>House</span>
+												</a>
 											</li>
 											<li onClick="tab_switchJob()">
 												<a href="#">
 													<i class="fa fa-suitcase" data-toggle="tooltip" title="Job" data-placement="right"></i>
 													<span>Job</span>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<i class="fa fa-building" data-toggle="tooltip" title="House" data-placement="right"></i>
-													<span>House</span>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<i class="fa fa-bullseye" data-toggle="tooltip" title="Others" data-placement="right"></i>
-													<span>Others</span>
-												</a>
-											</li>
-											<li>
-												<a href="logout.html">
-													<i class="fa fa-chevron-circle-right" data-toggle="tooltip" title="Log Out" data-placement="right"></i>
-													<span>Log Out</span>
 												</a>
 											</li>
 										</ul>
@@ -432,11 +399,9 @@ Project Designed By Tracer Land
 									</form>
 								</div>
 							</div>
-
 							<!-- Job Tab Section! -->
 							<div class="row fourth_row" id="job_tab_section">
-
-								<a href="#">
+								<a href="#" data-toggle="modal" data-target="#myModal">
 									<div class="col-md-4 col-sm-12 col-xs-12">
 										<div class="col-md-3">
 											<img src="images/kbz.png">
@@ -607,7 +572,108 @@ Project Designed By Tracer Land
 								<span style="display: block;text-align: center;">KBZ has posted 200 jobs.</span>
 
 								<a href="#" class="btn">See All Jobs</a>
+							</div>
 
+
+							<!-- House Tab Section! -->
+							<div class="row sixth_row" id="house_tab">
+								<div class="col-md-3 col-sm-12 col-xs-12">
+									<a href="#">
+										<div id="recent_item">
+											<img src="images/recent_house.png">
+											<div id="recent_text_wrap">
+												<h4>
+													မရမ္းကုန္းၿမိဳ ့နယ္တြင္ အိမ္ငွားရန္ရိွသည္။
+												</h4>
+												<small>၂၀၀၀၀၀ က်ပ္ / တစ္လ</small><br>
+												<span>
+													တစ္လငွားရန္းခ ၁၉၀၀၀၀ ၫွိႏိႈင္း၊ အဆင့္ျမင့္ျပင္ဆင္ၿပီး ေနရာေကာင္းသည္။
+												</span>
+
+												<i style="display: block;width: 100%;border-bottom: 1px solid #3a9bfa;margin-top:20px;"></i>
+
+												<i class="fa fa-bed">&nbsp;&nbsp;၃ခန္း</i>
+												<i class="fa fa-bath">&nbsp;&nbsp;၃ခန္း</i>
+												<i class="fa fa-adn">&nbsp;&nbsp;၁၈၅၀ ဧရိယာ</i>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<div class="col-md-3 col-sm-12 col-xs-12">
+									<a href="#">
+										<div id="recent_item">
+											<img src="images/recent_house.png">
+											<div id="recent_text_wrap">
+												<h4>
+													မရမ္းကုန္းၿမိဳ ့နယ္တြင္ အိမ္ငွားရန္ရိွသည္။
+												</h4>
+												<small>၂၀၀၀၀၀ က်ပ္ / တစ္လ</small><br>
+												<span>
+													တစ္လငွားရန္းခ ၁၉၀၀၀၀ ၫွိႏိႈင္း၊ အဆင့္ျမင့္ျပင္ဆင္ၿပီး ေနရာေကာင္းသည္။
+												</span>
+
+												<i style="display: block;width: 100%;border-bottom: 1px solid #3a9bfa;margin-top:20px;"></i>
+
+												<i class="fa fa-bed">&nbsp;&nbsp;၃ခန္း</i>
+												<i class="fa fa-bath">&nbsp;&nbsp;၃ခန္း</i>
+												<i class="fa fa-adn">&nbsp;&nbsp;၁၈၅၀ ဧရိယာ</i>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<div class="col-md-3 col-sm-12 col-xs-12">
+									<a href="#">
+										<div id="recent_item">
+											<img src="images/recent_house.png">
+											<div id="recent_text_wrap">
+												<h4>
+													မရမ္းကုန္းၿမိဳ ့နယ္တြင္ အိမ္ငွားရန္ရိွသည္။
+												</h4>
+												<small>၂၀၀၀၀၀ က်ပ္ / တစ္လ</small><br>
+												<span>
+													တစ္လငွားရန္းခ ၁၉၀၀၀၀ ၫွိႏိႈင္း၊ အဆင့္ျမင့္ျပင္ဆင္ၿပီး ေနရာေကာင္းသည္။
+												</span>
+
+												<i style="display: block;width: 100%;border-bottom: 1px solid #3a9bfa;margin-top:20px;"></i>
+
+												<i class="fa fa-bed">&nbsp;&nbsp;၃ခန္း</i>
+												<i class="fa fa-bath">&nbsp;&nbsp;၃ခန္း</i>
+												<i class="fa fa-adn">&nbsp;&nbsp;၁၈၅၀ ဧရိယာ</i>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<div class="col-md-3 col-sm-12 col-xs-12">
+									<a href="#">
+										<div id="recent_item">
+											<img src="images/recent_house.png">
+											<div id="recent_text_wrap">
+												<h4>
+													မရမ္းကုန္းၿမိဳ ့နယ္တြင္ အိမ္ငွားရန္ရိွသည္။
+												</h4>
+												<small>၂၀၀၀၀၀ က်ပ္ / တစ္လ</small><br>
+												<span>
+													တစ္လငွားရန္းခ ၁၉၀၀၀၀ ၫွိႏိႈင္း၊ အဆင့္ျမင့္ျပင္ဆင္ၿပီး ေနရာေကာင္းသည္။
+												</span>
+
+												<i style="display: block;width: 100%;border-bottom: 1px solid #3a9bfa;margin-top:20px;"></i>
+
+												<i class="fa fa-bed">&nbsp;&nbsp;၃ခန္း</i>
+												<i class="fa fa-bath">&nbsp;&nbsp;၃ခန္း</i>
+												<i class="fa fa-adn">&nbsp;&nbsp;၁၈၅၀ ဧရိယာ</i>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<div class="col-md-12" style="margin-top: 15px;">
+									<span style="display: block;text-align: center;">KBZ has posted 200 jobs.</span>
+
+									<a href="#" class="btn">See All Jobs</a>
+								</div>
 							</div>
 
 						</div>
@@ -636,11 +702,19 @@ Project Designed By Tracer Land
 				get('home_tab').style.display = "block";
 				get('job_tab_search').style.display = "none";
 				get('job_tab_section').style.display = "none";
+				get('house_tab').style.display = "none";
+			}
+			function tab_switchHouse(){
+				get('house_tab').style.display = "block";
+				get('job_tab_search').style.display = "none";
+				get('job_tab_section').style.display = "none";
+				get('home_tab').style.display = "none";
 			}
 			function tab_switchJob(){
 				get('job_tab_search').style.display = "block";
 				get('job_tab_section').style.display = "block";
 				get('home_tab').style.display = "none";
+				get('house_tab').style.display = "none";
 			}
 
 		</script>

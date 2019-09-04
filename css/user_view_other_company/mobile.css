@@ -88,3 +88,9 @@ nav #language_toggle_select{
 	width: 80%;
 	float: right;
 }
+
+
+/*House Tab Section!*/
+#body .container-fluid .col-md-10 .sixth_row .col-md-3{
+	width: 100%;
+}
