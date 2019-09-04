@@ -580,6 +580,20 @@ Project Designed By Tracer Land
 							</div>
 
 
+							<!-- House Search Inputs! -->
+							<div class="row fith_row" id="house_tab_search">
+								<div id="house_form">
+									<form action="#">
+										<select class="form-control" id="house_dropdown">
+											<option>House</option>
+										</select>
+
+										<input type="text" name="text" placeholder="Search Houses" class="form-control">
+
+										<button type="submit" value="Search" class="btn" id="search_house">Search</button>
+									</form>
+								</div>
+							</div>
 							<!-- House Tab Section! -->
 							<div class="row sixth_row" id="house_tab">
 								<div class="col-md-3 col-sm-12 col-xs-12">
@@ -708,9 +722,11 @@ Project Designed By Tracer Land
 				get('job_tab_search').style.display = "none";
 				get('job_tab_section').style.display = "none";
 				get('house_tab').style.display = "none";
+				get('house_tab_search').style.display = "none";
 			}
 			function tab_switchHouse(){
 				get('house_tab').style.display = "block";
+				get('house_tab_search').style.display = "block";
 				get('job_tab_search').style.display = "none";
 				get('job_tab_section').style.display = "none";
 				get('home_tab').style.display = "none";
@@ -720,6 +736,7 @@ Project Designed By Tracer Land
 				get('job_tab_section').style.display = "block";
 				get('home_tab').style.display = "none";
 				get('house_tab').style.display = "none";
+				get('house_tab_search').style.display = "none";
 			}
 
 		</script>

@@ -92,7 +92,16 @@ nav #language_toggle_select{
 	float: right;
 }
 
-
+/*Fith Row!House Search Input!*/
+#body .container-fluid .col-md-10 .fith_row #house_form form input{
+	width: 48%!important;
+}
+#body .container-fluid .col-md-10 .fith_row #house_form form .btn{
+	width: 20%;
+}
+#body .container-fluid .col-md-10 .fith_row #house_form form #house_dropdown{
+	width: 24%!important;
+}
 /*House Tab Section!*/
 #body .container-fluid .col-md-10 .sixth_row .col-md-3{
 	width: 100%;

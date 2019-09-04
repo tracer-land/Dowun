@@ -327,6 +327,39 @@ nav li:last-child a img{
 	margin-top: 15px!important;
 }
 
+/*Fith Row!House Search Input!*/
+#body .container-fluid .col-md-10 .fith_row{
+	margin-top: 5px;
+	display: none;
+}
+#body .container-fluid .col-md-10 .fith_row #house_form{
+	width: 100%!important;
+	padding: 20px;
+	padding-right: 10px!important;
+	padding-bottom: 20px!important;
+}
+#body .container-fluid .col-md-10 .fith_row #house_form form input{
+	width: 48%!important;
+	float: left;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+	border: 0px!important;
+	margin-left: 10px;
+}
+#body .container-fluid .col-md-10 .fith_row #house_form form .btn{
+	background: #3a9bfa;
+	color: #fff;
+	width: 20%;
+	display: inline-block!important;
+	margin-left: 10px;
+}
+#body .container-fluid .col-md-10 .fith_row #house_form form #house_dropdown{
+	width: 15%!important;
+	background: rgba(0,0,0,0)!important;
+	padding-left: 30px;
+	float: left;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+	border: 0px!important;
+}
 /*House Tab Section!*/
 #body .container-fluid .col-md-10 .sixth_row{
 	margin-top: 10px;
@@ -434,6 +467,21 @@ nav li:last-child a img{
 		float: right;
 	}
 
+	/*Fith Row!House Search Input!*/
+	#body .container-fluid .col-md-10 .fith_row #house_form form input{
+		width: 48%!important;
+	}
+	#body .container-fluid .col-md-10 .fith_row #house_form form .btn{
+		width: 20%;
+	}
+	#body .container-fluid .col-md-10 .fith_row #house_form form #house_dropdown{
+		width: 24%!important;
+	}
+	/*House Tab Section!*/
+	#body .container-fluid .col-md-10 .sixth_row .col-md-3{
+		width: 100%;
+	}
+
 }
 
 
@@ -538,6 +586,24 @@ nav li:last-child a img{
 		float: right;
 	}
 
+	/*Third Row!JOB Search Input!*/
+	#body .container-fluid .col-md-10 .fith_row #house_form{
+		padding: 0px!important;
+		padding-top: 10px!important;
+		padding-bottom: 10px!important;
+	}
+	#body .container-fluid .col-md-10 .fith_row #house_form form input{
+		width: 30%!important;
+		font-size: 12px!important;
+	}
+	#body .container-fluid .col-md-10 .fith_row #house_form form .btn{
+		width: 22%;
+		font-size: 12px!important;
+	}
+	#body .container-fluid .col-md-10 .fith_row #house_form form #house_dropdown{
+		width: 25%!important;
+		font-size: 12px!important;
+	}
 	/*House Tab Section!*/
 	#body .container-fluid .col-md-10 .sixth_row .col-md-3{
 		width: 100%;
