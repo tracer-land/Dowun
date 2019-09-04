@@ -31,6 +31,9 @@ nav #language_toggle_select{
 	margin: 0px!important;
 	padding: 0px!important;
 }
+#body #sidebar_wrap ul li .fa-home{
+	display: block!important;
+}
 #body #sidebar_wrap ul li span{
 	display: none!important;
 }

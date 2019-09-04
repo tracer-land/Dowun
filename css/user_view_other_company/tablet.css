@@ -37,6 +37,9 @@ nav #language_toggle_select{
 #body #sidebar_wrap ul li strong{
 	display: none!important;
 }
+#body #sidebar_wrap ul li .fa-home{
+	display: block!important;
+}
 
 /*Cover Wrap*/
 #body .container-fluid .col-md-10 .first_row #cover{
