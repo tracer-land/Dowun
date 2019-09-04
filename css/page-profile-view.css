@@ -42,6 +42,9 @@ nav li:last-child a img{
 	position: fixed;
 	z-index: 100;
 }
+#sub_nav ul:first-child{
+	margin-left: 14px;
+}
 #sub_nav ul{
 	list-style: none;
 	float: left;
