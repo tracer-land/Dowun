@@ -275,7 +275,7 @@ nav li:last-child a img{
 
 /*Body Right Job Section! */
 #body_right_job_section{
-	display: none!important;
+	display: none;
 }
 #body_right_job_section .table_section{
 	padding: 20px;
