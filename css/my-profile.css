@@ -1,0 +1,192 @@
+/* Header Form Style */
+#header{
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 50px;
+	background-color: #ccc;
+}
+
+/* Navigation CSS! */
+nav li sub{
+	font-size: 16px!important;
+	display: inline-block!important;
+	margin-right: -5px!important;
+}
+nav li sup{
+	width: 14px;
+	height: 14px;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 14px;
+	border-radius: 25px;
+	background: red;
+	display: inline-block!important;
+}
+nav li:last-child a img{
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+	display: inline-block;
+}
+
+
+/* Sub Navigation Bar CSS! */
+#sub_nav{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background: #fff;
+	margin-top: 50px;
+	position: fixed;
+	z-index: 100;
+}
+#sub_nav ul:first-child{
+	margin-left: 14px;
+}
+#sub_nav ul{
+	list-style: none;
+	float: left;
+}
+#sub_nav ul li{
+	display: inline-block;
+	margin-right: 22px;
+}
+#sub_nav ul li a{
+	text-decoration: none;
+	outline: none;
+	color: #000!important;
+	font-size: 12px;
+}
+
+#sub_nav ul:last-child{
+	float: right;
+}
+
+
+/* Body Section CSS! */
+#body{
+	width: 100%;
+}
+#body .container-fluid #fix_position{
+	margin-top: 90px;
+	height: 100vh;
+	position: fixed;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#body .container-fluid .col-md-10{
+	width: 82%;
+	margin-top: 60px;
+	float: right!important;
+}
+
+/*Body Sidebar*/
+#body #sidebar_wrap{
+	display: block;
+	outline: none;
+	text-decoration: none;
+	width: 100%;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	position: relative;
+	padding: 10px 5px 10px 10px;
+}
+#body #sidebar_wrap a{
+	text-decoration: none!important;
+	outline: none!important;
+	color: #666!important;
+}
+#body #sidebar_wrap img{
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+}
+
+#body #sidebar_wrap .row .col-md-12 ul{
+	list-style: none;
+	float: left;
+	color: #666!important;
+	margin-left: -28px;
+	font-size: 12px;
+}
+#body #sidebar_wrap .row .col-md-12 ul li strong{
+	font-size: 14px;
+	margin-bottom: 15px;
+	display: block;
+}
+#body #sidebar_wrap .row .col-md-12 ul li{
+	margin-bottom: 10px;
+}
+#body #sidebar_wrap .row .col-md-12 ul li:last-child{
+	margin-bottom: 0px!important;
+}
+#body #sidebar_wrap .row .col-md-12 ul li span{
+	margin-left: 12px;
+	font-size: 12px;
+	font-weight: bold;
+}
+#body #sidebar_wrap .row .col-md-12 ul li i{
+	font-size: 16px;
+}
+
+
+/* Cover Row */
+#body .container-fluid .col-md-10 .first_row{
+	margin-top: 50px;
+}
+#body .container-fluid .col-md-10 .first_row #cover{
+	width: 100%;
+	height: 220px;
+	background: #fff;
+	position: relative;
+}
+#body .container-fluid .col-md-10 .first_row #cover img{
+	width: 100px;
+	height: 100px;
+	border-radius: 4px;
+}
+#body .container-fluid .col-md-10 .first_row #cover .cover_wrap{
+	width: 200px;
+	height: 100px;
+	padding-right: 10px;
+	position: absolute;
+	bottom: 0%;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+#body .container-fluid .col-md-10 .first_row #cover .cover_wrap strong{
+	display: inline-block;
+	margin-left: 7px;
+	position: absolute;
+	bottom: 0%;
+	font-size: 14px;
+	color: #333;
+}
+/* Nav Wrap */
+#body .container-fluid .col-md-10 .first_row #nav_wrap{
+	background: #fff;
+	width: 100%;
+	height: 50px;
+}
+#body .container-fluid .col-md-10 .first_row #nav_wrap ul{
+	list-style: none;
+	line-height: 50px;
+}
+#body .container-fluid .col-md-10 .first_row #nav_wrap ul a{
+	text-decoration: none;
+	outline: none;
+	color: #000!important;
+}
+#body .container-fluid .col-md-10 .first_row #nav_wrap ul li{
+	display: inline-block;
+	margin-right: 15px;
+}
+#body .container-fluid .col-md-10 .first_row #nav_wrap ul li i{
+	color: #666!important;
+}
+#body .container-fluid .col-md-10 .first_row #nav_wrap ul .btn{
+	color: #fff!important;
+	margin-right: 10px;
+	margin-top: 10px;
+}
