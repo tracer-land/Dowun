@@ -339,6 +339,8 @@ nav li:last-child a img{
 #myModal .modal-body form textarea{
 	max-width: 100%;
 	height: 100%;
+	position: relative;
+	z-index: 100;
 }
 #myModal .modal-body form .btn{
 	width: 100%!important;
