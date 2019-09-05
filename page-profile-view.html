@@ -110,7 +110,7 @@ Project Designed By Tracer Land
 			<div id="sub_nav">
 				<ul>
 					<li>
-						<a href="#">KBZ</a>
+						<a href="#" onClick="tab_switchHome()">KBZ</a>
 					</li>
 
 					<li>
@@ -118,7 +118,7 @@ Project Designed By Tracer Land
 					</li>
 
 					<li>
-						<a href="#">Job</a>
+						<a href="#" onClick="tab_switchJob()">Job</a>
 					</li>
 
 					<li>
@@ -190,7 +190,7 @@ Project Designed By Tracer Land
 												<strong>My Business Page</strong>
 											</li>
 											<li>
-												<a href="#">
+												<a href="#" onClick="tab_switchHome()">
 													<i class="fa fa-paperclip" data-toggle="tooltip" title="My Page" data-placement="right"></i>
 													<span>KBZ Bank</span>
 												</a>
@@ -232,8 +232,8 @@ Project Designed By Tracer Land
 						</div>
 					<!-- Fix Position End! -->
 
-					<!-- Body Right Section Start! -->
-						<div class="col-md-10 col-sm-11 col-xs-11">
+					<!-- Body Right Home Section Start! -->
+						<div class="col-md-10 col-sm-11 col-xs-11" id="body_right_home_section">
 
 							<div class="row first_row">
 								<div id="cover" style="background: url('images/cover.jpg') no-repeat;background-size: cover;">
@@ -488,7 +488,188 @@ Project Designed By Tracer Land
 							</div>
 
 						</div>
-					<!-- Body Right Section End! -->
+					<!-- Body Right Home Section End! -->
+
+
+					<!-- Body Right Job Section Start! -->
+						<div class="col-md-10 col-sm-11 col-xs-11" id="body_right_job_section">
+							<div class="row table_section">
+								
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fa fa-plus-circle"></i>
+											&nbsp;Create Post
+										</a>
+									</li>
+									<li>
+										<a href="#">Buy Package</a>
+									</li>
+								</ul>
+
+								<ul id="second-ul">
+									<li>
+										<a href="#">
+											Job Posts
+											<span></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Applications
+											<span class="caret"></span>
+										</a>
+									</li>
+								</ul>
+
+								<table class="table table-striped">
+									<tr>
+										<th>Name</th>
+										<th>Location</th>
+										<th>Job Title</th>
+										<th>Applied Date</th>
+										<th>Message</th>
+										<th>Status</th>
+										<th>Remove</th>
+									</tr>
+
+									<tr>
+										<td>Min Min</td>
+										<td>Yankin, Yangon</td>
+										<td>Manager</td>
+										<td>20 Aug 2019</td>
+										<td>
+											<a href="#">Send Message</a>
+										</td>
+										<td>
+											<select class="form-control" id="myselection">
+												<option>Select Status</option>
+												<option value="modal-selection">
+													Interview Schedule
+												</option>
+												<option>Hire</option>
+												<option>Rejected</option>
+											</select>
+										</td>
+										<td>
+											<a href="#" class="btn btn-sm btn-danger">
+												<i class="fa fa-trash"></i>
+											</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>Zaw Win</td>
+										<td>Sanchaung, Yangon</td>
+										<td>Accounting</td>
+										<td>1 Sep 2019</td>
+										<td>
+											<a href="#">Send Message</a>
+										</td>
+										<td>
+											<select class="form-control">
+												<option>Select Status</option>
+
+												<option>
+													Interview Schedule
+												</option>
+												<option>Hire</option>
+												<option>Rejected</option>
+											</select>
+										</td>
+										<td>
+											<a href="#" class="btn btn-sm btn-danger">
+												<i class="fa fa-trash"></i>
+											</a>
+										</td>
+									</tr>
+								</table>
+
+							</div>
+						</div>
+					<!-- Body Right Job Section End! -->
+
+					<!-- Schedule Popup Start! -->
+					<div id="myModal" class="modal fade" role="dialog">		
+						<!-- Schedule Popup Content Start! -->
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">
+										&times;
+									</button>
+									<h4 class="modal-title">Schedule an Interview</h4>
+								</div>
+
+								<div class="modal-body">
+									<form action="#">
+									<div class="row">
+										<div class="col-md-6" style="height: 250px;">
+												<h4>Start</h4>
+												<div class="row">
+													<div class="col-md-3">
+														<label>
+															<i class="fa fa-calendar"></i>
+														</label>
+													</div>
+													<div class="col-md-9">
+														<input type="date" name="date" class="form-control">
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-3">
+														<label>
+															<i class="fa fa-history"></i>
+														</label>
+													</div>
+													<div class="col-md-9">
+														<input type="time" name="time" class="form-control">
+													</div>
+												</div>
+
+												<h4 style="margin-top: 22px;">End(Optional)</h4>
+												<div class="row">
+													<div class="col-md-3">
+														<label>
+															<i class="fa fa-calendar"></i>
+														</label>
+													</div>
+													<div class="col-md-9">
+														<input type="date" name="date" class="form-control">
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-3">
+														<label>
+															<i class="fa fa-history"></i>
+														</label>
+													</div>
+													<div class="col-md-9">
+														<input type="time" name="time" class="form-control">
+													</div>
+												</div>
+										</div>
+										<div class="col-md-6" style="height: 250px;">
+											<textarea class="form-control" placeholder="Enter Note.."></textarea>
+										</div>
+
+										<div class="col-md-12" style="margin-top: 15px;">
+											<a href="#" class="btn btn-danger">Make Schedule</a>
+										</div>
+									</div>
+									</form>
+
+									<p>Send Min an appointment for interview.They will be notified about their appointment in message.</p>
+								</div>
+
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+						<!-- Schedule Popup Content End! -->
+					</div>
+					<!-- Schedule Popup End! -->
 
 				</div>
 			</div>
@@ -500,7 +681,38 @@ Project Designed By Tracer Land
 			
 			$(document).ready(function(){
 				$('[data-toggle="tooltip"]').tooltip();
+
+
+				/*Selection Modal Script!*/
+				$("#myselection").change(function(){
+					var opval = $(this).val();
+					if(opval=="modal-selection"){
+						$("#myModal").modal("show");
+					}
+				});
+
+				/*Caret Script!*/
+				$("#second-ul li a").click(function(){
+					$("#second-ul li a span").toggleClass("caret");
+				});
+
 			});
+
+			function get(obj){
+				return document.getElementById(obj);
+			}
+
+			//Sub Menu Script
+			//Functions start
+			function tab_switchHome(){
+				get('body_right_home_section').style.display = "block";
+				get('body_right_job_section').style.display = "none";
+			}
+
+			function tab_switchJob(){
+				get('body_right_job_section').style.display = "block";
+				get('body_right_home_section').style.display = "none";
+			}
 
 		</script>
 
