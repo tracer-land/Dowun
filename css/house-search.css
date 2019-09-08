@@ -232,11 +232,11 @@
 #property .row .col-md-3 #myModal .modal-body .schedule form h5{
 	font-weight: bold;
 }
-#property .row .col-md-3 #myModal .modal-body .schedule form .col-md-6{
-	margin-bottom: 40px;
-}
 #property .row .col-md-3 #myModal .modal-body .schedule form i{
 	font-size: 18px;
+}
+#property .row .col-md-3 #myModal .modal-body .schedule .col-md-6{
+	height: 250px;
 }
 #property .row .col-md-3 #myModal .modal-body .schedule .col-md-3,#property .row .col-md-3 #myModal .modal-body .schedule .col-md-9{
 	margin-bottom: 10px;
@@ -344,7 +344,6 @@
 	#property .row .col-md-3 a #recent_item #recent_text_wrap i{
 		font-size: 12px!important;
 	}
-
 	/* App Section CSS! */
 	#app{
 		padding: 50px;
@@ -365,5 +364,9 @@
 	#app img{
 		width: 90px!important;
 		height: 30px!important;
+	}
+
+	#property .row .col-md-3 #myModal .modal-body .schedule .col-md-6{
+		margin-bottom: 120px!important;
 	}
 }

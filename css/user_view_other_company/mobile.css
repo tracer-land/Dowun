@@ -122,3 +122,7 @@ nav #language_toggle_select{
 #body .container-fluid .col-md-10 .sixth_row .col-md-3{
 	width: 100%;
 }
+
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .schedule .col-md-6{
+	margin-bottom: 120px;
+}

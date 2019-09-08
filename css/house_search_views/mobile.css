@@ -60,6 +60,10 @@
 	margin-top: 25px!important;
 }
 
+#property .row .col-md-3 #myModal .modal-body .schedule .col-md-6{
+	margin-bottom: 120px!important;
+}
+
 /* App Section CSS! */
 #app{
 	padding: 50px;

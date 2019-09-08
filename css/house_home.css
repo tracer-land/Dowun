@@ -393,11 +393,11 @@
 #recent_property .row .col-md-3 #myModal .modal-body .schedule form h5{
 	font-weight: bold;
 }
-#recent_property .row .col-md-3 #myModal .modal-body .schedule form .col-md-6{
-	margin-bottom: 40px;
-}
 #recent_property .row .col-md-3 #myModal .modal-body .schedule form i{
 	font-size: 18px;
+}
+#recent_property .row .col-md-3 #myModal .modal-body .schedule .col-md-6{
+	height: 250px;
 }
 #recent_property .row .col-md-3 #myModal .modal-body .schedule .col-md-3,#recent_property .row .col-md-3 #myModal .modal-body .schedule .col-md-9{
 	margin-bottom: 10px;
@@ -420,6 +420,11 @@
 		width: 380px;
 		height: 200px;
 	}
+
+	#recent_property .row .col-md-3 #myModal .modal-body .schedule .col-md-6{
+		height: 380px;
+	}
+
 }
 
 @media screen and (max-width: 499px){
@@ -467,5 +472,10 @@
 	#recent_property .row .col-md-3 a #recent_item #recent_text_wrap i{
 		font-size: 12px!important;
 	}
+
+	#recent_property .row .col-md-3 #myModal .modal-body .schedule .col-md-6{
+		height: 380px;
+	}
+
 
 }
