@@ -89,14 +89,14 @@ Project Designed By Tracer Land
 							<li><a href="#">Create a Post</a></li>
 							<li><a href="job.html">Jobs</a></li>
 							<li><a href="house.html">House</a></li>
-							<li><a href="#">Create a Page</a></li>
+							<li><a href="create-page-step-1.html">Create a Page</a></li>
 							
 							<li><a href="#">Message</a></li>
 							<li><a href="#">
 								<sub class="fa fa-bell"></sub><sup>7</sup>
 							</a></li>
 							<li>
-								<a href="#">
+								<a href="my-profile.html">
 									<img src="images/client.jpg" class="img-responsive">&nbsp;Me
 								</a>
 							</li>
@@ -110,15 +110,19 @@ Project Designed By Tracer Land
 			<div id="sub_nav">
 				<ul>
 					<li>
-						<a href="#">Min Min</a>
+						<a href="my-profile.html">Min Min</a>
 					</li>
 
 					<li>
-						<a href="#">My Profile or CV</a>
+						<a href="#" onClick="tab_switchMycv()" class="cv-caret">My Profile or CV</a>
 					</li>
 
 					<li>
-						<a href="#">My Applied Jobs</a>
+						<a href="#" onClick="tab_switchJobapply()">My Applied Jobs</a>
+					</li>
+
+					<li>
+						<a href="#" onClick="tab_switchMyschedule()">My Schedule</a>
 					</li>
 
 					<li>
@@ -132,11 +136,11 @@ Project Designed By Tracer Land
 
 				<ul>
 					<li>
-						<a href="#">Free Account</a>
+						<a href="business-account.html">Free Account</a>
 					</li>
 
 					<li>
-						<a href="#">Upgrade Business Account</a>
+						<a href="business-account.html">Upgrade Business Account</a>
 					</li>
 				</ul>
 			</div>
@@ -157,13 +161,13 @@ Project Designed By Tracer Land
 												<strong>My Personal Account</strong>
 											</li>
 											<li>
-												<a href="#">
+												<a href="#" onClick="tab_switchMycv()">
 													<i class="fa fa-id-badge" data-toggle="tooltip" title="My CV" data-placement="right"></i>
 													<span>My Profile or CV</span>
 												</a>
 											</li>
 											<li>
-												<a href="#">
+												<a href="#" onClick="tab_switchJobapply()">
 													<i class="fa fa-suitcase" data-toggle="tooltip" title="My Jobs" data-placement="right"></i>
 													<span>My Applied Job List</span>
 												</a>
@@ -278,12 +282,920 @@ Project Designed By Tracer Land
 								</div>
 							</div>
 
+							<!-- Personal Information Show! -->
+							<div class="row second_row" id="personal-information-show">
+								
+								<!-- #first-row -->
+								<div class="row" id="first-row">
+									<div class="col-md-6">
+										<img src="images/client.jpg">
+										<ul>
+											<li>
+												<span class="position">Min Min</span>
+											</li>
+											<li>
+												<span>Yangon, Myanmar</span>
+											</li>
+											<li>
+												<span>Previous - Project Manager</span>
+											</li>
+											<li>
+												<i class="fa fa-circle active"></i>
+												<span>Active Job Searching</span>
+											</li>
+											<li>
+												<span>Last Update CV : 2019 Aug 20</span>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-md-6">
+										<ul>
+											<li>
+												<form action="#">
+													<button type="submit" class="btn btn-sm download_btn">Download</button>
+													<button class="btn btn-sm save_btn">Save</button>
+												</form>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- #second-row -->
+								<div class="row" id="second-row">
+									<div class="col-md-4">
+										<ul>
+											<li><i class="fa fa-money"></i>&nbsp;Last Salary</li>
+											<li>200,000 MMK</li>
+										</ul>
+									</div>
+									<div class="col-md-4">
+										<ul>
+											<li><i class="fa fa-flag"></i>&nbsp;Career Level</li>
+											<li>Manager</li>
+										</ul>
+									</div>
+									<div class="col-md-4">
+										<ul>
+											<li><i class="fa fa-user"></i>&nbsp;Gender/Age</li>
+											<li>Both/24</li>
+										</ul>
+									</div>
+									<div class="col-md-4">
+										<ul>
+											<li><i class="fa fa-suitcase"></i>&nbsp;Job Type</li>
+											<li>Sales</li>
+										</ul>
+									</div>
+									<div class="col-md-4">
+										<ul>
+											<li><i class="fa fa-heart"></i>&nbsp;Interest</li>
+											<li>Marketing</li>
+										</ul>
+									</div>
+									<div class="col-md-4">
+										<ul>
+											<li><i class="fa fa-arrow-up"></i>&nbsp;Experience</li>
+											<li>3 Years</li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- #third-row -->
+								<div class="row" id="third-row">
+									<div class="col-md-12">
+										<h4>Work Experience</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div>
+									<div class="col-md-12">
+										<h4>Education</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div>
+									<div class="col-md-12">
+										<h4>Personal Information</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div>
+									<div class="col-md-12">
+										<h4>About Me</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div>
+								</div>
+
+								<!-- #fourth-row -->
+								<div class="row" id="fourth-row">
+									<h4 class="text-center">Contact Information</h4>
+
+									<div class="col-md-4">
+										<p class="text-center">
+											<i class="fa fa-phone"></i>&nbsp;+95 97950685410
+										</p>
+									</div>
+									<div class="col-md-4">
+										<p class="text-center">
+											<a href="mailto:min@gmail.com">
+												<i class="fa fa-envelope"></i>&nbsp;min@gmial.com
+											</a>
+										</p>
+									</div>
+									<div class="col-md-4">
+										<p class="text-center">
+											<i class="fa fa-location-arrow"></i>&nbsp;Tamwe, Yangon, Myanmar
+										</p>
+									</div>
+
+									<center>
+										<a href="#" id="icon" class="text-center">
+											<i class="fa fa-facebook"></i>
+										</a>
+
+										<a href="#" id="icon" class="text-center">
+											<i class="fa fa-twitter"></i>
+										</a>
+
+										<a href="#" id="icon" class="text-center">
+											<i class="fa fa-google-plus"></i>
+										</a>
+									</center>
+								</div>
+
+							</div>
+
+							<!-- My CV Section! -->
+							<div class="row my_cv" id="my-cv-section">
+								<div class="col-md-3 tab-menu">
+									<ul>
+										<li>View Profile or CV</li>
+										<li>
+											<a href="#" onClick="tab_switchPersonal()">Personal</a>
+										</li>
+										<li>
+											<a href="#" onClick="tab_switchContact()">Contact and Address</a>
+										</li>
+										<li>
+											<a href="#" onClick="tab_switchEducation()">Education and Work</a>
+										</li>
+										<li>
+											<a href="#" onClick="tab_switchAbout()">About Me</a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="col-md-9 tab-section">
+									
+									<!-- Personal Information! -->
+									<div id="personal-info">
+										<h4>Personal Information</h4>
+										<div class="row">
+											<div class="col-md-2">
+												<span>Full Name</span>
+											</div>
+											<div class="col-md-8">
+												<span>Min Min</span>
+											</div>
+											<div class="col-md-2">
+												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Edit</a>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-2">
+												<span>Gender</span>
+											</div>
+											<div class="col-md-8">
+												<span>Male</span>
+											</div>
+											<div class="col-md-2">
+												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Edit</a>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-2">
+												<span>Date of Birth</span>
+											</div>
+											<div class="col-md-8">
+												<span>Dec 09 1992</span>
+											</div>
+											<div class="col-md-2">
+												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Add</a>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-2">
+												<span>Marital Status</span>
+											</div>
+											<div class="col-md-8">
+												<span>Single</span>
+											</div>
+											<div class="col-md-2">
+												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Edit</a>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-2">
+												<span>Nationality</span>
+											</div>
+											<div class="col-md-8">
+												<span>Myanmar</span>
+											</div>
+											<div class="col-md-2">
+												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Edit</a>
+											</div>
+										</div>
+									</div>
+
+									<!-- Contact and Address! -->
+									<div id="contact-address">
+										<h4>Contact and Address</h4>
+										<div class="row">
+											<div class="col-md-3">
+												<span>Phone Number</span>
+											</div>
+											<div class="col-md-7">
+												<a href="tel:+95 976504321">+95 976504321</a>
+											</div>
+											<div class="col-md-2">
+												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Edit</a>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-3">
+												<span>Email</span>
+											</div>
+											<div class="col-md-7">
+												<a href="mailto:example@gmail.com">example@gmail.com</a>
+											</div>
+											<div class="col-md-2">
+												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Edit</a>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-3">
+												<span>Website</span>
+											</div>
+											<div class="col-md-7">
+												<a href="mailto:example@gmail.com">www.dowun.com</a>
+											</div>
+											<div class="col-md-2">
+												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Add</a>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-3">
+												<span>Facebook</span>
+											</div>
+											<div class="col-md-7">
+												<a href="mailto:example@gmail.com">www.facebook.com/Dowun</a>
+											</div>
+											<div class="col-md-2">
+												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Add</a>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-3">
+												<span>Twitter</span>
+											</div>
+											<div class="col-md-7">
+												<a href="mailto:example@gmail.com">www.twitter.com/Dowun</a>
+											</div>
+											<div class="col-md-2">
+												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Add</a>
+											</div>
+										</div>
+									</div>
+
+									<!-- Education and Work! -->
+									<div id="education-work">
+										<h4>Eductaion and  Work</h4>
+
+										<!-- Skill Section! -->
+										<div id="skill-section">
+											<div class="row">
+												<div class="col-md-9">
+													<strong>Skills</strong>
+												</div>
+												<div class="col-md-3">
+													<a class="btn btn-sm btn-info pull-right skill-tab">Add</a>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-md-12">
+													<span>English - Intermediate</span>
+												</div>
+												<div class="col-md-12">
+													<span>Chinese - Advance</span>
+												</div>
+											</div>
+
+											<div class="row skill-toggle" style="display: none;">
+												<div class="col-md-12">
+													<form action="#">
+														<div class="col-md-3">
+															<label for="language">Language</label>
+														</div>
+														<div class="col-md-9">
+															<select class="form-control" required>
+																<option>English</option>
+																<option>Myanmar</option>
+																<option>Japan</option>
+																<option>Korea</option>
+															</select>
+														</div>
+
+														<div class="col-md-3">
+															<label for="lavel">Lavel</label>
+														</div>
+														<div class="col-md-9">
+															<select class="form-control" required>
+																<option>Beginer</option>
+																<option>Intermidiate</option>
+																<option>Advance</option>
+																<option>Fluent</option>
+															</select>
+														</div>
+
+														<div class="col-md-12">
+															<input type="submit" name="submit" value="Save" class="btn btn-sm btn-info pull-right">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+
+										<!-- Education Section! -->
+										<div id="education-section">
+											<div class="row">
+												<div class="col-md-9">
+													<strong>Education</strong>
+												</div>
+												<div class="col-md-3">
+													<a class="btn btn-sm btn-info pull-right edu-tab">Add</a>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-md-12">
+													<span>University - Greenwich</span>
+												</div>
+												<div class="col-md-12">
+													<span>Degree - IT Business</span>
+												</div>
+												<div class="col-md-12">
+													<span>2012-2016, UK</span>
+												</div>
+											</div>
+
+											<div class="row edu-toggle" style="display: none;">
+												<div class="col-md-12">
+													<form action="#">
+														<div class="col-md-2">
+															<label for="uni">University</label>
+														</div>
+														<div class="col-md-9">
+															<input type="text" name="uni" class="form-control" required>
+														</div>
+
+														<div class="col-md-2">
+															<label for="major">Major</label>
+														</div>
+														<div class="col-md-9">
+															<input type="text" name="major" class="form-control" required>
+														</div>
+
+														<div class="col-md-2">
+															<label for="start">Start Period</label>
+														</div>
+														<div class="col-md-4">
+															<input type="text" name="start" class="form-control" required>
+														</div>
+														<div class="col-md-2">
+															<label for="end">End Period</label>
+														</div>
+														<div class="col-md-3">
+															<input type="text" name="end" class="form-control" required>
+														</div>
+
+														<div class="col-md-2">
+															<label for="country">Country</label>
+														</div>
+														<div class="col-md-9">
+															<input type="text" name="country" class="form-control" required>
+														</div>
+
+														<div class="col-md-2"></div>
+														<div class="col-md-9">
+															<input type="submit" name="submit" value="Save" class="btn btn-sm btn-info pull-right">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+
+										<!-- Experience Section! -->
+										<div id="experience-section">
+											<div class="row">
+												<div class="col-md-9">
+													<strong>Experience</strong>
+												</div>
+												<div class="col-md-3">
+													<a class="btn btn-sm btn-info pull-right exp-tab">Add</a>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-md-12">
+													<span>Net Core Internet</span>
+												</div>
+												<div class="col-md-12">
+													<span>CS Directior - Full Time - 2013-2018, Myanmar</span>
+												</div>
+												<div class="col-md-12">
+													<span>Director and Above</span>
+												</div>
+											</div>
+
+											<div class="row exp-toggle" style="display: none;">
+												<div class="col-md-12">
+													<form action="#">
+														<div class="col-md-2">
+															<label for="company">Comapny</label>
+														</div>
+														<div class="col-md-9">
+															<input type="text" name="company" class="form-control" required>
+														</div>
+
+														<div class="col-md-2">
+															<label for="position">Position</label>
+														</div>
+														<div class="col-md-9">
+															<input type="text" name="position" class="form-control" required>
+														</div>
+
+														<div class="col-md-2">
+															<label for="job-type">Job Type</label>
+														</div>
+														<div class="col-md-9">
+															<select class="form-control" required>
+																<option>Full Time</option>
+																<option>Part Time</option>
+															</select>
+														</div>
+
+														<div class="col-md-2">
+															<label for="country">Country</label>
+														</div>
+														<div class="col-md-9">
+															<select class="form-control" required>
+																<option>Myanmar</option>
+																<option>Japan</option>
+																<option>Singapore</option>
+															</select>
+
+															<label>
+																<input type="checkbox" name="checkbox">I am working here!
+															</label>
+														</div>
+
+														<div class="col-md-2">
+															<label for="start">Year Start</label>
+														</div>
+														<div class="col-md-4">
+															<input type="text" name="start" class="form-control" required>
+														</div>
+														<div class="col-md-2">
+															<label for="end">Year End</label>
+														</div>
+														<div class="col-md-3">
+															<input type="text" name="end" class="form-control" required>
+														</div>
+
+														<div class="col-md-2">
+															<label for="career">Career Level</label>
+														</div>
+														<div class="col-md-9">
+															<select class="form-control" required>
+																<option>Intern</option>
+																<option>Senior</option>
+																<option>Junior</option>
+															</select>
+														</div>
+
+														<div class="col-md-2"></div>
+														<div class="col-md-9">
+															<input type="submit" name="submit" value="Save" class="btn btn-sm btn-info pull-right">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+
+										<!-- Other Section! -->
+										<div id="other-section" style="margin-top: 20px;">
+											<h4>Other Skills</h4>
+											<div class="row">
+												<div class="col-md-3">
+													<label for="other-skill">Driver License</label>
+												</div>
+												<div class="col-md-9">
+													<label style="margin-right: 15px;">
+														<input type="checkbox" name="yes">&nbsp;Yes
+													</label>
+													<label>
+														<input type="checkbox" name="no">&nbsp;No
+													</label>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+
+									<!-- About Me! -->
+									<div id="about-me">
+										<h4>About Me</h4>
+
+										<div class="row">
+											<form action="#">
+												<div class="col-md-3">
+													<label for="status">My Status</label>
+												</div>
+												<div class="col-md-9">
+													<select class="form-control" required>
+														<option>Single</option>
+														<option>Married</option>
+													</select>
+												</div>
+
+												<div class="col-md-12">
+													<label for="bio">About Me</label>
+												</div>
+												<div class="col-md-12">
+													<textarea class="form-control" required></textarea>
+												</div>
+											</form>
+										</div>
+
+										<!-- Interested Position! -->
+										<div id="interest-position">
+											<div class="row">
+												<div class="col-md-9">
+													<strong>Interested Position</strong>
+												</div>
+												<div class="col-md-3">
+													<a class="btn btn-sm btn-info pull-right position-tab">Add</a>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-md-12">
+													<span>Accounting Manager</span>
+												</div>
+											</div>
+
+											<div class="row position-toggle" style="display: none;">
+												<div class="col-md-12">
+													<form action="#">
+														<div class="col-md-6">
+															<input type="text" name="interest-position" class="form-control">
+														</div>
+
+														<div class="col-md-6">
+															<input type="submit" name="submit" value="Save" class="btn btn-sm btn-info">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+
+										<!-- Interested Area! -->
+										<div id="interest-area" style="margin-top: 15px;">
+											<div class="row">
+												<div class="col-md-9">
+													<strong>Area of Interest</strong>
+												</div>
+												<div class="col-md-3">
+													<a class="btn btn-sm btn-info pull-right area-tab">Add</a>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-md-12">
+													<span>Construction</span>
+												</div>
+											</div>
+
+											<div class="row area-toggle" style="display: none;">
+												<div class="col-md-12">
+													<form action="#">
+														<div class="col-md-6">
+															<input type="text" name="interest-area" class="form-control">
+														</div>
+
+														<div class="col-md-6">
+															<input type="submit" name="submit" value="Save" class="btn btn-sm btn-info">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+
 						</div>
 					<!-- Body Right Home Section End! -->
+
+
+					<!-- Body Right Job Section Start! -->
+						<div class="col-md-10 col-sm-11 col-xs-11" id="body_right_job_section">
+							<div class="row table_section">
+								
+								<ul>
+									<li>
+										<a href="#">Buy Package</a>
+									</li>
+								</ul>
+
+								<table class="table table-striped">
+									<tr>
+										<th>Company Name</th>
+										<th>Location</th>
+										<th>Job Title</th>
+										<th>Applied Date</th>
+										<th>Status</th>
+										<th>Remove</th>
+									</tr>
+
+									<tr>
+										<td>KBZ</td>
+										<td>Yankin, Yangon</td>
+										<td>Manager</td>
+										<td>20 Aug 2019</td>
+										<td>
+											Rejected
+										</td>
+										<td>
+											<a href="#" class="btn btn-sm btn-danger">
+												<i class="fa fa-trash"></i>
+											</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td>Dowun</td>
+										<td>Sanchaung, Yangon</td>
+										<td>Accounting</td>
+										<td>1 Sep 2019</td>
+										<td>
+											Rejected
+										</td>
+										<td>
+											<a href="#" class="btn btn-sm btn-danger">
+												<i class="fa fa-trash"></i>
+											</a>
+										</td>
+									</tr>
+								</table>
+
+							</div>
+						</div>
+					<!-- Body Right Job Section End! -->
+
+
+					<!-- Body Right Schedule Section Start! -->
+						<div class="col-md-10 col-sm-11 col-xs-11" id="body_right_schedule_section">
+							<div class="row table_section">
+								
+								<ul>
+									<li>
+										<strong>My Schedule</strong>
+									</li>
+								</ul>
+
+								<table class="table table-striped">
+									<tr>
+										<th>Company Name</th>
+										<th>Location</th>
+										<th>Job Title</th>
+										<th>Applied Date</th>
+										<th>Start Time</th>
+										<th>End Time</th>
+										<th>Status</th>
+									</tr>
+
+									<tr>
+										<td>KBZ</td>
+										<td>Yankin, Yangon</td>
+										<td>Manager</td>
+										<td>20 Aug 2019</td>
+										<td>5PM</td>
+										<td>6PM</td>
+										<td>
+											<select class="form-control">
+												<option>Select Status</option>
+												<option>Cancel</option>
+												<option>Comfirm</option>
+												<option>Request reschedule</option>
+												<option>Message</option>
+											</select>
+										</td>
+									</tr>
+
+									<tr>
+										<td>Dowun</td>
+										<td>Sanchaung, Yangon</td>
+										<td>Accounting</td>
+										<td>1 Sep 2019</td>
+										<td>5PM</td>
+										<td>6PM</td>
+										<td>
+											<select class="form-control">
+												<option>Select Status</option>
+												<option>Cancel</option>
+												<option>Comfirm</option>
+												<option>Request reschedule</option>
+												<option>Message</option>
+											</select>
+										</td>
+									</tr>
+								</table>
+
+							</div>
+						</div>
+					<!-- Body Right Schedule Section End! -->
 
 				 </div>
 			</div>
 		<!-- Body Section End! -->
+
+		<!-- Here Is Model Popups!!! -->
+		<!-- One Field Popup!! -->
+		<div  id="inputModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+        				<h4 class="modal-title">Update Details</h4>
+					</div>
+
+					<div class="modal-body">
+						<form action="#">
+							<div class="row">
+								<div class="col-md-9">
+									<input type="text" name="name" class="form-control" value="KBZ" required>
+								</div>
+								<div class="col-md-3">
+									<input type="submit" value="Update" name="submit" class="btn btn-info">
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Scripts! -->
+
+		<script type="text/javascript">
+			
+			$(document).ready(function(){
+
+				/*Slide Toggle Start!!!*/
+				$("#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #skill-section .skill-tab").click(function(){
+					$("#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #skill-section .skill-toggle").slideToggle();
+				});
+
+				$("#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #education-section .edu-tab").click(function(){
+					$("#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #education-section .edu-toggle").slideToggle();
+				});
+
+				$("#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #experience-section .exp-tab").click(function(){
+					$("#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #experience-section .exp-toggle").slideToggle();
+				});
+
+				$("#body .container-fluid .col-md-10 .my_cv .tab-section #about-me #interest-position .position-tab").click(function(){
+					$("#body .container-fluid .col-md-10 .my_cv .tab-section #about-me #interest-position .position-toggle").slideToggle();
+				});
+
+				$("#body .container-fluid .col-md-10 .my_cv .tab-section #about-me #interest-area .area-tab").click(function(){
+					$("#body .container-fluid .col-md-10 .my_cv .tab-section #about-me #interest-area .area-toggle").slideToggle();
+				});
+				/*Slide Toggle End!!!*/	
+
+
+				/*Caret!*/	
+				$("#sub_nav ul li a").click(function(){
+					$("#sub_nav ul li span").removeClass("caret");
+					$("#sub_nav ul li span").addClass("caret");
+				});
+
+			});
+
+			/*Functions!!!*/
+				function get(obj){
+					return document.getElementById(obj);
+				}
+
+				function tab_switchMycv(){
+					get('personal-information-show').style.display = "none";
+					get('body_right_job_section').style.display = "none";
+					get('body_right_schedule_section').style.display = "none";
+					get('my-cv-section').style.display = "block";
+					get('body_right_home_section').style.display = "block";
+				}
+
+				function tab_switchJobapply(){
+					get('body_right_home_section').style.display = "none";
+					get('my-cv-section').style.display = "none";
+					get('body_right_schedule_section').style.display = "none";
+					get('body_right_job_section').style.display = "block";
+				}
+
+				function tab_switchMyschedule(){
+					get('body_right_schedule_section').style.display = "block";
+					get('body_right_home_section').style.display = "none";
+					get('my-cv-section').style.display = "none";
+					get('body_right_job_section').style.display = "none";
+				}
+
+
+				function tab_switchPersonal(){
+					get('personal-info').style.display = "block";
+					get('contact-address').style.display = "none";
+					get('education-work').style.display = "none";
+					get('about-me').style.display = "none";
+				}
+
+				function tab_switchContact(){
+					get('personal-info').style.display = "none";
+					get('contact-address').style.display = "block";
+					get('education-work').style.display = "none";
+					get('about-me').style.display = "none";
+				}
+
+				function tab_switchEducation(){
+					get('personal-info').style.display = "none";
+					get('contact-address').style.display = "none";
+					get('education-work').style.display = "block";
+					get('about-me').style.display = "none";
+				}
+
+				function tab_switchAbout(){
+					get('personal-info').style.display = "none";
+					get('contact-address').style.display = "none";
+					get('education-work').style.display = "none";
+					get('about-me').style.display = "block";
+				}
+
+		</script>
 
 </body>
 </html>

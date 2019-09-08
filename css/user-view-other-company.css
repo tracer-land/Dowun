@@ -318,7 +318,7 @@ nav li:last-child a img{
 #body .container-fluid .col-md-10 .fourth_row a .col-md-4 .col-md-9 ul li span, small{
 	margin-left: 12px;
 }
-#body .container-fluid .col-md-10 .fourth_row .btn{
+#body .container-fluid .col-md-10 .fourth_row .see-all-jobs{
 	width: 180px!important;
 	display: block!important;
 	background: #3a9bfa!important;
@@ -378,6 +378,8 @@ nav li:last-child a img{
 	text-decoration: none;
 	outline: none;
 	display: block;
+	position: relative;
+	z-index: 1000;
 	color: #000!important;
 }
 #body .container-fluid .col-md-10 .sixth_row .col-md-3 a #recent_item{
@@ -423,13 +425,197 @@ nav li:last-child a img{
 	margin-right: 0px!important;
 }
 
-#body .container-fluid .col-md-10 .sixth_row .btn{
+#body .container-fluid .col-md-10 .sixth_row .see-all-houses{
 	width: 180px!important;
 	display: block!important;
 	background: #3a9bfa!important;
 	margin: 0 auto!important;
 	color: #fff!important;
 	margin-top: 15px!important;
+}
+
+
+/*Job Detail Section For View With Popup*/
+/*First Row*/
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .first_row{
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .first_row .col-md-12 img{
+	width: 85px;
+	height: 85px;
+	float: left;
+	margin-left: 20px;
+}
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .first_row .col-md-12 ul{
+	list-style: none;
+	float: left;
+}
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .first_row .col-md-12 ul li{
+	margin-bottom: 5px;
+}
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .first_row .col-md-12 ul:last-child{
+	list-style: none;
+	float: right;
+}
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .first_row .col-md-12  ul:last-child li .job_type_btn{
+	background-color: #3a9bfa!important;
+	color: #fff!important;
+	float: right;
+}
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .first_row .col-md-12  ul:last-child li form .apply_btn{
+	background-color: #3a9bfa!important;
+	color: #fff!important;
+	text-decoration: none;
+	outline: none;
+	display: inline-block;
+}
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .first_row .col-md-12  ul:last-child li form .save_btn{
+	background-color: #3a9bfa!important;
+	color: #fff!important;
+	text-decoration: none;
+	outline: none;
+	display: inline-block;
+}
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .first_row .col-md-12 small{
+	display: inline-block!important;
+	float: right;
+	margin-bottom: 15px;
+	margin-top: 5px;
+}
+/*Second Row*/
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .second_row{
+	padding-top: 15px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .second_row ul{
+	list-style: none;
+}
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .second_row ul li:first-child{
+	font-weight: bold;
+}
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .second_row ul li:last-child{
+	margin-left: 30px;
+	margin-top: 5px;
+}
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .second_row ul li i{
+	margin-right: 7px;
+	font-size: 18px;
+}
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .second_row .col-md-4{
+	margin-bottom: 10px;
+}
+/*Third Row!*/
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .third_row{
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 15px;
+	display: block;
+}
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .third_row h4{
+	font-weight: bold;
+}
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .third_row p{
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+/*Fourth Row*/
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .fourth_row{
+	padding: 15px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	display: block;
+}
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .fourth_row form input{
+	margin-bottom: 10px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+}
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .fourth_row form span{
+	float: left;
+	display: inline-block;
+	margin-top: 7px;
+	margin-right: 5px;
+}
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .fourth_row form .cv{
+	width: 33%!important;
+	float: left;
+}
+/*Fith Row*/
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .fith_row{
+	padding: 15px;
+	padding-bottom: 0px;
+	display: block;
+}
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .fith_row .btn{
+	background-color: #3a9bfa!important;
+	color: #fff!important;
+	text-decoration: none;
+	outline: none;
+	display: inline-block;
+}
+#body .container-fluid .col-md-10 .fourth_row #myModal .modal-body .fith_row strong{
+	font-size: 16px;
+}
+
+
+/*House Detail Modal Popup!*/
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .row .col-md-6 .carousel-inner{
+	padding: 0px!important;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .row .col-md-6 .carousel-inner img{
+	width: 100%;
+	height: 300px;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .row .col-md-6 .my-left{
+	margin-left: 20px!important;
+	opacity: 1!important;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .row .col-md-6 .my-right{
+	margin-right: 20px!important;
+	opacity: 1!important;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body ul{
+	list-style: none;
+	padding: 0px!important;
+	margin-bottom: 15px;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body ul li{
+	display: inline-block;
+	margin-right: 12px;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body ul li p{
+	font-size: 14px;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body ul li i{
+	font-size: 14px;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body h4{
+	font-weight: bold;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .btn{
+	margin-right: 10px;
+	color: #fff!important;
+}
+
+/*Scheldule*/
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .schedule{
+	display: none;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .schedule form h5{
+	font-weight: bold;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .schedule form .col-md-6{
+	margin-bottom: 40px;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .schedule form i{
+	font-size: 18px;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .schedule .col-md-3,#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .schedule .col-md-9{
+	margin-bottom: 10px;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .schedule form textarea{
+	max-width: 100%;
+	height: 100%;
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .schedule form .btn{
+	width: 100%;
 }
 
 

@@ -64,6 +64,13 @@ nav li:last-child a img{
 	float: right;
 }
 
+#sub_nav ul li .caret{
+	color: #3a9bfa!important;
+	width: 4px!important;
+	margin: 0 auto!important;
+	margin-top: -6px!important;
+	display: block!important;
+}
 
 /* Body Section CSS! */
 #body{
@@ -189,4 +196,336 @@ nav li:last-child a img{
 	color: #fff!important;
 	margin-right: 10px;
 	margin-top: 10px;
+}
+
+/*Second Row!*/
+#body .container-fluid .col-md-10 .second_row{
+	margin-top: 5px;
+	padding: 20px;
+	background: #fff;
+}
+#body .container-fluid .col-md-10 .second_row #first-row{
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#body .container-fluid .col-md-10 .second_row .col-md-6 img{
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+	float: left;
+}
+#body .container-fluid .col-md-10 .second_row .col-md-6:first-child ul{
+	list-style: none;
+	float: left;
+}
+#body .container-fluid .col-md-10 .second_row .col-md-6:first-child ul li:first-child{
+	font-weight: bold;
+}
+#body .container-fluid .col-md-10 .second_row .col-md-6:first-child  ul li .active{
+	color: #0f0!important;
+}
+#body .container-fluid .col-md-10 .second_row .col-md-6:first-child  ul li .unactive{
+	color: #f00!important;
+}
+#body .container-fluid .col-md-10 .second_row .col-md-6:first-child  ul li:last-child span{
+	display: block;
+	margin-top: 8px;
+	font-size: 10px!important;
+}
+#body .container-fluid .col-md-10 .second_row .col-md-6:last-child  ul{
+	list-style: none;
+	float: right;
+}
+#body .container-fluid .col-md-10 .second_row .col-md-6:last-child  ul li .message_type_btn{
+	background-color: #3a9bfa!important;
+	color: #fff!important;
+	float: right;
+}
+#body .container-fluid .col-md-10 .second_row .col-md-6:last-child  ul li form .download_btn{
+	background-color: #3a9bfa!important;
+	color: #fff!important;
+}
+#body .container-fluid .col-md-10 .second_row .col-md-6:last-child  ul li form .save_btn{
+	background-color: #3a9bfa!important;
+	color: #fff!important;
+}
+/*#second-row*/
+#body .container-fluid .col-md-10 .second_row #second-row{
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#body .container-fluid .col-md-10 .second_row #second-row{
+	padding-top: 25px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#body .container-fluid .col-md-10 .second_row #second-row ul{
+	list-style: none;
+}
+#body .container-fluid .col-md-10 .second_row #second-row ul li:first-child{
+	font-weight: bold;
+}
+#body .container-fluid .col-md-10 .second_row #second-row ul li:last-child{
+	margin-left: 30px;
+	margin-top: 5px;
+}
+#body .container-fluid .col-md-10 .second_row #second-row ul li i{
+	margin-right: 7px;
+	font-size: 18px;
+}
+#body .container-fluid .col-md-10 .second_row #second-row .col-md-4{
+	margin-bottom: 10px;
+}
+/*#third-row*/
+#body .container-fluid .col-md-10 .second_row #third-row{
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#body .container-fluid .col-md-10 .second_row #third-row h4{
+	font-weight: bold;
+}
+/*#fourth-row*/
+#body .container-fluid .col-md-10 .second_row #fourth-row{
+	padding-top: 25px;
+}
+#body .container-fluid .col-md-10 .second_row #fourth-row h4{
+	font-weight: bold;
+	margin-bottom: 28px;
+}
+#body .container-fluid .col-md-10 .second_row #fourth-row .col-md-4{
+	margin-bottom: 10px;
+}
+#body .container-fluid .col-md-10 .second_row #fourth-row .col-md-4 p a{
+	text-decoration: none!important;
+	outline: none!important;
+	color: #000!important;
+}
+#body .container-fluid .col-md-10 .second_row #fourth-row #icon{
+	text-decoration: none!important;
+	outline: none!important;
+	color: #000!important;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	background: #fff;
+	border-radius: 25px;
+	box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+	margin-left:  10px;
+}
+
+
+/*My CV Section!*/
+#body .container-fluid .col-md-10 .my_cv{
+	margin-top: 5px;
+	padding: 20px;
+	background: #fff;
+	display: none;
+}
+#body .container-fluid .col-md-10 .my_cv .tab-menu{
+	width: 20%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#body .container-fluid .col-md-10 .my_cv .tab-menu ul{
+	list-style: none;
+	padding: 0px!important;
+}
+#body .container-fluid .col-md-10 .my_cv .tab-menu ul li:first-child{
+	font-weight: bold;
+	margin-bottom: 18px;
+}
+#body .container-fluid .col-md-10 .my_cv .tab-menu ul li{
+	margin-bottom: 15px;
+}
+#body .container-fluid .col-md-10 .my_cv .tab-menu ul li a{
+	text-decoration: none;
+	outline: none;
+	color: #000!important;
+}
+
+#body .container-fluid .col-md-10 .my_cv .tab-section{
+	width: 80%;
+	padding-top: 20px;
+	border-left: 1px solid rgba(0,0,0,0.1);
+}
+/*Personal Information*/
+#body .container-fluid .col-md-10 .my_cv .tab-section #personal-info h4{
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 6px;
+}
+#body .container-fluid .col-md-10 .my_cv .tab-section #personal-info .row{
+	margin-bottom: 12px;
+}
+/*Contact and Address*/
+#body .container-fluid .col-md-10 .my_cv .tab-section #contact-address{
+	display: none;
+}
+#body .container-fluid .col-md-10 .my_cv .tab-section #contact-address h4{
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 6px;
+}
+#body .container-fluid .col-md-10 .my_cv .tab-section #contact-address .row{
+	margin-bottom: 12px;
+}
+#body .container-fluid .col-md-10 .my_cv .tab-section #contact-address .row a{
+	text-decoration: none;
+	outline: none;
+	color: #000!important;
+}
+#body .container-fluid .col-md-10 .my_cv .tab-section #contact-address .row .btn{
+	color: #fff!important;
+}
+/*Education and Work*/
+#body .container-fluid .col-md-10 .my_cv .tab-section #education-work{
+	display: none;
+}
+#body .container-fluid .col-md-10 .my_cv .tab-section #education-work h4{
+	font-size: 15px;
+	font-weight: bold;
+	padding-bottom: 6px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#body .container-fluid .col-md-10 .my_cv .tab-section #education-work .row{
+	margin-bottom: 12px;
+}
+/*Skill Section!*/
+#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #skill-section{
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #skill-section .row .col-md-12{
+	margin-bottom: 5px;
+}
+#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #skill-section .row .col-md-3,#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #skill-section .row .col-md-9{
+	margin-bottom: 5px;
+}
+/*Education Section!*/
+#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #education-section{
+	margin-top: 12px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #education-section .row .col-md-12,body .container-fluid .col-md-10 .my_cv .tab-section #education-work #education-section .row .col-md-2,body .container-fluid .col-md-10 .my_cv .tab-section #education-work #education-section .row .col-md-4{
+	margin-bottom: 8px;
+}
+#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #education-section .row .col-md-3,#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #education-section .row .col-md-9{
+	margin-bottom: 8px;
+}
+/*Experience Section!*/
+#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #experience-section{
+	margin-top: 12px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	display: none;
+}
+#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #experience-section .row .col-md-12,#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #experience-section .row .col-md-2,#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #experience-section .row .col-md-4{
+	margin-bottom: 8px;
+}
+#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #experience-section .row .col-md-3,#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #experience-section .row .col-md-9{
+	margin-bottom: 8px;
+}
+
+/*About Me*/
+#body .container-fluid .col-md-10 .my_cv .tab-section #about-me{
+	display: none;
+}
+#body .container-fluid .col-md-10 .my_cv .tab-section #about-me h4{
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 6px;
+	margin-bottom: 15px;
+}
+#body .container-fluid .col-md-10 .my_cv .tab-section #about-me .row{
+	margin-bottom: 12px;
+}
+#body .container-fluid .col-md-10 .my_cv .tab-section #about-me .row form label{
+	font-weight: normal!important;
+}
+#body .container-fluid .col-md-10 .my_cv .tab-section #about-me #interest-position{
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#body .container-fluid .col-md-10 .my_cv .tab-section #about-me .row form textarea{
+	max-width: 100%!important;
+	margin-bottom: 15px;
+}
+
+
+/*Body Right Job Section! */
+#body_right_job_section{
+	display: none;
+}
+#body_right_job_section .table_section{
+	padding: 20px;
+	background: #fff;
+	margin-top: 45px;
+}
+#body_right_job_section .table_section ul{
+	list-style: none;
+	padding: 0px!important;
+}
+#body_right_job_section .table_section ul:first-child{
+	margin-bottom: 15px;
+}
+#body_right_job_section .table_section ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+#body_right_job_section .table_section ul li a{
+	color: #000!important;
+	text-decoration: none;
+	outline: none;
+	font-weight: bold;
+}
+#body_right_job_section .table_section .table a{
+	color: #000!important;
+	text-decoration: none;
+	outline: none;
+}
+#body_right_job_section .table_section .table .btn{
+	color: #fff!important;
+	padding: 2px 0px 2px 0px!important;
+	font-size: 12px!important;
+	margin: 0 auto!important;
+	display: block!important;
+	width: 26px;
+}
+
+/*Body Right Schedule Section! */
+#body_right_schedule_section{
+	display: none;
+}
+#body_right_schedule_section .table_section{
+	padding: 20px;
+	background: #fff;
+	margin-top: 45px;
+}
+#body_right_schedule_section .table_section ul{
+	list-style: none;
+	padding: 0px!important;
+}
+#body_right_schedule_section .table_section ul:first-child{
+	margin-bottom: 15px;
+}
+#body_right_schedule_section .table_section ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+#body_right_schedule_section .table_section ul li a{
+	color: #000!important;
+	text-decoration: none;
+	outline: none;
+	font-weight: bold;
+}
+#body_right_schedule_section .table_section .table a{
+	color: #000!important;
+	text-decoration: none;
+	outline: none;
+}
+#body_right_schedule_section .table_section .table .btn{
+	color: #fff!important;
+	padding: 2px 0px 2px 0px!important;
+	font-size: 12px!important;
+	margin: 0 auto!important;
+	display: block!important;
+	width: 26px;
 }

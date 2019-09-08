@@ -66,6 +66,22 @@ nav #language_toggle_select{
 	display: block;
 }
 
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .row .col-md-6 .my-left{
+	margin-left: 20px!important;
+	opacity: 1!important;
+	position: absolute;
+	top: 50%;
+	left: 3%;
+	transform: translate(0%, -50%);
+}
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .row .col-md-6 .my-right{
+	margin-right: 20px!important;
+	opacity: 1!important;
+	position: absolute;
+	top: 50%;
+	right: 3%;
+	transform: translate(0%, -50%);
+}
 
 /*Third Row!JOB Search Input!*/
 #body .container-fluid .col-md-10 .third_row #job_form form input{

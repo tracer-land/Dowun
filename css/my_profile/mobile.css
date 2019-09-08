@@ -1,0 +1,8 @@
+/* Mobile View CSS Style (768px) */
+
+#sub_nav{
+	display: none;
+}
+#body .container-fluid #fix_position{
+	display: none;
+}

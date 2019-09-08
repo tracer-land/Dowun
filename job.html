@@ -85,10 +85,10 @@ Project Designed By Tracer Land
 							<li><a href="job.html">Jobs</a></li>
 							<li><a href="#">Create a Job</a></li>
 							<li><a href="house.html">House</a></li>
-							<li><a href="#">Create a Page</a></li>
+							<li><a href="create-page-step-1.html">Create a Page</a></li>
 							<li><a href="#">Message</a></li>
-							<li><a href="#">Register</a></li>
-							<li><a href="#">Login</a></li>
+							<li><a href="create-account-phone.html">Register</a></li>
+							<li><a href="sign-in.html">Login</a></li>
 						</ul>
 					</div>
 				</div>
@@ -246,7 +246,7 @@ Project Designed By Tracer Land
 					<!-- Feature First Row! -->
 					<div class="row">
 						<a href="#" data-toggle="modal" data-target="#myModal">
-							<div class="col-md-4 col-sm-12 col-xs-12">
+							<div class="col-md-4 col-sm-12 col-xs-12 job_wrapper">
 								<div id="feature_img_wrap">
 									<img src="images/job_feature_icon.png">
 									<ul>
@@ -270,10 +270,163 @@ Project Designed By Tracer Land
 								</div>
 							</div>
 						</a>
+						<!-- Here Is Model Popup Job Detail When You Click At Tablet and Mobille Views! Start!!! -->
+						<div id="myModal" class="modal fade" role="dialog">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+        								<h4 class="modal-title">Job Detail</h4>
+									</div>
+
+									<div class="modal-body">
+<!-- Here is Job Detail's Contents Of Modal Popup Start! -->
+<div class="row first_row"><!-- First Row! -->
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<img src="images/job_feature_icon.png">
+		<ul>
+			<li>
+				<span style="font-weight: bold;">Manager</span>
+			</li>
+			<li>
+				<span>Net Core</span>
+			</li>
+			<li>
+				<span>Yangon, Myanmar</span>
+			</li>
+			<li>
+				<span>2 Day Agos</span>
+			</li>
+		</ul>
+
+		<!-- Buttons -->
+		<ul>
+			<li>
+				<button class="btn btn-sm job_type_btn">Full Time</button>
+			</li>
+			<li>
+				<small>100 Views</small>
+			</li>
+			<li>
+				<form action="#">
+					<button type="submit" class="btn btn-sm apply_btn">Apply</button>
+					<a href="#" class="btn btn-sm save_btn">Save</a>
+				</form>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="row second_row"><!-- Second Row -->
+	<div class="col-md-4 col-sm-6 col-xs-6">
+		<ul>
+			<li><i class="fa fa-money"></i>&nbsp;Offered Salary</li>
+			<li>200,000 MMK</li>
+		</ul>
+	</div>
+	<div class="col-md-4 col-sm-6 col-xs-6">
+		<ul>
+			<li><i class="fa fa-flag"></i>&nbsp;Career Level</li>
+			<li>Others</li>
+		</ul>
+	</div>
+	<div class="col-md-4 col-sm-6 col-xs-6">
+		<ul>
+			<li><i class="fa fa-user"></i>&nbsp;Gender</li>
+			<li>Both</li>
+		</ul>
+	</div>
+	<div class="col-md-4 col-sm-6 col-xs-6">
+		<ul>
+			<li><i class="fa fa-suitcase"></i>&nbsp;Job Type</li>
+			<li>Sales</li>
+		</ul>
+	</div>
+	<div class="col-md-4 col-sm-6 col-xs-6">
+		<ul>
+			<li><i class="fa fa-graduation-cap"></i>&nbsp;Eduction</li>
+			<li>Bachelor's Degree</li>
+		</ul>
+	</div>
+	<div class="col-md-4 col-sm-6 col-xs-6">
+		<ul>
+			<li><i class="fa fa-arrow-up"></i>&nbsp;Experience</li>
+			<li>3 Years</li>
+		</ul>
+	</div>
+</div>
+<div class="row third_row"><!-- Third Row -->
+	<div class="col-md-12">
+		<h4>Job Description</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div class="col-md-12">
+		<h4>Position Requirement</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div class="col-md-12">
+		<h4>Benifits</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</div>
+<div class="row fourth_row"><!-- Fourth Row -->
+	<form action="#">
+
+		<input type="email" name="email" class="form-control" placeholder="Enter Your Email" required>
+
+		<input type="text" name="name" class="form-control" placeholder="Enter Your Name" required>
+
+		<input type="tel" name="phone" class="form-control" placeholder="Enter Your Phone" required>
+
+		<span>Upload Your CV</span>
+		<input type="file" name="file" class="form-control cv" required>
+
+		<input type="submit" name="submit" value="Submit Now" class="btn btn-sm btn-danger pull-right">
+
+	</form>
+</div>
+<div class="row fith_row"><!-- Fith Row -->
+	<div class="col-md-12">
+		<strong>NetCore Internet</strong>
+		<a href="#" class="btn btn-sm pull-right">Follow</a>
+
+		<h4>About</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<a href="#" class="btn btn-sm">See More</a>
+	</div>
+</div>
+<!-- Here is Job Detail's Contents Of Modal Popup End! -->
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
 						
 
 						<a href="#">
-							<div class="col-md-4 col-sm-12 col-xs-12">
+							<div class="col-md-4 col-sm-12 col-xs-12 job_wrapper">
 								<div id="feature_img_wrap">
 									<img src="images/job_feature_icon.png">
 									<ul>
@@ -299,7 +452,7 @@ Project Designed By Tracer Land
 						</a>
 
 						<a href="#">
-							<div class="col-md-4 col-sm-12 col-xs-12">
+							<div class="col-md-4 col-sm-12 col-xs-12 job_wrapper">
 								<div id="feature_img_wrap">
 									<img src="images/job_feature_icon.png">
 									<ul>
@@ -328,7 +481,7 @@ Project Designed By Tracer Land
 					<!-- Feature Second Row! -->
 					<div class="row">
 						<a href="#">
-							<div class="col-md-4 col-sm-12 col-xs-12">
+							<div class="col-md-4 col-sm-12 col-xs-12 job_wrapper">
 								<div id="feature_img_wrap">
 									<img src="images/job_feature_icon.png">
 									<ul>
@@ -354,7 +507,7 @@ Project Designed By Tracer Land
 						</a>
 
 						<a href="#">
-							<div class="col-md-4 col-sm-12 col-xs-12">
+							<div class="col-md-4 col-sm-12 col-xs-12 job_wrapper">
 								<div id="feature_img_wrap">
 									<img src="images/job_feature_icon.png">
 									<ul>
@@ -380,7 +533,7 @@ Project Designed By Tracer Land
 						</a>
 
 						<a href="#">
-							<div class="col-md-4 col-sm-12 col-xs-12">
+							<div class="col-md-4 col-sm-12 col-xs-12 job_wrapper">
 								<div id="feature_img_wrap">
 									<img src="images/job_feature_icon.png">
 									<ul>
@@ -406,7 +559,7 @@ Project Designed By Tracer Land
 						</a>
 					</div>
 
-					<a href="#" class="btn btn-info">
+					<a href="job-search.html" class="btn btn-info see-all-jobs">
 						See All Jobs
 					</a>
 

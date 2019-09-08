@@ -102,14 +102,14 @@
 
 
 /* Feature Jobs CSS Style! */
-#feature_jobs .container .row .col-md-4 #feature_img_wrap{
+#feature_jobs .container .row .job_wrapper #feature_img_wrap{
 	width: 95%;
 	margin: 0 auto!important;
 }
-#feature_jobs .container .row .col-md-4 ul li span, small{
+#feature_jobs .container .row .job_wrapper ul li span, small{
 	margin-left: 10px!important;
 }
-#feature_jobs .container .row .col-md-4{
+#feature_jobs .container .row .job_wrapper{
 	width: 95%;
 	margin-bottom: 10px;
 	margin-left: 22px!important;
@@ -156,4 +156,12 @@
 }
 #body .container #body_text_wrap #text-right{
 	text-align: left!important;
+}
+
+/*Job Detail Section For View With Popup*/
+/*First Row*/
+#feature_jobs .container #myModal .modal-body .first_row .col-md-12 img{
+	width: 65px!important;
+	height: 65px!important;
+	margin-left: 10px!important;
 }

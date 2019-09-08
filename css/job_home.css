@@ -222,45 +222,155 @@
 #feature_jobs .container .row{
 	margin-bottom: 30px;
 }
-#feature_jobs .container .row .col-md-4{
+#feature_jobs .container .row .job_wrapper{
 	border-radius: 8px;
 	width: 32%;
 	border: 1px solid rgba(0,0,0,0.3);
 	padding: 10px 0px 5px 0px;
 }
-#feature_jobs .container .row .col-md-4:nth-child(1){
+#feature_jobs .container .row .job_wrapper:nth-child(1){
 	margin-left: 10px;
 }
-#feature_jobs .container .row .col-md-4:nth-child(2){
+#feature_jobs .container .row .job_wrapper:nth-child(2){
 	margin-left: 10px;
 	margin-right: 10px;
 }
-#feature_jobs .container .row .col-md-4 #feature_img_wrap{
+#feature_jobs .container .row .job_wrapper #feature_img_wrap{
 	width: 80%;
 	margin: 0 auto!important;
 }
-#feature_jobs .container .row .col-md-4 img{
+#feature_jobs .container .row .job_wrapper img{
 	float: left;
 	width: 60px;
 	height: 60px;
 }
-#feature_jobs .container .row .col-md-4 ul{
+#feature_jobs .container .row .job_wrapper ul{
 	list-style: none;
 	float: left;
 	color: #666!important;
 }
-#feature_jobs .container .row .col-md-4 ul .position{
+#feature_jobs .container .row .job_wrapper ul .position{
 	font-weight: bold!important;
 }
-#feature_jobs .container .row .col-md-4 ul li span, small{
+#feature_jobs .container .row .job_wrapper ul li span, small{
 	margin-left: 12px;
 }
-#feature_jobs .container .btn{
+#feature_jobs .container .see-all-jobs{
 	width: 180px;
 	display: block;
 	margin: 0 auto!important;
 }
 
+/*Job Detail Section For View With Popup*/
+/*First Row*/
+#feature_jobs .container #myModal .modal-body .first_row{
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#feature_jobs .container #myModal .modal-body .first_row .col-md-12 img{
+	width: 85px;
+	height: 85px;
+	float: left;
+	margin-left: 20px;
+}
+#feature_jobs .container #myModal .modal-body .first_row .col-md-12 ul{
+	list-style: none;
+	float: left;
+}
+#feature_jobs .container #myModal .modal-body .first_row .col-md-12 ul li{
+	margin-bottom: 5px;
+}
+#feature_jobs .container #myModal .modal-body .first_row .col-md-12 ul:last-child{
+	list-style: none;
+	float: right;
+}
+#feature_jobs .container #myModal .modal-body .first_row .col-md-12  ul:last-child li .job_type_btn{
+	background-color: #3a9bfa!important;
+	color: #fff!important;
+	float: right;
+}
+#feature_jobs .container #myModal .modal-body .first_row .col-md-12  ul:last-child li form .apply_btn{
+	background-color: #3a9bfa!important;
+	color: #fff!important;
+	text-decoration: none;
+	outline: none;
+}
+#feature_jobs .container #myModal .modal-body .first_row .col-md-12  ul:last-child li form .save_btn{
+	background-color: #3a9bfa!important;
+	color: #fff!important;
+	text-decoration: none;
+	outline: none;
+}
+#feature_jobs .container #myModal .modal-body .first_row .col-md-12 small{
+	display: inline-block!important;
+	float: right;
+	margin-bottom: 15px;
+	margin-top: 5px;
+}
+/*Second Row*/
+#feature_jobs .container #myModal .modal-body .second_row{
+	padding-top: 15px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#feature_jobs .container #myModal .modal-body .second_row ul{
+	list-style: none;
+}
+#feature_jobs .container #myModal .modal-body .second_row ul li:first-child{
+	font-weight: bold;
+}
+#feature_jobs .container #myModal .modal-body .second_row ul li:last-child{
+	margin-left: 30px;
+	margin-top: 5px;
+}
+#feature_jobs .container #myModal .modal-body .second_row ul li i{
+	margin-right: 7px;
+	font-size: 18px;
+}
+#feature_jobs .container #myModal .modal-body .second_row .col-md-4{
+	margin-bottom: 10px;
+}
+/*Third Row!*/
+#feature_jobs .container #myModal .modal-body .third_row{
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 15px;
+}
+#feature_jobs .container #myModal .modal-body .third_row h4{
+	font-weight: bold;
+}
+#feature_jobs .container #myModal .modal-body .third_row p{
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+/*Fourth Row*/
+#feature_jobs .container #myModal .modal-body .fourth_row{
+	padding: 15px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#feature_jobs .container #myModal .modal-body .fourth_row form input{
+	margin-bottom: 10px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+}
+#feature_jobs .container #myModal .modal-body .fourth_row form span{
+	float: left;
+	display: inline-block;
+	margin-top: 7px;
+	margin-right: 5px;
+}
+#feature_jobs .container #myModal .modal-body .fourth_row form .cv{
+	width: 33%!important;
+	float: left;
+}
+/*Fith Row*/
+#feature_jobs .container #myModal .modal-body .fith_row{
+	padding: 15px;
+	padding-bottom: 0px;
+}
+#feature_jobs .container #myModal .modal-body .fith_row .btn{
+	background: #3a9bfa!important;
+	color: #fff!important;
+}
+#feature_jobs .container #myModal .modal-body .fith_row strong{
+	font-size: 16px;
+}
 
 
 /* Body Section CSS Style! */
@@ -484,7 +594,7 @@
 	#feature_jobs .container .row{
 		margin-bottom: 5px;
 	}
-	#feature_jobs .container .row .col-md-4{
+	#feature_jobs .container .row .job_wrapper{
 		width: 85%!important;
 		margin-bottom: 10px;
 		margin-left: 22px;
@@ -497,9 +607,16 @@
 		margin-left: 10px;
 		margin-right: 10px;
 	}*/
-	#feature_jobs .container .row .col-md-4 #feature_img_wrap{
+	#feature_jobs .container .row .job_wrapper #feature_img_wrap{
 		width: 80%!important;
 		margin: 0 auto!important;
+	}
+	/*Job Detail Section For View With Popup*/
+	/*First Row*/
+	#feature_jobs .container #myModal .modal-body .first_row .col-md-12 img{
+		width: 65px!important;
+		height: 65px!important;
+		margin-left: 10px!important;
 	}
 
 }

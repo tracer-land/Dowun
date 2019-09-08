@@ -341,11 +341,73 @@
 	margin-right: 0px!important;
 }
 
-#recent_property .btn{
+#recent_property .see-all-properties{
 	width: 180px;
 	display: block;
 	margin: 0 auto!important;
 	margin-top: 35px!important;
+}
+
+/*House Detail Modal Popup!*/
+#recent_property .row .col-md-3 #myModal .modal-body .row .col-md-6 .carousel-inner{
+	padding: 0px!important;
+}
+#recent_property .row .col-md-3 #myModal .modal-body .row .col-md-6 .carousel-inner img{
+	width: 100%;
+	height: 300px;
+}
+#recent_property .row .col-md-3 #myModal .modal-body .row .col-md-6 .left{
+	margin-left: 20px!important;
+	opacity: 1!important;
+}
+#recent_property .row .col-md-3 #myModal .modal-body .row .col-md-6 .right{
+	margin-right: 20px!important;
+	opacity: 1!important;
+}
+#recent_property .row .col-md-3 #myModal .modal-body ul{
+	list-style: none;
+	padding: 0px!important;
+	margin-bottom: 15px;
+}
+#recent_property .row .col-md-3 #myModal .modal-body ul li{
+	display: inline-block;
+	margin-right: 12px;
+}
+#recent_property .row .col-md-3 #myModal .modal-body ul li p{
+	font-size: 14px;
+}
+#recent_property .row .col-md-3 #myModal .modal-body ul li i{
+	font-size: 14px;
+}
+#recent_property .row .col-md-3 #myModal .modal-body h4{
+	font-weight: bold;
+}
+#recent_property .row .col-md-3 #myModal .modal-body .btn{
+	margin-right: 10px;
+	color: #fff!important;
+}
+/*Scheldule*/
+#recent_property .row .col-md-3 #myModal .modal-body .schedule{
+	display: none;
+}
+#recent_property .row .col-md-3 #myModal .modal-body .schedule form h5{
+	font-weight: bold;
+}
+#recent_property .row .col-md-3 #myModal .modal-body .schedule form .col-md-6{
+	margin-bottom: 40px;
+}
+#recent_property .row .col-md-3 #myModal .modal-body .schedule form i{
+	font-size: 18px;
+}
+#recent_property .row .col-md-3 #myModal .modal-body .schedule .col-md-3,#recent_property .row .col-md-3 #myModal .modal-body .schedule .col-md-9{
+	margin-bottom: 10px;
+}
+#recent_property .row .col-md-3 #myModal .modal-body .schedule form textarea{
+	max-width: 100%;
+	height: 100%;
+}
+#recent_property .row .col-md-3 #myModal .modal-body .schedule form .btn{
+	width: 100%;
 }
 
 /* Media Queries!!! */

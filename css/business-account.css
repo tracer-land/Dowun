@@ -1,0 +1,104 @@
+/* Business Account Forms CSS! */
+
+/* Body CSS Stye */
+body{
+	margin: 0px!important;
+	padding: 0px!important;
+	width: 100%!important;
+	height: 100vh!important;
+	background-color: #f2f2f2!important;
+	font-family: 'Montserrat', sans-serif!important;
+}
+
+#business{
+	background: white;
+	position: absolute;
+	left: 50%;
+	margin-top: 35px;
+	transform: translate(-50%, 0%);
+	box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	padding: 12px;
+}
+#business h4{
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+#business select{
+	border: none!important;
+	width: 20%!important;
+	display: block;
+	margin: 0 auto!important;
+	margin-top: 30px!important;
+}
+
+#business .menu{
+	list-style: none;
+	padding: 0px!important;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#business .menu .active{
+	border-bottom: 2px solid #3a9bfa;
+	padding-bottom: 8px;
+}
+
+#business .menu li{
+	display: inline-block;
+	font-weight: bold;
+	margin-right: 30px;
+	cursor: pointer;
+}
+#business .menu li:last-child{
+	margin-right: 0px!important;
+}
+
+#business .content .my-ul{
+	list-style: none;
+	padding: 0px!important;
+}
+#business .content .my-ul li{
+	padding-bottom: 8px;
+	padding-top: 8px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#business .content .btn-ul{
+	margin-top: 20px;
+	list-style: none;
+	text-align: center;
+}
+
+#business .content .btn-ul li{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#business .content .btn-ul li small{
+	display: block;
+}
+
+#business .content .btn-info{
+	width: 100%;
+	margin-top: 25px;
+}
+
+#business #business_two, #business #business_three{
+	display: none;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 499px){
+	#business{
+		width: 95%!important;
+	}
+}
+
+@media screen and (max-width: 768px){
+	#business{
+		width: 95%!important;
+	}
+}

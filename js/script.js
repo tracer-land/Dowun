@@ -206,3 +206,25 @@ function page_switchThree(){
 	get('how_page_panel_three').style.display = "block";
 }
 
+//Business Account!
+function business_switchOne(){
+	get('business_one').style.display = "block";
+	get('business_two').style.display = "none";
+	get('business_three').style.display = "none";
+}
+
+function business_switchTwo(){
+	get('business_one').style.display = "none";
+	get('business_two').style.display = "block";
+	get('business_three').style.display = "none";
+}
+
+function business_switchThree(){
+	get('business_one').style.display = "none";
+	get('business_two').style.display = "none";
+	get('business_three').style.display = "block";
+}
+
+
+
+
