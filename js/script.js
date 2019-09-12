@@ -1,20 +1,3 @@
-//Langaung Selection Script!
-$(document).ready(function(){
-	$("#language_toggle_select li span #eng").click(function(){
-
-		$("#language_toggle_select li span #eng").addClass("selected_language");
-
-		$("#language_toggle_select li span #mm").removeClass("selected_language");
-	});
-
-	$("#language_toggle_select li span #mm").click(function(){
-
-		$("#language_toggle_select li span #mm").addClass("selected_language");
-
-		$("#language_toggle_select li span #eng").removeClass("selected_language");
-	});
-});
-
 //Show Map Selection Script!
 $(document).ready(function(){
 	$("#showmap_toggle_select li span #on").click(function(){
@@ -90,6 +73,26 @@ function form_switchThree(){
 	get('form_two').style.display = "none";
 	get('form_one').style.display = "none";
 	get('form_three').style.display = "block";
+}
+
+
+/*Job Search Form*/
+function form_switchJobOne(){
+	get('tab_one').style.background = "#3a9bfa";
+	get('tab_one').style.color = "#fff";
+	get('tab_two').style.color = "#000";
+	get('tab_two').style.background = "#fff";
+	get('form_one').style.display = "block";
+	get('form_two').style.display = "none";
+}
+
+function form_switchJobTwo(){
+	get('tab_two').style.background = "#3a9bfa";
+	get('tab_two').style.color = "#fff";
+	get('tab_one').style.color = "#000";
+	get('tab_one').style.background = "#fff";
+	get('form_two').style.display = "block";
+	get('form_one').style.display = "none";
 }
 
 

@@ -28,7 +28,7 @@ Project Designed By Tracer Land
 		<!-- CSS Links! -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
-		<link rel="stylesheet" type="text/css" href="css/house-search.css"><!-- House Search CSS! -->
+		<link rel="stylesheet" type="text/css" href="css/house_search_views/house-search.css"><!-- House Search CSS! -->
 
 		<!-- Common CSS Styles! -->
 		<link rel="stylesheet" type="text/css" href="css/common_css_styles/mobile.css" media="screen and (max-width: 600px)">
@@ -75,12 +75,10 @@ Project Designed By Tracer Land
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<!-- Language Toggle Start! -->
 						<ul id="language_toggle_select" class="nav navbar-nav navbar-right">
-							<li>
-								<span>
-									<a href="#" id="mm">MM</a>
-									<a href="#" id="eng" class="selected_language">Eng</a>
-								</span>
-							</li>
+							<select class="form-control">
+								<option value="mm" selected>MM</option>
+								<option value="eng">ENG</option>
+							</select>
 						</ul>
 						<!-- Language Toggle End! -->
 						<ul class="nav navbar-nav navbar-right">
@@ -88,10 +86,166 @@ Project Designed By Tracer Land
 							<li><a href="index.html">Home</a></li>
 							<li><a href="job.html">Jobs</a></li>
 							<li><a href="house.html">House</a></li>
-							<li><a href="#">Create a Post</a></li>
-							<li><a href="#">Create a Page</a></li>
+							
+							<li id="drp-menu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Post</a>
+								<ul class="dropdown-menu">
+									<span class="caret first-caret"></span>
+									<li class="drp-title">
+										<a href="#">Create Post</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;Place
+											<small>Share your need to other, if you are finding a room or place.</small>
+										</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-suitcase"></i>&nbsp;&nbsp;Job
+											<small>Find employee and post a job to all.</small>
+										</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-home"></i>&nbsp;&nbsp;House
+											<small>Find a house and post a house to all.</small>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li id="drp-menu-another">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Create</a>
+								<ul class="dropdown-menu">
+									<span class="caret second-caret"></span>
+									<li class="drp-title">
+										<a href="#">Create Page</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-wpforms"></i>&nbsp;&nbsp;CV
+											<small>Candidate CV to apply job and promote you need.</small>
+										</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-briefcase"></i>&nbsp;&nbsp;Business Page
+											<small>Find employee and post a job to all.</small>
+										</a>
+									</li>
+								</ul>
+							</li>
+
 							<li><a href="#">Message</a></li>
-							<li><a href="#">Me</a></li>
+							
+							<li class="nav-li">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<sub class="fa fa-bell"></sub><sup>7</sup>
+								</a>
+
+								<!-- Notification Section Start! -->
+								<ul class="dropdown-menu">
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Share your post.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>2 Mins Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Commented on post you shared.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>1 Hour Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Followed your page.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>4 Hours Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Invited his friends to follow your page.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>12 Hour Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Reviewd on Golden Restaurant.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>1 Day Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Uploded photos at Chaungtha Beach.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>2 Days Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+								</ul>
+								<!-- Notification Section Start! -->
+							</li>
+							
+							<li class="nav-li">
+								<a href="#">
+									<img src="images/client.jpg" class="img-responsive">&nbsp;Me
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>

@@ -27,7 +27,7 @@ Project Designed By Tracer Land
 		<!-- CSS Links! -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
-		<link rel="stylesheet" type="text/css" href="css/my-profile.css"><!-- Page Profile View CSS! -->
+		<link rel="stylesheet" type="text/css" href="css/my_profile/my-profile.css"><!-- Page Profile View CSS! -->
 
 		<!-- Common CSS Styles! -->
 		<link rel="stylesheet" type="text/css" href="css/common_css_styles/mobile.css" media="screen and (max-width: 600px)">
@@ -72,29 +72,174 @@ Project Designed By Tracer Land
 
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<!-- Language Toggle Start! -->
-						<ul id="language_toggle_select" class="nav navbar-nav navbar-right" style="margin-left: 30px;">
-							<li>
-								<span>
-									<a href="#" id="mm">MM</a>
-									<a href="#" id="eng" class="selected_language">Eng</a>
-								</span>
-							</li>
+						<ul id="language_toggle_select" class="nav navbar-nav navbar-right">
+							<select class="form-control">
+								<option value="mm" selected>MM</option>
+								<option value="eng">ENG</option>
+							</select>
 						</ul>
 						<!-- Language Toggle End! -->
 						<ul class="nav navbar-nav navbar-right" style="margin-right: 0px!important;">
 							<li><a href="#">Discover</a></li>
 
 							<li><a href="index.html">Home</a></li>
-
-							<li><a href="#">Create a Post</a></li>
 							<li><a href="job.html">Jobs</a></li>
 							<li><a href="house.html">House</a></li>
-							<li><a href="create-page-step-1.html">Create a Page</a></li>
+							
+							<li id="drp-menu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Post</a>
+								<ul class="dropdown-menu">
+									<span class="caret first-caret"></span>
+									<li class="drp-title">
+										<a href="#">Create Post</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;Place
+											<small>Share your need to other, if you are finding a room or place.</small>
+										</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-suitcase"></i>&nbsp;&nbsp;Job
+											<small>Find employee and post a job to all.</small>
+										</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-home"></i>&nbsp;&nbsp;House
+											<small>Find a house and post a house to all.</small>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li id="drp-menu-another">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Create</a>
+								<ul class="dropdown-menu">
+									<span class="caret second-caret"></span>
+									<li class="drp-title">
+										<a href="#">Create Page</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-wpforms"></i>&nbsp;&nbsp;CV
+											<small>Candidate CV to apply job and promote you need.</small>
+										</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-briefcase"></i>&nbsp;&nbsp;Business Page
+											<small>Find employee and post a job to all.</small>
+										</a>
+									</li>
+								</ul>
+							</li>
 							
 							<li><a href="#">Message</a></li>
-							<li><a href="#">
-								<sub class="fa fa-bell"></sub><sup>7</sup>
-							</a></li>
+							
+							<li class="nav-li">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<sub class="fa fa-bell"></sub><sup>7</sup>
+								</a>
+
+								<!-- Notification Section Start! -->
+								<ul class="dropdown-menu">
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Share your post.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>2 Mins Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Commented on post you shared.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>1 Hour Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Followed your page.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>4 Hours Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Invited his friends to follow your page.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>12 Hour Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Reviewd on Golden Restaurant.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>1 Day Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Uploded photos at Chaungtha Beach.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>2 Days Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+								</ul>
+								<!-- Notification Section Start! -->
+							</li>
+							
 							<li>
 								<a href="my-profile.html">
 									<img src="images/client.jpg" class="img-responsive">&nbsp;Me
@@ -230,6 +375,12 @@ Project Designed By Tracer Land
 												<a href="#">
 													<i class="fa fa-sign-out" data-toggle="tooltip" title="Logout" data-placement="right"></i>
 													<span>Log Out</span>
+												</a>
+											</li>
+											<li>
+												<a href="#" onClick="tab_switchSetting()">
+													<i class="fa fa-cog" data-toggle="tooltip" title="Setting" data-placement="right"></i>
+													<span>Setting</span>
 												</a>
 											</li>
 										</ul>
@@ -389,16 +540,56 @@ Project Designed By Tracer Land
 									</div>
 									<div class="col-md-12">
 										<h4>Personal Information</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										<table class="table">
+											<tr>
+												<th>Full Name</th>
+												<td>Min Min</td>
+											</tr>
+											<tr>
+												<th>Gender</th>
+												<td>Male</td>
+											</tr>
+											<tr>
+												<th>Date of Birth</th>
+												<td>Dec 09 1992</td>
+											</tr>
+											<tr>
+												<th>Marital Status</th>
+												<td>Single</td>
+											</tr>
+											<tr>
+												<th>Nationality</th>
+												<td>Myanmar</td>
+											</tr>
+											<tr>
+												<th>Address</th>
+												<td>No.7, Thapyay St, Yankin, Yangon, Myanmar</td>
+											</tr>
+											<tr>
+												<th>Skills</th>
+												<td>English - Intermediate / Chinese - Advance</td>
+											</tr>
+											<tr>
+												<th>Education</th>
+												<td>University - Greenwich / Degree - IT Business / 2012-2016, UK</td>
+											</tr>
+											<tr>
+												<th>Experience</th>
+												<td>Director at NetCore Internet (2013-2018), Myanmar</td>
+											</tr>
+											<tr>
+												<th>Other Skills</th>
+												<td>Driver License - Yes</td>
+											</tr>
+											<tr>
+												<th>Interested Position</th>
+												<td>Accounting Manager</td>
+											</tr>
+											<tr>
+												<th>Area of Interest</th>
+												<td>Construction</td>
+											</tr>
+										</table>
 									</div>
 									<div class="col-md-12">
 										<h4>About Me</h4>
@@ -421,7 +612,7 @@ Project Designed By Tracer Land
 
 									<div class="col-md-4">
 										<p class="text-center">
-											<i class="fa fa-phone"></i>&nbsp;+95 97950685410
+											<i class="fa fa-phone"></i>&nbsp;<a href="tel:+95 97950685410">+95 97950685410</a>
 										</p>
 									</div>
 									<div class="col-md-4">
@@ -447,7 +638,7 @@ Project Designed By Tracer Land
 										</a>
 
 										<a href="#" id="icon" class="text-center">
-											<i class="fa fa-google-plus"></i>
+											<i class="fa fa-globe"></i>
 										</a>
 									</center>
 								</div>
@@ -458,7 +649,9 @@ Project Designed By Tracer Land
 							<div class="row my_cv" id="my-cv-section">
 								<div class="col-md-3 tab-menu">
 									<ul>
-										<li>View Profile or CV</li>
+										<li>
+											<a href="#" onClick="tab_switchViewcv()">View Profile or CV</a>
+										</li>
 										<li>
 											<a href="#" onClick="tab_switchPersonal()">Personal</a>
 										</li>
@@ -475,6 +668,63 @@ Project Designed By Tracer Land
 								</div>
 
 								<div class="col-md-9 tab-section">
+
+									<!-- View-Profile! -->
+									<div id="view-profile">
+										<h4>View Profile or CV</h4>
+
+										<table class="table">
+											<tr>
+												<th>Full Name</th>
+												<td>Min Min</td>
+											</tr>
+											<tr>
+												<th>Gender</th>
+												<td>Male</td>
+											</tr>
+											<tr>
+												<th>Date of Birth</th>
+												<td>Dec 09 1992</td>
+											</tr>
+											<tr>
+												<th>Marital Status</th>
+												<td>Single</td>
+											</tr>
+											<tr>
+												<th>Nationality</th>
+												<td>Myanmar</td>
+											</tr>
+											<tr>
+												<th>Address</th>
+												<td>No.7, Thapyay St, Yankin, Yangon, Myanmar</td>
+											</tr>
+											<tr>
+												<th>Skills</th>
+												<td>English - Intermediate / Chinese - Advance</td>
+											</tr>
+											<tr>
+												<th>Education</th>
+												<td>University - Greenwich / Degree - IT Business / 2012-2016, UK</td>
+											</tr>
+											<tr>
+												<th>Experience</th>
+												<td>Director at NetCore Internet (2013-2018), Myanmar</td>
+											</tr>
+											<tr>
+												<th>Other Skills</th>
+												<td>Driver License - Yes</td>
+											</tr>
+											<tr>
+												<th>Interested Position</th>
+												<td>Accounting Manager</td>
+											</tr>
+											<tr>
+												<th>Area of Interest</th>
+												<td>Construction</td>
+											</tr>
+										</table>
+										
+									</div>
 									
 									<!-- Personal Information! -->
 									<div id="personal-info">
@@ -487,6 +737,8 @@ Project Designed By Tracer Land
 												<span>Min Min</span>
 											</div>
 											<div class="col-md-2">
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add">Add</a>
+
 												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Edit</a>
 											</div>
 										</div>
@@ -499,6 +751,8 @@ Project Designed By Tracer Land
 												<span>Male</span>
 											</div>
 											<div class="col-md-2">
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add">Add</a>
+
 												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Edit</a>
 											</div>
 										</div>
@@ -511,6 +765,8 @@ Project Designed By Tracer Land
 												<span>Dec 09 1992</span>
 											</div>
 											<div class="col-md-2">
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add">Add</a>
+
 												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Add</a>
 											</div>
 										</div>
@@ -523,6 +779,8 @@ Project Designed By Tracer Land
 												<span>Single</span>
 											</div>
 											<div class="col-md-2">
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add">Add</a>
+
 												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Edit</a>
 											</div>
 										</div>
@@ -535,6 +793,8 @@ Project Designed By Tracer Land
 												<span>Myanmar</span>
 											</div>
 											<div class="col-md-2">
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add">Add</a>
+
 												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Edit</a>
 											</div>
 										</div>
@@ -545,12 +805,28 @@ Project Designed By Tracer Land
 										<h4>Contact and Address</h4>
 										<div class="row">
 											<div class="col-md-3">
+												<span>Address</span>
+											</div>
+											<div class="col-md-7">
+												<span>No.7, Thapyay St, Yankin, Yangon, Myanmar</span>
+											</div>
+											<div class="col-md-2">
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add">Add</a>
+
+												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Edit</a>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-3">
 												<span>Phone Number</span>
 											</div>
 											<div class="col-md-7">
 												<a href="tel:+95 976504321">+95 976504321</a>
 											</div>
 											<div class="col-md-2">
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add">Add</a>
+
 												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Edit</a>
 											</div>
 										</div>
@@ -563,6 +839,8 @@ Project Designed By Tracer Land
 												<a href="mailto:example@gmail.com">example@gmail.com</a>
 											</div>
 											<div class="col-md-2">
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add">Add</a>
+
 												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Edit</a>
 											</div>
 										</div>
@@ -575,7 +853,9 @@ Project Designed By Tracer Land
 												<a href="mailto:example@gmail.com">www.dowun.com</a>
 											</div>
 											<div class="col-md-2">
-												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Add</a>
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add">Add</a>
+
+												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Edit</a>
 											</div>
 										</div>
 
@@ -587,7 +867,9 @@ Project Designed By Tracer Land
 												<a href="mailto:example@gmail.com">www.facebook.com/Dowun</a>
 											</div>
 											<div class="col-md-2">
-												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Add</a>
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add">Add</a>
+
+												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Edit</a>
 											</div>
 										</div>
 
@@ -599,7 +881,9 @@ Project Designed By Tracer Land
 												<a href="mailto:example@gmail.com">www.twitter.com/Dowun</a>
 											</div>
 											<div class="col-md-2">
-												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Add</a>
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add">Add</a>
+
+												<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputModal">Edit</a>
 											</div>
 										</div>
 									</div>
@@ -616,6 +900,8 @@ Project Designed By Tracer Land
 												</div>
 												<div class="col-md-3">
 													<a class="btn btn-sm btn-info pull-right skill-tab">Add</a>
+
+													<a class="btn btn-sm btn-info pull-right skill-tab">Edit</a>
 												</div>
 											</div>
 
@@ -671,6 +957,8 @@ Project Designed By Tracer Land
 												</div>
 												<div class="col-md-3">
 													<a class="btn btn-sm btn-info pull-right edu-tab">Add</a>
+
+													<a class="btn btn-sm btn-info pull-right edu-tab">Edit</a>
 												</div>
 											</div>
 
@@ -723,6 +1011,13 @@ Project Designed By Tracer Land
 															<input type="text" name="country" class="form-control" required>
 														</div>
 
+														<div class="col-md-2">
+															<label for="your-education">Your Education</label>
+														</div>
+														<div class="col-md-9">
+															<textarea class="form-control" placeholder="Enter About Your Education" required style="max-width: 100%!important;"></textarea>
+														</div>
+
 														<div class="col-md-2"></div>
 														<div class="col-md-9">
 															<input type="submit" name="submit" value="Save" class="btn btn-sm btn-info pull-right">
@@ -740,6 +1035,8 @@ Project Designed By Tracer Land
 												</div>
 												<div class="col-md-3">
 													<a class="btn btn-sm btn-info pull-right exp-tab">Add</a>
+
+													<a class="btn btn-sm btn-info pull-right exp-tab">Edit</a>
 												</div>
 											</div>
 
@@ -821,6 +1118,13 @@ Project Designed By Tracer Land
 															</select>
 														</div>
 
+														<div class="col-md-2">
+															<label for="your-experience">Your Experience</label>
+														</div>
+														<div class="col-md-9">
+															<textarea class="form-control" placeholder="Enter About Your Experience" required style="max-width: 100%!important;"></textarea>
+														</div>
+
 														<div class="col-md-2"></div>
 														<div class="col-md-9">
 															<input type="submit" name="submit" value="Save" class="btn btn-sm btn-info pull-right">
@@ -862,8 +1166,8 @@ Project Designed By Tracer Land
 												</div>
 												<div class="col-md-9">
 													<select class="form-control" required>
-														<option>Single</option>
-														<option>Married</option>
+														<option>Active Job</option>
+														<option>Unactive Job</option>
 													</select>
 												</div>
 
@@ -872,6 +1176,10 @@ Project Designed By Tracer Land
 												</div>
 												<div class="col-md-12">
 													<textarea class="form-control" required></textarea>
+												</div>
+
+												<div class="col-md-12">
+													<input type="submit" name="submit" value="Save" class="btn btn-sm btn-info pull-right">
 												</div>
 											</form>
 										</div>
@@ -884,6 +1192,8 @@ Project Designed By Tracer Land
 												</div>
 												<div class="col-md-3">
 													<a class="btn btn-sm btn-info pull-right position-tab">Add</a>
+
+													<a class="btn btn-sm btn-info pull-right position-tab">Edit</a>
 												</div>
 											</div>
 
@@ -916,6 +1226,8 @@ Project Designed By Tracer Land
 												</div>
 												<div class="col-md-3">
 													<a class="btn btn-sm btn-info pull-right area-tab">Add</a>
+
+													<a class="btn btn-sm btn-info pull-right area-tab">Edit</a>
 												</div>
 											</div>
 
@@ -1003,6 +1315,334 @@ Project Designed By Tracer Land
 							</div>
 						</div>
 					<!-- Body Right Job Section End! -->
+
+
+					<!-- Body Right Setting Section Start! -->
+						<div class="col-md-10 col-sm-11 col-xs-11" id="body_right_setting_section">
+							<div class="row table_section">
+
+								<!-- My Setting Section! -->
+								<div class="row my_setting" id="my-setting-section">
+
+									<div class="col-md-3 tab-menu">
+										<ul>
+											<li>
+												<a href="#" onClick="tab_switchLanguage()">
+													<i class="fa fa-language"></i>
+													Language
+												</a>
+											</li>
+											<li>
+												<a href="#" onClick="tab_switchLogin()">
+													<i class="fa fa-sign-out"></i>
+													Login
+												</a>
+											</li>
+											<li>
+												<a href="#" onClick="tab_switchBlocking()">
+													<i class="fa fa-ban"></i>
+													Blocking
+												</a>
+											</li>
+											<li>
+												<a href="#" onClick="tab_switchPagerole()">
+													<i class="fa fa-tag"></i>
+													Page Role
+												</a>
+											</li>
+											<li>
+												<a href="#" onClick="tab_switchNotification()">
+												<i class="fa fa-bell"></i>
+													Notification
+												</a>
+											</li>
+											<li>
+												<a href="#" onClick="tab_switchHelpcenter()">
+													<i class="fa fa-question-circle"></i>
+													Help Center
+												</a>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-md-9 tab-section">
+										
+										<!-- Language! -->
+										<div id="language">
+											<h4>Language Setting</h4>
+
+											<div class="row">
+												<div class="col-md-4">
+													<i class="fa fa-flag"></i>
+													<span>Myanmar</span>
+												</div>
+												<div class="col-md-8">
+													<select class="form-control pull-right">
+														<option>Change Language</option>
+														<option value="mm">Myanmar</option>
+														<option value="eng">English</option>
+														<option value="ch">Chinese</option>
+													</select>
+												</div>
+											</div>
+										</div>
+
+										<!-- Login! -->
+										<div id="login">
+											<h4>Login Setting</h4>
+
+											<div class="row">
+												<div class="col-md-12">
+													<span>
+														<i class="fa fa-key"></i>&nbsp;Password
+													</span>
+
+													<a class="btn btn-sm btn-info pull-right password-tab">Edit</a>
+													<small>Manage your password</small>
+
+
+													<form action="#" class="password-toggle">
+														<input type="password" name="old-password" class="form-control" required placeholder="Enter Your Old Password">
+
+														<input type="password" name="new-password" class="form-control" required placeholder="Enter Your New Password">
+
+														<a href="#" class="form-control btn" data-toggle="modal" data-target="#verifycodeModal">Change Password</a>
+													</form>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-md-12">
+													<span>
+														<i class="fa fa-envelope"></i>&nbsp;Login Email
+													</span>
+
+													<a class="btn btn-sm btn-info pull-right email-tab">Edit</a>
+													<small>Manage your email</small>
+
+													<a href="mailto:example@gmail.com" style="display: block;color: #000!important;text-decoration: none;margin-left: 19px;">example@gmail.com</a>
+
+													<form action="#" class="email-toggle">
+														
+														<input type="email" name="new-password" class="form-control" required placeholder="Enter Your New Email">
+
+														<a href="#" class="form-control btn" data-toggle="modal" data-target="#verifycodeModal">Change Email</a>
+													</form>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-md-12">
+													<span>
+														<i class="fa fa-phone"></i>&nbsp;Login Phone Number
+													</span>
+
+													<a class="btn btn-sm btn-info pull-right phone-tab">Edit</a>
+													<small>Manage your phone number</small>
+
+													<a href="tel:098090675" style="display: block;color: #000!important;text-decoration: none;margin-left: 19px;">098090675</a>
+
+													<form action="#" class="phone-toggle">
+														
+														<input type="tel" name="new-password" class="form-control" required placeholder="New Phone Number">
+
+														<a href="#" class="form-control btn" data-toggle="modal" data-target="#verifycodeModal">Change Phone No.</a>
+													</form>
+												</div>
+											</div>
+										</div>
+
+										<!-- Blocking! -->
+										<div id="blocking">
+											<h4>Blocking Setting</h4>
+
+											<div class="row">
+												<div class="col-md-6">
+													<i class="fa fa-comments"></i>
+													<span>Message</span>
+													<small>Email, phone, social account public or private</small>
+												</div>
+												<div class="col-md-6">
+													<select class="form-control pull-right">
+														<option>Public</option>
+														<option value="public">Public</option>
+														<option value="private">Private</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-md-12">
+													<i class="fa fa-ban"></i>
+													<span>Blocking</span>
+													<small>Block Messages</small>
+
+													<table class="table">
+														<tr>
+															<th>Min Min</th>
+															<td>
+																<select class="form-control">
+																	<option>Unblock</option>
+																	<option value="unblock">Unblock</option>
+																	<option class="block">Block</option>
+																</select>
+															</td>
+														</tr>
+
+														<tr>
+															<th>Pho Cho</th>
+															<td>
+																<select class="form-control">
+																	<option>Unblock</option>
+																	<option value="unblock">Unblock</option>
+																	<option class="block">Block</option>
+																</select>
+															</td>
+														</tr>
+
+														<tr>
+															<th>Thet Htar</th>
+															<td>
+																<select class="form-control">
+																	<option>Unblock</option>
+																	<option value="unblock">Unblock</option>
+																	<option class="block">Block</option>
+																</select>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</div>
+										</div>
+
+										<!-- Page Role! -->
+										<div id="pagerole">
+											<h4>Page Role Setting</h4>
+
+											<div class="row">
+												<div class="col-md-12">
+													<span>Assign Role</span>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-md-12">
+													<form action="#">
+														<select class="form-control">
+															<option>Roles</option>
+															<option value="Admin">Admin</option>
+															<option value="editor">Editor</option>
+															<option value="manager">Manager</option>
+														</select>
+
+														<input type="text" name="name" class="form-control" placeholder="Enter User Name" required>
+
+														<input type="submit" value="Add" class="form-control btn">
+													</form>
+												</div>
+											</div>
+										</div>
+
+										<!-- Notificaton! -->
+										<div id="notification">
+											<h4>Notifications</h4>
+
+											<div class="row">
+												<div class="col-md-12">
+													<i class="fa fa-bell"></i>
+													<span>App Notifications</span>
+													<small>Manage your notifications</small>
+												</div>
+											</div>
+
+											<div class="row" style="margin-left: 18px;margin-top: 10px;">
+												<div class="col-md-5">
+													<span>Job App Notifications</span>
+												</div>
+												<div class="col-md-3">
+													<select class="form-control pull-right">
+														<option>On</option>
+														<option value="on">On</option>
+														<option value="off">Off</option>
+													</select>
+												</div>
+
+												<div class="col-md-5">
+													<span>House App Notifications</span>
+												</div>
+												<div class="col-md-3">
+													<select class="form-control pull-right">
+														<option>On</option>
+														<option value="on">On</option>
+														<option value="off">Off</option>
+													</select>
+												</div>
+											</div>
+
+											<!-- Email Noti! -->
+											<div class="row">
+												<div class="col-md-12">
+													<i class="fa fa-envelope"></i>
+													<span>Email Notifications</span>
+													<small>Manage your email notifications</small>
+												</div>
+											</div>
+
+											<div class="row" style="margin-left: 18px;margin-top: 10px;">
+												<div class="col-md-5">
+													<span>Job Email Notifications</span>
+												</div>
+												<div class="col-md-3">
+													<select class="form-control pull-right">
+														<option>On</option>
+														<option value="on">On</option>
+														<option value="off">Off</option>
+													</select>
+												</div>
+
+												<div class="col-md-5">
+													<span>House Email Notifications</span>
+												</div>
+												<div class="col-md-3">
+													<select class="form-control pull-right">
+														<option>On</option>
+														<option value="on">On</option>
+														<option value="off">Off</option>
+													</select>
+												</div>
+											</div>
+
+											<!-- Message Noti! -->
+											<div class="row" style="margin-left: 18px;margin-top: 15px;">
+												<div class="col-md-5" style="margin-left: -18px;">
+													<i class="fa fa-comments"></i>
+													<span style="font-weight: bold;">Message Notifications</span>
+													<small>Manage your message notifications</small>
+												</div>
+												<div class="col-md-3">
+													<select class="form-control pull-right">
+														<option>On</option>
+														<option value="on">On</option>
+														<option value="off">Off</option>
+													</select>
+												</div>
+											</div>
+
+
+										</div>
+
+										<!-- Help Center! -->
+										<div id="helpcenter">
+											<h1>Help Center</h1>
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					<!-- Body Right Setting Section End! -->
 
 
 					<!-- Body Right Schedule Section Start! -->
@@ -1100,7 +1740,79 @@ Project Designed By Tracer Land
 				</div>
 			</div>
 		</div>
+		<!-- Add Modal -->
+		<div  id="addModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+        				<h4 class="modal-title">Add Details</h4>
+					</div>
 
+					<div class="modal-body">
+						<form action="#">
+							<div class="row">
+								<div class="col-md-9">
+									<input type="text" name="name" class="form-control" required>
+								</div>
+								<div class="col-md-3">
+									<input type="submit" value="Add" name="submit" class="btn btn-info">
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Here is Setting Modal Popup Start!!! -->
+		<!-- Phone or Email Check Verify! -->
+		<div  id="verifycodeModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+        				<h4 class="modal-title">Verify Phone or Email</h4>
+					</div>
+
+					<div class="modal-body">
+						<form action="#">
+							<div class="row">
+								<div class="col-md-12">
+									<p>
+										We just sent a code to
+										<a href="#">Email or Phone</a>
+									</p>
+								</div>
+								<div class="col-md-12">
+									<input type="text" name="code" class="form-control" placeholder="Enter Your Code" required>
+								</div>
+								<div class="col-md-12">
+									<input type="submit" value="Save" name="submit" class="btn btn-info pull-right">
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Footer Section End! -->
+
+		<!-- Copy Right -->
+		<!-- <div id="copyright">
+			Copyright &copy; 2019 Dowun. All Rights Reserved.
+		</div> -->
 
 		<!-- Scripts! -->
 
@@ -1137,6 +1849,19 @@ Project Designed By Tracer Land
 					$("#sub_nav ul li span").addClass("caret");
 				});
 
+				/*Setting Slide Toggle Start!!!*/
+				$("#body_right_setting_section .table_section .my_setting .tab-section #login .password-tab").click(function(){
+					$("#body_right_setting_section .table_section .my_setting .tab-section #login .password-toggle").slideToggle();
+				});
+
+				$("#body_right_setting_section .table_section .my_setting .tab-section #login .email-tab").click(function(){
+					$("#body_right_setting_section .table_section .my_setting .tab-section #login .email-toggle").slideToggle();
+				});
+
+				$("#body_right_setting_section .table_section .my_setting .tab-section #login .phone-tab").click(function(){
+					$("#body_right_setting_section .table_section .my_setting .tab-section #login .phone-toggle").slideToggle();
+				});
+
 			});
 
 			/*Functions!!!*/
@@ -1147,6 +1872,7 @@ Project Designed By Tracer Land
 				function tab_switchMycv(){
 					get('personal-information-show').style.display = "none";
 					get('body_right_job_section').style.display = "none";
+					get('body_right_setting_section').style.display = "none";
 					get('body_right_schedule_section').style.display = "none";
 					get('my-cv-section').style.display = "block";
 					get('body_right_home_section').style.display = "block";
@@ -1155,6 +1881,7 @@ Project Designed By Tracer Land
 				function tab_switchJobapply(){
 					get('body_right_home_section').style.display = "none";
 					get('my-cv-section').style.display = "none";
+					get('body_right_setting_section').style.display = "none";
 					get('body_right_schedule_section').style.display = "none";
 					get('body_right_job_section').style.display = "block";
 				}
@@ -1162,12 +1889,30 @@ Project Designed By Tracer Land
 				function tab_switchMyschedule(){
 					get('body_right_schedule_section').style.display = "block";
 					get('body_right_home_section').style.display = "none";
+					get('body_right_setting_section').style.display = "none";
+					get('my-cv-section').style.display = "none";
+					get('body_right_job_section').style.display = "none";
+				}
+
+				function tab_switchSetting(){
+					get('body_right_schedule_section').style.display = "none";
+					get('body_right_home_section').style.display = "none";
+					get('body_right_setting_section').style.display = "block";
 					get('my-cv-section').style.display = "none";
 					get('body_right_job_section').style.display = "none";
 				}
 
 
+				function tab_switchViewcv(){
+					get('view-profile').style.display = "block";
+					get('personal-info').style.display = "none";
+					get('contact-address').style.display = "none";
+					get('education-work').style.display = "none";
+					get('about-me').style.display = "none";
+				}
+
 				function tab_switchPersonal(){
+					get('view-profile').style.display = "none";
 					get('personal-info').style.display = "block";
 					get('contact-address').style.display = "none";
 					get('education-work').style.display = "none";
@@ -1175,6 +1920,7 @@ Project Designed By Tracer Land
 				}
 
 				function tab_switchContact(){
+					get('view-profile').style.display = "none";
 					get('personal-info').style.display = "none";
 					get('contact-address').style.display = "block";
 					get('education-work').style.display = "none";
@@ -1182,6 +1928,7 @@ Project Designed By Tracer Land
 				}
 
 				function tab_switchEducation(){
+					get('view-profile').style.display = "none";
 					get('personal-info').style.display = "none";
 					get('contact-address').style.display = "none";
 					get('education-work').style.display = "block";
@@ -1189,10 +1936,61 @@ Project Designed By Tracer Land
 				}
 
 				function tab_switchAbout(){
+					get('view-profile').style.display = "none";
 					get('personal-info').style.display = "none";
 					get('contact-address').style.display = "none";
 					get('education-work').style.display = "none";
 					get('about-me').style.display = "block";
+				}
+
+
+				function tab_switchLanguage(){
+					get('language').style.display = "block";
+					get('login').style.display = "none";
+					get('blocking').style.display = "none";
+					get('pagerole').style.display = "none";
+					get('notification').style.display = "none";
+					get('helpcenter').style.display = "none";
+				}
+				function tab_switchLogin(){
+					get('language').style.display = "none";
+					get('login').style.display = "block";
+					get('blocking').style.display = "none";
+					get('pagerole').style.display = "none";
+					get('notification').style.display = "none";
+					get('helpcenter').style.display = "none";
+				}
+				function tab_switchBlocking(){
+					get('language').style.display = "none";
+					get('login').style.display = "none";
+					get('blocking').style.display = "block";
+					get('pagerole').style.display = "none";
+					get('notification').style.display = "none";
+					get('helpcenter').style.display = "none";
+				}
+				function tab_switchPagerole(){
+					get('language').style.display = "none";
+					get('login').style.display = "none";
+					get('blocking').style.display = "none";
+					get('pagerole').style.display = "block";
+					get('notification').style.display = "none";
+					get('helpcenter').style.display = "none";
+				}
+				function tab_switchNotification(){
+					get('language').style.display = "none";
+					get('login').style.display = "none";
+					get('blocking').style.display = "none";
+					get('pagerole').style.display = "none";
+					get('notification').style.display = "block";
+					get('helpcenter').style.display = "none";
+				}
+				function tab_switchHelpcenter(){
+					get('language').style.display = "none";
+					get('login').style.display = "none";
+					get('blocking').style.display = "none";
+					get('pagerole').style.display = "none";
+					get('notification').style.display = "none";
+					get('helpcenter').style.display = "block";
 				}
 
 		</script>

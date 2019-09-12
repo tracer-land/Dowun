@@ -25,53 +25,7 @@
 	padding-left: 10px;
 }
 
-/* Navigation CSS! */
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    color: #555;
-    background-color: rgba(0,0,0,0)!important;
-}
-nav #language_toggle_select{
-	margin-left: 0px!important;
-}
-nav li .dropdown-menu{
-	width: 100%;
-	position: static!important;
-	left: 0%!important;
-	margin-top: 0px!important;
-}
-nav li .dropdown-menu li{
-	border-bottom: 0px solid #ccc!important;
-}
-nav li .dropdown-menu li a{
-	font-weight: bold;
-	border-bottom: 1px solid rgba(255,255,255,0.2)!important;
-}
-nav li .dropdown-menu li small{
-	margin-left: 25px!important;
-}
-nav li .dropdown-menu li:first-child a{
-	margin-left: -2px!important;
-}
 
-.navbar-right .first-caret{
-	display: inline-block!important;
-	top: 6%!important;
-	left: 12%!important;
-	width: 9px;
-	height: 9px;
-	transform: none!important;
-	color: red;
-}
-
-.navbar-right .second-caret{
-	display: inline-block!important;
-	top: 8%!important;
-	left: 14%!important;
-	width: 9px;
-	height: 9px;
-	transform: none!important;
-	color: red;
-}
 
 /* Shwo Sort CSS Style! */
 #show_sort{

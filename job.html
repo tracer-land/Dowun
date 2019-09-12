@@ -27,7 +27,7 @@ Project Designed By Tracer Land
 		<!-- CSS Links! -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
-		<link rel="stylesheet" type="text/css" href="css/job_home.css"><!-- Job Home CSS! -->
+		<link rel="stylesheet" type="text/css" href="css/job_home_views/job_home.css"><!-- Job Home CSS! -->
 
 		<!-- Common CSS Styles! -->
 		<link rel="stylesheet" type="text/css" href="css/common_css_styles/mobile.css" media="screen and (max-width: 600px)">
@@ -72,23 +72,178 @@ Project Designed By Tracer Land
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<!-- Language Toggle Start! -->
 						<ul id="language_toggle_select" class="nav navbar-nav navbar-right">
-							<li>
-								<span>
-									<a href="#" id="eng">Eng</a>
-									<a href="#" id="mm" class="selected_language">MM</a>
-								</span>
-							</li>
+							<select class="form-control">
+								<option value="mm" selected>MM</option>
+								<option value="eng">ENG</option>
+							</select>
 						</ul>
 						<!-- Language Toggle End! -->
 						<ul class="nav navbar-nav navbar-right">
 							<li class="active"><a href="index.html">Home</a></li>
 							<li><a href="job.html">Jobs</a></li>
-							<li><a href="#">Create a Job</a></li>
 							<li><a href="house.html">House</a></li>
-							<li><a href="create-page-step-1.html">Create a Page</a></li>
+							
+							<li id="drp-menu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Post</a>
+								<ul class="dropdown-menu">
+									<span class="caret first-caret"></span>
+									<li class="drp-title">
+										<a href="#">Create Post</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;Place
+											<small>Share your need to other, if you are finding a room or place.</small>
+										</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-suitcase"></i>&nbsp;&nbsp;Job
+											<small>Find employee and post a job to all.</small>
+										</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-home"></i>&nbsp;&nbsp;House
+											<small>Find a house and post a house to all.</small>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li id="drp-menu-another">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Create</a>
+								<ul class="dropdown-menu">
+									<span class="caret second-caret"></span>
+									<li class="drp-title">
+										<a href="#">Create Page</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-wpforms"></i>&nbsp;&nbsp;CV
+											<small>Candidate CV to apply job and promote you need.</small>
+										</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-briefcase"></i>&nbsp;&nbsp;Business Page
+											<small>Find employee and post a job to all.</small>
+										</a>
+									</li>
+								</ul>
+							</li>
+
 							<li><a href="#">Message</a></li>
 							<li><a href="create-account-phone.html">Register</a></li>
 							<li><a href="sign-in.html">Login</a></li>
+
+							<li class="nav-li">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<sub class="fa fa-bell"></sub><sup>7</sup>
+								</a>
+
+								<!-- Notification Section Start! -->
+								<ul class="dropdown-menu">
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Share your post.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>2 Mins Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Commented on post you shared.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>1 Hour Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Followed your page.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>4 Hours Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Invited his friends to follow your page.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>12 Hour Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Reviewd on Golden Restaurant.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>1 Day Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Uploded photos at Chaungtha Beach.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>2 Days Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+								</ul>
+								<!-- Notification Section Start! -->
+							</li>
+							
+							<li class="nav-li">
+								<a href="#">
+									<img src="images/client.jpg" class="img-responsive">&nbsp;Me
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -103,14 +258,11 @@ Project Designed By Tracer Land
 						<div id="header_form_wrap">
 							<!-- Tabs -->
 							<ul>
-								<li id="tab_one" onClick="form_switchOne()">
+								<li id="tab_one" onClick="form_switchJobOne()">
 									Jobs
 								</li>
-								<li id="tab_two" onClick="form_switchTwo()">
-									Place
-								</li>
-								<li id="tab_three" onClick="form_switchThree()">
-									Flatmate
+								<li id="tab_two" onClick="form_switchJobTwo()">
+									Candidate
 								</li>
 							</ul>
 
@@ -167,7 +319,7 @@ Project Designed By Tracer Land
 							<div id="form_two">							
 								<form>
 									<div class="row" style="width: 100%;">
-										<input type="text" name="text" placeholder="Place" class="form-control">
+										<input type="text" name="text" placeholder="Keywords" class="form-control">
 
 										<select class="form-control">
 											<option>Location</option>
@@ -181,23 +333,6 @@ Project Designed By Tracer Land
 								</form>
 							</div>
 
-							<!-- Form Flatmate Inputs! -->
-							<div id="form_three">
-								<form>
-									<div class="row" style="width: 100%;">
-										<input type="text" name="text" placeholder="Flatmate" class="form-control">
-
-										<select class="form-control">
-											<option>Location</option>
-											<option>Yangon</option>
-											<option>Mandalay</option>
-											<option>Taunggyi</option>
-										</select>
-
-										<button type="submit" value="Search Jobs" class="btn">Search Flatmate</button>
-									</div>
-								</form>
-							</div>
 						</div>
 
 					</div>

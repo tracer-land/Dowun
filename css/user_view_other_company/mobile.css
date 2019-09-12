@@ -83,6 +83,10 @@ nav #language_toggle_select{
 	transform: translate(0%, -50%);
 }
 
+#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .schedule .col-md-6{
+	margin-bottom: 120px;
+}
+
 /*Third Row!JOB Search Input!*/
 #body .container-fluid .col-md-10 .third_row #job_form form input{
 	width: 48%!important;
@@ -121,8 +125,4 @@ nav #language_toggle_select{
 /*House Tab Section!*/
 #body .container-fluid .col-md-10 .sixth_row .col-md-3{
 	width: 100%;
-}
-
-#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .schedule .col-md-6{
-	margin-bottom: 120px;
 }

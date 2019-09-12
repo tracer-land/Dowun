@@ -225,6 +225,7 @@ nav li:last-child a img{
 	text-decoration: none;
 	outline: none;
 	color: #000!important;
+	margin-left: 5px;
 }
 #body .container-fluid .col-md-10 .second_row #left-section .btn{
 	color: #fff!important;
@@ -287,6 +288,19 @@ nav li:last-child a img{
 	color: #fff!important;
 	background: #3a9bfa!important;
 	margin-bottom: 5px;
+	font-size: 14px;
+}
+
+#body .container-fluid .col-md-10 .second_row #right-section .right_second_row #bg_group .closebtn {
+  padding-left: 5px;
+  color: #fff;
+  float: right;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#body .container-fluid .col-md-10 .second_row #right-section .right_second_row #bg_group .closebtn:hover {
+  color: #000;
 }
 
 /*Body Right Job Section! */
@@ -339,6 +353,216 @@ nav li:last-child a img{
 	width: 26px;
 }
 
+/*Body Right Setting Section! */
+#body_right_setting_section{
+	display: none;
+}
+#body_right_setting_section .table_section{
+	padding: 20px;
+	background: #fff;
+	margin-top: 45px;
+}
+
+/*My Setting Section!*/
+#body_right_setting_section .table_section .my_setting{
+	margin-top: 5px;
+	padding: 20px;
+	background: #fff;
+}
+#body_right_setting_section .table_section .my_setting .tab-menu{
+	width: 20%;
+	padding-top: 0px;
+	padding-bottom: 20px;
+	border-right: 1px solid rgba(0,0,0,0.1);
+}
+#body_right_setting_section .table_section .my_setting .tab-menu ul{
+	list-style: none;
+	padding: 0px!important;
+}
+#body_right_setting_section .table_section .my_setting .tab-menu ul li:first-child{
+	margin-bottom: 18px;
+}
+#body_right_setting_section .table_section .my_setting .tab-menu ul li{
+	margin-bottom: 15px;
+}
+#body_right_setting_section .table_section .my_setting .tab-menu ul li a{
+	text-decoration: none;
+	outline: none;
+	color: #000!important;
+}
+#body_right_setting_section .table_section .my_setting .tab-menu ul li a i{
+	font-size: 15px!important;
+	color: #666!important;
+	display: inline-block;
+	margin-right: 7px;
+}
+
+#body_right_setting_section .table_section .my_setting .tab-section{
+	width: 80%;
+	padding-top: 0px;
+}
+
+/*Language*/
+#body_right_setting_section .table_section .my_setting .tab-section #language h4{
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 6px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #language .row .col-md-8 select{
+	width: 40%;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #language .row .col-md-4 span{
+	font-weight: bold;
+}
+/*Login*/
+#body_right_setting_section .table_section .my_setting .tab-section #login{
+	display: none;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #login .row{
+	margin-top: 15px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #login h4{
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 6px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #login .row .col-md-12 span{
+	display: block;
+	font-weight: bold;
+	float: left;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #login .row .col-md-12 small{
+	display: block;
+	margin-left: 19px;
+	margin-bottom: 12px;
+	clear: both;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #login .row .col-md-12 form{
+	margin-top: 18px;
+	margin-left: 19px;
+	display: none;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #login .row .col-md-12 form input{
+	width: 28%!important;
+	display: inline-block;
+	margin-right: 5px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #login .row .col-md-12 form .btn{
+	border: 0px!important;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+    text-decoration: none;
+    outline: none;
+    color: #000!important;
+    display: inline-block;
+    width: 28%!important;
+}
+/*Blocking*/
+#body_right_setting_section .table_section .my_setting .tab-section #blocking{
+	display: none;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #blocking .row{
+	margin-top: 15px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #blocking h4{
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 6px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #blocking .row .col-md-6 select{
+	width: 40%;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #blocking .row .col-md-6 span, #body_right_setting_section .table_section .my_setting .tab-section #blocking .row .col-md-12 span{
+	font-weight: bold;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #blocking .row .col-md-6 small, #body_right_setting_section .table_section .my_setting .tab-section #blocking .row .col-md-12 small{
+	display: block;
+	margin-left: 18px;
+	margin-bottom: 12px;
+	clear: both;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #blocking .row .col-md-12 table{
+	width: 65%;
+	margin-left: 18px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #blocking .row .col-md-12 table select{
+	width: 40%;
+	float: right;
+}
+/*Page Role*/
+#body_right_setting_section .table_section .my_setting .tab-section #pagerole{
+	display: none;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #pagerole .row{
+	margin-top: 15px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #pagerole h4{
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 6px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #pagerole .row .col-md-12 span{
+	display: block;
+	font-weight: bold;
+	float: left;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #pagerole .row .col-md-12 form{
+	margin-top: 12px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #pagerole .row .col-md-12 form input, #body_right_setting_section .table_section .my_setting .tab-section #pagerole .row .col-md-12 form select{
+	width: 30%!important;
+	display: inline-block;
+	margin-right: 5px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #pagerole .row .col-md-12 form .btn{
+	border: 0px!important;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+    text-decoration: none;
+    outline: none;
+    color: #000!important;
+    display: inline-block;
+    width: 20%!important;
+}
+/*Notification*/
+#body_right_setting_section .table_section .my_setting .tab-section #notification{
+	display: none;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #notification .row{
+	margin-top: 15px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #notification h4{
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 6px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #notification .row .col-md-12 span{
+	display: inline-block;
+	font-weight: bold;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #notification .row .col-md-12 small, #body_right_setting_section .table_section .my_setting .tab-section #notification .row .col-md-5 small{
+	display: block;
+	margin-left: 18px;
+	margin-bottom: 12px;
+	clear: both;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #notification .row .col-md-5{
+	padding-left: 0px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #notification .row .col-md-5,#body_right_setting_section .table_section .my_setting .tab-section #notification .row .col-md-3{
+	margin-bottom: 10px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #notification .row .col-md-3 select{
+	width: 45%!important;
+}
+/*Help Center*/
+#body_right_setting_section .table_section .my_setting .tab-section #helpcenter{
+	display: none;
+}
+
 /*Schedule Modal CSS!*/
 #myModal .modal-body form h4{
 	font-weight: bold;
@@ -362,21 +586,31 @@ nav li:last-child a img{
 	width: 100%!important;
 }
 
-#inputcontactModal .modal-body form .col-md-12{
+#inputcontactModal .modal-body form .col-md-12, #addcontactModal .modal-body form .col-md-12{
 	margin-bottom: 10px!important;
 }
 
-#inputvisionModal .modal-body form .col-md-12{
+#inputvisionModal .modal-body form .col-md-12,#addvisionModal .modal-body form .col-md-12{
 	margin-bottom: 10px!important;
 }
-#inputvisionModal .modal-body form .col-md-12 textarea{
+#inputvisionModal .modal-body form .col-md-12 textarea, #addvisionModal .modal-body form .col-md-12 textarea{
 	max-width: 100%!important;
 }
-#inputtextareaModal .modal-body form .col-md-12{
+#inputtextareaModal .modal-body form .col-md-12, #addaboutModal .modal-body form .col-md-12{
 	margin-bottom: 10px!important;
 }
 #inputtextareaModal .modal-body form .col-md-12 textarea{
 	max-width: 100%!important;
+}
+
+/*Setting Modals!!*/
+#verifycodeModal .row .col-md-12{
+	margin-top: 10px;
+}
+#verifycodeModal .row .col-md-12 p a{
+	text-decoration: none;
+	outline: none;
+	color: #000!important;
 }
 
 /* Media Queries!!! */

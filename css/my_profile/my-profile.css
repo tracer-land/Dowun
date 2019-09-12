@@ -277,6 +277,12 @@ nav li:last-child a img{
 #body .container-fluid .col-md-10 .second_row #third-row{
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
+#body .container-fluid .col-md-10 .second_row #third-row .table{
+	width: 65%;
+}
+#body .container-fluid .col-md-10 .second_row #third-row .table tr th,#body .container-fluid .col-md-10 .second_row #third-row .table tr td{
+	border-top: 0px solid rgba(0,0,0,0)!important;
+}
 #body .container-fluid .col-md-10 .second_row #third-row h4{
 	font-weight: bold;
 }
@@ -329,7 +335,6 @@ nav li:last-child a img{
 	padding: 0px!important;
 }
 #body .container-fluid .col-md-10 .my_cv .tab-menu ul li:first-child{
-	font-weight: bold;
 	margin-bottom: 18px;
 }
 #body .container-fluid .col-md-10 .my_cv .tab-menu ul li{
@@ -346,7 +351,21 @@ nav li:last-child a img{
 	padding-top: 20px;
 	border-left: 1px solid rgba(0,0,0,0.1);
 }
+/*View Profile CV*/
+#body .container-fluid .col-md-10 .my_cv .tab-section #view-profile h4{
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 6px;
+}
+#body .container-fluid .col-md-10 .my_cv .tab-section #view-profile .table tr th,#body .container-fluid .col-md-10 .my_cv .tab-section #view-profile .table tr td{
+	border-top: 0px solid rgba(0,0,0,0)!important;
+}
+
 /*Personal Information*/
+#body .container-fluid .col-md-10 .my_cv .tab-section #personal-info{
+	display: none;
+}
 #body .container-fluid .col-md-10 .my_cv .tab-section #personal-info h4{
 	font-size: 15px;
 	font-weight: bold;
@@ -400,6 +419,9 @@ nav li:last-child a img{
 #body .container-fluid .col-md-10 .my_cv .tab-section #education-work #skill-section .row .col-md-3,#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #skill-section .row .col-md-9{
 	margin-bottom: 5px;
 }
+#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #skill-section .row .col-md-3 .btn{
+	margin-left: 5px;
+}
 /*Education Section!*/
 #body .container-fluid .col-md-10 .my_cv .tab-section #education-work #education-section{
 	margin-top: 12px;
@@ -411,11 +433,13 @@ nav li:last-child a img{
 #body .container-fluid .col-md-10 .my_cv .tab-section #education-work #education-section .row .col-md-3,#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #education-section .row .col-md-9{
 	margin-bottom: 8px;
 }
+#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #education-section .row .col-md-3 .btn{
+	margin-left: 5px;
+}
 /*Experience Section!*/
 #body .container-fluid .col-md-10 .my_cv .tab-section #education-work #experience-section{
 	margin-top: 12px;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
-	display: none;
 }
 #body .container-fluid .col-md-10 .my_cv .tab-section #education-work #experience-section .row .col-md-12,#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #experience-section .row .col-md-2,#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #experience-section .row .col-md-4{
 	margin-bottom: 8px;
@@ -423,7 +447,9 @@ nav li:last-child a img{
 #body .container-fluid .col-md-10 .my_cv .tab-section #education-work #experience-section .row .col-md-3,#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #experience-section .row .col-md-9{
 	margin-bottom: 8px;
 }
-
+#body .container-fluid .col-md-10 .my_cv .tab-section #education-work #experience-section .row .col-md-3 .btn{
+	margin-left: 5px;
+}
 /*About Me*/
 #body .container-fluid .col-md-10 .my_cv .tab-section #about-me{
 	display: none;
@@ -447,6 +473,10 @@ nav li:last-child a img{
 #body .container-fluid .col-md-10 .my_cv .tab-section #about-me .row form textarea{
 	max-width: 100%!important;
 	margin-bottom: 15px;
+}
+
+#body .container-fluid .col-md-10 .my_cv .tab-section #about-me #interest-position .btn,#body .container-fluid .col-md-10 .my_cv .tab-section #about-me #interest-area .btn{
+	margin-left: 5px;
 }
 
 
@@ -489,6 +519,229 @@ nav li:last-child a img{
 	display: block!important;
 	width: 26px;
 }
+
+
+
+/*Body Right Setting Section! */
+#body_right_setting_section{
+	display: none;
+}
+#body_right_setting_section .table_section{
+	padding: 20px;
+	background: #fff;
+	margin-top: 45px;
+}
+
+/*My Setting Section!*/
+#body_right_setting_section .table_section .my_setting{
+	margin-top: 5px;
+	padding: 20px;
+	background: #fff;
+}
+#body_right_setting_section .table_section .my_setting .tab-menu{
+	width: 20%;
+	padding-top: 0px;
+	padding-bottom: 20px;
+	border-right: 1px solid rgba(0,0,0,0.1);
+}
+#body_right_setting_section .table_section .my_setting .tab-menu ul{
+	list-style: none;
+	padding: 0px!important;
+}
+#body_right_setting_section .table_section .my_setting .tab-menu ul li:first-child{
+	margin-bottom: 18px;
+}
+#body_right_setting_section .table_section .my_setting .tab-menu ul li{
+	margin-bottom: 15px;
+}
+#body_right_setting_section .table_section .my_setting .tab-menu ul li a{
+	text-decoration: none;
+	outline: none;
+	color: #000!important;
+}
+#body_right_setting_section .table_section .my_setting .tab-menu ul li a i{
+	font-size: 15px!important;
+	color: #666!important;
+	display: inline-block;
+	margin-right: 7px;
+}
+
+#body_right_setting_section .table_section .my_setting .tab-section{
+	width: 80%;
+	padding-top: 0px;
+}
+
+/*Language*/
+#body_right_setting_section .table_section .my_setting .tab-section #language h4{
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 6px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #language .row .col-md-8 select{
+	width: 40%;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #language .row .col-md-4 span{
+	font-weight: bold;
+}
+/*Login*/
+#body_right_setting_section .table_section .my_setting .tab-section #login{
+	display: none;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #login .row{
+	margin-top: 15px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #login h4{
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 6px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #login .row .col-md-12 span{
+	display: block;
+	font-weight: bold;
+	float: left;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #login .row .col-md-12 small{
+	display: block;
+	margin-left: 19px;
+	margin-bottom: 12px;
+	clear: both;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #login .row .col-md-12 form{
+	margin-top: 18px;
+	margin-left: 19px;
+	display: none;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #login .row .col-md-12 form input{
+	width: 28%!important;
+	display: inline-block;
+	margin-right: 5px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #login .row .col-md-12 form .btn{
+	border: 0px!important;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+    text-decoration: none;
+    outline: none;
+    color: #000!important;
+    display: inline-block;
+    width: 28%!important;
+}
+/*Blocking*/
+#body_right_setting_section .table_section .my_setting .tab-section #blocking{
+	display: none;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #blocking .row{
+	margin-top: 15px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #blocking h4{
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 6px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #blocking .row .col-md-6 select{
+	width: 40%;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #blocking .row .col-md-6 span, #body_right_setting_section .table_section .my_setting .tab-section #blocking .row .col-md-12 span{
+	font-weight: bold;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #blocking .row .col-md-6 small, #body_right_setting_section .table_section .my_setting .tab-section #blocking .row .col-md-12 small{
+	display: block;
+	margin-left: 18px;
+	margin-bottom: 12px;
+	clear: both;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #blocking .row .col-md-12 table{
+	width: 65%;
+	margin-left: 18px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #blocking .row .col-md-12 table select{
+	width: 40%;
+	float: right;
+}
+/*Page Role*/
+#body_right_setting_section .table_section .my_setting .tab-section #pagerole{
+	display: none;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #pagerole .row{
+	margin-top: 15px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #pagerole h4{
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 6px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #pagerole .row .col-md-12 span{
+	display: block;
+	font-weight: bold;
+	float: left;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #pagerole .row .col-md-12 form{
+	margin-top: 12px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #pagerole .row .col-md-12 form input, #body_right_setting_section .table_section .my_setting .tab-section #pagerole .row .col-md-12 form select{
+	width: 30%!important;
+	display: inline-block;
+	margin-right: 5px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #pagerole .row .col-md-12 form .btn{
+	border: 0px!important;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+    text-decoration: none;
+    outline: none;
+    color: #000!important;
+    display: inline-block;
+    width: 20%!important;
+}
+/*Notification*/
+#body_right_setting_section .table_section .my_setting .tab-section #notification{
+	display: none;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #notification .row{
+	margin-top: 15px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #notification h4{
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 6px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #notification .row .col-md-12 span{
+	display: inline-block;
+	font-weight: bold;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #notification .row .col-md-12 small, #body_right_setting_section .table_section .my_setting .tab-section #notification .row .col-md-5 small{
+	display: block;
+	margin-left: 18px;
+	margin-bottom: 12px;
+	clear: both;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #notification .row .col-md-5{
+	padding-left: 0px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #notification .row .col-md-5,#body_right_setting_section .table_section .my_setting .tab-section #notification .row .col-md-3{
+	margin-bottom: 10px;
+}
+#body_right_setting_section .table_section .my_setting .tab-section #notification .row .col-md-3 select{
+	width: 45%!important;
+}
+/*Help Center*/
+#body_right_setting_section .table_section .my_setting .tab-section #helpcenter{
+	display: none;
+}
+/*Setting Modals!!*/
+#verifycodeModal .row .col-md-12{
+	margin-top: 10px;
+}
+#verifycodeModal .row .col-md-12 p a{
+	text-decoration: none;
+	outline: none;
+	color: #000!important;
+}
+
+
 
 /*Body Right Schedule Section! */
 #body_right_schedule_section{

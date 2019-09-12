@@ -594,31 +594,6 @@ nav li:last-child a img{
 	color: #fff!important;
 }
 
-/*Scheldule*/
-#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .schedule{
-	display: none;
-}
-#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .schedule form h5{
-	font-weight: bold;
-}
-#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .schedule form i{
-	font-size: 18px;
-}
-#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .schedule .col-md-6{
-	height: 250px;
-}
-#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .schedule .col-md-3,#recent_property .row .col-md-3 #myModal .modal-body .schedule .col-md-9{
-	margin-bottom: 10px;
-}
-#body .container-fluid .col-md-10 .sixth_row .col-md-3 #myhouseModal .modal-body .schedule form textarea{
-	max-width: 100%;
-	height: 100%;
-}
-#recent_property .row .col-md-3 #myModal .modal-body .schedule form .btn{
-	width: 100%;
-}
-
-
 /* Media Queries!!! */
 @media screen and (max-width: 1228px){
 

@@ -3,7 +3,7 @@
 	width: 100%;
 	height: 50vh;
 	margin-top: 50px!important;
-	background-image: url("../images/house_home_header.png");
+	background-image: url("../../images/main_home_header.png");
 	background-size: cover;
 }
 /*Form*/
@@ -37,11 +37,7 @@
 	margin-left: 4px;
 	margin-right: 4px
 }
-#header_wrap form .row{
-	margin-bottom: 10px;
-}
-
-/*Form_Palace*/
+/*Form_Job*/
 #header_wrap #form_one{
 	clear: both;
 	background: rgba(255,255,255,0.5);
@@ -75,9 +71,10 @@
 	background: #3a9bfa!important;
 	color: #fff!important;
 	width: 31.5%!important;
+	margin: 0 auto!important;
 	display: block!important;
 }
-/*Form_Job*/
+/*Form_Place*/
 #header_wrap #form_two{
 	display: none;
 	background: rgba(255,255,255,0.5);
@@ -154,6 +151,60 @@
 	display: block!important;
 }
 
+/* Notification Section */
+nav li .dropdown-menu{
+	background: #fff!important;
+	border: 0px!important;
+	width: 380px;
+	color: #666!important;
+	position: absolute!important;
+	left: -200%!important;
+	margin-top: 6px!important;
+}
+
+/* Category Slider */
+#category_slider{
+	width: 100%;
+	padding: 50px 0px 50px 0px;
+	background: white;
+}
+#category_slider #category_item{
+	background-color: white;
+	width: 85%;
+	padding: 20px 0px 20px 0px;
+	margin:0 auto!important;
+	border-radius: 5px;
+	box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+}
+#category_slider #category_item img{
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	display: block;
+}
+#category_slider #category_item h4{
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 18px;
+}
+#category_slider #category_item small{
+	text-align: center!important;
+	display: block;
+}
+#category_slider #category_item button{
+	font-size: 12px!important;
+	width: 140px!important;
+	height: 40px!important;
+	padding: 0px!important;
+	background: #3a9bfa;
+	border: 0px!important;
+	color: #fff;
+	border-radius: 30px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 15px!important;
+}
 
 /* Body Section CSS Style! */
 #body{
@@ -215,13 +266,13 @@
 	width: 90%;
 }
 
-#body .container #panel_wrap #how_jobs_panel_one{
+#body .container #panel_wrap #how_works_panel_one, #how_jobs_panel_one, #how_page_panel_one{
 	clear: both;
 	width: 480px;
 	height: 300px;
 	margin: 0 auto;
 }
-#body .container #panel_wrap #how_jobs_panel_two{
+#body .container #panel_wrap #how_works_panel_two, #how_jobs_panel_two, #how_page_panel_two{
 	display: none;
 	background-color: lime;
 	clear: both;
@@ -229,13 +280,17 @@
 	height: 300px;
 	margin: 0 auto;
 }
-#body .container #panel_wrap #how_jobs_panel_three{
+#body .container #panel_wrap #how_works_panel_three, #how_jobs_panel_three, #how_page_panel_three{
 	display: none;
 	background-color: skyblue;
 	clear: both;
 	width: 480px;
 	height: 300px;
 	margin: 0 auto;
+}
+#body .container #panel_wrap #how_works_one{
+	background: #3a9bfa;
+	color: #fff;
 }
 
 #body .container #panel_wrap a{
@@ -263,153 +318,6 @@
 }
 
 
-/* Recent Property */
-#recent_property{
-	width: 100%;
-	padding: 25px 0px 50px 0px;
-	background: white;
-}
-#recent_property h3{
-	font-weight: bold;
-	text-align: center;
-	color: #3a9bfa;
-	position: relative;
-	z-index: 100;
-	margin-bottom: 60px;
-}
-#recent_property h3::before{
-	content: "";
-	display: block;
-	position: absolute;
-	width: 80px;
-	height: 1px;
-	background: #3a9bfa;
-	margin-top: 35px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	-webkit-transform: translate(-50%,-50%)!important;
-	-ms-transform: translate(-50%,-50%)!important;
-	-moz-transform: translate(-50%,-50%)!important;
-	-o-transform: translate(-50%,-50%)!important;
-}
-
-#recent_property .row .col-md-3 a{
-	outline: none!important;
-	color: #000!important;
-	text-decoration: none!important;
-}
-#recent_property .row .col-md-3 a #recent_item{
-	background-color: white;
-	width: 98%;
-	padding: 0px 0px 20px 0px;
-	margin:0 auto!important;
-	border-radius: 5px;
-	box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
-}
-#recent_property .row .col-md-3 a #recent_item img{
-	width: 100%;
-	height: 100%;
-	border-radius: 5px;
-	border-bottom-left-radius: 0px!important;
-	border-bottom-right-radius: 0px!important;
-}
-#recent_property .row .col-md-3 a #recent_item #recent_text_wrap{
-	width: 90%;
-	margin: 0 auto;
-	margin-top: 15px;
-}
-#recent_property .row .col-md-3 a #recent_item #recent_text_wrap h4{
-	font-size: 14px;
-	font-weight: bold;
-}
-#recent_property .row .col-md-3 a #recent_item #recent_text_wrap small{
-	color: #3a9bfa;
-}
-#recent_property .row .col-md-3 a #recent_item #recent_text_wrap span{
-	display: block;
-	margin-top: 10px;
-	font-size: 14px;
-}
-#recent_property .row .col-md-3 a #recent_item #recent_text_wrap i{
-	font-size: 14px;
-	margin-top: 15px;
-	display: inline-block;
-	margin-right: 8px;
-}
-#recent_property .row .col-md-3 a #recent_item #recent_text_wrap i:last-child{
-	margin-right: 0px!important;
-}
-
-#recent_property .see-all-properties{
-	width: 180px;
-	display: block;
-	margin: 0 auto!important;
-	margin-top: 35px!important;
-}
-
-/*House Detail Modal Popup!*/
-#recent_property .row .col-md-3 #myModal .modal-body .row .col-md-6 .carousel-inner{
-	padding: 0px!important;
-}
-#recent_property .row .col-md-3 #myModal .modal-body .row .col-md-6 .carousel-inner img{
-	width: 100%;
-	height: 300px;
-}
-#recent_property .row .col-md-3 #myModal .modal-body .row .col-md-6 .left{
-	margin-left: 20px!important;
-	opacity: 1!important;
-}
-#recent_property .row .col-md-3 #myModal .modal-body .row .col-md-6 .right{
-	margin-right: 20px!important;
-	opacity: 1!important;
-}
-#recent_property .row .col-md-3 #myModal .modal-body ul{
-	list-style: none;
-	padding: 0px!important;
-	margin-bottom: 15px;
-}
-#recent_property .row .col-md-3 #myModal .modal-body ul li{
-	display: inline-block;
-	margin-right: 12px;
-}
-#recent_property .row .col-md-3 #myModal .modal-body ul li p{
-	font-size: 14px;
-}
-#recent_property .row .col-md-3 #myModal .modal-body ul li i{
-	font-size: 14px;
-}
-#recent_property .row .col-md-3 #myModal .modal-body h4{
-	font-weight: bold;
-}
-#recent_property .row .col-md-3 #myModal .modal-body .btn{
-	margin-right: 10px;
-	color: #fff!important;
-}
-/*Scheldule*/
-#recent_property .row .col-md-3 #myModal .modal-body .schedule{
-	display: none;
-}
-#recent_property .row .col-md-3 #myModal .modal-body .schedule form h5{
-	font-weight: bold;
-}
-#recent_property .row .col-md-3 #myModal .modal-body .schedule form i{
-	font-size: 18px;
-}
-#recent_property .row .col-md-3 #myModal .modal-body .schedule .col-md-6{
-	height: 250px;
-}
-#recent_property .row .col-md-3 #myModal .modal-body .schedule .col-md-3,#recent_property .row .col-md-3 #myModal .modal-body .schedule .col-md-9{
-	margin-bottom: 10px;
-}
-#recent_property .row .col-md-3 #myModal .modal-body .schedule form textarea{
-	max-width: 100%;
-	height: 100%;
-}
-#recent_property .row .col-md-3 #myModal .modal-body .schedule form .btn{
-	width: 100%;
-}
-
 /* Media Queries!!! */
 @media screen and (max-width: 1228px){
 	/* Body Section CSS Style! */
@@ -421,16 +329,12 @@
 		height: 200px;
 	}
 
-	#recent_property .row .col-md-3 #myModal .modal-body .schedule .col-md-6{
-		height: 380px;
-	}
-
 }
 
 @media screen and (max-width: 499px){
 
 	#header{
-		background: url("../images/mobile_size_house_home_header.png") no-repeat!important;
+		background: url("../images/mobile_size_main_home_header.png") no-repeat!important;
 		height: 100vh;
 	}
 	#header #header_wrap h3{
@@ -440,42 +344,29 @@
 		margin-left: -18px!important;
 	}
 
-	/* Header Form */
-	#header_wrap #form_one{
-		width: 90%;
-		height: 150px!important;
-		padding: 0px 0px 0px 0px;
-		margin-left: 0px;
-		margin: 0 auto;
+	/* Category Items */
+	#category_slider #category_item{
+		margin-bottom: 8px!important;
+		width: 100%;
+		padding: 10px 0px 10px 0px!important;
+		margin:0 auto!important;
 	}
-
-	#header_wrap #form_one .row:nth-child(2){
-		display: none;
+	#category_slider #category_item img{
+		width: 25px;
+		height: 25px;
 	}
-	#header_wrap #form_one .row:nth-child(3){
-		display: none;
+	#category_slider #category_item h4{
+		font-size: 10px;
+		margin-top: 13px;
 	}
-	#header_wrap #form_one .row select:nth-child(2){
-		display: none;
+	#category_slider #category_item small{
+		font-size: 10px;
 	}
-	#header #form_one .row:first-child .btn{
-		display: block!important;
+	#category_slider #category_item button{
+		font-size: 7px!important;
+		width: 80px!important;
+		height: 25px!important;
+		padding: 0px!important;
+		margin-top: 8px!important;
 	}
-
-	/* Recant Property */
-	#recent_property .row .col-md-3 a #recent_item #recent_text_wrap h4{
-		font-size: 13px!important;
-	}
-	#recent_property .row .col-md-3 a #recent_item #recent_text_wrap span{
-		font-size: 12px!important;
-	}
-	#recent_property .row .col-md-3 a #recent_item #recent_text_wrap i{
-		font-size: 12px!important;
-	}
-
-	#recent_property .row .col-md-3 #myModal .modal-body .schedule .col-md-6{
-		height: 380px;
-	}
-
-
 }

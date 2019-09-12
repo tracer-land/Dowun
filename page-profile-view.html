@@ -27,7 +27,7 @@ Project Designed By Tracer Land
 		<!-- CSS Links! -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
-		<link rel="stylesheet" type="text/css" href="css/page-profile-view.css"><!-- Page Profile View CSS! -->
+		<link rel="stylesheet" type="text/css" href="css/page_profile_view/page-profile-view.css"><!-- Page Profile View CSS! -->
 
 		<!-- Common CSS Styles! -->
 		<link rel="stylesheet" type="text/css" href="css/common_css_styles/mobile.css" media="screen and (max-width: 600px)">
@@ -71,29 +71,174 @@ Project Designed By Tracer Land
 
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<!-- Language Toggle Start! -->
-						<ul id="language_toggle_select" class="nav navbar-nav navbar-right" style="margin-left: 30px;">
-							<li>
-								<span>
-									<a href="#" id="mm">MM</a>
-									<a href="#" id="eng" class="selected_language">Eng</a>
-								</span>
-							</li>
+						<ul id="language_toggle_select" class="nav navbar-nav navbar-right">
+							<select class="form-control">
+								<option value="mm" selected>MM</option>
+								<option value="eng">ENG</option>
+							</select>
 						</ul>
 						<!-- Language Toggle End! -->
 						<ul class="nav navbar-nav navbar-right" style="margin-right: 0px!important;">
 							<li><a href="#">Discover</a></li>
 
 							<li><a href="index.html">Home</a></li>
-
-							<li><a href="#">Create a Post</a></li>
 							<li><a href="job.html">Jobs</a></li>
 							<li><a href="house.html">House</a></li>
-							<li><a href="#">Create a Page</a></li>
+							
+							<li id="drp-menu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Post</a>
+								<ul class="dropdown-menu">
+									<span class="caret first-caret"></span>
+									<li class="drp-title">
+										<a href="#">Create Post</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;Place
+											<small>Share your need to other, if you are finding a room or place.</small>
+										</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-suitcase"></i>&nbsp;&nbsp;Job
+											<small>Find employee and post a job to all.</small>
+										</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-home"></i>&nbsp;&nbsp;House
+											<small>Find a house and post a house to all.</small>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li id="drp-menu-another">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Create</a>
+								<ul class="dropdown-menu">
+									<span class="caret second-caret"></span>
+									<li class="drp-title">
+										<a href="#">Create Page</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-wpforms"></i>&nbsp;&nbsp;CV
+											<small>Candidate CV to apply job and promote you need.</small>
+										</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-briefcase"></i>&nbsp;&nbsp;Business Page
+											<small>Find employee and post a job to all.</small>
+										</a>
+									</li>
+								</ul>
+							</li>
 							
 							<li><a href="#">Message</a></li>
-							<li><a href="#">
-								<sub class="fa fa-bell"></sub><sup>7</sup>
-							</a></li>
+							
+							<li class="nav-li">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<sub class="fa fa-bell"></sub><sup>7</sup>
+								</a>
+
+								<!-- Notification Section Start! -->
+								<ul class="dropdown-menu">
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Share your post.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>2 Mins Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Commented on post you shared.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>1 Hour Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Followed your page.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>4 Hours Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Invited his friends to follow your page.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>12 Hour Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Reviewd on Golden Restaurant.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>1 Day Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Uploded photos at Chaungtha Beach.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>2 Days Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+								</ul>
+								<!-- Notification Section Start! -->
+							</li>
+
 							<li>
 								<a href="#">
 									<img src="images/client.jpg" class="img-responsive">&nbsp;Me
@@ -225,6 +370,12 @@ Project Designed By Tracer Land
 													<span>Log Out</span>
 												</a>
 											</li>
+											<li>
+												<a href="#" onClick="tab_switchSetting()">
+													<i class="fa fa-cog" data-toggle="tooltip" title="Setting" data-placement="right"></i>
+													<span>Setting</span>
+												</a>
+											</li>
 										</ul>
 									</div>
 								</div>
@@ -283,6 +434,8 @@ Project Designed By Tracer Land
 												<span>KBZ Bank</span>
 
 												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#inputModal" title="Edit"><i class="fa fa-pencil"></i></a>
+
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add"><i class="fa fa-plus"></i></a>
 											</div>
 										</div>
 
@@ -294,6 +447,8 @@ Project Designed By Tracer Land
 												<a href="#">www.dowun.com/kbzbank</a>
 
 												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#inputModal" title="Edit"><i class="fa fa-pencil"></i></a>
+
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add"><i class="fa fa-plus"></i></a>
 											</div>
 										</div>
 
@@ -305,6 +460,8 @@ Project Designed By Tracer Land
 												<span href="#">Private Company</span>
 
 												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#inputModal" title="Edit"><i class="fa fa-pencil"></i></a>
+
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add"><i class="fa fa-plus"></i></a>
 											</div>
 										</div>
 
@@ -316,6 +473,8 @@ Project Designed By Tracer Land
 												<span href="#">Banking</span>
 
 												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#inputModal" title="Edit"><i class="fa fa-pencil"></i></a>
+
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add"><i class="fa fa-plus"></i></a>
 											</div>
 										</div>
 									</div>
@@ -330,6 +489,8 @@ Project Designed By Tracer Land
 												<span>No.4/3, Kyeebwaryae Housing, Thingangyan, Yangon, Myanmar</span>
 
 												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#inputModal" title="Edit"><i class="fa fa-pencil"></i></a>
+
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add"><i class="fa fa-plus"></i></a>
 											</div>
 										</div>
 
@@ -342,6 +503,8 @@ Project Designed By Tracer Land
 												<a href="tel:09 907686044" style="margin:0!important;display: inline-block!important;">09 907686044</a>
 
 												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#inputModal" title="Edit"><i class="fa fa-pencil"></i></a>
+
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add"><i class="fa fa-plus"></i></a>
 											</div>
 										</div>
 									</div>
@@ -351,6 +514,8 @@ Project Designed By Tracer Land
 										<h4>Contact Details</h4>
 
 										<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#inputcontactModal" title="Edit"><i class="fa fa-pencil"></i></a>
+
+										<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addcontactModal" title="Add"><i class="fa fa-plus"></i></a>
 										<div class="row">
 											<div class="col-md-3">
 												<strong>Email</strong>
@@ -399,6 +564,8 @@ Project Designed By Tracer Land
 												<span>2017 Aug 1</span>
 
 												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#inputModal" title="Edit"><i class="fa fa-pencil"></i></a>
+
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add"><i class="fa fa-plus"></i></a>
 											</div>
 										</div>
 
@@ -410,6 +577,8 @@ Project Designed By Tracer Land
 												<span>2000</span>
 
 												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#inputModal" title="Edit"><i class="fa fa-pencil"></i></a>
+
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add"><i class="fa fa-plus"></i></a>
 											</div>
 										</div>
 									</div>
@@ -419,6 +588,8 @@ Project Designed By Tracer Land
 										<h4>Vision</h4>
 
 										<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#inputvisionModal" title="Edit"><i class="fa fa-pencil"></i></a>
+
+										<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addvisionModal" title="Add"><i class="fa fa-plus"></i></a>
 										<div class="row">
 											<div class="col-md-3">
 												<strong>2017</strong>
@@ -457,6 +628,8 @@ Project Designed By Tracer Land
 												cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 												proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addaboutModal" title="Add" style="margin-left: 5px;">Add</a>
+
 												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#inputtextareaModal" title="Edit">Edit</a>
 											</div>
 
@@ -469,19 +642,20 @@ Project Designed By Tracer Land
 										<div class="row">
 											<div class="col-md-12">
 												<div id="bg_group">
-													<button class="btn btn-sm active">Rent House</button>
-													<button class="btn btn-sm">30% Discount</button>
-													<button class="btn btn-sm">Advisor</button>
-													<button class="btn btn-sm">Land Sale</button>
-													<button class="btn btn-sm">Contractor</button>
-													<button class="btn btn-sm">Decoration</button>
-													<button class="btn btn-sm">Painting</button>
-													<button class="btn btn-sm">Architecture</button>
-													<button class="btn btn-sm">Estate Photographer</button>
-													<button class="btn btn-sm">Construction</button>
+													<button class="btn btn-sm active chip">Rent House
+													 <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></button>
+													<button class="btn btn- chip">30% Discount<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></button>
+													<button class="btn btn-sm chip">Advisor<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></button>
+													<button class="btn btn-sm chip">Land Sale<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></button>
+													<button class="btn btn-sm chip">Contractor<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></button>
+													<button class="btn btn-sm chip">Decoration<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></button>
+													<button class="btn btn-sm chip">Painting<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></button>
+													<button class="btn btn-sm">Architecture<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></button>
+													<button class="btn btn-sm chip">Estate Photographer<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></button>
+													<button class="btn btn-sm chip">Construction<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></button>
 												</div>
 
-												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#inputModal" title="Edit">Edit</a>
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add">Add</a>
 											</div>
 										</div>
 									</div>
@@ -590,6 +764,333 @@ Project Designed By Tracer Land
 							</div>
 						</div>
 					<!-- Body Right Job Section End! -->
+
+					<!-- Body Right Setting Section Start! -->
+						<div class="col-md-10 col-sm-11 col-xs-11" id="body_right_setting_section">
+							<div class="row table_section">
+
+								<!-- My Setting Section! -->
+								<div class="row my_setting" id="my-setting-section">
+
+									<div class="col-md-3 tab-menu">
+										<ul>
+											<li>
+												<a href="#" onClick="tab_switchLanguage()">
+													<i class="fa fa-language"></i>
+													Language
+												</a>
+											</li>
+											<li>
+												<a href="#" onClick="tab_switchLogin()">
+													<i class="fa fa-sign-out"></i>
+													Login
+												</a>
+											</li>
+											<li>
+												<a href="#" onClick="tab_switchBlocking()">
+													<i class="fa fa-ban"></i>
+													Blocking
+												</a>
+											</li>
+											<li>
+												<a href="#" onClick="tab_switchPagerole()">
+													<i class="fa fa-tag"></i>
+													Page Role
+												</a>
+											</li>
+											<li>
+												<a href="#" onClick="tab_switchNotification()">
+												<i class="fa fa-bell"></i>
+													Notification
+												</a>
+											</li>
+											<li>
+												<a href="#" onClick="tab_switchHelpcenter()">
+													<i class="fa fa-question-circle"></i>
+													Help Center
+												</a>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-md-9 tab-section">
+										
+										<!-- Language! -->
+										<div id="language">
+											<h4>Language Setting</h4>
+
+											<div class="row">
+												<div class="col-md-4">
+													<i class="fa fa-flag"></i>
+													<span>Myanmar</span>
+												</div>
+												<div class="col-md-8">
+													<select class="form-control pull-right">
+														<option>Change Language</option>
+														<option value="mm">Myanmar</option>
+														<option value="eng">English</option>
+														<option value="ch">Chinese</option>
+													</select>
+												</div>
+											</div>
+										</div>
+
+										<!-- Login! -->
+										<div id="login">
+											<h4>Login Setting</h4>
+
+											<div class="row">
+												<div class="col-md-12">
+													<span>
+														<i class="fa fa-key"></i>&nbsp;Password
+													</span>
+
+													<a class="btn btn-sm btn-info pull-right password-tab">Edit</a>
+													<small>Manage your password</small>
+
+
+													<form action="#" class="password-toggle">
+														<input type="password" name="old-password" class="form-control" required placeholder="Enter Your Old Password">
+
+														<input type="password" name="new-password" class="form-control" required placeholder="Enter Your New Password">
+
+														<a href="#" class="form-control btn" data-toggle="modal" data-target="#verifycodeModal">Change Password</a>
+													</form>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-md-12">
+													<span>
+														<i class="fa fa-envelope"></i>&nbsp;Login Email
+													</span>
+
+													<a class="btn btn-sm btn-info pull-right email-tab">Edit</a>
+													<small>Manage your email</small>
+
+													<a href="mailto:example@gmail.com" style="display: block;color: #000!important;text-decoration: none;margin-left: 19px;">example@gmail.com</a>
+
+													<form action="#" class="email-toggle">
+														
+														<input type="email" name="new-password" class="form-control" required placeholder="Enter Your New Email">
+
+														<a href="#" class="form-control btn" data-toggle="modal" data-target="#verifycodeModal">Change Email</a>
+													</form>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-md-12">
+													<span>
+														<i class="fa fa-phone"></i>&nbsp;Login Phone Number
+													</span>
+
+													<a class="btn btn-sm btn-info pull-right phone-tab">Edit</a>
+													<small>Manage your phone number</small>
+
+													<a href="tel:098090675" style="display: block;color: #000!important;text-decoration: none;margin-left: 19px;">098090675</a>
+
+													<form action="#" class="phone-toggle">
+														
+														<input type="tel" name="new-password" class="form-control" required placeholder="New Phone Number">
+
+														<a href="#" class="form-control btn" data-toggle="modal" data-target="#verifycodeModal">Change Phone No.</a>
+													</form>
+												</div>
+											</div>
+										</div>
+
+										<!-- Blocking! -->
+										<div id="blocking">
+											<h4>Blocking Setting</h4>
+
+											<div class="row">
+												<div class="col-md-6">
+													<i class="fa fa-comments"></i>
+													<span>Message</span>
+													<small>Email, phone, social account public or private</small>
+												</div>
+												<div class="col-md-6">
+													<select class="form-control pull-right">
+														<option>Public</option>
+														<option value="public">Public</option>
+														<option value="private">Private</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-md-12">
+													<i class="fa fa-ban"></i>
+													<span>Blocking</span>
+													<small>Block Messages</small>
+
+													<table class="table">
+														<tr>
+															<th>Min Min</th>
+															<td>
+																<select class="form-control">
+																	<option>Unblock</option>
+																	<option value="unblock">Unblock</option>
+																	<option class="block">Block</option>
+																</select>
+															</td>
+														</tr>
+
+														<tr>
+															<th>Pho Cho</th>
+															<td>
+																<select class="form-control">
+																	<option>Unblock</option>
+																	<option value="unblock">Unblock</option>
+																	<option class="block">Block</option>
+																</select>
+															</td>
+														</tr>
+
+														<tr>
+															<th>Thet Htar</th>
+															<td>
+																<select class="form-control">
+																	<option>Unblock</option>
+																	<option value="unblock">Unblock</option>
+																	<option class="block">Block</option>
+																</select>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</div>
+										</div>
+
+										<!-- Page Role! -->
+										<div id="pagerole">
+											<h4>Page Role Setting</h4>
+
+											<div class="row">
+												<div class="col-md-12">
+													<span>Assign Role</span>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-md-12">
+													<form action="#">
+														<select class="form-control">
+															<option>Roles</option>
+															<option value="Admin">Admin</option>
+															<option value="editor">Editor</option>
+															<option value="manager">Manager</option>
+														</select>
+
+														<input type="text" name="name" class="form-control" placeholder="Enter User Name" required>
+
+														<input type="submit" value="Add" class="form-control btn">
+													</form>
+												</div>
+											</div>
+										</div>
+
+										<!-- Notificaton! -->
+										<div id="notification">
+											<h4>Notifications</h4>
+
+											<div class="row">
+												<div class="col-md-12">
+													<i class="fa fa-bell"></i>
+													<span>App Notifications</span>
+													<small>Manage your notifications</small>
+												</div>
+											</div>
+
+											<div class="row" style="margin-left: 18px;margin-top: 10px;">
+												<div class="col-md-5">
+													<span>Job App Notifications</span>
+												</div>
+												<div class="col-md-3">
+													<select class="form-control pull-right">
+														<option>On</option>
+														<option value="on">On</option>
+														<option value="off">Off</option>
+													</select>
+												</div>
+
+												<div class="col-md-5">
+													<span>House App Notifications</span>
+												</div>
+												<div class="col-md-3">
+													<select class="form-control pull-right">
+														<option>On</option>
+														<option value="on">On</option>
+														<option value="off">Off</option>
+													</select>
+												</div>
+											</div>
+
+											<!-- Email Noti! -->
+											<div class="row">
+												<div class="col-md-12">
+													<i class="fa fa-envelope"></i>
+													<span>Email Notifications</span>
+													<small>Manage your email notifications</small>
+												</div>
+											</div>
+
+											<div class="row" style="margin-left: 18px;margin-top: 10px;">
+												<div class="col-md-5">
+													<span>Job Email Notifications</span>
+												</div>
+												<div class="col-md-3">
+													<select class="form-control pull-right">
+														<option>On</option>
+														<option value="on">On</option>
+														<option value="off">Off</option>
+													</select>
+												</div>
+
+												<div class="col-md-5">
+													<span>House Email Notifications</span>
+												</div>
+												<div class="col-md-3">
+													<select class="form-control pull-right">
+														<option>On</option>
+														<option value="on">On</option>
+														<option value="off">Off</option>
+													</select>
+												</div>
+											</div>
+
+											<!-- Message Noti! -->
+											<div class="row" style="margin-left: 18px;margin-top: 15px;">
+												<div class="col-md-5" style="margin-left: -18px;">
+													<i class="fa fa-comments"></i>
+													<span style="font-weight: bold;">Message Notifications</span>
+													<small>Manage your message notifications</small>
+												</div>
+												<div class="col-md-3">
+													<select class="form-control pull-right">
+														<option>On</option>
+														<option value="on">On</option>
+														<option value="off">Off</option>
+													</select>
+												</div>
+											</div>
+
+
+										</div>
+
+										<!-- Help Center! -->
+										<div id="helpcenter">
+											<h1>Help Center</h1>
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					<!-- Body Right Setting Section End! -->
 
 					<!-- Schedule Popup Start! -->
 					<div id="myModal" class="modal fade" role="dialog">		
@@ -706,8 +1207,36 @@ Project Designed By Tracer Land
 				</div>
 			</div>
 		</div>
+		<!-- Add Input Modal! -->
+		<div  id="addModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+        				<h4 class="modal-title">Add Details</h4>
+					</div>
 
-		<!-- Group Field Popup!! -->
+					<div class="modal-body">
+						<form action="#">
+							<div class="row">
+								<div class="col-md-9">
+									<input type="text" name="name" class="form-control" required>
+								</div>
+								<div class="col-md-3">
+									<input type="submit" value="Add" name="submit" class="btn btn-info">
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact Input Field Popup!! -->
 		<div  id="inputcontactModal" class="modal fade" role="dialog">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -744,8 +1273,45 @@ Project Designed By Tracer Land
 				</div>
 			</div>
 		</div>
+		<!-- Add Contant Input! -->
+		<div  id="addcontactModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+        				<h4 class="modal-title">Add Contact</h4>
+					</div>
 
-		<!-- Group Field Popup!! -->
+					<div class="modal-body">
+						<form action="#">
+							<div class="row">
+								<div class="col-md-12">
+									<input type="email" name="email" class="form-control" required>
+								</div>
+								<div class="col-md-12">
+									<input type="text" name="website" class="form-control">
+								</div>
+								<div class="col-md-12">
+									<input type="text" name="facebook" class="form-control">
+								</div>
+								<div class="col-md-12">
+									<input type="text" name="twitter" class="form-control">
+								</div>
+								<div class="col-md-12">
+									<input type="submit" value="Update" name="submit" class="btn btn-info">
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Vision Popup!! -->
 		<div  id="inputvisionModal" class="modal fade" role="dialog">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -776,6 +1342,37 @@ Project Designed By Tracer Land
 				</div>
 			</div>
 		</div>
+		<!-- Add Vision Input! -->
+		<div  id="addvisionModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+        				<h4 class="modal-title">Add Vision</h4>
+					</div>
+
+					<div class="modal-body">
+						<form action="#">
+							<div class="row">
+								<div class="col-md-12">
+									<input type="text" name="name" class="form-control" required>
+								</div>
+								<div class="col-md-12">
+									<textarea name="name" class="form-control"></textarea>
+								</div>
+								<div class="col-md-12">
+									<input type="submit" value="Add" name="submit" class="btn btn-info">
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- About Field Popup!! -->
 		<div  id="inputtextareaModal" class="modal fade" role="dialog">
@@ -791,6 +1388,34 @@ Project Designed By Tracer Land
 							<div class="row">
 								<div class="col-md-12">
 									<textarea name="name" class="form-control">About</textarea>
+								</div>
+								<div class="col-md-12">
+									<input type="submit" value="Update" name="submit" class="btn btn-info">
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Add About Modal! -->
+		<div  id="addaboutModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+        				<h4 class="modal-title">Add About</h4>
+					</div>
+
+					<div class="modal-body">
+						<form action="#">
+							<div class="row">
+								<div class="col-md-12">
+									<textarea name="name" class="form-control"></textarea>
 								</div>
 								<div class="col-md-12">
 									<input type="submit" value="Update" name="submit" class="btn btn-info">
@@ -836,6 +1461,43 @@ Project Designed By Tracer Land
 		</div>
 
 
+		<!-- Here is Setting Modal Popup Start!!! -->
+		<!-- Phone or Email Check Verify! -->
+		<div  id="verifycodeModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+        				<h4 class="modal-title">Verify Phone or Email</h4>
+					</div>
+
+					<div class="modal-body">
+						<form action="#">
+							<div class="row">
+								<div class="col-md-12">
+									<p>
+										We just sent a code to
+										<a href="#">Email or Phone</a>
+									</p>
+								</div>
+								<div class="col-md-12">
+									<input type="text" name="code" class="form-control" placeholder="Enter Your Code" required>
+								</div>
+								<div class="col-md-12">
+									<input type="submit" value="Save" name="submit" class="btn btn-info pull-right">
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
 		<!-- Scripts! -->
 		<script type="text/javascript">
 			
@@ -856,6 +1518,19 @@ Project Designed By Tracer Land
 					$("#second-ul li a span").toggleClass("caret");
 				});
 
+				/*Slide Toggle Start!!!*/
+				$("#body_right_setting_section .table_section .my_setting .tab-section #login .password-tab").click(function(){
+					$("#body_right_setting_section .table_section .my_setting .tab-section #login .password-toggle").slideToggle();
+				});
+
+				$("#body_right_setting_section .table_section .my_setting .tab-section #login .email-tab").click(function(){
+					$("#body_right_setting_section .table_section .my_setting .tab-section #login .email-toggle").slideToggle();
+				});
+
+				$("#body_right_setting_section .table_section .my_setting .tab-section #login .phone-tab").click(function(){
+					$("#body_right_setting_section .table_section .my_setting .tab-section #login .phone-toggle").slideToggle();
+				});
+
 			});
 
 			function get(obj){
@@ -867,11 +1542,68 @@ Project Designed By Tracer Land
 			function tab_switchHome(){
 				get('body_right_home_section').style.display = "block";
 				get('body_right_job_section').style.display = "none";
+				get('body_right_setting_section').style.display = "none";
 			}
 
 			function tab_switchJob(){
 				get('body_right_job_section').style.display = "block";
 				get('body_right_home_section').style.display = "none";
+				get('body_right_setting_section').style.display = "none";
+			}
+
+			function tab_switchSetting(){
+				get('body_right_setting_section').style.display = "block";
+				get('body_right_home_section').style.display = "none";
+				get('body_right_job_section').style.display = "none";
+			}
+
+			function tab_switchLanguage(){
+				get('language').style.display = "block";
+				get('login').style.display = "none";
+				get('blocking').style.display = "none";
+				get('pagerole').style.display = "none";
+				get('notification').style.display = "none";
+				get('helpcenter').style.display = "none";
+			}
+			function tab_switchLogin(){
+				get('language').style.display = "none";
+				get('login').style.display = "block";
+				get('blocking').style.display = "none";
+				get('pagerole').style.display = "none";
+				get('notification').style.display = "none";
+				get('helpcenter').style.display = "none";
+			}
+			function tab_switchBlocking(){
+				get('language').style.display = "none";
+				get('login').style.display = "none";
+				get('blocking').style.display = "block";
+				get('pagerole').style.display = "none";
+				get('notification').style.display = "none";
+				get('helpcenter').style.display = "none";
+			}
+			function tab_switchPagerole(){
+				get('language').style.display = "none";
+				get('login').style.display = "none";
+				get('blocking').style.display = "none";
+				get('pagerole').style.display = "block";
+				get('notification').style.display = "none";
+				get('helpcenter').style.display = "none";
+			}
+			function tab_switchNotification(){
+				get('language').style.display = "none";
+				get('login').style.display = "none";
+				get('blocking').style.display = "none";
+				get('pagerole').style.display = "none";
+				get('notification').style.display = "block";
+				get('helpcenter').style.display = "none";
+			}
+			function tab_switchHelpcenter(){
+				get('language').style.display = "none";
+				get('login').style.display = "none";
+				get('blocking').style.display = "none";
+				get('pagerole').style.display = "none";
+				get('notification').style.display = "none";
+				get('helpcenter').style.display = "block";
 			}
 
 		</script>
