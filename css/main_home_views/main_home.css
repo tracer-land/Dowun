@@ -151,17 +151,6 @@
 	display: block!important;
 }
 
-/* Notification Section */
-nav li .dropdown-menu{
-	background: #fff!important;
-	border: 0px!important;
-	width: 380px;
-	color: #666!important;
-	position: absolute!important;
-	left: -200%!important;
-	margin-top: 6px!important;
-}
-
 /* Category Slider */
 #category_slider{
 	width: 100%;

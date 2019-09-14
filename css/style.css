@@ -54,6 +54,20 @@ nav{
 }
 
 /* Navigation CSS! */
+/*nav li .dropdown-menu{
+	background: #fff!important;
+	border: 0px!important;
+	color: #666!important;
+	margin-top: 6px!important;
+	margin-right: -280px!important;
+}
+nav #drp-menu-another .dropdown-menu{
+	background: #fff!important;
+	border: 0px!important;
+	color: #666!important;
+	margin-top: 6px!important;
+	margin-right: -120px!important;
+}*/
 nav li .dropdown-menu{
 	background: #fff!important;
 	border: 0px!important;
@@ -70,21 +84,26 @@ nav li .dropdown-menu li{
 nav li .dropdown-menu li a{
 	font-weight: bold;
 	color: #666!important;
+	height: 100px!important;
 }
 nav li .dropdown-menu li a:hover{
-	background: #ccc!important;
+	background: rgba(0,0,0,0)!important;
 }
-nav li .dropdown-menu li a small{
+nav li .dropdown-menu li small{
 	font-size: 10px!important;
 	display: block!important;
 	padding-top: 5px;
-	margin-left: 20px;
+	margin-left: 40px;
+	margin-top: -80px;
 }
 nav li .dropdown-menu li:last-child{
 	border-bottom: 0px!important;
 }
 nav li .dropdown-menu li:hover{
 	background-color: #ccc!important;
+}
+nav li .dropdown-menu .drp-title a{
+	height: auto!important;
 }
 nav li .dropdown-menu .drp-title:hover{
 	background: #fff!important;
@@ -155,7 +174,7 @@ nav .nav-li .dropdown-menu{
 	width: 400px;
 	color: #666!important;
 	position: absolute!important;
-	left: -350%!important;
+	left: -320%!important;
 	margin-top: 6px!important;
 }
 nav .nav-li .dropdown-menu a{
@@ -169,17 +188,16 @@ nav .nav-li .dropdown-menu a{
 nav .nav-li .dropdown-menu a:hover li{
 	background: #fff!important;
 }
-nav .nav-li .dropdown-menu .noti-caret{
+nav .nav-li .noti-caret{
 	display: block;
-	position: absolute;
-	right: 45%;
-	top: -1%;
 	color: #3a9bfa!important;
-	z-index: 100;
 	width: 4px;
 	height: 4px;
 	transform: rotate(-180deg);
 	color: #fff!important;
+	top: -8px;
+	z-index: 100!important;
+	position: relative;
 }
 nav .nav-li .dropdown-menu a .row img{
 	width: 40px;

@@ -7,30 +7,6 @@
 	background-color: #ccc;
 }
 
-/* Navigation CSS! */
-nav li sub{
-	font-size: 16px!important;
-	display: inline-block!important;
-	margin-right: -5px!important;
-}
-nav li sup{
-	width: 14px;
-	height: 14px;
-	font-size: 10px;
-	font-weight: bold;
-	text-align: center;
-	line-height: 14px;
-	border-radius: 25px;
-	background: red;
-	display: inline-block!important;
-}
-nav li:last-child a img{
-	width: 25px;
-	height: 25px;
-	border-radius: 25px;
-	display: inline-block;
-}
-
 
 /* Sub Navigation Bar CSS! */
 #sub_nav{
@@ -562,6 +538,167 @@ nav li:last-child a img{
 #body_right_setting_section .table_section .my_setting .tab-section #helpcenter{
 	display: none;
 }
+
+
+/*Body Right Inbox Section! */
+#body_right_inbox_section{
+	display: none;
+	margin-bottom: 20px;
+}
+#body_right_inbox_section .inbox-section{
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #fff;
+	margin-top: 45px;
+}
+#body_right_inbox_section .inbox-section .col-md-3 img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	display: inline-block;
+}
+#body_right_inbox_section .inbox-section .col-md-3 strong{
+	display: inline-block;
+	margin-left: 8px;
+}
+#body_right_inbox_section .inbox-section .message-title{
+	/*margin-bottom: 20px;*/
+}
+#body_right_inbox_section .inbox-section .message-title .col-md-9{
+	text-align: center;
+}
+#body_right_inbox_section .inbox-section .message-title h4{
+	font-weight: bold;
+	padding: 0px;
+	display: inline-block;
+}
+
+#body_right_inbox_section .inbox-section .message-search{
+	border: 1px solid rgba(0,0,0,0.1);
+	overflow-y: auto!important;
+	overflow-x: hidden!important;
+	height: 100vh;
+	padding: 0px!important;
+}
+#body_right_inbox_section .inbox-section .message-search .search-field{
+	padding: 12px 18px 12px 18px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#body_right_inbox_section .inbox-section .message-search .search-field form input{
+	width: 57%;
+	display: inline-block;
+}
+#body_right_inbox_section .inbox-section .message-search .search-field form select{
+	width: 32%;
+	display: inline-block;
+}
+
+#body_right_inbox_section .inbox-section .message-text{
+	border: 1px solid rgba(0,0,0,0.1);
+	padding-top: 15px;
+	padding-bottom: 15px;
+	height: 100vh;
+}
+
+#body_right_inbox_section .inbox-section .message-search a{
+	text-decoration: none;
+	outline: none;
+	color: #000!important;
+	display: block;
+}
+#body_right_inbox_section .inbox-section .message-search .active_tab{
+	border-left: 2px solid #3a9bfa;
+}
+#body_right_inbox_section .inbox-section .message-search a .message-tab{
+	padding: 10px 5px 10px 5px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#body_right_inbox_section .inbox-section .message-search a .message-tab .col-md-3 img{
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+}
+#body_right_inbox_section .inbox-section .message-search a .message-tab .col-md-9 p{
+	margin-top: 5px;
+	font-size: 13px;
+}
+
+#body_right_inbox_section .inbox-section .message-text .name-bar{
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 10px;
+}
+#body_right_inbox_section .inbox-section .message-text .name-bar img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	display: inline-block;
+}
+#body_right_inbox_section .inbox-section .message-text .name-bar span{
+	display: block;
+}
+#body_right_inbox_section .inbox-section .message-text .chat-left,#body_right_inbox_section .inbox-section .message-text .chat-right{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#body_right_inbox_section .inbox-section .message-text .chat-left .col-md-1{
+	/*background: red;*/
+}
+#body_right_inbox_section .inbox-section .message-text .chat-left .col-md-11{
+	padding-left: 0px;
+}
+#body_right_inbox_section .inbox-section .message-text .chat-left .col-md-1 img{
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+}
+#body_right_inbox_section .inbox-section .message-text .chat-left .col-md-11 strong{
+	display: block;
+}
+#body_right_inbox_section .inbox-section .message-text .chat-left .col-md-11 div,#body_right_inbox_section .inbox-section .message-text .chat-right .col-md-12 div{
+	padding: 7px;
+	background-color: #3a9bfa;
+	font-size: 13px;
+	color: #fff;
+	display: inline-block;
+	max-width: 70%;
+}
+
+#body_right_inbox_section .inbox-section .message-text .message-footer{
+	border-top: 1px solid rgba(0,0,0,0.1);
+	position: absolute;
+	bottom: 0%!important;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#body_right_inbox_section .inbox-section .message-text .message-footer .col-md-12{
+	margin-top: 10px;
+}
+#body_right_inbox_section .inbox-section .message-text .message-footer .col-md-12 textarea{
+	max-width: 100%;
+	border-top: 0px!important;
+	border-left: 0px!important;
+	border-right: 0px!important;
+	border-radius: 0px!important;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+}
+#body_right_inbox_section .inbox-section .message-text .message-footer .col-md-12 input[type="file"] {
+    display: none;
+}
+#body_right_inbox_section .inbox-section .message-text .message-footer .col-md-12 .custom-file-upload i{
+	font-size: 16px;
+	color: #3a9bfa;
+}
+#body_right_inbox_section .inbox-section .message-text .message-footer .col-md-12 .custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+
+
 
 /*Schedule Modal CSS!*/
 #myModal .modal-body form h4{
