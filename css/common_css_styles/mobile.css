@@ -59,8 +59,16 @@ nav .nav-li .dropdown-menu .noti-caret{
 }
 
 /* Language Toggle CSS Style */
-#language_toggle_select select{
-	width: 15%;
+#language_toggle_select{
+	width: 100%;
+	position: relative;
+}
+#language_toggle_select .dropdown-menu{
+	position: absolute;
+	width: 100%;
+}
+#language_toggle_select .dropdown-menu .language-caret{
+	display: none;
 }
 
 

@@ -65,8 +65,11 @@ nav .nav-li .dropdown-menu .noti-caret{
 }
 
 /* Language Toggle CSS Style */
-#language_toggle_select select{
-	width: 100%;
+#language_toggle_select{
+	position: relative;
+}
+#language_toggle_select .dropdown-menu{
+	position: absolute;
 }
 
 /* Download App CSS Style */
