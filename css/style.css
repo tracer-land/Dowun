@@ -340,55 +340,7 @@ nav .nav-li .dropdown-menu a .row p em{
 }
 
 
-/* Slider */
-.carousel-control.left {
-    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
-    background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
-    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
-    background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 0%)!important;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-    background-repeat: repeat-x;
-}
 
-.carousel-control.right {
-    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
-    background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
-    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
-    background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 0%)!important;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-    background-repeat: repeat-x;
-}
-
-.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
-    left: -10%!important;
-    margin-left: 0px!important;
-    color: #ccc!important;
-}
-
-.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
-    right: -10%!important;
-    margin-right: 0px!important;
-    color: #ccc!important;
-}
-
-.carousel-indicators {
-	display: none!important;
-    position: absolute;
-    top: 100%!important;
-    margin-top: 50px;
-    bottom: 10px;
-    left: 50%;
-    z-index: 15;
-    width: 60%;
-    padding-left: 0;
-    margin-left: -30%;
-    text-align: center;
-    list-style: none;
-}
-
-.carousel-inner{
-	padding: 10px 40px 10px 40px;
-}
 
 
 /* Media Queries!!! */

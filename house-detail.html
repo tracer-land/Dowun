@@ -1,0 +1,810 @@
+<!-- 
+
+Project Title = Dowun
+Project Type = Multi Platform Website
+Project Front-End Technologies = HTML, CSS, Boostrap, JQuery
+Project Designed By Tracer Land
+
+ -->
+
+<!-- House Detail Page!!! -->
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Dowun - House Detail</title>
+
+		<!-- Logo Image -->
+		<link rel="icon" href="images/logo.png">
+
+		<!-- Meta Tags -->
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+		<!-- CSS Links! -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/all.css">
+		<link rel="stylesheet" type="text/css" href="css/all.min.css">
+
+		<link rel="stylesheet" type="text/css" href="css/house_detail_views/house-detail.css"><!-- House Search CSS! -->
+
+		<!-- Common CSS Styles! -->
+		<link rel="stylesheet" type="text/css" href="css/common_css_styles/mobile.css" media="screen and (max-width: 600px)">
+		<link rel="stylesheet" type="text/css" href="css/common_css_styles/tablet.css" media="screen and (max-width: 998px)">
+
+		<link rel="stylesheet" type="text/css" href="css/house_detail_views/mobile.css" media="screen and (max-width: 768px) and (min-width: 500px)">
+		<link rel="stylesheet" type="text/css" href="css/house_detail_views/tablet.css" media="screen and (max-width: 1028px)">
+
+		<!-- Boostrap CSS! -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Font Style! -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+		<!-- Font Awsome Link -->
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+		<script defer src="js/all.js"></script>
+
+</head>
+<body>
+
+		<!-- JQuery, Bootstrap JS, Script Links! -->
+		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="js/script.js"></script>
+
+
+		<!-- Header Section Start! -->
+			<nav class="navbar navbar-default navbar-fixed-top"><!-- Navigation Start -->
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="index.html">
+							<img src="images/logo.png">
+						</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<!-- Language Toggle Start! -->
+						<ul id="language_toggle_select" class="nav navbar-nav navbar-right">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Myanmar</a>
+							<ul class="dropdown-menu">
+								<span class="caret language-caret"></span>
+								<li><a href="#">Myanmar</a></li>
+								<li><a href="#">English</a></li>
+								<li><a href="#">Chinese</a></li>
+								<li><a href="#">Japanese</a></li>
+							</ul>
+						</ul>
+						<!-- Language Toggle End! -->
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="house.html">House</a></li>
+							<li><a href="job.html">Jobs</a></li>
+							
+							<li id="drp-menu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Post</a>
+								<ul class="dropdown-menu">
+									<span class="caret first-caret"></span>
+									<li class="drp-title">
+										<a href="#">Create Post</a>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;Place
+										</a>
+										<small>Share your need to other, if you are finding a room or place.</small>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-suitcase"></i>&nbsp;&nbsp;Job
+										</a>
+										<small>Find employee and post a job to all.</small>
+									</li>
+									<li>
+										<a href="#"><i class="fa fa-home"></i>&nbsp;&nbsp;House
+										</a>
+										<small>Find a house and post a house to all.</small>
+									</li>
+								</ul>
+							</li>
+
+							<li id="drp-menu-another">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Create</a>
+								<ul class="dropdown-menu">
+									<span class="caret second-caret"></span>
+									<li class="drp-title">
+										<a href="#">Create Page</a>
+									</li>
+									<li>
+										<a href="my-profile.html"><i class="fa fa-wpforms"></i>&nbsp;&nbsp;CV
+										</a>
+										<small>Candidate CV to apply job and promote you need.</small>
+									</li>
+									<li>
+										<a href="create-page-step-1.html"><i class="fa fa-briefcase"></i>&nbsp;&nbsp;Business Page
+										</a>
+										<small>Find employee and post a job to all.</small>
+									</li>
+								</ul>
+							</li>
+							
+							<li><a href="#">Message</a></li>
+							<li><a href="create-account-phone.html">Register</a></li>
+							<li><a href="sign-in.html">Login</a></li>
+
+							<li class="nav-li">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<sub class="fa fa-bell"></sub><sup>7</sup>
+								</a>
+
+								<!-- Notification Section Start! -->
+								<ul class="dropdown-menu">
+
+									<center>
+										<span class="caret noti-caret"></span>
+									</center>
+
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Share your post.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>2 Mins Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Commented on post you shared.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>1 Hour Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Followed your page.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>4 Hours Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Invited his friends to follow your page.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>12 Hour Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Reviewd on Golden Restaurant.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>1 Day Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Uploded photos at Chaungtha Beach.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>2 Days Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+								</ul>
+								<!-- Notification Section Start! -->
+							</li>
+							
+							<li class="nav-li">
+								<a href="#">
+									<img src="images/client.jpg" class="img-responsive">&nbsp;Me
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<div id="header">
+				<div class="container">
+					<div id="header_wrap">
+
+						<!-- Form! -->
+						<div id="header_form_wrap">
+			
+							<!-- Form! -->
+							<div id="form_one">
+								<form>
+									
+									<div class="row" id="row_one" style="width:100%;">
+										<select class="form-control" id="house_dropdown">
+											<option>House</option>
+										</select>
+
+										<input type="text" name="text" placeholder="Search House" class="form-control">
+									
+										<select class="form-control">
+											<option>Location</option>
+											<option>Yangon</option>
+											<option>Mandalay</option>
+											<option>Taunggyi</option>
+										</select>
+
+										<select class="form-control">
+											<option>Rental Purpose</option>
+											<option>Living</option>
+											<option>Commercial</option>
+										</select>
+
+										<button type="submit" value="Search" class="btn" id="search_place">Search Place</button>
+
+										<a href="#" id="detail_search">Details</a>
+									</div>
+
+									<div class="row collapse" id="detail" style="width: 100%;">
+										
+										<div>
+											<input type="text" name="text" placeholder="Search House" class="form-control">
+									
+											<select class="form-control">
+												<option>Location</option>
+												<option>Yangon</option>
+												<option>Mandalay</option>
+												<option>Taunggyi</option>
+											</select>
+
+											<select class="form-control">
+												<option>City</option>
+												<option>Yangon</option>
+												<option>Mandalay</option>
+												<option>Bago</option>
+											</select>
+
+											<select class="form-control">
+												<option>Town</option>
+												<option>Sanchaung</option>
+												<option>Hlaedan</option>
+												<option>Yankin</option>
+											</select>
+
+											<select class="form-control">
+												<option>Rental Purpose</option>
+												<option>Living</option>
+												<option>Commercial</option>
+											</select>
+
+											<select class="form-control">
+												<option>Property Type</option>
+												<option>Condo</option>
+												<option>Building</option>
+											</select>
+										</div>
+
+										<div>
+											<select class="form-control">
+												<option>Room Type</option>
+												<option>Whole Room</option>
+												<option>Share Room</option>
+											</select>
+
+											<input type="text" name="min-price" placeholder="Minimum Price" class="form-control">
+
+											<input type="text" name="max-price" placeholder="Maximum Price" class="form-control">
+										</div>
+
+										<div>
+											<input type="text" name="area-sq" placeholder="Area-Sq" class="form-control">
+
+											<input type="text" name="area-ft" placeholder="Area-Ft" class="form-control">
+
+											<button type="submit" value="Search" class="btn">Search Place</button>
+
+											<button type="button" class="btn" id="less_search">Less Search</button>
+										</div>
+
+									</div>
+
+								</form>
+
+							</div>
+						</div>	
+					</div>
+				</div>
+
+				<a href="#" class="btn btn-info btn-sm" style="position: fixed;right: 1%;top: 10%;z-index: 99;">
+					<i class="fa fa-heart"></i>&nbsp;Save
+				</a>
+			</div>
+		<!-- Header Section End! -->
+
+
+		<!-- Show Map Section Start! -->
+			<div id="show_map">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-10">
+							<div id="bg_group">
+								<a href="#" class="btn btn-sm active">Male</a>
+								<a href="#" class="btn btn-sm">Female</a>
+								<a href="#" class="btn btn-sm">Teamup</a>
+								<a href="#" class="btn btn-sm">Share</a>
+								<a href="#" class="btn btn-sm">New</a>
+								<a href="#" class="btn btn-sm">Old</a>
+								<a href="#" class="btn btn-sm">Building</a>
+								<a href="#" class="btn btn-sm">Share Room</a>
+							</div>
+						</div>
+
+						<div class="col-md-2 map_toggle">
+							<!-- Show Map Toggle Start! -->
+							<ul id="showmap_toggle_select" class="pull-right">
+								<li style="font-size: 12px;">Show Map&nbsp;</li>
+								<li>
+									<span>
+										<a href="#" id="on">On</a>
+										<a href="#" id="off" class="selected_map">Off</a>
+									</span>
+								</li>
+							</ul>
+							<!-- Show Map Toggle End! -->
+						</div>
+
+					</div>
+				</div>
+			</div>
+		<!-- Show Map Section Start! -->
+
+		<!-- Carousel Section Start! -->
+			<div id="carousel_slider">
+				<div class="container-fluid">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						 <div class="carousel-inner">
+						 	<div class="item active">
+						 		<div class="col-md-4 col-sm-6 col-xs-6">
+						 			<img src="images/house-1.jpeg" class="img-responsive">
+						 		</div>
+						 		<div class="col-md-4 col-sm-6 col-xs-6">
+						 			<img src="images/house-2.jpg" class="img-responsive">
+						 		</div>
+						 		<div class="col-md-4 col-sm-12 col-xs-12">
+						 			<img src="images/house-3.jpg" class="img-responsive">
+						 		</div>
+						 	</div>
+						 	<div class="item">
+						 		<div class="col-md-4 col-sm-6 col-xs-6">
+						 			<img src="images/house-4.jpg" class="img-responsive">
+						 		</div>
+						 		<div class="col-md-4 col-sm-6 col-xs-6">
+						 			<img src="images/house-5.jpg" class="img-responsive">
+						 		</div>
+						 		<div class="col-md-4 col-sm-12 col-xs-12">
+						 			<img src="images/house-6.jpg" class="img-responsive">
+						 		</div>
+						 	</div>
+						 </div>
+
+						 <!-- Left and right controls -->
+						  <a style="width: 60px!important;" class="left carousel-control" href="#myCarousel" data-slide="prev">
+						  		<span class="glyphicon glyphicon-chevron-left"></span>
+    							<span class="sr-only">Previous</span>
+						  </a>
+
+						  <a style="width: 60px!important;" class="right carousel-control" href="#myCarousel" data-slide="next">
+						  		<span class="glyphicon glyphicon-chevron-right"></span>
+    							<span class="sr-only">Previous</span>
+						  </a>
+
+						  <button class="btn-sm" style="position: absolute;z-index: 10;right: 3%;top: 85%;">
+						  	<i class="fa fa-camera"></i>&nbsp;6
+						  </button>
+					</div>
+				</div>
+			</div>
+		<!-- Carousel Section End! -->
+
+
+		<!-- Body Section Start! -->
+			<div id="body-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-sm-12 col-xs-12">
+							<div class="col-md-12">
+								<h4>Sama Road, Yankin, Yangon</h4>
+								<strong>မရမ္းကုန္းၿမိဳ ့နယ္တြင္ အိမ္ငွားရန္ရိွ</strong>
+							</div>
+
+							<div class="col-md-12">
+								<div class="col-md-6">
+									<ul>
+										<li><i class="fa fa-home"></i>&nbsp;Whole Property For Rent</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<ul>
+										<li><i class="fa fa-money-bill-alt"></i>&nbsp;MMK50000/Month</li>
+									</ul>
+								</div>
+								<div class="col-md-4">
+									<ul>
+										<li><i class="fa fa-bed"></i>&nbsp;1 Bedroom</li>
+									</ul>
+								</div>
+								<div class="col-md-4">
+									<ul>
+										<li><i class="fa fa-bath"></i>&nbsp;1 Bathroom</li>
+									</ul>
+								</div>
+								<div class="col-md-4">
+									<ul>
+										<li><i class="fab fa-adn"></i>&nbsp;1900 Square Feet</li>
+									</ul>
+								</div>
+
+							</div>
+
+							<div class="col-md-12">
+								<h4>About Property</h4>
+
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+
+							<div class="col-md-12">
+								<h4>Property Overview</h4>
+
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-building"></i>&nbsp;Place For : Living</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-calendar"></i>&nbsp;Available In : September 5 2019</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-pen"></i>&nbsp;Bond : 6 Months</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-plug"></i>&nbsp;Bill(Electricity & Others) : Included</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-warehouse"></i>&nbsp;Place Type : Apartment</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-bed"></i>&nbsp;Private Room : 1</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-user"></i>&nbsp;Flatmate : 0</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-bath"></i>&nbsp;Own Bathroom : 0</li>
+									</ul>
+								 </div>
+							</div>
+
+							<div class="col-md-12">
+								<h4>Accept</h4>
+
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-smoking"></i>&nbsp;Smoker</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-glasses"></i>&nbsp;Retires</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-user-graduate"></i>&nbsp;Students</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-users"></i>&nbsp;Welfare</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-female"></i>&nbsp;All Female</li>
+									</ul>
+								 </div>
+							</div>
+
+							<div class="col-md-12">
+								<h4>Included</h4>
+
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-wifi"></i>&nbsp;Internet Available</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-parking"></i>&nbsp;Parking Available</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-fan"></i>&nbsp;Air Condition</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-couch"></i>&nbsp;Funishing</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-bell"></i>&nbsp;Fire Alarm</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-tv"></i>&nbsp;CCTV</li>
+									</ul>
+								 </div>
+							</div>
+
+							<div class="col-md-12">
+								<h4>Property Loction</h4>
+
+								<h5>Yangon</h5>
+
+								<span>Yankin&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+								<span>Bo Lay Street, Naung Yoe Road</span>
+
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.3386999500635!2d96.12592501440015!3d16.809545288427397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb3762d7528b%3A0xc6187c2487435102!2sThan%20Ta%20Dar%20St%2C%20Yangon!5e0!3m2!1sen!2smm!4v1568704120793!5m2!1sen!2smm" width="100%" height="450" frameborder="0" style="border:0;margin-top: 20px;" allowfullscreen=""></iframe>
+							</div>
+
+							<div class="col-md-12" style="border-bottom: 0px!important;">
+								<h4>Near By</h4>
+
+								<h5 style="margin-top: 15px;margin-left: 20px;color:#3a9bfa;"><i class="fa fa-bus"></i>&nbsp;Near Bus Stop</h5>
+
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-map-marker-alt"></i>&nbsp;Shopping</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-map-marker-alt"></i>&nbsp;24Hr Store</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-map-marker-alt"></i>&nbsp;School</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-map-marker-alt"></i>&nbsp;Police Station</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-map-marker-alt"></i>&nbsp;Popular Place</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-map-marker-alt"></i>&nbsp;Hospital</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-map-marker-alt"></i>&nbsp;ATM</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-map-marker-alt"></i>&nbsp;Bank</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-map-marker-alt"></i>&nbsp;Clinic</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-map-marker-alt"></i>&nbsp;Medical Center</li>
+									</ul>
+								 </div>
+								 <div class="col-md-6">
+								 	<ul>
+										<li><i class="fa fa-map-marker-alt"></i>&nbsp;Restaurants</li>
+									</ul>
+								 </div>
+
+								 <div class="col-md-12" style="border-bottom: 0px!important;">
+								 	<h5>About This Place More</h5>
+
+								 	<p>
+								 		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								 	</p>
+								 </div>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-12 col-xs-12">
+							
+							<form action="#">
+								
+								<table class="table">
+									<tr>
+										<td>
+											<img src="images/kbz.png">
+										</td>
+										<td>
+											<h5>Min Agency</h5>
+											<small>Online 2 Day Agos</small>
+										</td>
+									</tr>
+								</table>
+
+								<textarea class="form-control" placeholder="Enter Message" required></textarea>
+
+								<input type="submit" value="Send Message" class="btn btn-sm btn-info">
+
+								<a href="tel:095042398" class="btn btn-sm btn-info">095042398</a>
+
+							</form>
+
+							<div id="social-wrap">
+								<h5>View Min Angency On Social Medias</h5>
+
+								<center>
+									<a href="#" id="icon" class="text-center">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+
+									<a href="#" id="icon" class="text-center">
+										<i class="fab fa-twitter"></i>
+									</a>
+
+									<a href="#" id="icon" class="text-center">
+										<i class="fab fa-linkedin-in"></i>
+									</a>
+								</center>
+
+								<small>
+									Upgrade your account to view Min Myo on Social.
+								</small>
+							</div>
+
+							<p>
+								<a href="#">
+									<i class="fas fa-exclamation-triangle"></i>&nbsp;Report This List
+								</a>
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- Body Section End! -->
+
+		<!-- Copy Right -->
+		<div id="copyright">
+			Copyright &copy; 2019 Dowun. All Rights Reserved.
+		</div>
+
+
+		<script type="text/javascript">
+			
+			$(document).ready(function(){
+
+				$("#show_map #bg_group a").click(function(){
+					$("#bg_group a").removeClass("active");
+					$(this).addClass("active");
+				});
+			
+				$("#detail_search").click(function(){
+					$("#row_one").css("display", "none");
+					$("#detail").css("display", "block");
+				});	
+
+				$("#less_search").click(function(){
+					$("#row_one").css("display", "block");
+					$("#detail").css("display", "none");
+				});
+
+			});
+
+
+		</script>
+
+</body>
+</html>

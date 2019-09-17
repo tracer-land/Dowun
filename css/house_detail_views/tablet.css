@@ -1,0 +1,44 @@
+/* Tablet CSS (1028px) */
+
+/* Header Form Style */
+/*Form One*/
+#header_wrap #form_one{
+	width: 100%;
+	padding: 12px 15px 8px 15px;
+}
+#header #form_one form input, form select{
+	width: 100%!important;
+	margin-bottom: 5px;
+}
+
+#header #form_one form .btn{
+	width: 100%!important;
+}
+
+#header #form_one form #detail_search,#header #form_one form #search_place{
+	margin-bottom: 5px;
+}
+#header #form_one form .collapse input,#header #form_one form .collapse select,#header #form_one form .collapse .btn{
+	margin-bottom: 5px;
+}
+
+#header #form_one form #house_dropdown{
+	width: 100%!important;
+	margin-bottom: 5px;
+	padding-left: 10px;
+}
+
+/* Shwo Map CSS Style! */
+#show_map{
+	padding: 10px;
+}
+#show_map .col-md-2 select{
+	width: 20%;
+}
+
+#show_map .map_toggle{
+	display: none;
+}
+#show_map .col-md-10{
+	display: none;
+}
