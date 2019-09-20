@@ -45,6 +45,9 @@ Project Designed By Tracer Land
 		<!-- Font Awsome Link -->
 		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+		<!-- Emoji! -->
+		<link rel="stylesheet" type="text/css" href="emoji/emojionearea.min.css">
+
 </head>
 <body>
 
@@ -54,6 +57,10 @@ Project Designed By Tracer Land
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 		<script type="text/javascript" src="js/script.js"></script>
+
+
+		<!-- Emoji! -->
+		<script type="text/javascript" src="emoji/emojionearea.min.js"></script>
 
 		<!-- Header Section Start! -->
 			<nav class="navbar navbar-default navbar-fixed-top"><!-- Navigation Start -->
@@ -314,13 +321,13 @@ Project Designed By Tracer Land
 												</a>
 											</li>
 											<li>
-												<a href="#">
+												<a href="#" onClick="tab_switchJob()">
 													<i class="fa fa-suitcase" data-toggle="tooltip" title="My Jobs" data-placement="right"></i>
 													<span>My Applied Job List</span>
 												</a>
 											</li>
 											<li>
-												<a href="#">
+												<a href="#" onClick="tab_switchFlatmate()">
 													<i class="fa fa-location-arrow" data-toggle="tooltip" title="My Places" data-placement="right"></i>
 													<span>My Wanted Place List</span>
 												</a>
@@ -775,6 +782,22 @@ Project Designed By Tracer Land
 					<!-- Body Right Job Section End! -->
 
 
+					<!-- Body Right Place Section Start! -->
+						<div class="col-md-10 col-sm-11 col-xs-11" id="body_right_flatmate_section">
+							<div class="row flatmate_section">
+								
+								<ul id="tab-title">
+									<li class="active-tab-title">Finder Information</li>
+									<li>Place Type & Property</li>
+									<li>Location & Budget</li>
+									<li>About Us</li>
+								</ul>
+
+							</div>
+						</div>
+					<!-- Body Right Place Section End! -->
+
+
 					<!-- Body Right Inbox Section Start! -->
 						<div class="col-md-10 col-sm-11 col-xs-11" id="body_right_inbox_section">
 
@@ -1122,7 +1145,7 @@ Project Designed By Tracer Land
 									<div class="row message-footer">
 										<form action="#">
 											<div class="col-md-12">
-												<textarea class="form-control" required placeholder="Enter Your Message"></textarea>
+												<textarea class="form-control" required placeholder="Enter Your Message" id="myemoji"></textarea>
 											</div>
 
 											<div class="col-md-12">
@@ -1905,6 +1928,12 @@ Project Designed By Tracer Land
 					$(this).addClass("active_tab");
 				});
 
+				/*Tab Title Active*/
+				$("#body_right_flatmate_section .flatmate_section #tab-title li").click(function(){
+					$("#body_right_flatmate_section .flatmate_section #tab-title li").removeClass("active-tab-title");
+					$(this).addClass("active-tab-title");
+				});
+
 				/*Caret Script!*/
 				$("#second-ul li a").click(function(){
 					$("#second-ul li a span").toggleClass("caret");
@@ -1934,12 +1963,22 @@ Project Designed By Tracer Land
 			function tab_switchHome(){
 				get('body_right_home_section').style.display = "block";
 				get('body_right_job_section').style.display = "none";
+				get('body_right_flatmate_section').style.display = "none";
 				get('body_right_setting_section').style.display = "none";
 				get('body_right_inbox_section').style.display = "none";
 			}
 
 			function tab_switchJob(){
 				get('body_right_job_section').style.display = "block";
+				get('body_right_home_section').style.display = "none";
+				get('body_right_flatmate_section').style.display = "none";
+				get('body_right_setting_section').style.display = "none";
+				get('body_right_inbox_section').style.display = "none";
+			}
+
+			function tab_switchFlatmate(){
+				get('body_right_flatmate_section').style.display = "block";
+				get('body_right_job_section').style.display = "none";
 				get('body_right_home_section').style.display = "none";
 				get('body_right_setting_section').style.display = "none";
 				get('body_right_inbox_section').style.display = "none";
@@ -1949,6 +1988,7 @@ Project Designed By Tracer Land
 				get('body_right_setting_section').style.display = "block";
 				get('body_right_home_section').style.display = "none";
 				get('body_right_job_section').style.display = "none";
+				get('body_right_flatmate_section').style.display = "none";
 				get('body_right_inbox_section').style.display = "none";
 			}
 
@@ -1956,6 +1996,7 @@ Project Designed By Tracer Land
 				get('body_right_inbox_section').style.display = "block";
 				get('body_right_setting_section').style.display = "none";
 				get('body_right_home_section').style.display = "none";
+				get('body_right_flatmate_section').style.display = "none";
 				get('body_right_job_section').style.display = "none";
 			}
 
@@ -2021,6 +2062,11 @@ Project Designed By Tracer Land
 			    el.style.cssText = 'height:' + el.scrollHeight + 'px';
 			  },0);
 			}
+
+
+			$("#myemoji").emojioneArea({
+			    pickerPosition: "top"
+			});
 
 		</script>
 

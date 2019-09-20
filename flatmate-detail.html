@@ -7,11 +7,12 @@ Project Designed By Tracer Land
 
  -->
 
-<!-- House Detail Page!!! -->
+<!-- Flatmate Detail Page!!! -->
 <!DOCTYPE html>
 <html>
 <head>
-		<title>Dowun - House Detail</title>
+		
+		<title>Dowun - Flatmate Detail</title>
 
 		<!-- Logo Image -->
 		<link rel="icon" href="images/logo.png">
@@ -29,14 +30,14 @@ Project Designed By Tracer Land
 		<link rel="stylesheet" type="text/css" href="css/all.css">
 		<link rel="stylesheet" type="text/css" href="css/all.min.css">
 
-		<link rel="stylesheet" type="text/css" href="css/house_detail_views/house-detail.css"><!-- House Search CSS! -->
+		<link rel="stylesheet" type="text/css" href="css/flatmate_detail_views/flatmate-detail.css"><!-- House Search CSS! -->
 
 		<!-- Common CSS Styles! -->
 		<link rel="stylesheet" type="text/css" href="css/common_css_styles/mobile.css" media="screen and (max-width: 600px)">
 		<link rel="stylesheet" type="text/css" href="css/common_css_styles/tablet.css" media="screen and (max-width: 998px)">
 
-		<link rel="stylesheet" type="text/css" href="css/house_detail_views/mobile.css" media="screen and (max-width: 768px) and (min-width: 500px)">
-		<link rel="stylesheet" type="text/css" href="css/house_detail_views/tablet.css" media="screen and (max-width: 1028px)">
+		<link rel="stylesheet" type="text/css" href="css/flatmate_detail_views/mobile.css" media="screen and (max-width: 768px) and (min-width: 500px)">
+		<link rel="stylesheet" type="text/css" href="css/flatmate_detail_views/tablet.css" media="screen and (max-width: 1028px)">
 
 		<!-- Boostrap CSS! -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -58,7 +59,6 @@ Project Designed By Tracer Land
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 		<script type="text/javascript" src="js/script.js"></script>
-
 
 		<!-- Header Section Start! -->
 			<nav class="navbar navbar-default navbar-fixed-top"><!-- Navigation Start -->
@@ -275,8 +275,8 @@ Project Designed By Tracer Land
 								<form>
 									
 									<div class="row" id="row_one" style="width:100%;">
-										<select class="form-control" id="house_dropdown">
-											<option>House</option>
+										<select class="form-control" id="flatmate_dropdown">
+											<option>Flatmate</option>
 										</select>
 
 										<input type="text" name="text" placeholder="Search House" class="form-control">
@@ -302,7 +302,7 @@ Project Designed By Tracer Land
 									<div class="row collapse" id="detail" style="width: 100%;">
 										
 										<div>
-											<input type="text" name="text" placeholder="Search House" class="form-control">
+											<input type="text" name="text" placeholder="Search Flatmate" class="form-control">
 									
 											<select class="form-control">
 												<option>Location</option>
@@ -372,7 +372,6 @@ Project Designed By Tracer Land
 			</div>
 		<!-- Header Section End! -->
 
-
 		<!-- Show Map Section Start! -->
 			<div id="show_map">
 				<div class="container">
@@ -410,64 +409,18 @@ Project Designed By Tracer Land
 			</div>
 		<!-- Show Map Section Start! -->
 
-		<!-- Carousel Section Start! -->
-			<div id="carousel_slider">
-				<div class="container-fluid">
-					<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-						<!-- Indicators -->
-						<ol class="carousel-indicators">
-							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-							<li data-target="#myCarousel" data-slide-to="1"></li>
-						</ol>
+		<!-- Photo Section Start! -->
+			<div id="photo_section">
+				<div class="container">
+					
+					<img src="images/client.jpg" class="img-responsive">
 
-						<!-- Wrapper for slides -->
-						 <div class="carousel-inner">
-						 	<div class="item active">
-						 		<div class="col-md-4 col-sm-6 col-xs-6">
-						 			<img src="images/house-1.jpeg" class="img-responsive">
-						 		</div>
-						 		<div class="col-md-4 col-sm-6 col-xs-6">
-						 			<img src="images/house-2.jpg" class="img-responsive">
-						 		</div>
-						 		<div class="col-md-4 col-sm-12 col-xs-12">
-						 			<img src="images/house-3.jpg" class="img-responsive">
-						 		</div>
-						 	</div>
-						 	<div class="item">
-						 		<div class="col-md-4 col-sm-6 col-xs-6">
-						 			<img src="images/house-4.jpg" class="img-responsive">
-						 		</div>
-						 		<div class="col-md-4 col-sm-6 col-xs-6">
-						 			<img src="images/house-5.jpg" class="img-responsive">
-						 		</div>
-						 		<div class="col-md-4 col-sm-12 col-xs-12">
-						 			<img src="images/house-6.jpg" class="img-responsive">
-						 		</div>
-						 	</div>
-						 </div>
-
-						 <!-- Left and right controls -->
-						  <a style="width: 60px!important;" class="left carousel-control" href="#myCarousel" data-slide="prev">
-						  		<span class="glyphicon glyphicon-chevron-left"></span>
-    							<span class="sr-only">Previous</span>
-						  </a>
-
-						  <a style="width: 60px!important;" class="right carousel-control" href="#myCarousel" data-slide="next">
-						  		<span class="glyphicon glyphicon-chevron-right"></span>
-    							<span class="sr-only">Previous</span>
-						  </a>
-
-						  <button class="btn-sm" style="position: absolute;z-index: 10;right: 3%;top: 85%;">
-						  	<i class="fa fa-camera"></i>&nbsp;6
-						  </button>
-
-						  <a href="#" class="btn btn-info btn-sm" style="position: fixed;right: 3%;top: 35%;z-index: 99;">
-							 <i class="fa fa-heart"></i>&nbsp;Save
-						  </a>
-					</div>
+					<a href="#" class="btn btn-info btn-sm" style="position: fixed;right: 7.5%;top: 32%;z-index: 99;">
+						<i class="fa fa-heart"></i>&nbsp;Save
+					</a>
 				</div>
 			</div>
-		<!-- Carousel Section End! -->
+		<!-- Photo Section End! -->
 
 
 		<!-- Body Section Start! -->
@@ -476,42 +429,33 @@ Project Designed By Tracer Land
 					<div class="row">
 						<div class="col-md-8 col-sm-12 col-xs-12">
 							<div class="col-md-12">
-								<h4>Sama Road, Yankin, Yangon</h4>
-								<strong>မရမ္းကုန္းၿမိဳ ့နယ္တြင္ အိမ္ငွားရန္ရိွ</strong>
+								<h4>Myo Min</h4>
+								<strong>25 Years Old, Male</strong>
 							</div>
 
 							<div class="col-md-12">
 								<div class="col-md-4">
+									<h5>Rent Budget</h5>
 									<ul>
-										<li><i class="fa fa-home"></i>&nbsp;Whole Property For Rent</li>
-									</ul>
-								</div>
-								<div class="col-md-4"></div>
-								<div class="col-md-4">
-									<ul>
-										<li><i class="fa fa-money-bill-alt"></i>&nbsp;MMK50000/Month</li>
+										<li><i class="fa fa-money-bill-alt"></i>&nbsp;MMK15000/Month</li>
 									</ul>
 								</div>
 								<div class="col-md-4">
+									<h5>Lenght of Stay</h5>
 									<ul>
-										<li><i class="fa fa-bed"></i>&nbsp;1 Bedroom</li>
+										<li><i class="fa fa-calendar"></i>&nbsp;4 Weeks</li>
 									</ul>
 								</div>
 								<div class="col-md-4">
+									<h5>Move Date</h5>
 									<ul>
-										<li><i class="fa fa-bath"></i>&nbsp;1 Bathroom</li>
+										<li><i class="fas fa-truck"></i>&nbsp;19 June 2019</li>
 									</ul>
 								</div>
-								<div class="col-md-4">
-									<ul>
-										<li><i class="fab fa-adn"></i>&nbsp;1900 Square Feet</li>
-									</ul>
-								</div>
-
 							</div>
 
 							<div class="col-md-12">
-								<h4>About Property</h4>
+								<h4>About Me</h4>
 
 								<p>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -521,216 +465,124 @@ Project Designed By Tracer Land
 									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 								</p>
+
+								<div class="col-md-3">
+									<h3>
+										<i class="fa fa-suitcase"></i>
+									</h3>
+									<span>Full-Time</span>
+								</div>
+								<div class="col-md-2">
+									<h3>
+										<i class="fa fa-comment-dollar"></i>
+									</h3>
+									<span>Part-Time</span>
+								</div>
+								<div class="col-md-2">
+									<h3>
+										<i class="fa fa-times-circle"></i>
+									</h3>
+									<span>No Work</span>
+								</div>
+								<div class="col-md-2">
+									<h3>
+										<i class="fa fa-paw"></i>
+									</h3>
+									<span>Have Pet</span>
+								</div>
+								<div class="col-md-3">
+									<h3>
+										<i class="fa fa-child"></i>
+									</h3>
+									<span>Have Children</span>
+								</div>
 							</div>
 
 							<div class="col-md-12">
-								<h4>Property Overview</h4>
+								<h4>Property Preferences</h4>
 
 								 <div class="col-md-6">
 								 	<ul>
-										<li><i class="fa fa-building"></i>&nbsp;Place For : Living</li>
+										<li><i class="fa fa-couch"></i>&nbsp;Room Furnished : Flexible</li>
 									</ul>
 								 </div>
 								 <div class="col-md-6">
 								 	<ul>
-										<li><i class="fa fa-calendar"></i>&nbsp;Available In : September 5 2019</li>
+										<li><i class="fa fa-bed"></i>&nbsp;Bed Room : Flexible</li>
 									</ul>
 								 </div>
 								 <div class="col-md-6">
 								 	<ul>
-										<li><i class="fa fa-pen"></i>&nbsp;Bond : 6 Months</li>
+										<li><i class="fa fa-wifi"></i>&nbsp;Internet : Required</li>
 									</ul>
 								 </div>
 								 <div class="col-md-6">
 								 	<ul>
-										<li><i class="fa fa-plug"></i>&nbsp;Bill(Electricity & Others) : Included</li>
+										<li><i class="fa fa-bath"></i>&nbsp;Bath Room : Required</li>
 									</ul>
 								 </div>
 								 <div class="col-md-6">
 								 	<ul>
-										<li><i class="fa fa-warehouse"></i>&nbsp;Place Type : Apartment</li>
+										<li><i class="fa fa-parking"></i>&nbsp;Parking : Not Required</li>
 									</ul>
 								 </div>
 								 <div class="col-md-6">
 								 	<ul>
-										<li><i class="fa fa-bed"></i>&nbsp;Private Room : 1</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-user"></i>&nbsp;Flatmate : 0</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-bath"></i>&nbsp;Own Bathroom : 0</li>
-									</ul>
-								 </div>
-							</div>
-
-							<div class="col-md-12">
-								<h4>Accept</h4>
-
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-smoking"></i>&nbsp;Smoker</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-glasses"></i>&nbsp;Retires</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-user-graduate"></i>&nbsp;Students</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-users"></i>&nbsp;Welfare</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-female"></i>&nbsp;All Female</li>
+										<li><i class="fa fa-users"></i>&nbsp;Max Number of Flatmate : 3</li>
 									</ul>
 								 </div>
 							</div>
 
 							<div class="col-md-12">
-								<h4>Included</h4>
+								<h4>Preferred Accomodation Type</h4>
 
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-wifi"></i>&nbsp;Internet Available</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-parking"></i>&nbsp;Parking Available</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-fan"></i>&nbsp;Air Condition</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-couch"></i>&nbsp;Funishing</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-bell"></i>&nbsp;Fire Alarm</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-tv"></i>&nbsp;CCTV</li>
-									</ul>
-								 </div>
-							</div>
-
-							<div class="col-md-12">
-								<h4>Property Loction</h4>
-
-								<h5>Yangon</h5>
-
-								<span>Yankin&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-								<span>Bo Lay Street, Naung Yoe Road</span>
-
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.3386999500635!2d96.12592501440015!3d16.809545288427397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb3762d7528b%3A0xc6187c2487435102!2sThan%20Ta%20Dar%20St%2C%20Yangon!5e0!3m2!1sen!2smm!4v1568704120793!5m2!1sen!2smm" width="100%" height="450" frameborder="0" style="border:0;margin-top: 20px;" allowfullscreen=""></iframe>
+								<div class="col-md-3">
+									<h3>
+										<i class="fa fa-bed"></i>
+									</h3>
+									<span>One Bed Flat</span>
+								</div>
+								<div class="col-md-3">
+									<h3>
+										<i class="fa fa-home"></i>
+									</h3>
+									<span>Home Stay</span>
+								</div>
+								<div class="col-md-3">
+									<h3>
+										<i class="fab fa-slideshare"></i>
+									</h3>
+									<span>Shared Room</span>
+								</div>
+								<div class="col-md-3">
+									<h3>
+										<i class="fa fa-laptop"></i>
+									</h3>
+									<span>Student Accomodation</span>
+								</div>
 							</div>
 
 							<div class="col-md-12" style="border-bottom: 0px!important;">
-								<h4>Near By</h4>
+								<h4>Preferred Loction</h4>
 
-								<h5 style="margin-top: 15px;margin-left: 20px;color:#3a9bfa;"><i class="fa fa-bus"></i>&nbsp;Near Bus Stop</h5>
+								<h5>Yangon</h5>
+								<button class="btn btn-sm btn-info">Yankin</button>
+								<button class="btn btn-sm btn-info">Tamwe</button>
+								<button class="btn btn-sm btn-info">Sanchaung</button>
 
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-map-marker-alt"></i>&nbsp;Shopping</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-map-marker-alt"></i>&nbsp;24Hr Store</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-map-marker-alt"></i>&nbsp;School</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-map-marker-alt"></i>&nbsp;Police Station</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-map-marker-alt"></i>&nbsp;Popular Place</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-map-marker-alt"></i>&nbsp;Hospital</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-map-marker-alt"></i>&nbsp;ATM</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-map-marker-alt"></i>&nbsp;Bank</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-map-marker-alt"></i>&nbsp;Clinic</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-map-marker-alt"></i>&nbsp;Medical Center</li>
-									</ul>
-								 </div>
-								 <div class="col-md-6">
-								 	<ul>
-										<li><i class="fa fa-map-marker-alt"></i>&nbsp;Restaurants</li>
-									</ul>
-								 </div>
-
-								 <div class="col-md-12" style="border-bottom: 0px!important;">
-								 	<h5>About This Place More</h5>
-
-								 	<p>
-								 		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								 	</p>
-								 </div>
 							</div>
 						</div>
 
 						<div class="col-md-4 col-sm-12 col-xs-12">
-							
 							<form action="#">
 								
 								<table class="table">
 									<tr>
 										<td>
-											<img src="images/kbz.png">
+											<img src="images/client.jpg">
 										</td>
 										<td>
-											<h5>Min Agency</h5>
+											<h5>Min Myo</h5>
 											<small>Online 2 Day Agos</small>
 										</td>
 									</tr>
@@ -745,7 +597,7 @@ Project Designed By Tracer Land
 							</form>
 
 							<div id="social-wrap">
-								<h5>View Min Angency On Social Medias</h5>
+								<h5>View Min Myo On Social Medias</h5>
 
 								<center>
 									<a href="#" id="icon" class="text-center">
@@ -768,20 +620,14 @@ Project Designed By Tracer Land
 
 							<p>
 								<a href="#">
-									<i class="fas fa-exclamation-triangle"></i>&nbsp;Report This List
+									<i class="fas fa-exclamation-triangle"></i>&nbsp;Report This Person
 								</a>
 							</p>
-
 						</div>
 					</div>
 				</div>
 			</div>
 		<!-- Body Section End! -->
-
-		<!-- Copy Right -->
-		<div id="copyright">
-			Copyright &copy; 2019 Dowun. All Rights Reserved.
-		</div>
 
 
 		<!-- Scripts!! -->

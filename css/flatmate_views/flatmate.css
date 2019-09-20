@@ -45,8 +45,8 @@
 	margin-bottom: 10px;
 }
 
-#header #form_one form #house_dropdown{
-	width: 10%!important;
+#header #form_one form #flatmate_dropdown{
+	width: 12%!important;
 	background: rgba(0,0,0,0)!important;
 	padding-left: 30px;
 }
@@ -106,23 +106,24 @@
 }
 
 
-/* Property CSS! */
-#property{
+/* Flatmate CSS! */
+#flatmate{
 	width: 100%;
 	padding: 50px 0px 50px 0px;
 	background: #f2f2f2;
 	margin-top: -52px!important;
 }
-#property .row{
+#flatmate .row{
 	margin-bottom: 20px;
 }
 
-#property .row .col-md-3 a{
+#flatmate .row .col-md-3 a{
 	outline: none!important;
 	color: #000!important;
 	text-decoration: none!important;
+	position: relative;
 }
-#property .row .col-md-3 a #recent_item{
+#flatmate .row .col-md-3 a #recent_item{
 	background-color: white;
 	width: 98%;
 	padding: 0px 0px 20px 0px;
@@ -130,44 +131,50 @@
 	border-radius: 5px;
 	box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
 }
-#property .row .col-md-3 a #recent_item img{
+#flatmate .row .col-md-3 a #recent_item img{
 	width: 100%;
-	height: 100%;
+	height: 200px;
 	border-radius: 5px;
 	border-bottom-left-radius: 0px!important;
 	border-bottom-right-radius: 0px!important;
 }
-#property .row .col-md-3 a #recent_item #recent_text_wrap{
+#flatmate .row .col-md-3 a #recent_item #recent_text_wrap{
 	width: 90%;
 	margin: 0 auto;
 	margin-top: 15px;
 }
-#property .row .col-md-3 a #recent_item #recent_text_wrap h4{
+#flatmate .row .col-md-3 a #recent_item #recent_text_wrap h4{
 	font-size: 14px;
 	font-weight: bold;
 }
-#property .row .col-md-3 a #recent_item #recent_text_wrap small{
+#flatmate .row .col-md-3 a #recent_item #recent_text_wrap small{
 	color: #3a9bfa;
 }
-#property .row .col-md-3 a #recent_item #recent_text_wrap strong{
+#flatmate .row .col-md-3 a #recent_item #recent_text_wrap strong{
 	display: block;
 	margin-top: 10px;
 	font-size: 13px;
 }
-#property .row .col-md-3 a #recent_item #recent_text_wrap span{
+#flatmate .row .col-md-3 a #recent_item #recent_text_wrap span{
 	display: block;
 	margin-top: 10px;
 	font-size: 13px;
 }
-#property .row .col-md-3 a #recent_item #recent_text_wrap i{
+#flatmate .row .col-md-3 a #recent_item #recent_text_wrap i{
 	font-size: 14px;
 	margin-top: 15px;
 	display: inline-block;
 	margin-right: 8px;
 }
-#property .row .col-md-3 a #recent_item #recent_text_wrap i:last-child{
+#flatmate .row .col-md-3 a #recent_item #recent_text_wrap i:last-child{
 	margin-right: 0px!important;
 }
+
+#flatmate .row .col-md-3 a #recent_item #recent_text_wrap .btn{
+	float: right;
+	margin-top: 10px;
+}
+
 /* Page Pagination */
 .page{
 	display: none;
@@ -175,41 +182,15 @@
 .page-active{
 	display: block;
 }
-#property #pagination-demo{
+#flatmate #pagination-demo{
 	margin-top: 30px!important;
 }
-#property .pagination > li > a{
+#flatmate .pagination > li > a{
 	background: #ccc!important;
 }
-#property .pagination > .active > a{
+#flatmate .pagination > .active > a{
 	background: #3a9bfa!important;
 	border-color: rgba(255,255,255,0)!important;
-}
-
-
-
-/*Scheldule*/
-#property .row .col-md-3 #myModal .modal-body .schedule{
-	display: none;
-}
-#property .row .col-md-3 #myModal .modal-body .schedule form h5{
-	font-weight: bold;
-}
-#property .row .col-md-3 #myModal .modal-body .schedule form i{
-	font-size: 18px;
-}
-#property .row .col-md-3 #myModal .modal-body .schedule .col-md-6{
-	height: 250px;
-}
-#property .row .col-md-3 #myModal .modal-body .schedule .col-md-3,#property .row .col-md-3 #myModal .modal-body .schedule .col-md-9{
-	margin-bottom: 10px;
-}
-#property .row .col-md-3 #myModal .modal-body .schedule form textarea{
-	max-width: 100%;
-	height: 100%;
-}
-#property .row .col-md-3 #myModal .modal-body .schedule form .btn{
-	width: 100%;
 }
 
 
@@ -244,6 +225,7 @@
 }
 
 
+
 /* Media Queries!!! */
 @media screen and (max-width: 1228px){
 
@@ -258,7 +240,7 @@
 		margin-bottom: 5px;
 	}
 
-	#header #form_one form #house_dropdown{
+	#header #form_one form #flatmate_dropdown{
 		width: 100%!important;
 		margin-bottom: 5px;
 		padding-left: 10px;
@@ -282,9 +264,10 @@
 		display: none;
 	}
 
-	#property{
+	#flatmate{
 		margin-top: -45px!important;
 	}
+
 }
 
 @media screen and (max-width: 499px){
@@ -294,19 +277,6 @@
 		width: 25%!important;
 	}
 
-	/* Property */
-	#property{
-		margin-top: -45px!important;
-	}
-	#property .row .col-md-3 a #recent_item #recent_text_wrap h4{
-		font-size: 13px!important;
-	}
-	#property .row .col-md-3 a #recent_item #recent_text_wrap span{
-		font-size: 12px!important;
-	}
-	#property .row .col-md-3 a #recent_item #recent_text_wrap i{
-		font-size: 12px!important;
-	}
 	/* App Section CSS! */
 	#app{
 		padding: 50px;
@@ -329,7 +299,21 @@
 		height: 30px!important;
 	}
 
-	#property .row .col-md-3 #myModal .modal-body .schedule .col-md-6{
+	/* Flatmate */
+	#flatmate{
+		margin-top: -45px!important;
+	}
+	#flatmate .row .col-md-3 a #recent_item #recent_text_wrap h4{
+		font-size: 13px!important;
+	}
+	#flatmate .row .col-md-3 a #recent_item #recent_text_wrap span{
+		font-size: 12px!important;
+	}
+	#flatmate .row .col-md-3 a #recent_item #recent_text_wrap i{
+		font-size: 12px!important;
+	}
+	#flatmate .row .col-md-3 #myModal .modal-body .schedule .col-md-6{
 		margin-bottom: 120px!important;
 	}
+
 }

@@ -329,6 +329,38 @@
 	width: 26px;
 }
 
+
+/*Body Right Flatmate Section! */
+#body_right_flatmate_section{
+	display: block;
+}
+#body_right_flatmate_section .flatmate_section{
+	padding: 20px;
+	background: #fff;
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+#body_right_flatmate_section .flatmate_section #tab-title{
+	list-style: none;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#body_right_flatmate_section .flatmate_section #tab-title li{
+	display: inline-block;
+	cursor: pointer;
+	margin-right: 60px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+#body_right_flatmate_section .flatmate_section #tab-title .active-tab-title{
+	border-bottom: 2px solid #3a9bfa;
+}
+#body_right_flatmate_section .flatmate_section #tab-title li:last-child{
+	margin-right: 0px!important;
+}
+
+
 /*Body Right Setting Section! */
 #body_right_setting_section{
 	display: none;
@@ -719,7 +751,7 @@
 #body_right_inbox_section .inbox-section .message-text .message-footer .col-md-12{
 	margin-top: 10px;
 }
-#body_right_inbox_section .inbox-section .message-text .message-footer .col-md-12 textarea{
+#body_right_inbox_section .inbox-section .message-text .message-footer .col-md-12 #myemoji{
 	max-width: 100%;
 	border-top: 0px!important;
 	border-left: 0px!important;
@@ -729,6 +761,7 @@
     padding: 0px!important;
     overflow: hidden;
 }
+
 #body_right_inbox_section .inbox-section .message-text .message-footer .col-md-12 input[type="file"] {
     display: none;
 }

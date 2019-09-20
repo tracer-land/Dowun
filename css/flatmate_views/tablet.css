@@ -1,0 +1,90 @@
+/* Tablet CSS (1028px) */
+
+/* Header Form Style */
+/*Form One*/
+#header_wrap #form_one{
+	width: 100%;
+	padding: 12px 15px 8px 15px;
+}
+#header #form_one form input, form select{
+	width: 100%!important;
+	margin-bottom: 5px;
+}
+
+#header #form_one form .btn{
+	width: 100%!important;
+}
+
+#header #form_one form #detail_search,#header #form_one form #search_place{
+	margin-bottom: 5px;
+}
+#header #form_one form .collapse input,#header #form_one form .collapse select,#header #form_one form .collapse .btn{
+	margin-bottom: 5px;
+}
+
+#header #form_one form #flatmate_dropdown{
+	width: 100%!important;
+	margin-bottom: 5px;
+	padding-left: 10px;
+}
+
+
+/* Flatmate */
+#flatmate{
+	margin-top: -45px!important;
+}
+#flatmate .row .col-md-3 a #recent_item{
+	width: 85%;
+	margin-bottom: 20px!important;
+	padding: 0px 0px 25px 0px;
+}
+#flatmate .row .col-md-3 a #recent_item img{
+	height: 250px;
+}
+#flatmate .row .col-md-3 a #recent_item #recent_text_wrap{
+	width: 85%;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+#flatmate .row .col-md-3 a #recent_item #recent_text_wrap h4{
+	margin-top: 25px!important;
+}
+
+
+/* App Section CSS! */
+#app{
+	padding: 50px;
+}
+
+#app a:first-child{
+	position: absolute;
+	top: 50%;
+	left: 38%;
+	transform: translate(-50%,-50%);
+}
+#app a:last-child{
+	position: absolute;
+	top: 50%;
+	right: 38%;
+	transform: translate(50%,-50%);
+}
+#app img{
+	width: 110px;
+	height: 40px;
+}
+
+
+/* Shwo Map CSS Style! */
+#show_map{
+	padding: 10px;
+}
+#show_map .col-md-2 select{
+	width: 20%;
+}
+
+#show_map .map_toggle{
+	display: none;
+}
+#show_map .col-md-8{
+	display: none;
+}
