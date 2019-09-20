@@ -332,7 +332,7 @@
 
 /*Body Right Flatmate Section! */
 #body_right_flatmate_section{
-	display: block;
+	display: none;
 }
 #body_right_flatmate_section .flatmate_section{
 	padding: 20px;
