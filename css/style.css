@@ -212,7 +212,7 @@ nav .nav-li .dropdown-menu a .row small{
 nav .nav-li .dropdown-menu a .row p{
 	margin-top: 5px;
 }
-nav .nav-li .dropdown-menu a .row p i{
+nav .nav-li .dropdown-menu a .row p .fa-history{
 	color: #3a9bfa!important;
 }
 nav .nav-li .dropdown-menu a .row p em{
