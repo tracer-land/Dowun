@@ -63,6 +63,11 @@ $(document).ready(function(){
 					$("#body_right_setting_section .table_section .my_setting .tab-section #login .phone-toggle").slideToggle();
 				});
 
+				/*Create Flatmate Toggle!*/
+				$("#body_right_flatmate_section .table_section .create-flatmate-tab").click(function(){
+					$("#body_right_flatmate_section .flatmate_section").slideToggle();
+				});
+
 
 				var max_form = 7;
 				var wrapper = $(".add-form-wrap");

@@ -331,14 +331,66 @@
 
 
 /*Body Right Flatmate Section! */
+#body_right_flatmate_section .table_section{
+	padding: 20px;
+	background: #fff;
+	margin-top: 45px;
+}
+#body_right_flatmate_section .table_section ul{
+	list-style: none;
+	padding: 0px!important;
+}
+#body_right_flatmate_section .table_section ul:first-child{
+	margin-bottom: 15px;
+}
+#body_right_flatmate_section .table_section ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+#body_right_flatmate_section .table_section ul li a{
+	color: #000!important;
+	text-decoration: none;
+	outline: none;
+	font-weight: bold;
+}
+#body_right_flatmate_section .table a{
+	color: #000!important;
+	text-decoration: none;
+	outline: none;
+}
+#body_right_flatmate_section .table .btn{
+	color: #fff!important;
+	padding: 2px 0px 2px 0px!important;
+	font-size: 12px!important;
+	margin: 0 auto!important;
+	display: block!important;
+	width: 26px;
+}
 #body_right_flatmate_section{
 	display: none;
+}
+#body_right_flatmate_section .flatmate_section ul{
+	list-style: none;
+	padding: 0px!important;
+}
+#body_right_flatmate_section .flatmate_section ul:first-child{
+	margin-bottom: 15px;
+}
+#body_right_flatmate_section .flatmate_section ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+#body_right_flatmate_section .flatmate_section ul li a{
+	color: #000!important;
+	text-decoration: none;
+	outline: none;
+	font-weight: bold;
 }
 #body_right_flatmate_section .flatmate_section{
 	padding: 20px;
 	background: #fff;
-	margin-top: 45px;
 	margin-bottom: 45px;
+	display: none;
 }
 #body_right_flatmate_section .flatmate_section #tab-title{
 	list-style: none;
@@ -551,7 +603,7 @@
 	margin-top: 20px!important;
 }
 #body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 .col-md-3{
-	height: 100px;
+	height: 120px;
 	border: 1px solid rgba(0,0,0,0.1);
 	cursor: pointer!important;
 	text-align: center;
