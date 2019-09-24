@@ -63,6 +63,11 @@ $(document).ready(function(){
 					$("#body_right_setting_section .table_section .my_setting .tab-section #login .phone-toggle").slideToggle();
 				});
 
+				/*Job Form*/
+				$("#body_right_job_section #job_table_section .create_job_form").click(function(){
+					$("#body_right_job_section").removeClass("col-md-10");
+					$("#body_right_job_section").addClass("col-md-12");
+				});
 				/*Flatmate Form*/
 				$("#body_right_flatmate_section #flatmate_table_section .create_flatmate_form").click(function(){
 					$("#body_right_flatmate_section").removeClass("col-md-10");
@@ -220,6 +225,20 @@ $(document).ready(function(){
 				get('flatmate-tab-2').style.display = "none";
 				get('flatmate-tab-3').style.display = "none";
 				get('flatmate-tab-4').style.display = "block";
+			}
+			/*Job Tabs*/
+			function create_job_form(){
+				get('job_section').style.display = "block";
+				get('job_table_section').style.display = "none";
+				get('fix_position').style.display = "none";
+			}
+			function job_switchTwo(){
+				get('job-tab-1').style.display = "none";
+				get('job-tab-2').style.display = "block";
+			}
+			function job_switchOne(){
+				get('job-tab-1').style.display = "block";
+				get('job-tab-2').style.display = "none";
 			}
 
 			/*Flatmate Section Tabs!!!*/
