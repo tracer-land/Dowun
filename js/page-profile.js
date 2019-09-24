@@ -63,9 +63,10 @@ $(document).ready(function(){
 					$("#body_right_setting_section .table_section .my_setting .tab-section #login .phone-toggle").slideToggle();
 				});
 
-				/*Create Flatmate Toggle!*/
-				$("#body_right_flatmate_section .table_section .create-flatmate-tab").click(function(){
-					$("#body_right_flatmate_section .flatmate_section").slideToggle();
+				/*Flatmate Form*/
+				$("#body_right_flatmate_section #flatmate_table_section .create_flatmate_form").click(function(){
+					$("#body_right_flatmate_section").removeClass("col-md-10");
+					$("#body_right_flatmate_section").addClass("col-md-12");
 				});
 
 
@@ -102,6 +103,7 @@ $(document).ready(function(){
 				get('body_right_flatmate_section').style.display = "none";
 				get('body_right_setting_section').style.display = "none";
 				get('body_right_inbox_section').style.display = "none";
+				get('fix_position').style.display = "block";
 			}
 
 			function tab_switchJob(){
@@ -110,14 +112,21 @@ $(document).ready(function(){
 				get('body_right_flatmate_section').style.display = "none";
 				get('body_right_setting_section').style.display = "none";
 				get('body_right_inbox_section').style.display = "none";
+				get('fix_position').style.display = "block";
 			}
 
 			function tab_switchFlatmate(){
 				get('body_right_flatmate_section').style.display = "block";
+				get('flatmate_section').style.display = "none";
+				get('flatmate_table_section').style.display = "block";
 				get('body_right_job_section').style.display = "none";
 				get('body_right_home_section').style.display = "none";
 				get('body_right_setting_section').style.display = "none";
 				get('body_right_inbox_section').style.display = "none";
+
+				var element = get('body_right_flatmate_section');
+				element.classList.remove('col-md-12');
+				element.classList.add('col-md-10');
 			}
 
 			function tab_switchSetting(){
@@ -134,6 +143,7 @@ $(document).ready(function(){
 				get('body_right_home_section').style.display = "none";
 				get('body_right_flatmate_section').style.display = "none";
 				get('body_right_job_section').style.display = "none";
+				get('fix_position').style.display = "block";
 			}
 
 			function tab_switchLanguage(){
@@ -213,6 +223,11 @@ $(document).ready(function(){
 			}
 
 			/*Flatmate Section Tabs!!!*/
+			function create_flatmate_form(){
+				get('flatmate_section').style.display = "block";
+				get('flatmate_table_section').style.display = "none";
+				get('fix_position').style.display = "none";
+			}
 			function flatmate_switchMe(){
 				get('me-section').style.display = "block";
 				get('couple-section').style.display = "none";
