@@ -161,6 +161,26 @@ nav #language_toggle_select{
 #body #myModal .modal-body .third_row h4{
 	font-weight: bold;
 }
+#body #myModal .modal-body .third_row .table tr th,#body #myModal .modal-body .third_row .table tr td{
+	border-top: 0px solid rgba(0,0,0,0)!important;
+}
+#body #myModal .modal-body .third_row .table tr th{
+	width: 20%;
+}
+#body #myModal .modal-body .third_row .table tr td{
+	width: 80%;
+}
+#body #myModal .modal-body .third_row .table tr span,#body #myModal .modal-body .third_row .table tr small, #body #candidate_detail #third_row .table tr strong{
+	display: block;
+	margin-bottom: 8px;
+}
+#body #myModal .modal-body .third_row .table tr small{
+	padding: 0px!important;
+	margin-left: 0px!important;
+}
+#body #myModal .modal-body .third_row .table tr p{
+	text-align: justify;
+}
 #body #myModal .modal-body .third_row p{
 	font-size: 14px;
 	margin-bottom: 15px;

@@ -287,7 +287,7 @@ Project Designed By Tracer Land
 					</li>
 
 					<li>
-						<a href="#">House</a>
+						<a href="#" onClick="tab_switchHouse()">House</a>
 					</li>
 				</ul>
 
@@ -799,7 +799,7 @@ Project Designed By Tracer Land
 												<label class="gender">
 													<i class="fa fa-male"></i>
 													<span>Male</span>
-													<input type="radio" name="gender" value="male" required checked>
+													<input type="checkbox" name="gender" value="male" required checked>
 													<em class="fa fa-check-circle" id="male-check"></em>
 												</label>
 											</div>
@@ -807,18 +807,18 @@ Project Designed By Tracer Land
 												<label class="gender">
 													<i class="fa fa-female"></i>
 													<span>Female</span>
-													<input type="radio" name="gender" value="female" required>
+													<input type="checkbox" name="gender" value="female" required>
 													<em class="fa fa-check-circle" id="female-check"></em>
 												</label>
 											</div>
 
 											<h5>This Job Level Is For</h5>
-											<div class="col-md-12">
+											<div class="col-md-12 job-limit">
 												<div class="col-md-3">
 													<label class="labour">
 													<i class="fa fa-user-tag"></i>
 													<span>Labour</span>
-													<input type="radio" name="gender" value="labour" required checked>
+													<input type="checkbox" name="job-level" value="labour" required checked>
 													<em class="fa fa-check-circle" id="labour-check"></em>
 												</label>
 												</div>
@@ -826,28 +826,28 @@ Project Designed By Tracer Land
 													<label class="fresher">
 													<i class="fa fa-user-tag"></i>
 													<span>Fresher</span>
-													<input type="radio" name="gender" value="fresher" required>
+													<input type="checkbox" name="job-level" value="fresher" required>
 													<em class="fa fa-check-circle" id="fresher-check"></em>
 												</div>
 												<div class="col-md-2">
 													<label class="experienced">
 													<i class="fa fa-user-tag"></i>
 													<span>Experienced</span>
-													<input type="radio" name="gender" value="experienced" required>
+													<input type="checkbox" name="job-level" value="experienced" required>
 													<em class="fa fa-check-circle" id="experienced-check"></em>
 												</div>
 												<div class="col-md-2">
 													<label class="manager">
 													<i class="fa fa-user-tag"></i>
 													<span>Manager</span>
-													<input type="radio" name="gender" value="manager" required>
+													<input type="checkbox" name="job-level" value="manager" required>
 													<em class="fa fa-check-circle" id="manager-check"></em>
 												</div>
 												<div class="col-md-3">
 													<label class="director">
 													<i class="fa fa-user-tag"></i>
 													<span>Director</span>
-													<input type="radio" name="gender" value="director" required>
+													<input type="checkbox" name="job-level" value="director" required>
 													<em class="fa fa-check-circle" id="director-check"></em>
 												</div>
 											</div>
@@ -961,7 +961,846 @@ Project Designed By Tracer Land
 					<!-- Body Right Job Section End! -->
 
 
-					<!-- Body Right Place Section Start! -->
+					<!-- Body Right House Section Start! -->
+						<div class="col-md-10 col-sm-11 col-xs-11" id="body_right_house_section">
+							<div class="row table_section" id="house_table_section">
+									<ul>
+										<li onClick="create_house_form()" class="create_house_form">
+											<a href="#">
+												<i class="fa fa-plus-circle"></i>
+												&nbsp;Create Post
+											</a>
+										</li>
+										<li>
+											<a href="#">Buy Package</a>
+										</li>
+									</ul>
+
+									<table class="table table-striped">
+										<tr>
+											<th>Name</th>
+											<th>Location</th>
+											<th>Place Type</th>
+											<th>Move Date</th>
+											<th>Budget</th>
+											<th>Message</th>
+											<th>Status</th>
+											<th>Remove</th>
+										</tr>
+
+										<tr>
+											<td>Min Min</td>
+											<td>Yankin, Yangon</td>
+											<td>Home Stay</td>
+											<td>20 Aug 2019</td>
+											<td>15000MMK</td>
+											<td>
+												<a href="#">Send Message</a>
+											</td>
+											<td>
+												<select class="form-control" id="myselection">
+													<option>Select Status</option>
+													<option value="modal-selection">
+														Interview Schedule
+													</option>
+													<option>Hire</option>
+													<option>Rejected</option>
+												</select>
+											</td>
+											<td>
+												<a href="#" class="btn btn-sm btn-danger">
+													<i class="fa fa-trash"></i>
+												</a>
+											</td>
+										</tr>
+
+										<tr>
+											<td>Zaw Win</td>
+											<td>Sanchaung, Yangon</td>
+											<td>Whole property for rent</td>
+											<td>1 Sep 2019</td>
+											<td>20000MMK</td>
+											<td>
+												<a href="#">Send Message</a>
+											</td>
+											<td>
+												<select class="form-control">
+													<option>Select Status</option>
+
+													<option>
+														Interview Schedule
+													</option>
+													<option>Hire</option>
+													<option>Rejected</option>
+												</select>
+											</td>
+											<td>
+												<a href="#" class="btn btn-sm btn-danger">
+													<i class="fa fa-trash"></i>
+												</a>
+											</td>
+										</tr>
+									</table>
+							</div>
+
+							<div class="row house_section" id="house_section">
+
+								<ul id="tab-title">
+									<li class="active-tab-title" onClick="house_switchOne()" id="house-place-type">Place Type</li>
+									<li onClick="house_switchTwo()" id="house-property-address">Property & Address</li>
+									<li onClick="house_switchThree()" id="house-date-charges">Date & Charges</li>
+									<li onClick="house_switchFour()" id="house-offer-accept">Offer & Accepts</li>
+									<li onClick="house_switchFive()" id="house-safe-near">Safety & Nearby</li>
+									<li onClick="house_switchSix()" id="house-title-images">Title & Images</li>
+								</ul>
+
+								<ul id="tab-title-commercial">
+									<li class="active-tab-title" onClick="house_switchOne()" id="house-place-type">Place Typeco</li>
+									<li onClick="house_switchTwo()" id="house-property-address">Property & Address</li>
+									<li onClick="house_switchThree()" id="house-date-charges">Date & Charges</li>
+									<li onClick="house_switchFour()" id="house-offer-accept">Offer & Accepts</li>
+									<li onClick="house_switchFive()" id="house-safe-near">Safety & Nearby</li>
+									<li onClick="house_switchSix()" id="house-title-images">Title & Imagesco</li>
+								</ul>
+
+								<!-- House Tab 1! -->
+								<div class="col-md-12" id="house-tab-1">
+									<center>
+										<i class="fas fa-lightbulb" style="color: #3a9bfa;display: inline-block;text-align: center;"></i>&nbsp;&nbsp;<h5 id="house-tab-1-title">Living : People To Live & Stay</h5>
+									</center>
+
+									<!-- Live & Commercial Selection! -->
+									<div class="row" id="house-section-title">
+										<div class="col-md-3"></div>
+										<div class="col-md-3" onClick="house_switchLive()">
+											<i class="fa fa-home"></i><span>Living</span><em class="fa fa-check-circle" id="first-check"></em>
+										</div>
+										<div class="col-md-3" onClick="house_switchCommercial()">
+											<i class="fa fa-network-wired"></i><span>Commercial</span><em class="fa fa-check-circle" id="second-check"></em>
+										</div>
+										<div class="col-md-3"></div>
+									</div>
+									<!-- House Tab 1 Row 1! -->
+									<div class="row" id="house-tab-1-row-1">
+										<center>
+											<i class="fas fa-lightbulb" style="color: #3a9bfa;display: inline-block;text-align: center;"></i>&nbsp;&nbsp;<h5 id="house-tab-1-row-1-title">Room(s) in an existing shared house</h5>
+										</center>
+
+										<form action="#">
+											<div class="col-md-3 bg-color-add">
+												<label class="room" onClick="house_switchHome()">
+													<i class="fa fa-home"></i>
+													<span>Room(s) in an existing shared house</span>
+													<input type="radio" name="place-type-house" value="room" required checked>
+													<em class="fa fa-check-circle" id="home-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="rent" onClick="house_switchHouse()">
+													<i class="fa fa-warehouse"></i>
+													<span>Whole property for rent</span>
+													<input type="radio" name="place-type-house" value="rent" required>
+													<em class="fa fa-check-circle" id="house-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="studio" onClick="house_switchStudio()">
+													<i class="fa fa-music"></i>
+													<span>Studio</span>
+													<input type="radio" name="place-type-house" value="studio" required>
+													<em class="fa fa-check-circle" id="studio-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="grammy" onClick="house_switchGrammy()">
+													<i class="fa fa-glasses"></i>
+													<span>Grammy flats</span>
+													<input type="radio" name="place-type-house" value="grammy" required>
+													<em class="fa fa-check-circle" id="grammy-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="one-bed" onClick="house_switchBed()">
+													<i class="fa fa-bed"></i>
+													<span>One bed flat</span>
+													<input type="radio" name="place-type-house" value="one-bed" required>
+													<em class="fa fa-check-circle" id="one-bed-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="stay" onClick="house_switchBuilding()">
+													<i class="fa fa-building"></i>
+													<span>Home Stay</span>
+													<input type="radio" name="place-type-house" value="stay" required>
+													<em class="fa fa-check-circle" id="stay-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="shard-room" onClick="house_switchShared()">
+													<i class="fab fa-slideshare"></i>
+													<span>Shared Room</span>
+													<input type="radio" name="place-type-house" value="shared-room" required>
+													<em class="fa fa-check-circle" id="shared-room-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="student" onClick="house_switchStudent()">
+													<i class="fa fa-laptop"></i>
+													<span>Student accomodation</span>
+													<input type="radio" name="place-type-house" value="student" required>
+													<em class="fa fa-check-circle" id="student-check"></em>
+												</label>
+											</div>
+										</form>
+									</div>
+
+									<!-- House Tab 1 Row 2! -->
+									<div class="row" id="house-tab-1-row-2">
+										<center>
+											<i class="fas fa-lightbulb" style="color: #3a9bfa;display: inline-block;text-align: center;"></i>&nbsp;&nbsp;<h5 id="house-tab-1-row-2-title">Living : People To Live & Stay</h5>
+										</center>
+
+										<form action="#">
+											<div class="col-md-4 bg-color-add">
+												<label class="property-building" onClick="house_switchAppartment()">
+													<i class="fa fa-building"></i>
+													<span>Appartment</span>
+													<input type="radio" name="property-type-house" value="property-building" required checked>
+													<em class="fa fa-check-circle" id="home-check"></em>
+												</label>
+											</div>
+											<div class="col-md-4">
+												<label class="property-warehouse" onClick="house_switchHousing()">
+													<i class="fa fa-warehouse"></i>
+													<span>Housing</span>
+													<input type="radio" name="property-type-house" value="property-building" required>
+													<em class="fa fa-check-circle" id="home-check"></em>
+												</label>
+											</div>
+											<div class="col-md-4">
+												<label class="property-hotel" onClick="house_switchCondo()">
+													<i class="fa fa-hotel"></i>
+													<span>Condo</span>
+													<input type="radio" name="property-type-house" value="property-hotel" required>
+													<em class="fa fa-check-circle" id="home-check"></em>
+												</label>
+											</div>
+										</form>
+
+										<div class="col-md-12" style="padding: 0px;">
+											<div class="col-md-6 section-footer">
+												<a href="#">Help</a>
+											</div>
+											<div class="col-md-6 section-footer">
+												<button onClick="house_switchTwo()" class="btn btn-sm btn-info pull-right">Next</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- House Tab 2! -->
+								<div class="col-md-12" id="house-tab-2">
+									<div class="row" id="house-tab-2-row-1">
+										<form>
+											<div class="col-md-12" id="house-about-property">
+												<div class="col-md-12">
+													<h5>About The Property</h5>
+												</div>
+
+												<div class="col-md-6">
+													<label for="house-property-bed"><i class="fa fa-bed"></i>&nbsp;Total Bed Rooms</label>
+													<select class="form-control" required>
+														<option>Bed Room</option>
+														<option>1</option>
+													</select>
+												</div>
+												<div class="col-md-6">
+													<label for="house-property-bath"><i class="fa fa-bath"></i>&nbsp;Total Bath Rooms</label>
+													<select class="form-control" required>
+														<option>Bath Room</option>
+														<option>1</option>
+													</select>
+												</div>
+												<div class="col-md-6">
+													<label for="house-property-room-type"><i class="fa fa-warehouse"></i>&nbsp;Room Type</label>
+													<select class="form-control" required>
+														<option>Share Room</option>
+														<option>One Room</option>
+													</select>
+												</div>
+												<div class="col-md-6">
+													<label for="house-property-bed-type"><i class="fa fa-bed"></i>&nbsp;Bed Room Type</label>
+													<select class="form-control" required>
+														<option>Weekly Budget</option>
+														<option>Yearly Budget</option>
+													</select>
+												</div>
+												<div class="col-md-6">
+													<label for="house-property-live"><i class="fa fa-user-friends"></i>&nbsp;Currently Live in Property</label>
+													<select class="form-control" required>
+														<option>Max Flatmates</option>
+														<option>1</option>
+													</select>
+												</div>
+												<div class="col-md-6">
+													<label for="house-property-area"><i class="fab fa-adn"></i>&nbsp;Square Feet(Optional</label>
+													<input type="text" name="house-property-area" class="form-control" placeholder="Area" required>
+												</div>
+											</div>
+
+											<div class="col-md-12" id="house-prefer-gender">
+												<div class="col-md-12"><h5>Prefer Gender</h5></div>
+												<div class="col-md-3" style="border:0px;"></div>
+												<div class="col-md-3">
+													<label class="gender">
+														<i class="fa fa-male"></i>
+														<span>Male</span>
+														<input type="checkbox" name="gender-house" value="male" required checked>
+														<em class="fa fa-check-circle" id="male-check"></em>
+													</label>
+												</div>
+												<div class="col-md-3">
+													<label class="gender">
+														<i class="fa fa-female"></i>
+														<span>Female</span>
+														<input type="checkbox" name="gender-house" value="female" required>
+														<em class="fa fa-check-circle" id="female-check"></em>
+													</label>
+												</div>
+												<div class="col-md-3" style="border:0px;"></div>
+											</div>
+
+											<div class="col-md-12" id="house-location-property">
+												<div class="col-md-12">
+													<h5>Property Location</h5>
+												</div>
+
+												<div class="col-md-6">
+													<label for="house-property-city"><i class="fa fa-location-arrow"></i>&nbsp;Property City</label>
+													<select class="form-control" required>
+														<option>Yangon</option>
+														<option>Mandalay</option>
+													</select>
+												</div>
+												<div class="col-md-6">
+													<label for="house-property-township"><i class="fa fa-location-arrow"></i>&nbsp;Property Township</label>
+													<select class="form-control" required>
+														<option>Sanchaung</option>
+														<option>Bahan</option>
+													</select>
+												</div>
+												<div class="col-md-12">
+													<label for="house-property-road"><i class="fa fa-thumbtack"></i>&nbsp;Property Address</label>
+													<input type="text" name="house-property-road" class="form-control" placeholder="Enter Road" required>
+
+													<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61073.45659872097!2d96.20136529881596!3d16.920800969983837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1949e223e196b%3A0x56fbd271f8080bb4!2sYangon!5e0!3m2!1sen!2smm!4v1569404507447!5m2!1sen!2smm" width="100%" height="450" frameborder="0" style="border:0;margin-top: 20px;" allowfullscreen=""></iframe>
+
+												</div>
+											</div>
+
+											<div class="col-md-12" style="padding: 0px;">
+												<div class="col-md-6 section-footer">
+													<a href="#">Help</a>
+												</div>
+												<div class="col-md-6 section-footer">
+													<button onClick="house_switchThree()" class="btn btn-sm btn-info pull-right">Next</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+
+								<!-- House Tab 3! -->
+								<div class="col-md-12" id="house-tab-3">
+									<div class="row" id="house-tab-3-row-1">
+										<form>
+											<div class="col-md-12" id="house-room-availablity">
+												<div class="col-md-12">
+													<h5>Room Availablity</h5>
+												</div>
+
+												<div class="col-md-6">
+													<label for="house-available-from"><i class="fa fa-play"></i>&nbsp;Available From</label>
+													<input type="date" name="house-available-from" class="form-control" required>
+												</div>
+												<div class="col-md-6">
+													<label for="house-available-to"><i class="fa fa-pause"></i>&nbsp;Available To</label>
+													<input type="date" name="house-available-to" class="form-control" required>
+												</div>
+											</div>
+											<div class="col-md-12" id="house-how-much">
+												<div class="col-md-12">
+													<h5>How muck is it monthly cost?</h5>
+												</div>
+
+												<div class="col-md-6">
+													<label for="house-month-charge"><i class="fa fa-money-bill-alt"></i>&nbsp;Monthly Rental Charges</label>
+													<input type="text" name="house-month-charge" class="form-control" required placeholder="Enter Amount">
+												</div>
+												<div class="col-md-6">
+													<label for="house-currency"><i class="fa fa-dollar-sign"></i>&nbsp;Currency</label>
+													<select class="form-control" required>
+														<option>MMK</option>
+														<option>Dollar</option>
+													</select>
+												</div>
+												<div class="col-md-6">
+													<label for="house-bond"><i class="fa fa-pen"></i>&nbsp;Bond</label>
+													<select class="form-control" required>
+														<option>1 Month</option>
+														<option>1 Year</option>
+													</select>
+												</div>
+												<div class="col-md-6">
+													<label for="house-bond"><i class="fa fa-plug"></i>&nbsp;Bill(Electricity & Other)</label>
+													<select class="form-control" required>
+														<option>Include</option>
+														<option>Uninclude</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="col-md-12" style="padding: 0px;">
+												<div class="col-md-6 section-footer">
+													<a href="#">Help</a>
+												</div>
+												<div class="col-md-6 section-footer">
+													<button onClick="house_switchFour()" class="btn btn-sm btn-info pull-right">Next</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+
+								<!-- House Tab 4! -->
+								<div class="col-md-12" id="house-tab-4">
+									<div class="row" id="house-tab-4-row-1">
+										<form>
+											<div class="col-md-12" id="house-include-property">
+												<div class="col-md-12" style="text-align: center;">
+													<h5>What is included this property?</h5>
+												</div>
+												<div class="col-md-4">
+													<label class="house-wifi">
+														<i class="fa fa-wifi"></i>
+														<span>Internet Available</span>
+														<input type="checkbox" name="house-wifi" value="house-wifi" required checked>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-car">
+														<i class="fa fa-car"></i>
+														<span>Parking Available</span>
+														<input type="checkbox" name="house-car" value="house-car" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-air">
+														<i class="fa fa-fan"></i>
+														<span>Air Condition</span>
+														<input type="checkbox" name="house-air" value="house-air" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-furnisher">
+														<i class="fa fa-couch"></i>
+														<span>Furnishing</span>
+														<input type="checkbox" name="house-furnisher" value="house-furnisher" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-tv">
+														<i class="fa fa-tv"></i>
+														<span>TV</span>
+														<input type="checkbox" name="house-tv" value="house-tv" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-gym">
+														<i class="fa fa-dumbbell"></i>
+														<span>GYM</span>
+														<input type="checkbox" name="house-gym" value="house-gym" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-wash">
+														<i class="fa fa-tshirt"></i>
+														<span>Washing Machine</span>
+														<input type="checkbox" name="house-wash" value="house-wash" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-refrigerator">
+														<i class="fa fa-ice-cream"></i>
+														<span>Refrigerator</span>
+														<input type="checkbox" name="house-refrigerator" value="house-refrigerator" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-cook">
+														<i class="fa fa-blender"></i>
+														<span>Cooking Accessories</span>
+														<input type="checkbox" name="house-cook" value="house-cook" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+											</div>
+
+											<div class="col-md-12" id="house-accept-rental">
+												<div class="col-md-12" style="text-align: center;">
+													<h5>What is accept from rental?</h5>
+												</div>
+												<div class="col-md-4">
+													<label class="house-paw">
+														<i class="fa fa-paw"></i>
+														<span>Pets</span>
+														<input type="checkbox" name="house-paw" value="house-paw" required checked>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-child">
+														<i class="fa fa-child"></i>
+														<span>Children</span>
+														<input type="checkbox" name="house-child" value="house-child" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-student">
+														<i class="fa fa-laptop"></i>
+														<span>Students</span>
+														<input type="checkbox" name="house-student" value="house-student" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-retired">
+														<i class="fa fa-glasses"></i>
+														<span>Retires</span>
+														<input type="checkbox" name="house-retired" value="house-retired" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-welfare">
+														<i class="fa fa-users"></i>
+														<span>Welfare</span>
+														<input type="checkbox" name="house-welfare" value="house-welfare" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-family">
+														<i class="fa fa-heart"></i>
+														<span>Family</span>
+														<input type="checkbox" name="house-family" value="house-family" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-female">
+														<i class="fa fa-female"></i>
+														<span>All Female</span>
+														<input type="checkbox" name="house-female" value="house-female" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-male">
+														<i class="fa fa-male"></i>
+														<span>All Male</span>
+														<input type="checkbox" name="house-male" value="house-male" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-smoke">
+														<i class="fa fa-smoking"></i>
+														<span>Smokers</span>
+														<input type="checkbox" name="house-smoke" value="house-smoke" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+											</div>
+
+											<div class="col-md-12" style="padding: 0px;">
+												<div class="col-md-6 section-footer">
+													<a href="#">Help</a>
+												</div>
+												<div class="col-md-6 section-footer">
+													<button onClick="house_switchFive()" class="btn btn-sm btn-info pull-right">Next</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+
+								<!-- House Tab 5! -->
+								<div class="col-md-12" id="house-tab-5">
+									<div class="row" id="house-tab-5-row-1">
+										<form>
+											<div class="col-md-12" id="house-safety">
+												<div class="col-md-12" style="text-align: center;">
+													<h5>Safety</h5>
+												</div>
+												<div class="col-md-4">
+													<label class="house-safe-smoke">
+														<i class="fa fa-smoking"></i>
+														<span>Smoke Detector</span>
+														<input type="checkbox" name="house-safe-smoke" value="house-safe-smoke" required checked>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-safe-cctv">
+														<i class="fa fa-tv"></i>
+														<span>CCTV</span>
+														<input type="checkbox" name="house-safe-cctv" value="house-safe-cctv" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-safe-fire">
+														<i class="fa fa-bell"></i>
+														<span>Fire Alarm</span>
+														<input type="checkbox" name="house-safe-fire" value="house-safe-fire" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-safe-card">
+														<i class="fa fa-id-card"></i>
+														<span>Safety Card</span>
+														<input type="checkbox" name="house-safe-card" value="house-safe-card" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-safe-guard">
+														<i class="fa fa-shield-alt"></i>
+														<span>Security Guard</span>
+														<input type="checkbox" name="house-safe-guard" value="house-safe-guard" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-4">
+													<label class="house-safe-lock">
+														<i class="fa fa-lock"></i>
+														<span>Smart Lock</span>
+														<input type="checkbox" name="house-safe-lock" value="house-safe-lock" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+											</div>
+
+											<div class="col-md-12" id="house-nearby">
+												<div class="col-md-12" style="text-align: center;">
+													<h5>Nearby</h5>
+												</div>
+												<div class="col-md-2">
+													<label class="house-near-shop">
+														<i class="fa fa-shopping-cart"></i>
+														<span>Shopping</span>
+														<input type="checkbox" name="house-near-shop" value="house-near-shop" required checked>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-2">
+													<label class="house-near-store">
+														<i class="fa fa-store"></i>
+														<span>24 Hours Store</span>
+														<input type="checkbox" name="house-near-store" value="house-near-store" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-2">
+													<label class="house-near-school">
+														<i class="fa fa-school"></i>
+														<span>School</span>
+														<input type="checkbox" name="house-near-school" value="house-near-school" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-2">
+													<label class="house-near-police">
+														<i class="fa fa-user-shield"></i>
+														<span>Police Station</span>
+														<input type="checkbox" name="house-near-police" value="house-near-police" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-2">
+													<label class="house-near-popular">
+														<i class="fa fa-landmark"></i>
+														<span>Popular Place</span>
+														<input type="checkbox" name="house-near-popular" value="house-near-popular" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-2">
+													<label class="house-near-hospital">
+														<i class="fa fa-hospital"></i>
+														<span>Hospital</span>
+														<input type="checkbox" name="house-near-hospital" value="house-near-hospital" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-2">
+													<label class="house-near-bank">
+														<i class="fa fa-piggy-bank"></i>
+														<span>Bank</span>
+														<input type="checkbox" name="house-near-bank" value="house-near-bank" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-2">
+													<label class="house-near-atm">
+														<i class="fa fa-money-check"></i>
+														<span>ATM</span>
+														<input type="checkbox" name="house-near-atm" value="house-near-atm" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-2">
+													<label class="house-near-clinic">
+														<i class="fa fa-medkit"></i>
+														<span>Clinic</span>
+														<input type="checkbox" name="house-near-clinic" value="house-near-clinic" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-2">
+													<label class="house-near-medical">
+														<i class="fa fa-clinic-medical"></i>
+														<span>Medical Center</span>
+														<input type="checkbox" name="house-near-medical" value="house-near-medical" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+												<div class="col-md-2">
+													<label class="house-near-restaurant">
+														<i class="fa fa-utensils"></i>
+														<span>Restaurant</span>
+														<input type="checkbox" name="house-near-restaurant" value="house-near-restaurant" required>
+														<em class="fa fa-check-circle"></em>
+													</label>
+												</div>
+											</div>
+
+											<div class="col-md-12" id="house-bus">
+												<div class="col-md-12" style="text-align: center;">
+													<h5><i class="fa fa-bus" style="color: #3a9bfa;"></i>
+													&nbsp;Near Bus Stop</h5>
+												</div>
+
+												<div class="col-md-12">
+													<label for="bus-place-title">Place Title</label>
+													<input type="text" name="bus-place-title" class="form-control" placeholder="Place Title" required>
+												</div>
+
+												<div class="col-md-12">
+													<label for="about-bus-place">About This Place More</label>
+													<textarea class="form-control" name="about-bus-place" placeholder="About Place" required></textarea>
+												</div>
+											</div>
+
+											<div class="col-md-12" style="padding: 0px;">
+												<div class="col-md-6 section-footer">
+													<a href="#">Help</a>
+												</div>
+												<div class="col-md-6 section-footer">
+													<button onClick="house_switchSix()" class="btn btn-sm btn-info pull-right">Next</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+
+								<!-- House Tab 6! -->
+								<div class="col-md-12" id="house-tab-6">
+									<div class="row" id="house-tab-6-row-1">
+										<form>
+											<div class="col-md-12" id="house-property-about">
+												<div class="col-md-12" style="text-align: center;">
+													<h5>About Property</h5>
+												</div>
+												<div class="col-md-12">
+													<label>Title</label>
+													<input type="text" name="house-about-title" class="form-control" placeholder="Title" required>
+												</div>
+
+												<div class="col-md-12">
+													<label>About</label>
+													<textarea name="house-about-text" class="form-control" placeholder="About" required></textarea>
+												</div>
+											</div>
+
+											<div class="col-md-12" id="house-room-image">
+												<div class="col-md-12" style="text-align: center;">
+													<h5>Room & Property Image</h5>
+												</div>
+
+												<div class="col-md-12">
+													<div class="col-md-12" style="padding: 0px;">
+														<label for="browse-upload" class="custom-browse-upload">
+												    		<i class="fa fa-camera"></i>&nbsp;&nbsp;Browse Image
+														</label>
+														<input id="browse-upload" type="file"/>
+													</div>
+													<div class="col-md-4 chip">
+														<img src="images/house-2.jpg">
+														<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+													</div>
+													<div class="col-md-4">
+														<img src="images/house-2.jpg">
+														<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+													</div>
+													<div class="col-md-4">
+														<img src="images/house-2.jpg">
+														<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+													</div>
+													<div class="col-md-4">
+														<img src="images/house-2.jpg">
+														<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+													</div>
+													<div class="col-md-4">
+														<img src="images/house-2.jpg">
+														<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+													</div>
+													<div class="col-md-4">
+														<img src="images/house-2.jpg">
+														<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-md-12" style="padding: 0px;">
+												<div class="col-md-6 section-footer">
+													<a href="#">Help</a>
+												</div>
+												<div class="col-md-6 section-footer">
+													<button type="submit" class="btn btn-sm btn-info pull-right">Preview</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					<!-- Body Right House Section Start! -->
+
+
+					<!-- Body Right Flatmate Section Start! -->
 						<div class="col-md-10 col-sm-11 col-xs-11" id="body_right_flatmate_section">
 
 							<div class="row table_section" id="flatmate_table_section">
@@ -1623,7 +2462,7 @@ Project Designed By Tracer Land
 							</div>
 
 						</div>
-					<!-- Body Right Place Section End! -->
+					<!-- Body Right Flatmate Section End! -->
 
 
 					<!-- Body Right Inbox Section Start! -->

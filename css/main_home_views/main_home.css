@@ -373,8 +373,9 @@
 @media screen and (max-width: 499px){
 
 	#header{
-		background: url("../images/mobile_size_main_home_header.png") no-repeat!important;
+		background: url("../../images/mobile_size_main_home_header.png") no-repeat;
 		height: 100vh;
+		margin-top: 0px!important;
 	}
 	#header #header_wrap h3{
 		margin-left: 18px!important;

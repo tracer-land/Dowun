@@ -16,7 +16,49 @@ $(document).ready(function(){
 					$(this).addClass("active_tab");
 				});
 
-				/*Tab Title Active*/
+
+				/*House Tab Title Active*/
+				$("#body_right_house_section .house_section #tab-title li").click(function(){
+					$("#body_right_house_section .house_section #tab-title li").removeClass("active-tab-title");
+					$(this).addClass("active-tab-title");
+				});
+				$("#body_right_house_section .house_section #tab-title-commercial li").click(function(){
+					$("#body_right_house_section .house_section #tab-title-commercial li").removeClass("active-tab-title");
+					$(this).addClass("active-tab-title");
+				});
+				$("#body_right_house_section .house_section #house-tab-1 .section-footer button").click(function(){
+					$("#body_right_house_section .house_section #tab-title li").removeClass("active-tab-title");
+					$("#body_right_house_section .house_section #tab-title #house-property-address").addClass("active-tab-title");
+				});
+				$("#body_right_house_section .house_section #house-tab-2 .section-footer button").click(function(){
+					$("#body_right_house_section .house_section #tab-title li").removeClass("active-tab-title");
+					$("#body_right_house_section .house_section #tab-title #house-date-charges").addClass("active-tab-title");
+				});
+				$("#body_right_house_section .house_section #house-tab-3 .section-footer button").click(function(){
+					$("#body_right_house_section .house_section #tab-title li").removeClass("active-tab-title");
+					$("#body_right_house_section .house_section #tab-title #house-offer-accept").addClass("active-tab-title");
+				});
+				$("#body_right_house_section .house_section #house-tab-4 .section-footer button").click(function(){
+					$("#body_right_house_section .house_section #tab-title li").removeClass("active-tab-title");
+					$("#body_right_house_section .house_section #tab-title #house-safe-near").addClass("active-tab-title");
+				});
+				$("#body_right_house_section .house_section #house-tab-5 .section-footer button").click(function(){
+					$("#body_right_house_section .house_section #tab-title li").removeClass("active-tab-title");
+					$("#body_right_house_section .house_section #tab-title #house-title-images").addClass("active-tab-title");
+				});
+
+
+				$("#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 .col-md-3").click(function(){
+					$("#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 .col-md-3").removeClass("bg-color-add");
+					$(this).addClass("bg-color-add");
+				});
+				$("#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 .col-md-4").click(function(){
+					$("#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 .col-md-4").removeClass("bg-color-add");
+					$(this).addClass("bg-color-add");
+				});
+			
+
+				/*Flatmate Tab Title Active*/
 				$("#body_right_flatmate_section .flatmate_section #tab-title li").click(function(){
 					$("#body_right_flatmate_section .flatmate_section #tab-title li").removeClass("active-tab-title");
 					$(this).addClass("active-tab-title");
@@ -63,17 +105,6 @@ $(document).ready(function(){
 					$("#body_right_setting_section .table_section .my_setting .tab-section #login .phone-toggle").slideToggle();
 				});
 
-				/*Job Form*/
-				$("#body_right_job_section #job_table_section .create_job_form").click(function(){
-					$("#body_right_job_section").removeClass("col-md-10");
-					$("#body_right_job_section").addClass("col-md-12");
-				});
-				/*Flatmate Form*/
-				$("#body_right_flatmate_section #flatmate_table_section .create_flatmate_form").click(function(){
-					$("#body_right_flatmate_section").removeClass("col-md-10");
-					$("#body_right_flatmate_section").addClass("col-md-12");
-				});
-
 
 				var max_form = 7;
 				var wrapper = $(".add-form-wrap");
@@ -106,6 +137,7 @@ $(document).ready(function(){
 				get('body_right_home_section').style.display = "block";
 				get('body_right_job_section').style.display = "none";
 				get('body_right_flatmate_section').style.display = "none";
+				get('body_right_house_section').style.display = "none";
 				get('body_right_setting_section').style.display = "none";
 				get('body_right_inbox_section').style.display = "none";
 				get('fix_position').style.display = "block";
@@ -113,25 +145,50 @@ $(document).ready(function(){
 
 			function tab_switchJob(){
 				get('body_right_job_section').style.display = "block";
+				get('job_section').style.display = "none";
+				get('job_table_section').style.display = "block";
 				get('body_right_home_section').style.display = "none";
 				get('body_right_flatmate_section').style.display = "none";
+				get('body_right_house_section').style.display = "none";
 				get('body_right_setting_section').style.display = "none";
 				get('body_right_inbox_section').style.display = "none";
 				get('fix_position').style.display = "block";
+				get('body_right_job_section').style.position = "static";
+				get('body_right_job_section').style.left = "0%";
+				get('body_right_job_section').style.right = "0%";
+				get('body_right_job_section').style.transform = "translate(0%, 0%)";
 			}
 
 			function tab_switchFlatmate(){
 				get('body_right_flatmate_section').style.display = "block";
 				get('flatmate_section').style.display = "none";
 				get('flatmate_table_section').style.display = "block";
+				get('body_right_house_section').style.display = "none";
 				get('body_right_job_section').style.display = "none";
 				get('body_right_home_section').style.display = "none";
 				get('body_right_setting_section').style.display = "none";
 				get('body_right_inbox_section').style.display = "none";
+				get('fix_position').style.display = "block";
+				get('body_right_flatmate_section').style.position = "static";
+				get('body_right_flatmate_section').style.left = "0%";
+				get('body_right_flatmate_section').style.right = "0%";
+				get('body_right_flatmate_section').style.transform = "translate(0%, 0%)";
+			}
 
-				var element = get('body_right_flatmate_section');
-				element.classList.remove('col-md-12');
-				element.classList.add('col-md-10');
+			function tab_switchHouse(){
+				get('body_right_house_section').style.display = "block";
+				get('house_section').style.display = "none";
+				get('house_table_section').style.display = "block";
+				get('body_right_job_section').style.display = "none";
+				get('body_right_home_section').style.display = "none";
+				get('body_right_flatmate_section').style.display = "none";
+				get('body_right_setting_section').style.display = "none";
+				get('body_right_inbox_section').style.display = "none";
+				get('fix_position').style.display = "block";
+				get('body_right_house_section').style.position = "static";
+				get('body_right_house_section').style.left = "0%";
+				get('body_right_house_section').style.right = "0%";
+				get('body_right_house_section').style.transform = "translate(0%, 0%)";
 			}
 
 			function tab_switchSetting(){
@@ -139,7 +196,9 @@ $(document).ready(function(){
 				get('body_right_home_section').style.display = "none";
 				get('body_right_job_section').style.display = "none";
 				get('body_right_flatmate_section').style.display = "none";
+				get('body_right_house_section').style.display = "none";
 				get('body_right_inbox_section').style.display = "none";
+				get('fix_position').style.display = "block";
 			}
 
 			function tab_switchInbox(){
@@ -148,6 +207,7 @@ $(document).ready(function(){
 				get('body_right_home_section').style.display = "none";
 				get('body_right_flatmate_section').style.display = "none";
 				get('body_right_job_section').style.display = "none";
+				get('body_right_house_section').style.display = "none";
 				get('fix_position').style.display = "block";
 			}
 
@@ -231,6 +291,10 @@ $(document).ready(function(){
 				get('job_section').style.display = "block";
 				get('job_table_section').style.display = "none";
 				get('fix_position').style.display = "none";
+				get('body_right_job_section').style.position = "absolute";
+				get('body_right_job_section').style.left = "50%";
+				get('body_right_job_section').style.right = "50%";
+				get('body_right_job_section').style.transform = "translate(-50%, 0%)";
 			}
 			function job_switchTwo(){
 				get('job-tab-1').style.display = "none";
@@ -241,11 +305,89 @@ $(document).ready(function(){
 				get('job-tab-2').style.display = "none";
 			}
 
+			/*House Section Tabs!!!*/
+			function create_house_form(){
+				get('house_section').style.display = "block";
+				get('house_table_section').style.display = "none";
+				get('fix_position').style.display = "none";
+				get('body_right_house_section').style.position = "absolute";
+				get('body_right_house_section').style.left = "50%";
+				get('body_right_house_section').style.right = "50%";
+				get('body_right_house_section').style.transform = "translate(-50%, 0%)";
+			}
+			function house_switchLive(){
+				get('first-check').style.display = "inline-block";
+				get('second-check').style.display = "none";
+				get('tab-title').style.display = "block";
+				get('tab-title-commercial').style.display = "none";
+				$("#body_right_house_section .house_section #house-tab-1 #house-tab-1-title").text("Living : People To Live & Stay");
+			}
+			function house_switchCommercial(){
+				get('first-check').style.display = "none";
+				get('second-check').style.display = "inline-block";
+				get('tab-title').style.display = "none";
+				get('tab-title-commercial').style.display = "block";
+				$("#body_right_house_section .house_section #house-tab-1 #house-tab-1-title").text("Commercial : People To Live & Stay");
+			}
+			function house_switchOne(){
+				get('house-tab-1').style.display = "block";
+				get('house-tab-2').style.display = "none";
+				get('house-tab-3').style.display = "none";
+				get('house-tab-4').style.display = "none";
+				get('house-tab-5').style.display = "none";
+				get('house-tab-6').style.display = "none";
+			}
+			function house_switchTwo(){
+				get('house-tab-1').style.display = "none";
+				get('house-tab-2').style.display = "block";
+				get('house-tab-3').style.display = "none";
+				get('house-tab-4').style.display = "none";
+				get('house-tab-5').style.display = "none";
+				get('house-tab-6').style.display = "none";
+			}
+			function house_switchThree(){
+				get('house-tab-1').style.display = "none";
+				get('house-tab-2').style.display = "none";
+				get('house-tab-3').style.display = "block";
+				get('house-tab-4').style.display = "none";
+				get('house-tab-5').style.display = "none";
+				get('house-tab-6').style.display = "none";
+			}
+			function house_switchFour(){
+				get('house-tab-1').style.display = "none";
+				get('house-tab-2').style.display = "none";
+				get('house-tab-3').style.display = "none";
+				get('house-tab-4').style.display = "block";
+				get('house-tab-5').style.display = "none";
+				get('house-tab-6').style.display = "none";
+			}
+			function house_switchFive(){
+				get('house-tab-1').style.display = "none";
+				get('house-tab-2').style.display = "none";
+				get('house-tab-3').style.display = "none";
+				get('house-tab-4').style.display = "none";
+				get('house-tab-5').style.display = "block";
+				get('house-tab-6').style.display = "none";
+			}
+			function house_switchSix(){
+				get('house-tab-1').style.display = "none";
+				get('house-tab-2').style.display = "none";
+				get('house-tab-3').style.display = "none";
+				get('house-tab-4').style.display = "none";
+				get('house-tab-5').style.display = "none";
+				get('house-tab-6').style.display = "block";
+			}
+
+
 			/*Flatmate Section Tabs!!!*/
 			function create_flatmate_form(){
 				get('flatmate_section').style.display = "block";
 				get('flatmate_table_section').style.display = "none";
 				get('fix_position').style.display = "none";
+				get('body_right_flatmate_section').style.position = "absolute";
+				get('body_right_flatmate_section').style.left = "50%";
+				get('body_right_flatmate_section').style.right = "50%";
+				get('body_right_flatmate_section').style.transform = "translate(-50%, 0%)";
 			}
 			function flatmate_switchMe(){
 				get('me-section').style.display = "block";
@@ -275,6 +417,7 @@ $(document).ready(function(){
 				$("#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-tab-1-title").text("Group : This is the place for group.");
 			}
 
+			/*Flatmate Text Change!*/
 			function flatmate_switchHome(){
 				$("#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-title").text("Room(s) in an existing shared room");
 			}
@@ -298,6 +441,32 @@ $(document).ready(function(){
 			}
 			function flatmate_switchStudent(){
 				$("#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-title").text("Student Accomodation");
+			}
+
+			/*House Text Change!*/
+			function house_switchHome(){
+				$("#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1-title").text("Room(s) in an existing shared room");
+			}
+			function house_switchHouse(){
+				$("#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1-title").text("Whole property for house");
+			}
+			function house_switchStudio(){
+				$("#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1-title").text("Studio");
+			}
+			function house_switchGrammy(){
+				$("#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1-title").text("Grammy Flats");
+			}
+			function house_switchBed(){
+				$("#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1-title").text("One Bed Flat");
+			}
+			function house_switchBuilding(){
+				$("#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1-title").text("Home Stay");
+			}
+			function house_switchShared(){
+				$("#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1-title").text("Shared Room");
+			}
+			function house_switchStudent(){
+				$("#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1-title").text("Student Accomodation");
 			}
 
 

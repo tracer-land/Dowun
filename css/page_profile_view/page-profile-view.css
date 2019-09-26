@@ -331,7 +331,7 @@
 #body_right_job_section .job_section{
 	background-color: #fff;
 	margin-bottom: 40px!important;
-	margin-top: 110px!important;
+	margin-top: 60px!important;
 	padding: 20px;
 	display: none;
 }
@@ -374,16 +374,17 @@
 	font-size: 18px;
 }
 #body_right_job_section .job_section #job-tab-1 #job-tab-1-row-1 form .col-md-6 .gender .fa-check-circle{
-	color: #fff;
+	visibility: hidden!important;
 	display: inline-block;
 	margin-left: 5px;
 }
-#body_right_job_section .job_section #job-tab-1 #job-tab-1-row-1 form .col-md-6 .gender input[type="radio"]{
+#body_right_job_section .job_section #job-tab-1 #job-tab-1-row-1 form .col-md-6 .gender input[type="checkbox"]{
 	position: absolute;
 	visibility: hidden;
 }
 #body_right_job_section .job_section #job-tab-1 #job-tab-1-row-1 form .col-md-6 .gender input:checked + .fa-check-circle{
 	color: #00ff80!important;
+	visibility: visible!important;
 }
 #body_right_job_section .job_section #job-tab-1 #job-tab-1-row-1 form .col-md-3,#body_right_job_section .job_section #job-tab-1 #job-tab-1-row-1 form .col-md-2{
 	height: 80px;
@@ -400,7 +401,7 @@
 #body_right_job_section .job_section #job-tab-1 #job-tab-1-row-1 form .col-md-3 label span,#body_right_job_section .job_section #job-tab-1 #job-tab-1-row-1 form .col-md-2 label span{
 	display: block;
 }
-#body_right_job_section .job_section #job-tab-1 #job-tab-1-row-1 form .col-md-3 input[type="radio"],#body_right_job_section .job_section #job-tab-1 #job-tab-1-row-1 form .col-md-2 input[type="radio"]{
+#body_right_job_section .job_section #job-tab-1 #job-tab-1-row-1 form .col-md-3 input[type="checkbox"],#body_right_job_section .job_section #job-tab-1 #job-tab-1-row-1 form .col-md-2 input[type="checkbox"]{
 	position: absolute;
 	visibility: hidden;
 }
@@ -456,6 +457,430 @@
 	height: 150px;
 	max-width: 100%;
 }
+
+/*Body Right House Section! */
+#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 .bg-color-add,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 .bg-color-add,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 .bg-color-add{
+	background: #f1f1f1;
+}
+#body_right_house_section .table_section{
+	padding: 20px;
+	background: #fff;
+	margin-top: 45px;
+}
+#body_right_house_section .table_section ul{
+	list-style: none;
+	padding: 0px!important;
+}
+#body_right_house_section .table_section ul:first-child{
+	margin-bottom: 15px;
+}
+#body_right_house_section .table_section ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+#body_right_house_section .table_section ul li a{
+	color: #000!important;
+	text-decoration: none;
+	outline: none;
+	font-weight: bold;
+}
+#body_right_house_section .table a{
+	color: #000!important;
+	text-decoration: none;
+	outline: none;
+}
+#body_right_house_section .table .btn{
+	color: #fff!important;
+	padding: 2px 0px 2px 0px!important;
+	font-size: 12px!important;
+	margin: 0 auto!important;
+	display: block!important;
+	width: 26px;
+}
+#body_right_house_section{
+	display: none;
+}
+#body_right_house_section .house_section ul{
+	list-style: none;
+	padding: 0px!important;
+}
+#body_right_house_section .house_section ul:first-child{
+	margin-bottom: 15px;
+}
+#body_right_house_section .house_section ul li{
+	display: inline-block;
+	margin-right: 20px;
+	font-weight: bold;
+}
+#body_right_house_section .house_section{
+	padding: 20px;
+	background: #fff;
+	margin-bottom: 40px!important;
+	margin-top: 60px!important;
+	display: none;
+}
+#body_right_house_section .house_section #tab-title-commercial{
+	display: none;
+}
+#body_right_house_section .house_section #tab-title,#body_right_house_section .house_section #tab-title-commercial{
+	list-style: none;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#body_right_house_section .house_section #tab-title li,#body_right_house_section .house_section #tab-title-commercial li{
+	display: inline-block;
+	cursor: pointer;
+	margin-right: 50px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+#body_right_house_section .house_section #tab-title .active-tab-title,#body_right_house_section .house_section #tab-title-commercial .active-tab-title{
+	border-bottom: 2px solid #3a9bfa;
+}
+#body_right_house_section .house_section #tab-title li:last-child,#body_right_house_section .house_section #tab-title-commercial li:last-child{
+	margin-right: 0px!important;
+}
+#body_right_house_section .house_section #house-tab-2,#body_right_house_section .house_section #house-tab-3,#body_right_house_section .house_section #house-tab-4,#body_right_house_section .house_section #house-tab-5,#body_right_house_section .house_section #house-tab-6{
+	display: none;
+}
+#body_right_house_section .house_section #house-tab-1,#body_right_house_section .house_section #house-tab-2,#body_right_house_section .house_section #house-tab-3,#body_right_house_section .house_section #house-tab-4,#body_right_house_section .house_section #house-tab-5,#body_right_house_section .house_section #house-tab-6{
+	border: 1px solid rgba(0,0,0,0.1);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#body_right_house_section .house_section #house-tab-1 h5{
+	padding: 0px;
+	display: inline-block;
+}
+#body_right_house_section .house_section #house-tab-1 #house-section-title{
+	width: 80%;
+	margin: 0 auto!important;
+	margin-bottom: 15px!important;
+	margin-top: 20px!important;
+	text-align: center;
+}
+#body_right_house_section .house_section #house-tab-1 #house-section-title .col-md-3{
+	border: 1px solid rgba(0,0,0,0.1);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	cursor: pointer;
+}
+#body_right_house_section .house_section #house-tab-1 #house-section-title .col-md-3 .fa-home, #body_right_house_section .house_section #house-tab-1 #house-section-title .col-md-3 .fa-network-wired{
+	color: #3a9bfa;
+	display: inline-block;
+	margin-right: 5px;
+}
+#body_right_house_section .house_section #house-tab-1 #house-section-title .col-md-3 .fa-check-circle{
+	color: #00ff80;
+	display: inline-block;
+	margin-left: 5px;
+}
+#body_right_house_section .house_section #house-tab-1 #house-section-title .col-md-3 #second-check{
+	display: none;
+}
+#body_right_house_section .house_section #house-tab-1 #house-section-title .col-md-3:last-child,#body_right_house_section .house_section #house-tab-1 #house-section-title .col-md-3:first-child{
+	border: 0px!important;
+}
+/*House Tab 1 Row 1&2!*/
+#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2{
+	width: 80%;
+	margin: 0 auto!important;
+	margin-top: 20px!important;
+	margin-top: 20px!important;
+}
+#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 .col-md-3{
+	height: 120px;
+	border: 1px solid rgba(0,0,0,0.1);
+	cursor: pointer!important;
+	text-align: center;
+}
+#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 .col-md-4{
+	height: 85px;
+	border: 1px solid rgba(0,0,0,0.1);
+	cursor: pointer!important;
+	text-align: center;
+}
+#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 .col-md-3 label,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 .col-md-4 label{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	padding: 8px;
+}
+#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 .col-md-3 label span,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 .col-md-4 label span{
+	display: block;
+}
+#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 .col-md-3 label>.fa-home,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 .col-md-3 label>.fa-warehouse,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 .col-md-3 label>.fa-glasses,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 .col-md-3 label>.fa-music,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 .col-md-3 label>.fa-bed,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 .col-md-3 label>.fa-building,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 .col-md-3 label>.fa-slideshare,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 .col-md-3 label>.fa-laptop,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 .col-md-4 label>.fa-building,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 .col-md-4 label>.fa-warehouse,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 .col-md-4 label>.fa-hotel{
+	font-size: 18px;
+	color: #3a9bfa;
+}
+#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 form .col-md-3 input[type="radio"],#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 form .col-md-4 input[type="radio"]{
+	position: absolute;
+	visibility: hidden;
+}
+#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 form .col-md-3 input:checked + .fa-check-circle,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 form .col-md-4 input:checked + .fa-check-circle{
+	color: #00ff80!important;
+	visibility: visible!important;
+}
+#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 form .col-md-3 .fa-check-circle,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 form .col-md-4 .fa-check-circle{
+	visibility: hidden;
+}
+
+/*House Tab 2 Rows!*/
+#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1{
+	width: 80%;
+	margin: 0 auto!important;
+	margin-top: 20px!important;
+	margin-bottom: 30px!important;
+}
+#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 h5{
+	padding: 0px;
+	display: inline-block;
+	font-weight: bold;
+}
+#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 #house-about-property,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 #house-location-property{
+	margin-top: 20px;
+	border: 1px solid rgba(0,0,0,0.1);
+	padding: 8px;
+	padding-bottom: 15px;
+}
+#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 #house-about-property .col-md-6,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 #house-location-property .col-md-6,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 #house-location-property .col-md-12{
+	margin-top: 10px;
+}
+#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 #house-about-property .col-md-6 label>.fa-bed,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 #house-about-property .col-md-6 label>.fa-bath,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 #house-about-property .col-md-6 label>.fa-warehouse,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 #house-about-property .col-md-6 label>.fa-user-friends,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 #house-about-property .col-md-6 label>.fa-adn,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 #house-location-property .col-md-6 label>.fa-location-arrow,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 #house-location-property .col-md-12 label>.fa-thumbtack{
+	color: #3a9bfa;
+}
+#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 #house-prefer-gender{
+	text-align: center;
+	margin-top: 20px;
+}
+#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 form #house-prefer-gender .gender{
+	width: 100%;
+	border: 1px solid rgba(0,0,0,0.1);
+	padding: 10px;
+	cursor: pointer;
+	text-align: center;
+}
+#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 form #house-prefer-gender .gender .fa-male,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 form #house-prefer-gender .gender .fa-female{
+	color: #3a9bfa;
+	display: inline-block;
+	margin-right: 5px;
+	font-size: 18px;
+}
+#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 form #house-prefer-gender .gender .fa-check-circle{
+	display: inline-block;
+	margin-left: 5px;
+	visibility: hidden!important;
+}
+#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 form #house-prefer-gender .gender input[type="checkbox"]{
+	position: absolute;
+	visibility: hidden!important;
+}
+#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 form #house-prefer-gender .gender input:checked + .fa-check-circle{
+	color: #00ff80!important;
+	visibility: visible!important;
+}
+
+/*House Tab 3 Rows!*/
+#body_right_house_section .house_section #house-tab-3 #house-tab-3-row-1{
+	width: 80%;
+	margin: 0 auto!important;
+	margin-top: 20px!important;
+	margin-bottom: 30px!important;
+}
+#body_right_house_section .house_section #house-tab-3 #house-tab-3-row-1 h5{
+	padding: 0px;
+	display: inline-block;
+	font-weight: bold;
+}
+#body_right_house_section .house_section #house-tab-3 #house-tab-3-row-1 #house-room-availablity,#body_right_house_section .house_section #house-tab-3 #house-tab-3-row-1 #house-how-much{
+	margin-top: 20px;
+	border: 1px solid rgba(0,0,0,0.1);
+	padding: 8px;
+	padding-bottom: 15px;
+}
+#body_right_house_section .house_section #house-tab-3 #house-tab-3-row-1 #house-room-availablity .col-md-6,#body_right_house_section .house_section #house-tab-3 #house-tab-3-row-1 #house-how-much .col-md-6{
+	margin-top: 10px;
+}
+#body_right_house_section .house_section #house-tab-3 #house-tab-3-row-1 #house-room-availablity .col-md-6 label>.fa-play,#body_right_house_section .house_section #house-tab-3 #house-tab-3-row-1 #house-room-availablity .col-md-6 label>.fa-pause,#body_right_house_section .house_section #house-tab-3 #house-tab-3-row-1 #house-how-much .col-md-6 label>.fa-money-bill-alt,#body_right_house_section .house_section #house-tab-3 #house-tab-3-row-1 #house-how-much .col-md-6 label>.fa-dollar-sign,#body_right_house_section .house_section #house-tab-3 #house-tab-3-row-1 #house-how-much .col-md-6 label>.fa-pen,#body_right_house_section .house_section #house-tab-3 #house-tab-3-row-1 #house-how-much .col-md-6 label>.fa-plug{
+	color: #3a9bfa;
+}
+
+
+/*House Tab 4 Rows!*/
+#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1{
+	width: 80%;
+	margin: 0 auto!important;
+	margin-top: 20px!important;
+	margin-bottom: 30px!important;
+}
+#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 h5{
+	padding: 0px;
+	display: inline-block;
+	font-weight: bold;
+}
+#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-include-property,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-accept-rental{
+	margin-top: 20px;
+	padding: 0px;
+	padding-bottom: 15px;
+}
+#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-include-property .col-md-4,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-accept-rental .col-md-4{
+	height: 80px;
+	border: 1px solid rgba(0,0,0,0.1);
+	cursor: pointer!important;
+	text-align: center;
+}
+#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-include-property .col-md-4 label,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-accept-rental .col-md-4 label{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	padding: 8px;
+}
+#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-include-property .col-md-4 label span,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-accept-rental .col-md-4 label span{
+	display: block;
+}
+#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-include-property .col-md-4 input[type="checkbox"],#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-accept-rental .col-md-4 input[type="checkbox"]{
+	position: absolute;
+	visibility: hidden;
+}
+#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 form .col-md-4 .fa-check-circle{
+	visibility: hidden!important;
+}
+#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-include-property .col-md-4 input:checked + .fa-check-circle,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-accept-rental .col-md-4 input:checked + .fa-check-circle{
+	color: #00ff80!important;
+	visibility: visible!important;
+}
+#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-include-property .col-md-4 label>.fa-wifi,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-include-property .col-md-4 label>.fa-car,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-include-property .col-md-4 label>.fa-fan,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-include-property .col-md-4 label>.fa-couch,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-include-property .col-md-4 label>.fa-tv,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-include-property .col-md-4 label>.fa-dumbbell,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-include-property .col-md-4 label>.fa-tshirt,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-include-property .col-md-4 label>.fa-blender,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-include-property .col-md-4 label>.fa-ice-cream,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-accept-rental .col-md-4 label>.fa-heart,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-accept-rental .col-md-4 label>.fa-glasses,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-accept-rental .col-md-4 label>.fa-laptop,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-accept-rental .col-md-4 label>.fa-paw,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-accept-rental .col-md-4 label>.fa-users,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-accept-rental .col-md-4 label>.fa-smoking,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-accept-rental .col-md-4 label>.fa-child,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-accept-rental .col-md-4 label>.fa-male,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-accept-rental .col-md-4 label>.fa-female{
+	color: #3a9bfa;
+}
+
+/*House Tab 5 Rows!*/
+#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1{
+	width: 80%;
+	margin: 0 auto!important;
+	margin-top: 20px!important;
+	margin-bottom: 30px!important;
+}
+#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 h5{
+	padding: 0px;
+	display: inline-block;
+	font-weight: bold;
+}
+#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-safety,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-nearby,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-bus{
+	margin-top: 20px;
+	padding: 0px;
+	padding-bottom: 15px;
+}
+#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-safety .col-md-4{
+	height: 80px;
+	border: 1px solid rgba(0,0,0,0.1);
+	cursor: pointer!important;
+	text-align: center;
+}
+#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-nearby .col-md-2{
+	height: 100px;
+	border: 1px solid rgba(0,0,0,0.1);
+	cursor: pointer!important;
+	text-align: center;
+}
+#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-safety .col-md-4 label,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-nearby .col-md-2 label{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	padding: 8px;
+}
+#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-safety .col-md-4 label span,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-nearby .col-md-2 label span{
+	display: block;
+}
+#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-safety .col-md-4 input[type="checkbox"],#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-nearby .col-md-2 input[type="checkbox"]{
+	position: absolute;
+	visibility: hidden;
+}
+#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 form .col-md-4 .fa-check-circle,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 form .col-md-2 .fa-check-circle{
+	visibility: hidden!important;
+}
+#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 .col-md-4 input:checked + .fa-check-circle,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 .col-md-2 input:checked + .fa-check-circle{
+	color: #00ff80!important;
+	visibility: visible!important;
+}
+#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-safety .col-md-4 label>.fa-smoking,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-safety .col-md-4 label>.fa-bell,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-safety .col-md-4 label>.fa-id-card,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-safety .col-md-4 label>.fa-shield-alt,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-safety .col-md-4 label>.fa-tv,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-safety .col-md-4 label>.fa-lock,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-nearby .col-md-2 label>.fa-shopping-cart,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-nearby .col-md-2 label>.fa-store,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-nearby .col-md-2 label>.fa-user-shield,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-nearby .col-md-2 label>.fa-school,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-nearby .col-md-2 label>.fa-piggy-bank,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-nearby .col-md-2 label>.fa-money-check,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-nearby .col-md-2 label>.fa-medkit,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-nearby .col-md-2 label>.fa-hospital,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-nearby .col-md-2 label>.fa-clinic-medical,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-nearby .col-md-2 label>.fa-landmark,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-nearby .col-md-2 label>.fa-utensils{
+	color: #3a9bfa;
+}
+#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-bus .col-md-12{
+	padding: 0px!important;
+	margin-top: 10px;
+}
+#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 #house-bus .col-md-12 textarea{
+	max-width: 100%!important;
+	height: 120px;
+}
+
+/*House Tab 6 Rows!*/
+#body_right_house_section .house_section #house-tab-6 #house-tab-6-row-1{
+	width: 80%;
+	margin: 0 auto!important;
+	margin-top: 20px!important;
+	margin-bottom: 30px!important;
+}
+#body_right_house_section .house_section #house-tab-6 #house-tab-6-row-1 h5{
+	padding: 0px;
+	display: inline-block;
+	font-weight: bold;
+}
+#body_right_house_section .house_section #house-tab-6 #house-tab-6-row-1 #house-property-about{
+	margin-top: 20px;
+	padding: 0px;
+	padding-bottom: 15px;
+}
+#body_right_house_section .house_section #house-tab-6 #house-tab-6-row-1 #house-property-about .col-md-12{
+	padding: 0px!important;
+	margin-top: 10px;
+}
+#body_right_house_section .house_section #house-tab-6 #house-tab-6-row-1 #house-property-about .col-md-12 textarea{
+	max-width: 100%!important;
+	height: 120px;
+}
+#body_right_house_section .house_section #house-tab-6 #house-tab-6-row-1 #house-room-image{
+	margin-top: 20px;
+	padding: 0px;
+	padding-bottom: 15px;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+#body_right_house_section .house_section #house-tab-6 #house-tab-6-row-1 #house-room-image .col-md-12 .col-md-4 img{
+	width: 100%;
+	height: 100%;
+}
+#body_right_house_section .house_section #house-tab-6 #house-tab-6-row-1 #house-room-image .col-md-12 .col-md-4{
+	margin-top: 10px;
+	padding: 5px;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+#body_right_house_section .house_section #house-tab-6 #house-tab-6-row-1 #house-room-image .col-md-12 .col-md-4 span{
+	font-size: 22px;
+	color: #fff;
+	border-radius: 25%;
+	position: absolute;
+	z-index: 10;
+	top: 3%;
+	right: 3%;
+	font-weight: bold;
+	cursor: pointer;
+}
+#body_right_house_section .house_section #house-tab-6 #house-tab-6-row-1 #house-room-image .col-md-12 input[type="file"] {
+    display: none;
+}
+#body_right_house_section .house_section #house-tab-6 #house-tab-6-row-1 #house-room-image .col-md-12 .custom-browse-upload .fa-camera{
+	font-size: 16px;
+	color: #3a9bfa;
+}
+#body_right_house_section .house_section #house-tab-6 #house-tab-6-row-1 #house-room-image .col-md-12 .custom-browse-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+
+
 
 /*Body Right Flatmate Section! */
 #body_right_flatmate_section .table_section{
@@ -518,7 +943,7 @@
 	background: #fff;
 	margin: 0 auto;
 	margin-bottom: 40px!important;
-	margin-top: 110px!important;
+	margin-top: 60px!important;
 	display: none;
 }
 #body_right_flatmate_section .flatmate_section #tab-title{
@@ -873,11 +1298,11 @@
 
 
 /*Section Footer*/
-#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #me-section .section-footer,#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section .section-footer,#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section .section-footer,#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 .section-footer,#body_right_flatmate_section .flatmate_section #flatmate-tab-3 #flatmate-tab-3-row-1 .section-footer,#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 .section-footer,#body_right_job_section .job_section #job-tab-1 #job-tab-1-row-1 .section-footer,#body_right_job_section .job_section #job-tab-2 #job-tab-2-row-1 .section-footer{
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #me-section .section-footer,#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section .section-footer,#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section .section-footer,#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 .section-footer,#body_right_flatmate_section .flatmate_section #flatmate-tab-3 #flatmate-tab-3-row-1 .section-footer,#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 .section-footer,#body_right_job_section .job_section #job-tab-1 #job-tab-1-row-1 .section-footer,#body_right_job_section .job_section #job-tab-2 #job-tab-2-row-1 .section-footer,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 .section-footer,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 .section-footer,#body_right_house_section .house_section #house-tab-3 #house-tab-3-row-1 .section-footer,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 .section-footer,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 .section-footer,#body_right_house_section .house_section #house-tab-6 #house-tab-6-row-1 .section-footer{
 	margin-top: 15px!important;
 	padding: 0px!important;
 }
-#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #me-section .section-footer a,#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section .section-footer a,#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section .section-footer a,#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 .section-footer a,#body_right_flatmate_section .flatmate_section #flatmate-tab-3 #flatmate-tab-3-row-1 .section-footer a,#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 .section-footer a,#body_right_job_section .job_section #job-tab-1 #job-tab-1-row-1 .section-footer a,#body_right_job_section .job_section #job-tab-2 #job-tab-2-row-1 .section-footer a{
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #me-section .section-footer a,#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section .section-footer a,#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section .section-footer a,#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 .section-footer a,#body_right_flatmate_section .flatmate_section #flatmate-tab-3 #flatmate-tab-3-row-1 .section-footer a,#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 .section-footer a,#body_right_job_section .job_section #job-tab-1 #job-tab-1-row-1 .section-footer a,#body_right_job_section .job_section #job-tab-2 #job-tab-2-row-1 .section-footer a,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 .section-footer a,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 .section-footer a,#body_right_house_section .house_section #house-tab-3 #house-tab-3-row-1 .section-footer a,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 .section-footer a,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 .section-footer a,#body_right_house_section .house_section #house-tab-6 #house-tab-6-row-1 .section-footer a{
 	text-decoration: none;
 	outline: none;
 	color: #000!important;

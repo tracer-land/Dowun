@@ -155,9 +155,17 @@
 	margin-top: 10px;
 	font-size: 13px;
 }
-#flatmate .row .col-md-3 a #recent_item #recent_text_wrap span{
-	display: block;
+#flatmate .row .col-md-3 a #recent_item #recent_text_wrap p{
 	margin-top: 10px;
+}
+#flatmate .row .col-md-3 a #recent_item #recent_text_wrap p #more{
+	display: none;
+}
+#flatmate .row .col-md-3 a #recent_item #recent_text_wrap em{
+	font-size: 12px;
+	color: #ccc!important;
+}
+#flatmate .row .col-md-3 a #recent_item #recent_text_wrap span{
 	font-size: 13px;
 }
 #flatmate .row .col-md-3 a #recent_item #recent_text_wrap i{

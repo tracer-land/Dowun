@@ -286,6 +286,23 @@ nav li:last-child a img{
 #body #candidate_detail #third_row .table tr th,#body #candidate_detail #third_row .table tr td{
 	border-top: 0px solid rgba(0,0,0,0)!important;
 }
+#body #candidate_detail #third_row .table tr th{
+	width: 20%;
+}
+#body #candidate_detail #third_row .table tr td{
+	width: 80%;
+}
+#body #candidate_detail #third_row .table tr span,#body #candidate_detail #third_row .table tr small, #body #candidate_detail #third_row .table tr strong{
+	display: block;
+	margin-bottom: 8px;
+}
+#body #candidate_detail #third_row .table tr small{
+	padding: 0px!important;
+	margin-left: 0px!important;
+}
+#body #candidate_detail #third_row .table tr p{
+	text-align: justify;
+}
 #body #candidate_detail #third_row h4{
 	font-weight: bold;
 }

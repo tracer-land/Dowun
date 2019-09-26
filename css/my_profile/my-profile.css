@@ -198,111 +198,129 @@ nav li:last-child a img{
 	margin-top: 10px;
 }
 
-/*Second Row!*/
-#body .container-fluid .col-md-10 .second_row{
+/*My CV Section!*/
+/*View Profile!*/
+#body .container-fluid .col-md-10 #view-profile{
 	margin-top: 5px;
 	padding: 20px;
 	background: #fff;
 }
-#body .container-fluid .col-md-10 .second_row #first-row{
+#body .container-fluid .col-md-10 #view-profile #first-row{
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-#body .container-fluid .col-md-10 .second_row .col-md-6 img{
+#body .container-fluid .col-md-10 #view-profile .col-md-6 img{
 	width: 80px;
 	height: 80px;
 	border-radius: 40px;
 	float: left;
 }
-#body .container-fluid .col-md-10 .second_row .col-md-6:first-child ul{
+#body .container-fluid .col-md-10 #view-profile .col-md-6:first-child ul{
 	list-style: none;
 	float: left;
 }
-#body .container-fluid .col-md-10 .second_row .col-md-6:first-child ul li:first-child{
+#body .container-fluid .col-md-10 #view-profile .col-md-6:first-child ul li:first-child{
 	font-weight: bold;
 }
-#body .container-fluid .col-md-10 .second_row .col-md-6:first-child  ul li .active{
+#body .container-fluid .col-md-10 #view-profile .col-md-6:first-child  ul li .active{
 	color: #0f0!important;
 }
-#body .container-fluid .col-md-10 .second_row .col-md-6:first-child  ul li .unactive{
+#body .container-fluid .col-md-10 #view-profile .col-md-6:first-child  ul li .unactive{
 	color: #f00!important;
 }
-#body .container-fluid .col-md-10 .second_row .col-md-6:first-child  ul li:last-child span{
+#body .container-fluid .col-md-10 #view-profile .col-md-6:first-child  ul li:last-child span{
 	display: block;
 	margin-top: 8px;
 	font-size: 10px!important;
 }
-#body .container-fluid .col-md-10 .second_row .col-md-6:last-child  ul{
+#body .container-fluid .col-md-10 #view-profile .col-md-6:last-child  ul{
 	list-style: none;
 	float: right;
 }
-#body .container-fluid .col-md-10 .second_row .col-md-6:last-child  ul li .message_type_btn{
+#body .container-fluid .col-md-10 #view-profile .col-md-6:last-child  ul li .message_type_btn{
 	background-color: #3a9bfa!important;
 	color: #fff!important;
 	float: right;
 }
-#body .container-fluid .col-md-10 .second_row .col-md-6:last-child  ul li form .download_btn{
+#body .container-fluid .col-md-10 #view-profile .col-md-6:last-child  ul li form .download_btn{
 	background-color: #3a9bfa!important;
 	color: #fff!important;
 }
-#body .container-fluid .col-md-10 .second_row .col-md-6:last-child  ul li form .save_btn{
+#body .container-fluid .col-md-10 #view-profile .col-md-6:last-child  ul li form .save_btn{
 	background-color: #3a9bfa!important;
 	color: #fff!important;
 }
 /*#second-row*/
-#body .container-fluid .col-md-10 .second_row #second-row{
+#body .container-fluid .col-md-10 #view-profile #second-row{
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-#body .container-fluid .col-md-10 .second_row #second-row{
+#body .container-fluid .col-md-10 #view-profile #second-row{
 	padding-top: 25px;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-#body .container-fluid .col-md-10 .second_row #second-row ul{
+#body .container-fluid .col-md-10 #view-profile #second-row ul{
 	list-style: none;
 }
-#body .container-fluid .col-md-10 .second_row #second-row ul li:first-child{
+#body .container-fluid .col-md-10 #view-profile #second-row ul li:first-child{
 	font-weight: bold;
 }
-#body .container-fluid .col-md-10 .second_row #second-row ul li:last-child{
+#body .container-fluid .col-md-10 #view-profile #second-row ul li:last-child{
 	margin-left: 30px;
 	margin-top: 5px;
 }
-#body .container-fluid .col-md-10 .second_row #second-row ul li i{
+#body .container-fluid .col-md-10 #view-profile #second-row ul li i{
 	margin-right: 7px;
 	font-size: 18px;
 }
-#body .container-fluid .col-md-10 .second_row #second-row .col-md-4{
+#body .container-fluid .col-md-10 #view-profile #second-row .col-md-4{
 	margin-bottom: 10px;
 }
 /*#third-row*/
-#body .container-fluid .col-md-10 .second_row #third-row{
+#body .container-fluid .col-md-10 #view-profile #third-row{
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-#body .container-fluid .col-md-10 .second_row #third-row .table{
-	width: 65%;
+#body .container-fluid .col-md-10 #view-profile #third-row .table{
+	width: 100%;
 }
-#body .container-fluid .col-md-10 .second_row #third-row .table tr th,#body .container-fluid .col-md-10 .second_row #third-row .table tr td{
+#body .container-fluid .col-md-10 #view-profile #third-row .table tr th,#body .container-fluid .col-md-10 #view-profile #third-row .table tr td{
 	border-top: 0px solid rgba(0,0,0,0)!important;
 }
-#body .container-fluid .col-md-10 .second_row #third-row h4{
+#body .container-fluid .col-md-10 #view-profile #third-row .table tr th{
+	width: 20%;
+}
+#body .container-fluid .col-md-10 #view-profile #third-row .table tr td{
+	width: 80%;
+}
+#body .container-fluid .col-md-10 #view-profile #third-row .table tr span,#body .container-fluid .col-md-10 #view-profile #third-row .table tr small,#body .container-fluid .col-md-10 #view-profile #third-row .table tr strong{
+	display: block;
+	margin-bottom: 8px;
+}
+#body .container-fluid .col-md-10 #view-profile #third-row .table tr small{
+	padding: 0px!important;
+	margin-left: 0px!important;
+}
+#body .container-fluid .col-md-10 #view-profile #third-row .table tr p{
+	text-align: justify;
+}
+#body .container-fluid .col-md-10 #view-profile #third-row h4{
 	font-weight: bold;
 }
 /*#fourth-row*/
-#body .container-fluid .col-md-10 .second_row #fourth-row{
+#body .container-fluid .col-md-10 #view-profile #fourth-row{
 	padding-top: 25px;
 }
-#body .container-fluid .col-md-10 .second_row #fourth-row h4{
+#body .container-fluid .col-md-10 #view-profile #fourth-row h4{
 	font-weight: bold;
 	margin-bottom: 28px;
 }
-#body .container-fluid .col-md-10 .second_row #fourth-row .col-md-4{
+#body .container-fluid .col-md-10 #view-profile #fourth-row .col-md-4{
 	margin-bottom: 10px;
 }
-#body .container-fluid .col-md-10 .second_row #fourth-row .col-md-4 p a{
+#body .container-fluid .col-md-10 #view-profile #fourth-row .col-md-4 p a{
 	text-decoration: none!important;
 	outline: none!important;
 	color: #000!important;
 }
-#body .container-fluid .col-md-10 .second_row #fourth-row #icon{
+#body .container-fluid .col-md-10 #view-profile #fourth-row #icon{
 	text-decoration: none!important;
 	outline: none!important;
 	color: #000!important;
@@ -316,14 +334,11 @@ nav li:last-child a img{
 	box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
 	margin-left:  10px;
 }
-
-
-/*My CV Section!*/
 #body .container-fluid .col-md-10 .my_cv{
 	margin-top: 5px;
 	padding: 20px;
 	background: #fff;
-	display: none;
+	display: block;
 }
 #body .container-fluid .col-md-10 .my_cv .tab-menu{
 	width: 20%;
@@ -355,7 +370,6 @@ nav li:last-child a img{
 #body .container-fluid .col-md-10 .my_cv .tab-section #view-profile h4{
 	font-size: 15px;
 	font-weight: bold;
-	border-bottom: 1px solid rgba(0,0,0,0.1);
 	padding-bottom: 6px;
 }
 #body .container-fluid .col-md-10 .my_cv .tab-section #view-profile .table tr th,#body .container-fluid .col-md-10 .my_cv .tab-section #view-profile .table tr td{

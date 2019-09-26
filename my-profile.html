@@ -73,10 +73,14 @@ Project Designed By Tracer Land
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<!-- Language Toggle Start! -->
 						<ul id="language_toggle_select" class="nav navbar-nav navbar-right">
-							<select class="form-control">
-								<option value="mm" selected>MM</option>
-								<option value="eng">ENG</option>
-							</select>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Myanmar</a>
+							<ul class="dropdown-menu">
+								<span class="caret language-caret"></span>
+								<li><a href="#">Myanmar</a></li>
+								<li><a href="#">English</a></li>
+								<li><a href="#">Chinese</a></li>
+								<li><a href="#">Japanese</a></li>
+							</ul>
 						</ul>
 						<!-- Language Toggle End! -->
 						<ul class="nav navbar-nav navbar-right" style="margin-right: 0px!important;">
@@ -86,7 +90,7 @@ Project Designed By Tracer Land
 							<li><a href="job.html">Jobs</a></li>
 							<li><a href="house.html">House</a></li>
 							
-							<li id="drp-menu">
+														<li id="drp-menu">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Post</a>
 								<ul class="dropdown-menu">
 									<span class="caret first-caret"></span>
@@ -94,19 +98,19 @@ Project Designed By Tracer Land
 										<a href="#">Create Post</a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;Place
-											<small>Share your need to other, if you are finding a room or place.</small>
+										<a href="page-profile-view.html"><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;Place
 										</a>
+										<small>Share your need to other, if you are finding a room or place.</small>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-suitcase"></i>&nbsp;&nbsp;Job
-											<small>Find employee and post a job to all.</small>
+										<a href="page-profile-view.html"><i class="fa fa-suitcase"></i>&nbsp;&nbsp;Job
 										</a>
+										<small>Find employee and post a job to all.</small>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-home"></i>&nbsp;&nbsp;House
-											<small>Find a house and post a house to all.</small>
+										<a href="page-profile-view.html"><i class="fa fa-home"></i>&nbsp;&nbsp;House
 										</a>
+										<small>Find a house and post a house to all.</small>
 									</li>
 								</ul>
 							</li>
@@ -119,14 +123,14 @@ Project Designed By Tracer Land
 										<a href="#">Create Page</a>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-wpforms"></i>&nbsp;&nbsp;CV
-											<small>Candidate CV to apply job and promote you need.</small>
+										<a href="my-profile.html"><i class="fa fa-wpforms"></i>&nbsp;&nbsp;CV
 										</a>
+										<small>Candidate CV to apply job and promote you need.</small>
 									</li>
 									<li>
-										<a href="#"><i class="fa fa-briefcase"></i>&nbsp;&nbsp;Business Page
-											<small>Find employee and post a job to all.</small>
+										<a href="create-page-step-1.html"><i class="fa fa-briefcase"></i>&nbsp;&nbsp;Business Page
 										</a>
+										<small>Find employee and post a job to all.</small>
 									</li>
 								</ul>
 							</li>
@@ -140,6 +144,9 @@ Project Designed By Tracer Land
 
 								<!-- Notification Section Start! -->
 								<ul class="dropdown-menu">
+									<center>
+										<span class="caret noti-caret"></span>
+									</center>
 									<a href="#">
 										<div class="row">
 											<div class="col-md-2 col-sm-2 col-xs-2">
@@ -254,10 +261,6 @@ Project Designed By Tracer Land
 		<!-- Tob Tab Bar Sub Navigation Start! -->
 			<div id="sub_nav">
 				<ul>
-					<li>
-						<a href="my-profile.html">Min Min</a>
-					</li>
-
 					<li>
 						<a href="#" onClick="tab_switchMycv()" class="cv-caret">My Profile or CV</a>
 					</li>
@@ -433,218 +436,6 @@ Project Designed By Tracer Land
 								</div>
 							</div>
 
-							<!-- Personal Information Show! -->
-							<div class="row second_row" id="personal-information-show">
-								
-								<!-- #first-row -->
-								<div class="row" id="first-row">
-									<div class="col-md-6">
-										<img src="images/client.jpg">
-										<ul>
-											<li>
-												<span class="position">Min Min</span>
-											</li>
-											<li>
-												<span>Yangon, Myanmar</span>
-											</li>
-											<li>
-												<span>Previous - Project Manager</span>
-											</li>
-											<li>
-												<i class="fa fa-circle active"></i>
-												<span>Active Job Searching</span>
-											</li>
-											<li>
-												<span>Last Update CV : 2019 Aug 20</span>
-											</li>
-										</ul>
-									</div>
-
-									<div class="col-md-6">
-										<ul>
-											<li>
-												<form action="#">
-													<button type="submit" class="btn btn-sm download_btn">Download</button>
-													<button class="btn btn-sm save_btn">Save</button>
-												</form>
-											</li>
-										</ul>
-									</div>
-								</div>
-
-								<!-- #second-row -->
-								<div class="row" id="second-row">
-									<div class="col-md-4">
-										<ul>
-											<li><i class="fa fa-money"></i>&nbsp;Last Salary</li>
-											<li>200,000 MMK</li>
-										</ul>
-									</div>
-									<div class="col-md-4">
-										<ul>
-											<li><i class="fa fa-flag"></i>&nbsp;Career Level</li>
-											<li>Manager</li>
-										</ul>
-									</div>
-									<div class="col-md-4">
-										<ul>
-											<li><i class="fa fa-user"></i>&nbsp;Gender/Age</li>
-											<li>Both/24</li>
-										</ul>
-									</div>
-									<div class="col-md-4">
-										<ul>
-											<li><i class="fa fa-suitcase"></i>&nbsp;Job Type</li>
-											<li>Sales</li>
-										</ul>
-									</div>
-									<div class="col-md-4">
-										<ul>
-											<li><i class="fa fa-heart"></i>&nbsp;Interest</li>
-											<li>Marketing</li>
-										</ul>
-									</div>
-									<div class="col-md-4">
-										<ul>
-											<li><i class="fa fa-arrow-up"></i>&nbsp;Experience</li>
-											<li>3 Years</li>
-										</ul>
-									</div>
-								</div>
-
-								<!-- #third-row -->
-								<div class="row" id="third-row">
-									<div class="col-md-12">
-										<h4>Work Experience</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-									</div>
-									<div class="col-md-12">
-										<h4>Education</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-									</div>
-									<div class="col-md-12">
-										<h4>Personal Information</h4>
-										<table class="table">
-											<tr>
-												<th>Full Name</th>
-												<td>Min Min</td>
-											</tr>
-											<tr>
-												<th>Gender</th>
-												<td>Male</td>
-											</tr>
-											<tr>
-												<th>Date of Birth</th>
-												<td>Dec 09 1992</td>
-											</tr>
-											<tr>
-												<th>Marital Status</th>
-												<td>Single</td>
-											</tr>
-											<tr>
-												<th>Nationality</th>
-												<td>Myanmar</td>
-											</tr>
-											<tr>
-												<th>Address</th>
-												<td>No.7, Thapyay St, Yankin, Yangon, Myanmar</td>
-											</tr>
-											<tr>
-												<th>Skills</th>
-												<td>English - Intermediate / Chinese - Advance</td>
-											</tr>
-											<tr>
-												<th>Education</th>
-												<td>University - Greenwich / Degree - IT Business / 2012-2016, UK</td>
-											</tr>
-											<tr>
-												<th>Experience</th>
-												<td>Director at NetCore Internet (2013-2018), Myanmar</td>
-											</tr>
-											<tr>
-												<th>Other Skills</th>
-												<td>Driver License - Yes</td>
-											</tr>
-											<tr>
-												<th>Interested Position</th>
-												<td>Accounting Manager</td>
-											</tr>
-											<tr>
-												<th>Area of Interest</th>
-												<td>Construction</td>
-											</tr>
-										</table>
-									</div>
-									<div class="col-md-12">
-										<h4>About Me</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-									</div>
-								</div>
-
-								<!-- #fourth-row -->
-								<div class="row" id="fourth-row">
-									<h4 class="text-center">Contact Information</h4>
-
-									<div class="col-md-4">
-										<p class="text-center">
-											<i class="fa fa-phone"></i>&nbsp;<a href="tel:+95 97950685410">+95 97950685410</a>
-										</p>
-									</div>
-									<div class="col-md-4">
-										<p class="text-center">
-											<a href="mailto:min@gmail.com">
-												<i class="fa fa-envelope"></i>&nbsp;min@gmial.com
-											</a>
-										</p>
-									</div>
-									<div class="col-md-4">
-										<p class="text-center">
-											<i class="fa fa-location-arrow"></i>&nbsp;Tamwe, Yangon, Myanmar
-										</p>
-									</div>
-
-									<center>
-										<a href="#" id="icon" class="text-center">
-											<i class="fa fa-facebook"></i>
-										</a>
-
-										<a href="#" id="icon" class="text-center">
-											<i class="fa fa-twitter"></i>
-										</a>
-
-										<a href="#" id="icon" class="text-center">
-											<i class="fa fa-globe"></i>
-										</a>
-									</center>
-								</div>
-
-							</div>
-
 							<!-- My CV Section! -->
 							<div class="row my_cv" id="my-cv-section">
 								<div class="col-md-3 tab-menu">
@@ -671,58 +462,195 @@ Project Designed By Tracer Land
 
 									<!-- View-Profile! -->
 									<div id="view-profile">
-										<h4>View Profile or CV</h4>
+										
+										<!-- #first-row -->
+										<div class="row" id="first-row">
+											<div class="col-md-6">
+												<img src="images/client.jpg">
+												<ul>
+													<li>
+														<span class="position">Min Min</span>
+													</li>
+													<li>
+														<span>Yangon, Myanmar</span>
+													</li>
+													<li>
+														<span>Previous - Project Manager</span>
+													</li>
+													<li>
+														<i class="fa fa-circle active"></i>
+														<span>Active Job Searching</span>
+													</li>
+													<li>
+														<span>Last Update CV : 2019 Aug 20</span>
+													</li>
+												</ul>
+											</div>
 
-										<table class="table">
-											<tr>
-												<th>Full Name</th>
-												<td>Min Min</td>
-											</tr>
-											<tr>
-												<th>Gender</th>
-												<td>Male</td>
-											</tr>
-											<tr>
-												<th>Date of Birth</th>
-												<td>Dec 09 1992</td>
-											</tr>
-											<tr>
-												<th>Marital Status</th>
-												<td>Single</td>
-											</tr>
-											<tr>
-												<th>Nationality</th>
-												<td>Myanmar</td>
-											</tr>
-											<tr>
-												<th>Address</th>
-												<td>No.7, Thapyay St, Yankin, Yangon, Myanmar</td>
-											</tr>
-											<tr>
-												<th>Skills</th>
-												<td>English - Intermediate / Chinese - Advance</td>
-											</tr>
-											<tr>
-												<th>Education</th>
-												<td>University - Greenwich / Degree - IT Business / 2012-2016, UK</td>
-											</tr>
-											<tr>
-												<th>Experience</th>
-												<td>Director at NetCore Internet (2013-2018), Myanmar</td>
-											</tr>
-											<tr>
-												<th>Other Skills</th>
-												<td>Driver License - Yes</td>
-											</tr>
-											<tr>
-												<th>Interested Position</th>
-												<td>Accounting Manager</td>
-											</tr>
-											<tr>
-												<th>Area of Interest</th>
-												<td>Construction</td>
-											</tr>
-										</table>
+											<div class="col-md-6">
+												<ul>
+													<li>
+														<form action="#">
+															<button type="submit" class="btn btn-sm download_btn">Download</button>
+															<button class="btn btn-sm save_btn">Save</button>
+														</form>
+													</li>
+												</ul>
+											</div>
+										</div>
+
+										<!-- #second-row -->
+										<div class="row" id="second-row">
+											<div class="col-md-4">
+												<ul>
+													<li><i class="fa fa-money"></i>&nbsp;Last Salary</li>
+													<li>200,000 MMK</li>
+												</ul>
+											</div>
+											<div class="col-md-4">
+												<ul>
+													<li><i class="fa fa-flag"></i>&nbsp;Career Level</li>
+													<li>Manager</li>
+												</ul>
+											</div>
+											<div class="col-md-4">
+												<ul>
+													<li><i class="fa fa-user"></i>&nbsp;Gender/Age</li>
+													<li>Both/24</li>
+												</ul>
+											</div>
+											<div class="col-md-4">
+												<ul>
+													<li><i class="fa fa-suitcase"></i>&nbsp;Job Type</li>
+													<li>Sales</li>
+												</ul>
+											</div>
+											<div class="col-md-4">
+												<ul>
+													<li><i class="fa fa-heart"></i>&nbsp;Interest</li>
+													<li>Marketing</li>
+												</ul>
+											</div>
+											<div class="col-md-4">
+												<ul>
+													<li><i class="fa fa-arrow-up"></i>&nbsp;Experience</li>
+													<li>3 Years</li>
+												</ul>
+											</div>
+										</div>
+
+										<!-- #third-row -->
+										<div class="row" id="third-row">
+											<div class="col-md-12">
+												<h4><i class="fa fa-suitcase"></i>&nbsp;Work Experience</h4>
+
+												<table class="table">
+													<tr>
+														<th>
+															2013-01 ~ 2015-05
+														</th>
+														<td>
+															<strong>CS Director</strong>
+															<span>Net Core - Internet</span>
+															<small>Full Time - Myanmar</small>
+
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+															tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+															quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+															consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+															cillum dolore eu fugiat nulla pariatur.</p>
+														</td>
+													</tr>
+												</table>
+											</div>
+											<div class="col-md-12">
+												<h4><i class="fa fa-graduation-cap"></i>&nbsp;Education</h4>
+
+												<table class="table">
+													<tr>
+														<th>
+															2013-01 ~ 2015-05
+														</th>
+														<td>
+															<strong>Degree - Business IT</strong>
+															<span>Greenwich University - UK</span>
+														</td>
+													</tr>
+												</table>
+											</div>
+											<div class="col-md-12">
+												<h4><i class="fa fa-language"></i>&nbsp;Language</h4>
+
+												<table class="table">
+													<tr>
+														<th>
+															English
+														</th>
+														<td>
+															<span>Intermidiate</span>
+														</td>
+													</tr>
+													<tr>
+														<th>
+															Chinese
+														</th>
+														<td>
+															<span>Fluent</span>
+														</td>
+													</tr>
+												</table>
+											</div>
+											<div class="col-md-12">
+												<h4>About Me</h4>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+												cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+												proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
+												cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+												proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse
+												cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+												proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+											</div>
+										</div>
+
+										<!-- #fourth-row -->
+										<div class="row" id="fourth-row">
+											<h4 class="text-center">Contact Information</h4>
+
+											<div class="col-md-4">
+												<p class="text-center">
+													<i class="fa fa-phone"></i>&nbsp;<a href="tel:+95 97950685410">+95 97950685410</a>
+												</p>
+											</div>
+											<div class="col-md-4">
+												<p class="text-center">
+													<a href="mailto:min@gmail.com">
+														<i class="fa fa-envelope"></i>&nbsp;min@gmial.com
+													</a>
+												</p>
+											</div>
+											<div class="col-md-4">
+												<p class="text-center">
+													<i class="fa fa-location-arrow"></i>&nbsp;Tamwe, Yangon, Myanmar
+												</p>
+											</div>
+
+											<center>
+												<a href="#" id="icon" class="text-center">
+													<i class="fa fa-facebook"></i>
+												</a>
+
+												<a href="#" id="icon" class="text-center">
+													<i class="fa fa-twitter"></i>
+												</a>
+
+												<a href="#" id="icon" class="text-center">
+													<i class="fa fa-globe"></i>
+												</a>
+											</center>
+										</div>
 										
 									</div>
 									
@@ -1870,7 +1798,6 @@ Project Designed By Tracer Land
 				}
 
 				function tab_switchMycv(){
-					get('personal-information-show').style.display = "none";
 					get('body_right_job_section').style.display = "none";
 					get('body_right_setting_section').style.display = "none";
 					get('body_right_schedule_section').style.display = "none";

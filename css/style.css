@@ -426,11 +426,10 @@ nav .nav-li .dropdown-menu a .row p em{
 	.navbar-right .first-caret{
 		display: inline-block!important;
 		top: 6%!important;
-		left: 12%!important;
+		left: 14%!important;
 		width: 9px;
 		height: 9px;
 		transform: none!important;
-		color: red;
 	}
 
 	.navbar-right .second-caret{
@@ -440,7 +439,6 @@ nav .nav-li .dropdown-menu a .row p em{
 		width: 9px;
 		height: 9px;
 		transform: none!important;
-		color: red;
 	}
 
 	/*Notification Section!*/

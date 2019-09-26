@@ -31,7 +31,7 @@ nav li .dropdown-menu li small{
 .navbar-right .first-caret{
 	display: block;
 	position: absolute;
-	left: 43%;
+	left: 30%;
 	top: -1.5%;
 	color: #3a9bfa!important;
 	z-index: 100;
