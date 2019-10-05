@@ -640,9 +640,15 @@ Project Designed By Tracer Land
 
 								<span>Yankin&nbsp;&nbsp;|&nbsp;&nbsp;</span>
 								<span>Bo Lay Street, Naung Yoe Road</span>
+													
 
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.3386999500635!2d96.12592501440015!3d16.809545288427397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb3762d7528b%3A0xc6187c2487435102!2sThan%20Ta%20Dar%20St%2C%20Yangon!5e0!3m2!1sen!2smm!4v1568704120793!5m2!1sen!2smm" width="100%" height="450" frameborder="0" style="border:0;margin-top: 20px;" allowfullscreen=""></iframe>
+
+
 							</div>
+							<!--   Google Map in Here -->
+								
+								<div class="col-md-12" style="height:500px;padding-top:20px;" id="map_house_detail"></div>
+
 
 							<div class="col-md-12" style="border-bottom: 0px!important;">
 								<h4>Near By</h4>
@@ -784,9 +790,56 @@ Project Designed By Tracer Land
 		</div>
 
 
+
+ 
+		<script type="text/javascript">
+				var map;
+				
+				$(document).ready(function(){
+			 	$(".gm-svpc").hide();
+			 	
+			});
+			    	function initMap() {
+
+		        		var map_location={lat:20.3929333,lng:92.7048043};
+						var map_zoom=12;
+
+						map = new google.maps.Map(document.getElementById('map_house_detail'), {
+				          center: map_location,
+				          zoom: map_zoom,
+				          zoomControl: false,
+						  scaleControl: false,
+						  scrollwheel: false,
+						  disableDoubleClickZoom: true,
+						  mapTypeId: google.maps.MapTypeId.ROADMAP
+				        });
+
+					var marker = new google.maps.Marker({
+							 position: map_location, 
+							 icon: { 
+							 	url:"https://b.kisscc0.com/20180705/ozw/kisscc0-google-map-maker-google-maps-computer-icons-inform-map-marker-5b3e4047afb525.7968986915308063437197.png","scaledSize": {"height": 30, "width": 30}
+
+							 	},
+							 map: map
+						
+						});
+
+					
+					
+					
+					
+
+				}
+
+		</script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz0UKm8v5cyci608yD-ChLDriBQIZeUPw&&callback=initMap"></script>
+
 		<!-- Scripts!! -->
 		<script type="text/javascript">
-			
+
+		
+
 			$(document).ready(function(){
 
 				$("#show_map #bg_group a").click(function(){

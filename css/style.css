@@ -85,6 +85,8 @@ nav li .dropdown-menu li a{
 	font-weight: bold;
 	color: #666!important;
 	height: 100px!important;
+	position: relative;
+	z-index: 10;
 }
 nav li .dropdown-menu li a:hover{
 	background: rgba(0,0,0,0)!important;
