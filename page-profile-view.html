@@ -145,7 +145,7 @@ Project Designed By Tracer Land
 								</ul>
 							</li>
 							
-							<li><a href="#">Message</a></li>
+							<li><a href="#" onClick="tab_switchInbox()">Message</a></li>
 							
 							<li class="nav-li">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -341,43 +341,21 @@ Project Designed By Tracer Land
 								</div>
 							</div>
 
-
 							<div href="#" id="sidebar_wrap" class="computer_wrap">
 								<div class="row">
 									<div class="col-md-12 col-sm-12 col-xs-12">
 										<ul>
 											<li>
-												<a href="#" onClick="tab_switchAbout()">
-													<i class="fa fa-paperclip" data-toggle="tooltip" title="About" data-placement="right"></i>
-													<span>ABout</span>
-												</a>
+												<strong>Creat List</strong>
 											</li>
 											<li>
-												<a href="#" onClick="tab_switchService()">
-													<i class="fa fa-paperclip" data-toggle="tooltip" title="Service" data-placement="right"></i>
-													<span>Service</span>
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-							<div href="#" id="sidebar_wrap" class="computer_wrap">
-								<div class="row">
-									<div class="col-md-12 col-sm-12 col-xs-12">
-										<ul>
-											<li>
-												<strong>Listing</strong>
-											</li>
-											<li>
-												<a href="#" onClick="tab_switchJob()">
+												<a href="#" onClick="create_job_form_direct()">
 													<i class="fa fa-suitcase" data-toggle="tooltip" title="Jobs" data-placement="right"></i>
 													<span>Jobs</span>
 												</a>
 											</li>
 											<li>
-												<a href="#" onClick="tab_switchHouse()">
+												<a href="#" onClick="create_house_form_direct()">
 													<i class="fa fa-home" data-toggle="tooltip" title="Houses" data-placement="right"></i>
 													<span>Houses</span>
 												</a>
@@ -420,7 +398,7 @@ Project Designed By Tracer Land
 											<a href="#">Share</a>
 										</li>
 
-										<a href="#" class="btn btn-sm btn-info pull-right">Message</a>
+										<a href="#" class="btn btn-sm btn-info pull-right" onClick="tab_switchInbox()">Message</a>
 									</ul>
 
 								</div>
@@ -441,7 +419,6 @@ Project Designed By Tracer Land
 
 												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#inputModal" title="Edit"><i class="fa fa-pen"></i></a>
 
-												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add"><i class="fa fa-plus"></i></a>
 											</div>
 										</div>
 
@@ -454,7 +431,6 @@ Project Designed By Tracer Land
 
 												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#inputModal" title="Edit"><i class="fa fa-pen"></i></a>
 
-												<!-- <a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add"><i class="fa fa-plus"></i></a> -->
 											</div>
 										</div>
 
@@ -466,8 +442,6 @@ Project Designed By Tracer Land
 												<span href="#">Private Company</span>
 
 												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#inputModal" title="Edit"><i class="fa fa-pen"></i></a>
-
-												<!-- <a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add"><i class="fa fa-plus"></i></a> -->
 											</div>
 										</div>
 
@@ -479,8 +453,6 @@ Project Designed By Tracer Land
 												<span href="#">Banking</span>
 
 												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#inputModal" title="Edit"><i class="fa fa-pen"></i></a>
-
-												<!-- <a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add"><i class="fa fa-plus"></i></a> -->
 											</div>
 										</div>
 									</div>
@@ -507,8 +479,6 @@ Project Designed By Tracer Land
 												<a href="tel:09 907686044" style="margin:0!important;display: inline-block!important;">09 907686044</a>
 
 												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#inputModal" title="Edit"><i class="fa fa-pen"></i></a>
-
-												<!-- <a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addModal" title="Add"><i class="fa fa-plus"></i></a> -->
 											</div>
 										</div>
 									</div>
@@ -519,7 +489,6 @@ Project Designed By Tracer Land
 
 										<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#inputcontactModal" title="Edit"><i class="fa fa-pen"></i></a>
 
-										<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addcontactModal" title="Add"><i class="fa fa-plus"></i></a>
 										<div class="row">
 											<div class="col-md-3">
 												<strong>Email</strong>
@@ -1629,10 +1598,24 @@ Project Designed By Tracer Land
 												<div class="col-md-12">
 													<label for="house-property-road"><i class="fa fa-thumbtack"></i>&nbsp;Property Address</label>
 													<input type="text" name="house-property-road" class="form-control" placeholder="Enter Road" required>
-
-													<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61073.45659872097!2d96.20136529881596!3d16.920800969983837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1949e223e196b%3A0x56fbd271f8080bb4!2sYangon!5e0!3m2!1sen!2smm!4v1569404507447!5m2!1sen!2smm" width="100%" height="450" frameborder="0" style="border:0;margin-top: 20px;" allowfullscreen=""></iframe>
-
+													    
 												</div>
+
+												<div class="col-md-12">
+													<h5>Click on the map for property location</h5>
+												</div>
+													<div class="col-md-6">
+													<label for="house-property-city"><i class="fa fa-location-arrow"></i>&nbsp;Latitude</label>
+												  <input type="text" name="house-property-lat" id="get_lat" disabled />
+												</div>
+												<div class="col-md-6">
+													<label for="house-property-township"><i class="fa fa-location-arrow"></i>&nbsp;Longitude</label>
+													<input type="text" name="house-property-long" id="get_lon" disabled/>
+													
+												</div>
+															<!-- Google Map -->
+												<div class="col-md-12" style="height:500px;padding-top:20px;" id="map_house_create"></div>
+
 											</div>
 
 											<div class="col-md-12" id="section-footer-wrap" style="padding: 0px;">
@@ -3598,16 +3581,34 @@ Project Designed By Tracer Land
 						<form action="#">
 							<div class="row">
 								<div class="col-md-12">
-									<input type="text" name="address-city" class="form-control" value="Yangon" required>
+									<select class="form-control" required>
+										<option>Select Country</option>
+										<option>Myanmar</option>
+										<option>Chinese</option>
+										<option>Thailand</option>
+									</select>
 								</div>
 								<div class="col-md-12">
-									<input type="text" name="address-township" class="form-control" value="Yankin">
+									<select class="form-control" required>
+										<option>Select City</option>
+										<option>Yangon</option>
+										<option>Mandalay</option>
+										<option>Taung Oo</option>
+									</select>
 								</div>
 								<div class="col-md-12">
-									<input type="text" name="address-address" class="form-control" value="No.4/3, Kyeebwaryae Housing">
+									<select class="form-control" required>
+										<option>Select Township</option>
+										<option>Yankin</option>
+										<option>Sanchaung</option>
+										<option>Tarmwe</option>
+									</select>
 								</div>
 								<div class="col-md-12">
-									<input type="text" name="address-code" class="form-control" value="11211">
+									<input type="text" name="address-code" class="form-control" placeholder="Enter Postal Code" required>
+								</div>
+								<div class="col-md-12">
+									<input type="text" name="address-optional" class="form-control" placeholder="Enter Postal Address Optional" required>
 								</div>
 								<div class="col-md-12">
 									<input type="submit" value="Update" name="submit" class="btn btn-info">
@@ -4075,9 +4076,63 @@ Project Designed By Tracer Land
 		</div>
 
 
+		<script type="text/javascript">
+				
+				
+			function initMap() {
 
+		        		var map_location={lat:16.844558,lng:96.161719052};
+						var map_zoom=10;
 
-		<!-- Scripts! -->
+						map = new google.maps.Map(document.getElementById('map_house_create'), {
+				           	center: map_location,
+				            zoom: map_zoom	         
+						
+				        });
+
+			
+						var marker = new google.maps.Marker({
+						    position: map_location,
+						    map: map
+						 });
+					
+					
+					google.maps.event.addListener(map, 'click', function(event) {
+						
+						  	placeMarker(map, event.latLng);
+						 
+						});
+				
+						
+						function placeMarker(map, location) {
+								
+        						   
+								marker.setPosition(location);
+        						  
+								  var infowindow="";
+								  infowindow = new google.maps.InfoWindow({
+								    content: 'Latitude: ' + location.lat() +
+								    '<br>Longitude: ' + location.lng()
+								  });
+
+								  infowindow.open(map,marker);
+
+								  $(document).ready(function(){
+									 	$("#get_lat").val(location.lat())
+									 	$("#get_lon").val(location.lng())
+									});
+
+								
+						}
+							
+
+				}
+
+		</script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz0UKm8v5cyci608yD-ChLDriBQIZeUPw&&callback=initMap"></script>
+		
+		<!-- Scripts -->
 		<script type="text/javascript" src="js/page-profile.js"></script>
 
 </body>

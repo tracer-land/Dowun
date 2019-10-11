@@ -122,6 +122,7 @@ $(document).ready(function(){
 					get('body_right_home_section').style.display = "block";
 					get('body_right_flatmate_section').style.display = "none";
 					get('fix_position').style.display = "block";
+					get('body_right_inbox_section').style.display = "none";
 				}
 
 				function tab_switchFlatmate(){
@@ -136,6 +137,7 @@ $(document).ready(function(){
 					get('body_right_job_section').style.display = "none";
 					get('body_right_flatmate_section').style.display = "block";
 					get('fix_position').style.display = "block";
+					get('body_right_inbox_section').style.display = "none";
 					get('body_right_flatmate_section').style.position = "static";
 					get('body_right_flatmate_section').style.left = "0%";
 					get('body_right_flatmate_section').style.right = "0%";
@@ -151,6 +153,7 @@ $(document).ready(function(){
 					get('body_right_job_section').style.display = "block";
 					get('body_right_flatmate_section').style.display = "none";
 					get('fix_position').style.display = "block";
+					get('body_right_inbox_section').style.display = "none";
 					get('body_right_job_section').style.position = "static";
 					get('body_right_job_section').style.left = "0%";
 					get('body_right_job_section').style.right = "0%";
@@ -166,6 +169,7 @@ $(document).ready(function(){
 					get('body_right_job_section').style.display = "none";
 					get('body_right_flatmate_section').style.display = "none";
 					get('fix_position').style.display = "block";
+					get('body_right_inbox_section').style.display = "none";
 					get('body_right_schedule_section').style.position = "static";
 					get('body_right_schedule_section').style.left = "0%";
 					get('body_right_schedule_section').style.right = "0%";
@@ -182,6 +186,7 @@ $(document).ready(function(){
 					get('my-cv-section').style.display = "none";
 					get('body_right_job_section').style.display = "none";
 					get('body_right_flatmate_section').style.display = "none";
+					get('body_right_inbox_section').style.display = "none";
 				}
 
 				function tab_switchSetting(){
@@ -192,6 +197,7 @@ $(document).ready(function(){
 					get('my-cv-section').style.display = "none";
 					get('body_right_job_section').style.display = "none";
 					get('body_right_flatmate_section').style.display = "none";
+					get('body_right_inbox_section').style.display = "none";
 					get('fix_position').style.display = "block";
 				}
 
@@ -291,6 +297,25 @@ $(document).ready(function(){
 					get('body_right_flatmate_section').style.right = "50%";
 					get('body_right_flatmate_section').style.transform = "translate(-50%, 0%)";
 				}
+				function create_flatmate_form_direct(){
+					get('flatmate_section').style.display = "block";
+					get('flatmate_table_section').style.display = "none";
+					get('fix_position').style.display = "none";
+					get('body_right_help_section').style.display = "none";
+					get('flatmate_table_section').style.display = "none";
+					get('body_right_home_section').style.display = "none";
+					get('my-cv-section').style.display = "none";
+					get('body_right_setting_section').style.display = "none";
+					get('body_right_schedule_section').style.display = "none";
+					get('body_right_job_section').style.display = "none";
+					get('body_right_flatmate_section').style.display = "block";
+					get('fix_position').style.display = "none";
+
+					get('body_right_flatmate_section').style.position = "absolute";
+					get('body_right_flatmate_section').style.left = "50%";
+					get('body_right_flatmate_section').style.right = "50%";
+					get('body_right_flatmate_section').style.transform = "translate(-50%, 0%)";
+				}
 				function flatmate_switchMe(){
 					get('me-section').style.display = "block";
 					get('couple-section').style.display = "none";
@@ -345,6 +370,18 @@ $(document).ready(function(){
 				}
 
 
+				/*Inbox Tab!*/
+				function tab_switchInbox(){
+					get('body_right_inbox_section').style.display = "block";
+					get('body_right_help_section').style.display = "none";
+					get('body_right_setting_section').style.display = "none";
+					get('body_right_home_section').style.display = "none";
+					get('body_right_job_section').style.display = "none";
+					get('body_right_house_section').style.display = "none";
+					get('fix_position').style.display = "block";
+				}
+
+
 				/*Setting Script!*/
 				function tab_switchLanguage(){
 					get('language').style.display = "block";
@@ -370,3 +407,23 @@ $(document).ready(function(){
 					get('blocking').style.display = "none";
 					get('notification').style.display = "block";
 				}
+
+
+				var textarea = document.querySelector('textarea');
+
+				textarea.addEventListener('keydown', autosize);
+				             
+				function autosize(){
+				  var el = this;
+				  setTimeout(function(){
+				    el.style.cssText = 'height:auto; padding:0';
+				    // for box-sizing other than "content-box" use:
+				    // el.style.cssText = '-moz-box-sizing:content-box';
+				    el.style.cssText = 'height:' + el.scrollHeight + 'px';
+				  },0);
+				}
+
+
+				$("#myemoji").emojioneArea({
+				    pickerPosition: "top"
+				});

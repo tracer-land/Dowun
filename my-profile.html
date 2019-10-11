@@ -45,6 +45,11 @@ Project Designed By Tracer Land
 		<!-- Font Awsome Link -->
 		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+		<!-- Emoji! -->
+		<link rel="stylesheet" type="text/css" href="emoji/emojionearea.min.css">
+
+		<script defer src="js/all.js"></script>
+
 </head>
 <body>
 
@@ -54,6 +59,9 @@ Project Designed By Tracer Land
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 		<script type="text/javascript" src="js/script.js"></script>
+
+		<!-- Emoji! -->
+		<script type="text/javascript" src="emoji/emojionearea.min.js"></script>
 
 
 		<!-- Header Section Start! -->
@@ -123,7 +131,7 @@ Project Designed By Tracer Land
 										<a href="#">Create Page</a>
 									</li>
 									<li>
-										<a href="my-profile.html"><i class="fa fa-wpforms"></i>&nbsp;&nbsp;CV
+										<a href="my-profile.html"><i class="fab fa-wpforms"></i>&nbsp;&nbsp;CV
 										</a>
 										<small>Candidate CV to apply job and promote you need.</small>
 									</li>
@@ -135,7 +143,7 @@ Project Designed By Tracer Land
 								</ul>
 							</li>
 							
-							<li><a href="#">Message</a></li>
+							<li><a href="#" onClick="tab_switchInbox()">Message</a></li>
 							
 							<li class="nav-li">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -276,10 +284,6 @@ Project Designed By Tracer Land
 					<li>
 						<a href="#" onClick="tab_switchMyschedule()">My Schedule</a>
 					</li>
-
-					<li>
-						<a href="#">My Saved Jobs</a>
-					</li>
 				</ul>
 
 				<ul>
@@ -317,38 +321,11 @@ Project Designed By Tracer Land
 								<div class="row">
 									<div class="col-md-12 col-sm-12 col-xs-12">
 										<ul>
-											<li>
-												<strong>My Personal Account</strong>
-											</li>
-											<li>
-												<a href="#" onClick="tab_switchMycv()">
-													<i class="fa fa-id-badge" data-toggle="tooltip" title="My CV" data-placement="right"></i>
-													<span>My Profile or CV</span>
+											<li style="margin-bottom: -2px;">
+												<strong style="display: inline-block;margin-right: 10px;">My Business Page</strong>
+												<a href="create-page-step-1.html" style="display: inline-block;">
+													<i class="fa fa-plus-circle" data-toggle="tooltip" title="Create Page" data-placement="right"></i>
 												</a>
-											</li>
-											<li>
-												<a href="#" onClick="tab_switchJobapply()">
-													<i class="fa fa-suitcase" data-toggle="tooltip" title="My Jobs" data-placement="right"></i>
-													<span>My Applied Job List</span>
-												</a>
-											</li>
-											<li>
-												<a href="#" onClick="tab_switchFlatmate()">
-													<i class="fa fa-location-arrow" data-toggle="tooltip" title="My Places" data-placement="right"></i>
-													<span>My Wanted Place List</span>
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
-							<div href="#" id="sidebar_wrap" class="computer_wrap">
-								<div class="row">
-									<div class="col-md-12 col-sm-12 col-xs-12">
-										<ul>
-											<li>
-												<strong>My Business Page</strong>
 											</li>
 											<li>
 												<a href="page-profile-view.html">
@@ -369,13 +346,7 @@ Project Designed By Tracer Land
 												<strong>Create a Post</strong>
 											</li>
 											<li>
-												<a href="#">
-													<i class="fa fa-plus-circle" data-toggle="tooltip" title="Create Job" data-placement="right"></i>
-													<span>Create Job</span>
-												</a>
-											</li>
-											<li>
-												<a href="#">
+												<a href="#" onClick="create_flatmate_form_direct()">
 													<i class="fa fa-plus-circle" data-toggle="tooltip" title="Create House" data-placement="right"></i>
 													<span>Create House</span>
 												</a>
@@ -410,7 +381,7 @@ Project Designed By Tracer Land
 										<ul>
 											<li>
 												<a href="#">
-													<i class="fa fa-sign-out" data-toggle="tooltip" title="Logout" data-placement="right"></i>
+													<i class="fas fa-sign-out-alt" data-toggle="tooltip" title="Logout" data-placement="right"></i>
 													<span>Log Out</span>
 												</a>
 											</li>
@@ -458,7 +429,7 @@ Project Designed By Tracer Land
 											<a href="#">Share</a>
 										</li>
 
-										<a href="#" class="btn btn-sm btn-info pull-right">Message</a>
+										<a href="#" class="btn btn-sm btn-info pull-right" onClick="tab_switchInbox()">Message</a>
 									</ul>
 
 								</div>
@@ -520,7 +491,7 @@ Project Designed By Tracer Land
 													<li>
 														<form action="#">
 															<button type="submit" class="btn btn-sm download_btn">Download</button>
-															<button class="btn btn-sm save_btn">Save</button>
+															<small style="display: block;" class="pull-right">100 Views</small>
 														</form>
 													</li>
 												</ul>
@@ -531,7 +502,7 @@ Project Designed By Tracer Land
 										<div class="row" id="second-row">
 											<div class="col-md-4">
 												<ul>
-													<li><i class="fa fa-money"></i>&nbsp;Last Salary</li>
+													<li><i class="fa fa-money-bill-alt"></i>&nbsp;Last Salary</li>
 													<li>200,000 MMK</li>
 												</ul>
 											</div>
@@ -607,6 +578,20 @@ Project Designed By Tracer Land
 												</table>
 											</div>
 											<div class="col-md-12">
+												<h4><i class="fa fa-book"></i>&nbsp;Professional Skills</h4>
+
+												<table class="table">
+													<tr>
+														<th>
+															Photoshop
+														</th>
+														<td>
+															<span>Professional</span>
+														</td>
+													</tr>
+												</table>
+											</div>
+											<div class="col-md-12">
 												<h4><i class="fa fa-language"></i>&nbsp;Language</h4>
 
 												<table class="table">
@@ -667,11 +652,11 @@ Project Designed By Tracer Land
 
 											<center>
 												<a href="#" id="icon" class="text-center">
-													<i class="fa fa-facebook"></i>
+													<i class="fab fa-facebook"></i>
 												</a>
 
 												<a href="#" id="icon" class="text-center">
-													<i class="fa fa-twitter"></i>
+													<i class="fab fa-twitter"></i>
 												</a>
 
 												<a href="#" id="icon" class="text-center">
@@ -1996,14 +1981,41 @@ Project Designed By Tracer Land
 											</div>
 
 											<div class="col-md-12" id="city-wrap">
-												<em class="chip">Yankin
-												<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></em>
-												<em class="chip">Tamwe
-												<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></em>
-												<em class="chip">Insein
-												<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></em>
-												<em class="chip">Bahan
-												<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></em>
+
+												<div class="col-md-2 chip">
+													<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+													<label class="town-selected">
+													<span>Yankin</span>
+													<input type="checkbox" name="choose-town">
+												</div>
+
+												<div class="col-md-2 chip">
+													<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+													<label class="town-selected">
+													<span>Tarmwe</span>
+													<input type="checkbox" name="choose-town">
+												</div>
+
+												<div class="col-md-2 chip">
+													<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+													<label class="town-selected">
+													<span>Sanchaung</span>
+													<input type="checkbox" name="choose-town">
+												</div>
+
+												<div class="col-md-2 chip">
+													<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+													<label class="town-selected">
+													<span>Bahan</span>
+													<input type="checkbox" name="choose-town">
+												</div>
+
+												<div class="col-md-2 chip">
+													<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+													<label class="town-selected">
+													<span>Insein</span>
+													<input type="checkbox" name="choose-town">
+												</div>
 											</div>
 
 											<div class="col-md-12" id="budget-time" style="margin-bottom: 80px;">
@@ -2450,6 +2462,379 @@ Project Designed By Tracer Land
 							</div>
 						</div>
 					<!-- Body Right Setting Section End! -->
+
+
+					<!-- Body Right Inbox Section Start! -->
+						<div class="col-md-10 col-sm-11 col-xs-11" id="body_right_inbox_section">
+
+							<div class="row inbox-section">
+								
+								<div class="row message-title">
+									<div class="col-md-3">
+										<img src="images/kbz.png" class="img-responsive">
+
+										<div class="dropdown page-drp">
+			  								<strong class="dropdown-toggle" type="button" data-toggle="dropdown">KBZ<center><span class="caret"></span></center></strong>
+				  							<ul class="dropdown-menu">
+				    							<li><a href="#"><img src="images/kbz.png" class="img-responsive">CB</a></li>
+				    							<li><a href="#"><img src="images/kbz.png" class="img-responsive">UAB</a></li>
+				    							<li><a href="#"><img src="images/kbz.png" class="img-responsive">Ayeyarwady</a></li>
+				  							</ul>
+										</div>
+									</div>
+
+									<div class="col-md-9">
+										<h4>Messaging</h4>
+									</div>
+								</div>
+
+								<div class="col-md-4 message-search">
+									
+									<div class="row search-field">
+										<form action="#">
+											<input type="text" name="search" class="form-control" placeholder="Search Messages" required>
+
+											<select class="form-control pull-right">
+												<option>Filter</option>
+												<option value="today">Today</option>
+												<option value="yesterday">Yesterday</option>
+											</select>
+										</form>
+									</div>
+
+									<a href="#" class="active_tab" style="margin-top: 60px;">
+										<div class="row message-tab">
+											
+											<div class="col-md-3">
+												<img src="images/client.jpg">
+											</div>
+
+											<div class="col-md-9">
+												<strong>Min Min</strong>
+												<small class="pull-right">5AM</small>
+
+												<p>
+													You:Yes, Thank you.
+												</p>
+											</div>
+
+										</div>
+									</a>
+									<a href="#">
+										<div class="row message-tab">
+											
+											<div class="col-md-3">
+												<img src="images/client.jpg">
+											</div>
+
+											<div class="col-md-9">
+												<strong>Min Min</strong>
+												<small class="pull-right">5AM</small>
+
+												<p>
+													You:Yes, Thank you.
+												</p>
+											</div>
+
+										</div>
+									</a>
+									<a href="#">
+										<div class="row message-tab">
+											
+											<div class="col-md-3">
+												<img src="images/client.jpg">
+											</div>
+
+											<div class="col-md-9">
+												<strong>Min Min</strong>
+												<small class="pull-right">5AM</small>
+
+												<p>
+													You:Yes, Thank you.
+												</p>
+											</div>
+
+										</div>
+									</a>
+									<a href="#">
+										<div class="row message-tab">
+											
+											<div class="col-md-3">
+												<img src="images/client.jpg">
+											</div>
+
+											<div class="col-md-9">
+												<strong>Min Min</strong>
+												<small class="pull-right">5AM</small>
+
+												<p>
+													You:Yes, Thank you.
+												</p>
+											</div>
+
+										</div>
+									</a>
+									<a href="#">
+										<div class="row message-tab">
+											
+											<div class="col-md-3">
+												<img src="images/client.jpg">
+											</div>
+
+											<div class="col-md-9">
+												<strong>Min Min</strong>
+												<small class="pull-right">5AM</small>
+
+												<p>
+													You:Yes, Thank you.
+												</p>
+											</div>
+
+										</div>
+									</a>
+									<a href="#">
+										<div class="row message-tab">
+											
+											<div class="col-md-3">
+												<img src="images/client.jpg">
+											</div>
+
+											<div class="col-md-9">
+												<strong>Min Min</strong>
+												<small class="pull-right">5AM</small>
+
+												<p>
+													You:Yes, Thank you.
+												</p>
+											</div>
+
+										</div>
+									</a>
+									<a href="#">
+										<div class="row message-tab">
+											
+											<div class="col-md-3">
+												<img src="images/client.jpg">
+											</div>
+
+											<div class="col-md-9">
+												<strong>Min Min</strong>
+												<small class="pull-right">5AM</small>
+
+												<p>
+													You:Yes, Thank you.
+												</p>
+											</div>
+
+										</div>
+									</a>
+									<a href="#">
+										<div class="row message-tab">
+											
+											<div class="col-md-3">
+												<img src="images/client.jpg">
+											</div>
+
+											<div class="col-md-9">
+												<strong>Min Min</strong>
+												<small class="pull-right">5AM</small>
+
+												<p>
+													You:Yes, Thank you.
+												</p>
+											</div>
+
+										</div>
+									</a>
+									<a href="#">
+										<div class="row message-tab">
+											
+											<div class="col-md-3">
+												<img src="images/client.jpg">
+											</div>
+
+											<div class="col-md-9">
+												<strong>Min Min</strong>
+												<small class="pull-right">5AM</small>
+
+												<p>
+													You:Yes, Thank you.
+												</p>
+											</div>
+
+										</div>
+									</a>
+									<a href="#">
+										<div class="row message-tab">
+											
+											<div class="col-md-3">
+												<img src="images/client.jpg">
+											</div>
+
+											<div class="col-md-9">
+												<strong>Min Min</strong>
+												<small class="pull-right">5AM</small>
+
+												<p>
+													You:Yes, Thank you.
+												</p>
+											</div>
+
+										</div>
+									</a>
+									<a href="#">
+										<div class="row message-tab">
+											
+											<div class="col-md-3">
+												<img src="images/client.jpg">
+											</div>
+
+											<div class="col-md-9">
+												<strong>Min Min</strong>
+												<small class="pull-right">5AM</small>
+
+												<p>
+													You:Yes, Thank you.
+												</p>
+											</div>
+
+										</div>
+									</a>
+
+								</div>
+								
+								<div class="col-md-8 message-text">
+									
+									<div class="row name-bar">
+										<div style="width: 15%;float: left;padding-left: 10px; padding-right: 10px;">
+											<img src="images/client.jpg" class="img-responsive">
+										</div>
+										<div style="width: 80%;float: left;">
+											<strong>Min Min</strong>
+											<span>Managing Director - Dowun</span>
+										</div>
+									</div>
+
+									<div class="row" id="left-right-wrap">
+										<div class="row chat-left">
+											<div class="col-md-1">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-11">
+												<strong>Min Min</strong>
+												<div>
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+												</div>
+											</div>
+										</div>
+										<div class="row chat-right">
+											<div class="col-md-12">
+												<div class="pull-right">
+													Yes, bro.
+												</div>
+											</div>
+										</div>
+										<div class="row chat-left">
+											<div class="col-md-1">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-11">
+												<strong>Min Min</strong>
+												<div>
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+												</div>
+											</div>
+										</div>
+										<div class="row chat-right">
+											<div class="col-md-12">
+												<div class="pull-right">
+													Yes, bro.
+												</div>
+											</div>
+										</div>
+										<div class="row chat-left">
+											<div class="col-md-1">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-11">
+												<strong>Min Min</strong>
+												<div>
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+												</div>
+											</div>
+										</div>
+										<div class="row chat-right">
+											<div class="col-md-12">
+												<div class="pull-right">
+													Yes, bro.
+												</div>
+											</div>
+										</div>
+										<div class="row chat-left">
+											<div class="col-md-1">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-11">
+												<strong>Min Min</strong>
+												<div>
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+												</div>
+											</div>
+										</div>
+										<div class="row chat-right">
+											<div class="col-md-12">
+												<div class="pull-right">
+													Yes, bro.
+												</div>
+											</div>
+										</div>
+										<div class="row chat-left">
+											<div class="col-md-1">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-11">
+												<strong>Min Min</strong>
+												<div>
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+												</div>
+											</div>
+										</div>
+										<div class="row chat-right">
+											<div class="col-md-12">
+												<div class="pull-right">
+													Yes, bro.
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="row message-footer">
+										<form action="#">
+											<div class="col-md-12">
+												<textarea class="form-control" required placeholder="Enter Your Message" id="myemoji"></textarea>
+											</div>
+
+											<div class="col-md-12">
+												<label for="file-upload" class="custom-file-upload">
+												    <i class="fa fa-paperclip"></i>&nbsp;&nbsp;File Attach
+												</label>
+												<input id="file-upload" type="file"/>
+
+												<label class="custom-file-upload">
+												    <i class="fa fa-history"></i>&nbsp;&nbsp;Set Schedule
+												</label>
+
+												<input type="submit" value="Send" class="btn btn-sm btn-info pull-right">
+											</div>
+										</form>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+					<!-- Body Right Inbox Section End! -->
 
 
 					<!-- Body Right Help Section Start! -->

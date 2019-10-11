@@ -185,6 +185,23 @@
 	background: #3a9bfa!important;
 	border-color: rgba(255,255,255,0)!important;
 }
+/* Page Pagination */
+.page_with_map{
+	display: none;
+}
+.page-with-map-active{
+	display: block;
+}
+#property-map #pagination-demo-two{
+	margin-top: 30px!important;
+}
+#property-map .pagination > li > a{
+	background: #ccc!important;
+}
+#property-map .pagination > .active > a{
+	background: #3a9bfa!important;
+	border-color: rgba(255,255,255,0)!important;
+}
 
 
 

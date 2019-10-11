@@ -137,7 +137,7 @@ Project Designed By Tracer Land
 								</ul>
 							</li>
 							
-							<li><a href="#">Message</a></li>
+							<li><a href="my-profile.html">Message</a></li>
 							<li><a href="create-account-phone.html">Register</a></li>
 							<li><a href="sign-in.html">Login</a></li>
 
@@ -254,7 +254,7 @@ Project Designed By Tracer Land
 							</li>
 							
 							<li class="nav-li">
-								<a href="#">
+								<a href="my-profile.html">
 									<img src="images/client.jpg" class="img-responsive">&nbsp;Me
 								</a>
 							</li>
@@ -790,31 +790,22 @@ Project Designed By Tracer Land
 		</div>
 
 
-
- 
 		<script type="text/javascript">
-				var map;
 				
-				$(document).ready(function(){
-			 	$(".gm-svpc").hide();
-			 	
-			});
 			    	function initMap() {
 
-		        		var map_location={lat:20.3929333,lng:92.7048043};
-						var map_zoom=12;
+		        		var map_location={lat:16.7782182,lng:96.1684597};
+						var map_zoom=14;
+						var opt = { minZoom: 1, maxZoom: 14};
+						var map = new google.maps.Map(document.getElementById('map_house_detail'), {
+					          	center: map_location,
+					          	zoom: map_zoom,
+				        	   	zoomControl: true,
+						   		disableDefaultUI: true,
+						  		mapTypeId: google.maps.MapTypeId.ROADMAP
+				        	});
 
-						map = new google.maps.Map(document.getElementById('map_house_detail'), {
-				          center: map_location,
-				          zoom: map_zoom,
-				          zoomControl: false,
-						  scaleControl: false,
-						  scrollwheel: false,
-						  disableDoubleClickZoom: true,
-						  mapTypeId: google.maps.MapTypeId.ROADMAP
-				        });
-
-					var marker = new google.maps.Marker({
+						var marker = new google.maps.Marker({
 							 position: map_location, 
 							 icon: { 
 							 	url:"https://b.kisscc0.com/20180705/ozw/kisscc0-google-map-maker-google-maps-computer-icons-inform-map-marker-5b3e4047afb525.7968986915308063437197.png","scaledSize": {"height": 30, "width": 30}
@@ -822,14 +813,11 @@ Project Designed By Tracer Land
 							 	},
 							 map: map
 						
-						});
+							});
 
-					
-					
-					
-					
+						map.setOptions(opt);
 
-				}
+					}
 
 		</script>
 

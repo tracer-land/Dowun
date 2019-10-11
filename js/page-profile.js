@@ -210,6 +210,23 @@ $(document).ready(function(){
 				get('body_right_job_section').style.right = "50%";
 				get('body_right_job_section').style.transform = "translate(-50%, 0%)";
 			}
+			function create_job_form_direct(){
+				get('job_section').style.display = "block";
+				get('job_table_section').style.display = "none";
+				get('fix_position').style.display = "none";
+				get('body_right_job_section').style.display = "block";
+				get('body_right_home_section').style.display = "none";
+				get('body_right_house_section').style.display = "none";
+				get('body_right_setting_section').style.display = "none";
+				get('body_right_inbox_section').style.display = "none";
+				get('body_right_help_section').style.display = "none";
+
+				get('body_right_job_section').style.position = "absolute";
+				get('body_right_job_section').style.left = "50%";
+				get('body_right_job_section').style.right = "50%";
+				get('body_right_job_section').style.transform = "translate(-50%, 0%)";
+			}
+
 			function job_switchTwo(){
 				get('job-tab-1').style.display = "none";
 				get('job-tab-2').style.display = "block";
@@ -229,6 +246,23 @@ $(document).ready(function(){
 				get('body_right_house_section').style.right = "50%";
 				get('body_right_house_section').style.transform = "translate(-50%, 0%)";
 			}
+			function create_house_form_direct(){
+				get('house_section').style.display = "block";
+				get('house_table_section').style.display = "none";
+				get('fix_position').style.display = "none";
+				get('body_right_house_section').style.display = "block";
+				get('body_right_home_section').style.display = "none";
+				get('body_right_job_section').style.display = "none";
+				get('body_right_setting_section').style.display = "none";
+				get('body_right_inbox_section').style.display = "none";
+				get('body_right_help_section').style.display = "none";
+
+				get('body_right_house_section').style.position = "absolute";
+				get('body_right_house_section').style.left = "50%";
+				get('body_right_house_section').style.right = "50%";
+				get('body_right_house_section').style.transform = "translate(-50%, 0%)";
+			}
+
 
 			/*Living & Commercial Tabs!!!*/
 			function house_switchLive(){
