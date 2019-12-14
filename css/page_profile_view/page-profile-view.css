@@ -587,14 +587,30 @@
 	margin-top: 20px!important;
 	text-align: center;
 }
+
+
+/*Changing CSS For Commercial and Living Selection!*/
 #body_right_house_section .house_section #house-tab-1 #house-section-title .col-md-3{
+	padding: 0px!important;
+	cursor: pointer;
+}
+#body_right_house_section .house_section #house-tab-1 #house-section-title .col-md-3 label{
+	width: 100%!important;
+	height: 100%!important;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	cursor: pointer;
-}
-#body_right_house_section .house_section #house-tab-1 #house-section-title #living-tab,#body_right_house_section .house_section #house-tab-1 #house-section-title #commercial-tab{
 	border: 1px solid rgba(0,0,0,0.1);
 }
+#body_right_house_section .house_section #house-tab-1 #house-section-title form .col-md-3 label input[type="radio"]{
+	position: absolute;
+	visibility: hidden;
+}
+#body_right_house_section .house_section #house-tab-1 #house-section-title #living-tab,#body_right_house_section .house_section #house-tab-1 #house-section-title #commercial-tab{
+	/*border: 1px solid rgba(0,0,0,0.1);*/
+}
+/*Changing CSS For Commercial and Living Selection!*/
+
 #body_right_house_section .house_section #house-tab-1 #house-section-title .col-md-3 .fa-home, #body_right_house_section .house_section #house-tab-1 #house-section-title .col-md-3 .fa-network-wired{
 	color: #3a9bfa;
 	display: inline-block;
@@ -693,7 +709,7 @@
 	cursor: pointer;
 	text-align: center;
 }
-#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 form #house-prefer-gender .gender .fa-male,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 form #house-prefer-gender .gender .fa-female{
+#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 form #house-prefer-gender .gender .fa-male,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 form #house-prefer-gender .gender .fa-female,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 form #house-prefer-gender .gender .fa-users{
 	color: #3a9bfa;
 	display: inline-block;
 	margin-right: 5px;
@@ -704,7 +720,7 @@
 	margin-left: 5px;
 	visibility: hidden!important;
 }
-#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 form #house-prefer-gender .gender input[type="checkbox"]{
+#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 form #house-prefer-gender .gender input[type="radio"]{
 	position: absolute;
 	visibility: hidden!important;
 }

@@ -126,6 +126,7 @@ Project Designed By Tracer Land
 										<a href="my-profile.html"><i class="fa fa-wpforms"></i>&nbsp;&nbsp;CV
 										</a>
 										<small>Candidate CV to apply job and promote you need.</small>
+
 									</li>
 									<li>
 										<a href="create-page-step-1.html"><i class="fa fa-briefcase"></i>&nbsp;&nbsp;Business Page
@@ -302,6 +303,12 @@ Project Designed By Tracer Land
 													<span>Job</span>
 												</a>
 											</li>
+											<li onClick="tab_switchService()">
+												<a href="#">
+													<i class="fa fa-list" data-toggle="tooltip" title="Services" data-placement="right"></i>
+													<span>Services</span>
+												</a>
+											</li>
 										</ul>
 									</div>
 								</div>
@@ -320,21 +327,52 @@ Project Designed By Tracer Land
 									</div>
 								</div>
 								<div id="nav_wrap">
-									<ul>
-										<li>
-											<i class="fa fa-heart"></i>
-											<a href="#">Like</a>
+									<ul class="pull-left">
+
+
+										<!-- Rating Stars! -->
+										<li class="rating">
+											<input type="radio" name="star" id="star1"><label for="star1"></label>
+											<input type="radio" name="star" id="star2"><label for="star2"></label>
+											<input type="radio" name="star" id="star3"><label for="star3"></label>
+											<input type="radio" name="star" id="star4"><label for="star4"></label>
+											<input type="radio" name="star" id="star5"><label for="star5"></label>
 										</li>
-										<li>
+
+										<li onClick="tab_switchReview()">
+											<i class="fa fa-pencil"></i>
+											<a href="#">Reviews</a>
+										</li>
+										<li onClick="tab_switchFriend()">
 											<i class="fa fa-eye"></i>
 											<a href="#">Following</a>
+										</li>
+					
+										<li onClick="tab_switchPhoto()">
+											<i class="fa fa-camera"></i>
+											<a href="#">100 Photos</a>
+										</li>
+
+									</ul>
+
+
+									<ul class="pull-right">
+										<li>
+											<i class="fa fa-eye"></i>
+											<a href="#">Follow</a>
 										</li>
 										<li>
 											<i class="fa fa-share"></i>
 											<a href="#">Share</a>
 										</li>
 
+										<li>
+											<i class="fa fa-pencil"></i>
+											<a href="#">Review</a>
+										</li>
+
 										<a href="#" class="btn btn-sm btn-info pull-right">Message</a>
+
 									</ul>
 
 								</div>
@@ -1122,6 +1160,781 @@ Project Designed By Tracer Land
 
 						</div>
 					<!-- Body Right Section End! -->
+
+					<!-- Body Right Service Section Start! -->
+						<div class="col-md-10 col-sm-11 col-xs-11" id="body_right_service_section">
+
+							<!-- Service Section! -->
+							<div id="service-section">
+								
+								<div class="col-md-12"><h5>Services</h5></div>
+
+								<div class="col-md-12" id="service-body">
+									
+									<div id="service-box">
+										<div class="col-md-9">
+											<img src="images/noodle.jpg">
+											<ul>
+												<li><strong>Fried Noodle</strong></li>
+												<li>
+													<a href="#"><i class="fa fa-star"></i>&nbsp;4 Reviews</a>
+												</li>
+											</ul>
+
+										</div>
+
+										<div class="col-md-3">
+											<ul>
+												<li>5000 Kyats</li>
+												<li>
+													<a href="#" class="btn btn-sm btn-info">Order Now</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="col-md-12" id="service-content">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+											</p>
+										</div>
+									</div>
+
+									<div id="service-box">
+										<div class="col-md-9">
+											<img src="images/noodle.jpg">
+											<ul>
+												<li><strong>Fried Noodle</strong></li>
+												<li>
+													<a href="#"><i class="fa fa-star"></i>&nbsp;4 Reviews</a>
+												</li>
+											</ul>
+
+										</div>
+
+										<div class="col-md-3">
+											<ul>
+												<li>5000 Kyats</li>
+												<li>
+													<a href="#" class="btn btn-sm btn-info">Order Now</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="col-md-12" id="service-content">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+											</p>
+										</div>
+									</div>
+
+
+									<div id="service-box">
+										<div class="col-md-9">
+											<img src="images/noodle.jpg">
+											<ul>
+												<li><strong>Fried Noodle</strong></li>
+												<li>
+													<a href="#"><i class="fa fa-star"></i>&nbsp;4 Reviews</a>
+												</li>
+											</ul>
+
+										</div>
+
+										<div class="col-md-3">
+											<ul>
+												<li>5000 Kyats</li>
+												<li>
+													<a href="#" class="btn btn-sm btn-info">Order Now</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="col-md-12" id="service-content">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+											</p>
+										</div>
+									</div>
+
+									<div id="service-box">
+										<div class="col-md-9">
+											<img src="images/noodle.jpg">
+											<ul>
+												<li><strong>Fried Noodle</strong></li>
+												<li>
+													<a href="#"><i class="fa fa-star"></i>&nbsp;4 Reviews</a>
+												</li>
+											</ul>
+
+										</div>
+
+										<div class="col-md-3">
+											<ul>
+												<li>5000 Kyats</li>
+												<li>
+													<a href="#" class="btn btn-sm btn-info">Order Now</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="col-md-12" id="service-content">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+											</p>
+										</div>
+									</div>
+
+									<div id="service-box">
+										<div class="col-md-9">
+											<img src="images/noodle.jpg">
+											<ul>
+												<li><strong>Fried Noodle</strong></li>
+												<li>
+													<a href="#"><i class="fa fa-star"></i>&nbsp;4 Reviews</a>
+												</li>
+											</ul>
+
+										</div>
+
+										<div class="col-md-3">
+											<ul>
+												<li>5000 Kyats</li>
+												<li>
+													<a href="#" class="btn btn-sm btn-info">Order Now</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="col-md-12" id="service-content">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+											</p>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+					<!-- Body Right Service Section End! -->
+
+					<!-- Body Right Photo Section Start! -->
+						<div class="col-md-10 col-sm-11 col-xs-11" id="body_right_photo_section">
+							<!-- Photo Section! -->
+							<div id="photo-section">
+								
+								<div class="col-md-12"><h5>Photos</h5></div>
+
+								<!-- Photo Section! -->
+								<div class="col-md-12" id="photo-wrap">
+									
+									<div class="col-md-3">
+										<a href="images/house-6.jpg">
+											<img src="images/house-6.jpg">
+											<span>Shwe Kaung</span>
+										</a>
+									</div>
+
+									<div class="col-md-3">
+										<a href="images/house-6.jpg">
+											<img src="images/house-6.jpg">
+											<span>Shwe Kaung</span>
+										</a>
+									</div>
+
+									<div class="col-md-3">
+										<a href="images/house-6.jpg">
+											<img src="images/house-6.jpg">
+											<span>Shwe Kaung</span>
+										</a>
+									</div>
+
+									<div class="col-md-3">
+										<a href="images/house-6.jpg">
+											<img src="images/house-6.jpg">
+											<span>Shwe Kaung</span>
+										</a>
+									</div>
+
+									<div class="col-md-3">
+										<a href="images/house-6.jpg">
+											<img src="images/house-6.jpg">
+											<span>Shwe Kaung</span>
+										</a>
+									</div>
+
+									<div class="col-md-3">
+										<a href="images/house-6.jpg">
+											<img src="images/house-6.jpg">
+											<span>Shwe Kaung</span>
+										</a>
+									</div>
+
+									<div class="col-md-3">
+										<a href="images/house-6.jpg">
+											<img src="images/house-6.jpg">
+											<span>Shwe Kaung</span>
+										</a>
+									</div>
+
+									<div class="col-md-3">
+										<a href="images/house-6.jpg">
+											<img src="images/house-6.jpg">
+											<span>Shwe Kaung</span>
+										</a>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					<!-- Body Right Photo Section Start! -->
+
+
+					<!-- Body Right Friend Section Start! -->
+						<div class="col-md-10 col-sm-11 col-xs-11" id="body_right_friend_section">
+							<!-- Friend Section! -->
+							<div id="friend-section">
+
+								<div class="col-md-12"><h5>Friends</h5></div>
+
+								<!-- Friend Section! -->
+								<div class="col-md-12" id="friend-wrap">
+
+									<div class="col-md-4">
+										<img src="images/client.jpg">
+										<ul>
+											<li>
+												<span>Min Min</span>
+											</li>
+											<li>
+												<span>Yangon, Myanmar</span>
+											</li>
+											<li>
+												<small>34 Friends</small>
+											</li>
+											<li>
+												<small>22 Reviews</small>
+											</li>
+										</ul>
+										<ul class="add-friend-btn">
+											<li>
+												<a href="#" class="btn btn-sm btn-info pull-right">Add Friend</a>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-md-4">
+										<img src="images/client.jpg">
+										<ul>
+											<li>
+												<span>Min Min</span>
+											</li>
+											<li>
+												<span>Yangon, Myanmar</span>
+											</li>
+											<li>
+												<small>34 Friends</small>
+											</li>
+											<li>
+												<small>22 Reviews</small>
+											</li>
+										</ul>
+										<ul class="add-friend-btn">
+											<li>
+												<a href="#" class="btn btn-sm btn-info pull-right">Add Friend</a>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-md-4">
+										<img src="images/client.jpg">
+										<ul>
+											<li>
+												<span>Min Min</span>
+											</li>
+											<li>
+												<span>Yangon, Myanmar</span>
+											</li>
+											<li>
+												<small>34 Friends</small>
+											</li>
+											<li>
+												<small>22 Reviews</small>
+											</li>
+										</ul>
+										<ul class="add-friend-btn">
+											<li>
+												<a href="#" class="btn btn-sm btn-info pull-right">Add Friend</a>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-md-4">
+										<img src="images/client.jpg">
+										<ul>
+											<li>
+												<span>Min Min</span>
+											</li>
+											<li>
+												<span>Yangon, Myanmar</span>
+											</li>
+											<li>
+												<small>34 Friends</small>
+											</li>
+											<li>
+												<small>22 Reviews</small>
+											</li>
+										</ul>
+										<ul class="add-friend-btn">
+											<li>
+												<a href="#" class="btn btn-sm btn-info pull-right">Add Friend</a>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-md-4">
+										<img src="images/client.jpg">
+										<ul>
+											<li>
+												<span>Min Min</span>
+											</li>
+											<li>
+												<span>Yangon, Myanmar</span>
+											</li>
+											<li>
+												<small>34 Friends</small>
+											</li>
+											<li>
+												<small>22 Reviews</small>
+											</li>
+										</ul>
+										<ul class="add-friend-btn">
+											<li>
+												<a href="#" class="btn btn-sm btn-info pull-right">Add Friend</a>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-md-4">
+										<img src="images/client.jpg">
+										<ul>
+											<li>
+												<span>Min Min</span>
+											</li>
+											<li>
+												<span>Yangon, Myanmar</span>
+											</li>
+											<li>
+												<small>34 Friends</small>
+											</li>
+											<li>
+												<small>22 Reviews</small>
+											</li>
+										</ul>
+										<ul class="add-friend-btn">
+											<li>
+												<a href="#" class="btn btn-sm btn-info pull-right">Add Friend</a>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-md-4">
+										<img src="images/client.jpg">
+										<ul>
+											<li>
+												<span>Min Min</span>
+											</li>
+											<li>
+												<span>Yangon, Myanmar</span>
+											</li>
+											<li>
+												<small>34 Friends</small>
+											</li>
+											<li>
+												<small>22 Reviews</small>
+											</li>
+										</ul>
+										<ul class="add-friend-btn">
+											<li>
+												<a href="#" class="btn btn-sm btn-info pull-right">Add Friend</a>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-md-4">
+										<img src="images/client.jpg">
+										<ul>
+											<li>
+												<span>Min Min</span>
+											</li>
+											<li>
+												<span>Yangon, Myanmar</span>
+											</li>
+											<li>
+												<small>34 Friends</small>
+											</li>
+											<li>
+												<small>22 Reviews</small>
+											</li>
+										</ul>
+										<ul class="add-friend-btn">
+											<li>
+												<a href="#" class="btn btn-sm btn-info pull-right">Add Friend</a>
+											</li>
+										</ul>
+									</div>
+
+								</div>									
+
+							</div>
+						</div>
+					<!-- Body Right Friend Section End! -->
+
+
+					<!-- Body Right Review Section Start! -->
+						<div class="col-md-10 col-sm-11 col-xs-11" id="body_right_review_section">
+
+							<!-- Review Section! -->
+							<div id="review-section">
+								
+								<div class="col-md-12"><h5>Reviews</h5></div>
+
+								<!-- Verify & Business Highlight Section! -->
+								<div class="col-md-9">
+									<div id="verify-row">
+										<img src="images/kbz.png">
+										<ul>
+											<li class="verify" data-toggle="modal" data-target="#verifyBox"><strong>Verified License</strong></li>
+
+											<li>Dowun comfirmed a business license</li>
+
+											<div class="modal fade" id="verifyBox" role="dialog">
+												<div class="modal-dialog">
+													<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+         	 												<h4 class="modal-title">Verify License</h4>
+														</div>
+														<div class="modal-body">
+															<div style="width: 100%;">
+																<img src="images/client.jpg">
+															</div>
+															<table class="table">
+																<tr>
+																	<td>License</td>
+																	<td>003344</td>
+																</tr>
+																<tr>
+																	<td>Issue</td>
+																	<td>PTD</td>
+																</tr>
+																<tr>
+																	<td>Issue By Dowun On</td>
+																	<td>Nov 28 2019</td>
+																</tr>
+																<tr>
+																	<td>Expire</td>
+																	<td>Nov 28 2020</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+										</ul>
+									</div>
+
+									<div id="business-highlight">
+										<div class="col-md-12">
+											<strong>Business Highlight</strong>
+										</div>
+
+										<div class="col-md-6">
+											<span>
+												<i class="fa fa-cog"></i>&nbsp;
+												Workmanship Guaranted
+											</span>
+										</div>
+										<div class="col-md-6">
+											<span>
+												<i class="fa fa-cog"></i>&nbsp;
+												Repair Guaranted
+											</span>
+										</div>
+										<div class="col-md-6">
+											<span>
+												<i class="fa fa-cog"></i>&nbsp;
+												24/7 Availity
+											</span>
+										</div>
+										<div class="col-md-6">
+											<span>
+												<i class="fa fa-cog"></i>&nbsp;
+												Available by Appointment
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Write Review Section! -->
+								<div class="col-md-9" id="write-review" data-toggle="modal" data-target="#writeBox">
+									<div class="col-md-2">
+										<img src="images/kbz.png">
+									</div>
+									<div class="col-md-8">
+										<span>Write Review KBZ Bank</span>
+									</div>
+									<div class="col-md-2">
+										<i class="fa fa-camera"></i>
+									</div>
+								</div>
+
+								<div class="modal fade" id="writeBox" role="dialog">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<h5 class="modal-title">Write KBZ Bank Review</h5>
+											</div>
+											<div class="modal-body">
+												<ul>
+													<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i>&nbsp;Excellent</i>
+													</li>
+												</ul>
+
+												<form action="#">
+												
+													<textarea class="form-control" required placeholder="Enter Your Message" id="myemoji"></textarea>
+													
+
+													<label for="file-upload" class="custom-file-upload">
+													<i class="fa fa-camera"></i>&nbsp;&nbsp;Add Photo
+													</label>
+													<input id="file-upload" type="file"/>
+
+
+													<input type="submit" name="submit" class="btn btn-sm btn-info pull-right" value="Post">
+
+												</form>
+
+												<div id="write-footer">
+													<ul style="float: left;">
+														<li>
+															<a href="#">With</a>
+														</li>
+														<li>
+															<a href="#">Who were with you</a>
+														</li>
+													</ul>
+
+													<ul style="float: right;">
+														<li>
+															<a href="#">Tag Friends</a>
+														</li>
+														<li>
+															<a href="#">Check In</a>
+														</li>
+													</ul>
+												</div>
+
+												<!-- <div class="col-md-12" id="review-footer">
+										
+													<ul style="float: left;">
+														<li><a href="#">Useful</a></li>
+														<li><a href="#">Funny</a></li>
+														<li><a href="#">Cool</a></li>
+														<li><a href="#">Bad</a></li>
+													</ul>
+
+													<ul style="float: right;padding: 0px!important;margin: 0px!important;">
+														<li><a href="#">Report</a></li>
+													</ul>
+
+												</div> -->
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Review Rating Sidebar!No Loop! -->
+								<!-- <div class="col-md-3" id="review-rating">
+									
+									<h6>Reviews Rating</h6>
+									<ul>
+										<li>
+											<strong>5 Stars</strong>
+											<span>3</span>
+										</li>
+										<li>
+											<strong>4 Stars</strong>
+											<span>2</span>
+										</li>
+										<li>
+											<strong>3 Stars</strong>
+											<span>1</span>
+										</li>
+										<li>
+											<strong>2 Stars</strong>
+											<span>0</span>
+										</li>
+										<li>
+											<strong>1 Stars</strong>
+											<span>0</span>
+										</li>
+									</ul>
+
+
+									<h6>Review Votes</h6>
+									<ul id="review-vote">
+										<li>Useful - <span>1</span></li>
+										<li>Funny - <span>3</span></li>
+										<li>Cool - <span>3</span></li>
+										<li>Bad - <span>0</span></li>
+									</ul>
+								</div> -->
+
+
+								<!-- Review Section! -->
+								<div class="col-md-9">
+									<!-- #first-row -->
+									<div class="row" id="first-row">
+										<div class="col-md-6">
+											<img src="images/client.jpg">
+											<ul>
+												<li>
+													<span>Min Min with Ko Bin</span>
+												</li>
+												<li>
+													<span>1 August 2019</span>
+												</li>
+											</ul>
+										</div>
+
+										<div class="col-md-6" id="stars">
+											<ul>
+												<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="row" id="second-row">
+										<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</p>
+
+										<img src="images/house-2.jpg">
+									</div>
+
+									<div class="col-md-12" id="review-footer">
+										
+										<ul style="float: left;">
+											<li><a href="#">Useful</a></li>
+											<li><a href="#">Funny</a></li>
+											<li><a href="#">Cool</a></li>
+											<li><a href="#">Bad</a></li>
+										</ul>
+
+										<ul style="float: right;padding: 0px!important;margin: 0px!important;">
+											<li><a href="#">Report</a></li>
+										</ul>
+
+									</div>
+								</div>
+
+								<!-- Review Section! -->
+								<div class="col-md-9">
+									<!-- #first-row -->
+									<div class="row" id="first-row">
+										<div class="col-md-6">
+											<img src="images/client.jpg">
+											<ul>
+												<li>
+													<span>Aung Aung</span>
+												</li>
+												<li>
+													<span>5 Dec 2018</span>
+												</li>
+											</ul>
+										</div>
+
+										<div class="col-md-6" id="stars">
+											<ul>
+												<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</li>
+												<li>
+													4/12/2019
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="row" id="second-row">
+										<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</p>
+
+									</div>
+
+									<div class="col-md-12" id="review-footer">
+										
+										<ul style="float: left;">
+											<li><a href="#">Useful</a></li>
+											<li><a href="#">Funny</a></li>
+											<li><a href="#">Cool</a></li>
+											<li><a href="#">Bad</a></li>
+										</ul>
+
+										<ul style="float: right;padding: 0px!important;margin: 0px!important;">
+											<li><a href="#">Report</a></li>
+										</ul>
+
+									</div>
+								</div>
+
+							</div>
+
+
+						</div>
+					<!-- Body Right Review Section End! -->
 					
 				</div>
 			</div>
@@ -1153,6 +1966,10 @@ Project Designed By Tracer Land
 				get('job_tab_section').style.display = "none";
 				get('house_tab').style.display = "none";
 				get('house_tab_search').style.display = "none";
+				get('body_right_service_section').style.display = "none";
+				get('body_right_photo_section').style.display = "none";
+				get('body_right_friend_section').style.display = "none";
+				get('body_right_review_section').style.display = "none";
 			}
 			function tab_switchHouse(){
 				get('house_tab').style.display = "block";
@@ -1160,10 +1977,62 @@ Project Designed By Tracer Land
 				get('job_tab_search').style.display = "none";
 				get('job_tab_section').style.display = "none";
 				get('home_tab').style.display = "none";
+				get('body_right_service_section').style.display = "none";
+				get('body_right_photo_section').style.display = "none";
+				get('body_right_friend_section').style.display = "none";
+				get('body_right_review_section').style.display = "none";
 			}
 			function tab_switchJob(){
 				get('job_tab_search').style.display = "block";
 				get('job_tab_section').style.display = "block";
+				get('home_tab').style.display = "none";
+				get('house_tab').style.display = "none";
+				get('house_tab_search').style.display = "none";
+				get('body_right_service_section').style.display = "none";
+				get('body_right_photo_section').style.display = "none";
+				get('body_right_friend_section').style.display = "none";
+				get('body_right_review_section').style.display = "none";
+			}
+			function tab_switchService(){
+				get('body_right_service_section').style.display = "block";
+				get('job_tab_search').style.display = "none";
+				get('job_tab_section').style.display = "none";
+				get('home_tab').style.display = "none";
+				get('house_tab').style.display = "none";
+				get('house_tab_search').style.display = "none";
+				get('body_right_photo_section').style.display = "none";
+				get('body_right_friend_section').style.display = "none";
+				get('body_right_review_section').style.display = "none";
+			}
+			function tab_switchPhoto(){
+				get('body_right_photo_section').style.display = "block";
+				get('body_right_service_section').style.display = "none";
+				get('job_tab_search').style.display = "none";
+				get('job_tab_section').style.display = "none";
+				get('home_tab').style.display = "none";
+				get('house_tab').style.display = "none";
+				get('house_tab_search').style.display = "none";
+				get('body_right_friend_section').style.display = "none";
+				get('body_right_review_section').style.display = "none";
+			}
+			function tab_switchFriend(){
+				get('body_right_friend_section').style.display = "block";
+				get('body_right_photo_section').style.display = "none";
+				get('body_right_service_section').style.display = "none";
+				get('job_tab_search').style.display = "none";
+				get('job_tab_section').style.display = "none";
+				get('home_tab').style.display = "none";
+				get('house_tab').style.display = "none";
+				get('house_tab_search').style.display = "none";
+				get('body_right_review_section').style.display = "none";
+			}
+			function tab_switchReview(){
+				get('body_right_review_section').style.display = "block";
+				get('body_right_friend_section').style.display = "none";
+				get('body_right_photo_section').style.display = "none";
+				get('body_right_service_section').style.display = "none";
+				get('job_tab_search').style.display = "none";
+				get('job_tab_section').style.display = "none";
 				get('home_tab').style.display = "none";
 				get('house_tab').style.display = "none";
 				get('house_tab_search').style.display = "none";

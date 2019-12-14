@@ -227,7 +227,7 @@
 	border-radius: 8px;
 	width: 32%;
 	border: 1px solid rgba(0,0,0,0.3);
-	padding: 10px 0px 5px 0px;
+	padding: 10px;
 }
 #feature_jobs .container .row .job_wrapper:nth-child(1){
 	margin-left: 10px;
@@ -237,19 +237,25 @@
 	margin-right: 10px;
 }
 #feature_jobs .container .row .job_wrapper #feature_img_wrap{
-	width: 80%;
 	margin: 0 auto!important;
 }
+
+/*Changing Job Detail's Image Size!!!*/
 #feature_jobs .container .row .job_wrapper img{
 	float: left;
-	width: 60px;
-	height: 60px;
+	width: 40px;
+	height: 40px;
 }
 #feature_jobs .container .row .job_wrapper ul{
 	list-style: none;
-	float: left;
+	float: right;
 	color: #666!important;
+	width: 85%!important;
+	padding: 0px!important;
+	padding-left: 5px!important;
 }
+/*Changing Job Detail's Ul!!!*/
+
 #feature_jobs .container .row .job_wrapper ul .position{
 	font-weight: bold!important;
 }

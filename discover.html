@@ -1,0 +1,947 @@
+<!-- 
+
+Project Title = Dowun
+Project Type = Multi Platform Website
+Project Front-End Technologies = HTML, CSS, Boostrap, JQuery
+Project Designed By Tracer Land
+
+ -->
+
+<!-- Discover Page!!! -->
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Dowun Multi Platform</title>
+
+		<!-- Logo Image -->
+		<link rel="icon" href="images/logo.png">
+
+		<!-- Meta Tags -->
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+		<!-- CSS Links! -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<link rel="stylesheet" type="text/css" href="css/discover_views/discover_main.css"><!-- Discover CSS! -->
+
+		<!-- Common CSS Styles! -->
+		<link rel="stylesheet" type="text/css" href="css/common_css_styles/mobile.css" media="screen and (max-width: 600px)">
+		<link rel="stylesheet" type="text/css" href="css/common_css_styles/tablet.css" media="screen and (max-width: 998px)">
+
+
+		<link rel="stylesheet" type="text/css" href="css/discover_views/mobile.css" media="screen and (max-width: 768px) and (min-width: 500px)">
+		<link rel="stylesheet" type="text/css" href="css/discover_views/tablet.css" media="screen and (max-width: 1028px)">
+
+
+		<!-- Boostrap CSS! -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Font Style! -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+		<!-- Font Awsome Link -->
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+
+		<!-- JQuery, Bootstrap JS, Script Links! -->
+		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="js/script.js"></script>
+
+		<!-- Header Section Start! -->
+			<nav class="navbar navbar-default navbar-fixed-top"><!-- Navigation Start -->
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="index.html">
+							<img src="images/logo.png">
+						</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<!-- Language Toggle Start! -->
+						<ul id="language_toggle_select" class="nav navbar-nav navbar-right">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Myanmar</a>
+							<ul class="dropdown-menu">
+								<span class="caret language-caret"></span>
+								<li><a href="#">Myanmar</a></li>
+								<li><a href="#">English</a></li>
+								<li><a href="#">Chinese</a></li>
+								<li><a href="#">Japanese</a></li>
+							</ul>
+						</ul>
+						<!-- Language Toggle End! -->
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="job.html">Search Jobs</a></li>
+							<li><a href="house.html">Search House</a></li>
+							<li><a href="flatmate.html">Search Flatmate</a></li>
+							
+							<li id="drp-menu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Post</a>
+								<ul class="dropdown-menu">
+									<span class="caret first-caret"></span>
+									<li class="drp-title">
+										<a href="#">Create Post</a>
+									</li>
+									<li>
+										<a href="page-profile-view.html"><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;Place
+										</a>
+										<small>Share your need to other, if you are finding a room or place.</small>
+									</li>
+									<li>
+										<a href="page-profile-view.html"><i class="fa fa-suitcase"></i>&nbsp;&nbsp;Job
+										</a>
+										<small>Find employee and post a job to all.</small>
+									</li>
+									<li>
+										<a href="page-profile-view.html"><i class="fa fa-home"></i>&nbsp;&nbsp;House
+										</a>
+										<small>Find a house and post a house to all.</small>
+									</li>
+								</ul>
+							</li>
+
+							<li id="drp-menu-another">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Create</a>
+								<ul class="dropdown-menu">
+									<span class="caret second-caret"></span>
+									<li class="drp-title">
+										<a href="#">Create Page</a>
+									</li>
+									<li>
+										<a href="my-profile.html"><i class="fa fa-wpforms"></i>&nbsp;&nbsp;CV
+										</a>
+										<small>Candidate CV to apply job and promote you need.</small>
+									</li>
+									<li>
+										<a href="create-page-step-1.html"><i class="fa fa-briefcase"></i>&nbsp;&nbsp;Business Page
+										</a>
+										<small>Find employee and post a job to all.</small>
+									</li>
+								</ul>
+							</li>
+
+							<li><a href="my-profile.html">Message</a></li>
+							<li><a href="create-account-phone.html">Register</a></li>
+							<li><a href="sign-in.html">Login</a></li>
+
+							<li class="nav-li">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<sub class="fa fa-bell"></sub><sup>7</sup>
+								</a>
+
+								<!-- Notification Section Start! -->
+								<ul class="dropdown-menu">
+
+									<center>
+										<span class="caret noti-caret"></span>
+									</center>
+
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Share your post.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>2 Mins Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Commented on post you shared.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>1 Hour Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Followed your page.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>4 Hours Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Invited his friends to follow your page.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>12 Hour Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Reviewd on Golden Restaurant.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>1 Day Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Uploded photos at Chaungtha Beach.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>2 Days Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+								</ul>
+								<!-- Notification Section End! -->
+							</li>	
+
+							<li class="nav-li">
+								<a href="my-profile.html">
+									<img src="images/client.jpg" class="img-responsive">&nbsp;Me
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+
+			<div id="header">
+				<div class="container">
+					<div id="header_wrap">
+						
+						<!-- Form! -->
+						<div id="header_form_wrap">	
+							<!-- Form Jobs Inputs! -->
+							<div id="form_one">
+								<form>	
+									<div class="row" style="width: 100%;">
+										<input type="text" name="text" placeholder="Keywords" class="form-control">
+
+
+										<input type="text" name="text" placeholder="Place" class="form-control">
+
+										<button type="submit" value="Search Jobs" class="btn">Search Jobs</button>
+									</div>
+
+									<div class="row" style="width: 100%;" id="form-sub-catgories">
+										<ul>
+
+											<li class="dropdown-toggle" data-toggle="dropdown" style="color: #fff!important;cursor: pointer;"><i class="fa fa-home"></i>&nbsp;Home Services</li>
+											<ul class="dropdown-menu">
+												<li><a href="#">Movie</a></li>
+												<li><a href="#">Painters</a></li>
+												<li><a href="#">Electronic</a></li>
+												<li><a href="#">Home Cleaner</a></li>
+											</ul>
+
+											<li><a href="#"><i class="fas fa-cookie"></i><i class="fa fa-beer"></i>&nbsp;Restaurants</a></li>
+											<li><a href="#"><i class="fa fa-coffee"></i>&nbsp;Coffe & Tea</a></li>
+
+											<li><a href="#"><i class="fa fa-car"></i>&nbsp;Car Services</a></li>
+											<li><a href="#"><i class="fa fa-building"></i>&nbsp;Super Markets</a></li>
+											<li><a href="#"><i class="fa fa-home"></i>&nbsp;Houses</a></li>
+											<li><a href="#"><i class="fa fa-users"></i>&nbsp;Flatmates</a></li>
+											<li><a href="#"><i class="fa fa-briefcase"></i>&nbsp;Jobs</a></li>
+											<li><a href="#browse">More:</a></li>
+										</ul>
+									</div>
+								</form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		<!-- Header Section End! -->
+
+
+
+		<!-- Recent Propery Section Start! -->
+			<div id="recent_business">
+				<div class="container">
+					
+					<h3>RECENT BUSINESS</h3>
+					<div class="row">
+						
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<a href="#">
+								<div id="recent_item">
+									<img src="images/theyangon.jpg">
+									<div id="recent_text_wrap">
+										<h4>
+											Shewkaung Restaurant
+										</h4>
+										<ul>
+											<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</li>
+											<li>
+												<small style="margin-left: 10px;color: #000!important;">200 Reviews</small>
+											</li>
+										</ul>
+										<small>၂၀၀၀၀၀ က်ပ္ / တစ္လ</small><br>
+										<span>
+											Hotpot Food / Chinese Food
+										</span>
+
+										<h6>Mayagone, Yangon</h6>
+									</div>
+								</div>
+							</a>
+							
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<a href="#">
+								<div id="recent_item">
+									<img src="images/theyangon.jpg">
+									<div id="recent_text_wrap">
+										<h4>
+											Shewkaung Restaurant
+										</h4>
+										<ul>
+											<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</li>
+											<li>
+												<small style="margin-left: 10px;color: #000!important;">200 Reviews</small>
+											</li>
+										</ul>
+										<small>၂၀၀၀၀၀ က်ပ္ / တစ္လ</small><br>
+										<span>
+											Hotpot Food / Chinese Food
+										</span>
+
+										<h6>Mayagone, Yangon</h6>
+									</div>
+								</div>
+							</a>
+							
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<a href="#">
+								<div id="recent_item">
+									<img src="images/theyangon.jpg">
+									<div id="recent_text_wrap">
+										<h4>
+											Shewkaung Restaurant
+										</h4>
+										<ul>
+											<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</li>
+											<li>
+												<small style="margin-left: 10px;color: #000!important;">200 Reviews</small>
+											</li>
+										</ul>
+										<small>၂၀၀၀၀၀ က်ပ္ / တစ္လ</small><br>
+										<span>
+											Hotpot Food / Chinese Food
+										</span>
+
+										<h6>Mayagone, Yangon</h6>
+									</div>
+								</div>
+							</a>
+							
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<a href="#">
+								<div id="recent_item">
+									<img src="images/theyangon.jpg">
+									<div id="recent_text_wrap">
+										<h4>
+											Shewkaung Restaurant
+										</h4>
+										<ul>
+											<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</li>
+											<li>
+												<small style="margin-left: 10px;color: #000!important;">200 Reviews</small>
+											</li>
+										</ul>
+										<small>၂၀၀၀၀၀ က်ပ္ / တစ္လ</small><br>
+										<span>
+											Hotpot Food / Chinese Food
+										</span>
+
+										<h6>Mayagone, Yangon</h6>
+									</div>
+								</div>
+							</a>
+							
+						</div>
+					</div>
+
+					<a href="#" class="btn btn-info see-all-properties">
+						See All Properties
+					</a>
+					
+				</div>
+			</div>
+		<!-- Recent Propery Section End! -->
+
+
+		<!-- Review Start! -->
+			<div id="review">
+				<div class="container">
+					<div class="box">
+						<ul class="box-title">
+							<li><img src="images/client.jpg"></li>
+							<li><strong>Min Min</strong></li>
+						</ul>
+						<img src="images/house-6.jpg">
+						<h2>Shwe Kaung Restaurant</h2>
+						<ul>
+							<li class="four-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident.<a href="#">Read more</a>
+						</p>
+					</div>
+					<div class="box">
+						<ul class="box-title">
+							<li><img src="images/client.jpg"></li>
+							<li><strong>Min Min</strong></li>
+						</ul>
+						<img src="images/house-6.jpg">
+						<h2>Shwe Kaung Restaurant</h2>
+						<ul>
+							<li class="four-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate.<a href="#">Read more</a>
+						</p>
+					</div>
+					<div class="box">
+						<ul class="box-title">
+							<li><img src="images/client.jpg"></li>
+							<li><strong>Min Min</strong></li>
+						</ul>
+						<img src="images/house-6.jpg">
+						<h2>Shwe Kaung Restaurant</h2>
+						<ul>
+							<li class="four-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident.<a href="#">Read more</a>
+						</p>
+					</div>
+					<div class="box">
+						<ul class="box-title">
+							<li><img src="images/client.jpg"></li>
+							<li><strong>Min Min</strong></li>
+						</ul>
+						<img src="images/house-6.jpg">
+						<h2>Shwe Kaung Restaurant</h2>
+						<ul>
+							<li class="four-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident.<a href="#">Read more</a>
+						</p>
+					</div>
+					<div class="box">
+						<ul class="box-title">
+							<li><img src="images/client.jpg"></li>
+							<li><strong>Min Min</strong></li>
+						</ul>
+						<h2>Shwe Kaung Restaurant</h2>
+						<ul>
+							<li class="four-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip.<a href="#">Read more</a>
+						</p>
+					</div>
+					<div class="box">
+						<ul class="box-title">
+							<li><img src="images/client.jpg"></li>
+							<li><strong>Min Min</strong></li>
+						</ul>
+						<img src="images/house-6.jpg">
+						<h2>Shwe Kaung Restaurant</h2>
+						<ul>
+							<li class="four-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident.<a href="#">Read more</a>
+						</p>
+					</div>
+					<div class="box">
+						<ul class="box-title">
+							<li><img src="images/client.jpg"></li>
+							<li><strong>Min Min</strong></li>
+						</ul>
+						<h2>Shwe Kaung Restaurant</h2>
+						<ul>
+							<li class="four-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident.<a href="#">Read more</a>
+						</p>
+					</div>
+					<div class="box">
+						<ul class="box-title">
+							<li><img src="images/client.jpg"></li>
+							<li><strong>Min Min</strong></li>
+						</ul>
+						<img src="images/house-6.jpg">
+						<h2>Shwe Kaung Restaurant</h2>
+						<ul>
+							<li class="four-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.<a href="#">Read more</a>
+						</p>
+					</div>
+					<div class="box">
+						<ul class="box-title">
+							<li><img src="images/client.jpg"></li>
+							<li><strong>Min Min</strong></li>
+						</ul>
+						<img src="images/house-6.jpg">
+						<h2>Shwe Kaung Restaurant</h2>
+						<ul>
+							<li class="four-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.<a href="#">Read more</a>
+						</p>
+					</div>
+					<div class="box">
+						<ul class="box-title">
+							<li><img src="images/client.jpg"></li>
+							<li><strong>Min Min</strong></li>
+						</ul>
+						<img src="images/house-6.jpg">
+						<h2>Shwe Kaung Restaurant</h2>
+						<ul>
+							<li class="four-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+							</li>
+						</ul>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco .<a href="#">Read more</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		<!-- Review End! -->
+
+
+		<!-- Body Section Start! -->
+			<div id="body">
+				<div class="container">
+
+					<!-- How it works start! -->
+					<div class="row">
+						<h3>HOW IT WORKS</h3>
+						<div id="body_text_wrap" class="col-md-6 col-sm-12 col-xs-12">
+							<h4>Find Jobs, Place and Flatmate</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam.
+							</p>
+							<button class="btn btn-bg btn-info">More</button>
+						</div>
+						<div id="body_img_wrap" class="col-md-6 col-sm-12 col-xs-12">
+							<div id="panel_wrap">
+								<ul>
+									<li id="how_works_one" onClick="work_switchOne()">
+										Jobs
+									</li>
+									<li id="how_works_two" onClick="work_switchTwo()">
+										Place
+									</li>
+									<li id="how_works_three" onClick="work_switchThree()">
+										Flatmate
+									</li>
+								</ul>
+								<a href="#">
+									<div id="how_works_panel_one">
+										<img src="images/how_video.png">
+									</div>
+								</a>
+								<a href="#">
+									<div id="how_works_panel_two">
+										<img src="images/logo.png">
+									</div>
+								</a>
+								<a href="#">
+									<div id="how_works_panel_three">
+										<img src="images/download_app.png">
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- How create job start! -->
+					<div class="row">
+						<h3>HOW TO CREATE A JOB</h3>
+						<div id="body_img_wrap" class="col-md-6 col-sm-12 col-xs-12">
+							<div id="panel_wrap">
+								<ul>
+									<li id="how_jobs_one" style="color:#fff;background: #3a9bfa;" onClick="jobs_switchOne()">
+										Create Job
+									</li>
+									<li id="how_jobs_two" onClick="jobs_switchTwo()">
+										Post Job
+									</li>
+									<li id="how_jobs_three" onClick="jobs_switchThree()">
+										Find Job
+									</li>
+								</ul>
+								<a href="#">
+									<div id="how_jobs_panel_one">
+										<img src="images/how_video.png">
+									</div>
+								</a>
+								<a href="#">
+									<div id="how_jobs_panel_two">
+										<img src="images/logo.png">
+									</div>
+								</a>
+								<a href="#">
+									<div id="how_jobs_panel_three">
+										<img src="images/download_app.png">
+									</div>
+								</a>
+							</div>
+						</div>
+						<div id="body_text_wrap" class="col-md-6 col-sm-12 col-xs-12">
+							<h4 id="text-right">Find Jobs, Place and Flatmate</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam.
+							</p>
+							<button id="pull-right" class="btn btn-bg btn-info">More</button>
+						</div>
+					</div>
+
+					<!-- How create page start! -->
+					<div class="row">
+						<h3>HOW TO CREATE A PAGE</h3>
+						<div id="body_text_wrap" class="col-md-6 col-sm-12 col-xs-12">
+							<h4>Find Jobs, Place and Flatmate</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam.
+							</p>
+							<button class="btn btn-bg btn-info">More</button>
+						</div>
+						<div id="body_img_wrap" class="col-md-6 col-sm-12 col-xs-12">
+							<div id="panel_wrap">
+								<ul>
+									<li id="how_page_one" style="color:#fff;background: #3a9bfa;" onClick="page_switchOne()">
+										Place
+									</li>
+									<li id="how_page_two" onClick="page_switchTwo()">
+										Jobs
+									</li>
+									<li id="how_page_three" onClick="page_switchThree()">
+										Flatmate
+									</li>
+								</ul>
+								<a href="#">
+									<div id="how_page_panel_one">
+										<img src="images/how_video.png">
+									</div>
+								</a>
+								<a href="#">
+									<div id="how_page_panel_two">
+										<img src="images/logo.png">
+									</div>
+								</a>
+								<a href="#">
+									<div id="how_page_panel_three">
+										<img src="images/download_app.png">
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Browse Your Need! -->
+			<div id="browse" >
+				<div class="container">
+					<h3>Browse Your Need</h3>
+					<div class="row">
+						<div class="col-md-3">
+							<ul>
+								<li><a href="#"><i class="fa fa-coffee"></i>&nbsp;Coffe & Tea</a></li>
+								<li><a href="#"><i class="fa fa-home"></i>&nbsp;Professional Services</a></li>
+								<li><a href="#"><i class="fa fa-home"></i>&nbsp;Local Services</a></li>
+								<li><a href="#"><i class="fa fa-home"></i>&nbsp;Education</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<ul>
+								<li><a href="#"><i class="fa fa-home"></i>&nbsp;Food</a></li>
+								<li><a href="#"><i class="fa fa-home"></i>&nbsp;Pet</a></li>
+								<li><a href="#"><i class="fa fa-home"></i>&nbsp;Evant Planing & Services</a></li>
+								<li><a href="#"><i class="fa fa-home"></i>&nbsp;Religious Organizations</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<ul>
+								<li><a href="#"><i class="fa fa-home"></i>&nbsp;Art & Entertainment</a></li>
+								<li><a href="#"><i class="fa fa-home"></i>&nbsp;Real Estate</a></li>
+								<li><a href="#"><i class="fa fa-home"></i>&nbsp;Public Service & Goverment</a></li>
+								<li><a href="#"><i class="fa fa-home"></i>&nbsp;Local Flavor</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<ul>
+								<li><a href="#"><i class="fa fa-home"></i>&nbsp;Health & Medical</a></li>
+								<li><a href="#"><i class="fa fa-home"></i>&nbsp;Hotel & Travels</a></li>
+								<li><a href="#"><i class="fa fa-home"></i>&nbsp;Financial Services</a></li>
+								<li><a href="#"><i class="fa fa-home"></i>&nbsp;Mass Media</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- Body Section End! -->
+
+
+		<!-- Download App Section Start! -->
+			<div  id="download_app">
+				<div class="container">
+					<div id="store">
+						<div class="col-md-6 col-sm-6 col-xs-6">
+							<a href="#">
+								<img src="images/available_applestore.png">
+							</a>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-6">
+							<a href="#">
+								<img src="images/available_playstore.png">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- Download App Section End! -->
+
+
+		<!-- Footer Section Start! -->
+			<div id="footer">
+				<div class="container">
+					<div id="footer_text_wrap">
+							<div class="row">
+								<div class="col-md-2">
+									<p>About</p>
+								</div>
+								<div class="col-md-4">
+									<p class="about_text">Dowun is a multi platform where you can find house, jobs and flatmates. We provide also internet services.</p>
+								</div>
+								<div class="col-md-2">
+									<p>Contact</p>
+								</div>
+								<div class="col-md-4">
+									<ul>
+										<li>
+											<span class="fa fa-phone"></span>&nbsp;&nbsp;
+											<a href="tel:+959 123456789">+959 123456789</a>
+										</li>
+										<li>
+											<span class="fa fa-envelope"></span>&nbsp;&nbsp;
+											<a href="mailto:info@example.com">info@example.com</a>
+										</li>
+										<li>
+											<span class="fa fa-location-arrow"></span>&nbsp;&nbsp;
+											<a href="#">No. 12, Sabal Street, Ahlone Township, Yangon</a>
+										</li>
+										<li>
+											<span class="fa fa-clock-o"></span>&nbsp;&nbsp;
+											<a href="#">Friday: 8am to 5pm</a>
+										</li>
+										<li>
+											<span class="fa fa-calendar-o"></span>&nbsp;&nbsp;
+											<a href="#">Saturday ~ Sunday: Closed</a>
+										</li>
+									</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- Footer Section End! -->
+
+		<!-- Copy Right -->
+		<div id="copyright">
+			Copyright &copy; 2019 Dowun. All Rights Reserved.
+		</div>
+
+</body>
+</html>

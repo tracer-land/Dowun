@@ -336,6 +336,12 @@ Project Designed By Tracer Land
 													<span>KBZ Bank</span>
 												</a>
 											</li>
+											<li>
+												<a href="#" onClick="tab_switchHome()">
+													<i class="fa fa-paperclip" data-toggle="tooltip" title="My Page" data-placement="right"></i>
+													<span>KBZ Bank</span>
+												</a>
+											</li>
 										</ul>
 									</div>
 								</div>
@@ -1326,15 +1332,34 @@ Project Designed By Tracer Land
 
 									<!-- Live & Commercial Selection! -->
 									<div class="row" id="house-section-title">
-										<div class="col-md-3"></div>
-										<div class="col-md-3" onClick="house_switchLive()" id="living-tab">
-											<i class="fa fa-home"></i><span>Living</span><em class="fa fa-check-circle" id="first-check"></em>
-										</div>
-										<div class="col-md-3" onClick="house_switchCommercial()" id="commercial-tab">
-											<i class="fa fa-network-wired"></i><span>Commercial</span><em class="fa fa-check-circle" id="second-check"></em>
-										</div>
-										<div class="col-md-3"></div>
+
+										<form><!-- Adding Form Tag! -->
+											<div class="col-md-3"></div>
+
+											<!-- Changing For Commercial and Living Selection! -->
+											<div class="col-md-3" onClick="house_switchLive()" id="living-tab">
+												<label>
+													<i class="fa fa-home"></i>
+													<span>Living</span>
+													<input type="radio" name="house-create-selection" value="living-selection" required checked>
+													<em class="fa fa-check-circle" id="first-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3" onClick="house_switchCommercial()" id="commercial-tab">
+												<label>
+													<i class="fa fa-network-wired"></i>
+													<span>Commercial</span>
+													<input type="radio" name="house-create-selection" value="commercial-selection" required checked>
+													<em class="fa fa-check-circle" id="second-check"></em>
+												</label>
+											</div>
+											<!-- Changing For Commercial and Living Selection! -->
+
+											<div class="col-md-3"></div>
+										</form><!-- Adding Form Tag! -->
+										
 									</div>
+
 									<!-- House Tab 1 Row 1! -->
 									<div class="row" id="house-tab-1-row-1">
 										<center>
@@ -1556,24 +1581,32 @@ Project Designed By Tracer Land
 
 											<div class="col-md-12" id="house-prefer-gender">
 												<div class="col-md-12"><h5>Prefer Gender</h5></div>
-												<div class="col-md-3" style="border:0px;"></div>
-												<div class="col-md-3">
+												<!-- <div class="col-md-3" style="border:0px;"></div> -->
+												<div class="col-md-4">
 													<label class="gender">
 														<i class="fa fa-male"></i>
 														<span>Male</span>
-														<input type="checkbox" name="gender-house" value="male" required checked>
+														<input type="radio" name="gender-house" value="male" required checked>
 														<em class="fa fa-check-circle" id="male-check"></em>
 													</label>
 												</div>
-												<div class="col-md-3">
+												<div class="col-md-4">
 													<label class="gender">
 														<i class="fa fa-female"></i>
 														<span>Female</span>
-														<input type="checkbox" name="gender-house" value="female" required>
+														<input type="radio" name="gender-house" value="female" required>
 														<em class="fa fa-check-circle" id="female-check"></em>
 													</label>
 												</div>
-												<div class="col-md-3" style="border:0px;"></div>
+												<div class="col-md-4">
+													<label class="gender">
+														<i class="fa fa-users"></i>
+														<span>Family</span>
+														<input type="radio" name="gender-house" value="female" required>
+														<em class="fa fa-check-circle" id="female-check"></em>
+													</label>
+												</div>
+												<!-- <div class="col-md-3" style="border:0px;"></div> -->
 											</div>
 
 											<div class="col-md-12" id="house-location-property" style="margin-bottom: 80px;">

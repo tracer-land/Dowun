@@ -1,0 +1,955 @@
+<!-- 
+
+Project Title = Dowun
+Project Type = Multi Platform Website
+Project Front-End Technologies = HTML, CSS, Boostrap, JQuery
+Project Designed By Tracer Land
+
+ -->
+
+<!-- Discover Search Page!!! -->
+<!DOCTYPE html>
+<html>
+<head>
+
+		<title>Dowun - Discover Search</title>
+
+		<!-- Logo Image -->
+		<link rel="icon" href="images/logo.png">
+
+		<!-- Meta Tags -->
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+		<!-- CSS Links! -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<link rel="stylesheet" type="text/css" href="css/discover_search_views/discover-search.css"><!-- House Search CSS! -->
+
+		<!-- Common CSS Styles! -->
+		<link rel="stylesheet" type="text/css" href="css/common_css_styles/mobile.css" media="screen and (max-width: 600px)">
+		<link rel="stylesheet" type="text/css" href="css/common_css_styles/tablet.css" media="screen and (max-width: 998px)">
+
+		<link rel="stylesheet" type="text/css" href="css/discover_search_views/mobile.css" media="screen and (max-width: 768px) and (min-width: 500px)">
+		<link rel="stylesheet" type="text/css" href="css/discover_search_views/tablet.css" media="screen and (max-width: 1028px)">
+
+		<!-- Boostrap CSS! -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Font Style! -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+		<!-- Font Awsome Link -->
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+
+		<!-- JQuery, Bootstrap JS, Script Links! -->
+		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="js/jquery.twbsPagination.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+
+
+		<!-- Header Section Start! -->
+			<nav class="navbar navbar-default navbar-fixed-top"><!-- Navigation Start -->
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="index.html">
+							<img src="images/logo.png">
+						</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<!-- Language Toggle Start! -->
+						<ul id="language_toggle_select" class="nav navbar-nav navbar-right">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Myanmar</a>
+							<ul class="dropdown-menu">
+								<span class="caret language-caret"></span>
+								<li><a href="#">Myanmar</a></li>
+								<li><a href="#">English</a></li>
+								<li><a href="#">Chinese</a></li>
+								<li><a href="#">Japanese</a></li>
+							</ul>
+						</ul>
+						<!-- Language Toggle End! -->
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="#">Discover</a></li>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="job.html">Jobs</a></li>
+							<li><a href="house.html">House</a></li>
+							
+							<li id="drp-menu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Post</a>
+								<ul class="dropdown-menu">
+									<span class="caret first-caret"></span>
+									<li class="drp-title">
+										<a href="#">Create Post</a>
+									</li>
+									<li>
+										<a href="page-profile-view.html"><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;Place
+										</a>
+										<small>Share your need to other, if you are finding a room or place.</small>
+									</li>
+									<li>
+										<a href="page-profile-view.html"><i class="fa fa-suitcase"></i>&nbsp;&nbsp;Job
+										</a>
+										<small>Find employee and post a job to all.</small>
+									</li>
+									<li>
+										<a href="page-profile-view.html"><i class="fa fa-home"></i>&nbsp;&nbsp;House
+										</a>
+										<small>Find a house and post a house to all.</small>
+									</li>
+								</ul>
+							</li>
+
+							<li id="drp-menu-another">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Create</a>
+								<ul class="dropdown-menu">
+									<span class="caret second-caret"></span>
+									<li class="drp-title">
+										<a href="#">Create Page</a>
+									</li>
+									<li>
+										<a href="my-profile.html"><i class="fa fa-wpforms"></i>&nbsp;&nbsp;CV
+										</a>
+										<small>Candidate CV to apply job and promote you need.</small>
+									</li>
+									<li>
+										<a href="create-page-step-1.html"><i class="fa fa-briefcase"></i>&nbsp;&nbsp;Business Page
+										</a>
+										<small>Find employee and post a job to all.</small>
+									</li>
+								</ul>
+							</li>
+
+							<li><a href="my-profile.html">Message</a></li>
+							
+							<li class="nav-li">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<sub class="fa fa-bell"></sub><sup>7</sup>
+								</a>
+
+								<!-- Notification Section Start! -->
+								<ul class="dropdown-menu">
+
+									<center>
+										<span class="caret noti-caret"></span>
+									</center>
+
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Share your post.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>2 Mins Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Commented on post you shared.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>1 Hour Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Followed your page.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>4 Hours Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Invited his friends to follow your page.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>12 Hour Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Reviewd on Golden Restaurant.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>1 Day Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Uploded photos at Chaungtha Beach.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>2 Days Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+								</ul>
+								<!-- Notification Section Start! -->
+							</li>
+							
+							<li class="nav-li">
+								<a href="my-profile.html">
+									<img src="images/client.jpg" class="img-responsive">&nbsp;Me
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<div id="header">
+				<div class="container">
+					<div id="header_wrap">
+
+						<!-- Form! -->
+						<div id="header_form_wrap">
+			
+							<!-- Form! -->
+						<div id="header_form_wrap">	
+							<!-- Form Jobs Inputs! -->
+							<div id="form_one">
+								<form>	
+									<div class="row" style="width: 100%;">
+										<input type="text" name="text" placeholder="Keywords" class="form-control">
+
+
+										<input type="text" name="text" placeholder="Place" class="form-control">
+
+										<button type="submit" value="Search Jobs" class="btn">Search Jobs</button>
+									</div>
+
+									<div class="row" style="width: 100%;" id="form-sub-catgories">
+										<ul id="main-ul">
+
+											<li class="dropdown-toggle" data-toggle="dropdown" style="color: #fff!important;cursor: pointer;"><i class="fa fa-home"></i>&nbsp;Home Services</li>
+											<ul class="dropdown-menu">
+												<li><a href="#">Movie</a></li>
+												<li><a href="#">Painters</a></li>
+												<li><a href="#">Electronic</a></li>
+												<li><a href="#">Home Cleaner</a></li>
+											</ul>
+
+											<li><a href="#"><i class="fas fa-cookie"></i><i class="fa fa-beer"></i>&nbsp;Restaurants</a></li>
+											<li><a href="#"><i class="fa fa-coffee"></i>&nbsp;Coffe & Tea</a></li>
+
+											<li><a href="#"><i class="fa fa-car"></i>&nbsp;Car Services</a></li>
+											<li><a href="#"><i class="fa fa-building"></i>&nbsp;Super Markets</a></li>
+											<li><a href="#"><i class="fa fa-home"></i>&nbsp;Houses</a></li>
+											<li><a href="#"><i class="fa fa-users"></i>&nbsp;Flatmates</a></li>
+											<li><a href="#"><i class="fa fa-briefcase"></i>&nbsp;Jobs</a></li>
+											<li><a href="#browse">More:</a></li>
+										</ul>
+									</div>
+								</form>
+							</div>
+						</div>
+							
+						</div>	
+					</div>
+				</div>
+			</div>
+		<!-- Header Section End! -->
+
+
+		<!-- Show Map Section Start! -->
+			<div id="show_map">
+				<div class="container">
+					<div class="row">
+						
+						<div class="col-md-2 col-sm-12 col-xs-12">
+							<small>Sort By:&nbsp;</small>
+							<select class="form-control input-sm">
+								<option>Date</option>
+								<option>Price</option>
+							</select>
+						</div>
+
+						<div class="col-md-8">
+							<div id="bg_group">
+								<a href="#" class="btn btn-sm active">Date</a>
+								<a href="#" class="btn btn-sm">Message</a>
+								<a href="#" class="btn btn-sm">Call</a>
+								<a href="#" class="btn btn-sm">Price</a>
+								<a href="#" class="btn btn-sm">Place</a>
+								<a href="#" class="btn btn-sm">Shop</a>
+								<a href="#" class="btn btn-sm">Building</a>
+								<a href="#" class="btn btn-sm">Share Room</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		<!-- Show Map Section Start! -->
+
+
+		<!-- Properties with Map! -->
+			<div id="property-map" class="map_show">
+				<div class="container">	
+
+					<div class="page_with_map" id="page_with_map1">
+
+						<h5 style="padding: 0px!important;font-size: 14px!important;font-weight: bold;">Sponsored Results:</h5>
+								<div class="container">
+								  <div class="row">
+								    <div class="col-md-8 col-sm-8 col-xs-8" style="background: #fff;">
+								   
+								    	<div class="house_with_map" id="house_id_1">
+
+								    		    <div id="job_wrap" class="computer_wrap">
+													<div class="row">
+														<div class="col-md-3 col-sm-3 col-xs-3">
+															<img src="images/house-5.jpg" width="150px">
+														</div>
+														<div class="col-md-9 col-sm-9 col-xs-9">
+
+															<ul>
+																<li>
+																	<strong>Shwe Kaung Restaurant</strong>
+																</li>
+																<li class="three-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+																	<i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																	<small>200 Reviews</small>
+																</li>
+																<li>
+																	<span class="verify" data-toggle="modal" data-target="#verifyBox">Verified License</span> | <small>Home Internet, Banking, Cafe, Hotpot</small>
+																</li>
+																<div class="modal fade" id="verifyBox" role="dialog">
+																	<div class="modal-dialog">
+																		<div class="modal-content">
+																			<div class="modal-header">
+																				<button type="button" class="close" data-dismiss="modal">&times;</button>
+         	 																	<h4 class="modal-title">Verify License</h4>
+																			</div>
+																			<div class="modal-body">
+																				<div style="width: 100%;">
+																					<img src="images/client.jpg">
+																				</div>
+																				<table class="table">
+																					<tr>
+																						<td>License</td>
+																						<td>003344</td>
+																					</tr>
+																					<tr>
+																						<td>Issue</td>
+																						<td>PTD</td>
+																					</tr>
+																					<tr>
+																						<td>Issue By Dowun On</td>
+																						<td>Nov 28 2019</td>
+																					</tr>
+																					<tr>
+																						<td>Expire</td>
+																						<td>Nov 28 2020</td>
+																					</tr>
+																				</table>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</ul>
+
+															<ul id="contact-ul">
+																<li>
+																	<a href="tel:0978506932">0978506932</a>
+																</li>
+																<li><small>4, Kyee Bwar Yay Housing, Thingankyun, Yangon</small></li>
+															</ul>
+
+
+															<p>
+																<strong>Min Min : </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+																<a href="#">Read More</a>
+															</p>
+
+															<a href="#" class="btn btn-sm btn-info pull-right">Message</a>
+
+														</div>
+													</div>
+												</div>
+								    	</div>
+
+
+								    	<div class="house_with_map" id="house_id_2">
+
+								    		    <div id="job_wrap" class="computer_wrap">
+													<div class="row">
+														<div class="col-md-3 col-sm-3 col-xs-3">
+															<img src="images/house-5.jpg" width="150px">
+														</div>
+														<div class="col-md-9 col-sm-9 col-xs-9">
+
+															<ul>
+																<li>
+																	<strong>Shwe Kaung Restaurant</strong>
+																</li>
+																<li class="three-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+																	<i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																	<small>200 Reviews</small>
+																</li>
+																<li>
+																	<span>Verified License</span> | <small>Home Internet, Banking, Cafe, Hotpot</small>
+																</li>
+															</ul>
+
+															<ul id="contact-ul">
+																<li>
+																	<a href="tel:0978506932">0978506932</a>
+																</li>
+																<li><small>4, Kyee Bwar Yay Housing, Thingankyun, Yangon</small></li>
+															</ul>
+
+
+															<p>
+																<strong>Min Min : </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+																<a href="#">Read More</a>
+															</p>
+
+															<a href="#" class="btn btn-sm btn-info pull-right">Message</a>
+
+														</div>
+													</div>
+												</div>
+								    	</div>
+
+
+								    	<div class="house_with_map" id="house_id_3">
+
+								    		    <div id="job_wrap" class="computer_wrap">
+													<div class="row">
+														<div class="col-md-3 col-sm-3 col-xs-3">
+															<img src="images/house-5.jpg" width="150px">
+														</div>
+														<div class="col-md-9 col-sm-9 col-xs-9">
+
+															<ul>
+																<li>
+																	<strong>Shwe Kaung Restaurant</strong>
+																</li>
+																<li class="three-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+																	<i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																	<small>200 Reviews</small>
+																</li>
+																<li>
+																	<span>Verified License</span> | <small>Home Internet, Banking, Cafe, Hotpot</small>
+																</li>
+															</ul>
+
+															<ul id="contact-ul">
+																<li>
+																	<a href="tel:0978506932">0978506932</a>
+																</li>
+																<li><small>4, Kyee Bwar Yay Housing, Thingankyun, Yangon</small></li>
+															</ul>
+
+
+															<p>
+																<strong>Min Min : </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+																<a href="#">Read More</a>
+															</p>
+
+															<a href="#" class="btn btn-sm btn-info pull-right">Message</a>
+
+														</div>
+													</div>
+												</div>
+								    	</div>
+
+								    	<div class="house_with_map" id="house_id_4">
+
+								    		    <div id="job_wrap" class="computer_wrap">
+													<div class="row">
+														<div class="col-md-3 col-sm-3 col-xs-3">
+															<img src="images/house-5.jpg" width="150px">
+														</div>
+														<div class="col-md-9 col-sm-9 col-xs-9">
+
+															<ul>
+																<li>
+																	<strong>Shwe Kaung Restaurant</strong>
+																</li>
+																<li class="three-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+																	<i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																	<small>200 Reviews</small>
+																</li>
+																<li>
+																	<span>Verified License</span> | <small>Home Internet, Banking, Cafe, Hotpot</small>
+																</li>
+															</ul>
+
+															<ul id="contact-ul">
+																<li>
+																	<a href="tel:0978506932">0978506932</a>
+																</li>
+																<li><small>4, Kyee Bwar Yay Housing, Thingankyun, Yangon</small></li>
+															</ul>
+
+
+															<p>
+																<strong>Min Min : </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+																<a href="#">Read More</a>
+															</p>
+
+															<a href="#" class="btn btn-sm btn-info pull-right">Message</a>
+
+														</div>
+													</div>
+												</div>
+								    	</div>
+
+								    </div>
+
+								    <div class="col-md-4 col-sm-4 col-xs-4" style="background: #fff;">
+								      <div id="googleMap_show" style="width:100%;height:400px;"></div>
+								     
+								    </div>
+
+								    <!-- Sponsered! -->
+								    <div class="col-md-4" id="sponsered">
+								    	<ul class="pull-left">
+								    		<li>
+								    			<img src="images/kbz.png">
+								    			<small>&nbsp;KBZ</small>
+								    		</li>
+								    	</ul>
+
+								    	<ul class="pull-right">
+								    		<li>
+								    			<small><strong>Sponsered</strong></small>
+								    		</li>
+								    	</ul>
+
+
+								    	<div class="sponser-text">
+								    		<strong>Bank</strong>
+								    		<p>
+									    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									    		tempor incididunt.
+									    	</p>
+								    	</div>
+
+								    	<a href="#" class="btn btn-sm btn-info pull-right">Message</a>
+								    </div>
+
+								    <div class="col-md-4" id="sponsered">
+								    	<ul class="pull-left">
+								    		<li>
+								    			<img src="images/kbz.png">
+								    			<small>&nbsp;KBZ</small>
+								    		</li>
+								    	</ul>
+
+								    	<ul class="pull-right">
+								    		<li>
+								    			<small><strong>Sponsered</strong></small>
+								    		</li>
+								    	</ul>
+
+
+								    	<div class="sponser-text">
+								    		<strong>Bank</strong>
+								    		<p>
+									    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									    		tempor incididunt.
+									    	</p>
+								    	</div>
+
+								    	<a href="#" class="btn btn-sm btn-info pull-right">Message</a>
+								    </div>
+
+								  </div>
+								</div>
+
+
+						<h5 style="padding: 0px!important;font-size: 14px!important;font-weight: bold;">All Results:</h5>
+								<div class="container">
+									<div class="row">
+								    	<div class="col-md-8 col-sm-8 col-xs-8" style="background: #fff;">
+								    		<div class="house_with_map" id="house_id_5">
+
+								    		    <div id="job_wrap" class="computer_wrap">
+													<div class="row">
+														<div class="col-md-3 col-sm-3 col-xs-3">
+															<img src="images/house-5.jpg" width="150px">
+														</div>
+														<div class="col-md-9 col-sm-9 col-xs-9">
+
+															<ul>
+																<li>
+																	<strong>Shwe Kaung Restaurant</strong>
+																</li>
+																<li class="three-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+																	<i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																	<i class="fa fa-star"></i>
+																	<small>200 Reviews</small>
+																</li>
+																<li>
+																	<span>Verified License</span> | <small>Home Internet, Banking, Cafe, Hotpot</small>
+																</li>
+															</ul>
+
+															<ul id="contact-ul">
+																<li>
+																	<a href="tel:0978506932">0978506932</a>
+																</li>
+																<li><small>4, Kyee Bwar Yay Housing, Thingankyun, Yangon</small></li>
+															</ul>
+
+
+															<p>
+																<strong>Min Min : </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+																<a href="#">Read More</a>
+															</p>
+
+															<a href="#" class="btn btn-sm btn-info pull-right">Message</a>
+
+														</div>
+													</div>
+												</div>
+								    		</div>
+								    	</div>
+								    </div>
+
+								</div>
+
+					</div>
+
+					<!-- Page2 -->
+					<div class="page_with_map" id="page_with_map2">
+						<h1>Page Two</h1>
+					</div>
+					<!-- Page2 End -->
+
+					<!-- Page3 -->
+					<div class="page_with_map" id="page_with_map3">
+						<h1>Page Three</h1>
+					</div>
+					<!-- Page3 End -->
+
+					<!-- Page4 -->
+					<div class="page_with_map" id="page_with_map4">
+						<h1>Page Four</h1>
+					</div>
+					<!-- Page4 End -->
+
+					 <ul id="pagination-demo-two" class="pagination-md pull-right"></ul>
+				</div>
+			</div>
+
+
+		<!-- Download App Section Start! -->
+			<div id="app">
+				<div class="container">
+					<a href="#">
+						<img src="images/available_applestore.png">
+					</a>
+					<a href="#">
+						<img src="images/available_playstore.png">
+					</a>
+				</div>
+			</div>
+		<!-- Download App Section End! -->
+
+
+		<!-- Footer Section Start! -->
+		<!-- Footer Section End! -->
+
+		<!-- Copy Right -->
+		<div id="copyright">
+			Copyright &copy; 2019 Dowun. All Rights Reserved.
+		</div>
+		
+		<script type="text/javascript">
+			
+
+		
+			function initMap() {
+
+
+            function active_highlight(flat_id){
+            	$(".house_with_map .row").css({"background-color":"#fff","padding":"10px"});
+				$(document).ready(function(){
+			 	$("#house_id_"+flat_id+" .row").css({"background-color":"#3998f5","padding":"10px"});
+			 	$(".page-show").hide();
+				});
+			}
+
+				var location3='<a class="content-on-map" href="house-detail.html"><div style="text-align:center;width:150px;"><img src="images/house-5.jpg" width="150px"/> <br/> ၂၀၀၀၀၀ က်ပ္ / တစ္လ</div></a>';
+
+				var map_location=[
+				      [location3, 16.78158, 96.1348339, 1],
+				      [location3, 16.658158, 96.1548339, 4], 
+				      [location3, 16.858158, 96.1548339, 4],
+				      [location3, 16.55158, 96.1648339, 5],
+				      [location3, 16.633669, 96.145180, ]		      
+				     
+				    ];
+
+				var map_zoom=10;
+
+				map = new google.maps.Map(document.getElementById('googleMap_show'), {
+			          center: new google.maps.LatLng(16.78158,96.13483),
+			          zoom: map_zoom
+			        });
+
+
+
+				var infowindow = new google.maps.InfoWindow();
+			
+				var marker, i;
+
+				    for (i = 0; i < map_location.length; i++) {  
+				      	marker = new google.maps.Marker({
+					        position: new google.maps.LatLng(map_location[i][1], map_location[i][2]),
+					        map: map,
+				         	url: 'mapcontent1'
+				      	});
+
+				      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+				        return function() {
+				          infowindow.setContent(map_location[i][0]);
+				          infowindow.open(map, marker);
+				          active_highlight(i+1);
+				        }
+				      })(marker, i));
+				    }
+					
+				
+
+			}
+				
+
+    
+
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz0UKm8v5cyci608yD-ChLDriBQIZeUPw&&callback=initMap"></script>
+		<script type="text/javascript">
+
+
+			/*$(document).ready(function(){
+			 	$(".map_show").hide();
+			 	$(".page-show").show();
+			});
+	
+
+			$(document).ready(function(){
+				$("#showmap_toggle_select #on").click(function(){
+					$(".page-show").hide();
+					$(".map_show").show();
+				}); 
+
+			});*/
+
+			$(document).ready(function(){
+				$("#showmap_toggle_select #off").click(function(){
+					$(".page-show").show();
+					$(".map_show").hide();
+				}); 
+			});
+
+			$(document).ready(function(){
+				$("#show_map #bg_group a").click(function(){
+					$("#bg_group a").removeClass("active");
+					$(this).addClass("active");
+				});
+
+				$("#detail_search").click(function(){
+					$("#row_one").css("display", "none");
+					$("#detail").css("display", "block");
+				});	
+
+				$("#less_search").click(function(){
+					$("#row_one").css("display", "block");
+					$("#detail").css("display", "none");
+				});	
+
+				/*Slide Toggle Start!!!*/
+				$("#property .row .col-md-3 #myModal .modal-body .schedule-tab").click(function(){
+					$("#property .row .col-md-3 #myModal .modal-body .schedule").slideToggle();
+				});
+			});
+
+			/*For Without Map Page Paginations*/
+			$('#pagination-demo').twbsPagination({
+				totalPages: 3,
+				// the current page that show on start
+				startPage: 1,
+
+				// maximum visible pages
+				visiblePages: 3,
+
+				initiateStartPageClick: true,
+
+				// template for pagination links
+				href: false,
+
+				// variable name in href template for page number
+				hrefVariable: '{{number}}',
+
+				// Text labels
+				first: false,
+				prev: '<<',
+				next: '>>',
+				last: false,
+
+				// carousel-style pagination
+				loop: false,
+
+				// callback function
+				onPageClick: function (event, page) {
+					$('.page-active').removeClass('page-active');
+				  $('#page'+page).addClass('page-active');
+				},
+
+				// pagination Classes
+				paginationClass: 'pagination',
+				nextClass: 'next',
+				prevClass: 'prev',
+				lastClass: 'last',
+				firstClass: 'first',
+				pageClass: 'page',
+				activeClass: 'active',
+				disabledClass: 'disabled'
+
+			});
+
+			/*For With Map Page Paginations*/
+			$('#pagination-demo-two').twbsPagination({
+				totalPages: 3,
+				// the current page that show on start
+				startPage: 1,
+
+				// maximum visible pages
+				visiblePages: 3,
+
+				initiateStartPageClick: true,
+
+				// template for pagination links
+				href: false,
+
+				// variable name in href template for page number
+				hrefVariable: '{{number}}',
+
+				// Text labels
+				first: false,
+				prev: '<<',
+				next: '>>',
+				last: false,
+
+				// carousel-style pagination
+				loop: false,
+
+				// callback function
+				onPageClick: function (event, page) {
+					$('.page-with-map-active').removeClass('page-with-map-active');
+				  $('#page_with_map'+page).addClass('page-with-map-active');
+				},
+
+				// pagination Classes
+				paginationClass: 'pagination',
+				nextClass: 'next',
+				prevClass: 'prev',
+				lastClass: 'last',
+				firstClass: 'first',
+				pageClass: 'page_with_map',
+				activeClass: 'active',
+				disabledClass: 'disabled'
+
+			});
+
+		</script>
+
+</body>
+</html>
