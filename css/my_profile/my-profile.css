@@ -667,15 +667,27 @@ nav li:last-child a img{
 #body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title{
 	width: 80%;
 	margin: 0 auto!important;
-	border: 1px solid rgba(0,0,0,0.1);
 	margin-bottom: 15px!important;
 	text-align: center;
 }
 #body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title .col-md-4{
-	border-right: 1px solid rgba(0,0,0,0.1);
-	padding-top: 10px;
-	padding-bottom: 10px;
+	border: 1px solid rgba(0,0,0,0.1);
+	padding: 10px;
 	cursor: pointer;
+	text-align: center;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title .col-md-4 .fa-check-circle{
+	visibility: hidden!important;
+	display: inline-block;
+	margin-left: 5px;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title .col-md-4 input[type="radio"]{
+	position: absolute;
+	visibility: hidden;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title .col-md-4 input:checked + .fa-check-circle{
+	color: #00ff80!important;
+	visibility: visible!important;
 }
 #body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title .col-md-4 .fa-user, #body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title .col-md-4 .fa-user-friends, #body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title .col-md-4 .fa-users{
 	color: #3a9bfa;
@@ -689,9 +701,6 @@ nav li:last-child a img{
 }
 #body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title .col-md-4 #couple-check,#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title .col-md-4 #group-check{
 	display: none;
-}
-#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title .col-md-4:last-child{
-	border-right: 0px!important;
 }
 #body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section, #body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section{
 	display: none;
@@ -764,31 +773,14 @@ nav li:last-child a img{
  	margin-bottom: 15px!important;
 }
 #body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section form .col-md-12 .gender{
-	border: 1px solid rgba(0,0,0,0.1);
-	padding: 10px;
-	cursor: pointer;
-	width: 25%;
+	width: 100%;
 	text-align: center;
-	margin-bottom: 80px;
 }
-#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section form .col-md-12 .gender .fa-male,#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section form .col-md-12 .gender .fa-female{
-	color: #3a9bfa;
-	display: inline-block;
-	margin-right: 5px;
-	font-size: 18px;
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section form:last-child .col-md-12 .gender{
+	margin-bottom: 80px!important;
 }
-#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section form .col-md-12 .gender .fa-check-circle{
-	color: #fff;
-	display: inline-block;
-	margin-left: 5px;
-}
-#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section form .col-md-12 .gender input[type="radio"]{
-	position: absolute;
-	visibility: hidden;
-}
-#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section form .col-md-12 .gender input:checked + .fa-check-circle{
-	color: #00ff80!important;
-}
+
+
 
 /*Group Section*/
 #body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section{
@@ -810,29 +802,8 @@ nav li:last-child a img{
 	padding-bottom: 20px!important;
 }
 #body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section form .col-md-12 .gender{
-	border: 1px solid rgba(0,0,0,0.1);
-	padding: 10px;
-	cursor: pointer;
-	width: 25%;
+	width: 100%;
 	text-align: center;
-}
-#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section form .col-md-12 .gender .fa-male,#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section form .col-md-12 .gender .fa-female{
-	color: #3a9bfa;
-	display: inline-block;
-	margin-right: 5px;
-	font-size: 18px;
-}
-#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section form .col-md-12 .gender .fa-check-circle{
-	color: #fff;
-	display: inline-block;
-	margin-left: 5px;
-}
-#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section form .col-md-12 .gender input[type="radio"]{
-	position: absolute;
-	visibility: hidden;
-}
-#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section form .col-md-12 .gender input:checked + .fa-check-circle{
-	color: #00ff80!important;
 }
 
 /*Flatmate Tab 2!*/

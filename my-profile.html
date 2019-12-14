@@ -1573,17 +1573,29 @@ Project Designed By Tracer Land
 									</center>
 
 									<!-- Number of People Title -->
+									<!-- New Change Me,Couple and Group Selection To Input Radio! -->
 									<div class="row" id="flatmate-section-title">
-										<div class="col-md-4" onClick="flatmate_switchMe()">
-											<i class="fa fa-user"></i><span>Me</span><em class="fa fa-check-circle" id="me-check"></em>
-										</div>
-										<div class="col-md-4" onClick="flatmate_switchCouple()">
-											<i class="fa fa-user-friends"></i><span>Couple</span><em class="fa fa-check-circle" id="couple-check"></em>
-										</div>
-										<div class="col-md-4" onClick="flatmate_switchGroup()">
-											<i class="fa fa-users"></i><span>Group</span><em class="fa fa-check-circle" id="group-check"></em>
-										</div>
+										<label class="col-md-4 people-selection" onClick="flatmate_switchMe()">
+											<i class="fa fa-user"></i>
+											<span>Me</span>
+											<input type="radio" name="people-selection" value="me" required checked>
+											<em class="fa fa-check-circle" id="people-selection-check"></em>
+										</label>
+										<label class="col-md-4 people-selection" onClick="flatmate_switchCouple()">
+											<i class="fa fa-user-friends"></i>
+											<span>Couple</span>
+											<input type="radio" name="people-selection" value="couple" required>
+											<em class="fa fa-check-circle" id="people-selection-check"></em>
+										</label>
+										<label class="col-md-4 people-selection" onClick="flatmate_switchGroup()">
+											<i class="fa fa-users"></i>
+											<span>Group</span>
+											<input type="radio" name="people-selection" value="group" required>
+											<em class="fa fa-check-circle" id="people-selection-check"></em>
+										</label>
 									</div>
+									<!-- New Change Me,Couple and Group Selection To Input Radio! -->
+									<!-- New Change Me,Couple and Group Selection To Input Radio! -->
 
 									<!-- Me Section -->
 									<div class="row" id="me-section">
@@ -1600,19 +1612,10 @@ Project Designed By Tracer Land
 											<div class="col-md-12" style="padding: 0px;margin-bottom: 80px;">
 												<label style="display: block;">Gender</label>
 
-												<label class="gender">
-													<i class="fa fa-male"></i>
-													<span>Male</span>
-													<input type="radio" name="gender" value="male" required checked>
-													<em class="fa fa-check-circle" id="male-check"></em>
-												</label>
-
-												<label class="gender">
-													<i class="fa fa-female"></i>
-													<span>Female</span>
-													<input type="radio" name="gender" value="female" required>
-													<em class="fa fa-check-circle" id="female-check"></em>
-												</label>
+												<select class="form-control" required>
+													<option>Male</option>
+													<option>Female</option>
+												</select>
 											</div>
 
 											<div class="col-md-12" id="section-footer-wrap">
@@ -1642,19 +1645,10 @@ Project Designed By Tracer Land
 											<div class="col-md-12" style="padding: 0px;">
 												<label style="display: block;">Gender</label>
 
-												<label class="gender">
-													<i class="fa fa-male"></i>
-													<span>Male</span>
-													<input type="radio" name="gender" value="male" required checked>
-													<em class="fa fa-check-circle" id="male-check"></em>
-												</label>
-
-												<label class="gender">
-													<i class="fa fa-female"></i>
-													<span>Female</span>
-													<input type="radio" name="gender" value="female" required>
-													<em class="fa fa-check-circle" id="female-check"></em>
-												</label>
+												<select class="form-control gender" required>
+													<option>Male</option>
+													<option>Female</option>
+												</select>
 											</div>
 										</form>
 
@@ -1672,19 +1666,10 @@ Project Designed By Tracer Land
 											<div class="col-md-12" style="padding: 0px;">
 												<label style="display: block;">Gender</label>
 
-												<label class="gender">
-													<i class="fa fa-male"></i>
-													<span>Male</span>
-													<input type="radio" name="gender" value="male" required checked>
-													<em class="fa fa-check-circle" id="male-check"></em>
-												</label>
-
-												<label class="gender">
-													<i class="fa fa-female"></i>
-													<span>Female</span>
-													<input type="radio" name="gender" value="female" required>
-													<em class="fa fa-check-circle" id="female-check"></em>
-												</label>
+												<select class="form-control gender" required>
+													<option>Male</option>
+													<option>Female</option>
+												</select>
 											</div>
 
 											<div class="col-md-12" id="section-footer-wrap">
@@ -1714,19 +1699,10 @@ Project Designed By Tracer Land
 											<div class="col-md-12" style="padding: 0px;">
 												<label style="display: block;">Gender</label>
 
-												<label class="gender">
-													<i class="fa fa-male"></i>
-													<span>Male</span>
-													<input type="radio" name="gender" value="male" required checked>
-													<em class="fa fa-check-circle" id="male-check"></em>
-												</label>
-
-												<label class="gender">
-													<i class="fa fa-female"></i>
-													<span>Female</span>
-													<input type="radio" name="gender" value="female" required>
-													<em class="fa fa-check-circle" id="female-check"></em>
-												</label>
+												<select class="form-control gender" required>
+													<option>Male</option>
+													<option>Female</option>
+												</select>
 											</div>
 										</form>
 
@@ -1744,19 +1720,10 @@ Project Designed By Tracer Land
 											<div class="col-md-12" style="padding: 0px;">
 												<label style="display: block;">Gender</label>
 
-												<label class="gender">
-													<i class="fa fa-male"></i>
-													<span>Male</span>
-													<input type="radio" name="gender" value="male" required checked>
-													<em class="fa fa-check-circle" id="male-check"></em>
-												</label>
-
-												<label class="gender">
-													<i class="fa fa-female"></i>
-													<span>Female</span>
-													<input type="radio" name="gender" value="female" required>
-													<em class="fa fa-check-circle" id="female-check"></em>
-												</label>
+												<select class="form-control gender" required>
+													<option>Male</option>
+													<option>Female</option>
+												</select>
 											</div>
 										</form>
 
@@ -1774,19 +1741,10 @@ Project Designed By Tracer Land
 											<div class="col-md-12" style="padding: 0px;">
 												<label style="display: block;">Gender</label>
 
-												<label class="gender">
-													<i class="fa fa-male"></i>
-													<span>Male</span>
-													<input type="radio" name="gender" value="male" required checked>
-													<em class="fa fa-check-circle" id="male-check"></em>
-												</label>
-
-												<label class="gender">
-													<i class="fa fa-female"></i>
-													<span>Female</span>
-													<input type="radio" name="gender" value="female" required>
-													<em class="fa fa-check-circle" id="female-check"></em>
-												</label>
+												<select class="form-control gender" required>
+													<option>Male</option>
+													<option>Female</option>
+												</select>
 											</div>
 										</form>
 

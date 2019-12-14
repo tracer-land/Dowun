@@ -98,7 +98,7 @@ $(document).ready(function(){
 					e.preventDefault();
 					if(x<max_form){
 						x++;
-						$(wrapper).append('<div style="clear:both;"><form action="#"><div class="col-md-8"><label for="name">Your Friend Name</label><input type="text" name="name" placeholder="Enter Your Friend Name" class="form-control" required></div><div class="col-md-4"><label for="age">Your Friend Age</label><input type="text" name="age" placeholder="Enter Your Friend Age" class="form-control" required></div><div class="col-md-12" style="padding: 0px;"><label style="display: block;">Gender</label><label class="gender"><i class="fa fa-male"></i><span>Male</span><input type="radio" name="gender" value="male" required checked><em class="fa fa-check-circle" id="male-check"></em></label><label class="gender"><i class="fa fa-female"></i><span>Female</span><input type="radio" name="gender" value="female" required><em class="fa fa-check-circle" id="female-check"></em></label></div></form><a href="#" class="btn btn-sm btn-danger pull-right remove_form" style="display:block;">Remove</a></div>');
+						$(wrapper).append('<div style="clear:both;"><form action="#"><div class="col-md-8"><label for="name">Your Friend Name</label><input type="text" name="name" placeholder="Enter Your Friend Name" class="form-control" required></div><div class="col-md-4"><label for="age">Your Friend Age</label><input type="text" name="age" placeholder="Enter Your Friend Age" class="form-control" required></div><div class="col-md-12" style="padding: 0px;"><label style="display: block;">Gender</label><select class="form-control gender" required><option>Male</option><option>Female</option></select></div></form><a href="#" class="btn btn-sm btn-danger pull-right remove_form" style="display:block;">Remove</a></div>');
 					}
 				});
 				//Remove Form
@@ -427,3 +427,9 @@ $(document).ready(function(){
 				$("#myemoji").emojioneArea({
 				    pickerPosition: "top"
 				});
+
+
+
+
+
+				/*<div class="col-md-12" style="padding: 0px;"><label style="display: block;">Gender</label><label class="gender"><i class="fa fa-male"></i><span>Male</span><input type="radio" name="gender" value="male" required checked><em class="fa fa-check-circle" id="male-check"></em></label><label class="gender"><i class="fa fa-female"></i><span>Female</span><input type="radio" name="gender" value="female" required><em class="fa fa-check-circle" id="female-check"></em></label></div>*/
