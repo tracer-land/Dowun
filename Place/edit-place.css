@@ -1,0 +1,495 @@
+/* Header Form Style */
+#header{
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 50px;
+	background-color: #ccc;
+}
+
+/* Navigation CSS! */
+nav li sub{
+	font-size: 16px!important;
+	display: inline-block!important;
+	margin-right: -5px!important;
+}
+nav li sup{
+	width: 14px;
+	height: 14px;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 14px;
+	border-radius: 25px;
+	background: red;
+	display: inline-block!important;
+}
+nav li:last-child a img{
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+	display: inline-block;
+}
+
+/*Body Right Flatmate Section! */
+#body_right_flatmate_section{
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%,0%);
+	margin-top: 25px!important;
+}
+#body_right_flatmate_section .table_section{
+	padding: 20px;
+	background: #fff;
+	margin-top: 45px;
+}
+#body_right_flatmate_section .table_section ul{
+	list-style: none;
+	padding: 0px!important;
+}
+#body_right_flatmate_section .table_section ul:first-child{
+	margin-bottom: 15px;
+}
+#body_right_flatmate_section .table_section ul:nth-child(2){
+	margin-top: 20px!important;
+}
+#body_right_flatmate_section .table_section ul li .caret{
+	color: #3a9bfa!important;
+	width: 4px!important;
+	margin: 0 auto!important;
+	margin-top: 3px!important;
+	display: block!important;
+}
+#body_right_flatmate_section .table_section ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+#body_right_flatmate_section .table_section ul li a{
+	color: #000!important;
+	text-decoration: none;
+	outline: none;
+	font-weight: bold;
+}
+#body_right_flatmate_section .table_section .table tr img{
+	width: 50px!important;
+	height: 50px!important;
+}
+#body_right_flatmate_section .table_section #my-favourite-place{
+	display: none;
+}
+#body_right_flatmate_section .flatmate_section ul{
+	list-style: none;
+	padding: 0px!important;
+}
+#body_right_flatmate_section .flatmate_section ul:first-child{
+	margin-bottom: 15px;
+}
+#body_right_flatmate_section .flatmate_section ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+#body_right_flatmate_section .flatmate_section ul li a{
+	color: #000!important;
+	text-decoration: none;
+	outline: none;
+	font-weight: bold;
+}
+#body_right_flatmate_section .flatmate_section{
+	padding-top: 20px;
+	background: #fff;
+	margin: 0 auto;
+	margin-bottom: 40px!important;
+	margin-top: 60px!important;
+	/*display: none;*/
+}
+#body_right_flatmate_section .flatmate_section #tab-title{
+	list-style: none;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#body_right_flatmate_section .flatmate_section #tab-title li{
+	display: inline-block;
+	cursor: pointer;
+	margin-right: 60px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+#body_right_flatmate_section .flatmate_section #tab-title .active-tab-title{
+	border-bottom: 2px solid #3a9bfa;
+}
+#body_right_flatmate_section .flatmate_section #tab-title li:last-child{
+	margin-right: 0px!important;
+}
+/*Flatmate Tabs!!!*/
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2,#body_right_flatmate_section .flatmate_section #flatmate-tab-3,#body_right_flatmate_section .flatmate_section #flatmate-tab-4{
+	display: none;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1,#body_right_flatmate_section .flatmate_section #flatmate-tab-2,#body_right_flatmate_section .flatmate_section #flatmate-tab-3,#body_right_flatmate_section .flatmate_section #flatmate-tab-4{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 h5,#body_right_flatmate_section .flatmate_section #flatmate-tab-2 h5{
+	padding: 0px;
+	display: inline-block;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title{
+	width: 80%;
+	margin: 0 auto!important;
+	margin-bottom: 15px!important;
+	text-align: center;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title .col-md-4{
+	border: 1px solid rgba(0,0,0,0.1);
+	padding: 10px;
+	cursor: pointer;
+	text-align: center;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title .col-md-4 .fa-user, #body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title .col-md-4 .fa-user-friends, #body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title .col-md-4 .fa-users{
+	color: #3a9bfa;
+	display: inline-block;
+	margin-right: 5px;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title .col-md-4 .fa-check-circle{
+	visibility: hidden!important;
+	display: inline-block;
+	margin-left: 5px;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title .col-md-4 #couple-check,#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title .col-md-4 #group-check{
+	display: none;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section, #body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section{
+	display: none;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #me-section,#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section, #body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section{
+	width: 80%;
+	margin: 0 auto!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title .col-md-4 input[type="radio"]{
+	position: absolute;
+	visibility: hidden;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #flatmate-section-title .col-md-4 input:checked + .fa-check-circle{
+	color: #00ff80!important;
+	visibility: visible!important;
+}
+
+/*Me Section*/
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #me-section{
+	margin-top: 25px!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #me-section form .col-md-8{
+	padding-left: 0px!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #me-section form .col-md-8 input,#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #me-section form .col-md-4 input{
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #me-section form .col-md-4{
+ 	padding-right: 0px!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #me-section form .col-md-12{
+ 	margin-top: 30px;
+	padding-bottom: 20px!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #me-section form .col-md-12 .gender{
+	border: 1px solid rgba(0,0,0,0.1);
+	padding: 10px;
+	cursor: pointer;
+	width: 25%;
+	text-align: center;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #me-section form .col-md-12 .gender .fa-male,#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #me-section form .col-md-12 .gender .fa-female{
+	color: #3a9bfa;
+	display: inline-block;
+	margin-right: 5px;
+	font-size: 18px;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #me-section form .col-md-12 .gender .fa-check-circle{
+	visibility: hidden!important;
+	display: inline-block;
+	margin-left: 5px;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #me-section form .col-md-12 .gender input[type="radio"]{
+	position: absolute;
+	visibility: hidden;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #me-section form .col-md-12 .gender input:checked + .fa-check-circle{
+	color: #00ff80!important;
+	visibility: visible!important;
+}
+
+
+/*Couple Section*/
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section{
+	margin-top: 25px!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section form .col-md-8{
+	padding-left: 0px!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section form .col-md-8 input,#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section form .col-md-4 input{
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section form .col-md-4{
+ 	padding-right: 0px!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section form .col-md-12{
+ 	margin-top: 30px;
+ 	margin-bottom: 15px!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section form .col-md-12 .gender{
+	width: 100%;
+	text-align: center;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #couple-section form:last-child .col-md-12 .gender{
+	margin-bottom: 80px!important;
+}
+
+
+/*Group Section*/
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section{
+	margin-top: 25px!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section form .col-md-8{
+	padding-left: 0px!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section form .col-md-8 input,#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section form .col-md-4 input{
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0)!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section form .col-md-4{
+ 	padding-right: 0px!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section form .col-md-12{
+ 	margin-top: 30px;
+ 	border-bottom: 1px solid rgba(0,0,0,0.2);
+ 	margin-bottom: 15px!important;
+	padding-bottom: 20px!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-1 #group-section form .col-md-12 .gender{
+	width: 100%;
+	text-align: center;
+}
+
+
+/*Flatmate Tab 2!*/
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1{
+	width: 80%;
+	margin: 0 auto!important;
+	margin-top: 20px!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 .col-md-3{
+	height: 120px;
+	cursor: pointer!important;
+	text-align: center;
+	padding: 0px!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 .col-md-3 label{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	padding: 8px;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 .col-md-3 label span{
+	display: block;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 .col-md-3 label>.fa-home,#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 .col-md-3 label>.fa-warehouse,#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 .col-md-3 label>.fa-glasses,#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 .col-md-3 label>.fa-music,#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 .col-md-3 label>.fa-bed,#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 .col-md-3 label>.fa-building,#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 .col-md-3 label>.fa-slideshare,#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 .col-md-3 label>.fa-laptop{
+	font-size: 18px;
+	color: #3a9bfa;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 form .col-md-3 input[type="radio"]{
+	position: absolute;
+	visibility: hidden;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 form .col-md-3 input:checked + .fa-check-circle{
+	color: #00ff80!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 form .col-md-3 .fa-check-circle{
+	color: #fff;
+}
+
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 #property-preference{
+	margin-top: 20px;
+	border: 1px solid rgba(0,0,0,0.1);
+	padding: 8px;
+	padding-bottom: 15px;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 #team-up .fa-user-plus,#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 #team-up .fa-check-square{
+	cursor: pointer;
+	color: #3a9bfa;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 #team-up{
+	margin-top: 20px;
+	padding: 0px;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 #team-up label{
+	cursor: pointer;
+	border: 1px solid rgba(0,0,0,0.1);
+	padding: 8px;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 #team-up p{
+	margin-top: 10px;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 #team-up label .fa-check-square{
+	display: none;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 form #team-up input[type="checkbox"]{
+	visibility: visible;
+	position: absolute;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 #team-up label input:checked + .fa-check-square{
+	display: inline-block!important;
+	margin-right: -8px;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 #team-up label input:checked{
+	visibility: hidden!important;
+	position: absolute!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 #property-preference h5{
+	font-weight: bold;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 #property-preference .col-md-6{
+	margin-top: 10px;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 #property-preference .col-md-6 label>.fa-bed,#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 #property-preference .col-md-6 label>.fa-bath,#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 #property-preference .col-md-6 label>.fa-wifi,#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 #property-preference .col-md-6 label>.fa-car,#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 #property-preference .col-md-6 label>.fa-couch,#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 #property-preference .col-md-6 label>.fa-user-friends{
+	color: #3a9bfa;
+}
+
+/*Flatmate Tab 3!*/
+#body_right_flatmate_section .flatmate_section #flatmate-tab-3 h5{
+	font-weight: bold;
+	text-align: center;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-3 #flatmate-tab-3-row-1{
+	width: 80%;
+	margin: 0 auto!important;
+	margin-top: 20px!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-3 #flatmate-tab-3-row-1 .col-md-5{
+	padding-left: 0px;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-3 #flatmate-tab-3-row-1 .col-md-12{
+	margin-top: 20px;
+	border: 1px solid rgba(0,0,0,0.1);
+	padding: 10px;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-3 #flatmate-tab-3-row-1 #city-wrap em{
+	display: inline-block;
+	background-color: #3a9bfa;
+	color: #fff!important;
+	padding: 4px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-3 #flatmate-tab-3-row-1 #city-wrap em span{
+	font-size: 16px;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-3 #flatmate-tab-3-row-1 #budget-time strong{
+	display: block;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-3 #flatmate-tab-3-row-1 #budget-time strong .fa-money-bill-alt{
+	color: #3a9bfa;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-3 #flatmate-tab-3-row-1 #budget-time .col-md-6{
+	padding-left: 0px;
+	margin-bottom: 15px;
+}
+
+#body_right_flatmate_section .flatmate_section #flatmate-tab-3 #flatmate-tab-3-row-1 form #city-wrap input[type="checkbox"]{
+	visibility: hidden!important;
+	position: absolute;
+}
+
+#body_right_flatmate_section .flatmate_section #flatmate-tab-3 #flatmate-tab-3-row-1 form #city-wrap .col-md-2{
+	padding: 0px!important;
+	cursor: pointer!important;
+	height: 35px;
+	margin-top: 8px;
+	margin-right: 5px;
+	background: #3a9bfa;
+	border-radius: 3px;
+	text-align: center;
+	color: #fff!important;
+}
+
+#body_right_flatmate_section .flatmate_section #flatmate-tab-3 #flatmate-tab-3-row-1 form #city-wrap .col-md-2 label{
+	cursor: pointer;
+	line-height: 35px;
+	font-weight: normal!important;
+}
+
+#body_right_flatmate_section .flatmate_section #flatmate-tab-3 #flatmate-tab-3-row-1 form #city-wrap .col-md-2 .closebtn{
+	font-size: 18px;
+	display: inline-block;
+	float: right;
+	margin-right: 8px;
+}
+
+/*Flatmate Tab 4!*/
+#body_right_flatmate_section .flatmate_section #flatmate-tab-4 h5{
+	font-weight: bold;
+	text-align: center;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1{
+	width: 80%;
+	margin: 0 auto!important;
+	margin-top: 20px!important;
+	margin-bottom: 20px!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 .col-md-3{
+	height: 80px;
+	cursor: pointer!important;
+	text-align: center;
+	padding: 0px!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 .col-md-3 label{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	padding: 8px;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 .col-md-3 label span{
+	display: block;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 form .col-md-3 input[type="checkbox"]{
+	position: absolute;
+	visibility: hidden;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 form .col-md-3 input:checked + .fa-check-circle{
+	color: #00ff80!important;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 form .col-md-3 .fa-check-circle{
+	color: #fff;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 form .col-md-12 textarea{
+	max-width: 100%;
+	height: 120px;
+}
+#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 .col-md-3 label>.fa-suitcase,#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 .col-md-3 label>.fa-comment-dollar,#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 .col-md-3 label>.fa-coffee,#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 .col-md-3 label>.fa-glasses,#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 .col-md-3 label>.fa-times-circle,#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 .col-md-3 label>.fa-suitcase-rolling,#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 .col-md-3 label>.fa-laptop,#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 .col-md-3 label>.fa-smoking,#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 .col-md-3 label>.fa-paw,#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 .col-md-3 label>.fa-child,#body_right_flatmate_section .flatmate_section #flatmate-tab-4 #flatmate-tab-4-row-1 .col-md-3 label>.fa-wine-glass{
+	font-size: 18px;
+	color: #3a9bfa;
+}
+
+/*Section Footer!*/
+#body_right_flatmate_section .flatmate_section .section-footer{
+	margin-top: 15px!important;
+	padding: 8px!important;
+}
+#body_right_flatmate_section .flatmate_section .section-footer a{
+	text-decoration: none;
+	outline: none;
+	color: #000!important;
+	display: inline-block;
+	margin-left: 8px;
+}
+body #section-footer-wrap{
+	position: absolute;
+	width: 100%;
+	bottom: -1%;
+	left: 0%;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 10px;
+}
