@@ -1,0 +1,906 @@
+<!-- 
+
+Project Title = Dowun
+Project Type = Multi Platform Website
+Project Front-End Technologies = HTML, CSS, Boostrap, JQuery
+Project Designed By Tracer Land
+
+ -->
+
+<!-- Place Edit Page!!! -->
+<!DOCTYPE html>
+<html>
+<head>
+
+		<title>Edit Place</title>
+
+		<!-- Logo Image -->
+		<link rel="icon" href="images/logo.png">
+
+		<!-- Meta Tags -->
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+		<!-- CSS Links! -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/all.css">
+		<link rel="stylesheet" type="text/css" href="css/all.min.css">
+
+		<link rel="stylesheet" type="text/css" href="css/edit-place/edit-place.css"><!-- Place Edit CSS! -->
+
+		<!-- Common CSS Styles! -->
+		<link rel="stylesheet" type="text/css" href="css/common_css_styles/mobile.css" media="screen and (max-width: 600px)">
+		<link rel="stylesheet" type="text/css" href="css/common_css_styles/tablet.css" media="screen and (max-width: 998px)">
+
+		<link rel="stylesheet" type="text/css" href="css/edit-place/mobile.css" media="screen and (max-width: 768px) and (min-width: 500px)">
+		<link rel="stylesheet" type="text/css" href="css/edit-place/tablet.css" media="screen and (max-width: 1028px)">
+
+		<!-- Boostrap CSS! -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Font Style! -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+		<!-- Font Awsome Link -->
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+		<!-- Emoji! -->
+		<link rel="stylesheet" type="text/css" href="emoji/emojionearea.min.css">
+
+		<script defer src="js/all.js"></script>
+
+</head>
+<body>
+
+		<!-- JQuery, Bootstrap JS, Script Links! -->
+		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="js/script.js"></script>
+
+		<!-- Header Section Start! -->
+			<nav class="navbar navbar-default navbar-fixed-top"><!-- Navigation Start -->
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="index.html">
+							<img src="images/logo.png">
+						</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<!-- Language Toggle Start! -->
+						<ul id="language_toggle_select" class="nav navbar-nav navbar-right">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Myanmar</a>
+							<ul class="dropdown-menu">
+								<span class="caret language-caret"></span>
+								<li><a href="#">Myanmar</a></li>
+								<li><a href="#">English</a></li>
+								<li><a href="#">Chinese</a></li>
+								<li><a href="#">Japanese</a></li>
+							</ul>
+						</ul>
+						<!-- Language Toggle End! -->
+						<ul class="nav navbar-nav navbar-right" style="margin-right: 0px!important;">
+							<li><a href="#">Discover</a></li>
+
+							<li><a href="index.html">Home</a></li>
+							<li><a href="job.html">Jobs</a></li>
+							<li><a href="house.html">House</a></li>
+							
+														<li id="drp-menu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Post</a>
+								<ul class="dropdown-menu">
+									<span class="caret first-caret"></span>
+									<li class="drp-title">
+										<a href="#">Create Post</a>
+									</li>
+									<li>
+										<a href="page-profile-view.html"><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;Place
+										</a>
+										<small>Share your need to other, if you are finding a room or place.</small>
+									</li>
+									<li>
+										<a href="page-profile-view.html"><i class="fa fa-suitcase"></i>&nbsp;&nbsp;Job
+										</a>
+										<small>Find employee and post a job to all.</small>
+									</li>
+									<li>
+										<a href="page-profile-view.html"><i class="fa fa-home"></i>&nbsp;&nbsp;House
+										</a>
+										<small>Find a house and post a house to all.</small>
+									</li>
+								</ul>
+							</li>
+
+							<li id="drp-menu-another">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Create</a>
+								<ul class="dropdown-menu">
+									<span class="caret second-caret"></span>
+									<li class="drp-title">
+										<a href="#">Create Page</a>
+									</li>
+									<li>
+										<a href="my-profile.html"><i class="fab fa-wpforms"></i>&nbsp;&nbsp;CV
+										</a>
+										<small>Candidate CV to apply job and promote you need.</small>
+									</li>
+									<li>
+										<a href="create-page-step-1.html"><i class="fa fa-briefcase"></i>&nbsp;&nbsp;Business Page
+										</a>
+										<small>Find employee and post a job to all.</small>
+									</li>
+								</ul>
+							</li>
+							
+							<li><a href="#" onClick="tab_switchInbox()">Message</a></li>
+							
+							<li class="nav-li">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<sub class="fa fa-bell"></sub><sup>7</sup>
+								</a>
+
+								<!-- Notification Section Start! -->
+								<ul class="dropdown-menu">
+									<center>
+										<span class="caret noti-caret"></span>
+									</center>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Share your post.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>2 Mins Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Commented on post you shared.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>1 Hour Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Followed your page.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>4 Hours Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Invited his friends to follow your page.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>12 Hour Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Reviewd on Golden Restaurant.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>1 Day Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#">
+										<div class="row">
+											<div class="col-md-2 col-sm-2 col-xs-2">
+												<img src="images/client.jpg" class="img-responsive">
+											</div>
+											<div class="col-md-10 col-sm-10 col-xs-10">
+												<strong>Tyler Joe</strong>
+												<small>Uploded photos at Chaungtha Beach.</small>
+												<p>
+													<i class="fa fa-history"></i>
+													&nbsp;
+													<em>2 Days Agos</em>
+												</p>
+											</div>
+										</div>
+									</a>
+								</ul>
+								<!-- Notification Section Start! -->
+							</li>
+							
+							<li>
+								<a href="my-profile.html">
+									<img src="images/client.jpg" class="img-responsive">&nbsp;Me
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		<!-- Header Section End! -->
+
+		<!-- Body Section Start! -->
+			<div id="body">
+				 <div class="container-fluid">
+
+				 	<!-- Body Right Flatmate Section Start! -->
+						<div class="col-md-10 col-sm-11 col-xs-11" id="body_right_flatmate_section">
+
+							<div class="row flatmate_section" id="flatmate_section">
+
+								<div class="col-md-12">
+									<a href="my-profile.html" class="btn btn-sm btn-info pull-right"><strong class="fa fa-arrow-left"></strong>&nbsp;Back</a>
+								</div>
+								
+								<ul id="tab-title">
+									<li class="active-tab-title" onClick="flatmate_switchOne()" id="finder">Finder Information</li>
+									<li onClick="flatmate_switchTwo()" id="placetype">Place Type & Property</li>
+									<li onClick="flatmate_switchThree()" id="location">Location & Budget</li>
+									<li onClick="flatmate_switchFour()" id="aboutus">About Us</li>
+								</ul>
+
+								<!-- Flatmate Tab 1! -->
+								<div class="col-md-12" id="flatmate-tab-1">
+									<center>
+										<i class="fas fa-lightbulb" style="color: #3a9bfa;display: inline-block;text-align: center;"></i>&nbsp;&nbsp;<h5 id="flatmate-tab-1-title">Me : This is the place for me.</h5>
+									</center>
+
+									<!-- Number of People Title -->
+									<div class="row" id="flatmate-section-title">
+										<div class="col-md-4" onClick="flatmate_switchMe()">
+											<i class="fa fa-user"></i><span>Me</span><em class="fa fa-check-circle" id="me-check"></em>
+										</div>
+										<div class="col-md-4" onClick="flatmate_switchCouple()">
+											<i class="fa fa-user-friends"></i><span>Couple</span><em class="fa fa-check-circle" id="couple-check"></em>
+										</div>
+										<div class="col-md-4" onClick="flatmate_switchGroup()">
+											<i class="fa fa-users"></i><span>Group</span><em class="fa fa-check-circle" id="group-check"></em>
+										</div>
+									</div>
+
+									<!-- Me Section -->
+									<div class="row" id="me-section">
+										<form action="#">
+											<div class="col-md-8">
+												<label for="name">Your Name</label>
+												<input type="text" name="name" placeholder="Enter Your Name" class="form-control" required>
+											</div>
+											<div class="col-md-4">
+												<label for="age">Your Age</label>
+												<input type="text" name="age" placeholder="Enter Your Age" class="form-control" required>
+											</div>
+
+											<div class="col-md-12" style="padding: 0px;margin-bottom: 80px;">
+												<label style="display: block;">Gender</label>
+
+												<label class="gender">
+													<i class="fa fa-male"></i>
+													<span>Male</span>
+													<input type="radio" name="gender" value="male" required checked>
+													<em class="fa fa-check-circle" id="male-check"></em>
+												</label>
+
+												<label class="gender">
+													<i class="fa fa-female"></i>
+													<span>Female</span>
+													<input type="radio" name="gender" value="female" required>
+													<em class="fa fa-check-circle" id="female-check"></em>
+												</label>
+											</div>
+
+											<div class="col-md-12" id="section-footer-wrap">
+												<div class="col-md-6 section-footer">
+													<a href="#">Help</a>
+												</div>
+												<div class="col-md-6 section-footer">
+													<button onClick="flatmate_switchTwo()" class="btn btn-sm btn-info pull-right">Next</button>
+												</div>
+											</div>
+										</form>
+									</div>
+
+									<!-- Couple Section -->
+									<div class="row" id="couple-section">
+										<!-- Couple - 1st form! -->
+										<form action="#">
+											<div class="col-md-8">
+												<label for="name">Your Name</label>
+												<input type="text" name="name" placeholder="Enter Your Name" class="form-control" required>
+											</div>
+											<div class="col-md-4">
+												<label for="age">Your Age</label>
+												<input type="text" name="age" placeholder="Enter Your Age" class="form-control" required>
+											</div>
+
+											<div class="col-md-12" style="padding: 0px;">
+												<label style="display: block;">Gender</label>
+
+												<label class="gender">
+													<i class="fa fa-male"></i>
+													<span>Male</span>
+													<input type="radio" name="gender" value="male" required checked>
+													<em class="fa fa-check-circle" id="male-check"></em>
+												</label>
+
+												<label class="gender">
+													<i class="fa fa-female"></i>
+													<span>Female</span>
+													<input type="radio" name="gender" value="female" required>
+													<em class="fa fa-check-circle" id="female-check"></em>
+												</label>
+											</div>
+										</form>
+
+										<!-- Couple - 2nd form! -->
+										<form action="#">
+											<div class="col-md-8">
+												<label for="name">Your Friend Name</label>
+												<input type="text" name="name" placeholder="Enter Your Friend Name" class="form-control" required>
+											</div>
+											<div class="col-md-4">
+												<label for="age">Your Friend Age</label>
+												<input type="text" name="age" placeholder="Enter Your Friend Age" class="form-control" required>
+											</div>
+
+											<div class="col-md-12" style="padding: 0px;">
+												<label style="display: block;">Gender</label>
+
+												<label class="gender">
+													<i class="fa fa-male"></i>
+													<span>Male</span>
+													<input type="radio" name="gender" value="male" required checked>
+													<em class="fa fa-check-circle" id="male-check"></em>
+												</label>
+
+												<label class="gender">
+													<i class="fa fa-female"></i>
+													<span>Female</span>
+													<input type="radio" name="gender" value="female" required>
+													<em class="fa fa-check-circle" id="female-check"></em>
+												</label>
+											</div>
+
+											<div class="col-md-12" id="section-footer-wrap">
+												<div class="col-md-6 section-footer">
+													<a href="#">Help</a>
+												</div>
+												<div class="col-md-6 section-footer">
+													<button onClick="flatmate_switchTwo()" class="btn btn-sm btn-info pull-right">Next</button>
+												</div>
+											</div>
+										</form>
+									</div>
+
+									<!-- Group Section -->
+									<div class="row" id="group-section">
+										<!-- Group - 1st form! -->
+										<form action="#">
+											<div class="col-md-8">
+												<label for="name">Your Name</label>
+												<input type="text" name="name" placeholder="Enter Your Name" class="form-control" required>
+											</div>
+											<div class="col-md-4">
+												<label for="age">Your Age</label>
+												<input type="text" name="age" placeholder="Enter Your Age" class="form-control" required>
+											</div>
+
+											<div class="col-md-12" style="padding: 0px;">
+												<label style="display: block;">Gender</label>
+
+												<label class="gender">
+													<i class="fa fa-male"></i>
+													<span>Male</span>
+													<input type="radio" name="gender" value="male" required checked>
+													<em class="fa fa-check-circle" id="male-check"></em>
+												</label>
+
+												<label class="gender">
+													<i class="fa fa-female"></i>
+													<span>Female</span>
+													<input type="radio" name="gender" value="female" required>
+													<em class="fa fa-check-circle" id="female-check"></em>
+												</label>
+											</div>
+										</form>
+
+										<!-- Group - 2nd form! -->
+										<form action="#">
+											<div class="col-md-8">
+												<label for="name">Your Friend Name</label>
+												<input type="text" name="name" placeholder="Enter Your Friend Name" class="form-control" required>
+											</div>
+											<div class="col-md-4">
+												<label for="age">Your Friend Age</label>
+												<input type="text" name="age" placeholder="Enter Your Friend Age" class="form-control" required>
+											</div>
+
+											<div class="col-md-12" style="padding: 0px;">
+												<label style="display: block;">Gender</label>
+
+												<label class="gender">
+													<i class="fa fa-male"></i>
+													<span>Male</span>
+													<input type="radio" name="gender" value="male" required checked>
+													<em class="fa fa-check-circle" id="male-check"></em>
+												</label>
+
+												<label class="gender">
+													<i class="fa fa-female"></i>
+													<span>Female</span>
+													<input type="radio" name="gender" value="female" required>
+													<em class="fa fa-check-circle" id="female-check"></em>
+												</label>
+											</div>
+										</form>
+
+										<!-- Group - 3rd form! -->
+										<form action="#">
+											<div class="col-md-8">
+												<label for="name">Your Friend Name</label>
+												<input type="text" name="name" placeholder="Enter Your Friend Name" class="form-control" required>
+											</div>
+											<div class="col-md-4">
+												<label for="age">Your Friend Age</label>
+												<input type="text" name="age" placeholder="Enter Your Friend Age" class="form-control" required>
+											</div>
+
+											<div class="col-md-12" style="padding: 0px;">
+												<label style="display: block;">Gender</label>
+
+												<label class="gender">
+													<i class="fa fa-male"></i>
+													<span>Male</span>
+													<input type="radio" name="gender" value="male" required checked>
+													<em class="fa fa-check-circle" id="male-check"></em>
+												</label>
+
+												<label class="gender">
+													<i class="fa fa-female"></i>
+													<span>Female</span>
+													<input type="radio" name="gender" value="female" required>
+													<em class="fa fa-check-circle" id="female-check"></em>
+												</label>
+											</div>
+										</form>
+
+										<!-- Adding Forms! -->
+										<div class="add-form-wrap"></div>
+
+										<div class="col-md-12" style="padding: 0px;margin-bottom: 80px;margin-top: 15px;">
+											<button class="btn btn-sm btn-info add-form-btn">Add Another Person</button>
+										</div>
+
+										<div class="col-md-12" id="section-footer-wrap">
+											<div class="col-md-6 section-footer">
+												<a href="#">Help</a>
+											</div>
+											<div class="col-md-6 section-footer">
+												<button onClick="flatmate_switchTwo()" class="btn btn-sm btn-info pull-right">Next</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Flatmate Tab 2! -->
+								<div class="col-md-12" id="flatmate-tab-2">
+									<!-- <center>
+										<i class="fas fa-lightbulb" style="color: #3a9bfa;display: inline-block;text-align: center;"></i>&nbsp;&nbsp;<h5 id="flatmate-tab-2-title">Room(s) in an existing shared house</h5>
+									</center> -->
+
+									<div class="row" id="flatmate-tab-2-row-1">  
+										<form action="#">
+											<div class="col-md-3">
+												<label class="room" onClick="flatmate_switchHome()">
+													<i class="fa fa-home"></i>
+													<span>Room(s) in an existing shared house</span>
+													<input type="checkbox" name="place-type" value="room" required checked>
+													<em class="fa fa-check-circle" id="home-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="rent" onClick="flatmate_switchHouse()">
+													<i class="fa fa-warehouse"></i>
+													<span>Whole property for rent</span>
+													<input type="checkbox" name="place-type" value="rent" required>
+													<em class="fa fa-check-circle" id="house-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="studio" onClick="flatmate_switchStudio()">
+													<i class="fa fa-music"></i>
+													<span>Studio</span>
+													<input type="checkbox" name="place-type" value="studio" required>
+													<em class="fa fa-check-circle" id="studio-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="grammy" onClick="flatmate_switchGrammy()">
+													<i class="fa fa-glasses"></i>
+													<span>Grammy flats</span>
+													<input type="checkbox" name="place-type" value="grammy" required>
+													<em class="fa fa-check-circle" id="grammy-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="one-bed" onClick="flatmate_switchBed()">
+													<i class="fa fa-bed"></i>
+													<span>One bed flat</span>
+													<input type="checkbox" name="place-type" value="one-bed" required>
+													<em class="fa fa-check-circle" id="one-bed-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="stay" onClick="flatmate_switchBuilding()">
+													<i class="fa fa-building"></i>
+													<span>Home Stay</span>
+													<input type="checkbox" name="place-type" value="stay" required>
+													<em class="fa fa-check-circle" id="stay-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="shard-room" onClick="flatmate_switchShared()">
+													<i class="fab fa-slideshare"></i>
+													<span>Shared Room</span>
+													<input type="checkbox" name="place-type" value="shared-room" required>
+													<em class="fa fa-check-circle" id="shared-room-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="student" onClick="flatmate_switchStudent()">
+													<i class="fa fa-laptop"></i>
+													<span>Student accomodation</span>
+													<input type="checkbox" name="place-type" value="student" required>
+													<em class="fa fa-check-circle" id="student-check"></em>
+												</label>
+											</div>
+
+											<div class="col-md-12" id="team-up">
+												<label>
+													<strong><input type="checkbox" name="teamup"><i class="fa fa-check-square"></i>&nbsp;&nbsp;&nbsp;&nbsp;Teamups</strong>
+
+													<i class="fa fa-user-plus pull-right"></i>
+
+													<p>
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+														tempor incididunt ut labore et dolore magna aliqua.
+													</p>
+												</label>
+											</div>
+
+											<div class="col-md-12" id="property-preference" style="margin-bottom: 80px;">
+												<div class="col-md-12">
+													<h5>Property Preference</h5>
+												</div>
+
+												<div class="col-md-6">
+													<label for="property-room-furnished"><i class="fa fa-couch"></i>&nbsp;Room Furnished</label>
+													<select class="form-control" required>
+														<option>Weekly Budget</option>
+														<option>Yearly Budget</option>
+													</select>
+												</div>
+												<div class="col-md-6">
+													<label for="property-wifi"><i class="fa fa-wifi"></i>&nbsp;Wifi Internet</label>
+													<select class="form-control" required>
+														<option>Weekly Budget</option>
+														<option>Yearly Budget</option>
+													</select>
+												</div>
+												<div class="col-md-6">
+													<label for="property-bed"><i class="fa fa-bed"></i>&nbsp;Bed Room</label>
+													<select class="form-control" required>
+														<option>Weekly Budget</option>
+														<option>Yearly Budget</option>
+													</select>
+												</div>
+												<div class="col-md-6">
+													<label for="property-bath"><i class="fa fa-bath"></i>&nbsp;Bath Room</label>
+													<select class="form-control" required>
+														<option>Weekly Budget</option>
+														<option>Yearly Budget</option>
+													</select>
+												</div>
+												<div class="col-md-6">
+													<label for="property-car"><i class="fa fa-car"></i>&nbsp;Car Parking</label>
+													<select class="form-control" required>
+														<option>Weekly Budget</option>
+														<option>Yearly Budget</option>
+													</select>
+												</div>
+												<div class="col-md-6">
+													<label for="property-budget"><i class="fa fa-user-friends"></i>&nbsp;Max Number of Flatmates</label>
+													<select class="form-control" required>
+														<option>Weekly Budget</option>
+														<option>Yearly Budget</option>
+													</select>
+												</div>
+											</div>
+										</form>
+										<div class="col-md-12" id="section-footer-wrap">
+												<div class="col-md-6 section-footer">
+													<a href="#">Help</a>
+												</div>
+												<div class="col-md-6 section-footer">
+													<button onClick="flatmate_switchThree()" class="btn btn-sm btn-info pull-right">Next</button>
+												</div>
+											</div>
+									</div>
+								</div>
+
+								<!-- Flatmate Tab 3! -->
+								<div class="col-md-12" id="flatmate-tab-3">
+									<h5>Where would you like to live?</h5>
+
+									<div class="row" id="flatmate-tab-3-row-1">
+										<h6>We recommended choosing at least 4 townships</h6>
+
+										<form action="#">
+											<div class="col-md-5">
+												<select class="form-control" required>
+													<option>Select City</option>
+													<option>Yangon</option>
+													<option>Mandalay</option>
+												</select>
+											</div>
+											<div class="col-md-5">
+												<select class="form-control" required>
+													<option>Select Township</option>
+													<option>Yangon</option>
+													<option>Mandalay</option>
+												</select>
+											</div>
+											<div class="col-md-2">
+												<a href="#" class="btn btn-sm btn-info">Add More</a>
+											</div>
+
+											<div class="col-md-12" id="city-wrap">
+
+												<div class="col-md-2 chip">
+													<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+													<label class="town-selected">
+													<span>Yankin</span>
+													<input type="checkbox" name="choose-town">
+												</div>
+
+												<div class="col-md-2 chip">
+													<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+													<label class="town-selected">
+													<span>Tarmwe</span>
+													<input type="checkbox" name="choose-town">
+												</div>
+
+												<div class="col-md-2 chip">
+													<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+													<label class="town-selected">
+													<span>Sanchaung</span>
+													<input type="checkbox" name="choose-town">
+												</div>
+
+												<div class="col-md-2 chip">
+													<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+													<label class="town-selected">
+													<span>Bahan</span>
+													<input type="checkbox" name="choose-town">
+												</div>
+
+												<div class="col-md-2 chip">
+													<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+													<label class="town-selected">
+													<span>Insein</span>
+													<input type="checkbox" name="choose-town">
+												</div>
+											</div>
+
+											<div class="col-md-12" id="budget-time" style="margin-bottom: 80px;">
+												<strong><i class="fa fa-money-bill-alt"></i>&nbsp;Budget & Time</strong>
+
+												<div class="col-md-6">
+													<input type="text" name="mmk" class="form-control" placeholder="MMK" required>
+												</div>
+												<div class="col-md-6">
+													<select class="form-control" required>
+														<option>Weekly Budget</option>
+														<option>Yearly Budget</option>
+													</select>
+												</div>
+
+												<div class="col-md-6">
+													<label for="move-date">Preferred Move Date</label>
+													<input type="date" name="move-date" class="form-control" required>
+												</div>
+												<div class="col-md-6">
+													<label for="move-date">Preferred Length Stay</label>
+													<select class="form-control" required>
+														<option>1 Month</option>
+														<option>2 Months</option>
+													</select>
+												</div>
+											</div>
+										</form>
+										<div class="col-md-12" id="section-footer-wrap" style="border:0px!important;border-top: 1px solid rgba(0,0,0,0.1)!important;padding-top: 0px!important;">
+												<div class="col-md-6 section-footer">
+													<a href="#">Help</a>
+												</div>
+												<div class="col-md-6 section-footer">
+													<button onClick="flatmate_switchFour()" class="btn btn-sm btn-info pull-right">Next</button>
+												</div>
+											</div>
+									</div>
+								</div>
+
+								<!-- Flatmate Tab 4! -->
+								<div class="col-md-12" id="flatmate-tab-4">
+									<h5>Employee Status</h5>
+
+									<div class="row" id="flatmate-tab-4-row-1">  
+										<form action="#">
+											<div class="col-md-3">
+												<label class="full-time">
+													<i class="fa fa-suitcase"></i>
+													<span>Working full-time</span>
+													<input type="checkbox" name="full-time" value="full-time" required checked>
+													<em class="fa fa-check-circle" id="full-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="part-time">
+													<i class="fa fa-comment-dollar"></i>
+													<span>Working part-time</span>
+													<input type="checkbox" name="part-time" value="part-time" required>
+													<em class="fa fa-check-circle" id="part-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="holiday-time">
+													<i class="fa fa-coffee"></i>
+													<span>Working holiday</span>
+													<input type="checkbox" name="holiday-time" value="holiday-time" required>
+													<em class="fa fa-check-circle" id="holiday-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="retired">
+													<i class="fa fa-glasses"></i>
+													<span>Retired</span>
+													<input type="checkbox" name="retired" value="retired" required>
+													<em class="fa fa-check-circle" id="retired-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="nowork">
+													<i class="fa fa-times-circle"></i>
+													<span>No Work</span>
+													<input type="checkbox" name="nowork" value="nowork" required>
+													<em class="fa fa-check-circle" id="nowork-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="bag">
+													<i class="fa fa-suitcase-rolling"></i>
+													<span>Backpacker</span>
+													<input type="checkbox" name="bag" value="bag" required>
+													<em class="fa fa-check-circle" id="bag-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="student-status">
+													<i class="fa fa-laptop"></i>
+													<span>Student</span>
+													<input type="checkbox" name="student-status" value="student-status" required>
+													<em class="fa fa-check-circle" id="student-status-check"></em>
+												</label>
+											</div>
+
+											<div class="col-md-12" style="margin-top: 20px;">
+												<h5>Life Style</h5>
+											</div>
+											<div class="col-md-3">
+												<label class="smoker">
+													<i class="fa fa-smoking"></i>
+													<span>Smoker</span>
+													<input type="checkbox" name="smoker" value="smoker" required checked>
+													<em class="fa fa-check-circle" id="smoker-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="having-pet">
+													<i class="fa fa-paw"></i>
+													<span>Having Pet</span>
+													<input type="checkbox" name="having-pet" value="having-pet" required>
+													<em class="fa fa-check-circle" id="having-pet-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="having-child">
+													<i class="fa fa-child"></i>
+													<span>Having Child</span>
+													<input type="checkbox" name="having-child" value="having-child" required>
+													<em class="fa fa-check-circle" id="having-child-check"></em>
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="drink">
+													<i class="fa fa-wine-glass"></i>
+													<span>Drinker</span>
+													<input type="checkbox" name="drink" value="drink" required>
+													<em class="fa fa-check-circle" id="drink-check"></em>
+												</label>
+											</div>
+
+											<div class="col-md-12" style="margin-top: 20px;padding: 0px;margin-bottom: 80px;">
+												<h5>About Us</h5>
+
+												<textarea class="form-control" placeholder="Enter About Your" required></textarea>
+											</div>
+
+											<div class="col-md-12" id="section-footer-wrap">
+												<div class="col-md-6 section-footer">
+													<a href="#">Help</a>
+												</div>
+												<div class="col-md-6 section-footer">
+													<button type="submit" class="btn btn-sm btn-info pull-right">Preview</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- Body Right Flatmate Section End! -->
+
+				 </div>
+			</div>
+		<!-- Body Section End! -->
+
+
+		<!-- Scripts! -->
+		<script type="text/javascript" src="js/my-profile.js"></script>
+
+</body>
+</html>

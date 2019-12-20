@@ -297,7 +297,7 @@ nav li:last-child a img{
 	font-size: 18px;
 	color: #3a9bfa;
 }
-#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 form .col-md-3 input[type="radio"]{
+#body_right_flatmate_section .flatmate_section #flatmate-tab-2 #flatmate-tab-2-row-1 form .col-md-3 input[type="checkbox"]{
 	position: absolute;
 	visibility: hidden;
 }
