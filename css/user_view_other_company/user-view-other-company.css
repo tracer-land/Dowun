@@ -178,39 +178,24 @@ nav li:last-child a img{
 	margin-top: 10px;
 }
 
-/*Rating Stars!*/
-#body .container-fluid .col-md-10 .first_row #nav_wrap ul .rating{
-	transform: rotateY(180deg);
-}
-#body .container-fluid .col-md-10 .first_row #nav_wrap ul .rating input{
-	display: none;
-}
-#body .container-fluid .col-md-10 .first_row #nav_wrap ul .rating label{
-	display: inline-block;
-	cursor: pointer;
-	width: 15px!important;
-}
-#body .container-fluid .col-md-10 .first_row #nav_wrap ul .rating label:before{
-	content: '\f005';
-	font-family: fontAwesome;
-	position: relative;
-	font-size: 15px;
-	display: block;
+/*Averange Stars!*/
+#body .container-fluid .col-md-10 .first_row #nav_wrap ul .all-stars i{
 	color: #f2f2f2!important;
 }
-#body .container-fluid .col-md-10 .first_row #nav_wrap ul .rating label:after{
-	content: '\f005';
-	font-family: fontAwesome;
-	position: absolute;
-	font-size: 15px;
-	display: block;
+#body .container-fluid .col-md-10 .first_row #nav_wrap ul .one-star i:nth-child(1){
 	color: orange!important;
-	top: 0;
-	opacity: 0;
-	transition: 0.5s;
 }
-#body .container-fluid .col-md-10 .first_row #nav_wrap ul .rating label:hover:after,#body .container-fluid .col-md-10 .first_row #nav_wrap ul .rating label:hover ~ label:after,#body .container-fluid .col-md-10 .first_row #nav_wrap ul .rating input:checked ~ label:after{
-	opacity: 1;
+#body .container-fluid .col-md-10 .first_row #nav_wrap ul .two-star i:nth-child(1),#body .container-fluid .col-md-10 .first_row #nav_wrap ul .two-star i:nth-child(2){
+	color: orange!important;
+}
+#body .container-fluid .col-md-10 .first_row #nav_wrap ul .three-star i:nth-child(1),#body .container-fluid .col-md-10 .first_row #nav_wrap ul .three-star i:nth-child(2),#body .container-fluid .col-md-10 .first_row #nav_wrap ul .three-star i:nth-child(3){
+	color: orange!important;
+}
+#body .container-fluid .col-md-10 .first_row #nav_wrap ul .four-star i:nth-child(1),#body .container-fluid .col-md-10 .first_row #nav_wrap ul .four-star i:nth-child(2),#body .container-fluid .col-md-10 .first_row #nav_wrap ul .four-star i:nth-child(3),#body .container-fluid .col-md-10 .first_row #nav_wrap ul .four-star i:nth-child(4){
+	color: orange!important;
+}
+#body .container-fluid .col-md-10 .first_row #nav_wrap ul .five-star i:nth-child(1),#body .container-fluid .col-md-10 .first_row #nav_wrap ul .five-star i:nth-child(2),#body .container-fluid .col-md-10 .first_row #nav_wrap ul .five-star i:nth-child(3),#body .container-fluid .col-md-10 .first_row #nav_wrap ul .five-star i:nth-child(4),#body .container-fluid .col-md-10 .first_row #nav_wrap ul .five-star i:nth-child(5){
+	color: orange!important;
 }
 
 /*Second Row!*/
@@ -632,7 +617,7 @@ nav li:last-child a img{
 }
 
 
-/*Body Right Review Section! */
+/*Body Right Service Section! */
 #body_right_service_section{
 	padding: 0px;
 	margin-top: 0px!important;
@@ -664,9 +649,52 @@ nav li:last-child a img{
 	float: left;
 	margin-left: 10px!important;
 }
-#body_right_service_section #service-body #service-box .col-md-9 ul li .fa-star{
+/*Stars!*/
+/*#review .container .box ul{
+	padding: 0px!important;
+}
+#review .container .box ul li{
+	display: inline-block!important;
+}
+#review .container .box ul li i{
+	color: #f2f2f2!important;
+}
+#review .container .box ul .one-star i:nth-child(1){
 	color: orange!important;
 }
+#review .container .box ul .two-star i:nth-child(1),#review .container .box ul .two-star i:nth-child(2){
+	color: orange!important;
+}
+#review .container .box ul .three-star i:nth-child(1),#review .container .box ul .three-star i:nth-child(2),#review .container .box ul .three-star i:nth-child(3){
+	color: orange!important;
+}
+#review .container .box ul .four-star i:nth-child(1),#review .container .box ul .four-star i:nth-child(2),#review .container .box ul .four-star i:nth-child(3),#review .container .box ul .four-star i:nth-child(4){
+	color: orange!important;
+}
+#review .container .box ul .five-star i:nth-child(1),#review .container .box ul .five-star i:nth-child(2),#review .container .box ul .five-star i:nth-child(3),#review .container .box ul .five-star i:nth-child(4),#review .container .box ul .five-star i:nth-child(5){
+	color: orange!important;
+}*/
+
+
+#body_right_service_section #service-body #service-box .col-md-9 ul li i{
+	color: #f2f2f2!important;
+}
+#body_right_service_section #service-body #service-box .col-md-9 ul li .one-star i:nth-child(1){
+	color: orange!important;
+}
+#body_right_service_section #service-body #service-box .col-md-9 ul li .two-star i:nth-child(1),#body_right_service_section #service-body #service-box .col-md-9 ul li .two-star i:nth-child(2){
+	color: orange!important;
+}
+#body_right_service_section #service-body #service-box .col-md-9 ul li .three-star i:nth-child(1),#body_right_service_section #service-body #service-box .col-md-9 ul li .three-star i:nth-child(2),#body_right_service_section #service-body #service-box .col-md-9 ul li .three-star i:nth-child(3){
+	color: orange!important;
+}
+#body_right_service_section #service-body #service-box .col-md-9 ul li .four-star i:nth-child(1),#body_right_service_section #service-body #service-box .col-md-9 ul li .four-star i:nth-child(2),#body_right_service_section #service-body #service-box .col-md-9 ul li .four-star i:nth-child(3),#body_right_service_section #service-body #service-box .col-md-9 ul li .four-star i:nth-child(4){
+	color: orange!important;
+}
+#body_right_service_section #service-body #service-box .col-md-9 ul li .five-star i:nth-child(1),#body_right_service_section #service-body #service-box .col-md-9 ul li .five-star i:nth-child(2),#body_right_service_section #service-body #service-box .col-md-9 ul li .five-star i:nth-child(3),#body_right_service_section #service-body #service-box .col-md-9 ul li .five-star i:nth-child(4),#body_right_service_section #service-body #service-box .col-md-9 ul li .five-star i:nth-child(5){
+	color: orange!important;
+}
+
 #body_right_service_section #service-body #service-box .col-md-3 ul{
 	float: right;
 }
@@ -804,6 +832,116 @@ nav li:last-child a img{
 	margin-top: 5px!important;
 }
 
+/*Service Name!*/
+#body_right_review_section #service-name{
+	background: #fff!important;
+	margin-top: 5px;
+	margin-left: 5px;
+	padding: 15px;
+	width: 23%!important;
+}
+#body_right_review_section #service-name ul{
+	list-style: none;
+	margin: 0px!important;
+	padding: 0px!important;
+}
+#body_right_review_section #service-name ul li{
+	display: inline-block;
+	font-size: 12px!important;
+	margin-right: 8px!important;
+}
+#body_right_review_section #service-name ul .btn{
+	padding: 5px!important;
+}
+
+/*Contact Sidebar!*/
+#body_right_review_section #contact-sidebar{
+	background: #fff!important;
+	margin-top: 5px;
+	margin-left: 5px;
+	padding: 15px;
+	width: 23%!important;
+}
+#body_right_review_section #contact-sidebar table{
+	width: 100%;
+	font-size: 12px!important;
+}
+#body_right_review_section #contact-sidebar tr{
+	border-bottom: 1px solid #ccc;
+}
+#body_right_review_section #contact-sidebar tr td{
+	padding: 5px;
+	padding-top: 10px!important;
+	padding-bottom: 10px!important;
+}
+#body_right_review_section #contact-sidebar tr td a{
+	text-decoration: none!important;
+	color: #000!important;
+}
+#body_right_review_section #contact-sidebar tr td table tr{
+	border-bottom: 0px!important;
+}
+#body_right_review_section #contact-sidebar tr td table tr td{
+	padding: 3px!important;
+	padding-top: 5px!important;
+	padding-bottom: 5px!important;
+}
+
+/*Sponsered!*/
+#body_right_review_section #sponsered{
+	background: #fff!important;
+	margin-top: 5px;
+	margin-left: 5px;
+	padding: 15px;
+	width: 23%!important;
+	font-size: 12px!important;
+}
+#body_right_review_section #sponsered ul{
+	list-style: none;
+	margin: 0px!important;
+	padding: 0px!important;
+}
+#body_right_review_section #sponsered ul img{
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+}
+#body_right_review_section #sponsered ul li{
+	display: inline-block;
+}
+#body_right_review_section #sponsered .sponser-text{
+	margin-top: 10px;
+	clear: both!important;
+	width: 100%!important;
+	padding: 0px!important;
+}
+/*Stars!*/
+#body_right_review_section #sponsered ul{
+	padding: 0px!important;
+	margin: 0px!important;
+}
+#body_right_review_section #sponsered ul li{
+	display: inline-block!important;
+}
+#body_right_review_section #sponsered ul li i{
+	color: #f2f2f2!important;
+}
+#body_right_review_section #sponsered ul .one-star i:nth-child(1){
+	color: orange!important;
+}
+#body_right_review_section #sponsered ul .two-star i:nth-child(1),#body_right_review_section #sponsered ul .two-star i:nth-child(2){
+	color: orange!important;
+}
+#body_right_review_section #sponsered ul .three-star i:nth-child(1),#body_right_review_section #sponsered ul .three-star i:nth-child(2),#body_right_review_section #sponsered ul .three-star i:nth-child(3){
+	color: orange!important;
+}
+#body_right_review_section #sponsered ul .four-star i:nth-child(1),#body_right_review_section #sponsered ul .four-star i:nth-child(2),#body_right_review_section #sponsered ul .four-star i:nth-child(3),#body_right_review_section #sponsered ul .four-star i:nth-child(4){
+	color: orange!important;
+}
+#body_right_review_section #sponsered ul .five-star i:nth-child(1),#body_right_review_section #sponsered ul .five-star i:nth-child(2),#body_right_review_section #sponsered ul .five-star i:nth-child(3),#body_right_review_section #sponsered ul .five-star i:nth-child(4),#body_right_review_section #sponsered ul .five-star i:nth-child(5){
+	color: orange!important;
+}
+
 
 
 /*Verify Row*/
@@ -866,6 +1004,9 @@ nav li:last-child a img{
 }
 #body_right_review_section #write-review{
 	cursor: pointer;
+	position: absolute;
+	top: 18%!important;
+	padding: 15px!important;
 }
 /*Stars!*/
 #body_right_review_section #writeBox ul{
@@ -896,6 +1037,42 @@ nav li:last-child a img{
 #body_right_review_section #writeBox ul .five-star i:nth-child(1),##body_right_review_section #writeBox ul .five-star i:nth-child(2),#body_right_review_section #writeBox ul .five-star i:nth-child(3),#body_right_review_section #writeBox ul .five-star i:nth-child(5){
 	color: orange!important;
 }
+
+/*Rating Stars!*/
+#body_right_review_section #writeBox ul .rating{
+	transform: rotateY(180deg);
+}
+#body_right_review_section #writeBox ul .rating input{
+	display: none;
+}
+#body_right_review_section #writeBox ul .rating label{
+	display: inline-block;
+	cursor: pointer;
+	width: 15px!important;
+}
+#body_right_review_section #writeBox ul .rating label:before{
+	content: '\f005';
+	font-family: fontAwesome;
+	position: relative;
+	font-size: 15px;
+	display: block;
+	color: #f2f2f2!important;
+}
+#body_right_review_section #writeBox ul .rating label:after{
+	content: '\f005';
+	font-family: fontAwesome;
+	position: absolute;
+	font-size: 15px;
+	display: block;
+	color: orange!important;
+	top: 0;
+	opacity: 0;
+	transition: 0.5s;
+}
+#body_right_review_section #writeBox ul .rating label:hover:after,#body_right_review_section #writeBox ul .rating label:hover ~ label:after,#body_right_review_section #writeBox ul .rating input:checked ~ label:after{
+	opacity: 1;
+}
+
 /*Form*/
 #body_right_review_section #writeBox form{
 	margin-top: 25px!important;
@@ -903,13 +1080,36 @@ nav li:last-child a img{
 }
 #body_right_review_section #writeBox form textarea{
 	margin-bottom: 25px!important;
+	min-height: 150px!important;
 }
 #body_right_review_section #writeBox form label{
 	cursor: pointer!important;
 }
-#body_right_review_section #writeBox form input[type="file"] {
+#body_right_review_section #writeBox form input[type="file"]{
     display: none;
     cursor: pointer!important;
+}
+#body_right_review_section #writeBox form .review-add-photos{
+	margin-top: 20px!important;
+	margin-bottom: 20px!important;
+	width: 100%!important;
+}
+#body_right_review_section #writeBox form .review-add-photos .col-md-2 img{
+	width: 80px!important;
+	height: 80px!important;
+	display: block;
+	margin: 0 auto!important;
+}
+#body_right_review_section #writeBox form .review-add-photos .col-md-2 span{
+	font-size: 18px;
+	color: #fff;
+	border-radius: 25%;
+	position: absolute;
+	z-index: 10;
+	top: 1%;
+	right: 1%;
+	font-weight: bold;
+	cursor: pointer;
 }
 /*Write Footer*/
 #body_right_review_section #writeBox #write-footer{
@@ -1070,6 +1270,63 @@ nav li:last-child a img{
 
 #body_right_review_section #review-rating #review-vote li{
 	font-size: 12px!important;
+}
+
+
+
+/* Slider */
+#review-section .carousel-control.left {
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
+    background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 0%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+
+#review-section .carousel-control.right {
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
+    background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 0%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+
+#review-section .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    left: 10%!important;
+    margin-left: 0px!important;
+    color: #ccc!important;
+}
+
+#review-section .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    right: 10%!important;
+    margin-right: 0px!important;
+    color: #ccc!important;
+}
+
+#review-section .carousel-indicators {
+	display: none!important;
+    position: absolute;
+    top: 100%!important;
+    margin-top: 50px;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+
+#review-section .carousel-inner{
+	padding: 10px 40px 10px 40px;
+}
+
+#review-section .carousel-inner img{
+	width: 100%!important;
+	height: 150px!important;
 }
 
 
