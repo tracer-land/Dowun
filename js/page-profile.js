@@ -113,12 +113,14 @@ $(document).ready(function(){
 			//Functions start
 			function tab_switchHome(){
 				get('body_right_home_section').style.display = "block";
+				get('page-information').style.display = "block";
 				get('body_right_job_section').style.display = "none";
 				get('body_right_house_section').style.display = "none";
 				get('body_right_setting_section').style.display = "none";
 				get('body_right_inbox_section').style.display = "none";
 				get('body_right_help_section').style.display = "none";
 				get('fix_position').style.display = "block";
+				get('body_right_photo_section').style.display = "none";
 			}
 
 			function tab_switchJob(){
@@ -131,6 +133,7 @@ $(document).ready(function(){
 				get('body_right_inbox_section').style.display = "none";
 				get('body_right_help_section').style.display = "none";
 				get('fix_position').style.display = "block";
+				get('body_right_photo_section').style.display = "none";
 				get('body_right_job_section').style.position = "static";
 				get('body_right_job_section').style.left = "0%";
 				get('body_right_job_section').style.right = "0%";
@@ -147,11 +150,27 @@ $(document).ready(function(){
 				get('body_right_inbox_section').style.display = "none";
 				get('body_right_help_section').style.display = "none";
 				get('fix_position').style.display = "block";
+				get('body_right_photo_section').style.display = "none";
 				get('body_right_house_section').style.position = "static";
 				get('body_right_house_section').style.left = "0%";
 				get('body_right_house_section').style.right = "0%";
 				get('body_right_house_section').style.transform = "translate(0%, 0%)";
 			}
+
+
+			function tab_switchPhoto(){
+				get('body_right_photo_section').style.display = "block";
+				get('body_right_home_section').style.display = "block";
+				get('page-information').style.display = "none";
+				get('body_right_job_section').style.display = "none";
+				get('body_right_house_section').style.display = "none";
+				get('body_right_setting_section').style.display = "none";
+				get('body_right_inbox_section').style.display = "none";
+				get('body_right_help_section').style.display = "none";
+				get('fix_position').style.display = "block";
+				
+			}
+
 
 			function tab_switchHelp(){
 				get('body_right_help_section').style.display = "block";
@@ -160,6 +179,7 @@ $(document).ready(function(){
 				get('body_right_job_section').style.display = "none";
 				get('body_right_house_section').style.display = "none";
 				get('body_right_inbox_section').style.display = "none";
+				get('body_right_photo_section').style.display = "none";
 				get('fix_position').style.display = "none";
 				get('body_right_help_section').style.position = "absolute";
 			}
@@ -171,6 +191,7 @@ $(document).ready(function(){
 				get('body_right_job_section').style.display = "none";
 				get('body_right_house_section').style.display = "none";
 				get('body_right_inbox_section').style.display = "none";
+				get('body_right_photo_section').style.display = "none";
 				get('fix_position').style.display = "block";
 			}
 
@@ -181,6 +202,7 @@ $(document).ready(function(){
 				get('body_right_home_section').style.display = "none";
 				get('body_right_job_section').style.display = "none";
 				get('body_right_house_section').style.display = "none";
+				get('body_right_photo_section').style.display = "none";
 				get('fix_position').style.display = "block";
 			}
 
@@ -220,6 +242,7 @@ $(document).ready(function(){
 				get('body_right_setting_section').style.display = "none";
 				get('body_right_inbox_section').style.display = "none";
 				get('body_right_help_section').style.display = "none";
+				get('body_right_photo_section').style.display = "none";
 
 				get('body_right_job_section').style.position = "absolute";
 				get('body_right_job_section').style.left = "50%";
@@ -256,6 +279,7 @@ $(document).ready(function(){
 				get('body_right_setting_section').style.display = "none";
 				get('body_right_inbox_section').style.display = "none";
 				get('body_right_help_section').style.display = "none";
+				get('body_right_photo_section').style.display = "none";
 
 				get('body_right_house_section').style.position = "absolute";
 				get('body_right_house_section').style.left = "50%";

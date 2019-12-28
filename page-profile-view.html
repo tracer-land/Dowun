@@ -386,32 +386,67 @@ Project Designed By Tracer Land
 									<a href="#" class="btn btn-sm btn-info cover-btn" data-toggle="modal" data-target="#inputfileModal" title="Edit"><i class="fa fa-pen"></i></a>
 								</div>
 								<div id="nav_wrap">
-									<ul>
-										<li>
-											<i class="fa fa-book"></i>
-											<a href="#">About</a>
+									<ul class="pull-left">
+
+
+										<!-- Rating Stars! -->
+										<!-- <li class="rating">
+											<input type="radio" name="star" id="star1"><label for="star1"></label>
+											<input type="radio" name="star" id="star2"><label for="star2"></label>
+											<input type="radio" name="star" id="star3"><label for="star3"></label>
+											<input type="radio" name="star" id="star4"><label for="star4"></label>
+											<input type="radio" name="star" id="star5"><label for="star5"></label>
+										</li> -->
+
+										<li class="one-star all-stars"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
 										</li>
-										<li>
-											<i class="fa fa-heart"></i>
-											<a href="#">Like</a>
+
+										<li onClick="tab_switchReview()">
+											<i class="fa fa-pen"></i>
+											<a href="#">Reviews</a>
 										</li>
-										<li>
+										<li onClick="tab_switchFriend()">
 											<i class="fa fa-eye"></i>
 											<a href="#">Following</a>
+										</li>
+					
+										<li onClick="tab_switchPhoto()">
+											<i class="fa fa-camera"></i>
+											<a href="#">100 Photos</a>
+										</li>
+
+									</ul>
+
+
+									<ul class="pull-right">
+										<li>
+											<i class="fa fa-eye"></i>
+											<a href="#">Follow</a>
 										</li>
 										<li>
 											<i class="fa fa-share"></i>
 											<a href="#">Share</a>
 										</li>
 
-										<a href="#" class="btn btn-sm btn-info pull-right" onClick="tab_switchInbox()">Message</a>
+										<li>
+											<i class="fa fa-pen"></i>
+											<a href="#">Review</a>
+										</li>
+
+										<a href="#" class="btn btn-sm btn-info pull-right">Message</a>
+
 									</ul>
 
 								</div>
 							</div>
 
 							<!-- Page Information Section! -->
-							<div class="row second_row">
+							<div class="row second_row" id="page-information">
 								<div class="col-md-6" id="left-section">
 									
 									<!-- left first row -->
@@ -631,6 +666,45 @@ Project Designed By Tracer Land
 												</div>
 
 												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#highlightModal" title="Add">Add</a>
+											</div>
+										</div>
+									</div>
+
+									<!-- right Second row -->
+									<div class="row right_third_row">
+										<h4>Business Hours</h4>
+										<div class="row">
+											<div class="col-md-12">
+												<table width="100%">
+													<tr>
+														<td>Mon</td>
+														<td>6:00AM - 7:PM</td>
+													</tr>
+													<tr>
+														<td>Tue</td>
+														<td>6:00AM - 7:PM</td>
+													</tr>
+													<tr>
+														<td>Wed</td>
+														<td>6:00AM - 7:PM</td>
+													</tr>
+													<tr>
+														<td>Thu</td>
+														<td>6:00AM - 7:PM</td>
+													</tr>
+													<tr>
+														<td>Fri</td>
+														<td>6:00AM - 7:PM</td>
+													</tr>
+													<tr>
+														<td>Sat</td>
+														<td>6:00AM - 7:PM</td>
+													</tr>
+													<tr>
+														<td>Sun</td>
+														<td>Close</td>
+													</tr>
+												</table>
 											</div>
 										</div>
 									</div>
@@ -3453,6 +3527,79 @@ Project Designed By Tracer Land
 							</div>
 						</div>
 					<!-- Body Right Help Section Start! -->
+
+
+					<!-- Body Right Photo Section Start! -->
+						<div class="col-md-10 col-sm-11 col-xs-11" id="body_right_photo_section">
+							<!-- Photo Section! -->
+							<div id="photo-section">
+								
+								<div class="col-md-12"><h5>Photos</h5></div>
+
+								<!-- Photo Section! -->
+								<div class="col-md-12" id="photo-wrap">
+									
+									<div class="col-md-3">
+										<a href="images/house-6.jpg">
+											<img src="images/house-6.jpg">
+											<span>Shwe Kaung</span>
+										</a>
+									</div>
+
+									<div class="col-md-3">
+										<a href="images/house-6.jpg">
+											<img src="images/house-6.jpg">
+											<span>Shwe Kaung</span>
+										</a>
+									</div>
+
+									<div class="col-md-3">
+										<a href="images/house-6.jpg">
+											<img src="images/house-6.jpg">
+											<span>Shwe Kaung</span>
+										</a>
+									</div>
+
+									<div class="col-md-3">
+										<a href="images/house-6.jpg">
+											<img src="images/house-6.jpg">
+											<span>Shwe Kaung</span>
+										</a>
+									</div>
+
+									<div class="col-md-3">
+										<a href="images/house-6.jpg">
+											<img src="images/house-6.jpg">
+											<span>Shwe Kaung</span>
+										</a>
+									</div>
+
+									<div class="col-md-3">
+										<a href="images/house-6.jpg">
+											<img src="images/house-6.jpg">
+											<span>Shwe Kaung</span>
+										</a>
+									</div>
+
+									<div class="col-md-3">
+										<a href="images/house-6.jpg">
+											<img src="images/house-6.jpg">
+											<span>Shwe Kaung</span>
+										</a>
+									</div>
+
+									<div class="col-md-3">
+										<a href="images/house-6.jpg">
+											<img src="images/house-6.jpg">
+											<span>Shwe Kaung</span>
+										</a>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					<!-- Body Right Photo Section Start! -->
 
 
 					
