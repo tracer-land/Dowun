@@ -52,6 +52,38 @@ Project Designed By Tracer Land
 
 		<script defer src="js/all.js"></script>
 
+		<style type="text/css">
+			
+			#review-section #first-row #stars .dropdown {
+			  position: relative;
+			  display: inline-block;
+			  cursor: pointer;
+			}
+
+			#review-section #first-row #stars .dropdown-content {
+			  display: none;
+			  position: absolute;
+			  background-color: #f9f9f9;
+			  min-width: 160px;
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			  padding: 12px 16px;
+			  z-index: 1;
+			}
+
+			#review-section #first-row #stars .dropdown:hover .dropdown-content {
+			  display: block;
+			}
+
+			#review-section #first-row #stars .dropdown:hover .dropdown-content a{
+			  text-decoration: none;
+			  color: #000!important;
+			  display: block!important; 
+			  font-size: 14px!important;
+			  margin-bottom: 12px!important;
+			}
+
+		</style>
+
 </head>
 <body>
 
@@ -366,6 +398,12 @@ Project Designed By Tracer Land
 													<span>Houses</span>
 												</a>
 											</li>
+											<li>
+												<a href="#" onClick="tab_switchService()">
+													<i class="fa fa-list" data-toggle="tooltip" title="Services" data-placement="right"></i>
+													<span>Services</span>
+												</a>
+											</li>
 										</ul>
 									</div>
 								</div>
@@ -382,28 +420,16 @@ Project Designed By Tracer Land
 										<img src="images/kbz.png">
 										<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputfileModal" title="Edit"><i class="fa fa-pen"></i></a>
 										<strong>KBZ Bank</strong>
+										<strong class="verify-license" data-toggle="modal" data-target="#verifyLicense">Verify License</strong>
 									</div>
 									<a href="#" class="btn btn-sm btn-info cover-btn" data-toggle="modal" data-target="#inputfileModal" title="Edit"><i class="fa fa-pen"></i></a>
 								</div>
 								<div id="nav_wrap">
-									<ul class="pull-left">
+									<ul class="pull-left average-star">
 
 
-										<!-- Rating Stars! -->
-										<!-- <li class="rating">
-											<input type="radio" name="star" id="star1"><label for="star1"></label>
-											<input type="radio" name="star" id="star2"><label for="star2"></label>
-											<input type="radio" name="star" id="star3"><label for="star3"></label>
-											<input type="radio" name="star" id="star4"><label for="star4"></label>
-											<input type="radio" name="star" id="star5"><label for="star5"></label>
-										</li> -->
-
-										<li class="one-star all-stars"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
+										<li>
+											<em class="fa fa-star"></em>
 										</li>
 
 										<li onClick="tab_switchReview()">
@@ -3602,6 +3628,461 @@ Project Designed By Tracer Land
 					<!-- Body Right Photo Section Start! -->
 
 
+					<!-- Body Right Service Section Start! -->
+						<div class="col-md-10 col-sm-11 col-xs-11" id="body_right_service_section">
+
+							<!-- Service Section! -->
+							<div id="service-section">
+								
+								<div class="col-md-12"><h5 data-toggle="modal" data-target="#addService" style="cursor: pointer;">Add Services</h5></div>
+
+								<div class="col-md-12" id="service-body">
+									
+									<div id="service-box">
+										<div class="col-md-9">
+											<img src="images/noodle.jpg">
+											<ul>
+												<li><strong>Fried Noodle</strong></li>
+												<li>
+													<ul>
+														<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+														</li>
+													</ul>&nbsp;
+													<a href="#">4 Reviews</a>
+												</li>
+											</ul>
+
+										</div>
+
+										<div class="col-md-3">
+											<ul>
+												<li>5000 Kyats</li>
+												<li>
+													<a href="#" class="btn btn-sm btn-info">Order Now</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="col-md-12" id="service-content">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+											</p>
+										</div>
+									</div>
+
+									<div id="service-box">
+										<div class="col-md-9">
+											<img src="images/noodle.jpg">
+											<ul>
+												<li><strong>Fried Noodle</strong></li>
+												<li>
+													<ul>
+														<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+														</li>
+													</ul>&nbsp;
+													<a href="#">4 Reviews</a>
+												</li>
+											</ul>
+
+										</div>
+
+										<div class="col-md-3">
+											<ul>
+												<li>5000 Kyats</li>
+												<li>
+													<a href="#" class="btn btn-sm btn-info">Order Now</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="col-md-12" id="service-content">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+											</p>
+										</div>
+									</div>
+
+
+									<div id="service-box">
+										<div class="col-md-9">
+											<img src="images/noodle.jpg">
+											<ul>
+												<li><strong>Fried Noodle</strong></li>
+												<li>
+													<ul>
+														<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+														</li>
+													</ul>&nbsp;
+													<a href="#">4 Reviews</a>
+												</li>
+											</ul>
+
+										</div>
+
+										<div class="col-md-3">
+											<ul>
+												<li>5000 Kyats</li>
+												<li>
+													<a href="#" class="btn btn-sm btn-info">Order Now</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="col-md-12" id="service-content">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+											</p>
+										</div>
+									</div>
+
+									<div id="service-box">
+										<div class="col-md-9">
+											<img src="images/noodle.jpg">
+											<ul>
+												<li><strong>Fried Noodle</strong></li>
+												<li>
+													<ul>
+														<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+														</li>
+													</ul>&nbsp;
+													<a href="#">4 Reviews</a>
+												</li>
+											</ul>
+
+										</div>
+
+										<div class="col-md-3">
+											<ul>
+												<li>5000 Kyats</li>
+												<li>
+													<a href="#" class="btn btn-sm btn-info">Order Now</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="col-md-12" id="service-content">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+											</p>
+										</div>
+									</div>
+
+									<div id="service-box">
+										<div class="col-md-9">
+											<img src="images/noodle.jpg">
+											<ul>
+												<li><strong>Fried Noodle</strong></li>
+												<li>
+													<ul>
+														<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+														</li>
+													</ul>&nbsp;
+													<a href="#">4 Reviews</a>
+												</li>
+											</ul>
+
+										</div>
+
+										<div class="col-md-3">
+											<ul>
+												<li>5000 Kyats</li>
+												<li>
+													<a href="#" class="btn btn-sm btn-info">Order Now</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="col-md-12" id="service-content">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+											</p>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+					<!-- Body Right Service Section End! -->
+
+					<!-- Body Right Review Section Start! -->
+						<div class="col-md-10 col-sm-11 col-xs-11" id="body_right_review_section">
+
+							<!-- Review Section! -->
+							<div id="review-section">
+								
+								<div class="col-md-12"><h5>Reviews</h5></div>
+
+
+								<!-- Review Section! -->
+								<div class="col-md-9">
+									<!-- #first-row -->
+									<div class="row" id="first-row">
+										<div class="col-md-6">
+											<img src="images/kbz.png">
+											<ul>
+												<li>
+													<span>KBZ</span>
+												</li>
+												<li>
+													<span>Create Account, Saving Account</span>
+												</li>
+												<li>
+													<span>4.01 Yangon Road, Sanchaung Myanmar</span>
+												</li>
+											</ul>
+										</div>
+
+										<div class="col-md-6" id="stars">
+											<ul>
+												<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</li>
+												<li>
+													4/12/2019
+												</li>
+												<li>
+													&nbsp;&nbsp;<i class="fas fa-thumbtack"></i>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="row" id="second-row">
+										<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</p>
+
+										<img src="images/house-2.jpg">
+									</div>
+
+									<div class="col-md-12" id="review-footer">
+										
+										<ul style="float: left;">
+											<li>
+												<label>
+													<i class="fa fa-heart"></i>&nbsp;1 Useful
+												</label>
+											</li>
+											<li>
+												<label>
+													<i class="fa fa-heart"></i>&nbsp;3 Funny
+													<input type="radio" name="reaction-1">
+												</label>
+											</li>
+											<li>
+												<label>
+													<i class="fa fa-heart"></i>&nbsp;4 Cool
+													<input type="radio" name="reaction-1">
+												</label>
+											</li>
+											<li>
+												<label>
+													<i class="fa fa-heart"></i>&nbsp;0 Bad
+													<input type="radio" name="reaction-1">
+												</label>
+											</li>
+											<li>
+												<label>
+													<i class="fa fa-heart"></i>&nbsp;0 Report
+													<input type="radio" name="reaction-1">
+												</label>
+											</li>
+										</ul>
+
+										<ul style="float: right;padding: 0px!important;margin: 0px!important;">
+											<li><a href="#">Reply</a></li>
+										</ul>
+
+									</div>
+								</div>
+
+								<!-- Review Rating Sidebar! -->
+								<div class="col-md-3" id="review-rating">
+									
+									<h6>Reviews Rating</h6>
+									<ul>
+										<li>
+											<strong>5 Stars</strong>
+											<span>3</span>
+										</li>
+										<li>
+											<strong>4 Stars</strong>
+											<span>2</span>
+										</li>
+										<li>
+											<strong>3 Stars</strong>
+											<span>1</span>
+										</li>
+										<li>
+											<strong>2 Stars</strong>
+											<span>0</span>
+										</li>
+										<li>
+											<strong>1 Stars</strong>
+											<span>0</span>
+										</li>
+									</ul>
+
+
+									<h6>Review Votes</h6>
+									<ul id="review-vote">
+										<li>Useful - <span>1</span></li>
+										<li>Funny - <span>3</span></li>
+										<li>Cool - <span>3</span></li>
+										<li>Bad - <span>0</span></li>
+									</ul>
+
+								</div>
+
+								<!-- Review Section! -->
+								<div class="col-md-9">
+									<!-- #first-row -->
+									<div class="row" id="first-row">
+										<div class="col-md-6">
+											<img src="images/kbz.png">
+											<ul>
+												<li>
+													<span>KBZ</span>
+												</li>
+												<li>
+													<span>Create Account, Saving Account</span>
+												</li>
+												<li>
+													<span>4.01 Yangon Road, Sanchaung Myanmar</span>
+												</li>
+											</ul>
+										</div>
+
+										<div class="col-md-6" id="stars">
+											<ul>
+												<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</li>
+												<li>
+													4/12/2019
+												</li>
+												<li class="dropdown">
+													&nbsp;&nbsp;<i class="fas fa-ellipsis-h"></i>
+													<div class="dropdown-content">
+														<a href="#">Pin This Review</a>
+														<a href="#">Hide This Review</a>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="row" id="second-row">
+										<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										</p>
+
+									</div>
+
+									<div class="col-md-12" id="review-footer">
+										
+										<ul style="float: left;">
+											<li>
+												<label>
+													<i class="fa fa-heart"></i>&nbsp;1 Useful
+													<input type="radio" name="reaction-2">
+												</label>
+											</li>
+											<li>
+												<label>
+													<i class="fa fa-heart"></i>&nbsp;3 Funny
+													<input type="radio" name="reaction-2">
+												</label>
+											</li>
+											<li>
+												<label>
+													<i class="fa fa-heart"></i>&nbsp;4 Cool
+													<input type="radio" name="reaction-2">
+												</label>
+											</li>
+											<li>
+												<label>
+													<i class="fa fa-heart"></i>&nbsp;0 Bad
+													<input type="radio" name="reaction-2">
+												</label>
+											</li>
+											<li>
+												<label>
+													<i class="fa fa-heart"></i>&nbsp;0 Report
+													<input type="radio" name="reaction-2">
+												</label>
+											</li>
+										</ul>
+
+										<ul style="float: right;padding: 0px!important;margin: 0px!important;">
+											<li><a href="#">Reply</a></li>
+										</ul>
+
+									</div>
+								</div>
+
+							</div>
+
+
+						</div>
+					<!-- Body Right Review Section End! -->
+
+
 					
 
 					<!-- Schedule Popup Start! -->
@@ -4016,6 +4497,87 @@ Project Designed By Tracer Land
 								</div>
 								<div class="col-md-6">
 									<input type="submit" value="Update" name="submit" class="btn btn-info">
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Verify License!! -->
+		<div  id="verifyLicense" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+        				<h4 class="modal-title">Verify License</h4>
+					</div>
+
+					<div class="modal-body">
+						<form action="#">
+							<div class="row">
+								<div class="col-md-6">
+									<label>Enter License Number</label>
+								</div>
+								<div class="col-md-6">
+									<input type="text" name="license-num" class="form-control" placeholder="Eg. 10201" required>
+								</div>
+								<div class="col-md-6">
+									<label>License Attach Files</label>
+								</div>
+								<div class="col-md-6">
+									<input type="file" name="file" class="form-control" required>
+								</div>
+								<div class="col-md-12">
+									<input type="submit" value="Submit to Dowun" name="submit" class="btn btn-info">
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Add Services!! -->
+		<div  id="addService" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+        				<h4 class="modal-title">Adding Services</h4>
+					</div>
+
+					<div class="modal-body">
+						<form action="#">
+							<div class="row">
+								<div class="col-md-12">
+									<label>Service Name</label>
+									<input type="text" name="service-name" class="form-control" required>
+								</div>
+								<div class="col-md-12">
+									<label>Price(Optional)</label>
+									<input type="text" name="price" class="form-control" required>
+								</div>
+								<div class="col-md-12">
+									<label>Description(Optional)</label>
+									<textarea class="form-control" required></textarea>
+								</div>
+								<div class="col-md-12">
+									<label>Image(Optional)</label>
+									<input type="file" name="file" class="form-control" required>
+								</div>
+								<div class="col-md-12">
+									<input type="submit" value="Submit to Dowun" name="submit" class="btn btn-info">
 								</div>
 							</div>
 						</form>
