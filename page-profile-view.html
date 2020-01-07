@@ -418,11 +418,11 @@ Project Designed By Tracer Land
 								<div id="cover" style="background: url('images/cover.jpg') no-repeat;background-size: cover;">
 									<div class="cover_wrap">
 										<img src="images/kbz.png">
-										<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputfileModal" title="Edit"><i class="fa fa-pen"></i></a>
+										<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputfileModal" title="Edit" style="background: #f0f0f0!important;border:none!important;"><i class="fa fa-pen"></i></a>
 										<strong>KBZ Bank</strong>
 										<strong class="verify-license" data-toggle="modal" data-target="#verifyLicense">Verify License</strong>
 									</div>
-									<a href="#" class="btn btn-sm btn-info cover-btn" data-toggle="modal" data-target="#inputfileModal" title="Edit"><i class="fa fa-pen"></i></a>
+									<a href="#" class="btn btn-sm btn-info cover-btn" data-toggle="modal" data-target="#inputfileModal" title="Edit" style="background: #f0f0f0!important;border:none!important;"><i class="fa fa-pen"></i></a>
 								</div>
 								<div id="star_wrap">
 									<ul class="pull-left">
@@ -438,15 +438,15 @@ Project Designed By Tracer Land
 										</li> -->
 
 										<li class="four-star all-stars"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
+											<i class="fa fa-star" id="star-one"></i>
+											<i class="fa fa-star" id="star-two"></i>
+											<i class="fa fa-star" id="star-three"></i>
+											<i class="fa fa-star" id="star-four"></i>
+											<i class="fa fa-star" id="star-five"></i>
 										</li>
 
 										<li onClick="tab_switchReview()">
-											<i class="fa fa-pencil"></i>
+											<i class="fa fa-pen"></i>
 											<a href="#">Reviews</a>
 										</li>
 										<li onClick="tab_switchFriend()">
@@ -473,7 +473,7 @@ Project Designed By Tracer Land
 										</li>
 
 										<li>
-											<i class="fa fa-pencil"></i>
+											<i class="fa fa-pen"></i>
 											<a href="#">Review</a>
 										</li>
 
@@ -683,7 +683,7 @@ Project Designed By Tracer Land
 
 												<!-- <a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#addaboutModal" title="Add" style="margin-left: 5px;">Add</a> -->
 
-												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#inputtextareaModal" title="Edit">Edit</a>
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#inputtextareaModal" title="Edit" style="background: #3a9bfa!important;">Edit</a>
 											</div>
 
 										</div>
@@ -704,7 +704,7 @@ Project Designed By Tracer Land
 													<button class="btn btn-sm chip">Beat or match prices<span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span></button>
 												</div>
 
-												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#highlightModal" title="Add">Add</a>
+												<a href="#" class="btn btn-sm btn-info pull-right" data-toggle="modal" data-target="#highlightModal" title="Add" style="background: #3a9bfa!important;">Add</a>
 											</div>
 										</div>
 									</div>
@@ -1469,7 +1469,7 @@ Project Designed By Tracer Land
 											<!-- Changing For Commercial and Living Selection! -->
 
 											<div class="col-md-3"></div>
-										</form><!-- Adding Form Tag! -->
+										<!-- </form> --><!-- Adding Form Tag! -->
 										
 									</div>
 
@@ -1479,7 +1479,7 @@ Project Designed By Tracer Land
 											<i class="fas fa-lightbulb" style="color: #3a9bfa;display: inline-block;text-align: center;"></i>&nbsp;&nbsp;<h5 id="house-tab-1-row-1-title">Room(s) in an existing shared house</h5>
 										</center>
 
-										<form action="#">
+										<!-- <form action="#"> -->
 											<div class="col-md-3 bg-color-add">
 												<label class="room" onClick="house_switchHome()">
 													<i class="fa fa-home"></i>
@@ -1544,7 +1544,7 @@ Project Designed By Tracer Land
 													<em class="fa fa-check-circle" id="student-check"></em>
 												</label>
 											</div>
-										</form>
+										<!-- </form> -->
 									</div>
 
 									<!-- House Tab 1 Row 2! -->
@@ -1553,7 +1553,7 @@ Project Designed By Tracer Land
 											<i class="fas fa-lightbulb" style="color: #3a9bfa;display: inline-block;text-align: center;"></i>&nbsp;&nbsp;<h5 id="house-tab-1-row-2-title">Living : People To Live & Stay</h5>
 										</center>
 
-										<form action="#">
+										<!-- <form action="#"> -->
 											<div class="col-md-4 bg-color-add">
 												<label class="property-building" onClick="house_switchAppartment()">
 													<i class="fa fa-building"></i>
@@ -1578,7 +1578,7 @@ Project Designed By Tracer Land
 													<em class="fa fa-check-circle" id="home-check"></em>
 												</label>
 											</div>
-										</form>
+										<!-- </form> -->
 
 										<div class="col-md-12" id="section-footer-wrap">
 											<div class="col-md-6 section-footer">
@@ -1596,12 +1596,12 @@ Project Designed By Tracer Land
 											<i class="fas fa-lightbulb" style="color: #3a9bfa;display: inline-block;text-align: center;"></i>&nbsp;&nbsp;<h5 id="house-tab-1-row-2-title">Factory : Industrial or Manufacture Place To Stay</h5>
 										</center>
 
-										<form action="#">
+										<!-- <form action="#"> -->
 											<div class="col-md-3 bg-color-add">
 												<label class="property-building" onClick="house_switchAppartment()">
 													<i class="fa fa-industry"></i>
 													<span>Factory</span>
-													<input type="radio" name="property-type-house" value="property-building" required checked>
+													<input type="radio" name="property-type-house-commercial" value="property-building" required checked>
 													<em class="fa fa-check-circle" id="home-check"></em>
 												</label>
 											</div>
@@ -1609,7 +1609,7 @@ Project Designed By Tracer Land
 												<label class="property-warehouse" onClick="house_switchHousing()">
 													<i class="fa fa-store"></i>
 													<span>Business Center</span>
-													<input type="radio" name="property-type-house" value="property-building" required>
+													<input type="radio" name="property-type-house-commercial" value="property-building" required>
 													<em class="fa fa-check-circle" id="home-check"></em>
 												</label>
 											</div>
@@ -1617,7 +1617,7 @@ Project Designed By Tracer Land
 												<label class="property-warehouse" onClick="house_switchHousing()">
 													<i class="fa fa-warehouse"></i>
 													<span>Land</span>
-													<input type="radio" name="property-type-house" value="property-building" required>
+													<input type="radio" name="property-type-house-commercial" value="property-building" required>
 													<em class="fa fa-check-circle" id="home-check"></em>
 												</label>
 											</div>
@@ -1625,11 +1625,11 @@ Project Designed By Tracer Land
 												<label class="property-hotel" onClick="house_switchCondo()">
 													<i class="fa fa-hotel"></i>
 													<span>Condo</span>
-													<input type="radio" name="property-type-house" value="property-hotel" required>
+													<input type="radio" name="property-type-house-commercial" value="property-hotel" required>
 													<em class="fa fa-check-circle" id="home-check"></em>
 												</label>
 											</div>
-										</form>
+										<!-- </form> -->
 
 										<div class="col-md-12" id="section-footer-wrap">
 											<div class="col-md-6 section-footer">
@@ -1645,7 +1645,7 @@ Project Designed By Tracer Land
 								<!-- House Tab 2! -->
 								<div class="col-md-12" id="house-tab-2">
 									<div class="row" id="house-tab-2-row-1">
-										<form>
+										<!-- <form> -->
 											<div class="col-md-12" id="house-about-property">
 												<div class="col-md-12">
 													<h5>About The Property</h5>
@@ -1772,12 +1772,12 @@ Project Designed By Tracer Land
 													<button onClick="house_switchThree()" class="btn btn-sm btn-info pull-right">Next</button>
 												</div>
 											</div>
-										</form>
+										<!-- </form> -->
 									</div>
 
 									<!-- Commercial~House Tab 2! -->
 									<div class="row" id="commercial-house-tab-2-row-1">
-										<form>
+										<!-- <form> -->
 
 											<div class="col-md-12" id="house-location-property" style="margin-bottom: 80px;">
 
@@ -1821,14 +1821,14 @@ Project Designed By Tracer Land
 													<button onClick="house_switchThree()" class="btn btn-sm btn-info pull-right">Next</button>
 												</div>
 											</div>
-										</form>
+										<!-- </form> -->
 									</div>
 								</div>
 
 								<!-- House Tab 3! -->
 								<div class="col-md-12" id="house-tab-3">
 									<div class="row" id="house-tab-3-row-1">
-										<form>
+										<!-- <form> -->
 											<div class="col-md-12" id="house-room-availablity">
 												<div class="col-md-12">
 													<h5>Room Availablity</h5>
@@ -1883,12 +1883,12 @@ Project Designed By Tracer Land
 													<button onClick="house_switchFour()" class="btn btn-sm btn-info pull-right">Next</button>
 												</div>
 											</div>
-										</form>
+										<!-- </form> -->
 									</div>
 
 									<!-- Commercial~House Tab 3! -->
 									<div class="row" id="commercial-house-tab-3-row-1">
-										<form>
+										<!-- <form> -->
 											<div class="col-md-12" id="house-room-availablity">
 												<div class="col-md-12">
 													<h5>Property Availablity</h5>
@@ -1943,14 +1943,14 @@ Project Designed By Tracer Land
 													<button onClick="house_switchFour()" class="btn btn-sm btn-info pull-right">Next</button>
 												</div>
 											</div>
-										</form>
+										<!-- </form> -->
 									</div>
 								</div>
 
 								<!-- House Tab 4! -->
 								<div class="col-md-12" id="house-tab-4">
 									<div class="row" id="house-tab-4-row-1">
-										<form>
+										<!-- <form> -->
 											<div class="col-md-12" id="house-include-property">
 												<div class="col-md-12" style="text-align: center;">
 													<h5>What is included this property?</h5>
@@ -2115,12 +2115,12 @@ Project Designed By Tracer Land
 													<button onClick="house_switchFive()" class="btn btn-sm btn-info pull-right">Next</button>
 												</div>
 											</div>
-										</form>
+										<!-- </form> -->
 									</div>
 
 									<!-- Commercial~House Tab 4! -->
 									<div class="row" id="commercial-house-tab-4-row-1">
-										<form>
+										<!-- <form> -->
 											<div class="col-md-12" id="house-include-property">
 												<div class="col-md-12" style="text-align: center;">
 													<h5>What is included this property?</h5>
@@ -2355,14 +2355,14 @@ Project Designed By Tracer Land
 													<button onClick="house_switchFive()" class="btn btn-sm btn-info pull-right">Next</button>
 												</div>
 											</div>
-										</form>
+										<!-- </form> -->
 									</div>
 								</div>
 
 								<!-- House Tab 5! -->
 								<div class="col-md-12" id="house-tab-5">
 									<div class="row" id="house-tab-5-row-1">
-										<form>
+										<!-- <form> -->
 											<div class="col-md-12" id="house-safety">
 												<div class="col-md-12" style="text-align: center;">
 													<h5>Safety</h5>
@@ -2536,12 +2536,12 @@ Project Designed By Tracer Land
 													<button onClick="house_switchSix()" class="btn btn-sm btn-info pull-right">Next</button>
 												</div>
 											</div>
-										</form>
+										<!-- </form> -->
 									</div>
 
 									<!-- Commercial~House Tab 5! -->
 									<div class="row" id="commercial-house-tab-5-row-1">
-										<form>
+										<!-- <form> -->
 											<div class="col-md-12" id="house-safety">
 												<div class="col-md-12" style="text-align: center;">
 													<h5>Safety</h5>
@@ -2715,14 +2715,14 @@ Project Designed By Tracer Land
 													<button onClick="house_switchSix()" class="btn btn-sm btn-info pull-right">Next</button>
 												</div>
 											</div>
-										</form>
+										<!-- </form> -->
 									</div>
 								</div>
 
 								<!-- House Tab 6! -->
 								<div class="col-md-12" id="house-tab-6">
 									<div class="row" id="house-tab-6-row-1">
-										<form>
+										<!-- <form> -->
 											<div class="col-md-12" id="house-property-about">
 												<div class="col-md-12" style="text-align: center;">
 													<h5>About Property</h5>
@@ -2785,12 +2785,12 @@ Project Designed By Tracer Land
 													<button type="submit" class="btn btn-sm btn-info pull-right">Preview</button>
 												</div>
 											</div>
-										</form>
+										<!-- </form> -->
 									</div>
 
 									<!-- Commercial~House Tab 6! -->
 									<div class="row" id="commercial-house-tab-6-row-1">
-										<form>
+										<!-- <form> -->
 											<div class="col-md-12" id="house-property-about">
 												<div class="col-md-12" style="text-align: center;">
 													<h5>About Property</h5>
@@ -3658,12 +3658,12 @@ Project Designed By Tracer Land
 												<li><strong>Fried Noodle</strong></li>
 												<li>
 													<ul>
-														<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
+														<li class="four-star all-stars"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+															<i class="fa fa-star" id="star-one"></i>
+															<i class="fa fa-star" id="star-two"></i>
+															<i class="fa fa-star" id="star-three"></i>
+															<i class="fa fa-star" id="star-four"></i>
+															<i class="fa fa-star" id="star-five"></i>
 														</li>
 													</ul>&nbsp;
 													<a href="#">4 Reviews</a>
@@ -3697,13 +3697,13 @@ Project Designed By Tracer Land
 												<li><strong>Fried Noodle</strong></li>
 												<li>
 													<ul>
-														<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-														</li>
+														<li class="four-star all-stars"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+														<i class="fa fa-star" id="star-one"></i>
+														<i class="fa fa-star" id="star-two"></i>
+														<i class="fa fa-star" id="star-three"></i>
+														<i class="fa fa-star" id="star-four"></i>
+														<i class="fa fa-star" id="star-five"></i>
+													</li>
 													</ul>&nbsp;
 													<a href="#">4 Reviews</a>
 												</li>
@@ -3737,13 +3737,13 @@ Project Designed By Tracer Land
 												<li><strong>Fried Noodle</strong></li>
 												<li>
 													<ul>
-														<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-														</li>
+														<li class="four-star all-stars"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+														<i class="fa fa-star" id="star-one"></i>
+														<i class="fa fa-star" id="star-two"></i>
+														<i class="fa fa-star" id="star-three"></i>
+														<i class="fa fa-star" id="star-four"></i>
+														<i class="fa fa-star" id="star-five"></i>
+													</li>
 													</ul>&nbsp;
 													<a href="#">4 Reviews</a>
 												</li>
@@ -3777,12 +3777,13 @@ Project Designed By Tracer Land
 												<li>
 													<ul>
 														<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-														</li>
+															<li class="four-star all-stars"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+																<i class="fa fa-star" id="star-one"></i>
+																<i class="fa fa-star" id="star-two"></i>
+																<i class="fa fa-star" id="star-three"></i>
+																<i class="fa fa-star" id="star-four"></i>
+																<i class="fa fa-star" id="star-five"></i>
+															</li>
 													</ul>&nbsp;
 													<a href="#">4 Reviews</a>
 												</li>
@@ -3815,12 +3816,12 @@ Project Designed By Tracer Land
 												<li><strong>Fried Noodle</strong></li>
 												<li>
 													<ul>
-														<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
+														<li class="four-star all-stars"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+															<i class="fa fa-star" id="star-one"></i>
+															<i class="fa fa-star" id="star-two"></i>
+															<i class="fa fa-star" id="star-three"></i>
+															<i class="fa fa-star" id="star-four"></i>
+															<i class="fa fa-star" id="star-five"></i>
 														</li>
 													</ul>&nbsp;
 													<a href="#">4 Reviews</a>
@@ -3884,12 +3885,12 @@ Project Designed By Tracer Land
 
 										<div class="col-md-6" id="stars">
 											<ul>
-												<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
+												<li class="four-star all-stars"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+													<i class="fa fa-star" id="star-one"></i>
+													<i class="fa fa-star" id="star-two"></i>
+													<i class="fa fa-star" id="star-three"></i>
+													<i class="fa fa-star" id="star-four"></i>
+													<i class="fa fa-star" id="star-five"></i>
 												</li>
 												<li>
 													4/12/2019
@@ -4014,12 +4015,12 @@ Project Designed By Tracer Land
 
 										<div class="col-md-6" id="stars">
 											<ul>
-												<li class="two-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
+												<li class="four-star all-stars"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+													<i class="fa fa-star" id="star-one"></i>
+													<i class="fa fa-star" id="star-two"></i>
+													<i class="fa fa-star" id="star-three"></i>
+													<i class="fa fa-star" id="star-four"></i>
+													<i class="fa fa-star" id="star-five"></i>
 												</li>
 												<li>
 													4/12/2019

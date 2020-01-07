@@ -7,6 +7,11 @@
 	background-color: #ccc;
 }
 
+#page-information .btn-sm{
+	background: #f0f0f0!important;
+	border: none!important;
+}
+
 
 /* Sub Navigation Bar CSS! */
 #sub_nav{
@@ -199,22 +204,22 @@
 }
 
 /*Averange Stars!*/
-#body .container-fluid .col-md-10 .first_row #star_wrap ul .all-stars i{
+#body .container-fluid .col-md-10 .first_row #star_wrap ul .all-stars .fa-star{
 	color: #f2f2f2!important;
 }
-#body .container-fluid .col-md-10 .first_row #star_wrap ul .one-star i:nth-child(1){
+#body .container-fluid .col-md-10 .first_row #star_wrap ul .one-star #star-one{
 	color: orange!important;
 }
-#body .container-fluid .col-md-10 .first_row #star_wrap ul .two-star i:nth-child(1),#body .container-fluid .col-md-10 .first_row #star_wrap ul .two-star i:nth-child(2){
+#body .container-fluid .col-md-10 .first_row #star_wrap ul .two-star #star-one,#body .container-fluid .col-md-10 .first_row #star_wrap ul .two-star #star-two{
 	color: orange!important;
 }
-#body .container-fluid .col-md-10 .first_row #star_wrap ul .three-star i:nth-child(1),#body .container-fluid .col-md-10 .first_row #star_wrap ul .three-star i:nth-child(2),#body .container-fluid .col-md-10 .first_row #star_wrap ul .three-star i:nth-child(3){
+#body .container-fluid .col-md-10 .first_row #star_wrap ul .three-star #star-one,#body .container-fluid .col-md-10 .first_row #star_wrap ul .three-star #star-two,#body .container-fluid .col-md-10 .first_row #star_wrap ul .three-star #star-three{
 	color: orange!important;
 }
-#body .container-fluid .col-md-10 .first_row #star_wrap ul .four-star i:nth-child(1),#body .container-fluid .col-md-10 .first_row #star_wrap ul .four-star i:nth-child(2),#body .container-fluid .col-md-10 .first_row #star_wrap ul .four-star i:nth-child(3),#body .container-fluid .col-md-10 .first_row #star_wrap ul .four-star i:nth-child(4){
+#body .container-fluid .col-md-10 .first_row #star_wrap ul .four-star #star-one,#body .container-fluid .col-md-10 .first_row #star_wrap ul .four-star #star-two,#body .container-fluid .col-md-10 .first_row #star_wrap ul .four-star #star-three,#body .container-fluid .col-md-10 .first_row #star_wrap ul .four-star #star-four{
 	color: orange!important;
 }
-#body .container-fluid .col-md-10 .first_row #star_wrap ul .five-star i:nth-child(1),#body .container-fluid .col-md-10 .first_row #star_wrap ul .five-star i:nth-child(2),#body .container-fluid .col-md-10 .first_row #star_wrap ul .five-star i:nth-child(3),#body .container-fluid .col-md-10 .first_row #star_wrap ul .five-star i:nth-child(4),#body .container-fluid .col-md-10 .first_row #star_wrap ul .five-star i:nth-child(5){
+#body .container-fluid .col-md-10 .first_row #star_wrap ul .five-star #star-one,#body .container-fluid .col-md-10 .first_row #star_wrap ul .five-star #star-two,#body .container-fluid .col-md-10 .first_row #star_wrap ul .five-star #star-three,#body .container-fluid .col-md-10 .first_row #star_wrap ul .five-star #star-four,#body .container-fluid .col-md-10 .first_row #star_wrap ul .five-star #star-five{
 	color: orange!important;
 }
 
@@ -510,6 +515,8 @@
 	max-width: 100%;
 }
 
+
+
 /*Body Right House Section! */
 #body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 .bg-color-add,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 .bg-color-add,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 .bg-color-add{
 	background: #f1f1f1;
@@ -646,7 +653,7 @@
 	cursor: pointer;
 	border: 1px solid rgba(0,0,0,0.1);
 }
-#body_right_house_section .house_section #house-tab-1 #house-section-title form .col-md-3 label input[type="radio"]{
+#body_right_house_section .house_section #house-tab-1 #house-section-title .col-md-3 label input[type="radio"]{
 	position: absolute;
 	visibility: hidden;
 }
@@ -705,15 +712,15 @@
 	font-size: 18px;
 	color: #3a9bfa;
 }
-#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 form .col-md-3 input[type="radio"],#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 form .col-md-4 input[type="radio"],#body_right_house_section .house_section #house-tab-1 #commercial-house-tab-1-row-2 form .col-md-3 input[type="radio"]{
+#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 .col-md-3 input[type="radio"],#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 .col-md-4 input[type="radio"],#body_right_house_section .house_section #house-tab-1 #commercial-house-tab-1-row-2 .col-md-3 input[type="radio"]{
 	position: absolute;
 	visibility: hidden;
 }
-#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 form .col-md-3 input:checked + .fa-check-circle,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 form .col-md-4 input:checked + .fa-check-circle,#body_right_house_section .house_section #house-tab-1 #commercial-house-tab-1-row-2 form .col-md-3 input:checked + .fa-check-circle{
+#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 .col-md-3 input:checked + .fa-check-circle,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 .col-md-4 input:checked + .fa-check-circle,#body_right_house_section .house_section #house-tab-1 #commercial-house-tab-1-row-2 .col-md-3 input:checked + .fa-check-circle{
 	color: #00ff80!important;
 	visibility: visible!important;
 }
-#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 form .col-md-3 .fa-check-circle,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 form .col-md-4 .fa-check-circle,#body_right_house_section .house_section #house-tab-1 #commercial-house-tab-1-row-2 form .col-md-3 .fa-check-circle{
+#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-1 .col-md-3 .fa-check-circle,#body_right_house_section .house_section #house-tab-1 #house-tab-1-row-2 .col-md-4 .fa-check-circle,#body_right_house_section .house_section #house-tab-1 #commercial-house-tab-1-row-2 .col-md-3 .fa-check-circle{
 	visibility: hidden;
 }
 
@@ -746,29 +753,29 @@
 	text-align: center;
 	margin-top: 20px;
 }
-#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 form #house-prefer-gender .gender{
+#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 #house-prefer-gender .gender{
 	width: 100%;
 	border: 1px solid rgba(0,0,0,0.1);
 	padding: 10px;
 	cursor: pointer;
 	text-align: center;
 }
-#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 form #house-prefer-gender .gender .fa-male,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 form #house-prefer-gender .gender .fa-female,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 form #house-prefer-gender .gender .fa-users{
+#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 #house-prefer-gender .gender .fa-male,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 #house-prefer-gender .gender .fa-female,#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 #house-prefer-gender .gender .fa-users{
 	color: #3a9bfa;
 	display: inline-block;
 	margin-right: 5px;
 	font-size: 18px;
 }
-#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 form #house-prefer-gender .gender .fa-check-circle{
+#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 #house-prefer-gender .gender .fa-check-circle{
 	display: inline-block;
 	margin-left: 5px;
 	visibility: hidden!important;
 }
-#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 form #house-prefer-gender .gender input[type="radio"]{
+#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 #house-prefer-gender .gender input[type="radio"]{
 	position: absolute;
 	visibility: hidden!important;
 }
-#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 form #house-prefer-gender .gender input:checked + .fa-check-circle{
+#body_right_house_section .house_section #house-tab-2 #house-tab-2-row-1 #house-prefer-gender .gender input:checked + .fa-check-circle{
 	color: #00ff80!important;
 	visibility: visible!important;
 }
@@ -836,7 +843,7 @@
 	position: absolute;
 	visibility: hidden;
 }
-#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 form .col-md-4 .fa-check-circle,#body_right_house_section .house_section #house-tab-4 #commercial-house-tab-4-row-1 form .col-md-4 .fa-check-circle{
+#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 .col-md-4 .fa-check-circle,#body_right_house_section .house_section #house-tab-4 #commercial-house-tab-4-row-1 .col-md-4 .fa-check-circle{
 	visibility: hidden!important;
 }
 #body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-include-property .col-md-4 input:checked + .fa-check-circle,#body_right_house_section .house_section #house-tab-4 #house-tab-4-row-1 #house-accept-rental .col-md-4 input:checked + .fa-check-circle,#body_right_house_section .house_section #house-tab-4 #commercial-house-tab-4-row-1 #house-include-property .col-md-4 input:checked + .fa-check-circle,#body_right_house_section .house_section #house-tab-4 #commercial-house-tab-4-row-1 #house-accept-rental .col-md-4 input:checked + .fa-check-circle{
@@ -890,7 +897,7 @@
 	position: absolute;
 	visibility: hidden;
 }
-#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 form .col-md-4 .fa-check-circle,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 form .col-md-2 .fa-check-circle,#body_right_house_section .house_section #house-tab-5 #commercial-house-tab-5-row-1 form .col-md-4 .fa-check-circle,#body_right_house_section .house_section #house-tab-5 #commercial-house-tab-5-row-1 form .col-md-2 .fa-check-circle{
+#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 .col-md-4 .fa-check-circle,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 .col-md-2 .fa-check-circle,#body_right_house_section .house_section #house-tab-5 #commercial-house-tab-5-row-1 .col-md-4 .fa-check-circle,#body_right_house_section .house_section #house-tab-5 #commercial-house-tab-5-row-1 .col-md-2 .fa-check-circle{
 	visibility: hidden!important;
 }
 #body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 .col-md-4 input:checked + .fa-check-circle,#body_right_house_section .house_section #house-tab-5 #house-tab-5-row-1 .col-md-2 input:checked + .fa-check-circle,#body_right_house_section .house_section #house-tab-5 #commercial-house-tab-5-row-1 .col-md-4 input:checked + .fa-check-circle,#body_right_house_section .house_section #house-tab-5 #commercial-house-tab-5-row-1 .col-md-2 input:checked + .fa-check-circle{
@@ -1684,22 +1691,22 @@ body #section-footer-wrap{
 }*/
 
 
-#body_right_service_section #service-body #service-box .col-md-9 ul li i{
+#body_right_service_section #service-section #service-body #service-box .col-md-9 ul li ul .all-stars .fa-star{
 	color: #f2f2f2!important;
 }
-#body_right_service_section #service-body #service-box .col-md-9 ul li .one-star i:nth-child(1){
+#body_right_service_section #service-section #service-body #service-box .col-md-9 ul li ul .one-star #star-one{
 	color: orange!important;
 }
-#body_right_service_section #service-body #service-box .col-md-9 ul li .two-star i:nth-child(1),#body_right_service_section #service-body #service-box .col-md-9 ul li .two-star i:nth-child(2){
+#body_right_service_section #service-section #service-body #service-box .col-md-9 ul li ul .two-star #star-one,#body_right_service_section #service-section #service-body #service-box .col-md-9 ul li ul .two-star #star-two{
 	color: orange!important;
 }
-#body_right_service_section #service-body #service-box .col-md-9 ul li .three-star i:nth-child(1),#body_right_service_section #service-body #service-box .col-md-9 ul li .three-star i:nth-child(2),#body_right_service_section #service-body #service-box .col-md-9 ul li .three-star i:nth-child(3){
+#body_right_service_section #service-section #service-body #service-box .col-md-9 ul li ul .three-star #star-one,#body_right_service_section #service-section #service-body #service-box .col-md-9 ul li ul .three-star #star-two,#body_right_service_section #service-section #service-body #service-box .col-md-9 ul li ul .three-star #star-three{
 	color: orange!important;
 }
-#body_right_service_section #service-body #service-box .col-md-9 ul li .four-star i:nth-child(1),#body_right_service_section #service-body #service-box .col-md-9 ul li .four-star i:nth-child(2),#body_right_service_section #service-body #service-box .col-md-9 ul li .four-star i:nth-child(3),#body_right_service_section #service-body #service-box .col-md-9 ul li .four-star i:nth-child(4){
+#body_right_service_section #service-section #service-body #service-box .col-md-9 ul li ul .four-star #star-one,#body_right_service_section #service-section #service-body #service-box .col-md-9 ul li ul .four-star #star-two,#body_right_service_section #service-section #service-body #service-box .col-md-9 ul li ul .four-star #star-three,#body_right_service_section #service-section #service-body #service-box .col-md-9 ul li ul .four-star #star-four{
 	color: orange!important;
 }
-#body_right_service_section #service-body #service-box .col-md-9 ul li .five-star i:nth-child(1),#body_right_service_section #service-body #service-box .col-md-9 ul li .five-star i:nth-child(2),#body_right_service_section #service-body #service-box .col-md-9 ul li .five-star i:nth-child(3),#body_right_service_section #service-body #service-box .col-md-9 ul li .five-star i:nth-child(4),#body_right_service_section #service-body #service-box .col-md-9 ul li .five-star i:nth-child(5){
+#body_right_service_section #service-section #service-body #service-box .col-md-9 ul li ul .five-star #star-one,#body_right_service_section #service-section #service-body #service-box .col-md-9 ul li ul .five-star #star-two,#body_right_service_section #service-section #service-body #service-box .col-md-9 ul li ul .five-star #star-three,#body_right_service_section #service-section #service-body #service-box .col-md-9 ul li ul .five-star #star-four,#body_right_service_section #service-section #service-body #service-box .col-md-9 ul li ul .five-star #star-five{
 	color: orange!important;
 }
 
@@ -1779,22 +1786,22 @@ body #section-footer-wrap{
 #body_right_review_section .col-md-9 #stars ul li{
 	display: inline-block!important;
 }
-#body_right_review_section .col-md-9 #stars ul li i{
+#body_right_review_section #review-section .col-md-9 #first-row #stars ul .all-stars .fa-star{
 	color: #f2f2f2!important;
 }
-#body_right_review_section .col-md-9 #stars ul .one-star i:nth-child(1){
+#body_right_review_section #review-section .col-md-9 #first-row #stars ul .one-star #star-one{
 	color: orange!important;
 }
-#body_right_review_section .col-md-9 #stars ul .two-star i:nth-child(1),#body_right_review_section .col-md-9 #stars ul .two-star i:nth-child(2){
+#body_right_review_section #review-section .col-md-9 #first-row #stars ul .two-star #star-one,#body_right_review_section #review-section .col-md-9 #first-row #stars ul .two-star #star-two{
 	color: orange!important;
 }
-#body_right_review_section .col-md-9 #stars ul .three-star i:nth-child(1),#body_right_review_section .col-md-9 #stars ul .three-star i:nth-child(2),#body_right_review_section .col-md-9 #stars ul .three-star i:nth-child(3){
+#body_right_review_section #review-section .col-md-9 #first-row #stars ul .three-star #star-one,#body_right_review_section #review-section .col-md-9 #first-row #stars ul .three-star #star-two,#body_right_review_section #review-section .col-md-9 #first-row #stars ul .three-star #star-three{
 	color: orange!important;
 }
-#body_right_review_section .col-md-9 #stars ul .four-star i:nth-child(1),#body_right_review_section .col-md-9 #stars ul .four-star i:nth-child(2),#body_right_review_section .col-md-9 #stars ul .four-star i:nth-child(3),#body_right_review_section .col-md-9 #stars ul .four-star i:nth-child(4){
+#body_right_review_section #review-section .col-md-9 #first-row #stars ul .four-star #star-one,#body_right_review_section #review-section .col-md-9 #first-row #stars ul .four-star #star-two,#body_right_review_section #review-section .col-md-9 #first-row #stars ul .four-star #star-three,#body_right_review_section #review-section .col-md-9 #first-row #stars ul .four-star #star-four{
 	color: orange!important;
 }
-#body_right_review_section .col-md-9 #stars ul .five-star i:nth-child(1),#body_right_review_section .col-md-9 #stars ul .five-star i:nth-child(2),#body_right_review_section .col-md-9 #stars ul .five-star i:nth-child(3),#body_right_review_section .col-md-9 #stars ul .five-star i:nth-child(4),#body_right_review_section .col-md-9 #stars ul .five-star i:nth-child(5){
+#body_right_review_section #review-section .col-md-9 #first-row #stars ul .five-star #star-one,#body_right_review_section #review-section .col-md-9 #first-row #stars ul .five-star #star-two,#body_right_review_section #review-section .col-md-9 #first-row #stars ul .five-star #star-three,#body_right_review_section #review-section .col-md-9 #first-row #stars ul .five-star #star-four,#body_right_review_section #review-section .col-md-9 #first-row #stars ul .five-star #star-five{
 	color: orange!important;
 }
 

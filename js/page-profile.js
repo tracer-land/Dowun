@@ -203,6 +203,7 @@ $(document).ready(function(){
 				get('body_right_inbox_section').style.display = "none";
 				get('body_right_help_section').style.display = "none";
 				get('body_right_photo_section').style.display = "none";
+				get('body_right_service_section').style.display = "none";
 				get('fix_position').style.display = "block";
 			}
 

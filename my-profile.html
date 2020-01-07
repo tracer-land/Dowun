@@ -399,8 +399,10 @@ Project Designed By Tracer Land
 								<div id="cover" style="background: url('images/cover.jpg') no-repeat;background-size: cover;">
 									<div class="cover_wrap">
 										<img src="images/kbz.png">
+										<a href="#" class="btn btn-sm btn-info" data-toggle="modal" data-target="#inputfileModal" title="Edit" style="background: #f0f0f0!important;border:none!important;"><i class="fa fa-pen"></i></a>
 										<strong>KBZ Bank</strong>
 									</div>
+									<a href="#" class="btn btn-sm btn-info cover-btn" data-toggle="modal" data-target="#inputfileModal" title="Edit" style="background: #f0f0f0!important;border:none!important;"><i class="fa fa-pen"></i></a>
 								</div>
 								<div id="nav_wrap">
 									<ul>
@@ -486,7 +488,7 @@ Project Designed By Tracer Land
 												</ul>
 											</div>
 
-											<div class="col-md-6">
+											<!-- <div class="col-md-6">
 												<ul>
 													<li>
 														<form action="#">
@@ -495,7 +497,7 @@ Project Designed By Tracer Land
 														</form>
 													</li>
 												</ul>
-											</div>
+											</div> -->
 										</div>
 
 										<!-- #second-row -->
@@ -3054,6 +3056,36 @@ Project Designed By Tracer Land
 								</div>
 								<div class="col-md-3">
 									<input type="submit" value="Add" name="submit" class="btn btn-info">
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- File Upload Field Popup!! -->
+		<div  id="inputfileModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+        				<h4 class="modal-title">Update Photo</h4>
+					</div>
+
+					<div class="modal-body">
+						<form action="#">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="file" name="file" class="form-control">
+								</div>
+								<div class="col-md-6">
+									<input type="submit" value="Update" name="submit" class="btn btn-info">
 								</div>
 							</div>
 						</form>

@@ -181,10 +181,14 @@
 	text-align: center!important;
 	display: block;
 }
-#category_slider #category_item button{
+#category_slider #category_item a{
+	text-decoration: none!important;
 	font-size: 12px!important;
+	font-weight: bold!important;
 	width: 140px!important;
 	height: 40px!important;
+	line-height: 40px!important;
+	text-align: center!important;
 	padding: 0px!important;
 	background: #3a9bfa;
 	border: 0px!important;

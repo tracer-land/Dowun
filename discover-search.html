@@ -46,6 +46,12 @@ Project Designed By Tracer Land
 		<!-- Font Awsome Link -->
 		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+		<style type="text/css">
+			html{
+				height: 100%!important;
+			}
+		</style>
+
 </head>
 <body>
 
@@ -56,6 +62,7 @@ Project Designed By Tracer Land
 
 		<script type="text/javascript" src="js/jquery.twbsPagination.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
+
 
 
 		<!-- Header Section Start! -->
@@ -431,7 +438,53 @@ Project Designed By Tracer Land
 																<a href="#">Read More</a>
 															</p>
 
-															<a href="#" class="btn btn-sm btn-info pull-right">Message</a>
+															<a href="#" class="btn btn-sm btn-info pull-right"data-toggle="modal" data-target="#quotaBox">Quota</a>
+
+																<div class="modal multi-step" id="quotaBox">
+																	<div class="modal-dialog">
+																		<div class="modal-content">
+																			<div class="modal-header">
+																				<button type="button" class="close" data-dismiss="modal">&times;</button>
+         	 																	<h4 class="modal-title step-1" data-step="1">Step 1</h4>
+																		        <h4 class="modal-title step-2" data-step="2">Step 2</h4>
+																		        <h4 class="modal-title step-3" data-step="3">Final Step</h4>
+
+																		        <div class="m-progress">
+																		        	<div class="m-progress-bar-wrapper">
+																		        		<div class="m-progress-bar"></div>
+																		        	</div>
+																		        	<div class="m-progress-stats">
+																		        		<span class="m-progress-current"></span>
+																		        		<span class="m-progress-total"></span>
+																		        	</div>
+																		        	<div class="m-progress-complete">
+																		        		Completed
+																		        	</div>
+																		        </div>
+																			</div>
+																			<div class="modal-body step-1" data-step="1">
+																				Step 1
+																			</div>
+																			<div class="modal-body step-2" data-step="2">
+																				Step  2
+																			</div>
+																			<div class="modal-body step-3" data-step="3">
+																				Step 3
+																			</div>
+																			<div class="modal-body step-4" data-step="4">
+																				Step 4
+																			</div>
+																			<div class="modal-body step-5" data-step="5">
+																				Step 5
+																			</div>
+																			<div class="modal-footer">
+																				<button type="button" class="btn btn-primary step step-1" data-step="1" onclick="sendEvent('#quotaBox', 2)">Next</button>
+																				<button type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEvent('#quotaBox', 1)">Back</button>
+																				<button type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEvent('#quotaBox', 3)">Continue</button>
+																			</div>
+																		</div>
+																	</div>
+																</div>
 
 														</div>
 													</div>
@@ -480,7 +533,7 @@ Project Designed By Tracer Land
 																<a href="#">Read More</a>
 															</p>
 
-															<a href="#" class="btn btn-sm btn-info pull-right">Message</a>
+															<a href="#" class="btn btn-sm btn-info pull-right">Quota</a>
 
 														</div>
 													</div>
@@ -529,7 +582,7 @@ Project Designed By Tracer Land
 																<a href="#">Read More</a>
 															</p>
 
-															<a href="#" class="btn btn-sm btn-info pull-right">Message</a>
+															<a href="#" class="btn btn-sm btn-info pull-right">Quota</a>
 
 														</div>
 													</div>
@@ -577,7 +630,7 @@ Project Designed By Tracer Land
 																<a href="#">Read More</a>
 															</p>
 
-															<a href="#" class="btn btn-sm btn-info pull-right">Message</a>
+															<a href="#" class="btn btn-sm btn-info pull-right">Quota</a>
 
 														</div>
 													</div>
@@ -693,7 +746,7 @@ Project Designed By Tracer Land
 																<a href="#">Read More</a>
 															</p>
 
-															<a href="#" class="btn btn-sm btn-info pull-right">Message</a>
+															<a href="#" class="btn btn-sm btn-info pull-right">Quota</a>
 
 														</div>
 													</div>
@@ -751,7 +804,15 @@ Project Designed By Tracer Land
 			Copyright &copy; 2019 Dowun. All Rights Reserved.
 		</div>
 		
+
+		<script type="text/javascript" src="js/multi-step-modal.js"></script>
 		<script type="text/javascript">
+
+			/*Quota!*/
+			sendEvent =function(sel, step){
+				var sel_event =new CustomEvent('next.m.' + step, {detail: {step: step}});
+				window.dispatchEvent(sel_event);
+			}
 			
 
 		
@@ -948,7 +1009,7 @@ Project Designed By Tracer Land
 				disabledClass: 'disabled'
 
 			});
-
+			
 		</script>
 
 </body>
