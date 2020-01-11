@@ -249,6 +249,63 @@
 	color: #fff!important;
 }
 
+/*Quota!*/
+#property-map #job_wrap .col-md-9 #quotaBox #quota-form{
+	width: 100%;
+}
+#property-map #job_wrap .col-md-9 #quotaBox .modal-body .tab{
+	display: none;
+	width: 100%!important;
+	overflow: auto;
+}
+#property-map #job_wrap .col-md-9 #quotaBox .modal-body .tab h4{
+	text-align: left!important;
+}
+#property-map #job_wrap .col-md-9 #quotaBox .modal-body .tab:first-child h4{
+	text-align: center!important;
+}
+#property-map #job_wrap .col-md-9 #quotaBox .modal-body img{
+	width: 150px;
+	height: 150px;
+	display: block;
+	border-radius: 100%;
+	margin: 0 auto;
+	margin-top: 30px!important;
+	margin-bottom: 30px!important;
+	box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+}
+#property-map #job_wrap .col-md-9 #quotaBox .modal-body h4{
+	font-weight: bold;
+	text-align: center;
+}
+#property-map #job_wrap .col-md-9 #quotaBox .modal-body ul{
+	width: 100%!important;
+	list-style: none;
+	padding: 0px!important;
+	margin: 0px!important;
+}
+#property-map #job_wrap .col-md-9 #quotaBox .modal-body ul li{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#property-map #job_wrap .col-md-9 #quotaBox .modal-body label{
+	width: 100%!important;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: block!important;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	cursor: pointer;
+}
+#property-map #job_wrap .col-md-9 #quotaBox .modal-body label span{
+	margin-left: 8px!important;
+}
+
+#property-map #job_wrap .col-md-9 #quotaBox .modal-body .btn{
+	margin-left: 12px;
+}
+
 /*Sponsered!*/
 #property-map .page_with_map #sponsered{
 	background: #fff!important;

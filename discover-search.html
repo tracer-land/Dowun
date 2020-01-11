@@ -440,48 +440,101 @@ Project Designed By Tracer Land
 
 															<a href="#" class="btn btn-sm btn-info pull-right"data-toggle="modal" data-target="#quotaBox">Quota</a>
 
-																<div class="modal multi-step" id="quotaBox">
+																<div class="modal" id="quotaBox">
 																	<div class="modal-dialog">
 																		<div class="modal-content">
 																			<div class="modal-header">
 																				<button type="button" class="close" data-dismiss="modal">&times;</button>
-         	 																	<h4 class="modal-title step-1" data-step="1">Step 1</h4>
-																		        <h4 class="modal-title step-2" data-step="2">Step 2</h4>
-																		        <h4 class="modal-title step-3" data-step="3">Final Step</h4>
+																				<a href="#">KBZ Bank</a>
+																				<ul style="padding: 0px!important;margin-bottom: 0px!important;">
+																					<li class="one-star"><!-- Add This Class Dynamically As - one-star, two-star, three-star, four-star, five-star -->
+																						<i class="fa fa-star"></i>
+																						<i class="fa fa-star"></i>
+																						<i class="fa fa-star"></i>
+																						<i class="fa fa-star"></i>
+																						<i class="fa fa-star"></i>
+																						<small>200 Reviews</small>
+																					</li>
+																				</ul>
+         	 																</div>
+         	 																<div class="modal-body">
+         	 																	<form action="#" id="quota-form">
+																					<div class="tab">
+																						<img src="images/kbz.png">
+																						<h4>Let us know what you needing!</h4>
+																					</div>
+																					<div class="tab">
+																						<h4>Tell Us Your Gender Please?</h4>
+																						<label for="male">
+																							<input type="radio" name="gender" id="male" required="required">
+																							<span>Male</span>
+																						</label>
+																						<label for="female">
+																							<input type="radio" name="gender" id="female" required="required">
+																							<span>Female</span>
+																						</label>
+																						<label for="other">
+																							<input type="radio" name="gender" id="other" required="required">
+																							<span>Other</span>
+																						</label>
+																						<label for="alien">
+																							<input type="radio" name="gender" id="alien" required="required">
+																							<span>Alien</span>
+																						</label>
+																					</div>
+																					<div class="tab">
+																						<h4>What Is Your Favourite Colour?</h4>
+																						<label for="yellow">
+																							<input type="checkbox" name="color" id="yellow" required="required">
+																							<span>Yellow</span>
+																						</label>
+																						<label for="red">
+																							<input type="checkbox" name="color" id="red" required="required">
+																							<span>Red</span>
+																						</label>
+																						<label for="blue">
+																							<input type="checkbox" name="color" id="blue" required="required">
+																							<span>Blue</span>
+																						</label>
+																						<label for="green">
+																							<input type="checkbox" name="color" id="green" required="required">
+																							<span>Green</span>
+																						</label>
+																					</div>
+																					<div class="tab">
+																						<h4>How Your Skin Look?</h4>
+																						<label for="white">
+																							<input type="radio" name="skin" id="white" required="required">
+																							<span>White</span>
+																						</label>
+																						<label for="black">
+																							<input type="radio" name="skin" id="black" required="required">
+																							<span>Black</span>
+																						</label>
+																						<label for="brown">
+																							<input type="radio" name="skin" id="brown" required="required">
+																							<span>Brown</span>
+																						</label>
+																						<label for="yellow">
+																							<input type="radio" name="skin" id="yellow" required="required">
+																							<span>Yellow</span>
+																						</label>
+																					</div>
+																					<div style="overflow: auto;">
+																						<div>
+																							<button type="button" id="nextBtn" onclick="nextPrev(1)" class="btn btn-sm btn-info pull-right">Next</button>
+																							<button type="button" id="prevBtn" onclick="nextPrev(-1)" class="btn btn-sm btn-info pull-right">Previous</button>
+																						</div>
+																					</div>
 
-																		        <div class="m-progress">
-																		        	<div class="m-progress-bar-wrapper">
-																		        		<div class="m-progress-bar"></div>
-																		        	</div>
-																		        	<div class="m-progress-stats">
-																		        		<span class="m-progress-current"></span>
-																		        		<span class="m-progress-total"></span>
-																		        	</div>
-																		        	<div class="m-progress-complete">
-																		        		Completed
-																		        	</div>
-																		        </div>
-																			</div>
-																			<div class="modal-body step-1" data-step="1">
-																				Step 1
-																			</div>
-																			<div class="modal-body step-2" data-step="2">
-																				Step  2
-																			</div>
-																			<div class="modal-body step-3" data-step="3">
-																				Step 3
-																			</div>
-																			<div class="modal-body step-4" data-step="4">
-																				Step 4
-																			</div>
-																			<div class="modal-body step-5" data-step="5">
-																				Step 5
-																			</div>
-																			<div class="modal-footer">
-																				<button type="button" class="btn btn-primary step step-1" data-step="1" onclick="sendEvent('#quotaBox', 2)">Next</button>
-																				<button type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEvent('#quotaBox', 1)">Back</button>
-																				<button type="button" class="btn btn-primary step step-2" data-step="2" onclick="sendEvent('#quotaBox', 3)">Continue</button>
-																			</div>
+																					<div style="text-align:center;margin-top:40px;display: none;">
+																						<span class="step"></span>
+																						<span class="step"></span>
+																						<span class="step"></span>
+																						<span class="step"></span>
+																					</div>
+																				</form>
+         	 																</div>
 																		</div>
 																	</div>
 																</div>
@@ -878,7 +931,6 @@ Project Designed By Tracer Land
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz0UKm8v5cyci608yD-ChLDriBQIZeUPw&&callback=initMap"></script>
 		<script type="text/javascript">
 
-
 			/*$(document).ready(function(){
 			 	$(".map_show").hide();
 			 	$(".page-show").show();
@@ -1009,8 +1061,65 @@ Project Designed By Tracer Land
 				disabledClass: 'disabled'
 
 			});
+
+
+			var currentTab = 0; // Current tab is set to be the first tab (0)
+			showTab(currentTab); // Display the current tab
+
+			function showTab(n) {
+			  // This function will display the specified tab of the form...
+			  var x = document.getElementsByClassName("tab");
+			  x[n].style.display = "block";
+			  //... and fix the Previous/Next buttons:
+			  if (n == 0) {
+			    document.getElementById("prevBtn").style.display = "none";
+			  } else {
+			    document.getElementById("prevBtn").style.display = "inline";
+			  }
+			  if (n == (x.length - 1)) {
+			    document.getElementById("nextBtn").innerHTML = "Submit";
+			  } else {
+			    document.getElementById("nextBtn").innerHTML = "Next";
+			  }
+
+			}
+
+			function nextPrev(n) {
+			  // This function will figure out which tab to display
+			  var x = document.getElementsByClassName("tab");
+
+
+			  //ID Must Be Dynamically
+			  var y = document.getElementById("male");
+
+			  if(y.checked==true){
+
+			  	//If ID Work Dynamically Here Next Btn Should Work!
+
+			  }
+
+			  // Exit the function if any field in the current tab is invalid:
+				  // Hide the current tab:
+				  x[currentTab].style.display = "none";
+				  // Increase or decrease the current tab by 1:
+				  currentTab = currentTab + n;
+				  // if you have reached the end of the form...
+				  if (currentTab >= x.length) {
+				    // ... the form gets submitted:
+				    document.getElementById("quota-form").submit();
+				    alert('Successfully Answered!')
+				    return false;
+				  }
+
+			   // Otherwise, display the correct tab:
+			  showTab(currentTab);
+
+			}
+			
 			
 		</script>
+
+
 
 </body>
 </html>

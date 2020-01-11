@@ -36,12 +36,7 @@ body {
 }
 
 #regForm {
-  background-color: #ffffff;
-  margin: 100px auto;
-  font-family: Raleway;
-  padding: 40px;
-  width: 70%;
-  min-width: 300px;
+  width: 100%;
 }
 
 h1 {
@@ -130,12 +125,16 @@ button:hover {
                         
 
 
-<form id="regForm" action="/action_page.php">
+<form id="regForm" action="">
   <h1>Register:</h1>
   <!-- One "tab" for each step in the form: -->
   <div class="tab">Name:
     <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
     <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+  </div>
+  <div class="tab">Name:
+    <p><input type="radio" name="fname" id="hay"></p>
+    <p><input type="radio" name="lname" id="hay"></p>
   </div>
   <div class="tab">Sample:
     <input placeholder="God name..." oninput="this.className = ''" name="gname">
@@ -165,7 +164,8 @@ button:hover {
     </div>
   </div>
   <!-- Circles which indicates the steps of the form: -->
-  <div style="text-align:center;margin-top:40px;">
+  <div style="text-align:center;margin-top:40px;display: none;">
+    <span class="step"></span>
     <span class="step"></span>
     <span class="step"></span>
     <span class="step"></span>
@@ -247,15 +247,7 @@ function validateForm() {
   return valid; // return the valid status
 }
 
-function fixStepIndicator(n) {
-  // This function removes the "active" class of all steps...
-  var i, x = document.getElementsByClassName("step");
-  for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace(" active", "");
-  }
-  //... and adds the "active" class on the current step:
-  x[n].className += " active";
-}
+
 </script>
 
 
