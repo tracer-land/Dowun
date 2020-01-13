@@ -228,6 +228,18 @@ function business_switchThree(){
 	get('business_three').style.display = "block";
 }
 
+function payment_switch(){
+	get('business_one').style.display = "none";
+	get('business_two').style.display = "block";
+	get('business_three').style.display = "none";
+}
+
+function payment_switchThree(){
+	get('business_one').style.display = "none";
+	get('business_two').style.display = "none";
+	get('business_three').style.display = "block";
+}
+
 
 
 

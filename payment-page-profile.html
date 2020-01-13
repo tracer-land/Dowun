@@ -1,0 +1,304 @@
+<!-- 
+
+Project Title = Dowun
+Project Type = Multi Platform Website
+Project Front-End Technologies = HTML, CSS, Boostrap, JQuery
+Project Designed By Tracer Land
+
+ -->
+
+<!-- Payment Page Profile View Page!!! -->
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Payment Page Profile</title>
+
+		<!-- Logo Image -->
+		<link rel="icon" href="images/logo.png">
+
+		<!-- Meta Tags -->
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+		<!-- CSS Links! -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/all.css">
+		<link rel="stylesheet" type="text/css" href="css/all.min.css">
+
+		<link rel="stylesheet" type="text/css" href="css/payment_page_profile/payment-page-profile-view.css"><!-- Page Profile View CSS! -->
+
+		<!-- Common CSS Styles! -->
+		<link rel="stylesheet" type="text/css" href="css/common_css_styles/mobile.css" media="screen and (max-width: 600px)">
+		<link rel="stylesheet" type="text/css" href="css/common_css_styles/tablet.css" media="screen and (max-width: 998px)">
+
+		<link rel="stylesheet" type="text/css" href="css/payment_page_profile/mobile.css" media="screen and (max-width: 768px) and (min-width: 500px)">
+		<link rel="stylesheet" type="text/css" href="css/payment_page_profile/tablet.css" media="screen and (max-width: 1028px)">
+
+		<!-- Boostrap CSS! -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Font Style! -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+		<!-- Font Awsome Link -->
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+		<style type="text/css">
+			
+			#payment-title{
+				padding: 20px 0px 15px 0px;
+				border-bottom: 1px solid rgba(0,0,0,0.1);
+			}
+			#payment-title h3{
+				font-size: 18px;
+				font-weight: bold;
+				display: inline-block;
+				margin-right: 20px;
+				cursor: pointer;
+			}
+			#payment-title .make-payment{
+				cursor: not-allowed!important;
+			}
+
+			#payment-wrap-one, #payment-wrap-two{
+				width: 100%;
+				padding-top: 20px!important;
+			}
+			#payment-wrap-two{
+				display: none;
+			}
+			#payment-wrap-one #box-wrap{
+				width: 70%;
+				min-height: 500px!important;
+				background: white;
+				padding: 20px;
+				margin: 0 auto!important;
+				position: relative;
+				margin-bottom: 12px!important;
+			}
+			#payment-wrap-one #box-wrap strong{
+				text-align: center!important;
+				display: block;
+				margin-bottom: 20px!important;
+			}
+
+			#payment-wrap-one #box-wrap .my-ul{
+				list-style: none;
+				padding: 0px!important;
+			}
+			#payment-wrap-one #box-wrap .my-ul li{
+				padding-bottom: 8px;
+				padding-top: 8px;
+				border-bottom: 1px solid rgba(0,0,0,0.1);
+			}
+
+			#payment-wrap-one #box-wrap .btn-ul{
+				margin-top: 20px;
+				list-style: none;
+				text-align: center;
+			}
+
+			#payment-wrap-one #box-wrap .btn-info{
+				width: 90%;
+				position: absolute;
+				bottom: 0%!important;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+
+			#payment-wrap-one #box-wrap .btn-ul{
+				margin-top: 20px;
+				list-style: none;
+				text-align: center;
+			}
+
+			#payment-wrap-one #box-wrap .btn-ul li{
+				display: inline-block;
+				margin-right: 10px;
+			}
+
+			#payment-wrap-one #box-wrap .btn-ul li small{
+				display: block;
+			}
+
+			#payment-title .active{
+				border-bottom: 2px solid #5cb85c;
+				padding-bottom: 8px;
+			}
+
+			#payment-wrap-two p{
+				margin-bottom: 20px;
+			}
+
+			#payment-wrap-two .col-md-12{
+				background: white;
+				border: 1px solid rgba(0,0,0,0.1);
+				padding: 12px;
+				margin-top: 50px!important;
+				margin-bottom: 50px!important;
+			}
+			#payment-wrap-two .col-md-12 .btn{
+				margin: 0 auto!important;
+				display: inline-block;
+				margin-right: 8px!important;
+			}
+			#payment-wrap-two label{
+				margin-bottom: 20px!important;
+			}
+
+
+
+		</style>
+
+</head>
+<body>
+
+		<!-- JQuery, Bootstrap JS, Script Links! -->
+		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="js/script.js"></script>
+
+		<div class="container">
+
+			<div id="payment-title">
+				<h3 onClick="payment_switchOne()" class="active select-plan" id="select-plan">1. Select Plan</h3>
+				<h3  id="make-payment" class="make-payment">2. Make Payment</h3>
+
+				<a href="page-profile-view.html" class="btn btn-sm btn-success pull-right">Back</a>
+			</div>
+
+			<div id="payment-wrap-one">
+				
+				<div class="col-md-6 col-sm-12 col-xs-12">
+					
+					<div id="box-wrap">
+						<strong>Free Account</strong>
+
+						<ul class="my-ul">
+							<li>Create 3 Jobs Free</li>
+							<li>Browse all job lists</li>
+							<li>Send message to free lists</li>
+							<li>Recieve enquiries from members</li>
+						</ul>
+
+						<a href="#" class="btn btn-info">Stay Free</a>
+					</div>
+
+				</div>
+
+				<div class="col-md-6 col-sm-12 col-xs-12">
+					
+					<div id="box-wrap">
+						<strong>Business</strong>
+
+						<ul class="my-ul">
+							<li>Create Unlimited Place</li>
+							<li>Browse all lists</li>
+							<li>Send message to free lists</li>
+							<li>Recieve enquiries from members</li>
+							<li>Access mobile number</li>
+							<li>Schedule place</li>
+							<li>Auto matching title</li>
+							<li>Top on App</li>
+						</ul>
+
+						<ul class="btn-ul">
+							<li>
+								<button class="btn btn-success">100 CV</button>
+								<small>30000Kyats</small>
+							</li>
+							<li>
+								<button class="btn btn-primary">20 CV</button>
+								<small>75000Kyats</small>
+							</li>
+						</ul>
+
+						<a href="#" class="btn btn-info" onClick="payment_switchTwo()" id="select-btn">Select</a>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<div id="payment-wrap-two">
+
+				<p>
+					A total of MMK5000 will be charged or card for following ads:
+				</p>
+
+				<table class="table">
+					<tr>
+						<th>Upgrade Job</th>
+						<th>Carrier Account</th>
+						<th>15 Days</th>
+						<th>Total</th>
+					</tr>
+
+					<tr>
+						<td>My Upgrade Job</td>
+						<td>My Account</td>
+						<td>MMK5000</td>
+						<td>MMK5000.00</td>
+					</tr>
+				</table>
+
+				<div class="col-md-12">
+					<center>
+						<a href="#" class="btn btn-sm btn-info">MPU</a>
+						<a href="#" class="btn btn-sm btn-info">Master</a>
+						<a href="#" class="btn btn-sm btn-info">Visa</a>
+						<a href="#" class="btn btn-sm btn-info">Mobile Bill</a>
+						<a href="#" class="btn btn-sm btn-info">Local Bank</a>
+					</center>
+				</div>
+
+				<label for="terms">
+					<input type="checkbox" name="terms" id="terms">
+					<span>I agree terms and conditions by details.I agree terms and conditions by details.I agree terms and conditions by details.I agree terms and conditions by details.I agree terms and conditions by details.</span>
+				</label>
+
+				<button type="submit" class="btn btn-info">Make Payment</button>
+
+			</div>
+			
+		</div>
+
+
+		<script type="text/javascript">
+
+			document.getElementById("make-payment").disabled = true;
+
+			function payment_switchOne(){
+				get('payment-wrap-one').style.display = "block";
+				get('payment-wrap-two').style.display = "none";
+			}
+
+			function payment_switchTwo(){
+				get('payment-wrap-one').style.display = "none";
+				get('payment-wrap-two').style.display = "block";
+			}
+			
+			$(document).ready(function(){
+				$("#payment-wrap-one #box-wrap #select-btn").click(function(){
+					$("#payment-title #make-payment").removeClass("make-payment");
+					$("#payment-title #make-payment").addClass("active");
+					$("#payment-title #select-plan").removeClass("active");
+				});
+				$("#payment-title #select-plan").click(function(){
+					$("#payment-title #make-payment").addClass("make-payment");
+					$("#payment-title #make-payment").removeClass("active");
+					$("#payment-title #select-plan").addClass("active");
+				});
+			});
+
+		</script>
+
+</body>
+</html>
