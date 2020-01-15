@@ -370,6 +370,11 @@
 
 	#header #form_one form input, form select{
 		width: 30%!important;
+		font-size: 11px!important;
+	}
+
+	#header #form_one form .btn{
+		font-size: 11px!important;
 	}
 
 	#header #form_one #form-sub-catgories ul li{
