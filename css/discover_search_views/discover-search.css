@@ -193,6 +193,11 @@
 }
 
 
+#property-map #job_wrap .col-md-3 img{
+	width: 150px!important;
+}
+
+
 #property-map .house_with_map .col-md-9{
 	padding: 5px!important;
 	padding-right: 20px!important;
