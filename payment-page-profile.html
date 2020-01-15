@@ -75,6 +75,14 @@ Project Designed By Tracer Land
 				position: relative;
 				margin-bottom: 12px!important;
 			}
+
+			#payment-wrap-one #first-bw #box-wrap{
+				margin-right: 0px!important;
+			}
+			#payment-wrap-one #second-bw #box-wrap{
+				margin-left: 0px!important;
+			}
+
 			#payment-wrap-one #box-wrap strong{
 				text-align: center!important;
 				display: block;
@@ -146,6 +154,27 @@ Project Designed By Tracer Land
 			}
 
 
+			@media screen and (max-width: 499px){
+				#payment-wrap-one #first-bw #box-wrap{
+					margin: 0 auto!important;
+					margin-bottom: 10px!important;
+				}
+				#payment-wrap-one #second-bw #box-wrap{
+					margin: 0 auto!important;
+					margin-bottom: 10px!important;
+				}
+			}
+			@media screen and (max-width: 768px){
+				#payment-wrap-one #first-bw #box-wrap{
+					margin: 0 auto!important;
+					margin-bottom: 10px!important;
+				}
+				#payment-wrap-one #second-bw #box-wrap{
+					margin: 0 auto!important;
+					margin-bottom: 10px!important;
+				}
+			}
+
 
 		</style>
 
@@ -170,7 +199,7 @@ Project Designed By Tracer Land
 
 			<div id="payment-wrap-one">
 				
-				<div class="col-md-6 col-sm-12 col-xs-12">
+				<div class="col-md-6 col-sm-12 col-xs-12" id="first-bw">
 					
 					<div id="box-wrap">
 						<strong>Free Account</strong>
@@ -187,7 +216,7 @@ Project Designed By Tracer Land
 
 				</div>
 
-				<div class="col-md-6 col-sm-12 col-xs-12">
+				<div class="col-md-6 col-sm-12 col-xs-12" id="second-bw">
 					
 					<div id="box-wrap">
 						<strong>Business</strong>
