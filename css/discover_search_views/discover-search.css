@@ -364,6 +364,30 @@
 @media screen and (max-width: 499px){
 	/* Mobile View CSS Style (768px) */
 
+	#header #form_one{
+		padding: 0px 6px 0px 15px!important;
+	}
+
+	#header #form_one form input, form select{
+		width: 30%!important;
+	}
+
+	#header #form_one #form-sub-catgories ul li{
+		margin-right: 10px!important;
+	}
+
+	#header #form_one #form-sub-catgories li{
+		font-size: 11px!important;
+	}
+	#header #form_one #form-sub-catgories ul li a{
+		font-size: 11px!important;
+	}
+
+	#header #form_one #form-sub-catgories .dropdown-menu{
+		top: 22%!important;
+		left: 1%!important;
+	}
+
 	#property-map #page_with_map1 #map-area{
 		display: none!important;
 	}
@@ -373,10 +397,10 @@
 
 	/* Shwo Map CSS Style! */
 	#show_map{
-		padding: 10px;
+		padding: 10px!important;
 	}
 	#show_map .col-md-2 select{
-		width: 20%!important;
+		width: 25%!important;
 	}
 
 	#show_map .map_toggle{
@@ -388,21 +412,21 @@
 
 
 	#property-map #job_wrap .col-md-3 img{
-		width: 100px!important;
+		width: 60px!important;
 	}
 	#property-map .house_with_map .col-md-9{
-		padding-right: 8px!important;
-		padding-left: 8px!important;
-		font-size: 13px!important;
+		padding-right: 5px!important;
+		padding-left: 5px!important;
+		font-size: 11px!important;
 	}
 
 	#all-result #job_wrap .col-md-3 img{
-		width: 100px!important;
+		width: 60px!important;
 	}
 	#all-result .house_with_map .col-md-9{
-		padding-right: 8px!important;
-		padding-left: 8px!important;
-		font-size: 13px!important;
+		padding-right: 5px!important;
+		padding-left: 5px!important;
+		font-size: 11px!important;
 	}
 
 	#property-map .house_with_map .col-md-9 ul #verifyBox .modal-dialog{
@@ -412,23 +436,23 @@
 
 	/* App Section CSS! */
 	#app{
-		padding: 50px;
+		padding: 50px!important;
 	}
 
 	#app a:first-child{
-		position: absolute;
-		top: 50%;
+		position: absolute!important;
+		top: 50%!important;
 		left: 36%!important;
-		transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%)!important;
 	}
 	#app a:last-child{
-		position: absolute;
-		top: 50%;
+		position: absolute!important;
+		top: 50%!important;
 		right: 36%!important;
-		transform: translate(50%,-50%);
+		transform: translate(50%,-50%)!important;
 	}
 	#app img{
-		width: 110px;
-		height: 40px;
+		width: 100px!important;
+		height: 30px!important;
 	}
 }
